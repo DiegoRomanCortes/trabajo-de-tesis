@@ -7,7 +7,6 @@
 \usepackage{hyperref}
 \usepackage[figurename=Figura]{caption}
 
-
 \author{Diego Antonio Román Cortés\\Profesor Guía: Rodrigo A. Vicencio}
 \date{Departamento de Física, Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile}
 \title{Redes interorbitales basadas en moléculas fotónicas}
@@ -17,7 +16,8 @@
 %Nombre del candidato y del profesor guía o profesores guía
 
 \section{Contexto del proyecto (introducción y descripción del estado del arte)}
-	La técnica de escritura de guías de onda mediante el enfoque de láser de pulsos con duración temporal del orden de los femtosegundos dentro de vidrio borosilcato ha permitido la fabricación de redes fotónicas de variada índole. \cite{interorbital}. Recientemente se ha reportado la propagación de luz con momentum angular orbital por medio de redes fotónicas que presevan simetría $C_3$ \cite{vortex}.
+	La técnica de escritura de guías de onda mediante el enfoque de láser de pulsos con duración temporal del orden de los femtosegundos dentro de vidrio borosilcato ha permitido la fabricación de redes fotónicas de variada índole \cite{bics, artificialFB}. Su importancia radica no sólo en emular situaciones propias de la física del sólido, sino que también en el estudio de fenómenos ópticos como la no-linearidad tipo Kerr.
+	En particular, el acoplamiento interorbital SP \cite{interorbital} ha permitido el estudio de redes que presentan flujo magnético efectivo no trivial \cite{OAMcaging, ABCaging}. Recientemente se ha reportado la propagación de luz con momentum angular orbital (OAM) por medio de redes fotónicas que presevan simetría $C_3$ \cite{vortex}. El acoplamiento entre modos OAM permite la generación de flujos magnéticos complejos \cite{vortextrim}.
 \section{Objetivos de la tesis}
 \begin{enumerate}
 	\item Utilizar moléculas fotónicas como base para fabricar y estudiar redes interorbitales.
@@ -42,7 +42,7 @@ Mientras que aplicando teoría acoplada de modos a la ecuación (\ref{eqn:paraxi
 	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}} \label{eqn:CMT}
 \end{equation}
 
-La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales complejas. Para ello se implementó una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de el haz tipo gaussiano proveniente del láser \cite{slm}.
+La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello se implementó una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de el haz tipo gaussiano proveniente del láser \cite{slm}.
 
 \begin{figure}[H]
 	\centering
@@ -61,13 +61,28 @@ Durante el curso de Seminario de Investigación I (Primavera 2022) se hizo un ba
 	\caption{Interacción interorbital en guías indivuduales y en moléculas fotónicas.}
 \end{figure}
 
-Durante el curso de Seminario de Investigación II se implementó el montaje de modulación esquematizado en la Figura \ref{fig:SLM}. Con ello fue posible la excitación de una celda unitaria en la red SP-SSH
+Durante el curso de Seminario de Investigación II (Otoño 2023) se implementó el montaje de modulación esquematizado en la Figura \ref{fig:SLM}. Con ello fue posible la excitación de un dipolo horizontal:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{./media/dipole.png}
+	\caption{Dímeros dipolares.}
+\end{figure}
+
+y de un OAM:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{./media/vortex.png}
+	\caption{a) Intensidad de un OAM propagado en una molécula fotónica. b) Interferograma que captura el cambio de fase esperado.}
+\end{figure}
 
 \section{Plan de trabajo o carta Gantt}
 
 
 % citations
-\bibliographystyle{plain}
+\renewcommand\refname{Referencias}
+\bibliographystyle{ieeetr}
 \bibliography{citations}
 
 \end{document}
