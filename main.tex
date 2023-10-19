@@ -1,11 +1,12 @@
 \documentclass{article}
 
-\usepackage[a4paper, total={16cm, 28cm}]{geometry}
+\usepackage[a4paper, total={16cm, 27cm}]{geometry}
 \usepackage{txfonts}
 \usepackage{graphicx}
 \usepackage{float}
-\usepackage{hyperref}
 \usepackage[figurename=Figura]{caption}
+\usepackage{cite}
+\usepackage{hyperref}
 
 \author{Diego Antonio Román Cortés\\Profesor Guía: Rodrigo A. Vicencio}
 \date{Departamento de Física, Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile}
@@ -16,8 +17,8 @@
 %Nombre del candidato y del profesor guía o profesores guía
 
 \section{Contexto del proyecto (introducción y descripción del estado del arte)}
-	La técnica de escritura de guías de onda mediante el enfoque de láser de pulsos con duración temporal del orden de los femtosegundos dentro de vidrio borosilcato ha permitido la fabricación de redes fotónicas de variada índole \cite{bics, artificialFB}. Su importancia radica no sólo en emular situaciones propias de la física del sólido, sino que también en el estudio de fenómenos ópticos como la no-linearidad tipo Kerr.
-	En particular, el acoplamiento interorbital SP \cite{interorbital} ha permitido el estudio de redes que presentan flujo magnético efectivo no trivial \cite{OAMcaging, ABCaging}. Recientemente se ha reportado la propagación de luz con momentum angular orbital (OAM) por medio de redes fotónicas que presevan simetría $C_3$ \cite{vortex}. El acoplamiento entre modos OAM permite la generación de flujos magnéticos complejos \cite{vortextrim}.
+	La técnica de escritura de guías de onda mediante el enfoque de láser de pulsos con duración temporal del orden de los femtosegundos dentro de vidrio borosilcato ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, artificialFB, FBdynamics}. Su importancia radica no sólo en emular situaciones de la física del sólido, sino que también en el estudio de fenómenos propias de la óptica como la no-linealidad tipo Kerr.
+	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo no trivial \cite{interorbital, OAMcaging, ABCaging}. Recientemente se ha reportado la propagación de luz con momentum angular orbital (OAM) por medio de redes fotónicas que presevan simetría $C_3$ \cite{vortex}. El acoplamiento entre modos OAM permite la generación de flujos magnéticos distintos de $0$ o $\pi$ \cite{vortextrim}.
 \section{Objetivos de la tesis}
 \begin{enumerate}
 	\item Utilizar moléculas fotónicas como base para fabricar y estudiar redes interorbitales.
@@ -46,7 +47,7 @@ La excitación de redes fotónicas interorbitales hace necesario el uso de condi
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{./media/montaje.png}
+	\includegraphics[width=0.9\linewidth]{./media/SLMsetup.png}
 	\caption{Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.\label{fig:SLM}}
 \end{figure}
 
@@ -65,15 +66,15 @@ Durante el curso de Seminario de Investigación II (Otoño 2023) se implementó 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{./media/dipole.png}
-	\caption{Dímeros dipolares.}
+	\includegraphics[width=1.0\linewidth]{./media/dipoles.jpg}
+	\caption{a)-f) Barrido en ángulo de dímeros dipolares a una distancia de separación de 25 $\mu$m propagando en una distancia de 25 mm en la dirección perpencicular al plano. La inyección se realiza en la molécula inferior izquierda con un modo Hermite-Gauss TEM$_{10}$. En d) se pasa por el ángulo mágico que hace nula la interacción dipolar.}
 \end{figure}
 
-y de un OAM:
+Se está trabajando en la excitación de un OAM con $l = \pm 1$ usando la técnica de modulación espacial de la Figura \ref{fig:SLM}:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{./media/vortex.png}
+	\includegraphics[width=0.7\linewidth]{./media/vortex.png}
 	\caption{a) Intensidad de un OAM propagado en una molécula fotónica. b) Interferograma que captura el cambio de fase esperado.}
 \end{figure}
 
@@ -82,7 +83,7 @@ y de un OAM:
 
 % citations
 \renewcommand\refname{Referencias}
-\bibliographystyle{ieeetr}
+\bibliographystyle{siam}
 \bibliography{citations}
 
 \end{document}

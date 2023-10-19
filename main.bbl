@@ -1,48 +1,57 @@
-\begin{thebibliography}{1}
-
-\bibitem{bics}
-Y.~Plotnik, O.~Peleg, F.~Dreisow, M.~Heinrich, S.~Nolte, A.~Szameit, and
-  M.~Segev, ``Experimental observation of optical bound states in the
-  continuum,'' {\em Phys. Rev. Lett.}, vol.~107, p.~183901, Oct 2011.
-
-\bibitem{artificialFB}
-D.~Leykam, A.~Andreanov, and S.~Flach, ``Artificial flat band systems: from
-  lattice models to experiments,'' {\em Advances in Physics: X}, vol.~3, no.~1,
-  p.~1473052, 2018.
-
-\bibitem{interorbital}
-D.~Guzm\'an-Silva, G.~C\'aceres-Aravena, and R.~A. Vicencio, ``Experimental
-  observation of interorbital coupling,'' {\em Phys. Rev. Lett.}, vol.~127,
-  p.~066601, Aug 2021.
-
-\bibitem{OAMcaging}
-C.~J{\"o}rg, G.~Queralt{\'o}, M.~Kremer, G.~Pelegr{\'i}, J.~Schulz, A.~Szameit,
-  G.~von Freymann, J.~Mompart, and V.~Ahufinger, ``Artificial gauge field
-  switching using orbital angular momentum modes in optical waveguides,'' {\em
-  Light: Science {\&} Applications}, vol.~9, p.~150, Aug 2020.
+\begin{thebibliography}{10}
 
 \bibitem{ABCaging}
-G.~C\'aceres-Aravena, D.~Guzm\'an-Silva, I.~Salinas, and R.~A. Vicencio,
-  ``Controlled transport based on multiorbital aharonov-bohm photonic caging,''
-  {\em Phys. Rev. Lett.}, vol.~128, p.~256602, Jun 2022.
+{\sc G.~C\'aceres-Aravena, D.~Guzm\'an-Silva, I.~Salinas, and R.~A. Vicencio},
+  {\em Controlled transport based on multiorbital aharonov-bohm photonic
+  caging}, Phys. Rev. Lett., 128 (2022), p.~256602.
+
+\bibitem{interorbital}
+{\sc D.~Guzm\'an-Silva, G.~C\'aceres-Aravena, and R.~A. Vicencio}, {\em
+  Experimental observation of interorbital coupling}, Phys. Rev. Lett., 127
+  (2021), p.~066601.
 
 \bibitem{vortex}
-Z.~Hu, D.~Bongiovanni, Z.~Wang, X.~Wang, D.~Song, J.~Xu, R.~Morandotti,
-  H.~Buljan, and Z.~Chen, ``Topologically protected vortex transport via
-  chiral-symmetric disclination,'' 2023.
+{\sc Z.~Hu, D.~Bongiovanni, Z.~Wang, X.~Wang, D.~Song, J.~Xu, R.~Morandotti,
+  H.~Buljan, and Z.~Chen}, {\em Topologically protected vortex transport via
+  chiral-symmetric disclination}, 2023.
 
-\bibitem{vortextrim}
-J.~Polo, J.~Mompart, and V.~Ahufinger, ``Geometrically induced complex
-  tunnelings for ultracold atoms carrying orbital angular momentum,'' {\em
-  Phys. Rev. A}, vol.~93, p.~033613, Mar 2016.
+\bibitem{OAMcaging}
+{\sc C.~J{\"o}rg, G.~Queralt{\'o}, M.~Kremer, G.~Pelegr{\'i}, J.~Schulz,
+  A.~Szameit, G.~von Freymann, J.~Mompart, and V.~Ahufinger}, {\em Artificial
+  gauge field switching using orbital angular momentum modes in optical
+  waveguides}, Light: Science {\&} Applications, 9 (2020), p.~150.
+
+\bibitem{artificialFB}
+{\sc D.~Leykam, A.~Andreanov, and S.~Flach}, {\em Artificial flat band systems:
+  from lattice models to experiments}, Advances in Physics: X, 3 (2018),
+  p.~1473052.
 
 \bibitem{bpm}
-G.~Pedrola, {\em Beam Propagation Method for Design of Optical Waveguide
-  Devices}.
-\newblock Wiley, 2015.
+{\sc G.~L. Pedrola}, {\em Beam Propagation Method for Design of Optical
+  Waveguide Devices}, Wiley, 2015.
+
+\bibitem{bics}
+{\sc Y.~Plotnik, O.~Peleg, F.~Dreisow, M.~Heinrich, S.~Nolte, A.~Szameit, and
+  M.~Segev}, {\em Experimental observation of optical bound states in the
+  continuum}, Phys. Rev. Lett., 107 (2011), p.~183901.
+
+\bibitem{vortextrim}
+{\sc J.~Polo, J.~Mompart, and V.~Ahufinger}, {\em Geometrically induced complex
+  tunnelings for ultracold atoms carrying orbital angular momentum}, Phys. Rev.
+  A, 93 (2016), p.~033613.
+
+\bibitem{femto}
+{\sc A.~Szameit, D.~Bl\"{o}mer, J.~Burghoff, T.~Schreiber, T.~Pertsch,
+  S.~Nolte, A.~T\"{u}nnermann, and F.~Lederer}, {\em Discrete nonlinear
+  localization in femtosecond laser written waveguides in fused silica}, Opt.
+  Express, 13 (2005), pp.~10552--10557.
 
 \bibitem{slm}
-B.~Terhalle, {\em Controlling Light in Optically Induced Photonic Lattices}.
-\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2011.
+{\sc B.~Terhalle}, {\em Controlling Light in Optically Induced Photonic
+  Lattices}, Springer Berlin Heidelberg, Berlin, Heidelberg, 2011.
+
+\bibitem{FBdynamics}
+{\sc R.~A. Vicencio}, {\em Photonic flat band dynamics}, Advances in Physics:
+  X, 6 (2021), p.~1878057.
 
 \end{thebibliography}
