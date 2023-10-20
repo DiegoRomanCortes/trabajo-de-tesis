@@ -6,9 +6,10 @@
 \usepackage{float}
 \usepackage[figurename=Figura]{caption}
 \usepackage{cite}
+\usepackage{url}
 \usepackage{hyperref}
 
-\author{Diego Antonio Román Cortés\\Profesor Guía: Rodrigo A. Vicencio}
+\author{Diego Antonio Román Cortés\\Profesor Guía: Rodrigo Andrés Vicencio Poblete}
 \date{Departamento de Física, Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile}
 \title{Redes interorbitales basadas en moléculas fotónicas}
 
@@ -17,8 +18,11 @@
 %Nombre del candidato y del profesor guía o profesores guía
 
 \section{Contexto del proyecto (introducción y descripción del estado del arte)}
-	La técnica de escritura de guías de onda mediante el enfoque de láser de pulsos con duración temporal del orden de los femtosegundos dentro de vidrio borosilcato ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, artificialFB, FBdynamics}. Su importancia radica no sólo en emular situaciones de la física del sólido, sino que también en el estudio de fenómenos propias de la óptica como la no-linealidad tipo Kerr.
-	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo no trivial \cite{interorbital, OAMcaging, ABCaging}. Recientemente se ha reportado la propagación de luz con momentum angular orbital (OAM) por medio de redes fotónicas que presevan simetría $C_3$ \cite{vortex}. El acoplamiento entre modos OAM permite la generación de flujos magnéticos distintos de $0$ o $\pi$ \cite{vortextrim}.
+	
+	Entre los premios Nobel de la última década se encuentran varios estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos y luego attosegundos), por experimentos con fotones entrelazados, por la ideación de pinzas ópticas y por la invención de luces LED \cite{nobel}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y que es la principal fuente de Internet en el país \cite{fibra}. 
+	
+	La técnica de escritura de guías de onda por láser femtosegundo ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, artificialFB, FBdynamics}. Su importancia radica no sólo en emular situaciones de la física del sólido, sino que también en el estudio de fenómenos ópticos como la no-linealidad tipo Kerr, la posibilidad de propagar luz cuántica o la cercanía con telecomunicaciones \cite{discretesolitons, qed, squeezed, topoquantum, telecom}.
+	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo no trivial \cite{interorbital, OAMCaging, ABCaging}. Recientemente se ha reportado la propagación de luz con momentum angular orbital (OAM) por medio de redes fotónicas que presevan simetría $C_3$ \cite{vortex}. El acoplamiento entre modos OAM permite la generación de flujos magnéticos distintos de $0$ o $\pi$ \cite{vortextrim}.
 \section{Objetivos de la tesis}
 \begin{enumerate}
 	\item Utilizar moléculas fotónicas como base para fabricar y estudiar redes interorbitales.
@@ -26,22 +30,25 @@
 \end{enumerate}
 \section{Metodología}
 
-Desde las ecuaciones de Maxwell en un medio dieléctrico no magnético sin cargas ni corrientes libres es posible escribir la siguiente ecuación asumiendo envolvente lenta $\textbf{E}(\textbf{r}) = \textbf{E}_1(\textbf{r}) e^{-i \textbf{k}_1 \cdot \textbf{r}}$.
+Desde las ecuaciones de Maxwell en un medio dieléctrico no magnético sin cargas ni corrientes libres es posible escribir la siguiente ecuación para la envolvente lenta del campo eléctrico $\textbf{E}(\textbf{r}) = \textbf{E}_1(\textbf{r}) e^{-i \textbf{k}_1 \cdot \textbf{r}}$.
 
 \begin{equation}
 	(\nabla-i\textbf{k}_1)\times(\nabla-i\textbf{k}_1)\times \textbf{E}_1 = k^2 \textbf{E}_1,
 	 \label{eqn:maxwell}
 \end{equation}
 con $k \equiv k_0 n$.
-La ecuación (\ref{eqn:maxwell}) es resuelta por el software comercial COMSOL y será una de las herramientas a usar en esta tesis. Por otro lado, utilizando la aproximación paraxial es posible simplificar la ecuación (\ref{eqn:maxwell}) y llegar a la implementación usual de los \textit{Beam Propagation Methods} usados ampliamente en el área \cite{bpm}.
+La ecuación (\ref{eqn:maxwell}) es resuelta por el software comercial COMSOL \textit{Multiphysics} mediante elementos finitos y será una de las herramientas a usar en esta tesis. Por otro lado, utilizando la aproximación paraxial es posible simplificar la ecuación (\ref{eqn:maxwell}) y llegar a la implementación de los \textit{Beam Propagation Methods} usados ampliamente en el área \cite{bics, interorbital, OAMCaging, vortex, bpm}.
 \begin{equation}
 	-i\lambdabar\frac{\partial}{\partial z}\psi(x,y,z) = \left(\frac{\lambdabar^2\nabla_\perp^2}{2n_0} + \Delta n(x,y)\right) \psi (x,y,z) \label{eqn:paraxial}
 \end{equation}
 
-Mientras que aplicando teoría acoplada de modos a la ecuación (\ref{eqn:paraxial}) para describir de forma discreta una red fotónica, es posible derivar las ecuaciones discretas tipo Schrödinger para la envolvente del campo eléctrico (\ref{eqn:CMT}):
+Aplicando teoría acoplada de modos a la ecuación (\ref{eqn:paraxial}) para describir de forma discreta una red fotónica, es posible derivar las ecuaciones discretas tipo Schrödinger para la envolvente normalizada del campo eléctrico \cite{discretesolitons}:
 \begin{equation}
 	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}} \label{eqn:CMT}
 \end{equation}
+
+Para la fabricación de guías de onda se usará un láser femtosegundo pulsado de 1064 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ.
+
 
 La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello se implementó una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de el haz tipo gaussiano proveniente del láser \cite{slm}.
 
@@ -83,7 +90,7 @@ Se está trabajando en la excitación de un OAM con $l = \pm 1$ usando la técni
 
 % citations
 \renewcommand\refname{Referencias}
-\bibliographystyle{siam}
+\bibliographystyle{ieeetr}
 \bibliography{citations}
 
 \end{document}

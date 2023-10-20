@@ -1,57 +1,92 @@
 \begin{thebibliography}{10}
 
-\bibitem{ABCaging}
-{\sc G.~C\'aceres-Aravena, D.~Guzm\'an-Silva, I.~Salinas, and R.~A. Vicencio},
-  {\em Controlled transport based on multiorbital aharonov-bohm photonic
-  caging}, Phys. Rev. Lett., 128 (2022), p.~256602.
+\bibitem{nobel}
+``All nobel prizes in physics.''
 
-\bibitem{interorbital}
-{\sc D.~Guzm\'an-Silva, G.~C\'aceres-Aravena, and R.~A. Vicencio}, {\em
-  Experimental observation of interorbital coupling}, Phys. Rev. Lett., 127
-  (2021), p.~066601.
-
-\bibitem{vortex}
-{\sc Z.~Hu, D.~Bongiovanni, Z.~Wang, X.~Wang, D.~Song, J.~Xu, R.~Morandotti,
-  H.~Buljan, and Z.~Chen}, {\em Topologically protected vortex transport via
-  chiral-symmetric disclination}, 2023.
-
-\bibitem{OAMcaging}
-{\sc C.~J{\"o}rg, G.~Queralt{\'o}, M.~Kremer, G.~Pelegr{\'i}, J.~Schulz,
-  A.~Szameit, G.~von Freymann, J.~Mompart, and V.~Ahufinger}, {\em Artificial
-  gauge field switching using orbital angular momentum modes in optical
-  waveguides}, Light: Science {\&} Applications, 9 (2020), p.~150.
-
-\bibitem{artificialFB}
-{\sc D.~Leykam, A.~Andreanov, and S.~Flach}, {\em Artificial flat band systems:
-  from lattice models to experiments}, Advances in Physics: X, 3 (2018),
-  p.~1473052.
-
-\bibitem{bpm}
-{\sc G.~L. Pedrola}, {\em Beam Propagation Method for Design of Optical
-  Waveguide Devices}, Wiley, 2015.
-
-\bibitem{bics}
-{\sc Y.~Plotnik, O.~Peleg, F.~Dreisow, M.~Heinrich, S.~Nolte, A.~Szameit, and
-  M.~Segev}, {\em Experimental observation of optical bound states in the
-  continuum}, Phys. Rev. Lett., 107 (2011), p.~183901.
-
-\bibitem{vortextrim}
-{\sc J.~Polo, J.~Mompart, and V.~Ahufinger}, {\em Geometrically induced complex
-  tunnelings for ultracold atoms carrying orbital angular momentum}, Phys. Rev.
-  A, 93 (2016), p.~033613.
+\bibitem{fibra}
+``Hogares con acceso a internet fijo alcanzan el 67\% y usuarios aumentan
+  preferencia por redes de alta velocidad.''
 
 \bibitem{femto}
-{\sc A.~Szameit, D.~Bl\"{o}mer, J.~Burghoff, T.~Schreiber, T.~Pertsch,
-  S.~Nolte, A.~T\"{u}nnermann, and F.~Lederer}, {\em Discrete nonlinear
-  localization in femtosecond laser written waveguides in fused silica}, Opt.
-  Express, 13 (2005), pp.~10552--10557.
+A.~Szameit, D.~Bl\"{o}mer, J.~Burghoff, T.~Schreiber, T.~Pertsch, S.~Nolte,
+  A.~T\"{u}nnermann, and F.~Lederer, ``Discrete nonlinear localization in
+  femtosecond laser written waveguides in fused silica,'' {\em Opt. Express},
+  vol.~13, pp.~10552--10557, Dec 2005.
 
-\bibitem{slm}
-{\sc B.~Terhalle}, {\em Controlling Light in Optically Induced Photonic
-  Lattices}, Springer Berlin Heidelberg, Berlin, Heidelberg, 2011.
+\bibitem{bics}
+Y.~Plotnik, O.~Peleg, F.~Dreisow, M.~Heinrich, S.~Nolte, A.~Szameit, and
+  M.~Segev, ``Experimental observation of optical bound states in the
+  continuum,'' {\em Phys. Rev. Lett.}, vol.~107, p.~183901, Oct 2011.
+
+\bibitem{artificialFB}
+D.~Leykam, A.~Andreanov, and S.~Flach, ``Artificial flat band systems: from
+  lattice models to experiments,'' {\em Advances in Physics: X}, vol.~3, no.~1,
+  p.~1473052, 2018.
 
 \bibitem{FBdynamics}
-{\sc R.~A. Vicencio}, {\em Photonic flat band dynamics}, Advances in Physics:
-  X, 6 (2021), p.~1878057.
+R.~A. Vicencio, ``Photonic flat band dynamics,'' {\em Advances in Physics: X},
+  vol.~6, no.~1, p.~1878057, 2021.
+
+\bibitem{discretesolitons}
+F.~Lederer, G.~I. Stegeman, D.~N. Christodoulides, G.~Assanto, M.~Segev, and
+  Y.~Silberberg, ``Discrete solitons in optics,'' {\em Physics Reports},
+  vol.~463, no.~1, pp.~1--126, 2008.
+
+\bibitem{qed}
+S.~Rojas-Rojas, E.~Barriga, C.~Mu\~noz, P.~Solano, and C.~Hermann-Avigliano,
+  ``Manipulation of multimode squeezing in a coupled waveguide array,'' {\em
+  Phys. Rev. A}, vol.~100, p.~023841, Aug 2019.
+
+\bibitem{squeezed}
+R.~Julius, A.~N. Alias, and M.~S.~A. Halim, ``Quantum squeezing in coupled
+  waveguide networks with quadratic and qubic nonlinearity,'' {\em The European
+  Physical Journal Plus}, vol.~137, p.~91, Jan 2022.
+
+\bibitem{topoquantum}
+J.~Medina~Due{\~{n}}as, G.~O'Ryan~P{\'{e}}rez, C.~Hermann-Avigliano, and
+  L.~E.~F. Foa~Torres, ``Quadrature protection of squeezed states in a
+  one-dimensional photonic topological insulator,'' {\em {Quantum}}, vol.~5,
+  p.~526, Aug. 2021.
+
+\bibitem{telecom}
+Z.~Li, S.~Hu, Q.~Zhang, R.~Tian, L.~Gu, Y.~Zhu, Q.~Yuan, R.~Yi, C.~Li, Y.~Liu,
+  Y.~Hao, X.~Gan, and J.~Zhao, ``Telecom-band waveguide-integrated mos2
+  photodetector assisted by hot electrons,'' {\em ACS Photonics}, vol.~9,
+  no.~1, pp.~282--289, 2022.
+
+\bibitem{interorbital}
+D.~Guzm\'an-Silva, G.~C\'aceres-Aravena, and R.~A. Vicencio, ``Experimental
+  observation of interorbital coupling,'' {\em Phys. Rev. Lett.}, vol.~127,
+  p.~066601, Aug 2021.
+
+\bibitem{OAMCaging}
+C.~J{\"o}rg, G.~Queralt{\'o}, M.~Kremer, G.~Pelegr{\'i}, J.~Schulz, A.~Szameit,
+  G.~von Freymann, J.~Mompart, and V.~Ahufinger, ``Artificial gauge field
+  switching using orbital angular momentum modes in optical waveguides,'' {\em
+  Light: Science {\&} Applications}, vol.~9, p.~150, Aug 2020.
+
+\bibitem{ABCaging}
+G.~C\'aceres-Aravena, D.~Guzm\'an-Silva, I.~Salinas, and R.~A. Vicencio,
+  ``Controlled transport based on multiorbital aharonov-bohm photonic caging,''
+  {\em Phys. Rev. Lett.}, vol.~128, p.~256602, Jun 2022.
+
+\bibitem{vortex}
+Z.~Hu, D.~Bongiovanni, Z.~Wang, X.~Wang, D.~Song, J.~Xu, R.~Morandotti,
+  H.~Buljan, and Z.~Chen, ``Topologically protected vortex transport via
+  chiral-symmetric disclination,'' 2023.
+
+\bibitem{vortextrim}
+J.~Polo, J.~Mompart, and V.~Ahufinger, ``Geometrically induced complex
+  tunnelings for ultracold atoms carrying orbital angular momentum,'' {\em
+  Phys. Rev. A}, vol.~93, p.~033613, Mar 2016.
+
+\bibitem{bpm}
+G.~L. Pedrola, {\em Beam Propagation Method for Design of Optical Waveguide
+  Devices}.
+\newblock Wiley, 2015.
+
+\bibitem{slm}
+B.~Terhalle, {\em Controlling Light in Optically Induced Photonic Lattices}.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2011.
 
 \end{thebibliography}
