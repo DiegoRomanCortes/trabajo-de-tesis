@@ -19,10 +19,11 @@
 
 \section{Contexto del proyecto (introducción y descripción del estado del arte)}
 	
-	Entre los premios Nobel de la última década se encuentran varios estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos y luego attosegundos), por experimentos con fotones entrelazados, por la ideación de pinzas ópticas y por la invención de luces LED \cite{nobel}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y que es la principal fuente de Internet en el país \cite{fibra}. 
+	Entre los premios Nobel de la última década se encuentran varios que están estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos y luego attosegundos), por experimentos con fotones entrelazados, por la ideación de pinzas ópticas y por la invención de luces LED \cite{nobel}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y actualmente es el principal medio de transmición de Internet en el país \cite{fibra}. 
 	
-	La técnica de escritura de guías de onda por láser femtosegundo ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, artificialFB, FBdynamics}. Su importancia radica no sólo en emular situaciones de la física del sólido, sino que también en el estudio de fenómenos ópticos como la no-linealidad tipo Kerr, la posibilidad de propagar luz cuántica o la cercanía con telecomunicaciones \cite{discretesolitons, qed, squeezed, topoquantum, telecom}.
-	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo no trivial \cite{interorbital, OAMCaging, ABCaging}. Recientemente se ha reportado la propagación de luz con momentum angular orbital (OAM) por medio de redes fotónicas que presevan simetría $C_3$ \cite{vortex}. El acoplamiento entre modos OAM permite la generación de flujos magnéticos distintos de $0$ o $\pi$ \cite{vortextrim}.
+	Numerosos de estos avances se han visto propiciado por la técnica de escritura de guías de onda por láser femtosegundo que ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, lieb1, lieb2, artificialFB, FBdynamics}. Su importancia radica no sólo en emular situaciones de la física del sólido, sino que también en el estudio de fenómenos ópticos como la no-linealidad tipo Kerr, la posibilidad de propagar luz cuántica o su compatinilidad con la transmición en la industria de telecomunicaciones \cite{discretesolitons, qed, squeezed, topoquantum, telecom}.
+	
+	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo $\Phi = \pi$ el cual permite el transporte controlado de la luz \cite{interorbital, OAMCaging, ABCaging}. Se ha reportado la propagación de luz con momentum angular orbital (OAM) sólo mediante de redes fotónicas que presevan simetría $C_3$ \cite{OAMWG, vortex}. Sin embargo, el acoplamiento entre modos OAM permitiría la generación de flujos magnéticos distintos de $0$ o $\pi$ y por tanto una direccionalidad dependiente de la circulación propagante \cite{vortextrim, topoOAM}.
 \section{Objetivos de la tesis}
 \begin{enumerate}
 	\item Utilizar moléculas fotónicas como base para fabricar y estudiar redes interorbitales.
@@ -47,7 +48,13 @@ Aplicando teoría acoplada de modos a la ecuación (\ref{eqn:paraxial}) para des
 	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}} \label{eqn:CMT}
 \end{equation}
 
-Para la fabricación de guías de onda se usará un láser femtosegundo pulsado de 1064 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ.
+Para la fabricación de guías de onda se utiliza un láser femtosegundo pulsado de 1064 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ motorizada.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{./media/femtosetup.png}
+	\caption{a) Montaje de fabricación de guías de onda mediante el enfoque de láser femtosegundo. b)      Imagen microscópica de la cara salida iluminada con luz blanca. \label{fig:SLM}}
+\end{figure}
 
 
 La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello se implementó una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de el haz tipo gaussiano proveniente del láser \cite{slm}.
@@ -55,7 +62,7 @@ La excitación de redes fotónicas interorbitales hace necesario el uso de condi
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{./media/SLMsetup.png}
-	\caption{Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.\label{fig:SLM}}
+	\caption{Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.\label{fig:femtosetup}}
 \end{figure}
 
 \section{Trabajo adelantado (si lo hubiera)}
@@ -65,8 +72,8 @@ Durante el curso de Seminario de Investigación I (Primavera 2022) se hizo un ba
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{./media/SPinteraction.jpg}
-	\caption{Interacción interorbital en guías indivuduales y en moléculas fotónicas.}
+	\includegraphics[width=0.5\linewidth]{./media/SPinteraction.png}
+	\caption{Interacción interorbital en moléculas fotónicas a 25 $\mu$m de sepración y 13 mm de propagación. Se inyecta luz láser en la molécula S ubicada a la izquierda.}
 \end{figure}
 
 Durante el curso de Seminario de Investigación II (Otoño 2023) se implementó el montaje de modulación esquematizado en la Figura \ref{fig:SLM}. Con ello fue posible la excitación de un dipolo horizontal:
@@ -83,7 +90,7 @@ Se está trabajando en la excitación de un OAM con $l = \pm 1$ usando la técni
 	\centering
 	\includegraphics[width=0.7\linewidth]{./media/vortex.png}
 	\caption{a) Intensidad de un OAM propagado en una molécula fotónica. b) Interferograma que captura el cambio de fase esperado.}
-\end{figure}
+\end{figure} 
 
 \section{Plan de trabajo o carta Gantt}
 

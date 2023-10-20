@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -15,46 +18,52 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{nobel}
 \citation{fibra}
-\citation{femto,bics,artificialFB,FBdynamics}
+\citation{femto,bics,lieb1,lieb2,artificialFB,FBdynamics}
 \citation{discretesolitons,qed,squeezed,topoquantum,telecom}
 \citation{interorbital,OAMCaging,ABCaging}
-\citation{vortex}
-\citation{vortextrim}
+\citation{OAMWG,vortex}
+\citation{vortextrim,topoOAM}
 \citation{bics,interorbital,OAMCaging,vortex,bpm}
 \citation{discretesolitons}
-\citation{slm}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Contexto del proyecto (introducción y descripción del estado del arte)}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Objetivos de la tesis}{1}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3}Metodología}{1}{section.3}\protected@file@percent }
 \newlabel{eqn:maxwell}{{1}{1}{Metodología}{equation.3.1}{}}
 \newlabel{eqn:paraxial}{{2}{1}{Metodología}{equation.3.2}{}}
 \newlabel{eqn:CMT}{{3}{1}{Metodología}{equation.3.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.}}{2}{figure.caption.1}\protected@file@percent }
+\citation{slm}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces a) Montaje de fabricación de guías de onda mediante el enfoque de láser femtosegundo. b) Imagen microscópica de la cara salida iluminada con luz blanca. \relax }}{2}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:SLM}{{1}{2}{Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase}{figure.caption.1}{}}
+\newlabel{fig:SLM}{{1}{2}{a) Montaje de fabricación de guías de onda mediante el enfoque de láser femtosegundo. b) Imagen microscópica de la cara salida iluminada con luz blanca. \relax }{figure.caption.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.\relax }}{2}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:femtosetup}{{2}{2}{Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.\relax }{figure.caption.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Trabajo adelantado (si lo hubiera)}{2}{section.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Interacción interorbital en guías indivuduales y en moléculas fotónicas.}}{2}{figure.caption.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces a)-f) Barrido en ángulo de dímeros dipolares a una distancia de separación de 25 $\mu $m propagando en una distancia de 25 mm en la dirección perpencicular al plano. La inyección se realiza en la molécula inferior izquierda con un modo Hermite-Gauss TEM$_{10}$. En d) se pasa por el ángulo mágico que hace nula la interacción dipolar.}}{2}{figure.caption.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Interacción interorbital en moléculas fotónicas a 25 $\mu $m de sepración y 13 mm de propagación. Se inyecta luz láser en la molécula S ubicada a la izquierda.\relax }}{2}{figure.caption.3}\protected@file@percent }
 \bibstyle{ieeetr}
 \bibdata{citations}
 \bibcite{nobel}{1}
 \bibcite{fibra}{2}
 \bibcite{femto}{3}
 \bibcite{bics}{4}
-\bibcite{artificialFB}{5}
-\bibcite{FBdynamics}{6}
-\bibcite{discretesolitons}{7}
-\bibcite{qed}{8}
-\bibcite{squeezed}{9}
-\bibcite{topoquantum}{10}
-\bibcite{telecom}{11}
-\bibcite{interorbital}{12}
-\bibcite{OAMCaging}{13}
-\bibcite{ABCaging}{14}
-\bibcite{vortex}{15}
-\bibcite{vortextrim}{16}
-\bibcite{bpm}{17}
-\bibcite{slm}{18}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces a) Intensidad de un OAM propagado en una molécula fotónica. b) Interferograma que captura el cambio de fase esperado.}}{3}{figure.caption.4}\protected@file@percent }
+\bibcite{lieb1}{5}
+\bibcite{lieb2}{6}
+\bibcite{artificialFB}{7}
+\bibcite{FBdynamics}{8}
+\bibcite{discretesolitons}{9}
+\bibcite{qed}{10}
+\bibcite{squeezed}{11}
+\bibcite{topoquantum}{12}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces a)-f) Barrido en ángulo de dímeros dipolares a una distancia de separación de 25 $\mu $m propagando en una distancia de 25 mm en la dirección perpencicular al plano. La inyección se realiza en la molécula inferior izquierda con un modo Hermite-Gauss TEM$_{10}$. En d) se pasa por el ángulo mágico que hace nula la interacción dipolar.\relax }}{3}{figure.caption.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces a) Intensidad de un OAM propagado en una molécula fotónica. b) Interferograma que captura el cambio de fase esperado.\relax }}{3}{figure.caption.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5}Plan de trabajo o carta Gantt}{3}{section.5}\protected@file@percent }
+\bibcite{telecom}{13}
+\bibcite{interorbital}{14}
+\bibcite{OAMCaging}{15}
+\bibcite{ABCaging}{16}
+\bibcite{OAMWG}{17}
+\bibcite{vortex}{18}
+\bibcite{vortextrim}{19}
+\bibcite{topoOAM}{20}
+\bibcite{bpm}{21}
+\bibcite{slm}{22}
 \gdef \@abspage@last{4}

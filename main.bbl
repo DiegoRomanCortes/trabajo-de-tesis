@@ -18,6 +18,18 @@ Y.~Plotnik, O.~Peleg, F.~Dreisow, M.~Heinrich, S.~Nolte, A.~Szameit, and
   M.~Segev, ``Experimental observation of optical bound states in the
   continuum,'' {\em Phys. Rev. Lett.}, vol.~107, p.~183901, Oct 2011.
 
+\bibitem{lieb1}
+R.~A. Vicencio, C.~Cantillano, L.~Morales-Inostroza, B.~Real,
+  C.~Mej\'{\i}a-Cort\'es, S.~Weimann, A.~Szameit, and M.~I. Molina,
+  ``Observation of localized states in lieb photonic lattices,'' {\em Phys.
+  Rev. Lett.}, vol.~114, p.~245503, Jun 2015.
+
+\bibitem{lieb2}
+S.~Mukherjee, A.~Spracklen, D.~Choudhury, N.~Goldman, P.~\"Ohberg,
+  E.~Andersson, and R.~R. Thomson, ``Observation of a localized flat-band state
+  in a photonic lieb lattice,'' {\em Phys. Rev. Lett.}, vol.~114, p.~245504,
+  Jun 2015.
+
 \bibitem{artificialFB}
 D.~Leykam, A.~Andreanov, and S.~Flach, ``Artificial flat band systems: from
   lattice models to experiments,'' {\em Advances in Physics: X}, vol.~3, no.~1,
@@ -70,6 +82,10 @@ G.~C\'aceres-Aravena, D.~Guzm\'an-Silva, I.~Salinas, and R.~A. Vicencio,
   ``Controlled transport based on multiorbital aharonov-bohm photonic caging,''
   {\em Phys. Rev. Lett.}, vol.~128, p.~256602, Jun 2022.
 
+\bibitem{OAMWG}
+W.-G. Shen, Y.~Chen, H.-M. Wang, and X.-M. Jin, ``Oam mode conversion in a
+  photonic chip,'' {\em Optics Communications}, vol.~507, p.~127615, 2022.
+
 \bibitem{vortex}
 Z.~Hu, D.~Bongiovanni, Z.~Wang, X.~Wang, D.~Song, J.~Xu, R.~Morandotti,
   H.~Buljan, and Z.~Chen, ``Topologically protected vortex transport via
@@ -79,6 +95,11 @@ Z.~Hu, D.~Bongiovanni, Z.~Wang, X.~Wang, D.~Song, J.~Xu, R.~Morandotti,
 J.~Polo, J.~Mompart, and V.~Ahufinger, ``Geometrically induced complex
   tunnelings for ultracold atoms carrying orbital angular momentum,'' {\em
   Phys. Rev. A}, vol.~93, p.~033613, Mar 2016.
+
+\bibitem{topoOAM}
+C.~Jiang, Y.~Wu, M.~Qin, and S.~Ke, ``Topological bound modes with orbital
+  angular momentum in optical waveguide arrays,'' {\em Journal of Lightwave
+  Technology}, vol.~41, no.~7, pp.~2205--2211, 2023.
 
 \bibitem{bpm}
 G.~L. Pedrola, {\em Beam Propagation Method for Design of Optical Waveguide
