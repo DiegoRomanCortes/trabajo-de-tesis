@@ -3,11 +3,14 @@
 \usepackage[a4paper, total={16cm, 27cm}]{geometry}
 \usepackage{txfonts}
 \usepackage{graphicx}
+\usepackage[spanish, es-nodecimaldot]{babel}
 \usepackage{float}
 \usepackage[figurename=Figura]{caption}
-\usepackage{cite}
+\usepackage[numbers, sort&compress]{natbib}
 \usepackage{url}
+\usepackage{indentfirst}
 \usepackage{hyperref}
+
 
 \author{Diego Antonio Román Cortés\\Profesor Guía: Rodrigo Andrés Vicencio Poblete}
 \date{Departamento de Física, Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile}
@@ -18,12 +21,12 @@
 %Nombre del candidato y del profesor guía o profesores guía
 
 \section{Contexto del proyecto (introducción y descripción del estado del arte)}
+
+Entre los premios Nobel de la última década se encuentran varios que están estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos y luego attosegundos), por experimentos con fotones entrelazados, por la ideación de pinzas ópticas y por la invención de luces LED \cite{nobel}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y actualmente es el principal medio de transmición de Internet en el país \cite{fibra}. 
 	
-	Entre los premios Nobel de la última década se encuentran varios que están estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos y luego attosegundos), por experimentos con fotones entrelazados, por la ideación de pinzas ópticas y por la invención de luces LED \cite{nobel}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y actualmente es el principal medio de transmición de Internet en el país \cite{fibra}. 
+	Numerosos de estos avances se han visto propiciado por la técnica de escritura de guías de onda por láser femtosegundo que ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, lieb1, lieb2, artificialFB, FBdynamics, dendritas, splitters}. Su importancia radica no sólo en emular situaciones de la física del sólido, sino que también en el estudio de fenómenos ópticos como la no-linealidad tipo Kerr y su uso en la formación de solitones \cite{discretesolitons}, la posibilidad de propagar luz cuántica \cite{qed, squeezed, topoquantum} o su compatibilidad con la transmisión de información en la industria de telecomunicaciones \cite{telecom}.
 	
-	Numerosos de estos avances se han visto propiciado por la técnica de escritura de guías de onda por láser femtosegundo que ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, lieb1, lieb2, artificialFB, FBdynamics}. Su importancia radica no sólo en emular situaciones de la física del sólido, sino que también en el estudio de fenómenos ópticos como la no-linealidad tipo Kerr, la posibilidad de propagar luz cuántica o su compatinilidad con la transmición en la industria de telecomunicaciones \cite{discretesolitons, qed, squeezed, topoquantum, telecom}.
-	
-	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo $\Phi = \pi$ el cual permite el transporte controlado de la luz \cite{interorbital, OAMCaging, ABCaging}. Se ha reportado la propagación de luz con momentum angular orbital (OAM) sólo mediante de redes fotónicas que presevan simetría $C_3$ \cite{OAMWG, vortex}. Sin embargo, el acoplamiento entre modos OAM permitiría la generación de flujos magnéticos distintos de $0$ o $\pi$ y por tanto una direccionalidad dependiente de la circulación propagante \cite{vortextrim, topoOAM}.
+	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo $\Phi = \pi$ el cual permite el transporte controlado de la luz \cite{interorbital, OAMCaging, ABCaging}. Una aplicación directa de este fenómeno es la generación de guías de onda que admitan modos guiados de luz con momentum angular orbital (OAM) y la codificación de su carga topológica $l$ como medio para transmitir información \cite{oamapp, oamfree}. Se ha reportado la propagación OAM sólo mediante de redes fotónicas que presevan simetría $C_3$ \cite{OAMWG, vortex}. Sin embargo, el acoplamiento entre modos OAM en una red fotónica permitiría la generación de flujos magnéticos distintos de $0$ o $\pi$ lo que se refleja en una direccionalidad dependiente de la circulación propagante \cite{vortextrim, topoOAM}. Para ello será necesario introducir el concepto de ``moléculas fotónicas'', entendidas  \cite{molecules} y su aplicación en la generación de redes fotónicas \cite{SPSSH}.
 \section{Objetivos de la tesis}
 \begin{enumerate}
 	\item Utilizar moléculas fotónicas como base para fabricar y estudiar redes interorbitales.
@@ -97,7 +100,7 @@ Se está trabajando en la excitación de un OAM con $l = \pm 1$ usando la técni
 
 % citations
 \renewcommand\refname{Referencias}
-\bibliographystyle{ieeetr}
+\bibliographystyle{unsrtnat}
 \bibliography{citations}
 
 \end{document}

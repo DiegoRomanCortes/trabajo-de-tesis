@@ -1,46 +1,49 @@
 This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-The style file: ieeetr.bst
+The style file: unsrtnat.bst
 Database file #1: citations.bib
-You've used 22 entries,
-            1876 wiz_defined-function locations,
-            617 strings with 7839 characters,
-and the built_in function-call counts, 6394 in all, are:
-= -- 595
-> -- 348
-< -- 0
-+ -- 125
-- -- 103
-* -- 456
-:= -- 906
-add.period$ -- 22
-call.type$ -- 22
-change.case$ -- 20
-chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 346
-empty$ -- 502
-format.name$ -- 103
-if$ -- 1572
-int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 21
-newline$ -- 71
-num.names$ -- 20
-pop$ -- 62
+Warning--empty year in nobel
+Warning--empty year in fibra
+You've used 28 entries,
+            2481 wiz_defined-function locations,
+            783 strings with 12035 characters,
+and the built_in function-call counts, 12537 in all, are:
+= -- 984
+> -- 876
+< -- 3
++ -- 324
+- -- 268
+* -- 1199
+:= -- 2148
+add.period$ -- 134
+call.type$ -- 28
+change.case$ -- 54
+chr.to.int$ -- 28
+cite$ -- 32
+duplicate$ -- 512
+empty$ -- 993
+format.name$ -- 294
+if$ -- 2564
+int.to.chr$ -- 1
+int.to.str$ -- 29
+missing$ -- 26
+newline$ -- 198
+num.names$ -- 78
+pop$ -- 175
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 28
 quote$ -- 0
-skip$ -- 314
+skip$ -- 276
 stack$ -- 0
-substring$ -- 270
-swap$ -- 193
+substring$ -- 481
+swap$ -- 70
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 42
-width$ -- 24
-write$ -- 212
+type$ -- 190
+warning$ -- 2
+while$ -- 77
+width$ -- 0
+write$ -- 464
+(There were 2 warnings)
