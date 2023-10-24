@@ -7,16 +7,16 @@ Warning--empty year in nobel
 Warning--empty year in fibra
 You've used 28 entries,
             2481 wiz_defined-function locations,
-            783 strings with 12035 characters,
-and the built_in function-call counts, 12537 in all, are:
-= -- 984
+            784 strings with 12076 characters,
+and the built_in function-call counts, 12551 in all, are:
+= -- 987
 > -- 876
 < -- 3
 + -- 324
 - -- 268
-* -- 1199
-:= -- 2148
-add.period$ -- 134
+* -- 1201
+:= -- 2151
+add.period$ -- 135
 call.type$ -- 28
 change.case$ -- 54
 chr.to.int$ -- 28
@@ -24,13 +24,13 @@ cite$ -- 32
 duplicate$ -- 512
 empty$ -- 993
 format.name$ -- 294
-if$ -- 2564
+if$ -- 2567
 int.to.chr$ -- 1
 int.to.str$ -- 29
 missing$ -- 26
-newline$ -- 198
+newline$ -- 199
 num.names$ -- 78
-pop$ -- 175
+pop$ -- 174
 preamble$ -- 1
 purify$ -- 28
 quote$ -- 0
@@ -45,5 +45,5 @@ type$ -- 190
 warning$ -- 2
 while$ -- 77
 width$ -- 0
-write$ -- 464
+write$ -- 466
 (There were 2 warnings)

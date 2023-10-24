@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.10.19)  23 OCT 2023 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.10.19)  24 OCT 2023 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -500,155 +500,42 @@ File: utxsyc.fd 2000/12/15 v3.1
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 27.
-
-
-Package natbib Warning: Citation `femto' on page 1 undefined on input line 27.
-
-
-Package natbib Warning: Citation `bics' on page 1 undefined on input line 27.
-
-
-Package natbib Warning: Citation `lieb1' on page 1 undefined on input line 27.
-
-
-Package natbib Warning: Citation `lieb2' on page 1 undefined on input line 27.
-
-
-Package natbib Warning: Citation `artificialFB' on page 1 undefined on input li
-ne 27.
-
-
-Package natbib Warning: Citation `FBdynamics' on page 1 undefined on input line
- 27.
-
-
-Package natbib Warning: Citation `dendritas' on page 1 undefined on input line 
-27.
-
-
-Package natbib Warning: Citation `splitters' on page 1 undefined on input line 
-27.
-
-
-Package natbib Warning: Citation `discretesolitons' on page 1 undefined on inpu
-t line 27.
-
-
-Package natbib Warning: Citation `qed' on page 1 undefined on input line 27.
-
-
-Package natbib Warning: Citation `squeezed' on page 1 undefined on input line 2
-7.
-
-
-Package natbib Warning: Citation `topoquantum' on page 1 undefined on input lin
-e 27.
-
-
-Package natbib Warning: Citation `telecom' on page 1 undefined on input line 27
-.
-
-
-Package natbib Warning: Citation `interorbital' on page 1 undefined on input li
-ne 29.
-
-
-Package natbib Warning: Citation `OAMCaging' on page 1 undefined on input line 
-29.
-
-
-Package natbib Warning: Citation `ABCaging' on page 1 undefined on input line 2
-9.
-
-
-Package natbib Warning: Citation `oamapp' on page 1 undefined on input line 29.
-
-
-
-Package natbib Warning: Citation `oamfree' on page 1 undefined on input line 29
-.
-
-
-Package natbib Warning: Citation `OAMWG' on page 1 undefined on input line 29.
-
-
-Package natbib Warning: Citation `vortex' on page 1 undefined on input line 29.
-
-
-
-Package natbib Warning: Citation `vortextrim' on page 1 undefined on input line
- 29.
-
-
-Package natbib Warning: Citation `topoOAM' on page 1 undefined on input line 29
-.
-
-
-Package natbib Warning: Citation `molecules' on page 1 undefined on input line 
-29.
-
-
-Package natbib Warning: Citation `SPSSH' on page 1 undefined on input line 29.
-
-
-Package natbib Warning: Citation `bics' on page 1 undefined on input line 44.
-
-
-Package natbib Warning: Citation `interorbital' on page 1 undefined on input li
-ne 44.
-
-
-Package natbib Warning: Citation `OAMCaging' on page 1 undefined on input line 
-44.
-
-
-Package natbib Warning: Citation `vortex' on page 1 undefined on input line 44.
-
-
-
-Package natbib Warning: Citation `bpm' on page 1 undefined on input line 44.
-
-
-Package natbib Warning: Citation `discretesolitons' on page 1 undefined on inpu
-t line 49.
-
-<./media/femtosetup.png, id=25, 1478.52374pt x 473.51906pt>
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 37.
+<./media/femtosetup.png, id=51, 1478.52374pt x 473.51906pt>
 File: ./media/femtosetup.png Graphic file (type png)
 <use ./media/femtosetup.png>
 Package pdftex.def Info: ./media/femtosetup.png  used on input line 58.
 (pdftex.def)             Requested size: 409.71689pt x 131.21884pt.
-[1
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `slm' on page 2 undefined on input line 63.
-
-<./media/SLMsetup.png, id=47, 783.67781pt x 356.0803pt>
+<./media/SLMsetup.png, id=93, 783.67781pt x 356.0803pt>
 File: ./media/SLMsetup.png Graphic file (type png)
 <use ./media/SLMsetup.png>
 Package pdftex.def Info: ./media/SLMsetup.png  used on input line 67.
 (pdftex.def)             Requested size: 409.71689pt x 186.16798pt.
-<./media/SPinteraction.png, id=48, 455.301pt x 226.2051pt>
+<./media/SPinteraction.png, id=94, 455.301pt x 226.2051pt>
 File: ./media/SPinteraction.png Graphic file (type png)
 <use ./media/SPinteraction.png>
 Package pdftex.def Info: ./media/SPinteraction.png  used on input line 78.
 (pdftex.def)             Requested size: 227.62204pt x 113.08846pt.
-<./media/dipoles.jpg, id=50, 1589.94pt x 275.3487pt>
+<./media/dipoles.jpg, id=96, 1589.94pt x 275.3487pt>
 File: ./media/dipoles.jpg Graphic file (type jpg)
 <use ./media/dipoles.jpg>
 Package pdftex.def Info: ./media/dipoles.jpg  used on input line 86.
 (pdftex.def)             Requested size: 455.24408pt x 78.84071pt.
-[2 <./media/femtosetup.png> <./media/SLMsetup.png> <./media/SPinteraction.png>]
-<./media/vortex.png, id=62, 578.16pt x 252.945pt>
+ [2 <./media/femtosetup.png> <./media/SLMsetup.png> <./media/SPinteraction.png>
+]
+<./media/vortex.png, id=109, 578.16pt x 252.945pt>
 File: ./media/vortex.png Graphic file (type png)
 <use ./media/vortex.png>
 Package pdftex.def Info: ./media/vortex.png  used on input line 94.
 (pdftex.def)             Requested size: 318.66946pt x 139.41736pt.
-(./main.bbl
+ (./main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
 11.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
@@ -675,36 +562,21 @@ Overfull \hbox (149.66426pt too wide) in paragraph at lines 14--18
 ad$[]\OT1/txr/m/n/10 . 
  []
 
-[3 <./media/dipoles.jpg> <./media/vortex.png>] [4])
-
-Package natbib Warning: There were undefined citations.
-
-[5] (./main.aux
+[3 <./media/dipoles.jpg> <./media/vortex.png>] [4]) [5] (./main.aux
 LaTeX Info: Redefining \. on input line 39.
 LaTeX Info: Redefining \% on input line 39.
-
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
 )
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: DC358A6B1FD8F48AF1495AEDE290912F;289
-(rerunfilecheck)             After:  6E38FCBC91BB9912CA03B38E194B694A;353.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 6E38FCBC91BB9912CA03B38E194B694A;353.
  ) 
 Here is how much of TeX's memory you used:
- 9875 strings out of 479304
- 149973 string characters out of 5869778
- 482510 words of memory out of 5000000
- 26844 multiletter control sequences out of 15000+600000
+ 9876 strings out of 479304
+ 149984 string characters out of 5869778
+ 484644 words of memory out of 5000000
+ 26845 multiletter control sequences out of 15000+600000
  438164 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,7n,74p,1072b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,7n,74p,1048b,514s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -715,10 +587,10 @@ re/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (5 pages, 1026380 bytes).
+Output written on main.pdf (5 pages, 1026878 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
+ 219 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
  50 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
