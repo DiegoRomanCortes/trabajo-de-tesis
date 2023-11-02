@@ -7,7 +7,7 @@
 \usepackage{float}
 \usepackage[figurename=Figura]{caption}
 \usepackage[numbers, sort&compress]{natbib}
-\usepackage{url}
+\usepackage[hyphens]{url}
 \usepackage{indentfirst}
 \usepackage{hyperref}
 
@@ -22,9 +22,9 @@
 
 \section{Contexto del proyecto (introducción y descripción del estado del arte)}
 
-Entre los premios Nobel de la última década se encuentran varios que están estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos y luego attosegundos), por experimentos con fotones entrelazados, por la ideación de pinzas ópticas y por la invención de luces LED \cite{nobel}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y actualmente es el principal medio de transmición de Internet en el país \cite{fibra}. 
+Entre los premios Nobel de la última década \cite{nobel} se encuentran varios que están estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos \cite{femto1} y luego attosegundos \cite{atto1, atto2, atto3}), por experimentos con fotones entrelazados \cite{photons1, photons2, photons3}, por la ideación de pinzas ópticas \cite{opticaltweezers} y por la invención de luces LED \cite{led1, led2, led3}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y actualmente es el principal medio de transmisión de Internet en el país \cite{fibra}. 
 	
-	Numerosos de estos avances se han visto propiciado por la técnica de escritura de guías de onda por láser femtosegundo que ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, lieb1, lieb2, artificialFB, FBdynamics, dendritas, splitters}. Su importancia radica no sólo en emular situaciones de la física del sólido, sino que también en el estudio de fenómenos ópticos como la no-linealidad tipo Kerr y su uso en la formación de solitones \cite{discretesolitons}, la posibilidad de propagar luz cuántica \cite{qed, squeezed, topoquantum} o su compatibilidad con la transmisión de información en la industria de telecomunicaciones \cite{telecom}.
+	Numerosos de estos avances se han visto propiciado por la técnica de escritura de guías de onda por láser femtosegundo que ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, lieb1, lieb2, artificialFB, FBdynamics, dendritas, splitters}. Su importancia radica no sólo en emular situaciones de la física del sólido \cite{BlochOsci, Anderson, lieb1, lieb2, artificialFB, FBdynamics, obstopo, obsfloquet}, sino que también en el estudio de fenómenos ópticos como la no-linealidad tipo Kerr y su uso en la formación de solitones \cite{discretesolitons}, la posibilidad de propagar luz cuántica \cite{qed, squeezed, topoquantum} o su compatibilidad con la transmisión de información en la industria de telecomunicaciones \cite{telecom}.
 	
 	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo $\Phi = \pi$ el cual permite el transporte controlado de la luz \cite{interorbital, OAMCaging, ABCaging}. Una aplicación directa de este fenómeno es la generación de guías de onda que admitan modos guiados de luz con momentum angular orbital (OAM) y la codificación de su carga topológica $l$ como medio para transmitir información \cite{oamapp, oamfree}. Se ha reportado la propagación OAM sólo mediante de redes fotónicas que presevan simetría $C_3$ \cite{OAMWG, vortex}. Sin embargo, el acoplamiento entre modos OAM en una red fotónica permitiría la generación de flujos magnéticos distintos de $0$ o $\pi$ lo que se refleja en una direccionalidad dependiente de la circulación propagante \cite{vortextrim, topoOAM}. Para ello será necesario introducir el concepto de ``moléculas fotónicas'' \cite{molecules} y su aplicación en la generación de redes fotónicas \cite{SPSSH}.
 \section{Objetivos de la tesis}
@@ -46,27 +46,36 @@ La ecuación (\ref{eqn:maxwell}) es resuelta por el software comercial COMSOL \t
 	-i\lambdabar\frac{\partial}{\partial z}\psi(x,y,z) = \left(\frac{\lambdabar^2\nabla_\perp^2}{2n_0} + \Delta n(x,y)\right) \psi (x,y,z) \label{eqn:paraxial}
 \end{equation}
 
-Aplicando teoría acoplada de modos a la ecuación (\ref{eqn:paraxial}) para describir de forma discreta una red fotónica, es posible derivar las ecuaciones discretas tipo Schrödinger para la envolvente normalizada del campo eléctrico \cite{discretesolitons}:
+Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}) para describir de forma discreta una red fotónica, es posible derivar las ecuaciones discretas tipo Schrödinger para la envolvente normalizada del campo eléctrico \cite{discretesolitons, artificialFB, FBdynamics}
 \begin{equation}
 	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}} \label{eqn:CMT}
 \end{equation}
 
-Para la fabricación de guías de onda se utiliza un láser femtosegundo pulsado de 1064 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ motorizada.
+Para la fabricación de guías de onda se utiliza un láser femtosegundo pulsado de 1064 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ motorizada, cuyo uso se ilustra en la Figura \ref{fig:femtosetup}: 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{./media/femtosetup.png}
-	\caption{a) Montaje de fabricación de guías de onda mediante el enfoque de láser femtosegundo. b)      Imagen microscópica de la cara salida iluminada con luz blanca. \label{fig:SLM}}
+	\caption{a) Montaje de fabricación de guías de onda mediante el enfoque de láser femtosegundo. b)      Imagen microscópica de la cara salida iluminada con luz blanca. \label{fig:femtosetup}}
 \end{figure}
 
 
-La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello se implementó una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de el haz tipo gaussiano proveniente del láser \cite{slm}.
+La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello se implementó una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de el haz tipo gaussiano proveniente del láser \cite{slm} y que se ilustra en la Figura \ref{fig:SLM}:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{./media/SLMsetup.png}
-	\caption{Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.\label{fig:femtosetup}}
+	\caption{Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.\label{fig:SLM}}
 \end{figure}
+
+En ocasiones resulta más apropiada la excitación de redes fotónicas variando la longitud de onda de la excitación \cite{spectraltransfer, SPSSH}. Para ello se utiliza el montaje ilustrado en la Figura \ref{fig:supercontinuum}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{./media/supercontinuum.png}
+	\caption{Montaje de excitación de guías de onda con distintas longitudes de onda.\label{fig:supercontinuum}}
+\end{figure}
+
 
 \section{Trabajo adelantado (si lo hubiera)}
 
@@ -97,10 +106,22 @@ Se está trabajando en la excitación de un OAM con $l = \pm 1$ usando la técni
 
 \section{Plan de trabajo o carta Gantt}
 
+Para la realización del trabajo de tesis se propone el siguiente plan de trabajo:
+
+\begin{enumerate}
+	\item Estimación de parámetros del perfil de índice de refracción a partir de la excitación de dímeros homogéneos y comparación con simulaciones numéricas. Mes 1.
+	\item Fabricación y medición de dímeros vorticiales para caracterizar acoplamientos P simétricos y antisimétricos. Meses 2-3.
+	\item Simulación de redes con vórtices con efectos experimentales apreciables al cambiar el valor de la circulación $l$. Meses 3-4.
+	\item Fabricación y medición de redes fotónicas con flujo no trivial mediante SLM y excitación por supercontinuo. Meses 5-8.
+	\item Escritura y defensa de Tesis. Meses 9-12.
+\end{enumerate}
+
 
 % citations
 \renewcommand\refname{Referencias}
 \bibliographystyle{unsrtnat}
+
+
 \bibliography{citations}
 
 \end{document}
