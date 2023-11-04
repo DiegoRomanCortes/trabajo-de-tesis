@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\usepackage[a4paper, total={16cm, 27cm}]{geometry}
+\usepackage[a4paper, total={16cm, 28cm}]{geometry}
 \usepackage{txfonts}
 \usepackage{graphicx}
 \usepackage[spanish, es-nodecimaldot]{babel}
@@ -10,6 +10,7 @@
 \usepackage[hyphens]{url}
 \usepackage{indentfirst}
 \usepackage{hyperref}
+\usepackage{xcolor}
 
 
 \author{Diego Antonio Román Cortés\\Profesor Guía: Rodrigo Andrés Vicencio Poblete}
@@ -22,14 +23,14 @@
 
 \section{Contexto del proyecto (introducción y descripción del estado del arte)}
 
-Entre los premios Nobel de la última década \cite{nobel} se encuentran varios que están estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos \cite{femto1} y luego attosegundos \cite{atto1, atto2, atto3}), por experimentos con fotones entrelazados \cite{photons1, photons2, photons3}, por la ideación de pinzas ópticas \cite{opticaltweezers} y por la invención de luces LED \cite{led1, led2, led3}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y actualmente es el principal medio de transmisión de Internet en el país \cite{fibra}. 
+Entre los premios Nobel de la última década \cite{nobel} se encuentran varios que están estrechamente ligados a la óptica: por la generación de pulsos de luz ultra cortos (femtosegundos \cite{femto1} y luego attosegundos \cite{atto1, atto2, atto3}), por experimentos con fotones entrelazados \cite{photons1, photons2, photons3}, por la ideación de pinzas ópticas \cite{opticaltweezers} y por la invención de luces LED \cite{led1, led2, led3}. El estudio del comportamiento de la luz en diversos contextos ha permitido el posterior desarrollo tecnológico con aplicaciones industriales, en medicina, en comunicaciones e incluso militares. Una aplicación cotidiana es la fibra óptica, que actúa como una guía de onda para la luz y actualmente es el principal medio de transmisión de Internet en el mundo \cite{fibra2, fibra}. 
 	
-	Numerosos de estos avances se han visto propiciado por la técnica de escritura de guías de onda por láser femtosegundo que ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, lieb1, lieb2, artificialFB, FBdynamics, dendritas, splitters}. Su importancia radica no sólo en emular situaciones de la física del sólido \cite{BlochOsci, Anderson, lieb1, lieb2, artificialFB, FBdynamics, obstopo, obsfloquet}, sino que también en el estudio de fenómenos ópticos como la no-linealidad tipo Kerr y su uso en la formación de solitones \cite{discretesolitons}, la posibilidad de propagar luz cuántica \cite{qed, squeezed, topoquantum} o su compatibilidad con la transmisión de información en la industria de telecomunicaciones \cite{telecom}.
+	Numerosos de estos avances se han visto propiciados por la técnica de escritura de guías de onda por láser de femtosegundos, la cual ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, lieb1, lieb2, artificialFB, FBdynamics, dendritas, splitters}. Su importancia radica no sólo en emular situaciones de la física del sólido tales como oscilaciones de Bloch \cite{BlochOsci}, localización de Anderson \cite{Anderson}, estados de banda plana \cite{lieb1, lieb2, artificialFB, FBdynamics} o topología de Floquet \cite{obstopo, obsfloquet}, sino que también en el estudio de fenómenos ópticos incluyendo no-linealidad tipo Kerr y su uso en la formación de solitones \cite{discretesolitons}, la posible propagación luz cuántica \cite{qed, squeezed, topoquantum} o su compatibilidad con la transmisión de información en la industria de las telecomunicaciones \cite{telecom}.
 	
-	En particular, el acoplamiento interorbital SP ha permitido el estudio de redes que presentan flujo magnético efectivo $\Phi = \pi$ el cual permite el transporte controlado de la luz \cite{interorbital, OAMCaging, ABCaging}. Una aplicación directa de este fenómeno es la generación de guías de onda que admitan modos guiados de luz con momentum angular orbital (OAM) y la codificación de su carga topológica $l$ como medio para transmitir información \cite{oamapp, oamfree}. Se ha reportado la propagación OAM sólo mediante de redes fotónicas que presevan simetría $C_3$ \cite{OAMWG, vortex}. Sin embargo, el acoplamiento entre modos OAM en una red fotónica permitiría la generación de flujos magnéticos distintos de $0$ o $\pi$ lo que se refleja en una direccionalidad dependiente de la circulación propagante \cite{vortextrim, topoOAM}. Para ello será necesario introducir el concepto de ``moléculas fotónicas'' \cite{molecules} y su aplicación en la generación de redes fotónicas \cite{SPSSH}.
+	\textcolor{red}{REFRASEAR ESTO} En particular, el acoplamiento multi-orbital SP, el cual consiste en sintonizar las constantes de propagación entre el modo fundamental de una guía con el excitado de otra mediante el ajuste de las potencias de escritura \cite{interorbital}, ha permitido el estudio de redes que presentan flujo magnético efectivo $\Phi = \pi$ el cual permite el transporte controlado de la luz \cite{OAMCaging, ABCaging}. Una aplicación directa de este fenómeno es la generación de guías de onda que admitan modos guiados de luz con momentum angular orbital (OAM) y la codificación de su carga topológica $\ell$ como medio para transmitir información \cite{oamapp, oamfree}. Se ha reportado a la fecha sólo la propagación de OAM mediante de redes fotónicas que presevan simetría $C_3$ \cite{OAMWG, vortex}. Sin embargo, el acoplamiento entre modos OAM en una red fotónica permitiría la generación de flujos magnéticos distintos de $0$ o $\pi$, lo que se reflejaría en una direccionalidad dependiente de la circulación propagante \cite{vortextrim, topoOAM}. Para ello será necesario introducir el concepto de ``moléculas fotónicas'' \cite{molecules} y su aplicación en la generación de redes fotónicas \cite{SPSSH}.
 \section{Objetivos de la tesis}
 \begin{enumerate}
-	\item Utilizar moléculas fotónicas como base para fabricar y estudiar redes interorbitales.
+	\item Explorar la utilización de moléculas fotónicas como base para fabricar y estudiar redes interorbitales.
 	\item Entender el comportamiento de los modos guiados en moléculas fotónicas y su interacción en el régimen de acoplamiento débil.
 \end{enumerate}
 \section{Metodología}
@@ -41,17 +42,17 @@ Desde las ecuaciones de Maxwell en un medio dieléctrico no magnético sin carga
 	 \label{eqn:maxwell}
 \end{equation}
 con $k \equiv k_0 n$.
-La ecuación (\ref{eqn:maxwell}) es resuelta por el software comercial COMSOL \textit{Multiphysics} mediante elementos finitos y será una de las herramientas a usar en esta tesis. Por otro lado, utilizando la aproximación paraxial es posible simplificar la ecuación (\ref{eqn:maxwell}) y llegar a la implementación de los \textit{Beam Propagation Methods} usados ampliamente en el área \cite{bics, interorbital, OAMCaging, vortex, bpm}.
+La ecuación (\ref{eqn:maxwell}) se puede resolver vía el software comercial COMSOL \textit{Multiphysics} mediante elementos finitos, y que será una de las herramientas de esta tesis. Por otro lado, utilizando la aproximación paraxial es posible simplificar la ecuación (\ref{eqn:maxwell}) y llegar a la implementación de un método numérico conocido como \textit{Beam Propagation Method}, utilizado ampliamente en el área \cite{bics, interorbital, OAMCaging, vortex, bpm}.
 \begin{equation}
 	-i\lambdabar\frac{\partial}{\partial z}\psi(x,y,z) = \left(\frac{\lambdabar^2\nabla_\perp^2}{2n_0} + \Delta n(x,y)\right) \psi (x,y,z) \label{eqn:paraxial}
 \end{equation}
-
+\textcolor{red}{CORRECCIONES HASTA ACÁ}
 Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}) para describir de forma discreta una red fotónica, es posible derivar las ecuaciones discretas tipo Schrödinger para la envolvente normalizada del campo eléctrico \cite{discretesolitons, artificialFB, FBdynamics}
 \begin{equation}
 	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}} \label{eqn:CMT}
 \end{equation}
 
-Para la fabricación de guías de onda se utiliza un láser femtosegundo pulsado de 1064 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ motorizada, cuyo uso se ilustra en la Figura \ref{fig:femtosetup}: 
+Para la fabricación de guías de onda se utiliza un láser femtosegundo pulsado de 1030 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ motorizada, cuyo uso se ilustra en la Figura \ref{fig:femtosetup}: 
 
 \begin{figure}[H]
 	\centering
@@ -96,7 +97,7 @@ Durante el curso de Seminario de Investigación II (Otoño 2023) se implementó 
 	\caption{a)-f) Barrido en ángulo de dímeros dipolares a una distancia de separación de 25 $\mu$m propagando en una distancia de 25 mm en la dirección perpencicular al plano. La inyección se realiza en la molécula inferior izquierda con un modo Hermite-Gauss TEM$_{10}$. En d) se pasa por el ángulo mágico que hace nula la interacción dipolar.}
 \end{figure}
 
-Se está trabajando en la excitación de un OAM con $l = \pm 1$ usando la técnica de modulación espacial de la Figura \ref{fig:SLM}:
+Se está trabajando en la excitación de un OAM con $\ell = \pm 1$ usando la técnica de modulación espacial de la Figura \ref{fig:SLM}:
 
 \begin{figure}[H]
 	\centering

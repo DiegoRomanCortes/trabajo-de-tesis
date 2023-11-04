@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{46}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -103,9 +103,14 @@ Shuji Nakamura, Takashi Mukai, and Masayuki Senoh.
 \newblock \doi{10.1063/1.111832}.
 \newblock URL \url{https://doi.org/10.1063/1.111832}.
 
-\bibitem[fib()]{fibra}
+\bibitem[fib({\natexlab{a}})]{fibra2}
+Submarine cable frequently asked questions, {\natexlab{a}}.
+\newblock URL
+  \url{https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions}.
+
+\bibitem[fib({\natexlab{b}})]{fibra}
 Hogares con acceso a internet fijo alcanzan el 67\% y usuarios aumentan
-  preferencia por redes de alta velocidad.
+  preferencia por redes de alta velocidad, {\natexlab{b}}.
 \newblock URL
   \url{https://www.subtel.gob.cl/hogares-con-acceso-a-internet-fijo-alcanzan-el-67-y-usuarios-aumentan-preferencia-por-redes-de-alta-velocidad}.
 

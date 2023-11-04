@@ -1,50 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: unsrtnat.bst
+Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: citations.bib
-Warning--I didn't find a database entry for "superexc1"
 Warning--empty year in nobel
+Warning--empty year in fibra2
 Warning--empty year in fibra
-You've used 45 entries,
+You've used 46 entries,
             2481 wiz_defined-function locations,
-            931 strings with 16388 characters,
-and the built_in function-call counts, 20584 in all, are:
-= -- 1673
+            933 strings with 16505 characters,
+and the built_in function-call counts, 20810 in all, are:
+= -- 1694
 > -- 1373
 < -- 7
-+ -- 508
++ -- 511
 - -- 418
-* -- 1980
-:= -- 3506
-add.period$ -- 225
-call.type$ -- 45
-change.case$ -- 88
+* -- 1998
+:= -- 3528
+add.period$ -- 227
+call.type$ -- 46
+change.case$ -- 90
 chr.to.int$ -- 45
-cite$ -- 49
-duplicate$ -- 835
-empty$ -- 1636
+cite$ -- 52
+duplicate$ -- 849
+empty$ -- 1668
 format.name$ -- 465
-if$ -- 4231
-int.to.chr$ -- 1
-int.to.str$ -- 46
+if$ -- 4285
+int.to.chr$ -- 2
+int.to.str$ -- 47
 missing$ -- 43
-newline$ -- 323
+newline$ -- 327
 num.names$ -- 129
-pop$ -- 254
+pop$ -- 265
 preamble$ -- 1
-purify$ -- 45
+purify$ -- 46
 quote$ -- 0
-skip$ -- 441
+skip$ -- 451
 stack$ -- 0
-substring$ -- 894
-swap$ -- 115
+substring$ -- 897
+swap$ -- 119
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 309
-warning$ -- 2
+type$ -- 316
+warning$ -- 3
 while$ -- 132
 width$ -- 0
-write$ -- 765
+write$ -- 776
 (There were 3 warnings)
