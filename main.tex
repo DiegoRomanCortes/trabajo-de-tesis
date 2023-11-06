@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\usepackage[a4paper, total={16cm, 28cm}]{geometry}
+\usepackage[a4paper, total={18cm, 28cm}]{geometry}
 \usepackage{txfonts}
 \usepackage{graphicx}
 \usepackage[spanish, es-nodecimaldot]{babel}
@@ -41,27 +41,28 @@ Desde las ecuaciones de Maxwell en un medio dieléctrico no magnético sin carga
 	(\nabla-i\textbf{k}_1)\times((\nabla-i\textbf{k}_1)\times \textbf{E}_1) = k^2 \textbf{E}_1,
 	 \label{eqn:maxwell}
 \end{equation}
-con $k \equiv k_0 n$.
-La ecuación (\ref{eqn:maxwell}) se puede resolver vía el software comercial COMSOL \textit{Multiphysics} mediante elementos finitos, y que será una de las herramientas de esta tesis. Por otro lado, utilizando la aproximación paraxial es posible simplificar la ecuación (\ref{eqn:maxwell}) y llegar a la implementación de un método numérico conocido como \textit{Beam Propagation Method}, utilizado ampliamente en el área \cite{bics, interorbital, OAMCaging, vortex, bpm}.
+con $k \equiv k_0 n(x,y,z)$.
+La ecuación (\ref{eqn:maxwell}) se puede resolver vía el software comercial COMSOL \textit{Multiphysics} mediante elementos finitos, y que será una de las herramientas de esta tesis. Por otro lado, utilizando la aproximación paraxial escogiendo el eje $z$  como dirección de propagación, es posible simplificar la ecuación (\ref{eqn:maxwell}) y llegar a la formulación de un método numérico conocido como \textit{Beam Propagation Method}, utilizado ampliamente en el área \cite{bics, interorbital, OAMCaging, vortex, bpm}.
 \begin{equation}
-	-i\lambdabar\frac{\partial}{\partial z}\psi(x,y,z) = \left(\frac{\lambdabar^2\nabla_\perp^2}{2n_0} + \Delta n(x,y)\right) \psi (x,y,z) \label{eqn:paraxial}
+	-2i\beta\frac{\partial}{\partial z}\psi(x,y,z) = \left(\nabla_\perp^2 + n_0^2 k_0^2 - \beta^2\right) \psi (x,y,z). \label{eqn:paraxial}
 \end{equation}
-\textcolor{red}{CORRECCIONES HASTA ACÁ}
-Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}) para describir de forma discreta una red fotónica, es posible derivar las ecuaciones discretas tipo Schrödinger para la envolvente normalizada del campo eléctrico \cite{discretesolitons, artificialFB, FBdynamics}
+Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}), con el objetivo describir de forma discreta una red fotónica, es posible derivar las ecuaciones discretas tipo Schrödinger para la envolvente normalizada del campo eléctrico \cite{discretesolitons, artificialFB, FBdynamics}
 \begin{equation}
-	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}} \label{eqn:CMT}
+	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}}, \label{eqn:CMT}
 \end{equation}
+con $u_{\vec{n}}, \beta_{\vec{n}}$ y $C_{\vec{n}, \vec{m}}$ la envolvente normalizada del campo eléctrico, la constante de propagación normalizada y las constantes de acoplamiento entre los modos de las guías en las posiciones de la red $\vec{n}$ y $\vec{m}$, respectivamente.
 
-Para la fabricación de guías de onda se utiliza un láser femtosegundo pulsado de 1030 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ motorizada, cuyo uso se ilustra en la Figura \ref{fig:femtosetup}: 
+
+Para la fabricación de guías de onda se utiliza un láser femtosegundo pulsado de 1030 nm enfocado en un vidrio de borosilicato en movimiento gracias a una plataforma XYZ motorizada, como se ilustra en la Figura \ref{fig:femtosetup} a): 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{./media/femtosetup.png}
-	\caption{a) Montaje de fabricación de guías de onda mediante el enfoque de láser femtosegundo. b)      Imagen microscópica de la cara salida iluminada con luz blanca. \label{fig:femtosetup}}
+	\caption{a) Montaje de fabricación de guías de onda mediante el enfoque de láser femtosegundo. b) Imagen microscópica de la cara salida iluminada con luz blanca de una red multiorbital con redes fotónicas. \label{fig:femtosetup}}
 \end{figure}
 
 
-La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello se implementó una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de el haz tipo gaussiano proveniente del láser \cite{slm} y que se ilustra en la Figura \ref{fig:SLM}:
+La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello se implementó una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de un haz tipo gaussiano (muy ancho) proveniente de un láser \cite{slm}, y que se ilustra en la Figura \ref{fig:SLM}:
 
 \begin{figure}[H]
 	\centering
@@ -69,7 +70,7 @@ La excitación de redes fotónicas interorbitales hace necesario el uso de condi
 	\caption{Montaje de excitación de guías de onda con condiciones iniciales moduladas en amplitud y fase.\label{fig:SLM}}
 \end{figure}
 
-En ocasiones resulta más apropiada la excitación de redes fotónicas variando la longitud de onda de la excitación \cite{spectraltransfer, SPSSH}. Para ello se utiliza el montaje ilustrado en la Figura \ref{fig:supercontinuum}:
+En ocasiones resulta más apropiada la excitación de redes fotónicas variando la longitud de onda de la excitación \cite{spectraltransfer, SPSSH}. Para ello se utiliza el montaje ilustrado en la Figura \ref{fig:supercontinuum} basado en un láser supercontinuo con un espectro de 400-2000 nm:
 
 \begin{figure}[H]
 	\centering
@@ -80,29 +81,29 @@ En ocasiones resulta más apropiada la excitación de redes fotónicas variando 
 
 \section{Trabajo adelantado (si lo hubiera)}
 
-Durante el curso de Seminario de Investigación I (Primavera 2022) se hizo un barrido de parámetros de fabricación de guías de onda, en particular de potencia de escritura y separación entre guías, logrando la inversión de elipticidad el sintonizado de las constantes de propagación del modo fundamental $S$ de la molécula de excitación y el modo excitado $P_x$ de la molécula de acoplamiento.
+Durante el curso de Seminario de Investigación I (Primavera 2022) se hizo un barrido de parámetros de fabricación de guías de onda, en particular de potencia de escritura y separación entre guías, logrando la inversión de elipticidad, el sintonizado de las constantes de propagación del modo fundamental $S$ de la molécula de excitación y el modo excitado $P_x$ de la molécula de acoplamiento.
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\linewidth]{./media/SPinteraction.png}
-	\caption{Interacción interorbital en moléculas fotónicas a 25 $\mu$m de sepración y 13 mm de propagación. Se inyecta luz láser en la molécula S ubicada a la izquierda.}
+	\caption{Interacción interorbital en moléculas fotónicas a 25 $\mu$m de separación y 13 mm de propagación. Se inyecta luz láser en la molécula S ubicada a la izquierda.}
 \end{figure}
 
-Durante el curso de Seminario de Investigación II (Otoño 2023) se implementó el montaje de modulación esquematizado en la Figura \ref{fig:SLM}. Con ello fue posible la excitación de un dipolo horizontal:
+Durante el curso de Seminario de Investigación II (Otoño 2023) se implementó el montaje de modulación esquematizado en la Figura \ref{fig:SLM}. Con ello fue posible la excitación precisa de un dipolo horizontal.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.0\linewidth]{./media/dipoles.jpg}
-	\caption{a)-f) Barrido en ángulo de dímeros dipolares a una distancia de separación de 25 $\mu$m propagando en una distancia de 25 mm en la dirección perpencicular al plano. La inyección se realiza en la molécula inferior izquierda con un modo Hermite-Gauss TEM$_{10}$. En d) se pasa por el ángulo mágico que hace nula la interacción dipolar.}
+	\caption{a)-f) Barrido en ángulo de dímeros dipolares a una distancia de separación de 25 $\mu$m propagando en una distancia de 25 mm en la dirección perpendicular al plano. La inyección se realiza en la molécula inferior izquierda con un modo Hermite-Gauss TEM$_{10}$. En d) se pasa por el ángulo mágico que hace nula la interacción dipolar.}
 \end{figure}
 
-Se está trabajando en la excitación de un OAM con $\ell = \pm 1$ usando la técnica de modulación espacial de la Figura \ref{fig:SLM}:
+Actualmente, se está trabajando en la excitación de un OAM con $\ell = \pm 1$ usando la técnica de modulación espacial de la Figura \ref{fig:SLM}, los resultados iniciales muestran que la excitación de vórtices requiere de $\cdots$ . Como $\iff$ figura \ref{fig:vortex} $\cdots$. Se espera controlar la fabricación y excitación de guías vorticiales que nos permitan estudiar a continuación la inducción de flujos magnéticos no triviales en redes fotónicas.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{./media/vortex.png}
-	\caption{a) Intensidad de un OAM propagado en una molécula fotónica. b) Interferograma que captura el cambio de fase esperado.}
+	\caption{a) Intensidad de un OAM propagado en una molécula fotónica. b) Interferograma que captura el cambio de fase esperado. \label{fig:vortex}}
 \end{figure} 
 
 \section{Plan de trabajo o carta Gantt}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.17)  4 NOV 2023 02:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.17)  4 NOV 2023 20:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -450,14 +450,14 @@ LaTeX Font Info:    ... okay on input line 20.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.1319pt, 455.24408pt, 71.1319pt)
+* h-part:(L,W,R)=(42.67914pt, 512.1496pt, 42.67914pt)
 * v-part:(T,H,B)=(19.34787pt, 796.67715pt, 29.02182pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24408pt
+* \textwidth=512.1496pt
 * \textheight=796.67715pt
-* \oddsidemargin=-1.13809pt
-* \evensidemargin=-1.13809pt
+* \oddsidemargin=-29.59085pt
+* \evensidemargin=-29.59085pt
 * \topmargin=-89.92212pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -541,43 +541,43 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 38.
+<./media/femtosetup.png, id=70, 1478.52374pt x 473.51906pt>
+File: ./media/femtosetup.png Graphic file (type png)
+<use ./media/femtosetup.png>
+Package pdftex.def Info: ./media/femtosetup.png  used on input line 60.
+(pdftex.def)             Requested size: 460.9315pt x 147.62029pt.
 
 [1
 
 {C:/Users/diego/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/dieg
 o/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-<./media/femtosetup.png, id=126, 1478.52374pt x 473.51906pt>
-File: ./media/femtosetup.png Graphic file (type png)
-<use ./media/femtosetup.png>
-Package pdftex.def Info: ./media/femtosetup.png  used on input line 59.
-(pdftex.def)             Requested size: 409.71689pt x 131.21884pt.
 <./media/SLMsetup.png, id=130, 783.67781pt x 356.0803pt>
 File: ./media/SLMsetup.png Graphic file (type png)
 <use ./media/SLMsetup.png>
-Package pdftex.def Info: ./media/SLMsetup.png  used on input line 68.
-(pdftex.def)             Requested size: 409.71689pt x 186.16798pt.
+Package pdftex.def Info: ./media/SLMsetup.png  used on input line 69.
+(pdftex.def)             Requested size: 460.9315pt x 209.439pt.
 <./media/supercontinuum.png, id=134, 1047.16219pt x 260.47313pt>
 File: ./media/supercontinuum.png Graphic file (type png)
 <use ./media/supercontinuum.png>
-Package pdftex.def Info: ./media/supercontinuum.png  used on input line 76.
-(pdftex.def)             Requested size: 318.66946pt x 79.26334pt.
+Package pdftex.def Info: ./media/supercontinuum.png  used on input line 77.
+(pdftex.def)             Requested size: 358.50314pt x 89.17175pt.
 <./media/SPinteraction.png, id=135, 455.301pt x 226.2051pt>
 File: ./media/SPinteraction.png Graphic file (type png)
 <use ./media/SPinteraction.png>
-Package pdftex.def Info: ./media/SPinteraction.png  used on input line 88.
-(pdftex.def)             Requested size: 227.62204pt x 113.08846pt.
+Package pdftex.def Info: ./media/SPinteraction.png  used on input line 89.
+(pdftex.def)             Requested size: 256.0748pt x 127.22623pt.
  [2 <./media/femtosetup.png> <./media/SLMsetup.png> <./media/supercontinuum.png
  (PNG copy)>]
 <./media/dipoles.jpg, id=148, 1589.94pt x 275.3487pt>
 File: ./media/dipoles.jpg Graphic file (type jpg)
 <use ./media/dipoles.jpg>
-Package pdftex.def Info: ./media/dipoles.jpg  used on input line 96.
-(pdftex.def)             Requested size: 455.24408pt x 78.84071pt.
-<./media/vortex.png, id=150, 578.16pt x 252.945pt>
+Package pdftex.def Info: ./media/dipoles.jpg  used on input line 97.
+(pdftex.def)             Requested size: 512.1496pt x 88.69737pt.
+<./media/vortex.png, id=151, 578.16pt x 252.945pt>
 File: ./media/vortex.png Graphic file (type png)
 <use ./media/vortex.png>
-Package pdftex.def Info: ./media/vortex.png  used on input line 104.
-(pdftex.def)             Requested size: 318.66946pt x 139.41736pt.
+Package pdftex.def Info: ./media/vortex.png  used on input line 105.
+(pdftex.def)             Requested size: 358.50314pt x 156.84357pt.
 
 (main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
@@ -586,7 +586,18 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 (C:\Users\diego\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 )
+Underfull \hbox (badness 3009) in paragraph at lines 9--12
+[]\OT1/txr/m/n/10 All no-bel pri-zes in phy-sics.  URL []$\OT1/txtt/m/n/10 http
+s : / / www . nobelprize . org / prizes / lists / all -[] nobel -[] prizes -[] 
+in -[]
+ []
+
 [3 <./media/SPinteraction.png> <./media/dipoles.jpg> <./media/vortex.png>]
+Underfull \hbox (badness 2181) in paragraph at lines 97--105
+[]\OT1/txr/m/n/10 Shuji Na-ka-mu-ra, Ta-kashi Mu-kai, and Ma-sa-yu-ki Se-noh.  
+Candela-class high-brightness In-GaN/AlGaN double-
+ []
+
 [4] [5]) [6] (main.aux
 LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
@@ -600,12 +611,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  14138 strings out of 474824
- 223099 string characters out of 5750976
- 1952043 words of memory out of 5000000
+ 223103 string characters out of 5750976
+ 1955043 words of memory out of 5000000
  35824 multiletter control sequences out of 15000+600000
  592803 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,1289b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,1289b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxi
 .pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/r
 txmi.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfon
@@ -617,9 +628,9 @@ lic/txfonts/txsyc.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1
 pe1/urw/times/utmb8a.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/times/utmr8a.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (6 pages, 1117176 bytes).
+Output written on main.pdf (6 pages, 1117903 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
+ 310 PDF objects out of 1000 (max. 8388607)
  75 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
