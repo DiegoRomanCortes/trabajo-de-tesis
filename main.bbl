@@ -1,4 +1,4 @@
-\begin{thebibliography}{46}
+\begin{thebibliography}{49}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -169,6 +169,17 @@ Rodrigo~A. Vicencio.
   2021.
 \newblock \doi{10.1080/23746149.2021.1878057}.
 \newblock URL \url{https://doi.org/10.1080/23746149.2021.1878057}.
+
+\bibitem[Rom{\'a}n-Cort{\'e}s et~al.(2021)Rom{\'a}n-Cort{\'e}s, Fadic,
+  Cid-Lara, Guzm{\'a}n-Silva, Real, and Vicencio]{strain}
+Diego Rom{\'a}n-Cort{\'e}s, Guillermo Fadic, Christofer Cid-Lara, Diego
+  Guzm{\'a}n-Silva, Basti{\'a}n Real, and Rodrigo~A. Vicencio.
+\newblock Strain induced localization to delocalization transition on a lieb
+  photonic ribbon lattice.
+\newblock \emph{Scientific Reports}, 11\penalty0 (1):\penalty0 21411, Nov 2021.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-021-00967-3}.
+\newblock URL \url{https://doi.org/10.1038/s41598-021-00967-3}.
 
 \bibitem[Cubillos~Cornejo et~al.(2023)Cubillos~Cornejo, Guzm{\'a}n-Silva,
   Cornejo, Bordeu, and Vicencio]{dendritas}
@@ -410,5 +421,22 @@ Gabriel Cáceres-Aravena, Bastián Real, Diego Guzmán-Silva, Paloma Vildoso,
 \newblock ISSN 2378-0967.
 \newblock \doi{10.1063/5.0153770}.
 \newblock URL \url{https://doi.org/10.1063/5.0153770}.
+
+\bibitem[Savelev and Gorlach(2020)]{toporusos}
+Roman~S. Savelev and Maxim~A. Gorlach.
+\newblock Topological states in arrays of optical waveguides engineered via
+  mode interference.
+\newblock \emph{Phys. Rev. B}, 102:\penalty0 161112, Oct 2020.
+\newblock \doi{10.1103/PhysRevB.102.161112}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.102.161112}.
+
+\bibitem[C\'aceres-Aravena et~al.(2020)C\'aceres-Aravena, Torres, and
+  Vicencio]{topo1dphoto}
+G.~C\'aceres-Aravena, L.~E. F.~Foa Torres, and R.~A. Vicencio.
+\newblock Topological and flat-band states induced by hybridized linear
+  interactions in one-dimensional photonic lattices.
+\newblock \emph{Phys. Rev. A}, 102:\penalty0 023505, Aug 2020.
+\newblock \doi{10.1103/PhysRevA.102.023505}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.102.023505}.
 
 \end{thebibliography}

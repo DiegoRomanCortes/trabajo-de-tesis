@@ -1,52 +1,50 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: unsrtnat.bst
-Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: citations.bib
 Warning--empty year in nobel
 Warning--empty year in fibra2
 Warning--empty year in fibra
-You've used 46 entries,
+You've used 49 entries,
             2481 wiz_defined-function locations,
-            933 strings with 16505 characters,
-and the built_in function-call counts, 20810 in all, are:
-= -- 1694
-> -- 1373
-< -- 7
-+ -- 511
-- -- 418
-* -- 1998
-:= -- 3528
-add.period$ -- 227
-call.type$ -- 46
-change.case$ -- 90
-chr.to.int$ -- 45
-cite$ -- 52
-duplicate$ -- 849
-empty$ -- 1668
-format.name$ -- 465
-if$ -- 4285
+            954 strings with 17329 characters,
+and the built_in function-call counts, 22122 in all, are:
+= -- 1808
+> -- 1448
+< -- 8
++ -- 539
+- -- 440
+* -- 2121
+:= -- 3749
+add.period$ -- 243
+call.type$ -- 49
+change.case$ -- 96
+chr.to.int$ -- 48
+cite$ -- 55
+duplicate$ -- 906
+empty$ -- 1776
+format.name$ -- 492
+if$ -- 4558
 int.to.chr$ -- 2
-int.to.str$ -- 47
-missing$ -- 43
-newline$ -- 327
-num.names$ -- 129
-pop$ -- 265
+int.to.str$ -- 50
+missing$ -- 46
+newline$ -- 349
+num.names$ -- 138
+pop$ -- 279
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 49
 quote$ -- 0
-skip$ -- 451
+skip$ -- 480
 stack$ -- 0
-substring$ -- 897
-swap$ -- 119
+substring$ -- 954
+swap$ -- 128
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 316
+type$ -- 337
 warning$ -- 3
-while$ -- 132
+while$ -- 141
 width$ -- 0
-write$ -- 776
+write$ -- 829
 (There were 3 warnings)
