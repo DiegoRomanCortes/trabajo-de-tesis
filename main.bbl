@@ -243,6 +243,23 @@ Lukas~J. Maczewsky, Julia~M. Zeuner, Stefan Nolte, and Alexander Szameit.
 \newblock \doi{10.1038/ncomms13756}.
 \newblock URL \url{https://doi.org/10.1038/ncomms13756}.
 
+\bibitem[C\'aceres-Aravena et~al.(2020)C\'aceres-Aravena, Torres, and
+  Vicencio]{topo1dphoto}
+G.~C\'aceres-Aravena, L.~E. F.~Foa Torres, and R.~A. Vicencio.
+\newblock Topological and flat-band states induced by hybridized linear
+  interactions in one-dimensional photonic lattices.
+\newblock \emph{Phys. Rev. A}, 102:\penalty0 023505, Aug 2020.
+\newblock \doi{10.1103/PhysRevA.102.023505}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.102.023505}.
+
+\bibitem[Savelev and Gorlach(2020)]{toporusos}
+Roman~S. Savelev and Maxim~A. Gorlach.
+\newblock Topological states in arrays of optical waveguides engineered via
+  mode interference.
+\newblock \emph{Phys. Rev. B}, 102:\penalty0 161112, Oct 2020.
+\newblock \doi{10.1103/PhysRevB.102.161112}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.102.161112}.
+
 \bibitem[Lederer et~al.(2008)Lederer, Stegeman, Christodoulides, Assanto,
   Segev, and Silberberg]{discretesolitons}
 Falk Lederer, George~I. Stegeman, Demetri~N. Christodoulides, Gaetano Assanto,
@@ -421,22 +438,5 @@ Gabriel Cáceres-Aravena, Bastián Real, Diego Guzmán-Silva, Paloma Vildoso,
 \newblock ISSN 2378-0967.
 \newblock \doi{10.1063/5.0153770}.
 \newblock URL \url{https://doi.org/10.1063/5.0153770}.
-
-\bibitem[Savelev and Gorlach(2020)]{toporusos}
-Roman~S. Savelev and Maxim~A. Gorlach.
-\newblock Topological states in arrays of optical waveguides engineered via
-  mode interference.
-\newblock \emph{Phys. Rev. B}, 102:\penalty0 161112, Oct 2020.
-\newblock \doi{10.1103/PhysRevB.102.161112}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.102.161112}.
-
-\bibitem[C\'aceres-Aravena et~al.(2020)C\'aceres-Aravena, Torres, and
-  Vicencio]{topo1dphoto}
-G.~C\'aceres-Aravena, L.~E. F.~Foa Torres, and R.~A. Vicencio.
-\newblock Topological and flat-band states induced by hybridized linear
-  interactions in one-dimensional photonic lattices.
-\newblock \emph{Phys. Rev. A}, 102:\penalty0 023505, Aug 2020.
-\newblock \doi{10.1103/PhysRevA.102.023505}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.102.023505}.
 
 \end{thebibliography}

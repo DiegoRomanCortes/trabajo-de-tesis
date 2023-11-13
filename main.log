@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.17)  8 NOV 2023 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.10.17)  13 NOV 2023 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -552,35 +552,41 @@ o/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 File: ./media/femtosetup.png Graphic file (type png)
 <use ./media/femtosetup.png>
 Package pdftex.def Info: ./media/femtosetup.png  used on input line 62.
-(pdftex.def)             Requested size: 466.05289pt x 149.26044pt.
+(pdftex.def)             Requested size: 362.48645pt x 116.08904pt.
 <./media/SLMsetup.png, id=130, 1245.9047pt x 610.53094pt>
 File: ./media/SLMsetup.png Graphic file (type png)
 <use ./media/SLMsetup.png>
 Package pdftex.def Info: ./media/SLMsetup.png  used on input line 73.
-(pdftex.def)             Requested size: 414.27362pt x 203.00365pt.
+(pdftex.def)             Requested size: 362.48645pt x 177.62703pt.
 <./media/supercontinuum.png, id=134, 1040.38687pt x 274.77657pt>
 File: ./media/supercontinuum.png Graphic file (type png)
 <use ./media/supercontinuum.png>
 Package pdftex.def Info: ./media/supercontinuum.png  used on input line 83.
-(pdftex.def)             Requested size: 310.70718pt x 82.06044pt.
- [2 <./media/femtosetup.png> <./media/SLMsetup.png (PNG copy)>]
-<./media/SPinteraction.png, id=145, 455.301pt x 226.2051pt>
-File: ./media/SPinteraction.png Graphic file (type png)
-<use ./media/SPinteraction.png>
-Package pdftex.def Info: ./media/SPinteraction.png  used on input line 95.
-(pdftex.def)             Requested size: 258.92003pt x 128.64139pt.
-<./media/dipoles.jpg, id=152, 1589.94pt x 275.3487pt>
+(pdftex.def)             Requested size: 258.92003pt x 68.3837pt.
+ [2 <./media/femtosetup.png> <./media/SLMsetup.png (PNG copy)> <./media/superco
+ntinuum.png (PNG copy)>]
+<./media/detuningv2.png, id=145, 624.53325pt x 188.50426pt>
+File: ./media/detuningv2.png Graphic file (type png)
+<use ./media/detuningv2.png>
+Package pdftex.def Info: ./media/detuningv2.png  used on input line 95.
+(pdftex.def)             Requested size: 362.48645pt x 109.40732pt.
+<./media/SP1D.jpg, id=151, 860.013pt x 204.5241pt>
+File: ./media/SP1D.jpg Graphic file (type jpg)
+<use ./media/SP1D.jpg>
+Package pdftex.def Info: ./media/SP1D.jpg  used on input line 105.
+(pdftex.def)             Requested size: 517.84006pt x 123.14917pt.
+<./media/dipoles.jpg, id=154, 1589.94pt x 275.3487pt>
 File: ./media/dipoles.jpg Graphic file (type jpg)
 <use ./media/dipoles.jpg>
-Package pdftex.def Info: ./media/dipoles.jpg  used on input line 105.
-(pdftex.def)             Requested size: 517.84006pt x 89.68053pt.
-<./media/vortex.png, id=156, 578.16pt x 252.945pt>
+Package pdftex.def Info: ./media/dipoles.jpg  used on input line 113.
+(pdftex.def)             Requested size: 466.05289pt x 80.71037pt.
+<./media/vortex.png, id=158, 578.16pt x 252.945pt>
 File: ./media/vortex.png Graphic file (type png)
 <use ./media/vortex.png>
-Package pdftex.def Info: ./media/vortex.png  used on input line 113.
-(pdftex.def)             Requested size: 362.48645pt x 158.58812pt.
- [3 <./media/supercontinuum.png (PNG copy)> <./media/SPinteraction.png> <./medi
-a/dipoles.jpg>] (main.bbl
+Package pdftex.def Info: ./media/vortex.png  used on input line 121.
+(pdftex.def)             Requested size: 258.92003pt x 113.27612pt.
+ [3 <./media/detuningv2.png> <./media/SP1D.jpg> <./media/dipoles.jpg>]
+(main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
 11.
 
@@ -599,13 +605,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 12B8E0D1D62AF843A891AE5679786A49;1124.
  ) 
 Here is how much of TeX's memory you used:
- 14158 strings out of 474824
- 223374 string characters out of 5750976
+ 14167 strings out of 474824
+ 223540 string characters out of 5750976
  1952043 words of memory out of 5000000
- 35837 multiletter control sequences out of 15000+600000
+ 35845 multiletter control sequences out of 15000+600000
  594742 words of font info for 123 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,7n,79p,1284b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,1284b,673s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtxi
 .pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/r
 txmi.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfon
@@ -617,9 +623,9 @@ lic/txfonts/txsyc.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/type1
 pe1/urw/times/utmb8a.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/times/utmr8a.pfb><C:/Users/diego/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 1095400 bytes).
+Output written on main.pdf (7 pages, 1285049 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
