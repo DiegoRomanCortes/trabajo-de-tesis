@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.10.19)  16 NOV 2023 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.10.19)  16 NOV 2023 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,8 +571,14 @@ File: ot1txtt.fd 2000/12/15 v3.1
 LaTeX Info: Redefining \. on input line 50.
 LaTeX Info: Redefining \% on input line 50.
 )
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6E38FCBC91BB9912CA03B38E194B694A;353.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 6E38FCBC91BB9912CA03B38E194B694A;353
+(rerunfilecheck)             After:  B385D08FBD5C08E29C06095D2B7D830B;278.
  ) 
 Here is how much of TeX's memory you used:
  10440 strings out of 479304
@@ -592,7 +598,7 @@ re/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (7 pages, 1239377 bytes).
+Output written on main.pdf (7 pages, 1238962 bytes).
 PDF statistics:
  324 PDF objects out of 1000 (max. 8388607)
  292 compressed objects within 3 object streams
