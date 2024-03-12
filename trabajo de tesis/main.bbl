@@ -1,0 +1,442 @@
+\begin{thebibliography}{49}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[nob()]{nobel}
+All nobel prizes in physics.
+\newblock URL
+  \url{https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-physics/}.
+
+\bibitem[Maine et~al.(1988)Maine, Strickland, Bado, Pessot, and Mourou]{femto1}
+P.~Maine, D.~Strickland, P.~Bado, M.~Pessot, and G.~Mourou.
+\newblock Generation of ultrahigh peak power pulses by chirped pulse
+  amplification.
+\newblock \emph{IEEE Journal of Quantum Electronics}, 24\penalty0 (2):\penalty0
+  398--403, 1988.
+\newblock \doi{10.1109/3.137}.
+
+\bibitem[Lewenstein et~al.(1994)Lewenstein, Balcou, Ivanov, L'Huillier, and
+  Corkum]{atto1}
+M.~Lewenstein, Ph. Balcou, M.~Yu. Ivanov, Anne L'Huillier, and P.~B. Corkum.
+\newblock Theory of high-harmonic generation by low-frequency laser fields.
+\newblock \emph{Phys. Rev. A}, 49:\penalty0 2117--2132, Mar 1994.
+\newblock \doi{10.1103/PhysRevA.49.2117}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.49.2117}.
+
+\bibitem[Paul et~al.(2001)Paul, Toma, Breger, Mullot, Augé, Balcou, Muller,
+  and Agostini]{atto2}
+P.~M. Paul, E.~S. Toma, P.~Breger, G.~Mullot, F.~Augé, Ph. Balcou, H.~G.
+  Muller, and P.~Agostini.
+\newblock Observation of a train of attosecond pulses from high harmonic
+  generation.
+\newblock \emph{Science}, 292\penalty0 (5522):\penalty0 1689--1692, 2001.
+\newblock \doi{10.1126/science.1059413}.
+\newblock URL \url{https://www.science.org/doi/abs/10.1126/science.1059413}.
+
+\bibitem[Brabec and Krausz(2000)]{atto3}
+Thomas Brabec and Ferenc Krausz.
+\newblock Intense few-cycle laser fields: Frontiers of nonlinear optics.
+\newblock \emph{Reviews of Modern Physics}, 72:\penalty0 545--591, 2000.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:120371634}.
+
+\bibitem[Clauser and Shimony(1978)]{photons1}
+J~F Clauser and A~Shimony.
+\newblock Bell's theorem. experimental tests and implications.
+\newblock \emph{Reports on Progress in Physics}, 41\penalty0 (12):\penalty0
+  1881, dec 1978.
+\newblock \doi{10.1088/0034-4885/41/12/002}.
+\newblock URL \url{https://dx.doi.org/10.1088/0034-4885/41/12/002}.
+
+\bibitem[Aspect et~al.(1982)Aspect, Dalibard, and Roger]{photons2}
+Alain Aspect, Jean Dalibard, and G\'erard Roger.
+\newblock Experimental test of bell's inequalities using time-varying
+  analyzers.
+\newblock \emph{Phys. Rev. Lett.}, 49:\penalty0 1804--1807, Dec 1982.
+\newblock \doi{10.1103/PhysRevLett.49.1804}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.49.1804}.
+
+\bibitem[Kwiat et~al.(1995)Kwiat, Mattle, Weinfurter, Zeilinger, Sergienko, and
+  Shih]{photons3}
+Paul~G. Kwiat, Klaus Mattle, Harald Weinfurter, Anton Zeilinger, Alexander~V.
+  Sergienko, and Yanhua Shih.
+\newblock New high-intensity source of polarization-entangled photon pairs.
+\newblock \emph{Phys. Rev. Lett.}, 75:\penalty0 4337--4341, Dec 1995.
+\newblock \doi{10.1103/PhysRevLett.75.4337}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.75.4337}.
+
+\bibitem[Ashkin et~al.(1987)Ashkin, Dziedzic, and Yamane]{opticaltweezers}
+A.~Ashkin, J.~M. Dziedzic, and T.~Yamane.
+\newblock Optical trapping and manipulation of single cells using infrared
+  laser beams.
+\newblock \emph{Nature}, 330\penalty0 (6150):\penalty0 769--771, Dec 1987.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/330769a0}.
+\newblock URL \url{https://doi.org/10.1038/330769a0}.
+
+\bibitem[Akasaki(2013)]{led1}
+Isamu Akasaki.
+\newblock Gan-based p-n junction blue-light-emitting devices.
+\newblock \emph{Proc. {IEEE}}, 101\penalty0 (10):\penalty0 2200--2210, 2013.
+\newblock \doi{10.1109/JPROC.2013.2274928}.
+\newblock URL \url{https://doi.org/10.1109/JPROC.2013.2274928}.
+
+\bibitem[Kneissl et~al.(2019)Kneissl, Seong, Han, and Amano]{led2}
+Michael Kneissl, Tae-Yeon Seong, Jung Han, and Hiroshi Amano.
+\newblock The emergence and prospects of deep-ultraviolet light-emitting diode
+  technologies.
+\newblock \emph{Nature Photonics}, 13\penalty0 (4):\penalty0 233--244, Apr
+  2019.
+\newblock ISSN 1749-4893.
+\newblock \doi{10.1038/s41566-019-0359-9}.
+\newblock URL \url{https://doi.org/10.1038/s41566-019-0359-9}.
+
+\bibitem[Nakamura et~al.(1994)Nakamura, Mukai, and Senoh]{led3}
+Shuji Nakamura, Takashi Mukai, and Masayuki Senoh.
+\newblock {Candela‐class high‐brightness InGaN/AlGaN
+  double‐heterostructure blue‐light‐emitting diodes}.
+\newblock \emph{Applied Physics Letters}, 64\penalty0 (13):\penalty0
+  1687--1689, 03 1994.
+\newblock ISSN 0003-6951.
+\newblock \doi{10.1063/1.111832}.
+\newblock URL \url{https://doi.org/10.1063/1.111832}.
+
+\bibitem[fib({\natexlab{a}})]{fibra2}
+Submarine cable frequently asked questions, {\natexlab{a}}.
+\newblock URL
+  \url{https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions}.
+
+\bibitem[fib({\natexlab{b}})]{fibra}
+Hogares con acceso a internet fijo alcanzan el 67\% y usuarios aumentan
+  preferencia por redes de alta velocidad, {\natexlab{b}}.
+\newblock URL
+  \url{https://www.subtel.gob.cl/hogares-con-acceso-a-internet-fijo-alcanzan-el-67-y-usuarios-aumentan-preferencia-por-redes-de-alta-velocidad}.
+
+\bibitem[Szameit et~al.(2005)Szameit, Bl\"{o}mer, Burghoff, Schreiber, Pertsch,
+  Nolte, T\"{u}nnermann, and Lederer]{femto}
+Alexander Szameit, Dominik Bl\"{o}mer, Jonas Burghoff, Thomas Schreiber, Thomas
+  Pertsch, Stefan Nolte, Andreas T\"{u}nnermann, and Falk Lederer.
+\newblock Discrete nonlinear localization in femtosecond laser written
+  waveguides in fused silica.
+\newblock \emph{Opt. Express}, 13\penalty0 (26):\penalty0 10552--10557, Dec
+  2005.
+\newblock \doi{10.1364/OPEX.13.010552}.
+\newblock URL \url{https://opg.optica.org/oe/abstract.cfm?URI=oe-13-26-10552}.
+
+\bibitem[Plotnik et~al.(2011)Plotnik, Peleg, Dreisow, Heinrich, Nolte, Szameit,
+  and Segev]{bics}
+Yonatan Plotnik, Or~Peleg, Felix Dreisow, Matthias Heinrich, Stefan Nolte,
+  Alexander Szameit, and Mordechai Segev.
+\newblock Experimental observation of optical bound states in the continuum.
+\newblock \emph{Phys. Rev. Lett.}, 107:\penalty0 183901, Oct 2011.
+\newblock \doi{10.1103/PhysRevLett.107.183901}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.107.183901}.
+
+\bibitem[Vicencio et~al.(2015)Vicencio, Cantillano, Morales-Inostroza, Real,
+  Mej\'{\i}a-Cort\'es, Weimann, Szameit, and Molina]{lieb1}
+Rodrigo~A. Vicencio, Camilo Cantillano, Luis Morales-Inostroza, Basti\'an Real,
+  Cristian Mej\'{\i}a-Cort\'es, Steffen Weimann, Alexander Szameit, and
+  Mario~I. Molina.
+\newblock Observation of localized states in lieb photonic lattices.
+\newblock \emph{Phys. Rev. Lett.}, 114:\penalty0 245503, Jun 2015.
+\newblock \doi{10.1103/PhysRevLett.114.245503}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.114.245503}.
+
+\bibitem[Mukherjee et~al.(2015)Mukherjee, Spracklen, Choudhury, Goldman,
+  \"Ohberg, Andersson, and Thomson]{lieb2}
+Sebabrata Mukherjee, Alexander Spracklen, Debaditya Choudhury, Nathan Goldman,
+  Patrik \"Ohberg, Erika Andersson, and Robert~R. Thomson.
+\newblock Observation of a localized flat-band state in a photonic lieb
+  lattice.
+\newblock \emph{Phys. Rev. Lett.}, 114:\penalty0 245504, Jun 2015.
+\newblock \doi{10.1103/PhysRevLett.114.245504}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.114.245504}.
+
+\bibitem[Leykam et~al.(2018)Leykam, Andreanov, and Flach]{artificialFB}
+Daniel Leykam, Alexei Andreanov, and Sergej Flach.
+\newblock Artificial flat band systems: from lattice models to experiments.
+\newblock \emph{Advances in Physics: X}, 3\penalty0 (1):\penalty0 1473052,
+  2018.
+\newblock \doi{10.1080/23746149.2018.1473052}.
+\newblock URL \url{https://doi.org/10.1080/23746149.2018.1473052}.
+
+\bibitem[Vicencio(2021)]{FBdynamics}
+Rodrigo~A. Vicencio.
+\newblock Photonic flat band dynamics.
+\newblock \emph{Advances in Physics: X}, 6\penalty0 (1):\penalty0 1878057,
+  2021.
+\newblock \doi{10.1080/23746149.2021.1878057}.
+\newblock URL \url{https://doi.org/10.1080/23746149.2021.1878057}.
+
+\bibitem[Rom{\'a}n-Cort{\'e}s et~al.(2021)Rom{\'a}n-Cort{\'e}s, Fadic,
+  Cid-Lara, Guzm{\'a}n-Silva, Real, and Vicencio]{strain}
+Diego Rom{\'a}n-Cort{\'e}s, Guillermo Fadic, Christofer Cid-Lara, Diego
+  Guzm{\'a}n-Silva, Basti{\'a}n Real, and Rodrigo~A. Vicencio.
+\newblock Strain induced localization to delocalization transition on a lieb
+  photonic ribbon lattice.
+\newblock \emph{Scientific Reports}, 11\penalty0 (1):\penalty0 21411, Nov 2021.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-021-00967-3}.
+\newblock URL \url{https://doi.org/10.1038/s41598-021-00967-3}.
+
+\bibitem[Cubillos~Cornejo et~al.(2023)Cubillos~Cornejo, Guzm{\'a}n-Silva,
+  Cornejo, Bordeu, and Vicencio]{dendritas}
+Javier Cubillos~Cornejo, Diego Guzm{\'a}n-Silva, V{\'i}ctor~Hugo Cornejo,
+  Ignacio Bordeu, and Rodrigo~A. Vicencio.
+\newblock Transport and localization on dendrite-inspired flat band linear
+  photonic lattices.
+\newblock \emph{Scientific Reports}, 13\penalty0 (1):\penalty0 13057, Aug 2023.
+\newblock ISSN 2045-2322.
+\newblock \doi{10.1038/s41598-023-39985-8}.
+\newblock URL \url{https://doi.org/10.1038/s41598-023-39985-8}.
+
+\bibitem[Vildoso et~al.(2023)Vildoso, Vicencio, and Petrovic]{splitters}
+Paloma Vildoso, Rodrigo~A. Vicencio, and Jovana Petrovic.
+\newblock Ultra-low-loss broadband multiport optical splitters.
+\newblock \emph{Opt. Express}, 31\penalty0 (8):\penalty0 12703--12716, Apr
+  2023.
+\newblock \doi{10.1364/OE.486855}.
+\newblock URL \url{https://opg.optica.org/oe/abstract.cfm?URI=oe-31-8-12703}.
+
+\bibitem[Zhang et~al.(2022)Zhang, Ning, Zhong, Belić, Zhang, Feng, Liang,
+  Zhang, and Xiao]{BlochOsci}
+Zhaoyang Zhang, Shaohuan Ning, Hua Zhong, Milivoj~R. Belić, Yiqi Zhang, Yuan
+  Feng, Shun Liang, Yanpeng Zhang, and Min Xiao.
+\newblock Experimental demonstration of optical bloch oscillation in
+  electromagnetically induced photonic lattices.
+\newblock \emph{Fundamental Research}, 2\penalty0 (3):\penalty0 401--404, 2022.
+\newblock ISSN 2667-3258.
+\newblock \doi{https://doi.org/10.1016/j.fmre.2021.08.019}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S2667325821001746}.
+
+\bibitem[Schwartz et~al.(2007)Schwartz, Bartal, Fishman, and Segev]{Anderson}
+Tal Schwartz, Guy Bartal, Shmuel Fishman, and Mordechai Segev.
+\newblock Transport and anderson localization in disordered two-dimensional
+  photonic lattices.
+\newblock \emph{Nature}, 446\penalty0 (7131):\penalty0 52--55, Mar 2007.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/nature05623}.
+\newblock URL \url{https://doi.org/10.1038/nature05623}.
+
+\bibitem[Mukherjee et~al.(2017)Mukherjee, Spracklen, Valiente, Andersson,
+  {\"O}hberg, Goldman, and Thomson]{obstopo}
+Sebabrata Mukherjee, Alexander Spracklen, Manuel Valiente, Erika Andersson,
+  Patrik {\"O}hberg, Nathan Goldman, and Robert~R. Thomson.
+\newblock Experimental observation of anomalous topological edge modes in a
+  slowly driven photonic lattice.
+\newblock \emph{Nature Communications}, 8\penalty0 (1):\penalty0 13918, Jan
+  2017.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/ncomms13918}.
+\newblock URL \url{https://doi.org/10.1038/ncomms13918}.
+
+\bibitem[Maczewsky et~al.(2017)Maczewsky, Zeuner, Nolte, and
+  Szameit]{obsfloquet}
+Lukas~J. Maczewsky, Julia~M. Zeuner, Stefan Nolte, and Alexander Szameit.
+\newblock Observation of photonic anomalous floquet topological insulators.
+\newblock \emph{Nature Communications}, 8\penalty0 (1):\penalty0 13756, Jan
+  2017.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/ncomms13756}.
+\newblock URL \url{https://doi.org/10.1038/ncomms13756}.
+
+\bibitem[C\'aceres-Aravena et~al.(2020)C\'aceres-Aravena, Torres, and
+  Vicencio]{topo1dphoto}
+G.~C\'aceres-Aravena, L.~E. F.~Foa Torres, and R.~A. Vicencio.
+\newblock Topological and flat-band states induced by hybridized linear
+  interactions in one-dimensional photonic lattices.
+\newblock \emph{Phys. Rev. A}, 102:\penalty0 023505, Aug 2020.
+\newblock \doi{10.1103/PhysRevA.102.023505}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.102.023505}.
+
+\bibitem[Savelev and Gorlach(2020)]{toporusos}
+Roman~S. Savelev and Maxim~A. Gorlach.
+\newblock Topological states in arrays of optical waveguides engineered via
+  mode interference.
+\newblock \emph{Phys. Rev. B}, 102:\penalty0 161112, Oct 2020.
+\newblock \doi{10.1103/PhysRevB.102.161112}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevB.102.161112}.
+
+\bibitem[Lederer et~al.(2008)Lederer, Stegeman, Christodoulides, Assanto,
+  Segev, and Silberberg]{discretesolitons}
+Falk Lederer, George~I. Stegeman, Demetri~N. Christodoulides, Gaetano Assanto,
+  Moti Segev, and Yaron Silberberg.
+\newblock Discrete solitons in optics.
+\newblock \emph{Physics Reports}, 463\penalty0 (1):\penalty0 1--126, 2008.
+\newblock ISSN 0370-1573.
+\newblock \doi{https://doi.org/10.1016/j.physrep.2008.04.004}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0370157308001257}.
+
+\bibitem[Rojas-Rojas et~al.(2019)Rojas-Rojas, Barriga, Mu\~noz, Solano, and
+  Hermann-Avigliano]{qed}
+S.~Rojas-Rojas, E.~Barriga, C.~Mu\~noz, P.~Solano, and C.~Hermann-Avigliano.
+\newblock Manipulation of multimode squeezing in a coupled waveguide array.
+\newblock \emph{Phys. Rev. A}, 100:\penalty0 023841, Aug 2019.
+\newblock \doi{10.1103/PhysRevA.100.023841}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.100.023841}.
+
+\bibitem[Julius et~al.(2022)Julius, Alias, and Halim]{squeezed}
+R.~Julius, A.~N. Alias, and M.~S.~A. Halim.
+\newblock Quantum squeezing in coupled waveguide networks with quadratic and
+  qubic nonlinearity.
+\newblock \emph{The European Physical Journal Plus}, 137\penalty0 (1):\penalty0
+  91, Jan 2022.
+\newblock ISSN 2190-5444.
+\newblock \doi{10.1140/epjp/s13360-021-02302-1}.
+\newblock URL \url{https://doi.org/10.1140/epjp/s13360-021-02302-1}.
+
+\bibitem[Medina~Due{\~{n}}as et~al.(2021)Medina~Due{\~{n}}as,
+  O'Ryan~P{\'{e}}rez, Hermann-Avigliano, and Foa~Torres]{topoquantum}
+Joaquin Medina~Due{\~{n}}as, Gabriel O'Ryan~P{\'{e}}rez, Carla
+  Hermann-Avigliano, and Luis E.~F. Foa~Torres.
+\newblock Quadrature protection of squeezed states in a one-dimensional
+  photonic topological insulator.
+\newblock \emph{{Quantum}}, 5:\penalty0 526, August 2021.
+\newblock ISSN 2521-327X.
+\newblock \doi{10.22331/q-2021-08-17-526}.
+\newblock URL \url{https://doi.org/10.22331/q-2021-08-17-526}.
+
+\bibitem[Li et~al.(2022)Li, Hu, Zhang, Tian, Gu, Zhu, Yuan, Yi, Li, Liu, Hao,
+  Gan, and Zhao]{telecom}
+Zhiwen Li, Siqi Hu, Qiao Zhang, Ruijuan Tian, Linpeng Gu, Yisong Zhu, Qingchen
+  Yuan, Ruixuan Yi, Chen Li, Yan Liu, Yue Hao, Xuetao Gan, and Jianlin Zhao.
+\newblock Telecom-band waveguide-integrated mos2 photodetector assisted by hot
+  electrons.
+\newblock \emph{ACS Photonics}, 9\penalty0 (1):\penalty0 282--289, 2022.
+\newblock \doi{10.1021/acsphotonics.1c01622}.
+\newblock URL \url{https://doi.org/10.1021/acsphotonics.1c01622}.
+
+\bibitem[Guzm\'an-Silva et~al.(2021)Guzm\'an-Silva, C\'aceres-Aravena, and
+  Vicencio]{interorbital}
+Diego Guzm\'an-Silva, Gabriel C\'aceres-Aravena, and Rodrigo~A. Vicencio.
+\newblock Experimental observation of interorbital coupling.
+\newblock \emph{Phys. Rev. Lett.}, 127:\penalty0 066601, Aug 2021.
+\newblock \doi{10.1103/PhysRevLett.127.066601}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.127.066601}.
+
+\bibitem[J{\"o}rg et~al.(2020)J{\"o}rg, Queralt{\'o}, Kremer, Pelegr{\'i},
+  Schulz, Szameit, von Freymann, Mompart, and Ahufinger]{OAMCaging}
+Christina J{\"o}rg, Gerard Queralt{\'o}, Mark Kremer, Gerard Pelegr{\'i},
+  Julian Schulz, Alexander Szameit, Georg von Freymann, Jordi Mompart, and
+  Ver{\`o}nica Ahufinger.
+\newblock Artificial gauge field switching using orbital angular momentum modes
+  in optical waveguides.
+\newblock \emph{Light: Science {\&} Applications}, 9\penalty0 (1):\penalty0
+  150, Aug 2020.
+\newblock ISSN 2047-7538.
+\newblock \doi{10.1038/s41377-020-00385-6}.
+\newblock URL \url{https://doi.org/10.1038/s41377-020-00385-6}.
+
+\bibitem[C\'aceres-Aravena et~al.(2022)C\'aceres-Aravena, Guzm\'an-Silva,
+  Salinas, and Vicencio]{ABCaging}
+Gabriel C\'aceres-Aravena, Diego Guzm\'an-Silva, Ignacio Salinas, and
+  Rodrigo~A. Vicencio.
+\newblock Controlled transport based on multiorbital aharonov-bohm photonic
+  caging.
+\newblock \emph{Phys. Rev. Lett.}, 128:\penalty0 256602, Jun 2022.
+\newblock \doi{10.1103/PhysRevLett.128.256602}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.128.256602}.
+
+\bibitem[Lian et~al.(2022)Lian, Qi, Wang, Bai, Wang, and Lu]{oamapp}
+Yudong Lian, Xuan Qi, Yuhe Wang, Zhenxu Bai, Yulei Wang, and Zhiwei Lu.
+\newblock Oam beam generation in space and its applications: A review.
+\newblock \emph{Optics and Lasers in Engineering}, 151:\penalty0 106923, 2022.
+\newblock ISSN 0143-8166.
+\newblock \doi{https://doi.org/10.1016/j.optlaseng.2021.106923}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0143816621003924}.
+
+\bibitem[Anguita et~al.(2014)Anguita, Herreros, and Djordjevic]{oamfree}
+Jaime~A. Anguita, Joaquín Herreros, and Ivan~B. Djordjevic.
+\newblock Coherent multimode oam superpositions for multidimensional
+  modulation.
+\newblock \emph{IEEE Photonics Journal}, 6\penalty0 (2):\penalty0 1--11, 2014.
+\newblock \doi{10.1109/JPHOT.2014.2309645}.
+
+\bibitem[Shen et~al.(2022)Shen, Chen, Wang, and Jin]{OAMWG}
+Wei-Guan Shen, Yuan Chen, Hui-Ming Wang, and Xian-Min Jin.
+\newblock Oam mode conversion in a photonic chip.
+\newblock \emph{Optics Communications}, 507:\penalty0 127615, 2022.
+\newblock ISSN 0030-4018.
+\newblock \doi{https://doi.org/10.1016/j.optcom.2021.127615}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0030401821008646}.
+
+\bibitem[Hu et~al.(2023)Hu, Bongiovanni, Wang, Wang, Song, Xu, Morandotti,
+  Buljan, and Chen]{vortex}
+Zhichan Hu, Domenico Bongiovanni, Ziteng Wang, Xiangdong Wang, Daohong Song,
+  Jingjun Xu, Roberto Morandotti, Hrvoje Buljan, and Zhigang Chen.
+\newblock Topologically protected vortex transport via chiral-symmetric
+  disclination, 2023.
+
+\bibitem[Polo et~al.(2016)Polo, Mompart, and Ahufinger]{vortextrim}
+J.~Polo, J.~Mompart, and V.~Ahufinger.
+\newblock Geometrically induced complex tunnelings for ultracold atoms carrying
+  orbital angular momentum.
+\newblock \emph{Phys. Rev. A}, 93:\penalty0 033613, Mar 2016.
+\newblock \doi{10.1103/PhysRevA.93.033613}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.93.033613}.
+
+\bibitem[Jiang et~al.(2023)Jiang, Wu, Qin, and Ke]{topoOAM}
+Chuang Jiang, Yanting Wu, Meiyan Qin, and Shaolin Ke.
+\newblock Topological bound modes with orbital angular momentum in optical
+  waveguide arrays.
+\newblock \emph{Journal of Lightwave Technology}, 41\penalty0 (7):\penalty0
+  2205--2211, 2023.
+\newblock \doi{10.1109/JLT.2022.3200139}.
+
+\bibitem[Bayer et~al.(1998)Bayer, Gutbrod, Reithmaier, Forchel, Reinecke,
+  Knipp, Dremin, and Kulakovskii]{molecules}
+M.~Bayer, T.~Gutbrod, J.~P. Reithmaier, A.~Forchel, T.~L. Reinecke, P.~A.
+  Knipp, A.~A. Dremin, and V.~D. Kulakovskii.
+\newblock Optical modes in photonic molecules.
+\newblock \emph{Phys. Rev. Lett.}, 81:\penalty0 2582--2585, Sep 1998.
+\newblock \doi{10.1103/PhysRevLett.81.2582}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.81.2582}.
+
+\bibitem[Mazanov et~al.(2023)Mazanov, Román-Cortés, Cáceres-Aravena, Cid,
+  Gorlach, and Vicencio]{SPSSH}
+Maxim Mazanov, Diego Román-Cortés, Gabriel Cáceres-Aravena, Christofer Cid,
+  Maxim~A. Gorlach, and Rodrigo~A. Vicencio.
+\newblock Photonic molecule approach to multi-orbital topology, 2023.
+\newblock URL \url{https://doi.org/10.48550/arXiv.2310.03160}.
+
+\bibitem[Pedrola(2015)]{bpm}
+Ginés~Lifante Pedrola.
+\newblock \emph{Beam Propagation Method for Design of Optical Waveguide
+  Devices}.
+\newblock Wiley, 2015.
+\newblock ISBN 9781119083382.
+\newblock URL \url{https://books.google.cl/books?id=ZV6-CgAAQBAJ}.
+
+\bibitem[Huang(1994)]{coupledmodetheory}
+Wei-Ping Huang.
+\newblock Coupled-mode theory for optical waveguides: an overview.
+\newblock \emph{Journal of The Optical Society of America A-optics Image
+  Science and Vision}, 11:\penalty0 963--983, 1994.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:120397076}.
+
+\bibitem[Terhalle(2011)]{slm}
+Bernd Terhalle.
+\newblock \emph{Controlling Light in Optically Induced Photonic Lattices}.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2011.
+\newblock ISBN 978-3-642-16647-1.
+\newblock \doi{10.1007/978-3-642-16647-1_7}.
+\newblock URL \url{https://doi.org/10.1007/978-3-642-16647-1_7}.
+
+\bibitem[Cáceres-Aravena et~al.(2023)Cáceres-Aravena, Real, Guzmán-Silva,
+  Vildoso, Salinas, Amo, Ozawa, and Vicencio]{spectraltransfer}
+Gabriel Cáceres-Aravena, Bastián Real, Diego Guzmán-Silva, Paloma Vildoso,
+  Ignacio Salinas, Alberto Amo, Tomoki Ozawa, and Rodrigo~A. Vicencio.
+\newblock {Edge-to-edge topological spectral transfer in diamond photonic
+  lattices}.
+\newblock \emph{APL Photonics}, 8\penalty0 (8):\penalty0 080801, 08 2023.
+\newblock ISSN 2378-0967.
+\newblock \doi{10.1063/5.0153770}.
+\newblock URL \url{https://doi.org/10.1063/5.0153770}.
+
+\end{thebibliography}
