@@ -1,0 +1,71 @@
+\chapter{Marco teórico}
+
+\section{Modos normales del campo electromagnético en un medio dieléctrico}
+
+Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda dieléctricas escritas dentro de una muestra de borosilicato. Es por ello que se supone un medio lineal no magnético libre de fuentes de carga y de corriente. Las ecuaciones de Maxwell en éste régimen son:
+\begin{align}
+	\nabla\cdot\textbf{D} &= 0, \label{eqn:gauss}
+	\\	
+	\nabla\times\textbf{E} &= -\frac{\partial \textbf{B}}{\partial t}, \label{eqn:faraday-lenz}
+	\\	
+	\nabla\cdot\textbf{B} &= 0,
+	\\	
+	\nabla\times\textbf{B} &= \mu_0\frac{\partial \textbf{D}}{\partial t}, \label{eqn:ampere-maxwell}
+\end{align}
+donde \textbf{E}, \textbf{B}, $\textbf{D}=\varepsilon\textbf{E}$ son los campos eléctrico, campo magnético y campo desplazamiento eléctrico, respectivamente. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.47$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
+
+Aplicando rotor por la izquierda a la ecuación (\ref{eqn:faraday-lenz}), usando la ecuación (\ref{eqn:ampere-maxwell}) y asumiendo una solución temporal harmónica proporcional a $e^{i\omega t}$ se tiene:
+
+\begin{align}
+	\nabla\times\nabla\times\textbf{E} &= -\frac{\partial}{\partial t}(\nabla\times\textbf{B}) = -\frac{\partial}{\partial t}\left(\mu_0\frac{\partial \textbf{D}}{\partial t}\right) = -\frac{n^2}{c^2}\frac{\partial^2 \textbf{E}}{\partial t^2} = n^2k_0^2 \textbf{E}, \label{eqn:rotordoble}
+\end{align}
+donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Notemos que, por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$, y usando la ley de Gauss (\ref{eqn:gauss}) se deduce que $\nabla\cdot \textbf{E} = -\nabla(n^2)\cdot\textbf{E}/n^2$.
+
+Con esto, 
+
+\begin{equation}
+	(\nabla^2  + k_0^2n^2)\textbf{E} = -\nabla\left(\textbf{E} \cdot \frac{\nabla n^2}{n^2}\right) \approx 0, \label{eqn:helmholz}
+\end{equation}
+
+donde el término de la derecha se desprecia usando la aproximación de guiaje débil, pues el contraste $\Delta n$ es pequeño. Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expandir en sus modos normales como $\textbf{E}(\textbf{r}) = \sum_k \textbf{f}_k(x, y) a_k(z) e^{i\beta_k z}$, por lo que el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
+
+\begin{align}
+	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right)\sum_k \textbf{f}_k(x, y) a_k(z) e^{i\beta_k z} 
+\\	
+	&= \sum_k \left[ a_ke^{i\beta_k z} \nabla_\perp^2 \textbf{f}_k + \textbf{f}_k\frac{d}{dz}\left( \frac{da_k}{dz}e^{i\beta_k z}  + i\beta_k a_ke^{i\beta_k z}\right) + k_0^2n^2 a_k\textbf{f}_k  e^{i\beta_k z}\right]
+	\\
+	&=
+	\sum_k \left\{ a_k \nabla_\perp^2 \textbf{f}_k + \left[\frac{d^2 a_k}{dz^2} + 2i\beta_k \frac{d a_k}{dz} + \left(k_0^2n^2  - \beta_k^2\right) a_k \right]\textbf{f}_k \right\}e^{i\beta_k z}
+	\\
+	&=
+	0
+\end{align}
+
+\section{Métodos numéricos}
+
+A partir de la ecuación (\ref{eqn:rotordoble}) y separando el campo eléctrico $\textbf{E}(\textbf{r}) = \textbf{E}_1(\textbf{r}) e^{-i \phi_1 (\textbf{r})}$ en una envolvente lenta $\textbf{E}_1(\textbf{r})$ y una fase rápidamente oscilante $\phi_1 (\textbf{r})$ ,
+
+\begin{align}
+\nabla\times[\nabla\times(\textbf{E}_1 e^{-i \phi_1 })] &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}
+\\
+\nabla\times[ e^{-i \phi_1} \times (\nabla \times \textbf{E}_1) + \nabla(e^{-i \phi_1})\times \textbf{E}_1] &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}
+\\
+\nabla\times[ e^{-i \phi_1}  (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1  ] &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}
+\\
+e^{-i \phi_1}  \nabla\times[ (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1] + \nabla(e^{-i \phi_1})\times  (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1  &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}
+\\
+e^{-i \phi_1}  \nabla\times[ (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1] - i\textbf{k}_1 e^{-i \phi_1}\times  (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1  &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}
+\\
+	(\nabla-i\textbf{k}_1)\times((\nabla-i\textbf{k}_1)\times \textbf{E}_1) &= n^2k_0^2 \textbf{E}_1,
+	 \label{eqn:comsol}
+\end{align}
+con $\textbf{k}_1 = \nabla\phi_1(\textbf{r})$.
+La ecuación (\ref{eqn:comsol}) se puede resolver vía el software comercial COMSOL \textit{Multiphysics} mediante elementos finitos más gruesos que los que se tendría que usar a partir de la ecuación (\ref{eqn:rotordoble}) debido a la separación entre envolvente y fase, sin haber hecho aproximación alguna. Por otro lado, utilizando la aproximación paraxial escogiendo el eje $z$  como dirección de propagación y seleccionando la polarización horizontal del campo, es posible simplificar la ecuación (\ref{eqn:comsol}) y llegar a la formulación de un método numérico escalar conocido como \textit{Beam Propagation Method}, utilizado ampliamente en esta área de investigación \cite{bics, interorbital, OAMCaging, vortex, bpm}. Éste consiste en resolver numéricamente la ecuación
+\begin{equation}
+	2in_0k_0\frac{\partial}{\partial z}\psi(x,y,z) = \nabla_\perp^2 \psi (x,y,z) + \left(n^2-n_0^2\right)k_0^2 \psi (x,y,z), \label{eqn:paraxial}
+\end{equation}
+con $\psi(x,y,z)$, $n_0$ , $n(x,y)$ y $k_0$ la envolvente de la componente horizontal campo eléctrico, el índice de refracción del material, el índice de refracción inducido y el número de onda en el vacío, respectivamente. Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}), con el objetivo de describir de forma discreta una red fotónica, es posible derivar las llamadas ecuaciones discretas tipo Schrödinger \cite{discretesolitons, artificialFB, FBdynamics}
+\begin{equation}
+	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}}, \label{eqn:CMT}
+\end{equation}
+con $u_{\vec{n}}, \beta_{\vec{n}}$ y $C_{\vec{n}, \vec{m}}$ la envolvente normalizada del campo eléctrico, la constante de propagación normalizada y las constantes de acoplamiento entre los modos de las guías en las posiciones de la red $\vec{n}$ y $\vec{m}$, respectivamente.
