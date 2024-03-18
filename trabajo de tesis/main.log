@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.10.19)  14 MAR 2024 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.10.19)  18 MAR 2024 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -743,7 +743,7 @@ LaTeX Info: Redefining \nameref on input line 47.
 Package newfloat Info: `float' package detected.
  ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 47.
-<imagenes/escudoU2014.pdf, id=36, 320.19624pt x 689.57625pt>
+<imagenes/escudoU2014.pdf, id=44, 320.19624pt x 689.57625pt>
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
 <use imagenes/escudoU2014.pdf>
 Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 50.
@@ -831,13 +831,26 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 3.
 [3
 
-] [4]) (./cap3.tex [5]
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 48.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Delta' on input line 48.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 48.
+
+[4]) (./cap3.tex [5]
 Cap\'{\i }tulo 3.
 ) [6
 
 ] (./conclu.tex [7] [8]
 Cap\'{\i }tulo 4.
-<imagenes/fcfm.pdf, id=239, 431.78012pt x 346.29375pt>
+<imagenes/fcfm.pdf, id=253, 431.78012pt x 346.29375pt>
 File: imagenes/fcfm.pdf Graphic file (type pdf)
 <use imagenes/fcfm.pdf>
 Package pdftex.def Info: imagenes/fcfm.pdf  used on input line 6.
@@ -873,14 +886,14 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 22F2F10A60049C5F2659F96F782C1EE8;491.
+(rerunfilecheck)             Checksum: 0A1701D9D985AFEDD112FB6471F563A2;675.
  ) 
 Here is how much of TeX's memory you used:
- 18519 strings out of 479304
- 306487 string characters out of 5869778
- 876401 words of memory out of 5000000
- 35239 multiletter control sequences out of 15000+600000
- 431746 words of font info for 87 fonts, out of 8000000 for 9000
+ 18548 strings out of 479304
+ 306895 string characters out of 5869778
+ 875500 words of memory out of 5000000
+ 35261 multiletter control sequences out of 15000+600000
+ 440478 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,12n,88p,1050b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -893,10 +906,10 @@ re/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmri8a.pfb>
-Output written on main.pdf (25 pages, 157126 bytes).
+Output written on main.pdf (25 pages, 159273 bytes).
 PDF statistics:
- 434 PDF objects out of 1000 (max. 8388607)
- 391 compressed objects within 4 object streams
- 107 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

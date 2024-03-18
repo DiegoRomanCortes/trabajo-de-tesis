@@ -27,19 +27,30 @@ Con esto,
 	(\nabla^2  + k_0^2n^2)\textbf{E} = -\nabla\left(\textbf{E} \cdot \frac{\nabla n^2}{n^2}\right) \approx 0, \label{eqn:helmholz}
 \end{equation}
 
-donde el término de la derecha se desprecia usando la aproximación de guiaje débil, pues el contraste $\Delta n$ es pequeño. Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expandir en sus modos normales como $\textbf{E}(\textbf{r}) = \sum_k \textbf{f}_k(x, y) a_k(z) e^{i\beta_k z}$, por lo que el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
+donde el término de la derecha se desprecia usando la aproximación de guiaje débil, pues el contraste $\Delta n$ es pequeño. Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expandir en sus modos normales como $\textbf{E}(\textbf{r}) = \sum_k \textbf{E}_k(x, y) e^{i\beta_k z}$, por lo que el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
 
 \begin{align}
-	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right)\sum_k \textbf{f}_k(x, y) a_k(z) e^{i\beta_k z} 
+	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right)\sum_k \textbf{E}_k(x, y)  e^{i\beta_k z} 
 \\	
-	&= \sum_k \left[ a_ke^{i\beta_k z} \nabla_\perp^2 \textbf{f}_k + \textbf{f}_k\frac{d}{dz}\left( \frac{da_k}{dz}e^{i\beta_k z}  + i\beta_k a_ke^{i\beta_k z}\right) + k_0^2n^2 a_k\textbf{f}_k  e^{i\beta_k z}\right]
-	\\
-	&=
-	\sum_k \left\{ a_k \nabla_\perp^2 \textbf{f}_k + \left[\frac{d^2 a_k}{dz^2} + 2i\beta_k \frac{d a_k}{dz} + \left(k_0^2n^2  - \beta_k^2\right) a_k \right]\textbf{f}_k \right\}e^{i\beta_k z}
+	&= \sum_k \left[ e^{i\beta_k z} \nabla_\perp^2 \textbf{E}_k + -\beta_k^2\textbf{E}_k e^{i\beta_k z} + k_0^2n^2 \textbf{E}_k  e^{i\beta_k z}\right]
+	\\	
+	&= \sum_k \left[  \nabla_\perp^2  + (k_0^2n^2-\beta_k^2) \right]\textbf{E}_k  e^{i\beta_k z}
 	\\
 	&=
 	0
+	\\
+	\implies
+	& \left[  \nabla_\perp^2  + (k_0^2n^2(x,y)-\beta_k^2) \right]\textbf{E}_k(x,y)  = 0, \quad \forall k. \label{eqn:eigenfield}
 \end{align}
+
+Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_k^2$ y autofunciones $\textbf{E}_k(x,y)$. En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
+
+\section{Soluciones analíticas para un contraste $\Delta n(x,y)$ rectangular}
+
+\section{Teoría de modos acoplados}
+	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que los modos de las guías de onda satisfacen para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}). Entonces, despomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}$
+	
+
 
 \section{Métodos numéricos}
 
