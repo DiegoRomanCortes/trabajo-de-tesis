@@ -30,25 +30,43 @@ Con esto,
 donde el término de la derecha se desprecia usando la aproximación de guiaje débil, pues el contraste $\Delta n$ es pequeño. Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expandir en sus modos normales como $\textbf{E}(\textbf{r}) = \sum_k \textbf{E}_k(x, y) e^{i\beta_k z}$, por lo que el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
 
 \begin{align}
-	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right)\sum_k \textbf{E}_k(x, y)  e^{i\beta_k z} 
+	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right)\sum_k \textbf{E}_k(x, y)  e^{i\beta_k z} \nonumber
 \\	
 	&= \sum_k \left[ e^{i\beta_k z} \nabla_\perp^2 \textbf{E}_k + -\beta_k^2\textbf{E}_k e^{i\beta_k z} + k_0^2n^2 \textbf{E}_k  e^{i\beta_k z}\right]
+\nonumber	
 	\\	
 	&= \sum_k \left[  \nabla_\perp^2  + (k_0^2n^2-\beta_k^2) \right]\textbf{E}_k  e^{i\beta_k z}
+	\nonumber	
 	\\
 	&=
 	0
+	\nonumber
 	\\
 	\implies
-	& \left[  \nabla_\perp^2  + (k_0^2n^2(x,y)-\beta_k^2) \right]\textbf{E}_k(x,y)  = 0, \quad \forall k. \label{eqn:eigenfield}
+	& \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]\textbf{E}_k(x,y)  = \beta_k^2 \textbf{E}_k(x,y), \quad \forall k. \label{eqn:eigenfield}
 \end{align}
 
 Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_k^2$ y autofunciones $\textbf{E}_k(x,y)$. En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
 
-\section{Soluciones analíticas para un contraste $\Delta n(x,y)$ rectangular}
+\section{Soluciones analíticas para un contraste $n(x)$ rectangular}
 
 \section{Teoría de modos acoplados}
-	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que los modos de las guías de onda satisfacen para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}). Entonces, despomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}$
+	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $k$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, despomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
+
+\begin{align}
+	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2 \right)\sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}
+	\nonumber
+	\\
+	&= \sum_{k, m} \left[a_{k, m} e^{i\beta_{k, m} z} \left(\nabla_\perp^2 +k_0^2n^2 \right)\textbf{E}_{k, m} + \textbf{E}_{k, m}\frac{d^2}{d z^2}a_{k, m} e^{i\beta_{k, m} z}\right]
+	\nonumber	
+	\\
+	&= \sum_{k, m} \left[a_{k, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{k,m}^2 \right) + \frac{d^2 a_{k, m}}{d z^2}  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
+		\nonumber	
+	\\
+	&= \sum_{k, m} \left[a_{k, m}  k_0^2(n^2-n_m^2)  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
+	\label{eqn:CMT1}
+\end{align}
+
 	
 
 

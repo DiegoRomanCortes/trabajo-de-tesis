@@ -2,10 +2,10 @@
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Marco teórico}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Modos normales del campo electromagnético en un medio dieléctrico}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Soluciones analíticas para un contraste $\Delta n(x,y)$ rectangular}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Soluciones analíticas para un contraste $n(x)$ rectangular}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Teoría de modos acoplados}{4}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Métodos numéricos}{5}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Tercero}{6}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Conclusión}{9}{chapter.4}%
-\contentsline {chapter}{\numberline {}Bibliograf\'ia}{15}{chapter*.8}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Anexo}{16}{Appendix.alph1.Alph1}%
+\contentsline {chapter}{\numberline {3}Tercero}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Conclusión}{10}{chapter.4}%
+\contentsline {chapter}{\numberline {}Bibliograf\'ia}{16}{chapter*.8}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Anexo}{17}{Appendix.alph1.Alph1}%
