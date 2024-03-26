@@ -63,7 +63,14 @@ Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\
 	&= \sum_{k, m} \left[a_{k, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{k,m}^2 \right) + \frac{d^2 a_{k, m}}{d z^2}  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
 		\nonumber	
 	\\
-	&= \sum_{k, m} \left[a_{k, m}  k_0^2(n^2-n_m^2)  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
+	&= \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_m(\textbf{r})  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
+	\nonumber	
+	\\
+	&= 0
+	\nonumber	
+	\\
+	\implies &
+	  \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_m(\textbf{r})  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m} \cdot \textbf{E}_{k', m'}^* dxdy = 0
 	\label{eqn:CMT1}
 \end{align}
 
