@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.10.19)  26 MAR 2024 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.10.19)  27 MAR 2024 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -548,7 +548,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box55
 )
 Package caption Info: Option `figurename' requires the `newfloat' package on in
-put line 40.
+put line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
@@ -604,7 +604,7 @@ Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
 \JustifyingParindent=\skip71
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
-7.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -614,46 +614,46 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 47.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 48.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-47.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-47.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-47.
+48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 48.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 4
-7.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -716,9 +716,9 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 47.
-LaTeX Info: Redefining \% on input line 47.
-Package hyperref Info: Link coloring OFF on input line 47.
+LaTeX Info: Redefining \. on input line 48.
+LaTeX Info: Redefining \% on input line 48.
+Package hyperref Info: Link coloring OFF on input line 48.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -731,9 +731,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count310
 )
-LaTeX Info: Redefining \ref on input line 47.
-LaTeX Info: Redefining \pageref on input line 47.
-LaTeX Info: Redefining \nameref on input line 47.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
@@ -742,32 +742,32 @@ LaTeX Info: Redefining \nameref on input line 47.
 \c@lstlisting=\count311
 Package newfloat Info: `float' package detected.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 47.
+LaTeX Info: Redefining \selectfont on input line 48.
 <imagenes/escudoU2014.pdf, id=44, 320.19624pt x 689.57625pt>
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
 <use imagenes/escudoU2014.pdf>
-Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 50.
+Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 51.
 (pdftex.def)             Requested size: 38.42189pt x 82.74557pt.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
-0.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 5
-0.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 5
-0.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 5
-0.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -777,12 +777,12 @@ File: utxsyc.fd 2000/12/15 v3.1
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imagenes/escudoU2014.pdf
 >]
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.88> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 52.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 53.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63 \begin{dedicatoria}
+l.64 \begin{dedicatoria}
                          [1
 
 ] [2
@@ -846,7 +846,7 @@ Cap\'{\i }tulo 3.
 
 ] (./conclu.tex [8] [9]
 Cap\'{\i }tulo 4.
-<imagenes/fcfm.pdf, id=255, 431.78012pt x 346.29375pt>
+<imagenes/fcfm.pdf, id=257, 431.78012pt x 346.29375pt>
 File: imagenes/fcfm.pdf Graphic file (type pdf)
 <use imagenes/fcfm.pdf>
 Package pdftex.def Info: imagenes/fcfm.pdf  used on input line 6.
@@ -887,25 +887,26 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  18547 strings out of 479304
  306867 string characters out of 5869778
- 879555 words of memory out of 5000000
+ 880572 words of memory out of 5000000
  35262 multiletter control sequences out of 15000+600000
  440478 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 86i,12n,88p,1050b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 86i,19n,88p,1050b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
-onts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
-s/utmri8a.pfb>
-Output written on main.pdf (26 pages, 162386 bytes).
+onts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txexa.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
+a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (26 pages, 167298 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
+ 459 PDF objects out of 1000 (max. 8388607)
+ 412 compressed objects within 5 object streams
  108 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

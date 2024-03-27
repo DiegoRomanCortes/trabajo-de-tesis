@@ -42,16 +42,16 @@ donde el término de la derecha se desprecia usando la aproximación de guiaje d
 	0
 	\nonumber
 	\\
-	\implies
-	& \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]\textbf{E}_k(x,y)  = \beta_k^2 \textbf{E}_k(x,y), \quad \forall k. \label{eqn:eigenfield}
+	\therefore
+	& \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]\textbf{E}_k(x,y)  = \beta_k^2 \textbf{E}_k(x,y) \quad \forall k, \label{eqn:eigenfield}
 \end{align}
-
+pues los modos normales son ortogonales entre sí.
 Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_k^2$ y autofunciones $\textbf{E}_k(x,y)$. En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
 
 \section{Soluciones analíticas para un contraste $n(x)$ rectangular}
 
 \section{Teoría de modos acoplados}
-	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $k$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, despomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
+	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $k$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
 
 \begin{align}
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2 \right)\sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}
@@ -63,14 +63,22 @@ Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\
 	&= \sum_{k, m} \left[a_{k, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{k,m}^2 \right) + \frac{d^2 a_{k, m}}{d z^2}  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
 		\nonumber	
 	\\
-	&= \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_m(\textbf{r})  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
+	&= \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_{m'} +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
 	\nonumber	
 	\\
-	&= 0
+	&= 0.
 	\nonumber	
-	\\
-	\implies &
-	  \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_m(\textbf{r})  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m} \cdot \textbf{E}_{k', m'}^* dxdy = 0
+\end{align}
+Aplicando producto punto con $\textbf{E}_{k', m''}^*$ e integrando en todo el plano $xy$:
+\begin{align}
+	\implies 
+	  \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_{m'}  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m} \cdot \textbf{E}_{k', m''}^* dxdy &= 0
+	  \nonumber
+	  \\
+	  \sum_{k, m} \left[a_{k, m}  \sum_{m'\neq m}\left( \underbrace{\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} k_0^2n^2_{m'} \textbf{E}_{k, m} \cdot \textbf{E}_{k', m''}^* dxdy}_{C_{m, m', m'', k, k'}}\right) +2i\beta_{k,m}\frac{d a_{k, m}}{d z}\delta_{kk'}\delta_{mm''} \right]e^{i\beta_{k, m} z} &= 0
+	  	  \nonumber
+	  \\
+2i\beta_{k',m''}\frac{d a_{k', m''}}{d z}e^{i\beta_{k', m''} z} +	  \sum_{k, m} \sum_{m'\neq m}  a_{k, m}  C_{m, m', m'', k, k'}e^{i\beta_{k, m} z}   &= 0
 	\label{eqn:CMT1}
 \end{align}
 
