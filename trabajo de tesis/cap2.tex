@@ -46,10 +46,25 @@ donde el término de la derecha se desprecia usando la aproximación de guiaje d
 	& \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]\textbf{E}_k(x,y)  = \beta_k^2 \textbf{E}_k(x,y) \quad \forall k, \label{eqn:eigenfield}
 \end{align}
 pues los modos normales son ortogonales entre sí.
-Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_k^2$ y autofunciones $\textbf{E}_k(x,y)$. En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
-
+Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_k^2$ y autofunciones $\textbf{E}_k(x,y)$. En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
+ 
 \section{Soluciones analíticas para un contraste $n(x)$ rectangular}
 
+
+
+
+\section{Condición de ortogonalidad de los modos normales}
+
+La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_k(x,y)$. Para ello, se utilizará la segunda identidad de Green \cite{JacksonOrtogonality} enunciada como
+
+\begin{equation*}
+	\int_U \left(\phi \nabla^2 \psi - \psi \nabla^2 \phi\right) dV = \oint_{\partial U} \left(\phi \nabla \psi - \psi \nabla \phi\right) \cdot \hat{n} dS.
+\end{equation*}
+Si se hacen los reemplazos por las i-ésimas componentes de los campos $\psi = E_k^i$ y $\phi = E_{k'}^i$ y se considera una región bidimensional se tiene:
+
+\begin{equation*}
+	\int_U \left(E_{k'}^i \nabla_\perp^2 E_k^i - E_k^i \nabla_\perp^2 E_{k'}^i\right) dV = \oint_{\partial U} \left(E_{k'}^i \nabla E_k^i - E_k^i \nabla E_{k'}^i\right) \cdot \hat{n} dS.
+\end{equation*}
 \section{Teoría de modos acoplados}
 	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $k$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
 
@@ -63,7 +78,7 @@ Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\
 	&= \sum_{k, m} \left[a_{k, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{k,m}^2 \right) + \frac{d^2 a_{k, m}}{d z^2}  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
 		\nonumber	
 	\\
-	&= \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_{m'} +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
+	&\approx \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_{m'} +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
 	\nonumber	
 	\\
 	&= 0.
