@@ -27,12 +27,12 @@ Entre los premios Nobel en Física de la última década \cite{nobel} se encuent
 	
 	Numerosos de estos avances en el control de las propiedades de transporte de la luz se han visto propiciados por la técnica de escritura de guías de onda por láser de femtosegundos, la cual ha permitido la fabricación de redes fotónicas de variada índole \cite{femto, bics, lieb1, lieb2, artificialFB, FBdynamics, strain, dendritas, splitters}. Su importancia radica no sólo en emular situaciones de la física del sólido, tales como oscilaciones de Bloch \cite{BlochOsci}, localización de Anderson \cite{Anderson}, estados de banda plana \cite{lieb1, lieb2, artificialFB, FBdynamics} o topología \cite{obstopo, obsfloquet, topo1dphoto,toporusos}, sino que también en el estudio de fenómenos ópticos incluyendo no-linealidad tipo Kerr y su uso en la formación de solitones \cite{discretesolitons}, la posible propagación de luz cuántica \cite{qed, squeezed, topoquantum}, o su compatibilidad con la transmisión de información en la industria de las telecomunicaciones \cite{telecom}.
 	
-	El enfoque de este proyecto será el estudio de redes fotónicas multiorbitales. Por ello será crucial incorporar la técnica de acoplamiento interorbital, que consiste en sintonizar las constantes de propagación de el modo fundamental de una guía monomodal (S) con el primer modo guiado excitado de una guía dimodal (P) mediante la calibración adecuada de las potencias de escritura, que inducen diferencias en los contrastes generados por la técnica de escritura por láser femtosegundos \cite{interorbital}.
+	El enfoque de este proyecto es el estudio de redes fotónicas multiorbitales. Por ello será crucial incorporar la técnica de acoplamiento interorbital. Ésta consiste en sintonizar la constante de propagación del modo fundamental de una guía monomodal (S) con la del primer modo guiado excitado de una guía dimodal (P). La calibración adecuada de las potencias de escritura induce diferencias en los contrastes generados por la técnica de escritura por láser femtosegundos que acercan las constantes de propagación de ambos modos \cite{interorbital}.
 	
-	El llamado acoplamiento SP ha permitido el estudio de redes que presentan flujo magnético efectivo $\Phi = \pi$, el cual permite el transporte controlado de la luz \cite{OAMCaging, ABCaging}. Una aplicación directa de este fenómeno es la generación de guías de onda que admitan modos guiados de luz con momentum angular orbital (OAM) y la codificación de su carga topológica $\ell$ como medio para transmitir información \cite{oamapp, oamfree}. Se ha reportado a la fecha sólo la propagación de OAM mediante de redes fotónicas que presevan simetría $C_3$ \cite{OAMWG, vortex}. Sin embargo, el acoplamiento entre modos OAM en una red fotónica permitiría la generación de flujos magnéticos distintos de $0$ o $\pi$, lo que se reflejaría en una direccionalidad dependiente de la circulación propagante \cite{vortextrim, topoOAM}. Para ello será necesario introducir el concepto de ``moléculas fotónicas'' \cite{molecules} y estudiar su aplicación en redes fotónicas \cite{SPSSH}.
+	El llamado acoplamiento SP ha permitido el estudio de redes que presentan flujo magnético efectivo $\Phi = \pi$, el cual permite el transporte controlado de la luz \cite{OAMCaging, ABCaging}. Una aplicación directa de este fenómeno es la generación de guías de onda que admitan modos guiados de luz con momentum angular orbital (OAM) y la codificación de su carga topológica $\ell$ como medio para transmitir información \cite{oamapp, oamfree}. A la fecha sólo se ha reportado la propagación de OAM mediante de redes fotónicas que presevan simetría $C_3$ \cite{OAMWG, vortex}. Sin embargo, el acoplamiento entre modos OAM en una red fotónica permitiría la generación de flujos magnéticos distintos de $0$ o $\pi$, lo que se reflejaría en una direccionalidad dependiente de la circulación propagante \cite{vortextrim, topoOAM}. Para ello será necesario introducir el concepto de ``moléculas fotónicas'' \cite{molecules} y estudiar su aplicación en redes fotónicas \cite{SPSSH}.
 \section{Objetivos de la tesis}
 \begin{enumerate}
-	\item Explorar la utilización de moléculas fotónicas como base para fabricar y estudiar redes interorbitales.
+	\item Explorar la utilización de moléculas fotónicas como base para fabricar y estudiar redes interorbitales. En particular, la sepración óptima entre guías de onda y la potencia de escritura idónea para la aparición de modos superiores.
 	\item Entender el comportamiento de los modos guiados en moléculas fotónicas y su interacción en el régimen de acoplamiento débil.
 \end{enumerate}
 \section{Metodología}
@@ -48,7 +48,7 @@ La ecuación (\ref{eqn:maxwell}) se puede resolver vía el software comercial CO
 \begin{equation}
 	2in_0k_0\frac{\partial}{\partial z}\psi(x,y,z) = \nabla_\perp^2 \psi (x,y,z) + \left(n^2-n_0^2\right)k_0^2 \psi (x,y,z), \label{eqn:paraxial}
 \end{equation}
-con $\psi(x,y,z)$, $n_0$ , $n(x,y)$ y $k_0$ la envolvente de la componente horizontal campo eléctrico, el índice de refracción del material, el índice de refracción inducido y el número de onda en el vacío, respectivamente. Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}), con el objetivo de describir de forma discreta una red fotónica, es posible derivar las llamadas ecuaciones discretas tipo Schrödinger \cite{discretesolitons, artificialFB, FBdynamics}
+con $\psi(x,y,z)$, $n_0$, $n(x,y)$ y $k_0$ la envolvente de la componente horizontal campo eléctrico, el índice de refracción del material, el índice de refracción inducido y el número de onda de la luz en el vacío, respectivamente. Aplicando teoría de modos acoplados \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}), con el objetivo de describir de forma discreta una red fotónica, es posible derivar las llamadas ecuaciones discretas tipo Schrödinger \cite{discretesolitons, artificialFB, FBdynamics}
 \begin{equation}
 	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}}, \label{eqn:CMT}
 \end{equation}
@@ -64,7 +64,7 @@ Para la fabricación de guías de onda se utiliza un láser femtosegundo pulsado
 \end{figure}
 
 
-La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello el estudiante implementó, como trabajo previo, una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de la luz proveniente de un láser de 730nm, cuyo esquema simplificado se ilustra en la Figura \ref{fig:SLM}. Esto se logra mediante un $\lambda/2$ para que la polarización coincida con la respuesta del Cristal Líquido (PLUTO-NIR: SLM - Reflective LCOS). Se utiliza un lente objetivo 20x seguido de un lente de 150 mm para ensanchar y colimar el haz. El primer \textit{Beam Splitter} (BS) permite tener una referencia para realizar interferometría a la salida del monetaje. La modulación es controlada por el software HOLOEYE que recibe imágenes en blanco y negro que codifican la intensidad de voltaje aplicado en cada píxel del modulador. Como un PLUTO-NIR sólo es capaz de modular la fase, se utiliza primero un holograma de gradiente de fase (\textit{blaze grating}) al que se le aplica una máscara de intensidad y finalmente se agrega la fase deseada, técnica conocida \textit{Phase Imprinting Technique} \cite{slm}. Para acoplar la modulación con los modos micrométricos de las guías de onda, es necesario usar dos lentes de 1000 mm y 50 mm que reduzcan el tamaño de la imagen. Dos lentes objetivos 4x se usan luego de un BS una vez puesta la muestra para calibrar los planos de imagen de 1) la cara de entrada de la muestra (iluminada con luz blanca) con 2) el holograma que se refleja desde la cara de entrada usando una cámara CCD. Finalmente, la luz propagada en la muestra es capturada por un lente objetivo 10x y enfocada en otra cámara CCD tipo \textit{Beam Profiler}. Opcionalmente, se puede colocar otro BS para obtener información sobre la fase de la imagen mediante técnicas de interferometría.
+La excitación de redes fotónicas interorbitales hace necesario el uso de condiciones iniciales no triviales. Para ello, el estudiante implementó como trabajo previo una técnica de modulación espacial de luz que permite modular tanto la amplitud como la fase de un haz tipo gaussiano proveniente de un láser de 730 nm, cuyo esquema simplificado se ilustra en la Figura \ref{fig:SLM}. Esto se logra mediante un retardador de onda $\lambda/2$ para que la polarización coincida con la respuesta del Cristal Líquido (PLUTO-NIR: SLM - Reflective LCOS). Se utiliza un lente objetivo 20x seguido de un lente de 150 mm para ensanchar y colimar el haz. El primer \textit{Beam Splitter} (BS) permite tener una referencia para realizar interferometría a la salida del montaje. La modulación es controlada por el software HOLOEYE que recibe imágenes en blanco y negro cuyas intensidades en píxeles codifican la intensidad de voltaje aplicado en cada píxel del modulador. Como un PLUTO-NIR sólo es capaz de modular la fase, se utiliza primero un holograma de gradiente de fase (\textit{blaze grating}) al que se le aplica una máscara de intensidad y finalmente se agrega la fase deseada, técnica conocida \textit{Phase Imprinting Technique} \cite{slm}. Para acoplar la modulación con los modos micrométricos de las guías de onda, es necesario usar dos lentes de 1000 mm y 50 mm que reduzcan el tamaño de la imagen. Dos lentes objetivos 4x se usan luego de un BS una vez puesta la muestra para calibrar los planos de imagen de 1) la cara de entrada de la muestra (iluminada con luz blanca) con 2) el holograma que se refleja desde la cara de entrada usando una cámara CCD. Finalmente, la luz propagada en la muestra es capturada por un lente objetivo 10x y enfocada en otra cámara CCD tipo \textit{Beam Profiler}. Opcionalmente, se puede colocar otro BS para obtener información sobre la fase de la imagen de salida mediante técnicas de interferometría.
 
 \begin{figure}[H]
 	\centering
@@ -74,7 +74,7 @@ La excitación de redes fotónicas interorbitales hace necesario el uso de condi
 
 
 
-Para ciertos experimentos resulta más apropiada la excitación de redes fotónicas variando la longitud de onda de excitación \cite{spectraltransfer, SPSSH}. Para ello se utiliza el montaje ilustrado en la Figura \ref{fig:supercontinuum}, el que está basado en un láser supercontinuo con un espectro de 400-2000 nm:
+Para ciertos experimentos resulta más apropiada la excitación de redes fotónicas variando la longitud de onda de excitación \cite{spectraltransfer, SPSSH}. Para ello, se utiliza el montaje ilustrado en la Figura \ref{fig:supercontinuum} que está basado en un láser supercontinuo con un espectro de 400 nm a 2000 nm en longitud de onda:
 
 \begin{figure}[H]
 	\centering
@@ -85,7 +85,7 @@ Para ciertos experimentos resulta más apropiada la excitación de redes fotóni
 
 \section{Trabajo adelantado}
 
-Se hizo un barrido de parámetros de fabricación de guías de onda, en particular de potencia de escritura y separación entre guías, logrando la inversión de elipticidad, el sintonizado de las constantes de propagación del modo fundamental $S$ de la molécula de excitación y el modo excitado $P_x$ de la molécula de acoplamiento, optimizado para 730 nm.
+Se hizo un barrido de parámetros de fabricación de guías de onda, en particular de potencia de escritura y separación entre guías. Esto permitió el sintonizado de las constantes de propagación del modo fundamental $S$ de la molécula de excitación y el modo excitado $P_x$ de la molécula de acoplamiento, optimizado para una longitud de onda de 730 nm.
 
 
 \begin{figure}[H]
@@ -96,7 +96,7 @@ Se hizo un barrido de parámetros de fabricación de guías de onda, en particul
 
 Esta sintonización permitió la fabricación de las redes SP-SSH mostradas en la Figura \ref{fig:femtosetup}b) y estudiadas tanto teórica, numérica y analíticamente en las referencias \cite{toporusos, topo1dphoto, SPSSH}.
 
-Con parámetros de fabricación similares se fabricaron redes 1D-SP, las cuales exhiben una transición entre localización y transporte en función de la longitud de onda de excitación. La excitación experimental mediante láser supercontinuo se presenta en la figura \ref{fig:super} en 50 mm de propagación.
+Con parámetros de fabricación similares se fabricaron redes 1D-SP, las cuales exhiben una transición entre localización y transporte en función de la longitud de onda de excitación. La excitación experimental mediante láser supercontinuo se presenta en la figura \ref{fig:super} para 50 mm de propagación.
 
 \begin{figure}[H]
 	\centering
@@ -112,12 +112,20 @@ Luego de implementar el montaje de modulación esquematizado en la Figura \ref{f
 	\caption{a)-f) Barrido en ángulo de dímeros dipolares a una distancia de separación de 25 $\mu$m propagando en una distancia de 25 mm en la dirección perpendicular al plano. La inyección se realiza en la molécula inferior izquierda con un holograma tipo Hermite-Gauss TEM$_{10}$. \label{fig:dipoles}}
 \end{figure}
 
-Actualmente, se está trabajando en la excitación de un OAM con $\ell = \pm 1$ usando la técnica de modulación espacial de la Figura \ref{fig:SLM}. Los resultados iniciales muestran que la excitación de vórtices requiere una elipticidad nula con un margen de error muy pequeño. En la Figura \ref{fig:vortex}a) se demuestra la propagación de un modo Laguerre-Gauss con $\ell = +1$ a lo largo de una molécula fotónica de 9 sitios, distribuidos en forma de círculo. Para asegurar que la estructura de fase del OAM se mantiene, es necesario realizar un interferograma (ver Figura \ref{fig:vortex}b)) Se espera controlar la fabricación y excitación de guías vorticiales que nos permitan estudiar a continuación la inducción de flujos magnéticos no triviales en redes fotónicas.
+
+Actualmente, se está trabajando en la propagación de un OAM con $\ell = \pm 1$ usando la técnica de modulación espacial de la Figura \ref{fig:SLM}. Ya se controla la generación de OAMs en espacio libre hasta $|\ell| = 4$ (ver Figura \ref{fig:OAMfree}). Los resultados iniciales muestran que la propagación de OAMs requiere una elipticidad nula con un margen de error muy pequeño. En la Figura \ref{fig:vortex}a) se demuestra la propagación de un modo Laguerre-Gauss con $|\ell| = 1$ a lo largo de una molécula fotónica de 9 sitios, distribuidos en forma de círculo. Para asegurar que la estructura de fase del OAM se mantiene, es necesario realizar un interferograma (ver Figura \ref{fig:vortex}b)) Se espera controlar la fabricación y excitación de guías vorticiales que nos permitan estudiar a continuación la inducción de flujos magnéticos no triviales en redes fotónicas.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{./media/vortex.png}
-	\caption{a) Intensidad de un OAM propagado en una molécula fotónica con $\ell = +1$. b) Interferograma que captura el cambio de fase esperado. \label{fig:vortex}}
+	\includegraphics[width=0.8\linewidth]{./media/OAM-free.png}
+	\caption{OAMs en espacio libre. Primera fila: Intensidad. Segunda fila y tercera fila: Interferometría que permite obtener la carga topológica mediante la cantidad de espirales que emergen desde el centro.
+	\label{fig:OAMfree}}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{./media/vortex2.png}
+	\caption{a) Intensidad de un OAM propagado en una molécula fotónica con $\ell = +1$. b) Interferograma que da cuenta de la carga topológica $|\ell| = 1$. \label{fig:vortex}}
 \end{figure} 
 
 \section{Plan de trabajo o carta Gantt}
