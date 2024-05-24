@@ -1,4 +1,4 @@
-\begin{thebibliography}{49}
+\begin{thebibliography}{48}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -420,23 +420,11 @@ Wei-Ping Huang.
   Science and Vision}, 11:\penalty0 963--983, 1994.
 \newblock URL \url{https://api.semanticscholar.org/CorpusID:120397076}.
 
-\bibitem[Terhalle(2011)]{slm}
-Bernd Terhalle.
-\newblock \emph{Controlling Light in Optically Induced Photonic Lattices}.
-\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2011.
-\newblock ISBN 978-3-642-16647-1.
-\newblock \doi{10.1007/978-3-642-16647-1_7}.
-\newblock URL \url{https://doi.org/10.1007/978-3-642-16647-1_7}.
-
-\bibitem[Cáceres-Aravena et~al.(2023)Cáceres-Aravena, Real, Guzmán-Silva,
-  Vildoso, Salinas, Amo, Ozawa, and Vicencio]{spectraltransfer}
-Gabriel Cáceres-Aravena, Bastián Real, Diego Guzmán-Silva, Paloma Vildoso,
-  Ignacio Salinas, Alberto Amo, Tomoki Ozawa, and Rodrigo~A. Vicencio.
-\newblock {Edge-to-edge topological spectral transfer in diamond photonic
-  lattices}.
-\newblock \emph{APL Photonics}, 8\penalty0 (8):\penalty0 080801, 08 2023.
-\newblock ISSN 2378-0967.
-\newblock \doi{10.1063/5.0153770}.
-\newblock URL \url{https://doi.org/10.1063/5.0153770}.
+\bibitem[Jackson(1999)]{jackson_classical_1999}
+John~David Jackson.
+\newblock \emph{Classical electrodynamics}.
+\newblock Wiley, New York, {NY}, 3rd ed. edition, 1999.
+\newblock ISBN 9780471309321.
+\newblock URL \url{http://cdsweb.cern.ch/record/490457}.
 
 \end{thebibliography}

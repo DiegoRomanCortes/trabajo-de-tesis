@@ -1,2 +1,12 @@
-\chapter{Anexo}
-\lipsum[50-60]
+\chapter{Condición de ortogonalidad de los modos normales \label{sec:orto}}
+
+La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_k(x,y)$. Para ello, se utilizará la segunda identidad de Green \cite{jackson_classical_1999} enunciada como
+
+\begin{equation*}
+	\int_U \left(\phi \nabla^2 \psi - \psi \nabla^2 \phi\right) dV = \oint_{\partial U} \left(\phi \nabla \psi - \psi \nabla \phi\right) \cdot \hat{n} dS.
+\end{equation*}
+Si se hacen los reemplazos por las i-ésimas componentes de los campos $\psi = E_k^i$ y $\phi = E_{k'}^i$ y se considera una región bidimensional se tiene:
+
+\begin{equation*}
+	\int_U \left(E_{k'}^i \nabla_\perp^2 E_k^i - E_k^i \nabla_\perp^2 E_{k'}^i\right) dV = \oint_{\partial U} \left(E_{k'}^i \nabla E_k^i - E_k^i \nabla E_{k'}^i\right) \cdot \hat{n} dS.
+\end{equation*}

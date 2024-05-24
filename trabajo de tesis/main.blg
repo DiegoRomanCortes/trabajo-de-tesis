@@ -3,48 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: citations.bib
+Warning--I didn't find a database entry for "JacksonOrtogonality"
 Warning--empty year in nobel
 Warning--empty year in fibra2
 Warning--empty year in fibra
-You've used 49 entries,
+You've used 48 entries,
             2481 wiz_defined-function locations,
-            954 strings with 17329 characters,
-and the built_in function-call counts, 22122 in all, are:
-= -- 1808
-> -- 1448
+            946 strings with 16956 characters,
+and the built_in function-call counts, 21553 in all, are:
+= -- 1767
+> -- 1397
 < -- 8
-+ -- 539
-- -- 440
-* -- 2121
-:= -- 3749
-add.period$ -- 243
-call.type$ -- 49
-change.case$ -- 96
-chr.to.int$ -- 48
-cite$ -- 55
-duplicate$ -- 906
-empty$ -- 1776
-format.name$ -- 492
-if$ -- 4558
++ -- 521
+- -- 424
+* -- 2059
+:= -- 3645
+add.period$ -- 236
+call.type$ -- 48
+change.case$ -- 95
+chr.to.int$ -- 47
+cite$ -- 54
+duplicate$ -- 887
+empty$ -- 1739
+format.name$ -- 475
+if$ -- 4446
 int.to.chr$ -- 2
-int.to.str$ -- 50
-missing$ -- 46
-newline$ -- 349
-num.names$ -- 138
-pop$ -- 279
+int.to.str$ -- 49
+missing$ -- 45
+newline$ -- 340
+num.names$ -- 135
+pop$ -- 275
 preamble$ -- 1
-purify$ -- 49
+purify$ -- 48
 quote$ -- 0
-skip$ -- 480
+skip$ -- 471
 stack$ -- 0
-substring$ -- 954
-swap$ -- 128
+substring$ -- 934
+swap$ -- 125
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 337
+type$ -- 330
 warning$ -- 3
-while$ -- 141
+while$ -- 138
 width$ -- 0
-write$ -- 829
-(There were 3 warnings)
+write$ -- 809
+(There were 4 warnings)
