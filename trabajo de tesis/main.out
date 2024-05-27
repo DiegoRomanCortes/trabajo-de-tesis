@@ -4,11 +4,20 @@
 \BOOKMARK [1][-]{section.2.2}{Soluciones anal\355ticas para gu\355a de onda tipo losa o slab}{chapter.2}% 4
 \BOOKMARK [1][-]{section.2.3}{Teor\355a de modos acoplados}{chapter.2}% 5
 \BOOKMARK [0][-]{chapter.3}{M\351todos num\351ricos}{}% 6
-\BOOKMARK [0][-]{chapter.4}{M\351todos experimentales}{}% 7
-\BOOKMARK [0][-]{chapter.5}{\301ngulo m\341gico en modos P}{}% 8
-\BOOKMARK [0][-]{chapter.6}{Haces con momentum orbital angular \(OAM\)}{}% 9
-\BOOKMARK [0][-]{chapter.7}{Acoplamiento interorbital SP}{}% 10
-\BOOKMARK [0][-]{chapter.8}{Mol\351culas Fot\363nicas}{}% 11
-\BOOKMARK [0][-]{chapter.9}{Conclusiones}{}% 12
-\BOOKMARK [0][-]{chapter*.8}{Bibliograf\355a}{}% 13
-\BOOKMARK [0][-]{Appendix.alph1.Alph1}{Ap\351ndice Condici\363n de ortogonalidad de los modos normales }{}% 14
+\BOOKMARK [1][-]{section.3.1}{COMSOL \(elementos finitos\)}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Expansi\363n en modos normales}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{Beam Propagation Method}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.4}{Teor\355a de modos acoplados}{chapter.3}% 10
+\BOOKMARK [0][-]{chapter.4}{M\351todos experimentales}{}% 11
+\BOOKMARK [1][-]{section.4.1}{Escritura de gu\355as de onda}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.2}{Montaje de excitaci\363n l\341ser supercontinuo}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.3}{Montaje de modulaci\363n espacial de luz}{chapter.4}% 14
+\BOOKMARK [2][-]{subsection.4.3.1}{Generaci\363n de hologramas}{section.4.3}% 15
+\BOOKMARK [1][-]{section.4.4}{An\341lisis de im\341genes}{chapter.4}% 16
+\BOOKMARK [0][-]{chapter.5}{\301ngulo m\341gico en modos P}{}% 17
+\BOOKMARK [0][-]{chapter.6}{Haces con momentum orbital angular \(OAM\)}{}% 18
+\BOOKMARK [0][-]{chapter.7}{Acoplamiento interorbital SP}{}% 19
+\BOOKMARK [0][-]{chapter.8}{Mol\351culas Fot\363nicas}{}% 20
+\BOOKMARK [0][-]{chapter.9}{Conclusiones}{}% 21
+\BOOKMARK [0][-]{chapter*.6}{Bibliograf\355a}{}% 22
+\BOOKMARK [0][-]{Appendix.alph1.Alph1}{Ap\351ndice Condici\363n de ortogonalidad de los modos normales }{}% 23

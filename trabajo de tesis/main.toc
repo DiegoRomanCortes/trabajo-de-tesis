@@ -5,11 +5,20 @@
 \contentsline {section}{\numberline {2.2}Soluciones analíticas para guía de onda tipo losa o \textit {slab}}{4}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Teoría de modos acoplados}{4}{section.2.3}%
 \contentsline {chapter}{\numberline {3}Métodos numéricos}{6}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Métodos experimentales}{9}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Ángulo mágico en modos P}{12}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Haces con momentum orbital angular (OAM)}{15}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Acoplamiento interorbital SP}{18}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Moléculas Fotónicas}{21}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusiones}{24}{chapter.9}%
-\contentsline {chapter}{\numberline {}Bibliograf\'ia}{30}{chapter*.8}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Condición de ortogonalidad de los modos normales }{31}{Appendix.alph1.Alph1}%
+\contentsline {section}{\numberline {3.1}COMSOL (elementos finitos)}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Expansión en modos normales}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Beam Propagation Method}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Teoría de modos acoplados}{7}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Métodos experimentales}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Escritura de guías de onda}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Montaje de modulación espacial de luz}{8}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Generación de hologramas}{8}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Análisis de imágenes}{8}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Ángulo mágico en modos P}{9}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Haces con momentum orbital angular (OAM)}{10}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Acoplamiento interorbital SP}{11}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Moléculas Fotónicas}{12}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusiones}{13}{chapter.9}%
+\contentsline {chapter}{\numberline {}Bibliograf\'ia}{18}{chapter*.6}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Condición de ortogonalidad de los modos normales }{19}{Appendix.alph1.Alph1}%
