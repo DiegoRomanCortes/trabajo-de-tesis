@@ -19,8 +19,6 @@ e^{-i \phi_1}  \nabla\times[ (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1] - i
 con $\textbf{k}_1 = \nabla\phi_1(\textbf{r})$.
 La ecuación (\ref{eqn:comsol}) se puede resolver vía el software comercial COMSOL \textit{Multiphysics} mediante elementos finitos más gruesos que los que se tendría que usar a partir de la ecuación (\ref{eqn:rotordoble}) debido a la separación entre envolvente y fase, sin haber hecho aproximación alguna.
 
-\section{Expansión en modos normales}
-
 \section{Beam Propagation Method} 
 
 Por otro lado, utilizando la aproximación paraxial escogiendo el eje $z$  como dirección de propagación y seleccionando la polarización horizontal del campo, es posible simplificar la ecuación (\ref{eqn:comsol}) y llegar a la formulación de un método numérico escalar conocido como \textit{Beam Propagation Method}, utilizado ampliamente en esta área de investigación \cite{bics, interorbital, OAMCaging, vortex, bpm}. Éste consiste en resolver numéricamente la ecuación
@@ -28,6 +26,8 @@ Por otro lado, utilizando la aproximación paraxial escogiendo el eje $z$  como 
 	2in_0k_0\frac{\partial}{\partial z}\psi(x,y,z) = \nabla_\perp^2 \psi (x,y,z) + \left(n^2-n_0^2\right)k_0^2 \psi (x,y,z), \label{eqn:paraxial}
 \end{equation}
 con $\psi(x,y,z)$, $n_0$ , $n(x,y)$ y $k_0$ la envolvente de la componente horizontal campo eléctrico, el índice de refracción del material, el índice de refracción inducido y el número de onda en el vacío, respectivamente. 
+
+\section{Expansión en modos normales}
 
 \section{Teoría de modos acoplados}
 

@@ -1,13 +1,14 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Marco teórico}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Modos normales del campo electromagnético en un medio dieléctrico}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Desde las ecuaciones de Maxwell a propagación de la luz en guías de onda dieléctricas}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Soluciones analíticas para guía de onda tipo losa o \textit {slab}}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Teoría de modos acoplados}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Modos normales en guías de onda}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Teoría de modos acoplados}{4}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Métodos numéricos}{6}{chapter.3}%
 \contentsline {section}{\numberline {3.1}COMSOL (elementos finitos)}{6}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Expansión en modos normales}{6}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Beam Propagation Method}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.2}Beam Propagation Method}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Expansión en modos normales}{7}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Teoría de modos acoplados}{7}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Métodos experimentales}{8}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Escritura de guías de onda}{8}{section.4.1}%
@@ -22,3 +23,4 @@
 \contentsline {chapter}{\numberline {9}Conclusiones}{13}{chapter.9}%
 \contentsline {chapter}{\numberline {}Bibliograf\'ia}{18}{chapter*.6}%
 \contentsline {chapter}{Ap\'{e}ndice \numberline {A}Condición de ortogonalidad de los modos normales }{19}{Appendix.alph1.Alph1}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Código en Python utilizado para calcular modos normales }{20}{Appendix.alph1.Alph2}%

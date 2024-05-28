@@ -1,8 +1,8 @@
 \chapter{Marco teórico}
 
-\section{Modos normales del campo electromagnético en un medio dieléctrico}
+\section{Desde las ecuaciones de Maxwell a propagación de la luz en guías de onda dieléctricas}
 
-Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda dieléctricas escritas dentro de una muestra de borosilicato. Es por ello que se supone un medio lineal no magnético libre de fuentes de carga y de corriente. Las ecuaciones de Maxwell en éste régimen son:
+Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda dieléctricas escritas dentro de una muestra de borosilicato. Es por ello que se supone un medio lineal no magnético libre de fuentes de carga y de corriente. Las ecuaciones de Maxwell (mks) en este régimen son:
 \begin{align}
 	\nabla\cdot\textbf{D} &= 0, \label{eqn:gauss}
 	\\	
@@ -27,7 +27,13 @@ Con esto,
 	(\nabla^2  + k_0^2n^2)\textbf{E} = -\nabla\left(\textbf{E} \cdot \frac{\nabla n^2}{n^2}\right) \approx 0, \label{eqn:helmholz}
 \end{equation}
 
-donde el término de la derecha se desprecia usando la aproximación de guiaje débil, pues el contraste $\Delta n$ es pequeño. Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expandir en sus modos normales como $\textbf{E}(\textbf{r}) = \sum_k \textbf{E}_k(x, y) e^{i\beta_k z}$. A su vez, el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
+donde el término de la derecha se desprecia usando la aproximación de guiaje débil, pues el contraste $\Delta n$ es pequeño. 
+
+\section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
+
+\section{Modos normales en guías de onda}
+
+Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expandir en sus modos normales como $\textbf{E}(\textbf{r}) = \sum_k \textbf{E}_k(x, y) e^{i\beta_k z}$. A su vez, el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
 
 \begin{align}
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right)\sum_k \textbf{E}_k(x, y)  e^{i\beta_k z} \nonumber
@@ -47,12 +53,6 @@ donde el término de la derecha se desprecia usando la aproximación de guiaje d
 \end{align}
 pues los modos normales son ortogonales entre sí (ver apéndice \ref{sec:orto}).
 Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_k^2$ y autofunciones $\textbf{E}_k(x,y)$. En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
- 
-\section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
-
-
-
-
 
 \section{Teoría de modos acoplados}
 	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $k$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
