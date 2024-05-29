@@ -31,6 +31,9 @@ donde el término de la derecha se desprecia usando la aproximación de guiaje d
 
 \section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
 
+
+
+
 \section{Modos normales en guías de onda}
 
 Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expandir en sus modos normales como $\textbf{E}(\textbf{r}) = \sum_k \textbf{E}_k(x, y) e^{i\beta_k z}$. A su vez, el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
@@ -49,7 +52,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, el campo elé
 	\nonumber
 	\\
 	\therefore
-	& \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]\textbf{E}_k(x,y)  = \beta_k^2 \textbf{E}_k(x,y) \quad \forall k, \label{eqn:eigenfield}
+	 \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]&\textbf{E}_k(x,y)  = \beta_k^2 \textbf{E}_k(x,y) \quad \forall k, \label{eqn:eigenfield}
 \end{align}
 pues los modos normales son ortogonales entre sí (ver apéndice \ref{sec:orto}).
 Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_k^2$ y autofunciones $\textbf{E}_k(x,y)$. En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
