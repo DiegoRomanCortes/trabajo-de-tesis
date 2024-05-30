@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Marco teórico}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Desde las ecuaciones de Maxwell a propagación de la luz en guías de onda dieléctricas}{3}{section.2.1}%
@@ -22,5 +22,5 @@
 \contentsline {chapter}{\numberline {8}Moléculas Fotónicas}{12}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Conclusiones}{13}{chapter.9}%
 \contentsline {chapter}{\numberline {}Bibliograf\'ia}{18}{chapter*.6}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Condición de ortogonalidad de los modos normales }{19}{Appendix.alph1.Alph1}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Ortogonalidad de los modos normales }{19}{Appendix.alph1.Alph1}%
 \contentsline {chapter}{Ap\'{e}ndice \numberline {B}Código en Python utilizado para calcular modos normales }{20}{Appendix.alph1.Alph2}%

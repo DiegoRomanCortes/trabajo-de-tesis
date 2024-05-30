@@ -1,34 +1,13 @@
-\chapter{Condición de ortogonalidad de los modos normales \label{sec:orto}}
+\chapter{Ortogonalidad de los modos normales \label{sec:orto}}
 
-La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_k = \textbf{E}_{\perp k}e^{i(\beta_k z - \omega t)}$. Para ello, primero se utilizará el teorema de reciprocidad de Lorentz aplicado a medios dieléctricos. Sean ($\textbf{E}_k$, $\textbf{B}_{k}$) y ($\textbf{E}_{k'}$, $\textbf{B}_{k'}$) soluciones linealmente independientes a las ecuaciones de Maxwell:
+La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_\nu$. Para ello, multipliquemos la ecuación por $\textbf{E}_\mu$ e integremos en todo el plano:
 
 \begin{align*}
-	\nabla\cdot(\textbf{E}_k\times \textbf{B}_{k'}) &= \textbf{B}_{k'}\cdot(\nabla\times \textbf{E}_k)   - \textbf{E}_k\cdot(\nabla\times\textbf{B}_{k'}) 
-\\	
-	&= \textbf{B}_{k'}\cdot(i\omega\textbf{B}_{k'})   + \textbf{E}_k\cdot(i\omega n^2/c^2 \textbf{E}_{k'})
-	\\
-	\implies \nabla\cdot(\textbf{E}_k\times \textbf{B}_{k'} &- \textbf{E}_{k'}\times \textbf{B}_{k}) = 0.
+	 \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\left[  \nabla_\perp^2  + (k_0^2n^2 - \beta_\nu^2) \right]\textbf{E}_\nu \cdot\textbf{E}_\mu dxdy &=  0
+	 \\
+	 	 \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\left[  \nabla_\perp^2  + (k_0^2n^2 - \beta_\mu^2) \right]\textbf{E}_\mu \cdot\textbf{E}_\nu dxdy &=  0
+	 	 \\
+	 	 (\beta_\nu^2-\beta_\mu^2)\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\textbf{E}_\mu \cdot\textbf{E}_\nu dxdy &=  0
+	 	 \\
+	 	 \therefore \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\textbf{E}_\mu \cdot\textbf{E}_\nu dxdy &= 0, \quad \text{si } \nu\neq\mu
 \end{align*}
-
-Haciendo la separación $\nabla = \nabla_\perp + \hat{\textbf{z}}\partial_z$, y notando que $\partial_z (\textbf{E}_k\times \textbf{B}_{k'} - \textbf{E}_{k'}\times \textbf{B}_{k}) =i(\beta_k+\beta_{k'})(\textbf{E}_k\times \textbf{B}_{k'} - \textbf{E}_{k'}\times \textbf{B}_{k}) $
-\begin{align}
-	\iint_S \nabla\cdot(\textbf{E}_k\times \textbf{B}_{k'} - \textbf{E}_{k'}\times \textbf{B}_{k}) dA
-	&= \oint_C (\textbf{E}_k\times \textbf{B}_{k'} - \textbf{E}_{k'}\times \textbf{B}_{k})
-	\cdot\hat{\textbf{n}} d\ell \nonumber
-	\\
-	&=
-	- i(\beta_k+\beta_{k'})\hat{\textbf{z}}\cdot\iint_S(\textbf{E}_k\times \textbf{B}_{k'} - \textbf{E}_{k'}\times \textbf{B}_{k})dA \nonumber
-	\\
-	\implies 
-	(\beta_k+\beta_{k'})\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}&(\textbf{E}_k\times \textbf{B}_{k'} - \textbf{E}_{k'}\times \textbf{B}_{k})\cdot \hat{\textbf{z}} dxdy = 0, \label{eqn:suma}
-\end{align}
-pues los campos deben anularse en el infinito. Si consideramos el campo 2 propagándose en la dirección contraria, la ecuación que se satisface es:
-\begin{equation}
-	(\beta_k-\beta_{k'})\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}(-\textbf{E}_k\times \textbf{B}_{k'} - \textbf{E}_{k'}\times \textbf{B}_{k})\cdot \hat{\textbf{z}} dxdy = 0, \label{eqn:resta}
-\end{equation}
-
-De (\ref{eqn:suma}) y (\ref{eqn:resta}) se obtiene:
-
-\begin{align}
-	 \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty}(\textbf{E}_k\times \textbf{B}^*_{k'})\cdot \hat{\textbf{z}} dxdy = 0, \text{ si } k\neq k'
-\end{align}

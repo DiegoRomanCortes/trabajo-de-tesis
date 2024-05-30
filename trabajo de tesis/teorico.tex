@@ -36,15 +36,15 @@ donde el término de la derecha se desprecia usando la aproximación de guiaje d
 
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expandir en sus modos normales como $\textbf{E}(\textbf{r}) = \sum_k \textbf{E}_k(x, y) e^{i\beta_k z}$. A su vez, el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
+Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
 
 \begin{align}
-	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right)\sum_k \textbf{E}_k(x, y)  e^{i\beta_k z} \nonumber
+	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) \textbf{E}_\nu(x, y)  e^{i\beta_\nu z} \nonumber
 \\	
-	&= \sum_k \left[ e^{i\beta_k z} \nabla_\perp^2 \textbf{E}_k -\beta_k^2\textbf{E}_k e^{i\beta_k z} + k_0^2n^2 \textbf{E}_k  e^{i\beta_k z}\right]
+	&= e^{i\beta_\nu z} \nabla_\perp^2 \textbf{E}_\nu -\beta_\nu^2\textbf{E}_\nu e^{i\beta_\nu z} + k_0^2n^2 \textbf{E}_\nu  e^{i\beta_\nu z}
 \nonumber	
 	\\	
-	&= \sum_k \left[  \nabla_\perp^2  + (k_0^2n^2-\beta_k^2) \right]\textbf{E}_k  e^{i\beta_k z}
+	&= \left[  \nabla_\perp^2  + (k_0^2n^2-\beta_\nu^2) \right]\textbf{E}_\nu  e^{i\beta_\nu z}
 	\nonumber	
 	\\
 	&=
@@ -52,37 +52,36 @@ Si la estructura de guías de onda no varía en la dirección $z$, el campo elé
 	\nonumber
 	\\
 	\therefore
-	 \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]&\textbf{E}_k(x,y)  = \beta_k^2 \textbf{E}_k(x,y) \quad \forall k, \label{eqn:eigenfield}
+	 \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]&\textbf{E}_\nu(x,y)  = \beta_\nu^2 \textbf{E}_\nu(x,y) \label{eqn:eigenfield}
 \end{align}
-pues los modos normales son ortogonales entre sí (ver apéndice \ref{sec:orto}).
-Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_k^2$ y autofunciones $\textbf{E}_k(x,y)$. En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
+Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, que son ortogonales y forman una base completa (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
 
 \section{Teoría de modos acoplados}
-	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $k$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
+	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $\nu$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
 
 \begin{align}
-	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2 \right)\sum_{k, m} \textbf{E}_{k, m}(x, y) a_{k, m}(z) e^{i\beta_{k, m} z}
+	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2 \right)\sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}
 	\nonumber
 	\\
-	&= \sum_{k, m} \left[a_{k, m} e^{i\beta_{k, m} z} \left(\nabla_\perp^2 +k_0^2n^2 \right)\textbf{E}_{k, m} + \textbf{E}_{k, m}\frac{d^2}{d z^2}a_{k, m} e^{i\beta_{k, m} z}\right]
+	&= \sum_{\nu, m} \left[a_{\nu, m} e^{i\beta_{\nu, m} z} \left(\nabla_\perp^2 +k_0^2n^2 \right)\textbf{E}_{\nu, m} + \textbf{E}_{\nu, m}\frac{d^2}{d z^2}a_{\nu, m} e^{i\beta_{\nu, m} z}\right]
 	\nonumber	
 	\\
-	&= \sum_{k, m} \left[a_{k, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{k,m}^2 \right) + \frac{d^2 a_{k, m}}{d z^2}  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
+	&= \sum_{\nu, m} \left[a_{\nu, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{\nu,m}^2 \right) + \frac{d^2 a_{\nu, m}}{d z^2}  +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
 		\nonumber	
 	\\
-	&\approx \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_{m'} +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m}
+	&\approx \sum_{\nu, m} \left[a_{\nu, m}  k_0^2\sum_{m'\neq m} n^2_{m'} +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
 	\nonumber	
 	\\
 	&= 0.
 	\nonumber	
 \end{align}
-Aplicando producto punto con $\textbf{E}_{k', m''}^*$ e integrando en todo el plano $xy$:
+Aplicando producto punto con $\textbf{E}_{\mu, m''}^*$ e integrando en todo el plano $xy$:
 \begin{align}
 	\implies 
-	  \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \sum_{k, m} \left[a_{k, m}  k_0^2\sum_{m'\neq m} n^2_{m'}  +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \right]e^{i\beta_{k, m} z}\textbf{E}_{k, m} \cdot \textbf{E}_{k', m''}^* dxdy &= 0
+	  \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \sum_{\nu, m} \left[a_{\nu, m}  k_0^2\sum_{m'\neq m} n^2_{m'}  +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m''}^* dxdy &= 0
 	  \nonumber
 	  \\
-	  \sum_{k, m} \left[a_{k, m}  \sum_{m'\neq m}\left( \underbrace{\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} k_0^2n^2_{m'} \textbf{E}_{k, m} \cdot \textbf{E}_{k', m''}^* dxdy}_{C_{m, m', m'', k, k'}}\right) +2i\beta_{k,m}\frac{d a_{k, m}}{d z} \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \textbf{E}_{k, m} \cdot \textbf{E}_{k', m''}^* dxdy\right]e^{i\beta_{k, m} z} &= 0
+	  \sum_{\nu, m} \left[a_{\nu, m}  \sum_{m'\neq m}\left( \underbrace{\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} k_0^2n^2_{m'} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m''}^* dxdy}_{C_{m, m', m'', \nu, \mu}}\right) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m''}^* dxdy\right]e^{i\beta_{\nu, m} z} &= 0
 	\label{eqn:CMT1}
 \end{align}
 
