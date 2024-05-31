@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {3.1}COMSOL (elementos finitos)}{6}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Beam Propagation Method}{6}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Expansión en modos normales}{7}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Teoría de modos acoplados}{7}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Ecuaciones dinámicas de las envolventes de los modos acoplados}{7}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Métodos experimentales}{8}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Escritura de guías de onda}{8}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo}{8}{section.4.2}%
@@ -22,5 +22,5 @@
 \contentsline {chapter}{\numberline {8}Moléculas Fotónicas}{12}{chapter.8}%
 \contentsline {chapter}{\numberline {9}Conclusiones}{13}{chapter.9}%
 \contentsline {chapter}{\numberline {}Bibliograf\'ia}{18}{chapter*.6}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Ortogonalidad de los modos normales }{19}{Appendix.alph1.Alph1}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Ortonormalidad de los modos normales }{19}{Appendix.alph1.Alph1}%
 \contentsline {chapter}{Ap\'{e}ndice \numberline {B}Código en Python utilizado para calcular modos normales }{20}{Appendix.alph1.Alph2}%

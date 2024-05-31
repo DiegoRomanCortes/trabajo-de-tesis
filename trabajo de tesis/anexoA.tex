@@ -1,13 +1,17 @@
-\chapter{Ortogonalidad de los modos normales \label{sec:orto}}
+\chapter{Ortonormalidad de los modos normales \label{sec:orto}}
 
-La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_\nu$. Para ello, multipliquemos la ecuación por $\textbf{E}_\mu$ e integremos en todo el plano:
+La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_\nu$. Para ello, multipliquemos la ecuación por $\textbf{E}_\mu^*$ e integremos en todo el plano:
 
+\begin{align}
+	 \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\left[  \nabla_\perp^2  + (k_0^2n^2 - \beta_\nu^2) \right]\textbf{E}_\nu \cdot\textbf{E}_\mu^* dxdy &=  0 \label{eqn:munu}
+\end{align}
+Si intercambiamos los índices $\nu$ y $\mu$ tenemos:
+\begin{align}
+	 	 \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\left[  \nabla_\perp^2  + (k_0^2n^2 - \beta_\mu^2) \right]\textbf{E}_\mu \cdot\textbf{E}_\nu^* dxdy &=  0 \label{eqn:numu}
+\end{align}
+Restando las ecuaciones (\ref{eqn:munu}) y (\ref{eqn:numu}) y escogiendo modos reales:
 \begin{align*}
-	 \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\left[  \nabla_\perp^2  + (k_0^2n^2 - \beta_\nu^2) \right]\textbf{E}_\nu \cdot\textbf{E}_\mu dxdy &=  0
-	 \\
-	 	 \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\left[  \nabla_\perp^2  + (k_0^2n^2 - \beta_\mu^2) \right]\textbf{E}_\mu \cdot\textbf{E}_\nu dxdy &=  0
-	 	 \\
 	 	 (\beta_\nu^2-\beta_\mu^2)\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\textbf{E}_\mu \cdot\textbf{E}_\nu dxdy &=  0
 	 	 \\
-	 	 \therefore \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\textbf{E}_\mu \cdot\textbf{E}_\nu dxdy &= 0, \quad \text{si } \nu\neq\mu
+	 	 \therefore \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\textbf{E}_\mu \cdot\textbf{E}_\nu^* dxdy &= 0, \quad \text{si } \nu\neq\mu
 \end{align*}
