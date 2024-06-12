@@ -423,11 +423,12 @@ Wei-Ping Huang.
   Science and Vision}, 11:\penalty0 963--983, 1994.
 \newblock URL \url{https://api.semanticscholar.org/CorpusID:120397076}.
 
-\bibitem[Jackson(1999)]{jackson_classical_1999}
-John~David Jackson.
-\newblock \emph{Classical electrodynamics}.
-\newblock Wiley, New York, {NY}, 3rd ed. edition, 1999.
-\newblock ISBN 9780471309321.
-\newblock URL \url{http://cdsweb.cern.ch/record/490457}.
+\bibitem[Yuffa(2021)]{greenvectorial}
+Alex~J Yuffa.
+\newblock Vectorizing green’s identities.
+\newblock \emph{Journal of Physics Communications}, 5\penalty0 (5):\penalty0
+  055001, may 2021.
+\newblock \doi{10.1088/2399-6528/abfa27}.
+\newblock URL \url{https://dx.doi.org/10.1088/2399-6528/abfa27}.
 
 \end{thebibliography}

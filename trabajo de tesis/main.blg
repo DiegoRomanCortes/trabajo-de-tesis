@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
@@ -8,43 +8,43 @@ Warning--empty year in fibra2
 Warning--empty year in fibra
 You've used 48 entries,
             2481 wiz_defined-function locations,
-            950 strings with 16995 characters,
-and the built_in function-call counts, 21692 in all, are:
-= -- 1786
+            950 strings with 17034 characters,
+and the built_in function-call counts, 21754 in all, are:
+= -- 1792
 > -- 1397
 < -- 8
 + -- 521
 - -- 424
-* -- 2078
-:= -- 3668
+* -- 2090
+:= -- 3675
 add.period$ -- 239
 call.type$ -- 48
 change.case$ -- 95
 chr.to.int$ -- 47
 cite$ -- 54
 duplicate$ -- 892
-empty$ -- 1749
+empty$ -- 1756
 format.name$ -- 475
-if$ -- 4476
+if$ -- 4488
 int.to.chr$ -- 2
 int.to.str$ -- 49
-missing$ -- 46
+missing$ -- 45
 newline$ -- 343
 num.names$ -- 135
-pop$ -- 267
+pop$ -- 264
 preamble$ -- 1
 purify$ -- 48
 quote$ -- 0
 skip$ -- 470
 stack$ -- 0
-substring$ -- 961
-swap$ -- 125
+substring$ -- 979
+swap$ -- 126
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 330
+type$ -- 333
 warning$ -- 3
-while$ -- 139
+while$ -- 140
 width$ -- 0
-write$ -- 816
+write$ -- 815
 (There were 3 warnings)

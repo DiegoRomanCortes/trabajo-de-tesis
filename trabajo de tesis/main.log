@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.23)  9 JUN 2024 16:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.23)  12 JUN 2024 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,12 +852,7 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 ]
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 32.
- [4]
-Overfull \hbox (8.17647pt too wide) detected at line 86
-[]
- []
-
-) (./numericos.tex [5]
+ [4]) (./numericos.tex [5]
 Cap\'{\i }tulo 3.
 [6
 
@@ -870,35 +865,35 @@ File: media/SLMsetup.png Graphic file (type png)
 <use media/SLMsetup.png>
 Package pdftex.def Info: media/SLMsetup.png  used on input line 10.
 (pdftex.def)             Requested size: 472.03123pt x 231.30547pt.
-) (./magico.tex [8
+) (./moleculas.tex [8
 
  <./media/SLMsetup.png (PNG copy)>] [9]
 Cap\'{\i }tulo 5.
-<media/dipoles.jpg, id=352, 1589.94pt x 275.3487pt>
+) (./sp.tex [10
+
+]
+Cap\'{\i }tulo 6.
+) (./magico.tex [11
+
+]
+Cap\'{\i }tulo 7.
+<media/dipoles.jpg, id=361, 1589.94pt x 275.3487pt>
 File: media/dipoles.jpg Graphic file (type jpg)
 <use media/dipoles.jpg>
 Package pdftex.def Info: media/dipoles.jpg  used on input line 4.
 (pdftex.def)             Requested size: 472.03123pt x 81.74814pt.
-) (./oam.tex [10
+) (./oam.tex [12
 
  <./media/dipoles.jpg>]
-Cap\'{\i }tulo 6.
-<media/OAM-free.png, id=358, 3194.334pt x 1916.6004pt>
+Cap\'{\i }tulo 8.
+<media/OAM-free.png, id=367, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 4.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-) (./moleculas.tex [11
-
- <./media/OAM-free.png>]
-Cap\'{\i }tulo 7.
-) (./sp.tex [12
-
-]
-Cap\'{\i }tulo 8.
 ) (./conclu.tex [13
 
-]
+ <./media/OAM-free.png>]
 Cap\'{\i }tulo 9.
 ) (./main.bbl [14
 
@@ -942,16 +937,16 @@ LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7F39E1266D44BD50A1841776B506EC6C;6228.
+(rerunfilecheck)             Checksum: BD9AA2D4D1D8DF1800D02C71C8160D0E;6228.
  ) 
 Here is how much of TeX's memory you used:
  22515 strings out of 476091
- 381426 string characters out of 5794081
+ 381394 string characters out of 5794081
  1870330 words of memory out of 5000000
  42370 multiletter control sequences out of 15000+600000
  545063 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,19n,90p,1050b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,12n,90p,1050b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -964,10 +959,10 @@ fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (31 pages, 2664312 bytes).
+Output written on main.pdf (31 pages, 2665172 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 527 compressed objects within 6 object streams
+ 600 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
  133 named destinations out of 1000 (max. 500000)
  245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

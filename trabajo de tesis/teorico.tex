@@ -69,20 +69,30 @@ Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\
 	&= \sum_{\nu, m} \left[a_{\nu, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{\nu,m}^2 \right) + \frac{d^2 a_{\nu, m}}{d z^2}  +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
 		\nonumber	
 	\\
-	&\approx \sum_{\nu, m} \left[a_{\nu, m}  k_0^2\sum_{m'\neq m} n^2_{m'} +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
+	&\approx \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
 	\nonumber	
 	\\
 	&= 0.
 	\nonumber	
 \end{align}
-Aplicando producto punto con $\textbf{E}_{\mu, m''}^*$ e integrando en todo el plano $xy$:
+Aplicando producto punto con $\textbf{E}_{\mu, m'}^*$ e integrando en todo el plano $xy$:
 \begin{align}
-	\implies 
-	  \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \sum_{\nu, m} \left[a_{\nu, m}  k_0^2\sum_{m'\neq m} n^2_{m'}  +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m''}^* dxdy &= 0
+	  \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &= 0
 	  \nonumber
 	  \\
-	  \sum_{\nu, m} \left[a_{\nu, m}  \sum_{m'\neq m}\left( \underbrace{\int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} k_0^2n^2_{m'} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m''}^* dxdy}_{C_{m, m', m'', \nu, \mu}}\right) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \int_{-\infty}^{+\infty}\int_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m''}^* dxdy\right]e^{i\beta_{\nu, m} z} &= 0
+	  \sum_{\nu, m} \left[2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \delta_{\nu,\mu}\delta_{m,m'} +  2\beta_{\mu, m'}C_{m, m', \nu, \mu}   a_{\nu, m} \right]e^{i\beta_{\nu, m} z} &= 0
+	  \nonumber
+	  \\
+	  	  i\frac{d a_{\mu, m'}}{d z} e^{i\beta_{\mu, m'} z} +  \sum_{\nu, m\neq m'}C_{m, m', \nu, \mu}   a_{\nu, m} e^{i\beta_{\nu, m} z} &= 0
 	\label{eqn:CMT1}
 \end{align}
+donde se han definido y usado
+\begin{align*}
+	   \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2(n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy & \approx 2\beta_{\mu, m'}C_{m, m', \nu, \mu}  
+	\nonumber
+	\\
+	\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &\approx \delta_{\nu,\mu}\delta_{m,m'},
+\end{align*}
+es decir, que el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{m, m', \nu, \mu}$ conocido comúnmente como acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{m, m', \nu, \mu}$ es nulo por definición. Es por ello que no se incluye en la sumatoria de la ecuación (\ref{eqn:CMT1}).
 
 	

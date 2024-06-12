@@ -1,17 +1,29 @@
 \chapter{Ortonormalidad de los modos normales \label{sec:orto}}
 
-La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_\nu$. Para ello, multipliquemos la ecuación por $\textbf{E}_\mu^*$ e integremos en todo el plano:
+La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_\nu$. Para ello, se puede tomar producto punto a la ecuación por $\textbf{E}_\mu^*$ e integrar en una superficie $S$:
 
 \begin{align}
-	 \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\left[  \nabla_\perp^2  + (k_0^2n^2 - \beta_\nu^2) \right]\textbf{E}_\nu \cdot\textbf{E}_\mu^* dxdy &=  0 \label{eqn:munu}
+	 \iint_S \left(  \nabla_\perp^2  + k_0^2n^2 \right)\textbf{E}_\nu \cdot\textbf{E}_\mu^* dxdy &= \beta_\nu^2 \iint_S \textbf{E}_\nu \cdot\textbf{E}_\mu^* dxdy \label{eqn:munu}
 \end{align}
 Si intercambiamos los índices $\nu$ y $\mu$ tenemos:
 \begin{align}
-	 	 \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\left[  \nabla_\perp^2  + (k_0^2n^2 - \beta_\mu^2) \right]\textbf{E}_\mu \cdot\textbf{E}_\nu^* dxdy &=  0 \label{eqn:numu}
+	 	\iint_S \left(  \nabla_\perp^2  + k_0^2n^2 \right)\textbf{E}_\mu \cdot\textbf{E}_\nu^* dxdy &= \beta_\mu^2 \iint_S \textbf{E}_\mu \cdot\textbf{E}_\nu^* dxdy \label{eqn:numu}
 \end{align}
 Restando las ecuaciones (\ref{eqn:munu}) y (\ref{eqn:numu}) y escogiendo modos reales:
 \begin{align*}
-	 	 (\beta_\nu^2-\beta_\mu^2)\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\textbf{E}_\mu \cdot\textbf{E}_\nu dxdy &=  0
+	 	  (\beta_\nu^2-\beta_\mu^2)\iint_S\textbf{E}_\mu \cdot\textbf{E}_\nu dxdy &=  \iint_S \left(\textbf{E}_\mu   \cdot\nabla_\perp^2 \textbf{E}_\nu - \textbf{E}_\nu   \cdot\nabla_\perp^2 \textbf{E}_\mu\right)  dxdy
+		\nonumber	 	  
+	 	  \\
+	 	  &=
+	 	  \oint_{\partial S} (\textbf{E}_\mu \times \nabla \times \textbf{E}_\nu - \textbf{E}_\nu \times \nabla \times \textbf{E}_\mu) \cdot \hat{n}d\ell
+	 	  \nonumber
+			\\	 	  
+	 	  &+
+	 	  \oint_{\partial S} (\hat{n}\cdot \textbf{E}_\mu)(\nabla\cdot \textbf{E}_\nu) - (\hat{n}\cdot \textbf{E}_\nu)(\nabla\cdot \textbf{E}_\mu) d\ell
+	 	  \nonumber
+	 	  \\
+	 	  &\underset{\mathrm{\partial S \to \infty}}{=}  0.
 	 	 \\
-	 	 \therefore \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}\textbf{E}_\mu \cdot\textbf{E}_\nu^* dxdy &= 0, \quad \text{si } \nu\neq\mu
+	 	 \therefore \iint_S\textbf{E}_\mu \cdot\textbf{E}_\nu^* dxdy &= 0, \quad \text{si } \nu\neq\mu,
 \end{align*}
+donde se ha usado la segunda identidad de Green vectorial \citep{greenvectorial} y que el campo eléctrico debe hacerse anularse en el infinito, aunque basta considerar que el campo sea nulo en el borde de la región $S$.
