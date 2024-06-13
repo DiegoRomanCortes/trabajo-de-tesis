@@ -2,7 +2,7 @@
 
 \section{Desde las ecuaciones de Maxwell a propagación de la luz en guías de onda dieléctricas}
 
-Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda dieléctricas escritas dentro de una muestra de borosilicato. Es por ello que se supone un medio lineal no magnético libre de fuentes de carga y de corriente. Las ecuaciones de Maxwell (mks) en este régimen son:
+Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda dieléctricas escritas dentro de una muestra de borosilicato. Es por ello que se supone un medio lineal no magnético libre de fuentes de carga y de corriente. Las ecuaciones de Maxwell (SI) en este régimen son:
 \begin{align}
 	\nabla\cdot\textbf{D} &= 0, \label{eqn:gauss}
 	\\	
@@ -10,9 +10,9 @@ Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de pot
 	\\	
 	\nabla\cdot\textbf{B} &= 0,
 	\\	
-	\nabla\times\textbf{B} &= \mu_0\frac{\partial \textbf{D}}{\partial t}, \label{eqn:ampere-maxwell}
+	\nabla\times\textbf{H} &= \frac{\partial \textbf{D}}{\partial t}, \label{eqn:ampere-maxwell}
 \end{align}
-donde \textbf{E}, \textbf{B}, $\textbf{D}=\varepsilon\textbf{E}$ son los campos eléctrico, campo magnético y campo desplazamiento eléctrico, respectivamente. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.47$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
+donde \textbf{E}, \textbf{B}, $\textbf{D}=\varepsilon(\textbf{r})\textbf{E}$ y $\textbf{H}=\textbf{B}/\mu_0$ son los campos eléctrico, campo de densidad de flujo magnético, campo desplazamiento eléctrico y campo magnético, respectivamente. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.47$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
 
 Aplicando rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}), usando la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y asumiendo una solución temporal harmónica proporcional a $e^{i\omega t}$ se tiene:
 
@@ -31,9 +31,89 @@ donde el término de la derecha se desprecia usando la aproximación de guiaje d
 
 \section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
 
+El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuya forma analítica para el constraste $n(x)$ es la siguiente, con $n_1 > n_0$:
+
+\begin{equation*}
+	n(x) = \left\{\begin{matrix}
+	n_1 \quad |x| \le a
+	\\
+	n_0 \quad |x| > a
+ 	\end{matrix}\right.
+\end{equation*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{media/slab.pdf}
+	\caption[Forma de una guía de onda tipo losa.]{Forma de una guía de onda tipo losa. En las direcciones $\mathbf{\hat{y}}$ (vertical) y $\mathbf{\hat{z}}$ (hacia dentro de la página) la estructura es invariante.}
+\end{figure}
+\subsection{Modos TE}
+
+Los modos transversales eléctricos o TE se expresan como $\textbf{E}(x,z) =\mathbf{\hat{y}} E_y= \mathbf{\hat{y}} E(x)e^{i k_z z }$.
 
 
+En la región $|x| \le a$, la ecuación (\ref{eqn:helmholz}) adquiere la forma
 
+\begin{align*}
+(\nabla^2  + k_0^2n^2) E(x)e^{ik_z z} &=  \left(\frac{d^2}{dx^2} + k_0^2n^2\right) E(x)e^{ik_z z } 
+\\
+&= e^{ik_z z}\left[\frac{d^2  E(x)}{dx^2}  + (k_0^2n_1^2 -  k_z^2)E(x) \right]
+\\
+&=0
+\\
+\therefore \frac{d^2  E(x)}{dx^2}  + (k_0^2n_1^2 -  k_z^2)E(x) &= 0
+\end{align*}
+
+La ecuación para la región $|x|\le a$ es análoga. Sin embargo para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 < k_z^2 < k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Si consideramos soluciones pares se tiene
+
+\begin{equation*}
+	E(x) = \left\{\begin{matrix}
+	E_{s1}\cos(\alpha x)\quad |x|\le a
+	\\
+	E_{s0}e^{-\beta|x|} \quad |x|>a
+	\end{matrix}\right.
+\end{equation*}
+
+Por otro lado las soluciones impares tienen la forma
+\begin{equation*}
+	E(x) = \left\{\begin{matrix}
+	E_{a1}\sin(\alpha x)\quad |x|\le a
+	\\
+	E_{a0}e^{-\beta|x|} \quad |x|>a
+	\end{matrix}\right.
+\end{equation*}
+
+
+Es necesario considerar las condiciones de interfase electromagnéticas. En este caso, continuidad de las componentes de \textbf{E} y \textbf{H} paralelas a la interfaz . A partir de la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) se tiene:
+
+\begin{align*}
+	\nabla\times\textbf{E} &= -\frac{\partial \textbf{B}}{\partial t}
+	\\
+	\mathbf{\hat{z}}\partial_x E_y-\mathbf{\hat{x}}\partial_z E_y  &= i\omega \mu_0  \textbf{H}
+	\\	
+	\therefore \textbf{H}_{||} = -i\mathbf{\hat{z}}\frac{e^{ik_z z}}{\omega\mu_0}\frac{d E(x)}{dx}.
+\end{align*}
+Es decir, tanto $E(x)$ como $\frac{dE(x)}{dx}$ deben ser continuos en $|x|=a$. Aplicando esto en $x=a$ separadamente para las soluciones simétricas y antisimétricas:
+
+\begin{align*}
+E_{s1}\cos(\alpha a) &= E_{s0} e^{-\beta a} & E_{a1}\sin(\alpha a) &= E_{a0} e^{-\beta a}
+\\
+E_{s1}\alpha\sin(\alpha a) &= \beta E_{s0} e^{-\beta a} & E_{a1}\alpha\cos(\alpha a) &= -\beta E_{a0} e^{-\beta a}
+\end{align*}
+
+Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia en las amplitudes y se obtienen ecuaciones trascendentales para $k_z$:
+
+\begin{align*}
+	\alpha a \tan(\alpha a) &= \beta a & \alpha a \cot(\alpha a) &= -\beta a
+\end{align*}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/slabgraphical}
+	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor $V$, mayor cantidad de modos guiados soporta la guía de onda.}
+\end{figure}
+\subsection{Modos TM}
+\section{Soluciones analíticas para fibra óptica circular}
+\subsection{Modos TE}
+\subsection{Modos TM}
 \section{Modos normales en guías de onda}
 
 Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
@@ -63,7 +143,7 @@ Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2 \right)\sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}
 	\nonumber
 	\\
-	&= \sum_{\nu, m} \left[a_{\nu, m} e^{i\beta_{\nu, m} z} \left(\nabla_\perp^2 +k_0^2n^2 \right)\textbf{E}_{\nu, m} + \textbf{E}_{\nu, m}\frac{d^2}{d z^2}a_{\nu, m} e^{i\beta_{\nu, m} z}\right]
+	&= \sum_{\nu, m} \left[a_{\nu, m} e^{i\beta_{\nu, m} z} \left(\nabla_\perp^2 +k_0^2n^2 \right)\textbf{E}_{\nu, m} + \textbf{E}_{\nu, m}\frac{d^2}{d z^2}\left(a_{\nu, m} e^{i\beta_{\nu, m} z}\right)\right]
 	\nonumber	
 	\\
 	&= \sum_{\nu, m} \left[a_{\nu, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{\nu,m}^2 \right) + \frac{d^2 a_{\nu, m}}{d z^2}  +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
@@ -72,15 +152,15 @@ Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\
 	&\approx \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
 	\nonumber	
 	\\
-	&= 0.
+	&= 0,
 	\nonumber	
 \end{align}
-Aplicando producto punto con $\textbf{E}_{\mu, m'}^*$ e integrando en todo el plano $xy$:
+Donde se ha usado que $\left|\frac{d^2 a_{\nu, m}}{d z^2}\right|\ll 2\beta_{\nu,m}\left|\frac{d a_{\nu, m}}{d z}\right|  $, conocida como aproximación paraxial. Aplicando producto punto con $\textbf{E}_{\mu, m'}^*$ e integrando en todo el plano $xy$:
 \begin{align}
 	  \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &= 0
 	  \nonumber
 	  \\
-	  \sum_{\nu, m} \left[2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \delta_{\nu,\mu}\delta_{m,m'} +  2\beta_{\mu, m'}C_{m, m', \nu, \mu}   a_{\nu, m} \right]e^{i\beta_{\nu, m} z} &= 0
+	  \sum_{\nu, m} \left(2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \delta_{\nu,\mu}\delta_{m,m'} +  2\beta_{\mu, m'}C_{m, m', \nu, \mu}   a_{\nu, m} \right)e^{i\beta_{\nu, m} z} &= 0
 	  \nonumber
 	  \\
 	  	  i\frac{d a_{\mu, m'}}{d z} e^{i\beta_{\mu, m'} z} +  \sum_{\nu, m\neq m'}C_{m, m', \nu, \mu}   a_{\nu, m} e^{i\beta_{\nu, m} z} &= 0
@@ -88,11 +168,11 @@ Aplicando producto punto con $\textbf{E}_{\mu, m'}^*$ e integrando en todo el pl
 \end{align}
 donde se han definido y usado
 \begin{align*}
-	   \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2(n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy & \approx 2\beta_{\mu, m'}C_{m, m', \nu, \mu}  
+	   \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2(n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &\equiv 2\beta_{\mu, m'}C_{m, m', \nu, \mu}  
 	\nonumber
 	\\
-	\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &\approx \delta_{\nu,\mu}\delta_{m,m'},
+	\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &\approx \delta_{\nu,\mu}\delta_{m,m'}.
 \end{align*}
-es decir, que el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{m, m', \nu, \mu}$ conocido comúnmente como acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{m, m', \nu, \mu}$ es nulo por definición. Es por ello que no se incluye en la sumatoria de la ecuación (\ref{eqn:CMT1}).
+Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{m, m', \nu, \mu}$ conocido comúnmente como acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{m, m', \nu, \mu}$ es nulo por definición. Es por ello que no se incluye en la sumatoria de la ecuación (\ref{eqn:CMT1}).
 
 	
