@@ -1,7 +1,7 @@
 % se puede agregar la opción [english] para 
 %  memorias o tesis en inglés (borrando el archivo .aux)
 \documentclass[hyphens]{umemoria} 
-
+%\includeonly{teorico}
 \depto{Departamento de Física}
 \author{Diego Antonio Román Cortés}
 \title{Redes multiorbitales basadas en moléculas fotónicas}
@@ -77,16 +77,16 @@ Una dedicatoria corta.
 
 \mainmatter
 
-\input{intro.tex}
-\input{teorico.tex}
-\input{numericos.tex}
-\input{metodos.tex}
-\input{moleculas.tex}
-\input{sp.tex}
-\input{magico.tex}
-\input{oam.tex}
+\include{intro.tex}
+\include{teorico.tex}
+\include{numericos.tex}
+\include{metodos.tex}
+\include{moleculas.tex}
+\include{sp.tex}
+\include{magico.tex}
+\include{oam.tex}
 
-\input{conclu.tex}
+\include{conclu.tex}
 
 % ver https://www.overleaf.com/learn/latex/Glossaries
 % \input{glosario.tex} % opcional

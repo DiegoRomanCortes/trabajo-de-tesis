@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Marco teórico}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Desde las ecuaciones de Maxwell a propagación de la luz en guías de onda dieléctricas}{3}{section.2.1}%
