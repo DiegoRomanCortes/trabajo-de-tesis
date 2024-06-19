@@ -39,22 +39,7 @@ ax.plot(x, np.sqrt(R1**2-x**2), label=r'$V_1$')
 ax.plot(x, np.sqrt(R2**2-x**2), label=r'$V_2$')
 ax.plot(x, np.sqrt(R3**2-x**2), label=r'$V_3$')
 
-for i in range(len(x)):
-    if x[i] < R1:
-        if np.abs(np.sqrt(R1**2-x[i]**2) - y1[i]) < 1e-2:
-            ax.plot(x[i], y1[i], 'ro')
-        if np.abs(np.sqrt(R1**2-x[i]**2) - y2[i]) < 1e-2:
-            ax.plot(x[i], y2[i], 'ro')
-    if x[i] < R2:
-        if np.abs(np.sqrt(R2**2-x[i]**2) - y1[i]) < 1e-2:
-            ax.plot(x[i], y1[i], 'ro')
-        if np.abs(np.sqrt(R2**2-x[i]**2) - y2[i]) < 1e-2:
-            ax.plot(x[i], y2[i], 'ro')
-    if x[i] < R3:
-        if np.abs(np.sqrt(R3**2-x[i]**2) - y1[i]) < 1e-2:
-            ax.plot(x[i], y1[i], 'ro')
-        if np.abs(np.sqrt(R3**2-x[i]**2) - y2[i]) < 1e-2:
-            ax.plot(x[i], y2[i], 'ro')
+
 
 ax.set_ylim(0.0, 1.1*R3)
 ax.set_xticks([0, np.pi/2, np.pi, 3*np.pi/2, 2*np.pi, 5*np.pi/2, 3*np.pi])

@@ -63,7 +63,7 @@ En la región $|x| \le a$, la ecuación (\ref{eqn:helmholz}) adquiere la forma
 \therefore \frac{d^2  E(x)}{dx^2}  + (k_0^2n_1^2 -  k_z^2)E(x) &= 0
 \end{align*}
 
-La ecuación para la región $|x|\le a$ es análoga. Sin embargo para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 < k_z^2 < k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Si consideramos soluciones pares se tiene
+La ecuación para la región $|x|\le a$ es análoga. Sin embargo para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 < k_z^2 < k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. \textcolor{red}{Incluir cita Griffiths QM acerca de soluciones pares e impares para potencial real simétrico}. Si consideramos soluciones pares se tiene
 
 \begin{equation*}
 	E(x) = \left\{\begin{matrix}
@@ -73,7 +73,7 @@ La ecuación para la región $|x|\le a$ es análoga. Sin embargo para encontrar 
 	\end{matrix}\right.
 \end{equation*}
 
-Por otro lado las soluciones impares tienen la forma
+Por otro lado, las soluciones impares tienen la forma
 \begin{equation*}
 	E(x) = \left\{\begin{matrix}
 	E_{a1}\sin(\alpha x)\quad |x|\le a
@@ -86,7 +86,7 @@ Por otro lado las soluciones impares tienen la forma
 Es necesario considerar las condiciones de interfase electromagnéticas. En este caso, continuidad de las componentes de \textbf{E} y \textbf{H} paralelas a la interfaz . A partir de la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) se tiene:
 
 \begin{align*}
-	\nabla\times\textbf{E} &= -\frac{\partial \textbf{B}}{\partial t}
+	\nabla\times\textbf{E} &= -\mu_0\frac{\partial \textbf{H}}{\partial t}
 	\\
 	\mathbf{\hat{z}}\partial_x E_y-\mathbf{\hat{x}}\partial_z E_y  &= i\omega \mu_0  \textbf{H}
 	\\	
@@ -102,9 +102,12 @@ E_{s1}\alpha\sin(\alpha a) &= \beta E_{s0} e^{-\beta a} & E_{a1}\alpha\cos(\alph
 
 Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia en las amplitudes y se obtienen ecuaciones trascendentales para $k_z$:
 
-\begin{align*}
-	\alpha a \tan(\alpha a) &= \beta a, & \alpha a \cot(\alpha a) &= -\beta a
-\end{align*}
+\begin{align}
+	\alpha a \tan(\alpha a) &= \beta a, & \alpha a \cot(\alpha a) &= -\beta a \label{eqn:trascendentalTE}
+\end{align}
+
+Usando las dos ecuaciones (\ref{eqn:trascendentalTE}) junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/slabgraphical}
@@ -116,7 +119,7 @@ Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia e
 \subsection{Modos TM}
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, el laplaciano de la ecuación (\ref{eqn:helmholz}) se puede separar como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$, por lo que la ecuación (\ref{eqn:helmholz}) se expande como:
+Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma la ecuación (\ref{eqn:helmholz}) se expande como:
 
 \begin{align}
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) \textbf{E}_\nu(x, y)  e^{i\beta_\nu z} \nonumber
