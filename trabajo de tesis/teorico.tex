@@ -14,14 +14,14 @@ Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de pot
 \end{align}
 donde \textbf{E}, \textbf{B}, $\textbf{D}=\varepsilon(\textbf{r})\textbf{E}$ y $\textbf{H}=\textbf{B}/\mu_0$ son los campos eléctrico, campo de densidad de flujo magnético, campo desplazamiento eléctrico y campo magnético, respectivamente. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.47$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
 
-Aplicando rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}), usando la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y asumiendo una solución temporal harmónica proporcional a $e^{i\omega t}$ se tiene:
+Aplicando rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}), usando la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y asumiendo una solución temporal harmónica proporcional a $e^{-i\omega t}$ se tiene:
 
 \begin{align}
 	\nabla\times\nabla\times\textbf{E} &= -\frac{\partial}{\partial t}(\nabla\times\textbf{B}) = -\frac{\partial}{\partial t}\left(\mu_0\frac{\partial \textbf{D}}{\partial t}\right) = -\frac{n^2}{c^2}\frac{\partial^2 \textbf{E}}{\partial t^2} = n^2k_0^2 \textbf{E}, \label{eqn:rotordoble}
 \end{align}
 donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Notemos que, por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$, y usando la ley de Gauss (\ref{eqn:gauss}) se deduce que $\nabla\cdot \textbf{E} = -\nabla(n^2)\cdot\textbf{E}/n^2$.
 
-Con esto, 
+Con esto, se obtiene una ecuación tipo Helmholtz 
 
 \begin{equation}
 	(\nabla^2  + k_0^2n^2)\textbf{E} = -\nabla\left(\textbf{E} \cdot \frac{\nabla n^2}{n^2}\right) \approx 0, \label{eqn:helmholz}
@@ -48,22 +48,22 @@ El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuy
 \end{figure}
 \subsection{Modos TE}
 
-Los modos transversales eléctricos o TE se expresan como $\textbf{E}(x,z) =\mathbf{\hat{y}} E_y= \mathbf{\hat{y}} E(x)e^{i k_z z }$.
+Los modos transversales eléctricos o TE se expresan como $\textbf{E}(x,z) =\mathbf{\hat{y}} E_y= \mathbf{\hat{y}} E(x)e^{i k_z z }$, por lo que la ecuación (\ref{eqn:helmholz}) adquiere la forma
 
-
-En la región $|x| \le a$, la ecuación (\ref{eqn:helmholz}) adquiere la forma
-
-\begin{align*}
-(\nabla^2  + k_0^2n^2) E(x)e^{ik_z z} &=  \left(\frac{d^2}{dx^2} + k_0^2n^2\right) E(x)e^{ik_z z } 
+\begin{align}
+(\nabla^2  + k_0^2n^2) E(x)e^{ik_z z} &=  \left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) E(x)e^{ik_z z } 
+\nonumber
 \\
-&= e^{ik_z z}\left[\frac{d^2  E(x)}{dx^2}  + (k_0^2n_1^2 -  k_z^2)E(x) \right]
+&= e^{ik_z z}\left[\frac{d^2  E(x)}{dx^2}  + (k_0^2n^2 -  k_z^2)E(x) \right]
+\nonumber
 \\
 &=0
+\nonumber
 \\
-\therefore \frac{d^2  E(x)}{dx^2}  + (k_0^2n_1^2 -  k_z^2)E(x) &= 0
-\end{align*}
+\therefore \frac{d^2  E(x)}{dx^2}  + (k_0^2n^2 -  k_z^2)E(x) &= 0 \label{eqn:TEslab}
+\end{align}
 
-La ecuación para la región $|x|\le a$ es análoga. Sin embargo para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 < k_z^2 < k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. \textcolor{red}{Incluir cita Griffiths QM acerca de soluciones pares e impares para potencial real simétrico}. Si consideramos soluciones pares se tiene
+Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 < k_z^2 < k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. \textcolor{red}{Incluir cita Griffiths QM acerca de soluciones pares e impares para potencial real simétrico}. Si consideramos soluciones pares, la ecuación (\ref{eqn:TEslab}) tendrá soluciones
 
 \begin{equation*}
 	E(x) = \left\{\begin{matrix}
@@ -114,6 +114,74 @@ Usando las dos ecuaciones (\ref{eqn:trascendentalTE}) junto a la restricción $(
 	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
 \end{figure}
 \subsection{Modos TM}
+Los modos transversales magnéticos o TM se expresan como $\textbf{H}(x,z) =\mathbf{\hat{y}} H_y= \mathbf{\hat{y}} H(x)e^{i k_z z }$. Para expresar esta condición en términos del campo eléctrico $\textbf{E} = \textbf{E}_{||} + \textbf{E}_\perp$, se puede usar la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}):
+
+\begin{align*}
+	\nabla\times\textbf{H} &= -\mathbf{\hat{x}} \partial_z H_y+ \mathbf{\hat{z}} \partial_x H_y = \mathbf{\hat{z}} e^{i k_z z }\frac{d H(x)}{dx} - \mathbf{\hat{x}} ik_z  e^{i k_z z } H(x)  
+	\\	
+	&= -i\omega\epsilon_0 n^2 \textbf{E}
+	\\
+	\therefore \textbf{E}_{||} = \mathbf{\hat{z}} \frac{ie^{i k_z z }}{n^2 \omega \epsilon_0} \frac{d H(x)}{dx}&,\quad \textbf{E}_\perp =  \mathbf{\hat{x}} \frac{k_z e^{i k_z z }}{n^2 \omega \epsilon_0 }   H(x).
+\end{align*} 
+Notemos que la ecuación (\ref{eqn:helmholz}) se puede separar por componentes, por lo que al considerar la ecuación que satisface la componente perpendicular $\textbf{E}_\perp$, se tiene:
+
+\begin{align}
+	(\nabla^2 + k_0^2 n^2) H_y
+	&= \left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) H(x)e^{ik_z z }
+	\nonumber
+	\\
+&= e^{ik_z z}\left[\frac{d^2  H(x)}{dx^2}  + (k_0^2n^2 -  k_z^2)H(x) \right]
+\nonumber	
+	\\	
+	&= 0 
+	\nonumber	
+	\\
+	\therefore 
+	\frac{d^2  H(x)}{dx^2}  + (k_0^2n^2 -  k_z^2)H(x) &= 0
+	\label{eqn:TMslab}
+\end{align} 
+
+La ecuación de modos TM (\ref{eqn:TMslab}) para $H(x)$ es idéntica que la ecuación (\ref{eqn:TEslab}) para $E(x)$ de modos TE. Es decir, definiendo $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ y considerando soluciones pares se tiene
+
+\begin{equation*}
+	H(x) = \left\{\begin{matrix}
+	H_{s1}\cos(\alpha x)\quad |x|\le a
+	\\
+	H_{s0}e^{-\beta|x|} \quad |x|>a
+	\end{matrix}\right.
+\end{equation*}
+
+Y las soluciones impares serán
+\begin{equation*}
+	H(x) = \left\{\begin{matrix}
+	H_{a1}\sin(\alpha x)\quad |x|\le a
+	\\
+	H_{a0}e^{-\beta|x|} \quad |x|>a
+	\end{matrix}\right.
+\end{equation*}
+
+
+Nuevamente, al considerar que $\textbf{H}_{||}= \mathbf{\hat{y}} H(x)e^{i k_z z }$ y $\textbf{E}_{||} = \mathbf{\hat{z}} \frac{ie^{i k_z z }}{n^2 \omega \epsilon_0} \frac{d H(x)}{dx}$ deben ser continuas, 
+
+\begin{align*}
+H_{s1}\cos(\alpha a) &= H_{s0} e^{-\beta a} & H_{a1}\sin(\alpha a) &= H_{a0} e^{-\beta a}
+\\
+H_{s1}\alpha\sin(\alpha a)/n_1^2 &= \beta H_{s0} e^{-\beta a}/n_0^2 & H_{a1}\alpha\cos(\alpha a)/n_1^2 &= -\beta H_{a0} e^{-\beta a}/n_0^2
+\end{align*}
+
+Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia en las amplitudes y se obtienen ecuaciones trascendentales para $k_z$:
+
+\begin{align}
+	\alpha a \tan(\alpha a)/n_1^2 &= \beta a/n_0^2, & \alpha a \cot(\alpha a)/n_1^2 &= -\beta a/n_0^2 \label{eqn:trascendentalTM}
+\end{align}
+
+Esta vez se graficará directamente en función de $k_z$ para comparar los casos TE y TM. Usando las dos ecuaciones (\ref{eqn:trascendentalTM}) junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/slabgraphicalTETM}
+	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
+\end{figure}
 \section{Soluciones analíticas para fibra óptica circular}
 \subsection{Modos TE}
 \subsection{Modos TM}
