@@ -179,9 +179,34 @@ Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia e
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/slabgraphicalTETM1}
-	\caption[Soluciones gráficas de los modos TE y TM]{Soluciones gráficas de los modos TE y TM para $\Delta n = 3\times 10^{-2}$. Se aprecia que las constantes de propagación de los modos TM son siempre menores que las de los modos TE.}
+	\caption[Soluciones gráficas de los modos TE y TM]{Soluciones gráficas de los modos TE y TM para $\Delta n = 3\times 10^{-2}$. Se aprecia que las constantes de propagación de los modos TM son menores que las de los modos TE.}
 \end{figure}
 \section{Soluciones analíticas para fibra óptica circular}
+En la sección anterior se estudió el sistema más sencillo en el que se puede hablar de guías de onda dieléctricas. El siguiente paso en complejidad consiste en guías de onda circulares. Para ello, se considerará que el índice de refracción varía radialmente según 
+
+\begin{equation}
+	n(r) = 
+	\left\{\begin{matrix}
+	n_1, \quad \text{si } \rho \le a
+	\\
+	n_0, \quad \text{si } \rho > a
+	\end{matrix}\right.
+	,\nonumber
+\end{equation}
+donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. Al usar la separación de variables $ \textbf{E}(\textbf{r}) =  \textbf{E}_0 R(\rho)\Phi(\phi) e^{ik_z z} $ la ecuación (\ref{eqn:helmholz}) toma la forma:
+
+\begin{align}
+	\left[\frac{\partial^2}{\partial \rho^2} + \frac{\partial}{\rho\partial \rho} + \frac{\partial^2}{\rho^2\partial \phi^2} +\left( k_0^2n^2 - k_z^2 \right)\right]  R(\rho)\Phi(\phi) = 0
+	\nonumber
+	\\
+\rho^2\frac{d^2 R}{Rd\rho^2} + \rho\frac{dR}{Rd\rho} + \rho^2\left( k_0^2n^2 - k_z^2 \right) + \underbrace{\frac{d^2 \Phi}{\Phi d\phi^2}}_{-\ell^2} = 0
+\nonumber
+\\
+\therefore \Phi(\phi) = Ae^{i\ell\phi} + Be^{-i\ell\phi}
+\nonumber
+\end{align}
+Imponiendo la condición de periodicidad $\Phi(0)=\Phi(2\pi)$, se tiene que $A+B=Ae^{2i\ell\pi}+Be^{-2i\ell\pi}$, por lo que $A+B=(A+B)\cos(2\ell\pi)$ y $0=(A-B)\sin(2\ell\pi)$. Es decir, $\ell$ debe ser un número entero.
+
 \subsection{Modos TE}
 \subsection{Modos TM}
 \section{Modos normales en guías de onda}
