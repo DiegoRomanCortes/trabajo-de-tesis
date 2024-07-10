@@ -202,11 +202,39 @@ donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, má
 \rho^2\frac{d^2 R}{Rd\rho^2} + \rho\frac{dR}{Rd\rho} + \rho^2\left( k_0^2n^2 - k_z^2 \right) + \underbrace{\frac{d^2 \Phi}{\Phi d\phi^2}}_{-\ell^2} = 0
 \nonumber
 \\
-\therefore \Phi(\phi) = Ae^{i\ell\phi} + Be^{-i\ell\phi}
+\therefore \Phi(\phi) = A\cos(\ell\phi) + B\sin(\ell\phi)
 \nonumber
 \end{align}
-Imponiendo la condición de periodicidad $\Phi(0)=\Phi(2\pi)$, se tiene que $A+B=Ae^{2i\ell\pi}+Be^{-2i\ell\pi}$, por lo que $A+B=(A+B)\cos(2\ell\pi)$ y $0=(A-B)\sin(2\ell\pi)$. Es decir, $\ell$ debe ser un número entero.
+Imponiendo condiciones de periodicidad $\Phi(0)=\Phi(2\pi)$ y $\Phi'(0)=\Phi'(2\pi)$, se tiene que $B=A\tan(\pi \ell)$, luego $0 = \tan(\ell \pi)$. Es decir, $\ell$ debe ser un número entero y $\Phi(\phi) = A\cos(\ell\phi)$.
 
+La ecuación para $R(\rho)$ es de tipo Bessel, por lo que definiendo $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
+
+\begin{align}
+	\frac{d^2 R}{d\rho^2} + \frac{1}{\rho}\frac{dR}{d\rho} + \left( k_0^2n^2 - k_z^2 -\frac{\ell^2}{\rho^2}\right)R  = 0
+	\nonumber
+	\\
+	\therefore R(\rho) = 
+	\left\{
+	\begin{matrix}	
+	C_1 J_\ell (\alpha\rho) + D_1 Y_\ell (\alpha\rho), \quad \text{si } \rho \le a  
+	\\
+	C_2 K_\ell (\beta\rho) + D_2 I_\ell (\beta\rho), \quad \text{si } \rho > a  
+	\end{matrix}
+	\right.
+	. \nonumber
+\end{align}
+Necesariamente se debe imponer $D_1 = D_2 = 0$ para que la solución sea finita para $\rho = 0$ y para $\rho \to +\infty$. Es decir, la parte radial de la solución es
+\begin{align*}
+ R(\rho) = 
+	\left\{
+	\begin{matrix}	
+	C_1 J_\ell (\alpha\rho), \quad \text{si } \rho \le a  
+	\\
+	C_2 K_\ell (\beta\rho), \quad \text{si } \rho > a  
+	\end{matrix}
+	\right.
+	. \nonumber
+\end{align*}
 \subsection{Modos TE}
 \subsection{Modos TM}
 \section{Modos normales en guías de onda}
@@ -272,12 +300,12 @@ Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ só
 
 Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, considerando una distancia $d$ entre guías \textcolor{red}{INCLUIR ESQUEMA PARA EXPLICAR ACOPLAMIENTO}. El índice de refracción en este caso es $n^2 = n_1^2 + n_2^2$, con $n_1(\textbf{r})=n_2(\textbf{r}+\textbf{d})$. Dada la simetría del problema, la constante de acoplamiento se puede desarrollar como 
 \begin{align}
-	C_{1, 2} &=  \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2 n_1^2(\textbf{r}) \textbf{E}_{2}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
-	= \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2 n_2^2(\textbf{r}+\textbf{d}) \textbf{E}_{1}(\textbf{r}+\textbf{d}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
+	C_{1, 2} &=  \frac{1}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2 n_1^2(\textbf{r}) \textbf{E}_{2}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
+	= \frac{k_0^2}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_2^2(\textbf{r}+\textbf{d}) \textbf{E}_{1}(\textbf{r}+\textbf{d}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
 	\nonumber	
 	\\	
-	&= \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2 n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}-\textbf{d}) dxdy 
-	= \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2 n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{2}^*(\textbf{r}) dxdy 
+	&= \frac{k_0^2}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}-\textbf{d}) dxdy 
+	= \frac{k_0^2}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{2}^*(\textbf{r}) dxdy 
 	\nonumber
 	\\	
 	&= C_{2,1} \equiv C
