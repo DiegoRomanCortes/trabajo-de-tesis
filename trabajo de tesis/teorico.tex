@@ -8,7 +8,7 @@ Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de pot
 	\\	
 	\nabla\times\textbf{E} &= -\frac{\partial \textbf{B}}{\partial t}, \label{eqn:faraday-lenz}
 	\\	
-	\nabla\cdot\textbf{B} &= 0,
+	\nabla\cdot\textbf{B} &= 0, \label{eqn:div0}
 	\\	
 	\nabla\times\textbf{H} &= \frac{\partial \textbf{D}}{\partial t}, \label{eqn:ampere-maxwell}
 \end{align}
@@ -21,13 +21,27 @@ Aplicando rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:farada
 \end{align}
 donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Notemos que, por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$, y usando la ley de Gauss (\ref{eqn:gauss}) se deduce que $\nabla\cdot \textbf{E} = -\nabla(n^2)\cdot\textbf{E}/n^2$.
 
-Con esto, se obtiene una ecuación tipo Helmholtz 
+Con esto, se obtiene la ecuación 
 
 \begin{equation}
-	(\nabla^2  + k_0^2n^2)\textbf{E} = -\nabla\left(\textbf{E} \cdot \frac{\nabla n^2}{n^2}\right) \approx 0, \label{eqn:helmholz}
+	(\nabla^2  + k_0^2n^2)\textbf{E} = -\nabla\left( \frac{\nabla n^2}{n^2} \cdot \textbf{E}  \right). \label{eqn:helmholz}
 \end{equation}
 
-donde el término de la derecha se desprecia usando la aproximación de guiaje débil, pues el contraste $\Delta n$ es pequeño. 
+Análogamente para \textbf{H}, es posible aplicar rotor a la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y usar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en conjunto con la divergencia nula de \textbf{B} (\ref{eqn:div0}) y por consiguiente de \textbf{H}:
+
+\begin{align}
+	\nabla\times\nabla\times \textbf{H} &= -i \omega \nabla\times\left(\epsilon_0 n^2 \textbf{E}\right) = -i\omega \left(n^2 \nabla\times \textbf{E} + \nabla n^2 \times \textbf{E}\right)
+	\nonumber
+	\\
+	\nabla\left( {\nabla\cdot \textbf{H}} \right)- \nabla^2 \textbf{H}
+	&= 
+	 \left( k_0^2 n^2\textbf{H} - i\omega  \nabla n^2 \times \textbf{E}  \right)
+	 	\nonumber
+\end{align}
+\begin{align}
+	 \left(\nabla^2  + k_0^2 n^2 \right) \textbf{H} &= i\omega  \nabla n^2 \times \textbf{E}.
+	 \label{eqn:helmholzH}
+	\end{align}
 
 \section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
 
@@ -48,7 +62,7 @@ El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuy
 \end{figure}
 \subsection{Modos TE}
 
-Los modos transversales eléctricos o TE se expresan como $\textbf{E}(x,z) =\mathbf{\hat{y}} E_y= \mathbf{\hat{y}} E(x)e^{i k_z z }$, por lo que la ecuación (\ref{eqn:helmholz}) adquiere la forma
+Los modos transversales eléctricos o TE se pueden expresar como $\textbf{E}(x,z) =\mathbf{\hat{y}} E_y= \mathbf{\hat{y}} E(x)e^{i k_z z }$, donde se ha escogido polarización lineal en $\hat{\textbf{y}}$ para que el lado derecho de la ecuación (\ref{eqn:helmholz}) sea nulo y sea de tipo Helmholz:
 
 \begin{align}
 (\nabla^2  + k_0^2n^2) E(x)e^{ik_z z} &=  \left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) E(x)e^{ik_z z } 
@@ -179,13 +193,13 @@ Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia e
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/slabgraphicalTETM1}
-	\caption[Soluciones gráficas de los modos TE y TM]{Soluciones gráficas de los modos TE y TM para $\Delta n = 3\times 10^{-2}$. Se aprecia que las constantes de propagación de los modos TM son menores que las de los modos TE.}
+	\caption[Soluciones gráficas de los modos TE y TM]{Soluciones gráficas de los modos TE y TM para $\Delta n = 3\times 10^{-2}$. Se aprecia que las constantes de propagación de los modos TM (rojo discontinuo) son menores que las de los modos TE (naranjo liso).}
 \end{figure}
 \section{Soluciones analíticas para fibra óptica circular}
 En la sección anterior se estudió el sistema más sencillo en el que se puede hablar de guías de onda dieléctricas. El siguiente paso en complejidad consiste en guías de onda circulares. Para ello, se considerará que el índice de refracción varía radialmente según 
 
 \begin{equation}
-	n(r) = 
+	n( \rho ) = 
 	\left\{\begin{matrix}
 	n_1, \quad \text{si } \rho \le a
 	\\
@@ -193,7 +207,7 @@ En la sección anterior se estudió el sistema más sencillo en el que se puede 
 	\end{matrix}\right.
 	,\nonumber
 \end{equation}
-donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. Al usar la separación de variables $ \textbf{E}(\textbf{r}) =  \textbf{E}_0 R(\rho)\Phi(\phi) e^{ik_z z} $ la ecuación (\ref{eqn:helmholz}) toma la forma:
+donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. Al considerar las componentes longitudinales $\Psi$ = $E_z$,$H_z$ del campo eléctrico y magnético, respectivamente, usando separación de variables $\Psi =  R(\rho)\Phi(\phi) e^{ik_z z} $ la ecuación (\ref{eqn:helmholz}) toma la forma:
 
 \begin{align}
 	\left[\frac{\partial^2}{\partial \rho^2} + \frac{\partial}{\rho\partial \rho} + \frac{\partial^2}{\rho^2\partial \phi^2} +\left( k_0^2n^2 - k_z^2 \right)\right]  R(\rho)\Phi(\phi) = 0
@@ -207,7 +221,7 @@ donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, má
 \end{align}
 Imponiendo condiciones de periodicidad $\Phi(0)=\Phi(2\pi)$ y $\Phi'(0)=\Phi'(2\pi)$, se tiene que $B=A\tan(\pi \ell)$, luego $0 = \tan(\ell \pi)$. Es decir, $\ell$ debe ser un número entero y $\Phi(\phi) = A\cos(\ell\phi)$.
 
-La ecuación para $R(\rho)$ es de tipo Bessel, por lo que definiendo $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
+La ecuación para $R(\rho)$ es de tipo Bessel, por lo que buscando soluciones tales que $k_0^2 n_0^2 < \beta_z^2 < k_0^2 n_1^2$ y definiendo nuevamente $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
 
 \begin{align}
 	\frac{d^2 R}{d\rho^2} + \frac{1}{\rho}\frac{dR}{d\rho} + \left( k_0^2n^2 - k_z^2 -\frac{\ell^2}{\rho^2}\right)R  = 0
@@ -235,11 +249,23 @@ Necesariamente se debe imponer $D_1 = D_2 = 0$ para que la solución sea finita 
 	\right.
 	. \nonumber
 \end{align*}
-\subsection{Modos TE}
-\subsection{Modos TM}
+
+En este caso, para imponer las condiciones de continuidad en $\textbf{E}_{||} = E_\phi \boldsymbol{\hat{\phi}} + E_z \hat{\textbf{z}}$ y $\textbf{H}_{||}= H_\phi \hat{\boldsymbol{\phi}} + H_z \hat{\textbf{z}}$, se hace necesario relacionar el resto de componentes del campo con $E_z$ y $H_z$. Explícitamente, las ecuaciones de Maxwell separando $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$
+
+\begin{align*}
+	\left(\frac{1}{\rho}\frac{\partial E_z}{\partial \phi} - \frac{\partial E_\phi}{\partial z} \right)\hat{\boldsymbol{\rho}} + \left(\frac{\partial E_\rho}{\partial z} - \frac{\partial E_z}{\partial \rho} \right)\hat{\boldsymbol{\phi}} &= i\omega \mu_0\textbf{H}_\perp, & \frac{1}{\rho}\left(\frac{\partial (\rho E_\phi)}{\partial \rho} - \frac{\partial E_\rho}{\partial \phi} \right) &= i\omega \mu_0 H_z
+	\\	
+	\left(\frac{1}{\rho}\frac{\partial H_z}{\partial \phi} - \frac{\partial H_\phi}{\partial z} \right)\hat{\boldsymbol{\rho}} + \left(\frac{\partial H_\rho}{\partial z} - \frac{\partial H_z}{\partial \rho} \right)\hat{\boldsymbol{\phi}} &= -i\omega \epsilon_0 n^2 \textbf{E}_\perp, & \frac{1}{\rho}\left(\frac{\partial (\rho H_\phi)}{\partial \rho} - \frac{\partial H_\rho}{\partial \phi} \right) &= -i\omega \epsilon_0 n^2 E_z
+	\\	
+			\nabla_\perp \cdot \textbf{E}_\perp+  \textbf{E}_\perp \cdot \frac{\nabla_\perp n^2}{n^2}  &= -i k_z E_z, 
+	&	
+	\nabla_\perp\cdot\textbf{H}_\perp &= i k_z H_z,
+\end{align*}
+
+
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma la ecuación (\ref{eqn:helmholz}) se expande como:
+Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, el lado izquierdo de las ecuaciones (\ref{eqn:helmholz}), se desarrolla como:
 
 \begin{align}
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) \textbf{E}_\nu(x, y)  e^{i\beta_\nu z} \nonumber
@@ -250,14 +276,14 @@ Si la estructura de guías de onda no varía en la dirección $z$, el campo elé
 	&= \left[  \nabla_\perp^2  + (k_0^2n^2-\beta_\nu^2) \right]\textbf{E}_\nu  e^{i\beta_\nu z}
 	\nonumber	
 	\\
-	&=
+	&\approx
 	0
 	\nonumber
 	\\
 	\therefore
-	 \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]&\textbf{E}_\nu(x,y)  = \beta_\nu^2 \textbf{E}_\nu(x,y) \label{eqn:eigenfield}
+	 \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]&\textbf{E}_\nu(x,y)  = \beta_\nu^2 \textbf{E}_\nu(x,y), \label{eqn:eigenfield}
 \end{align}
-Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, que son ortogonales y forman una base completa (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil de la ecuación (\ref{eqn:helmholz}). 
+donde se ha usado la aproximación de guiaje débil para anular el lado de derecho de la ecuación (\ref{eqn:helmholz}). Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, que son ortogonales y forman una base completa (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil. 
 
 \section{Teoría de modos acoplados}
 	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $\nu$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
@@ -291,14 +317,11 @@ Donde se ha usado que $\left|\frac{d^2 a_{\nu, m}}{d z^2}\right|\ll 2\beta_{\nu,
 \end{align}
 donde se han definido y usado
 \begin{align*}
-	   \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2(n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &\equiv 2\beta_{\mu, m'}C_{m', m, \nu, \mu}  
-	\nonumber
-	\\
-	\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &\approx \delta_{\nu,\mu}\delta_{m,m'}.
+	   C_{m', m, \nu, \mu} &\equiv \frac{k_0^2}{2\beta_{\mu, m'}}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy , \quad\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy \approx \delta_{\nu,\mu}\delta_{m,m'}.
 \end{align*}
 Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{m', m, \nu, \mu}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{m', m, \nu, \mu}$ es nulo por definición. Es por ello que no se incluye en la sumatoria de la ecuación (\ref{eqn:CMT1}). 
 
-Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, considerando una distancia $d$ entre guías \textcolor{red}{INCLUIR ESQUEMA PARA EXPLICAR ACOPLAMIENTO}. El índice de refracción en este caso es $n^2 = n_1^2 + n_2^2$, con $n_1(\textbf{r})=n_2(\textbf{r}+\textbf{d})$. Dada la simetría del problema, la constante de acoplamiento se puede desarrollar como 
+Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, considerando una distancia $d$ entre guías \textcolor{red}{INCLUIR ESQUEMA PARA EXPLICAR ACOPLAMIENTO}. El índice de refracción en este caso es $n^2 = n_1^2 + n_2^2$, con $n_1^2(\textbf{r})=n_2^2(\textbf{r}+\textbf{d})$. Dada la simetría del problema, la constante de acoplamiento se puede desarrollar como 
 \begin{align}
 	C_{1, 2} &=  \frac{1}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2 n_1^2(\textbf{r}) \textbf{E}_{2}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
 	= \frac{k_0^2}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_2^2(\textbf{r}+\textbf{d}) \textbf{E}_{1}(\textbf{r}+\textbf{d}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
