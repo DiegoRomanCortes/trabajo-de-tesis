@@ -128,16 +128,7 @@ Usando las dos ecuaciones (\ref{eqn:trascendentalTE}) junto a la restricción $(
 	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
 \end{figure}
 \subsection{Modos TM}
-Los modos transversales magnéticos o TM se expresan como $\textbf{H}(x,z) =\mathbf{\hat{y}} H_y= \mathbf{\hat{y}} H(x)e^{i k_z z }$. Para expresar esta condición en términos del campo eléctrico $\textbf{E} = \textbf{E}_{||} + \textbf{E}_\perp$, se puede usar la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}):
-
-\begin{align*}
-	\nabla\times\textbf{H} &= -\mathbf{\hat{x}} \partial_z H_y+ \mathbf{\hat{z}} \partial_x H_y = \mathbf{\hat{z}} e^{i k_z z }\frac{d H(x)}{dx} - \mathbf{\hat{x}} ik_z  e^{i k_z z } H(x)  
-	\\	
-	&= -i\omega\epsilon_0 n^2 \textbf{E}
-	\\
-	\therefore \textbf{E}_{||} = \mathbf{\hat{z}} \frac{ie^{i k_z z }}{n^2 \omega \epsilon_0} \frac{d H(x)}{dx}&,\quad \textbf{E}_\perp =  \mathbf{\hat{x}} \frac{k_z e^{i k_z z }}{n^2 \omega \epsilon_0 }   H(x).
-\end{align*} 
-Notemos que la ecuación (\ref{eqn:helmholz}) se puede separar por componentes, por lo que al considerar la ecuación que satisface la componente perpendicular $\textbf{E}_\perp$, se tiene:
+Los modos transversales magnéticos o TM se pueden expresar como $\textbf{H}(x,z) =\mathbf{\hat{y}} H_y= \mathbf{\hat{y}} H(x)e^{i k_z z }$. Por consiguiente, la ecuación (\ref{eqn:helmholzH}) toma la forma:
 
 \begin{align}
 	(\nabla^2 + k_0^2 n^2) H_y
@@ -174,6 +165,15 @@ Y las soluciones impares serán
 	\end{matrix}\right.
 \end{equation*}
 
+Usando la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) es posible es expresar $\textbf{E}_{||}$ en términos de $\textbf{H}$:
+
+\begin{align*}
+	\nabla\times\textbf{H} &= -\mathbf{\hat{x}} \partial_z H_y+ \mathbf{\hat{z}} \partial_x H_y = \mathbf{\hat{z}} e^{i k_z z }\frac{d H(x)}{dx} - \mathbf{\hat{x}} ik_z  e^{i k_z z } H(x)  
+	\\	
+	&= -i\omega\epsilon_0 n^2 \textbf{E}
+	\\
+	\therefore \textbf{E}_{||} &= \mathbf{\hat{z}} \frac{ie^{i k_z z }}{n^2 \omega \epsilon_0} \frac{d H(x)}{dx}
+\end{align*} 
 
 Nuevamente, al considerar que $\textbf{H}_{||}= \mathbf{\hat{y}} H(x)e^{i k_z z }$ y $\textbf{E}_{||} = \mathbf{\hat{z}} \frac{ie^{i k_z z }}{n^2 \omega \epsilon_0} \frac{d H(x)}{dx}$ deben ser continuas, 
 
@@ -207,7 +207,7 @@ En la sección anterior se estudió el sistema más sencillo en el que se puede 
 	\end{matrix}\right.
 	,\nonumber
 \end{equation}
-donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. Al considerar las componentes longitudinales $\Psi$ = $E_z$,$H_z$ del campo eléctrico y magnético, respectivamente, usando separación de variables $\Psi =  R(\rho)\Phi(\phi) e^{ik_z z} $ la ecuación (\ref{eqn:helmholz}) toma la forma:
+donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. Al considerar las componentes longitudinales $\Psi$ = $\{E_z, H_z\}$ del campo eléctrico y magnético, respectivamente, usando separación de variables $\Psi =  R(\rho)\Phi(\phi) e^{ik_z z} $ las ecuaciones (\ref{eqn:helmholz}) y (\eqref{eqn:helmholzH}) toman la forma:
 
 \begin{align}
 	\left[\frac{\partial^2}{\partial \rho^2} + \frac{\partial}{\rho\partial \rho} + \frac{\partial^2}{\rho^2\partial \phi^2} +\left( k_0^2n^2 - k_z^2 \right)\right]  R(\rho)\Phi(\phi) = 0
@@ -219,9 +219,9 @@ donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, má
 \therefore \Phi(\phi) = A\cos(\ell\phi) + B\sin(\ell\phi)
 \nonumber
 \end{align}
-Imponiendo condiciones de periodicidad $\Phi(0)=\Phi(2\pi)$ y $\Phi'(0)=\Phi'(2\pi)$, se tiene que $B=A\tan(\pi \ell)$, luego $0 = \tan(\ell \pi)$. Es decir, $\ell$ debe ser un número entero y $\Phi(\phi) = A\cos(\ell\phi)$.
+Imponiendo condiciones de periodicidad $\Phi(\phi)=\Phi(\phi + 2\pi \ell')$, con $\ell'$ entero, se tiene que $B=A\tan(\ell \ell'\pi)$ al considerar $\phi=0$. Si se considera $\phi=\ell'\pi$, se concluye que necesariamente $\ell$ debe ser un número entero y que $B=0$.
 
-La ecuación para $R(\rho)$ es de tipo Bessel, por lo que buscando soluciones tales que $k_0^2 n_0^2 < \beta_z^2 < k_0^2 n_1^2$ y definiendo nuevamente $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
+Por consiguiente, la ecuación para $R(\rho)$ es de tipo Bessel, por lo que buscando soluciones tales que $k_0^2 n_0^2 < \beta_z^2 < k_0^2 n_1^2$ y definiendo nuevamente $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
 
 \begin{align}
 	\frac{d^2 R}{d\rho^2} + \frac{1}{\rho}\frac{dR}{d\rho} + \left( k_0^2n^2 - k_z^2 -\frac{\ell^2}{\rho^2}\right)R  = 0
@@ -250,17 +250,33 @@ Necesariamente se debe imponer $D_1 = D_2 = 0$ para que la solución sea finita 
 	. \nonumber
 \end{align*}
 
-En este caso, para imponer las condiciones de continuidad en $\textbf{E}_{||} = E_\phi \boldsymbol{\hat{\phi}} + E_z \hat{\textbf{z}}$ y $\textbf{H}_{||}= H_\phi \hat{\boldsymbol{\phi}} + H_z \hat{\textbf{z}}$, se hace necesario relacionar el resto de componentes del campo con $E_z$ y $H_z$. Explícitamente, las ecuaciones de Maxwell separando $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$
+En este caso, para imponer las condiciones de continuidad en $\textbf{E}_{||} = E_\phi \boldsymbol{\hat{\phi}} + E_z \hat{\textbf{z}}$ y $\textbf{H}_{||}= H_\phi \hat{\boldsymbol{\phi}} + H_z \hat{\textbf{z}}$, se hace necesario relacionar el resto de componentes del campo con $E_z$ y $H_z$. Explícitamente, las ecuaciones de Maxwell separando $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $
 
+\begin{align}
+	\nabla_\perp \times  \textbf{E}_\perp + \frac{\partial}{\partial z} (\hat{\textbf{z}} \times \textbf{E}_\perp) + \nabla_\perp \times (\hat{\textbf{z}} E_z) &= i\omega\mu_0(\textbf{H}_\perp +\hat{\textbf{z}} H_z)
+	\label{eqn:Efield}
+	\\
+	\nabla_\perp \times  \textbf{H}_\perp + \frac{\partial}{\partial z} (\hat{\textbf{z}} \times \textbf{H}_\perp) + \nabla_\perp \times (\hat{\textbf{z}} H_z) &= -i\omega \epsilon_0 n^2 (\textbf{E}_\perp +\hat{\textbf{z}} E_z)
+	\label{eqn:Hfield}
+\end{align}
+
+Tomando producto cruz en la dirección $\hat{\textbf{z}}$ a las ecuaciones (\ref{eqn:Efield}) y (\ref{eqn:Hfield}), se puede expresar $E_z$ y $H_z$ en función de $\textbf{E}_\perp$ y $\textbf{H}_\perp$: 
 \begin{align*}
-	\left(\frac{1}{\rho}\frac{\partial E_z}{\partial \phi} - \frac{\partial E_\phi}{\partial z} \right)\hat{\boldsymbol{\rho}} + \left(\frac{\partial E_\rho}{\partial z} - \frac{\partial E_z}{\partial \rho} \right)\hat{\boldsymbol{\phi}} &= i\omega \mu_0\textbf{H}_\perp, & \frac{1}{\rho}\left(\frac{\partial (\rho E_\phi)}{\partial \rho} - \frac{\partial E_\rho}{\partial \phi} \right) &= i\omega \mu_0 H_z
-	\\	
-	\left(\frac{1}{\rho}\frac{\partial H_z}{\partial \phi} - \frac{\partial H_\phi}{\partial z} \right)\hat{\boldsymbol{\rho}} + \left(\frac{\partial H_\rho}{\partial z} - \frac{\partial H_z}{\partial \rho} \right)\hat{\boldsymbol{\phi}} &= -i\omega \epsilon_0 n^2 \textbf{E}_\perp, & \frac{1}{\rho}\left(\frac{\partial (\rho H_\phi)}{\partial \rho} - \frac{\partial H_\rho}{\partial \phi} \right) &= -i\omega \epsilon_0 n^2 E_z
-	\\	
-			\nabla_\perp \cdot \textbf{E}_\perp+  \textbf{E}_\perp \cdot \frac{\nabla_\perp n^2}{n^2}  &= -i k_z E_z, 
-	&	
-	\nabla_\perp\cdot\textbf{H}_\perp &= i k_z H_z,
+	 k_z\textbf{E}_\perp + \omega \mu_0 \hat{\textbf{z}} \times \textbf{H}_\perp &= -i\nabla_\perp E_z
+	 	 \\
+	 k_z  \hat{\textbf{z}} \times \textbf{E}_\perp - \omega \mu_0 \textbf{H}_\perp &=  -i\hat{\textbf{z}} \times(\nabla_\perp E_z)
+	 	 \\
+	 k_z \textbf{H}_\perp + \omega \epsilon_0 n^2  \hat{\textbf{z}} \times \textbf{E}_\perp  &= i \nabla_\perp H_z
+	 	  	 \\
+	 k_z \hat{\textbf{z}} \times\textbf{H}_\perp - \omega\epsilon_0 n^2 \textbf{E}_\perp  &=i\hat{\textbf{z}} \times \nabla_\perp H_z
+	 \\
+	 \omega \epsilon_0 n^2(\omega \mu_0 \hat{\textbf{z}} \times \textbf{H}_\perp -i\nabla_\perp E_z ) &= k_z(k_z \hat{\textbf{z}} \times\textbf{H}_\perp- i\hat{\textbf{z}} \times \nabla_\perp H_z)
+	 \\
+	  \hat{\textbf{z}} \times \textbf{H}_\perp &= i\frac{(\omega\epsilon_0 n^2 \nabla_\perp E_z  - \hat{\textbf{z}} \times \nabla_\perp H_z k_z)}{k_0^2 n^2 - k_z^2}
+	  \\
+	  	 \textbf{H}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}[k_z\nabla_\perp H_z + \omega \epsilon_0 n^2\hat{\textbf{z}} \times \nabla_\perp E_z]
 \end{align*}
+
 
 
 \section{Modos normales en guías de onda}
