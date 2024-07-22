@@ -366,6 +366,17 @@ Ahora sí, imponiendo continuidad:
 	 \omega \mu_0 \alpha\beta a \cos(\ell \phi) [ \alpha H_0^0 K'_\ell (\beta a) + \beta H_0^1 J'_\ell (\alpha a)]
 \end{align*}
 
+Dada la simplicidad de las primeras dos ecuaciones, se despejará $H_0^0$ y $E_0^0$ en términos de $H_0^1$ y $E_0^1$ respectivamente.
+
+\begin{align*}
+	 k_z \ell \sin(\ell \phi) H_0^1 J_\ell (\alpha a)k_0^2 (n_1^2-n_0^2)
+	 &= \omega \epsilon_0 \alpha\beta a \cos(\ell \phi) E_0^1[ \alpha n_1^2  K'_\ell (\beta a)J_\ell (\alpha a)/K_\ell (\beta a) + \beta n_0^2  J'_\ell (\alpha a)]
+	 	\\
+	 -k_z \ell \sin(\ell \phi) E_0^1 J_\ell (\alpha a)k_0^2 (n_1^2-n_0^2)
+	 &=
+	 \omega \mu_0 \alpha\beta a \cos(\ell \phi)H_0^1 [ \alpha K'_\ell (\beta a)J_\ell (\alpha a)/K_\ell (\beta a) + \beta  J'_\ell (\alpha a)]
+\end{align*}
+
 \section{Modos normales en guías de onda}
 
 Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, el lado izquierdo de las ecuaciones (\ref{eqn:helmholz}), se desarrolla como:
@@ -416,11 +427,16 @@ Donde se ha usado que $\left|\frac{d^2 a_{\nu, m}}{d z^2}\right|\ll 2\beta_{\nu,
 	  \nonumber
 	  \\
 	  	  i\frac{d a_{\mu, m'}}{d z} e^{i\beta_{\mu, m'} z} +  \sum_{\nu, m\neq m'}C_{m', m, \nu, \mu}   a_{\nu, m} e^{i\beta_{\nu, m} z} &= 0
+	  	  \nonumber
+	  	 \\
+	  	 i\frac{d u_{\mu, m'}}{dz} + \beta_{\mu, m'} u_{\mu, m'} + \sum_{\nu, m\neq m'}C_{m', m, \nu, \mu}   u_{\nu, m} &= 0.
 	\label{eqn:CMT1}
 \end{align}
-donde se han definido y usado
+Las ecuciones (\ref{eqn:CMT1}) se conocen como ecuaciones discretas tipo Schrödinger, donde se han definido y usado
 \begin{align*}
-	   C_{m', m, \nu, \mu} &\equiv \frac{k_0^2}{2\beta_{\mu, m'}}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy , \quad\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy \approx \delta_{\nu,\mu}\delta_{m,m'}.
+	   C_{m', m, \nu, \mu} &\equiv \frac{k_0^2}{2\beta_{\mu, m'}}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy , \quad\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy \approx \delta_{\nu,\mu}\delta_{m,m'},
+	   \\
+	   u_{\nu, m} &\equiv a_{\nu, m} e^{i\beta_{\nu, m} z}.
 \end{align*}
 Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{m', m, \nu, \mu}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{m', m, \nu, \mu}$ es nulo por definición. Es por ello que no se incluye en la sumatoria de la ecuación (\ref{eqn:CMT1}). 
 
