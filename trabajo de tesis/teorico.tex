@@ -216,12 +216,10 @@ donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, má
 \rho^2\frac{d^2 R}{Rd\rho^2} + \rho\frac{dR}{Rd\rho} + \rho^2\left( k_0^2n^2 - k_z^2 \right) + \underbrace{\frac{d^2 \Phi}{\Phi d\phi^2}}_{-\ell^2} = 0
 \nonumber
 \\
-\therefore \Phi(\phi) = A\cos(\ell\phi) + B\sin(\ell\phi)
+\therefore \Phi(\phi) = A e^{i\ell\phi}
 \nonumber
 \end{align}
-Imponiendo condiciones de periodicidad $\Phi(\phi)=\Phi(\phi + 2\pi \ell')$, con $\ell'$ entero, se tiene que $B=A\tan(\ell \ell'\pi)$ al considerar $\phi=0$. Si se considera $\phi=\ell'\pi$, se concluye que necesariamente $\ell$ debe ser un número entero y que $B=0$.
-
-Por consiguiente, la ecuación para $R(\rho)$ es de tipo Bessel, por lo que buscando soluciones tales que $k_0^2 n_0^2 < \beta_z^2 < k_0^2 n_1^2$ y definiendo nuevamente $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
+Imponiendo condiciones de periodicidad $\Phi(\phi)=\Phi(\phi + 2\pi)$, se tiene necesariamente que $\ell$ es un número entero. Por consiguiente, la ecuación para $R(\rho)$ es de tipo Bessel entera, por lo que buscando soluciones tales que $k_0^2 n_0^2 < \beta_z^2 < k_0^2 n_1^2$ y definiendo nuevamente $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
 
 \begin{align}
 	\frac{d^2 R}{d\rho^2} + \frac{1}{\rho}\frac{dR}{d\rho} + \left( k_0^2n^2 - k_z^2 -\frac{\ell^2}{\rho^2}\right)R  = 0
@@ -288,21 +286,21 @@ Como
 	\nabla_\perp \Psi =
 	\left\{	
 	\begin{matrix}
-		A\left[\boldsymbol{\hat{\rho}}\alpha J'_\ell (\alpha \rho)\cos(\ell \phi) - \boldsymbol{\hat{\phi}} \ell J_\ell (\alpha \rho)\sin(\ell \phi)/\rho\right] e^{i k_z z}, \quad \text{si } \rho \le a  
+		\Psi_0^1\left[\boldsymbol{\hat{\rho}}\alpha J'_\ell (\alpha \rho) + i \boldsymbol{\hat{\phi}} \ell J_\ell (\alpha \rho)/\rho\right] e^{i\ell\phi} e^{i k_z z}, \quad \text{si } \rho \le a  
 		\\
-		B\left[\boldsymbol{\hat{\rho}}\beta K'_\ell (\beta\rho) \cos(\ell \phi) - \boldsymbol{\hat{\phi}}\ell K_\ell (\alpha \rho)\sin(\ell \phi)/\rho \right] e^{i k_z z} , \quad \text{si } \rho > a  
+		\Psi_0^0\left[\boldsymbol{\hat{\rho}}\beta K'_\ell (\beta\rho) +i \boldsymbol{\hat{\phi}}\ell K_\ell (\alpha \rho)/\rho \right]e^{i\ell\phi} e^{i k_z z} , \quad \text{si } \rho > a  
 	\end{matrix}
 	\right.
 \end{equation*}
 
 Separando por componentes y reemplazando:
 \begin{align*}
-		H_z &= H_0 e^{i k_z z}
+		H_z &= H_0 e^{i\ell\phi}e^{i k_z z}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	 J_\ell (\alpha \rho)\cos(\ell \phi), \quad \text{si } \rho \le a  
+	  	 J_\ell (\alpha \rho), \quad \text{si } \rho \le a  
 	  	 \\
-	  	 K_\ell (\beta \rho)\cos(\ell \phi), \quad \text{si } \rho > a  
+	  	 K_\ell (\beta \rho), \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.	
 		\\
@@ -324,12 +322,12 @@ Separando por componentes y reemplazando:
 		\end{matrix}
 		\right.
 		\\
-		E_z &=  E_0  e^{i k_z z}
+		E_z &=  E_0 e^{i\ell\phi} e^{i k_z z}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	J_\ell (\alpha \rho)\cos(\ell \phi), \quad \text{si } \rho \le a  
+	  	J_\ell (\alpha \rho), \quad \text{si } \rho \le a  
 	  	 \\
-	  	 K_\ell (\beta \rho)\cos(\ell \phi), \quad \text{si } \rho > a  
+	  	 K_\ell (\beta \rho), \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.	
 		\\
@@ -368,6 +366,7 @@ Ahora sí, imponiendo continuidad:
 
 Dada la simplicidad de las primeras dos ecuaciones, se despejará $H_0^0$ y $E_0^0$ en términos de $H_0^1$ y $E_0^1$ respectivamente.
 
+3
 \begin{align*}
 	 k_z \ell \sin(\ell \phi) H_0^1 J_\ell (\alpha a)k_0^2 (n_1^2-n_0^2)
 	 &= \omega \epsilon_0 \alpha\beta a \cos(\ell \phi) E_0^1[ \alpha n_1^2  K'_\ell (\beta a)J_\ell (\alpha a)/K_\ell (\beta a) + \beta n_0^2  J'_\ell (\alpha a)]
@@ -426,19 +425,23 @@ Donde se ha usado que $\left|\frac{d^2 a_{\nu, m}}{d z^2}\right|\ll 2\beta_{\nu,
 	  \sum_{\nu, m} \left(2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \delta_{\nu,\mu}\delta_{m,m'} +  2\beta_{\mu, m'}C_{m', m, \nu, \mu}   a_{\nu, m} \right)e^{i\beta_{\nu, m} z} &= 0
 	  \nonumber
 	  \\
-	  	  i\frac{d a_{\mu, m'}}{d z} e^{i\beta_{\mu, m'} z} +  \sum_{\nu, m\neq m'}C_{m', m, \nu, \mu}   a_{\nu, m} e^{i\beta_{\nu, m} z} &= 0
+	  	  i\frac{d a_{\mu, m'}}{d z} e^{i\beta_{\mu, m'} z} +  \sum_{\nu, m\neq m'}C_{m', m, \nu, \mu}   a_{\nu, m} e^{i\beta_{\nu, m} z} &= 0,
 	  	  \nonumber
-	  	 \\
-	  	 i\frac{d u_{\mu, m'}}{dz} + \beta_{\mu, m'} u_{\mu, m'} + \sum_{\nu, m\neq m'}C_{m', m, \nu, \mu}   u_{\nu, m} &= 0.
-	\label{eqn:CMT1}
 \end{align}
-Las ecuciones (\ref{eqn:CMT1}) se conocen como ecuaciones discretas tipo Schrödinger, donde se han definido y usado
+donde se han definido y usado
 \begin{align*}
-	   C_{m', m, \nu, \mu} &\equiv \frac{k_0^2}{2\beta_{\mu, m'}}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy , \quad\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy \approx \delta_{\nu,\mu}\delta_{m,m'},
-	   \\
-	   u_{\nu, m} &\equiv a_{\nu, m} e^{i\beta_{\nu, m} z}.
+	   C_{m', m, \nu, \mu} &\equiv \frac{k_0^2}{2\beta_{\mu, m'}}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy , \quad\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy \approx \delta_{\nu,\mu}\delta_{m,m'}.
 \end{align*}
-Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{m', m, \nu, \mu}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{m', m, \nu, \mu}$ es nulo por definición. Es por ello que no se incluye en la sumatoria de la ecuación (\ref{eqn:CMT1}). 
+
+Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{m', m, \nu, \mu}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{m', m, \nu, \mu}$ es nulo por definición.
+
+Finalmente, es posible hacer el cambio $u_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger:
+\begin{equation}
+	  	 -i\frac{d u_{\mu, m'}}{dz} = \beta_{\mu, m'} u_{\mu, m'} + \sum_{\nu, m\neq m'}C_{m', m, \nu, \mu}   u_{\nu, m}.
+	\label{eqn:CMT1}
+\end{equation}
+
+
 
 Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, considerando una distancia $d$ entre guías \textcolor{red}{INCLUIR ESQUEMA PARA EXPLICAR ACOPLAMIENTO}. El índice de refracción en este caso es $n^2 = n_1^2 + n_2^2$, con $n_1^2(\textbf{r})=n_2^2(\textbf{r}+\textbf{d})$. Dada la simetría del problema, la constante de acoplamiento se puede desarrollar como 
 \begin{align}
@@ -459,5 +462,10 @@ Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, conside
 	i\frac{d a_1}{dz} + C a_2 = 0, \quad\quad i\frac{d a_2}{dz} + C a_1 = 0 \nonumber
 \end{equation}
 
+Claramente, la ecuación (\ref{eqn:CMT1}) es ``clásica'': es posible definir un Hamiltoniano 
+\begin{equation}
+	H = -\sum_{\mu, m'} \beta_{\mu, m'} |u_{\mu, m'}|^2 - \sum_{\mu, \nu, m, m'}C_{m', m, \nu, \mu}   u_{\nu, m}u^*_{\mu, m'}
+\end{equation}
+tal que las ecuaciones canónicas de Hamilton $i\frac{d u_{\mu, m}}{dz} = \frac{\partial H}{\partial u^*_{\mu, m}} $ recuperan la ecuación (\ref{eqn:CMT1}).
 
 	
