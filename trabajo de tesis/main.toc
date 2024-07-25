@@ -6,6 +6,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Modos TE}{4}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Modos TM}{6}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Soluciones analíticas para fibra óptica circular}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Modos HE y EH}{10}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Modos normales en guías de onda}{10}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Teoría de modos acoplados}{11}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Métodos numéricos}{14}{chapter.3}%

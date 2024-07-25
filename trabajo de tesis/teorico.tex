@@ -304,21 +304,21 @@ Separando por componentes y reemplazando:
 	  	 \end{matrix}
 	  	 \right.	
 		\\
-	  	 H_r &= \frac{i e^{i k_z z} }{k_0^2 n^2 - k_z^2}
+	  	 H_r &= \frac{i e^{i\ell\phi}e^{i k_z z} }{k_0^2 n^2 - k_z^2}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	  k_z \alpha H_0^1 J'_\ell (\alpha \rho)\cos(\ell \phi) + \omega \epsilon_0 n^2\ell E_0^1 J_\ell (\alpha \rho)\sin(\ell \phi)/\rho, \quad \text{si } \rho \le a  
+	  	  k_z \alpha H_0^1 J'_\ell (\alpha \rho) - i\omega \epsilon_0 n^2\ell E_0^1 J_\ell (\alpha \rho)/\rho, \quad \text{si } \rho \le a  
 	  	 \\
-	  	 k_z \beta H_0^0  K'_\ell (\beta \rho)\cos(\ell \phi) + \omega \epsilon_0 n^2\ell E_0^0 K_\ell (\beta \rho)\sin(\ell \phi)/\rho  , \quad \text{si } \rho > a  
+	  	 k_z \beta H_0^0  K'_\ell (\beta \rho) - i\omega \epsilon_0 n^2\ell E_0^0 K_\ell (\beta \rho)/\rho  , \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.
 	  	 \\
-		H_\phi &= \frac{i e^{i k_z z}}{k_0^2 n^2 - k_z^2}
+		H_\phi &= \frac{ie^{i\ell\phi} e^{i k_z z}}{k_0^2 n^2 - k_z^2}
 		\left\{
 		\begin{matrix}
-			\omega \epsilon_0 n^2  \alpha E_0^1 J'_\ell (\alpha \rho)\cos(\ell \phi)-k_z\ell H_0^1  J_\ell (\alpha \rho)\sin(\ell \phi)/\rho, \quad \text{si } \rho \le a  
+			\omega \epsilon_0 n^2  \alpha E_0^1 J'_\ell (\alpha \rho)+ik_z\ell H_0^1  J_\ell (\alpha \rho)/\rho, \quad \text{si } \rho \le a  
 			\\
-			\omega \epsilon_0 n^2 \beta E_0^0  K'_\ell (\beta \rho)\cos(\ell \phi)-k_z \ell H_0^0  K_\ell (\beta \rho)\sin(\ell \phi)/\rho , \quad \text{si } \rho > a  
+			\omega \epsilon_0 n^2 \beta E_0^0  K'_\ell (\beta \rho)+ik_z \ell H_0^0  K_\ell (\beta \rho)/\rho , \quad \text{si } \rho > a  
 		\end{matrix}
 		\right.
 		\\
@@ -331,21 +331,21 @@ Separando por componentes y reemplazando:
 	  	 \end{matrix}
 	  	 \right.	
 		\\
-	E_r &= \frac{i e^{i k_z z} }{k_0^2 n^2 - k_z^2}
+	E_r &= \frac{i e^{i\ell\phi} e^{i k_z z} }{k_0^2 n^2 - k_z^2}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	  k_z \alpha E_0^1 J'_\ell (\alpha \rho)\cos(\ell \phi)-\omega \mu_0 \ell H_0^1 J_\ell (\alpha \rho)\sin(\ell \phi)/\rho , \quad \text{si } \rho \le a  
+	  	  k_z \alpha E_0^1 J'_\ell (\alpha \rho)+i\omega \mu_0 \ell H_0^1 J_\ell (\alpha \rho)/\rho , \quad \text{si } \rho \le a  
 	  	 \\
-	  	 k_z \beta E_0^0  K'_\ell (\beta \rho)\cos(\ell \phi) -\omega \mu_0 \ell H_0^0 K_\ell (\beta \rho)\sin(\ell \phi)/\rho, \quad \text{si } \rho > a  
+	  	 k_z \beta E_0^0  K'_\ell (\beta \rho) +i\omega \mu_0 \ell H_0^0 K_\ell (\beta \rho)/\rho, \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.
 	\\
-	E_\phi &= \frac{-i e^{i k_z z}}{k_0^2 n^2 - k_z^2}
+	E_\phi &= \frac{i e^{i\ell\phi} e^{i k_z z}}{k_0^2 n^2 - k_z^2}
 		\left\{
 		\begin{matrix}
-			\omega \mu_0  \alpha H_0^1  J'_\ell (\alpha \rho)\cos(\ell \phi)+k_z \ell E_0^1   J_\ell (\alpha \rho)\sin(\ell \phi)/\rho, \quad \text{si } \rho \le a  
+			ik_z \ell E_0^1   J_\ell (\alpha \rho)/\rho -\omega \mu_0  \alpha H_0^1  J'_\ell (\alpha \rho), \quad \text{si } \rho \le a  
 			\\
-			\omega \mu_0 \beta H_0^0   K'_\ell (\beta \rho)\cos(\ell \phi)+k_z \ell E_0^0   K_\ell (\beta \rho)\sin(\ell \phi)/\rho , \quad \text{si } \rho > a  
+			ik_z \ell E_0^0   K_\ell (\beta \rho)/\rho -\omega \mu_0 \beta H_0^0   K'_\ell (\beta \rho) , \quad \text{si } \rho > a  
 		\end{matrix}
 		\right.
 \end{align*}
@@ -356,25 +356,35 @@ Ahora sí, imponiendo continuidad:
 	\\
 	E_0^{1} J_\ell(\alpha a) &= E_0^{0} K_\ell (\beta a)
 	 \\
-	 k_z \ell \sin(\ell \phi) [\beta^2 H_0^1 J_\ell (\alpha a) + \alpha^2 H_0^0 K_\ell (\beta a)]
-	 &= \omega \epsilon_0 \alpha\beta a \cos(\ell \phi) [ \alpha n_1^2 E_0^0 K'_\ell (\beta a) + \beta n_0^2 E_0^1 J'_\ell (\alpha a)]
-	 	\\
-	 -k_z \ell \sin(\ell \phi) [\beta^2 E_0^1 J_\ell (\alpha a) + \alpha^2 E_0^0 K_\ell (\beta a)]
-	 &=
-	 \omega \mu_0 \alpha\beta a \cos(\ell \phi) [ \alpha H_0^0 K'_\ell (\beta a) + \beta H_0^1 J'_\ell (\alpha a)]
+	 -\omega \epsilon_0 n_1^2  \alpha\beta^2 a E_0^1 J'_\ell (\alpha a)-ik_z\ell \beta^2 H_0^1  J_\ell (\alpha a)
+	 &= \omega \epsilon_0 n_0^2 \alpha^2 \beta a E_0^0 K'_\ell (\beta a)+ik_z\ell \alpha^2H_0^0  K_\ell (\beta a)
+	 \\
+	 -ik_z \ell \beta^2 E_0^1   J_\ell (\alpha a) + \omega \mu_0  \alpha \beta^2 a H_0^1  J'_\ell (\alpha a) &=
+	 ik_z \ell \alpha^2 E_0^0   K_\ell (\beta a) -\omega \mu_0  \alpha^2 \beta a H_0^0  K'_\ell (\beta a)
 \end{align*}
 
-Dada la simplicidad de las primeras dos ecuaciones, se despejará $H_0^0$ y $E_0^0$ en términos de $H_0^1$ y $E_0^1$ respectivamente.
-
-3
 \begin{align*}
-	 k_z \ell \sin(\ell \phi) H_0^1 J_\ell (\alpha a)k_0^2 (n_1^2-n_0^2)
-	 &= \omega \epsilon_0 \alpha\beta a \cos(\ell \phi) E_0^1[ \alpha n_1^2  K'_\ell (\beta a)J_\ell (\alpha a)/K_\ell (\beta a) + \beta n_0^2  J'_\ell (\alpha a)]
-	 	\\
-	 -k_z \ell \sin(\ell \phi) E_0^1 J_\ell (\alpha a)k_0^2 (n_1^2-n_0^2)
-	 &=
-	 \omega \mu_0 \alpha\beta a \cos(\ell \phi)H_0^1 [ \alpha K'_\ell (\beta a)J_\ell (\alpha a)/K_\ell (\beta a) + \beta  J'_\ell (\alpha a)]
+	\left|\begin{matrix}
+		K_\ell(\beta a) & -J_\ell(\alpha a) & 0 & 0
+		\\
+		0 & 0 & K_\ell(\beta a) & -J_\ell(\alpha a)
+		\\
+		ik_z\ell \alpha^2 K_\ell (\beta a) & ik_z\ell\beta^2 J_\ell (\alpha a) & \omega \epsilon_0 n_0^2  \alpha^2 \beta a K'_\ell (\beta a) & \omega \epsilon_0 n_1^2  \alpha \beta^2 a J'_\ell (\alpha a)
+		\\
+		\omega \mu_0  \alpha^2 \beta a   K'_\ell (\beta a) &  \omega \mu_0  \alpha \beta^2 a J'_\ell (\alpha a) & -ik_z \ell \alpha^2 K_\ell (\beta a) &  -ik_z \ell \beta^2  J_\ell (\alpha a)
+	\end{matrix}\right|
+	=
+0
 \end{align*}
+
+\begin{equation}
+	\left( \frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right)\left( n_1^2\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right) = \ell^2 \left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \left( \frac{k_z}{k_0} \right)^2
+\end{equation}
+
+\subsection{Modos HE y EH}
+
+
+
 
 \section{Modos normales en guías de onda}
 
@@ -435,7 +445,7 @@ donde se han definido y usado
 
 Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{m', m, \nu, \mu}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{m', m, \nu, \mu}$ es nulo por definición.
 
-Finalmente, es posible hacer el cambio $u_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger:
+Finalmente, es posible hacer el cambio de variables $u_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger:
 \begin{equation}
 	  	 -i\frac{d u_{\mu, m'}}{dz} = \beta_{\mu, m'} u_{\mu, m'} + \sum_{\nu, m\neq m'}C_{m', m, \nu, \mu}   u_{\nu, m}.
 	\label{eqn:CMT1}
