@@ -166,7 +166,6 @@ Y las soluciones impares serán
 \end{equation*}
 
 Usando la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) es posible es expresar $\textbf{E}_{||}$ en términos de $\textbf{H}$:
-
 \begin{align*}
 	\nabla\times\textbf{H} &= -\mathbf{\hat{x}} \partial_z H_y+ \mathbf{\hat{z}} \partial_x H_y = \mathbf{\hat{z}} e^{i k_z z }\frac{d H(x)}{dx} - \mathbf{\hat{x}} ik_z  e^{i k_z z } H(x)  
 	\\	
@@ -184,7 +183,6 @@ H_{s1}\alpha\sin(\alpha a)/n_1^2 &= \beta H_{s0} e^{-\beta a}/n_0^2 & H_{a1}\alp
 \end{align*}
 
 Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia en las amplitudes y se obtienen ecuaciones trascendentales implícitas en $k_z$:
-
 \begin{align}
 	\alpha a \tan(\alpha a)/n_1^2 &= \beta a/n_0^2, & \alpha a \cot(\alpha a)/n_1^2 &= -\beta a/n_0^2 \label{eqn:trascendentalTM}
 \end{align}
@@ -197,7 +195,6 @@ Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia e
 \end{figure}
 \section{Soluciones analíticas para fibra óptica circular}
 En la sección anterior se estudió el sistema más sencillo en el que se puede hablar de guías de onda dieléctricas. El siguiente paso en complejidad consiste en guías de onda circulares. Para ello, se considerará que el índice de refracción varía radialmente según 
-
 \begin{equation}
 	n( \rho ) = 
 	\left\{\begin{matrix}
@@ -295,12 +292,12 @@ Como
 
 Separando por componentes y reemplazando:
 \begin{align*}
-		H_z &= H_0 e^{i\ell\phi}e^{i k_z z}
+		H_z &=  e^{i\ell\phi}e^{i k_z z}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	 J_\ell (\alpha \rho), \quad \text{si } \rho \le a  
+	  	 H_0^1 J_\ell (\alpha \rho), \quad \text{si } \rho \le a  
 	  	 \\
-	  	 K_\ell (\beta \rho), \quad \text{si } \rho > a  
+	  	 H_0^0 K_\ell (\beta \rho), \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.	
 		\\
@@ -322,12 +319,12 @@ Separando por componentes y reemplazando:
 		\end{matrix}
 		\right.
 		\\
-		E_z &=  E_0 e^{i\ell\phi} e^{i k_z z}
+		E_z &= e^{i\ell\phi} e^{i k_z z}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	J_\ell (\alpha \rho), \quad \text{si } \rho \le a  
+	  	 E_0^1 J_\ell (\alpha \rho), \quad \text{si } \rho \le a  
 	  	 \\
-	  	 K_\ell (\beta \rho), \quad \text{si } \rho > a  
+	  	 E_0^0 K_\ell (\beta \rho), \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.	
 		\\
@@ -351,18 +348,22 @@ Separando por componentes y reemplazando:
 \end{align*}
 
 Ahora sí, imponiendo continuidad:
-\begin{align*}
+\begin{align}
 	H_0^{1} J_\ell(\alpha a) &= H_0^{0} K_\ell (\beta a)
+	\label{eqn:cont1}
 	\\
 	E_0^{1} J_\ell(\alpha a) &= E_0^{0} K_\ell (\beta a)
+	\label{eqn:cont2}
 	 \\
 	 -\omega \epsilon_0 n_1^2  \alpha\beta^2 a E_0^1 J'_\ell (\alpha a)-ik_z\ell \beta^2 H_0^1  J_\ell (\alpha a)
 	 &= \omega \epsilon_0 n_0^2 \alpha^2 \beta a E_0^0 K'_\ell (\beta a)+ik_z\ell \alpha^2H_0^0  K_\ell (\beta a)
+	 \label{eqn:cont3}
 	 \\
 	 -ik_z \ell \beta^2 E_0^1   J_\ell (\alpha a) + \omega \mu_0  \alpha \beta^2 a H_0^1  J'_\ell (\alpha a) &=
 	 ik_z \ell \alpha^2 E_0^0   K_\ell (\beta a) -\omega \mu_0  \alpha^2 \beta a H_0^0  K'_\ell (\beta a)
-\end{align*}
-
+	 \label{eqn:cont4}
+\end{align}
+Buscando soluciones no triviales:
 \begin{align*}
 	\left|\begin{matrix}
 		K_\ell(\beta a) & -J_\ell(\alpha a) & 0 & 0
@@ -376,19 +377,52 @@ Ahora sí, imponiendo continuidad:
 	=
 0
 \end{align*}
-
+Finalmente, la ecuación trascendental que satifacen $\alpha$, $\beta$ y $k_z$ es:
 \begin{equation}
-	\left( \frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right)\left( n_1^2\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right) = \ell^2 \left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \left( \frac{k_z}{k_0} \right)^2
+	\left( \frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right)\left( n_1^2\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right) = \ell^2 \left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \left( \frac{k_z}{k_0} \right)^2 \label{eqn:fiber_trascendental}
 \end{equation}
 
-\subsection{Modos HE y EH}
+Dado que, en principio, los valores de $k_z$ ya están determinados por la ecuación anterior, es posible obtener dos relaciones entre $H_0^1$ y $E_0^1$:
+\begin{align}
+\frac{E_0^1}{H_0^1} &=  -\frac{i k_z \ell}{\omega\epsilon_0}\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]  \left[ n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)} \right]^{-1} \label{eqn:fiber_polarization_E}
+\\
+\frac{H_0^1}{E_0^1} &=  \frac{i k_z \ell}{ \omega\mu_0}\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]  \left[ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)} \right]^{-1} \label{eqn:fiber_polarization_H}
+\end{align}
 
+\subsection{Modos TE y TM}
+El caso más sencillo de estudiar es imponiendo $\ell = 0$. La ecuación (\ref{eqn:fiber_trascendental}) implica:
+\begin{align*}
+	\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)} + \frac{K'_0(\beta a)}{\beta a K_0(\beta a)}&=  0, \quad \text{(modos TE)}
+	\\
+	n_1^2\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)} + n_0^2 \frac{K'_0(\beta a)}{\beta a K_0(\beta a)} &= 0, \quad \text{(modos TM)}
+\end{align*}
+
+De las ecuaciones (\ref{eqn:fiber_polarization_E}) y (\ref{eqn:fiber_polarization_H}) es directo notar que la condiciones de modos transversales impiden que el denominador se anule, lo que permite afirmar sin ambigüedad que las componentes longitudinales se hacen cero en los casos respectivos ($H_0^1 = 0$ para TE y $E_0^1 = 0$ para TM).
+
+
+\subsection{Modos HE y EH}
+Interpretando la ecuación (\ref{eqn:fiber_trascendental}) como una cuadrática en $J_\ell'(\alpha a)/\alpha a J_\ell(\alpha a)$:
+\begin{align*}
+	\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\pm\sqrt{\left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 }
+\end{align*}
+
+Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell(r)$,  es posible obtener dos tipos de soluciones llamadas HE y EH:
+
+\begin{align}
+		\frac{J_{\ell-1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta}, \quad \text{(modos HE)}
+		\label{eqn:HE}
+	\\
+		\frac{J_{\ell+1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= \left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta}, \quad \text{(modos EH)}
+		\label{eqn:EH}
+		\\
+		\Delta &= \left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \nonumber
+\end{align}
 
 
 
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, el lado izquierdo de las ecuaciones (\ref{eqn:helmholz}), se desarrolla como:
+Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, el lado izquierdo de las ecuaciones (\ref{eqn:helmholz}), se desarrolla como:
 
 \begin{align}
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) \textbf{E}_\nu(x, y)  e^{i\beta_\nu z} \nonumber

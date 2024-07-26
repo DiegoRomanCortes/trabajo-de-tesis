@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.7.4)  25 JUL 2024 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.7.4)  26 JUL 2024 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1096,7 +1096,7 @@ your preamble.
 
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
-<imagenes/escudoU2014.pdf, id=131, 320.19624pt x 689.57625pt>
+<imagenes/escudoU2014.pdf, id=139, 320.19624pt x 689.57625pt>
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
 <use imagenes/escudoU2014.pdf>
 Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 54.
@@ -1203,7 +1203,7 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
 
 pdfTeX warning: /usr/bin/pdflatex (file ./media/slab.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<media/slab.pdf, id=319, 963.6pt x 542.025pt>
+<media/slab.pdf, id=329, 963.6pt x 542.025pt>
 File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
 Package pdftex.def Info: media/slab.pdf  used on input line 60.
@@ -1211,7 +1211,7 @@ Package pdftex.def Info: media/slab.pdf  used on input line 60.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 63.
 [4 <./media/slab.pdf>] [5]
-<media/slabgraphical.png, id=347, 260.8947pt x 197.2971pt>
+<media/slabgraphical.png, id=357, 260.8947pt x 197.2971pt>
 File: media/slabgraphical.png Graphic file (type png)
 <use media/slabgraphical.png>
 Package pdftex.def Info: media/slabgraphical.png  used on input line 127.
@@ -1225,20 +1225,20 @@ x\OT1/txr/m/n/12 )\OML/txmi/m/it/12 e[]$\OT1/txr/m/n/12 .
  []
 
 [6 <./media/slabgraphical.png>]
-<media/slabgraphicalTETM1.png, id=360, 231.9867pt x 196.3335pt>
+<media/slabgraphicalTETM1.png, id=370, 231.9867pt x 196.3335pt>
 File: media/slabgraphicalTETM1.png Graphic file (type png)
 <use media/slabgraphicalTETM1.png>
-Package pdftex.def Info: media/slabgraphicalTETM1.png  used on input line 195.
+Package pdftex.def Info: media/slabgraphicalTETM1.png  used on input line 193.
 (pdftex.def)             Requested size: 330.42041pt x 279.6583pt.
  [7] [8 <./media/slabgraphicalTETM1.png>]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
 12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.259 \end{align}
-                  [9] [10] [11] [12]) [13
+l.256 \end{align}
+                  [9] [10] [11] [12] [13]) [14
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5.
-17}) has been already used, duplicate ignored
+25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.82 \include{teorico.tex}
@@ -1247,32 +1247,32 @@ l.82 \include{teorico.tex}
 
  (./numericos.tex
 Cap\'{\i }tulo 3.
-[14
+[15
 
 
 
 
-]) [15]
+]) [16]
 \openout2 = `metodos.aux'.
 
  (./metodos.tex
 Cap\'{\i }tulo 4.
-<media/SLMsetup.png, id=443, 1245.9047pt x 610.53094pt>
+<media/SLMsetup.png, id=469, 1245.9047pt x 610.53094pt>
 File: media/SLMsetup.png Graphic file (type png)
 <use media/SLMsetup.png>
 Package pdftex.def Info: media/SLMsetup.png  used on input line 11.
 (pdftex.def)             Requested size: 472.03123pt x 231.30547pt.
-) [16
+) [17
 
 
 
 
- <./media/SLMsetup.png (PNG copy)>] [17]
+ <./media/SLMsetup.png (PNG copy)>] [18]
 \openout2 = `moleculas.aux'.
 
  (./moleculas.tex
 Cap\'{\i }tulo 5.
-) [18
+) [19
 
 
 
@@ -1282,7 +1282,7 @@ Cap\'{\i }tulo 5.
 
  (./sp.tex
 Cap\'{\i }tulo 6.
-) [19
+) [20
 
 
 
@@ -1292,12 +1292,12 @@ Cap\'{\i }tulo 6.
 
  (./magico.tex
 Cap\'{\i }tulo 7.
-<media/dipoles.jpg, id=462, 1589.94pt x 275.3487pt>
+<media/dipoles.jpg, id=487, 1589.94pt x 275.3487pt>
 File: media/dipoles.jpg Graphic file (type jpg)
 <use media/dipoles.jpg>
 Package pdftex.def Info: media/dipoles.jpg  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 81.74814pt.
-) [20
+) [21
 
 
 
@@ -1307,27 +1307,27 @@ Package pdftex.def Info: media/dipoles.jpg  used on input line 5.
 
  (./oam.tex
 Cap\'{\i }tulo 8.
-<media/OAM-free.png, id=467, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=492, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=468, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=493, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
 (pdftex.def)             Requested size: 472.03123pt x 236.01633pt.
-) [21
+) [22
 
 
 
 
- <./media/OAM-free.png>] [22 <./media/vortex.png>]
+ <./media/OAM-free.png>] [23 <./media/vortex.png>]
 \openout2 = `conclu.aux'.
 
  (./conclu.tex
 Cap\'{\i }tulo 9.
-) [23
+) [24
 
 
 
@@ -1337,7 +1337,7 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 11.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
-) [24
+) [25
 
 
 
@@ -1347,27 +1347,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--116
 suarios -[] aumentan -[] preferencia -[] por -[]
  []
 
-[25]
+[26]
 Underfull \hbox (badness 1024) in paragraph at lines 226--235
 []\OT1/txr/m/n/12 Sebabrata Mukher-jee, Ale-xan-der Sprac-klen, Ma-nuel Va-lien
 -te, Eri-ka An-ders-son, Pa-trik
  []
 
-[26] [27]) (./anexoA.tex [28]
+[27] [28]) (./anexoA.tex [29]
 Ap\'{e}ndice A.
-) (./anexoB.tex [29
+) (./anexoB.tex [30
 
 ]
 Ap\'{e}ndice B.
-) (./anexoC.tex [30
+) (./anexoC.tex [31
 
 ]
 Ap\'{e}ndice C.
-) (./anexoD.tex [31
+) (./anexoD.tex [32
 
 ]
 Ap\'{e}ndice D.
-) [32
+) [33
 
 ] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
@@ -1375,20 +1375,14 @@ LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux) (./numericos.aux)
 (./metodos.aux) (./moleculas.aux) (./sp.aux) (./magico.aux) (./oam.aux)
 (./conclu.aux))
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 564952DFE93613312536052E18E6E6CC;6750
-(rerunfilecheck)             After:  238B1C5D4B54B39633CD4465E334B30A;6886.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 59CF4EA44FC31D2035B5F96A12C20C81;7022.
  ) 
 Here is how much of TeX's memory you used:
- 37681 strings out of 476091
- 839334 string characters out of 5794082
- 1878330 words of memory out of 5000000
- 57202 multiletter control sequences out of 15000+600000
+ 37702 strings out of 476091
+ 839650 string characters out of 5794082
+ 1880330 words of memory out of 5000000
+ 57213 multiletter control sequences out of 15000+600000
  547832 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,103p,1052b,764s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1406,10 +1400,10 @@ fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (40 pages, 3003511 bytes).
+Output written on main.pdf (41 pages, 3008279 bytes).
 PDF statistics:
- 717 PDF objects out of 1000 (max. 8388607)
- 623 compressed objects within 7 object streams
- 154 named destinations out of 1000 (max. 500000)
- 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 744 PDF objects out of 1000 (max. 8388607)
+ 649 compressed objects within 7 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
