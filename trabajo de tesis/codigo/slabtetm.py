@@ -58,22 +58,22 @@ colors = ['#0C5DA5', '#00B945', '#FF9500', '#FF2C00', '#845B97', '#474747', '#9e
 # ax.plot(x1, lhs1p, color=colors[1])
 # ax.plot(x2, lhs2i, "--", color=colors[2])
 # ax.plot(x2, lhs2p, color=colors[2])
-ax.plot(x3*a, lhs3p, color=colors[0], label=r'$\alpha a \tan(\alpha a)$')
-ax.plot(x3*a, lhs3i, color=colors[1], label=r'$-\alpha a \cot(\alpha a)$')
+ax.plot(x3/k0, lhs3p, color=colors[0], label=r'$\alpha a \tan(\alpha a)$')
+ax.plot(x3/k0, lhs3i, color=colors[1], label=r'$-\alpha a \cot(\alpha a)$')
 
 
-ax.plot(x3*a, beta * a, color=colors[2], label=r'$\beta a$')
+ax.plot(x3/k0, beta * a, color=colors[2], label=r'$\beta a$')
 
 # ax.plot(x3, beta*(n1/n0)**2, "--", color=colors[1])
 # ax.plot(x3, beta*(n2/n0)**2, "--", color=colors[2])
-ax.plot(x3*a, beta*(n3/n0)**2 * a, "--", color=colors[3], label=r'$\beta a (n_1/n_0)^2$')
+ax.plot(x3/k0, beta*(n3/n0)**2 * a, "--", color=colors[3], label=r'$\beta a (n_1/n_0)^2$')
 
 
 # ax.set_xscale('log')
 
 ax.set_ylim(0, 9)
 
-ax.set_xlabel(r'$k_z a$')
+ax.set_xlabel(r'$k_z/k_0$')
 
 fig.legend()
 fig.savefig('../media/slabgraphicalTETM1.png')

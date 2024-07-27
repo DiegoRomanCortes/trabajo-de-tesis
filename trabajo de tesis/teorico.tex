@@ -2,7 +2,7 @@
 
 \section{Desde las ecuaciones de Maxwell a propagación de la luz en guías de onda dieléctricas}
 
-Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda dieléctricas escritas dentro de una muestra de borosilicato. Es por ello que se supone un medio lineal no magnético libre de fuentes de carga y de corriente. Las ecuaciones de Maxwell (SI) en este régimen son:
+Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda dieléctricas escritas dentro de una muestra de borosilicato. Es por ello que se supone un medio lineal no magnético sin fuentes de carga y de corriente libres. Las ecuaciones de Maxwell (SI) en este régimen son:
 \begin{align}
 	\nabla\cdot\textbf{D} &= 0, \label{eqn:gauss}
 	\\	
@@ -19,30 +19,56 @@ Aplicando rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:farada
 \begin{align}
 	\nabla\times\nabla\times\textbf{E} &= -\frac{\partial}{\partial t}(\nabla\times\textbf{B}) = -\frac{\partial}{\partial t}\left(\mu_0\frac{\partial \textbf{D}}{\partial t}\right) = -\frac{n^2}{c^2}\frac{\partial^2 \textbf{E}}{\partial t^2} = n^2k_0^2 \textbf{E}, \label{eqn:rotordoble}
 \end{align}
-donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Notemos que, por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$, y usando la ley de Gauss (\ref{eqn:gauss}) se deduce que $\nabla\cdot \textbf{E} = -\nabla(n^2)\cdot\textbf{E}/n^2$.
-
-Con esto, se obtiene la ecuación 
-
+donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Notemos que, por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$, y usando la ley de Gauss (\ref{eqn:gauss}) se deduce que $\nabla\cdot \textbf{E} = -\frac{\nabla n^2}{n^2}\cdot\textbf{E}$. Con esto, se obtiene la ecuación 
 \begin{equation}
-	(\nabla^2  + k_0^2n^2)\textbf{E} = -\nabla\left( \frac{\nabla n^2}{n^2} \cdot \textbf{E}  \right). \label{eqn:helmholz}
+	\left(\nabla^2  + k_0^2n^2\right)\textbf{E} = -\nabla\left( \frac{\nabla n^2}{n^2} \cdot \textbf{E}  \right). \label{eqn:helmholz}
 \end{equation}
-
 Análogamente para \textbf{H}, es posible aplicar rotor a la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y usar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en conjunto con la divergencia nula de \textbf{B} (\ref{eqn:div0}) y por consiguiente de \textbf{H}:
-
 \begin{align}
-	\nabla\times\nabla\times \textbf{H} &= -i \omega \nabla\times\left(\epsilon_0 n^2 \textbf{E}\right) = -i\omega \left(n^2 \nabla\times \textbf{E} + \nabla n^2 \times \textbf{E}\right)
+	\nabla\times\nabla\times \textbf{H} &= -i \omega \nabla\times\left(\epsilon_0 n^2 \textbf{E}\right) = -i\omega \epsilon_0  \left(n^2 \nabla\times \textbf{E} + \nabla n^2 \times \textbf{E}\right)
 	\nonumber
 	\\
 	\nabla\left( {\nabla\cdot \textbf{H}} \right)- \nabla^2 \textbf{H}
 	&= 
-	 \left( k_0^2 n^2\textbf{H} - i\omega  \nabla n^2 \times \textbf{E}  \right)
+	  k_0^2 n^2\textbf{H} - i\omega \epsilon_0 \nabla n^2 \times \textbf{E} 
 	 	\nonumber
 \end{align}
+La ecuación (\ref{eqn:helmholz}) análoga para \textbf{H} es, por consiguiente:
 \begin{align}
-	 \left(\nabla^2  + k_0^2 n^2 \right) \textbf{H} &= i\omega  \nabla n^2 \times \textbf{E}.
+	 \left(\nabla^2  + k_0^2 n^2 \right) \textbf{H} &= i\omega \epsilon_0 \nabla n^2 \times \textbf{E}.
 	 \label{eqn:helmholzH}
-	\end{align}
+\end{align}
 
+Será útil separa las componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{ik_z z}$ en $z$. Separando $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $, las ecuaciones de Maxwell que involucran rotores se escriben como
+\begin{align}
+	\nabla_\perp \times  \textbf{E}_\perp + \frac{\partial}{\partial z} (\hat{\textbf{z}} \times \textbf{E}_\perp) + \nabla_\perp \times (\hat{\textbf{z}} E_z) &= i\omega\mu_0(\textbf{H}_\perp +\hat{\textbf{z}} H_z)
+	\label{eqn:Efield}
+	\\
+	\nabla_\perp \times  \textbf{H}_\perp + \frac{\partial}{\partial z} (\hat{\textbf{z}} \times \textbf{H}_\perp) + \nabla_\perp \times (\hat{\textbf{z}} H_z) &= -i\omega \epsilon_0 n^2 (\textbf{E}_\perp +\hat{\textbf{z}} E_z)
+	\label{eqn:Hfield}
+\end{align}
+
+Tomando producto cruz en la dirección $\hat{\textbf{z}}$ a las ecuaciones (\ref{eqn:Efield}) y (\ref{eqn:Hfield}) y considerando dependencia en $z$ del tipo $e^{ik_z z}$, se puede expresar $E_z$ y $H_z$ en función de $\textbf{E}_\perp$ y $\textbf{H}_\perp$ para luego invertir las relaciones: 
+\begin{equation}
+\begin{aligned}[c]
+	 i\nabla_\perp E_z &= k_z\textbf{E}_\perp +\omega \mu_0 \hat{\textbf{z}} \times \textbf{H}_\perp  
+	 	  	 \\
+	 	  	i\hat{\textbf{z}} \times \nabla_\perp H_z &= k_z \hat{\textbf{z}} \times\textbf{H}_\perp + \omega\epsilon_0 n^2 \textbf{E}_\perp
+	 \\
+	  \hat{\textbf{z}} \times \textbf{H}_\perp &= i\frac{(\omega\epsilon_0 n^2 \nabla_\perp E_z  - \hat{\textbf{z}} \times \nabla_\perp H_z k_z)}{k_0^2 n^2 - k_z^2}
+	  \\
+	  	 \textbf{H}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}\left[k_z\nabla_\perp H_z + \omega \epsilon_0 n^2\hat{\textbf{z}} \times \nabla_\perp E_z\right]
+\end{aligned} 
+\begin{aligned}[c]
+	i \nabla_\perp H_z &= k_z \textbf{H}_\perp - \omega \epsilon_0 n^2  \hat{\textbf{z}} \times \textbf{E}_\perp 
+	\\
+	i\hat{\textbf{z}} \times\nabla_\perp E_z &= k_z  \hat{\textbf{z}} \times \textbf{E}_\perp - \omega \mu_0 \textbf{H}_\perp
+	\\
+	\hat{\textbf{z}} \times \textbf{E}_\perp &= -i\frac{(k_z\hat{\textbf{z}} \times \nabla_\perp E_z + \omega\mu_0 \nabla_\perp H_z)  }{k_0^2 n^2 - k_z^2}
+	\\
+	\textbf{E}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}\left[k_z \nabla_\perp E_z - \omega\mu_0 \hat{\textbf{z}} \times \nabla_\perp H_z\right] \label{eqn:transversal}
+\end{aligned}
+\end{equation}
 \section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
 
 El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuya forma analítica para el constraste $n(x)$ es la siguiente, con $n_1 > n_0$:
@@ -60,67 +86,143 @@ El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuy
 	\includegraphics[width=0.6\linewidth]{media/slab.pdf}
 	\caption[Forma de una guía de onda tipo losa.]{Forma de una guía de onda tipo losa. En las direcciones $\mathbf{\hat{y}}$ (vertical) y $\mathbf{\hat{z}}$ (hacia dentro de la página) la estructura es invariante.}
 \end{figure}
-\subsection{Modos TE}
 
-Los modos transversales eléctricos o TE se pueden expresar como $\textbf{E}(x,z) =\mathbf{\hat{y}} E_y= \mathbf{\hat{y}} E(x)e^{i k_z z }$, donde se ha escogido polarización lineal en $\hat{\textbf{y}}$ para que el lado derecho de la ecuación (\ref{eqn:helmholz}) sea nulo y sea de tipo Helmholz:
+Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) son de tipo Helmholz. Definiendo $\Psi = \{E_z, H_z\} $:
+\begin{align*}
+	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0
+\end{align*}
 
-\begin{align}
-(\nabla^2  + k_0^2n^2) E(x)e^{ik_z z} &=  \left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) E(x)e^{ik_z z } 
-\nonumber
-\\
-&= e^{ik_z z}\left[\frac{d^2  E(x)}{dx^2}  + (k_0^2n^2 -  k_z^2)E(x) \right]
-\nonumber
-\\
-&=0
-\nonumber
-\\
-\therefore \frac{d^2  E(x)}{dx^2}  + (k_0^2n^2 -  k_z^2)E(x) &= 0 \label{eqn:TEslab}
-\end{align}
-
-Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 < k_z^2 < k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. \textcolor{red}{Incluir cita Griffiths QM acerca de soluciones pares e impares para potencial real simétrico}. Si consideramos soluciones pares, la ecuación (\ref{eqn:TEslab}) tendrá soluciones
-
+Dado que $n(x)=n(-x)$, las soluciones $\Psi$ deben ser pares o impares. Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 \le k_z^2 \le k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Con todo ésto, 
 \begin{equation*}
-	E(x) = \left\{\begin{matrix}
-	E_{s1}\cos(\alpha x)\quad |x|\le a
+	\Psi_s = \left\{\begin{matrix}
+	\Psi_{s1}\cos(\alpha x)\quad |x|\le a
 	\\
-	E_{s0}e^{-\beta|x|} \quad |x|>a
+	\Psi_{s0}e^{-\beta|x|} \quad |x|>a
 	\end{matrix}\right.
 \end{equation*}
+
+\begin{equation*}
+	\nabla_\perp \Psi_s = \left\{\begin{matrix}
+	-\hat{\textbf{x}}\alpha\Psi_{s1}\sin(\alpha x)\quad |x|\le a
+	\\
+	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{s0}e^{-\beta|x|} \quad |x|>a
+	\end{matrix}\right.
+\end{equation*}
+
+Por lo que las componentes verticales $E_y$ y $H_y$ se escriben debido a la ecuación (\ref{eqn:transversal}) como:
+\begin{equation*}
+	\begin{aligned}[c]
+	 E_y &= \frac{i}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
+	 \omega\mu_0\alpha H_{s1}\sin(\alpha x)	 \quad |x|\le a
+	 \\
+	 \omega\mu_0\frac{|x|}{x}\beta H_{s0}e^{-\beta|x|}\quad |x|>a
+	 \end{matrix}\right.
+\end{aligned} 
+\quad
+	\begin{aligned}[c]
+	 H_y &= \frac{i}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
+	 -\omega \epsilon_0 n^2\alpha E_{s1}\sin(\alpha x)	 \quad |x|\le a
+	 \\
+	 -\omega \epsilon_0 n^2\frac{|x|}{x}\beta E_{s0}e^{-\beta|x|}\quad |x|>a
+	 \end{matrix}\right.
+\end{aligned} 
+\end{equation*}
+
 
 Por otro lado, las soluciones impares tienen la forma
 \begin{equation*}
-	E(x) = \left\{\begin{matrix}
-	E_{a1}\sin(\alpha x)\quad |x|\le a
+	\Psi_a = \left\{\begin{matrix}
+	\Psi_{a1}\sin(\alpha x)\quad |x|\le a
 	\\
-	E_{a0}e^{-\beta|x|} \quad |x|>a
+	\Psi_{a0}e^{-\beta|x|} \quad |x|>a
+	\end{matrix}\right.
+\end{equation*}
+\begin{equation*}
+	\nabla_\perp \Psi_a = \left\{\begin{matrix}
+	\hat{\textbf{x}}\alpha\Psi_{a1}\cos(\alpha x)\quad |x|\le a
+	\\
+	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{a0}e^{-\beta|x|} \quad |x|>a
 	\end{matrix}\right.
 \end{equation*}
 
+Por lo que $E_y$ y $H_y$ se escriben como:
 
-Es necesario considerar las condiciones de interfase electromagnéticas. En este caso, continuidad de las componentes de \textbf{E} y \textbf{H} paralelas a la interfaz . A partir de la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) se tiene:
-
+\begin{equation*}
+	\begin{aligned}[c]
+	 E_y &= \frac{i}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
+	 -\omega\mu_0\alpha H_{a1}\cos(\alpha x)	 \quad |x|\le a
+	 \\
+	 \omega\mu_0\frac{|x|}{x}\beta H_{a0}e^{-\beta|x|}\quad |x|>a
+	 \end{matrix}\right.
+\end{aligned} 
+\quad
+	\begin{aligned}[c]
+	 H_y &= \frac{i}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
+	 \omega \epsilon_0 n^2 \alpha E_{a1}\cos(\alpha x)	 \quad |x|\le a
+	 \\
+	 -\omega \epsilon_0 n^2 \frac{|x|}{x}\beta E_{a0}e^{-\beta|x|}\quad |x|>a
+	 \end{matrix}\right.
+\end{aligned} 
+\end{equation*}
+Imponiendo continuidad de $E_y$, $E_z$, $H_y$ y $H_z$, tratando los casos par e impar por separado:
+\begin{equation*}
+	\begin{aligned}[c]
+	 E_{s1}\cos(\alpha a) = E_{s0}e^{-\beta a}
+	 \\	 
+	 H_{s1}\cos(\alpha a) = H_{s0}e^{-\beta a}
+	 \\
+	 	  n_1 ^2 E_{s1}\sin(\alpha a)/\alpha = -n_0^2 E_{s0}e^{-\beta a}/\beta
+	  \\
+	  H_{s1}\sin(\alpha a)/\alpha = - H_{s0}e^{-\beta a}/\beta
+\end{aligned} 
+\quad
+	\begin{aligned}[c]
+		 E_{a1}\sin(\alpha a) = H_{a0}e^{-\beta a}
+	 	   \\
+	 H_{a1}\sin(\alpha a) = H_{a0}e^{-\beta a}
+	 \\
+	  n_1 ^2 E_{a1}\cos(\alpha a)/\alpha = n_0^2 E_{a0}e^{-\beta a}/\beta
+	 	 \\
+	  H_{a1}\cos(\alpha a)/\alpha = H_{a0}e^{-\beta a}/\beta
+\end{aligned} 
+\end{equation*}
+Buscando soluciones no triviales se tiene que:
+\begin{equation*}
+	\begin{aligned}[c]
+	\left[\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a}\right] \left[n_0^2 \frac{\cos(\alpha a)}{\beta a} + n_1^2\frac{\sin(\alpha a)}{\alpha a} \right] = 0
+\end{aligned} 
+\quad
+	\begin{aligned}[c]
+	 \left[ \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a}\right]\left[ n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a}\right] = 0
+\end{aligned} 
+\end{equation*}
+Se distinguirá dos tipos de condiciones:
 \begin{align*}
-	\nabla\times\textbf{E} &= -\mu_0\frac{\partial \textbf{H}}{\partial t}
+	\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a}&= 0 & n_0^2 \frac{\cos(\alpha a)}{\beta a} + n_1^2\frac{\sin(\alpha a)}{\alpha a}  &= 0
 	\\
-	\mathbf{\hat{z}}\partial_x E_y-\mathbf{\hat{x}}\partial_z E_y  &= i\omega \mu_0  \textbf{H}
-	\\	
-	\therefore \textbf{H}_{||} = -i\mathbf{\hat{z}}\frac{e^{ik_z z}}{\omega\mu_0}\frac{d E(x)}{dx}.
+	&\qquad\text{(modos TE)}	& &\qquad\text{(modos TM)}	
+	\\
+	 \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a} &= 0 &  n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a} &= 0
 \end{align*}
-Es decir, tanto $E(x)$ como $\frac{dE(x)}{dx}$ deben ser continuos en $|x|=a$. Aplicando esto en $x=a$ separadamente para las soluciones simétricas y antisimétricas:
+Asumiendo $\alpha$, $\beta$ y $k_z$ conocidos, las amplitudes deben cumplir las relaciones:
+\begin{equation*}
+	\begin{aligned}[c]
+	E_{s1} \left[n_0^2 \frac{\cos(\alpha a)}{\beta a}+n_1 ^2 \frac{\sin(\alpha a)}{\alpha a}\right] = 0
+		\\
+	H_{s1} \left[\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a} \right] = 0
+\end{aligned} 
+\quad
+	\begin{aligned}[c]
+	E_{a1} \left[ n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a}\right] = 0
+		\\
+	H_{a1} \left[ \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a}\right] = 0
+\end{aligned} 
+\end{equation*}
+Las ecuaciones de arriba imponen que $E_1 = 0$ al cumplirse la condición de modos transversales eléctricos (TE), mientras que las ecuaciones de abajo imponen $H_1 = 0$  si la condición de modos transversales magnéticos (TM) se satisface.
 
-\begin{align*}
-E_{s1}\cos(\alpha a) &= E_{s0} e^{-\beta a} & E_{a1}\sin(\alpha a) &= E_{a0} e^{-\beta a}
-\\
-E_{s1}\alpha\sin(\alpha a) &= \beta E_{s0} e^{-\beta a} & E_{a1}\alpha\cos(\alpha a) &= -\beta E_{a0} e^{-\beta a}
-\end{align*}
+\subsection{Modos TE}
 
-Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia en las amplitudes y se obtienen ecuaciones trascendentales para $k_z$:
-
-\begin{align}
-	\alpha a \tan(\alpha a) &= \beta a, & \alpha a \cot(\alpha a) &= -\beta a \label{eqn:trascendentalTE}
-\end{align}
-
-Usando las dos ecuaciones (\ref{eqn:trascendentalTE}) junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$.
+Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$.
 
 \begin{figure}[H]
 	\centering
@@ -128,69 +230,10 @@ Usando las dos ecuaciones (\ref{eqn:trascendentalTE}) junto a la restricción $(
 	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
 \end{figure}
 \subsection{Modos TM}
-Los modos transversales magnéticos o TM se pueden expresar como $\textbf{H}(x,z) =\mathbf{\hat{y}} H_y= \mathbf{\hat{y}} H(x)e^{i k_z z }$. Por consiguiente, la ecuación (\ref{eqn:helmholzH}) toma la forma:
-
-\begin{align}
-	(\nabla^2 + k_0^2 n^2) H_y
-	&= \left(\frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) H(x)e^{ik_z z }
-	\nonumber
-	\\
-&= e^{ik_z z}\left[\frac{d^2  H(x)}{dx^2}  + (k_0^2n^2 -  k_z^2)H(x) \right]
-\nonumber	
-	\\	
-	&= 0 
-	\nonumber	
-	\\
-	\therefore 
-	\frac{d^2  H(x)}{dx^2}  + (k_0^2n^2 -  k_z^2)H(x) &= 0
-	\label{eqn:TMslab}
-\end{align} 
-
-La ecuación de modos TM (\ref{eqn:TMslab}) para $H(x)$ es idéntica que la ecuación (\ref{eqn:TEslab}) para $E(x)$ de modos TE. Es decir, definiendo $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ y considerando soluciones pares se tiene
-
-\begin{equation*}
-	H(x) = \left\{\begin{matrix}
-	H_{s1}\cos(\alpha x)\quad |x|\le a
-	\\
-	H_{s0}e^{-\beta|x|} \quad |x|>a
-	\end{matrix}\right.
-\end{equation*}
-
-Y las soluciones impares serán
-\begin{equation*}
-	H(x) = \left\{\begin{matrix}
-	H_{a1}\sin(\alpha x)\quad |x|\le a
-	\\
-	H_{a0}e^{-\beta|x|} \quad |x|>a
-	\end{matrix}\right.
-\end{equation*}
-
-Usando la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) es posible es expresar $\textbf{E}_{||}$ en términos de $\textbf{H}$:
-\begin{align*}
-	\nabla\times\textbf{H} &= -\mathbf{\hat{x}} \partial_z H_y+ \mathbf{\hat{z}} \partial_x H_y = \mathbf{\hat{z}} e^{i k_z z }\frac{d H(x)}{dx} - \mathbf{\hat{x}} ik_z  e^{i k_z z } H(x)  
-	\\	
-	&= -i\omega\epsilon_0 n^2 \textbf{E}
-	\\
-	\therefore \textbf{E}_{||} &= \mathbf{\hat{z}} \frac{ie^{i k_z z }}{n^2 \omega \epsilon_0} \frac{d H(x)}{dx}
-\end{align*} 
-
-Nuevamente, al considerar que $\textbf{H}_{||}= \mathbf{\hat{y}} H(x)e^{i k_z z }$ y $\textbf{E}_{||} = \mathbf{\hat{z}} \frac{ie^{i k_z z }}{n^2 \omega \epsilon_0} \frac{d H(x)}{dx}$ deben ser continuas, 
-
-\begin{align*}
-H_{s1}\cos(\alpha a) &= H_{s0} e^{-\beta a} & H_{a1}\sin(\alpha a) &= H_{a0} e^{-\beta a}
-\\
-H_{s1}\alpha\sin(\alpha a)/n_1^2 &= \beta H_{s0} e^{-\beta a}/n_0^2 & H_{a1}\alpha\cos(\alpha a)/n_1^2 &= -\beta H_{a0} e^{-\beta a}/n_0^2
-\end{align*}
-
-Al dividir las ecuaciones de abajo por las de arriba se elimina la dependencia en las amplitudes y se obtienen ecuaciones trascendentales implícitas en $k_z$:
-\begin{align}
-	\alpha a \tan(\alpha a)/n_1^2 &= \beta a/n_0^2, & \alpha a \cot(\alpha a)/n_1^2 &= -\beta a/n_0^2 \label{eqn:trascendentalTM}
-\end{align}
-
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{media/slabgraphicalTETM1}
+	\includegraphics[width=0.6\linewidth]{media/slabgraphicalTETM1}
 	\caption[Soluciones gráficas de los modos TE y TM]{Soluciones gráficas de los modos TE y TM para $\Delta n = 3\times 10^{-2}$. Se aprecia que las constantes de propagación de los modos TM (rojo discontinuo) son menores que las de los modos TE (naranjo liso).}
 \end{figure}
 \section{Soluciones analíticas para fibra óptica circular}
@@ -245,38 +288,7 @@ Necesariamente se debe imponer $D_1 = D_2 = 0$ para que la solución sea finita 
 	. \nonumber
 \end{align*}
 
-En este caso, para imponer las condiciones de continuidad en $\textbf{E}_{||} = E_\phi \boldsymbol{\hat{\phi}} + E_z \hat{\textbf{z}}$ y $\textbf{H}_{||}= H_\phi \hat{\boldsymbol{\phi}} + H_z \hat{\textbf{z}}$, se hace necesario relacionar el resto de componentes del campo con $E_z$ y $H_z$. Explícitamente, las ecuaciones de Maxwell separando $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $
-
-\begin{align}
-	\nabla_\perp \times  \textbf{E}_\perp + \frac{\partial}{\partial z} (\hat{\textbf{z}} \times \textbf{E}_\perp) + \nabla_\perp \times (\hat{\textbf{z}} E_z) &= i\omega\mu_0(\textbf{H}_\perp +\hat{\textbf{z}} H_z)
-	\label{eqn:Efield}
-	\\
-	\nabla_\perp \times  \textbf{H}_\perp + \frac{\partial}{\partial z} (\hat{\textbf{z}} \times \textbf{H}_\perp) + \nabla_\perp \times (\hat{\textbf{z}} H_z) &= -i\omega \epsilon_0 n^2 (\textbf{E}_\perp +\hat{\textbf{z}} E_z)
-	\label{eqn:Hfield}
-\end{align}
-
-Tomando producto cruz en la dirección $\hat{\textbf{z}}$ a las ecuaciones (\ref{eqn:Efield}) y (\ref{eqn:Hfield}), se puede expresar $E_z$ y $H_z$ en función de $\textbf{E}_\perp$ y $\textbf{H}_\perp$ para luego invertir las relaciones: 
-
-\begin{equation*}
-\begin{aligned}[c]
-	 i\nabla_\perp E_z &= k_z\textbf{E}_\perp +\omega \mu_0 \hat{\textbf{z}} \times \textbf{H}_\perp  
-	 	  	 \\
-	 	  	i\hat{\textbf{z}} \times \nabla_\perp H_z &= k_z \hat{\textbf{z}} \times\textbf{H}_\perp + \omega\epsilon_0 n^2 \textbf{E}_\perp
-	 \\
-	  \hat{\textbf{z}} \times \textbf{H}_\perp &= i\frac{(\omega\epsilon_0 n^2 \nabla_\perp E_z  - \hat{\textbf{z}} \times \nabla_\perp H_z k_z)}{k_0^2 n^2 - k_z^2}
-	  \\
-	  	 \textbf{H}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}[k_z\nabla_\perp H_z + \omega \epsilon_0 n^2\hat{\textbf{z}} \times \nabla_\perp E_z]
-\end{aligned}
-\begin{aligned}[c]
-	i \nabla_\perp H_z &= k_z \textbf{H}_\perp - \omega \epsilon_0 n^2  \hat{\textbf{z}} \times \textbf{E}_\perp 
-	\\
-	i\hat{\textbf{z}} \times\nabla_\perp E_z &= k_z  \hat{\textbf{z}} \times \textbf{E}_\perp - \omega \mu_0 \textbf{H}_\perp
-	\\
-	\hat{\textbf{z}} \times \textbf{E}_\perp &= -i\frac{(k_z\hat{\textbf{z}} \times \nabla_\perp E_z + \omega\mu_0 \nabla_\perp H_z)  }{k_0^2 n^2 - k_z^2}
-	\\
-	\textbf{E}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}[k_z \nabla_\perp E_z - \omega\mu_0 \hat{\textbf{z}} \times \nabla_\perp H_z]
-\end{aligned}
-\end{equation*}
+En este caso, para imponer las condiciones de continuidad en $\textbf{E}_{||} = E_\phi \boldsymbol{\hat{\phi}} + E_z \hat{\textbf{z}}$ y $\textbf{H}_{||}= H_\phi \hat{\boldsymbol{\phi}} + H_z \hat{\textbf{z}}$, se hace necesario relacionar el resto de componentes del campo con $E_z$ y $H_z$. 
 
 Como 
 \begin{equation*}
