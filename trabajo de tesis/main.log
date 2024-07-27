@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.23)  27 JUL 2024 01:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.23)  27 JUL 2024 15:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1197,6 +1197,10 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 
 
 ]
+Overfull \hbox (7.9235pt too wide) detected at line 71
+[][][][][][][]
+ []
+
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 72.
 
@@ -1208,30 +1212,35 @@ File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
 Package pdftex.def Info: media/slab.pdf  used on input line 86.
 (pdftex.def)             Requested size: 283.22162pt x 159.30876pt.
-[4] [5 <./media/slab.pdf>]
-Overfull \hbox (21.33864pt too wide) detected at line 198
-[][] [][]
+[4]
+Overfull \hbox (6.60912pt too wide) detected at line 160
+[][] [][]\OML/txmi/m/it/12 :
+ []
+
+[5 <./media/slab.pdf>]
+Overfull \hbox (27.33864pt too wide) detected at line 192
+[][] [][]\OML/txmi/m/it/12 :
  []
 
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 223.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 218.
 <media/slabgraphical.png, id=361, 260.8947pt x 197.2971pt>
 File: media/slabgraphical.png Graphic file (type png)
 <use media/slabgraphical.png>
-Package pdftex.def Info: media/slabgraphical.png  used on input line 229.
+Package pdftex.def Info: media/slabgraphical.png  used on input line 224.
 (pdftex.def)             Requested size: 330.42041pt x 249.89017pt.
 [6]
 <media/slabgraphicalTETM1.png, id=367, 231.9867pt x 197.2971pt>
 File: media/slabgraphicalTETM1.png Graphic file (type png)
 <use media/slabgraphicalTETM1.png>
-Package pdftex.def Info: media/slabgraphicalTETM1.png  used on input line 236.
+Package pdftex.def Info: media/slabgraphicalTETM1.png  used on input line 231.
 (pdftex.def)             Requested size: 283.22162pt x 240.88875pt.
  [7 <./media/slabgraphical.png> <./media/slabgraphicalTETM1.png>] [8]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
 11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.377 \end{align}
+l.370 \end{align}
                   [9] [10] [11] [12]) [13
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5.
 22}) has been already used, duplicate ignored
@@ -1253,7 +1262,7 @@ Cap\'{\i }tulo 3.
 
  (./metodos.tex
 Cap\'{\i }tulo 4.
-<media/SLMsetup.png, id=458, 1245.9047pt x 610.53094pt>
+<media/SLMsetup.png, id=459, 1245.9047pt x 610.53094pt>
 File: media/SLMsetup.png Graphic file (type png)
 <use media/SLMsetup.png>
 Package pdftex.def Info: media/SLMsetup.png  used on input line 11.
@@ -1288,7 +1297,7 @@ Cap\'{\i }tulo 6.
 
  (./magico.tex
 Cap\'{\i }tulo 7.
-<media/dipoles.jpg, id=476, 1589.94pt x 275.3487pt>
+<media/dipoles.jpg, id=477, 1589.94pt x 275.3487pt>
 File: media/dipoles.jpg Graphic file (type jpg)
 <use media/dipoles.jpg>
 Package pdftex.def Info: media/dipoles.jpg  used on input line 5.
@@ -1303,12 +1312,12 @@ Package pdftex.def Info: media/dipoles.jpg  used on input line 5.
 
  (./oam.tex
 Cap\'{\i }tulo 8.
-<media/OAM-free.png, id=481, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=482, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=482, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=483, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
@@ -1371,9 +1380,6 @@ LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux) (./numericos.aux)
 (./metodos.aux) (./moleculas.aux) (./sp.aux) (./magico.aux) (./oam.aux)
 (./conclu.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 59CF4EA44FC31D2035B5F96A12C20C81;7022.
  ) 
@@ -1399,10 +1405,10 @@ fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1
 tmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (40 pages, 3005725 bytes).
+Output written on main.pdf (40 pages, 3006128 bytes).
 PDF statistics:
- 732 PDF objects out of 1000 (max. 8388607)
- 638 compressed objects within 7 object streams
+ 733 PDF objects out of 1000 (max. 8388607)
+ 639 compressed objects within 7 object streams
  160 named destinations out of 1000 (max. 500000)
  317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
