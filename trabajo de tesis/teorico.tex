@@ -91,7 +91,7 @@ Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las 
 \begin{align*}
 	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0.
 \end{align*}
-Dado que $n(x)=n(-x)$, las soluciones $\Psi$ deben ser pares o impares. Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 \le k_z^2 \le k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Con todo ésto, 
+Dado que $n(x)=n(-x)$, las soluciones $\Psi$ deben ser pares o impares. Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 \le k_z^2 \le k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Con todo esto, 
 \begin{equation*}
 	\Psi_s = \left\{\begin{matrix}
 	\Psi_{s1}\cos(\alpha x),\quad |x|\le a
@@ -158,7 +158,7 @@ Por lo que $E_y$ y $H_y$ se escriben como:
 	 \end{matrix}\right.
 \end{aligned} .
 \end{equation*}
-Imponiendo continuidad de $E_y$, $E_z$, $H_y$ y $H_z$, tratando los casos par e impar por separado:
+Imponiendo continuidad de las componentes tangenciales $E_y$, $E_z$, $H_y$ y $H_z$; y tratando los casos par e impar por separado:
 \begin{equation*}
 	\begin{aligned}[c]
 	 E_{s1}\cos(\alpha a) = E_{s0}e^{-\beta a},
@@ -215,22 +215,22 @@ Asumiendo $\alpha$, $\beta$ y $k_z$ conocidos, las amplitudes deben cumplir las 
 Las ecuaciones superiores imponen que $E_1 = 0$ cuando se satisface la condición de modos TE. Análogamente, las ecuaciones inferiores imponen $H_1 = 0$ en el caso de modos TM. Efectivamente, los nombres TE y TM se han puesto por transversal eléctrico y transversal magnético, respectivamente.
 Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente.
 
-\subsection{Modos TE}
+\subsection{Soluciones gráficas y comparación entre modos TE y TM}
 
-Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$.
+Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$ a partir de las intersecciones $(\alpha a, \beta a)$. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/slabgraphical}
 	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
 \end{figure}
-\subsection{Modos TM}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\linewidth]{media/slabgraphicalTETM1}
-	\caption[Soluciones gráficas de los modos TE y TM]{Soluciones gráficas de los modos TE y TM para $\Delta n = 3\times 10^{-2}$. Se aprecia que las constantes de propagación de los modos TM (rojo discontinuo) son menores que las de los modos TE (naranjo liso).}
-\end{figure}
+\textcolor{red}{AÑADIR LA FORMA ESPACIAL DE LOS CUATRO MODOS MORADOS}
+
+La condición de corte (\textit{cutoff}) en guías de onda es equivalente a que la energía deje de decaer en la región $x > a$, es decir, se debe cumplir que $\beta = 0$. 
+Los modos simétricos o pares cumplen esta condición para $\sin(\alpha a) = 0$, lo que implica que $\alpha = m \pi/a$, con $m$ entero. En particular, considerando $m=0$  y barriendo $n_1 \to n_0$, siempre existen al menos dos modos, uno TE y uno TM hasta que $n_1 < n_0$.  
+Los modos antisimétricos o impares deben cumplir por su parte que $\cos(\alpha a) = 0$, lo que implica que $\alpha = (m\pi \pm \pi/2)/a$. De esta condición se deduce que el primer par de modos exictados ($m=1$) existe siempre que $\lambda^2 \le 4(2a)^2 (n_1^2-n_0^2) $.
+
 \section{Soluciones analíticas para fibra óptica circular}
 En la sección anterior se estudió el sistema más sencillo en el que se puede hablar de guías de onda dieléctricas. El siguiente paso en complejidad consiste en guías de onda circulares. Para ello, se considerará que el índice de refracción varía radialmente según 
 \begin{equation}
@@ -318,9 +318,9 @@ Separando por componentes y reemplazando:
 		H_\phi &= \frac{ie^{i\ell\phi} e^{i k_z z}}{k_0^2 n^2 - k_z^2}
 		\left\{
 		\begin{matrix}
-			\omega \epsilon_0 n^2  \alpha E_0^1 J'_\ell (\alpha \rho)+ik_z\ell H_0^1  J_\ell (\alpha \rho)/\rho, \quad \text{si } \rho \le a  
+			ik_z\ell H_0^1  J_\ell (\alpha \rho)/\rho + \omega \epsilon_0 n^2  \alpha E_0^1 J'_\ell (\alpha \rho), \quad \text{si } \rho \le a  
 			\\
-			\omega \epsilon_0 n^2 \beta E_0^0  K'_\ell (\beta \rho)+ik_z \ell H_0^0  K_\ell (\beta \rho)/\rho , \quad \text{si } \rho > a  
+			ik_z \ell H_0^0  K_\ell (\beta \rho)/\rho + \omega \epsilon_0 n^2 \beta E_0^0  K'_\ell (\beta \rho), \quad \text{si } \rho > a  
 		\end{matrix}
 		\right.
 		\\
@@ -445,7 +445,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, el campo elé
 	\therefore
 	 \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]&\textbf{E}_\nu(x,y)  = \beta_\nu^2 \textbf{E}_\nu(x,y), \label{eqn:eigenfield}
 \end{align}
-donde se ha usado la aproximación de guiaje débil para anular el lado de derecho de la ecuación (\ref{eqn:helmholz}). Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, que son ortogonales y forman una base completa (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil. 
+donde se ha usado la aproximación de guiaje débil para anular el lado de derecho de la ecuación (\ref{eqn:helmholz}). Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, las cuales son ortogonales y forman una base completa (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil. 
 
 \section{Teoría de modos acoplados}
 	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $\nu$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
@@ -494,7 +494,7 @@ Finalmente, es posible hacer el cambio de variables $u_{\nu, m} \equiv a_{\nu, m
 
 Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, considerando una distancia $d$ entre guías \textcolor{red}{INCLUIR ESQUEMA PARA EXPLICAR ACOPLAMIENTO}. El índice de refracción en este caso es $n^2 = n_1^2 + n_2^2$, con $n_1^2(\textbf{r})=n_2^2(\textbf{r}+\textbf{d})$. Dada la simetría del problema, la constante de acoplamiento se puede desarrollar como 
 \begin{align}
-	C_{1, 2} &=  \frac{1}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} k_0^2 n_1^2(\textbf{r}) \textbf{E}_{2}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
+	C_{1, 2} &=  \frac{k_0^2}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_1^2(\textbf{r}) \textbf{E}_{2}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
 	= \frac{k_0^2}{2\beta}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_2^2(\textbf{r}+\textbf{d}) \textbf{E}_{1}(\textbf{r}+\textbf{d}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
 	\nonumber	
 	\\	
@@ -510,11 +510,31 @@ Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, conside
 \begin{equation}
 	i\frac{d a_1}{dz} + C a_2 = 0, \quad\quad i\frac{d a_2}{dz} + C a_1 = 0 \nonumber
 \end{equation}
-
 Claramente, la ecuación (\ref{eqn:CMT1}) es ``clásica'': es posible definir un Hamiltoniano 
 \begin{equation}
 	H = -\sum_{\mu, m'} \beta_{\mu, m'} |u_{\mu, m'}|^2 - \sum_{\mu, \nu, m, m'}C_{m', m, \nu, \mu}   u_{\nu, m}u^*_{\mu, m'}
 \end{equation}
-tal que las ecuaciones canónicas de Hamilton $i\frac{d u_{\mu, m}}{dz} = \frac{\partial H}{\partial u^*_{\mu, m}} $ recuperan la ecuación (\ref{eqn:CMT1}).
+tal que las ecuaciones canónicas de Hamilton $i\frac{d u_{\mu, m}}{dz} = \frac{\partial H}{\partial u^*_{\mu, m}} $ recuperan la ecuación (\ref{eqn:CMT1}). Este Hamiltoniano presenta simetría U(1), pues la trasformación $u_{\mu, m'} \to u_{\mu, m'}e^{i\theta_0} $ deja invariante $H$. Por lo que aplicando la transformación $H \to H +\theta_0 \sum_{\mu', m''} \frac{\partial H}{\partial \theta_{\mu', m''}}$.
+
+\begin{align*}
+	\sum_{\mu', m''} \frac{\partial H}{\partial \theta_{\mu', m''}} &= i\sum_{\mu', m''} \left( u_{\mu', m''}\frac{\partial H}{\partial u_{\mu', m''}} - u_{\mu', m''}^*\frac{\partial H}{\partial u^*_{\mu', m''}}\right)
+	\\
+	&=
+	i \sum_{\mu', m''} \left[ u_{\mu', m''} \left(-\sum_{\mu, m'} \beta_{\mu, m'} \delta_{\mu, \mu'}\delta_{m', m''} u_{\mu, m'}^* - \sum_{\mu, \nu, m, m'}C_{m', m, \nu, \mu}   \delta_{\nu, \mu'}\delta_{m,m''}u^*_{\mu, m'}\right)\right.
+	\\
+	&+ \left.
+	u^*_{\mu', m''} \left(\sum_{\mu, m'} \beta_{\mu, m'} \delta_{\mu, \mu'}\delta_{m', m''} u_{\mu, m'} + \sum_{\mu, \nu, m, m'}C_{m', m, \nu, \mu}   \delta_{\mu, \mu'}\delta_{m',m''}u_{\nu, m}\right)\right]
+	\\
+	&=
+	i \sum_{\mu', m''} \left[ u_{\mu', m''} \left(- \beta_{\mu', m''}  u_{\mu', m''}^* - \sum_{\mu, m'}C_{m', m'', \mu', \mu}   u^*_{\mu, m'}\right)\right.
+	\\
+	&+ \left.
+	u^*_{\mu', m''} \left(\beta_{\mu', m''}  u_{\mu', m''} + \sum_{\nu, m}C_{m'', m, \nu, \mu'}  u_{\nu, m}\right)\right]
+	\\
+	&=
+	i\sum_{\mu, \mu', m, m'} \left(C_{m', m, \mu, \mu'}  u_{\mu', m'}^*u_{\mu, m} - C_{m, m', \mu', \mu}  u_{\mu', m'} u^*_{\mu, m}\right)
+	\\
+	&= 0
+\end{align*}
 
 	

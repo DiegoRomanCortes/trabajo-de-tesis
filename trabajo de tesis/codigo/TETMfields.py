@@ -14,7 +14,7 @@ n1 = n0 + dn1
 a = 3e-6
 wavelength = 730e-9
 k0 = 2 * np.pi / wavelength
-omega = k0/c
+omega = k0*c
 kz = k0*(n0+n1)/2
 
 alpha = np.sqrt(k0**2*n1**2 - kz**2)
