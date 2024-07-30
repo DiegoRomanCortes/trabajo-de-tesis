@@ -535,28 +535,21 @@ Por lo que el Lagrangiano de esta teoría es
 \end{align*}
 sí y solo sí se cumple que $C_{\mu, \nu, m', m} = C_{\nu, \mu, m, m'}$. Esta condición de simetría se cumple cuando los índices de refracción son idénticos para todas las guías. Esto es, $n_m^2(\textbf{r})=n_{m'}^2(\textbf{r}+\textbf{R})$, con $\textbf{R}$ un vector primitivo de la red a estudiar. Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{{u}}_{\mu, m'}} = -\frac{i}{2} {\bar{u}}_{\mu, m'}$ el Hamiltoniano del sistema se escribe como:
 \begin{align*}
-	H &= \Pi_{\mu, m'} \dot{{u}}_{\mu, m'} + \bar{\Pi}_{\mu, m'} \dot{\bar{u}}_{\mu, m'} - L = \sum_{\nu, m} C_{\mu, \nu, m', m} u_{\nu, m}\bar{u}_{\nu, \mu, m, m'}
+	H &= \Pi_{\mu, m'} \dot{{u}}_{\mu, m'} + \bar{\Pi}_{\mu, m'} \dot{\bar{u}}_{\mu, m'} - L = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} u_{\nu, m}\bar{u}_{\mu, m'}
 \end{align*}
-Este sistema presenta simetría global U(1), pues la transformación $u'_{\mu, m'} \to u_{\mu, m'}e^{i\phi}$ deja invariante el Lagrangiano y el Hamiltoniano $\forall \phi$. Notemos que al variar el Lagragiano respecto a estas nuevas variables y que $\delta u'_{\mu, m'} = i\phi u_{\mu, m'}$:
+Este sistema presenta simetría global U(1), pues la transformación $u_{\mu, m'} \to u'_{\mu, m'}= u_{\mu, m'}e^{i\phi}$ deja invariante el Lagrangiano y el Hamiltoniano $\forall \phi$. Expandiendo, se tiene $u'_{\mu, m'} \approx u_{\mu, m'}(1+i\phi)$. Notemos que escribiendo el Lagrangiano respecto a estas nuevas variables, despreciando términos proporcionales a $\phi^2$ y usando las ecuaciones de movimiento se tiene:
 \begin{align*}
-	\delta L &= \frac{\partial L}{\partial u'_{\mu, m'}} \delta u'_{\mu, m'} +  \frac{\partial L}{\partial \bar{u'}_{\mu, m'}} \delta \bar{u'}_{\mu, m'} + \frac{\partial L}{\partial \dot{u'}_{\mu, m'}} \delta \dot{u'}_{\mu, m'} + \frac{\partial L}{\partial  \dot{\bar{u'}}_{\mu, m'}} \delta \dot{\bar{u'}}_{\mu, m'}
+	L' &= L + \frac{i}{2}\sum_{\mu, m'}\left(\phi i\frac{d\bar{u}_{\mu, m'}}{dz}u_{\mu, m'} -i\frac{d(\phi \bar{u}_{\mu, m'})}{dz}u_{\mu, m'} - i\frac{d (\phi u_{\mu, m'})}{dz} {\bar{u}}_{\mu, m'}+\phi i\frac{d u_{\mu, m'}}{dz} {\bar{u}}_{\mu, m'}\right)
 	\\
 	&=
-	\left(\frac{d}{dz}\frac{\partial L}{\partial \dot{u'}_{\mu, m'}}\right) \delta u'_{\mu, m'} +  \left(\frac{d}{dz}\frac{\partial L}{\partial \dot{\bar{u'}}_{\mu, m'}} \right)\delta \bar{u'}_{\mu, m'} + \frac{\partial L}{\partial \dot{u'}_{\mu, m'}} \delta \dot{u'}_{\mu, m'} + \frac{\partial L}{\partial  \dot{\bar{u'}}_{\mu, m'}} \delta \dot{\bar{u'}}_{\mu, m'}
+	L + \frac{1}{2}\sum_{\mu, m'}\left(\frac{d(\phi \bar{u}_{\mu, m'})}{dz}u_{\mu, m'} +\frac{d (\phi u_{\mu, m'})}{dz} {\bar{u}}_{\mu, m'}\right) = L + \frac{1}{2}\sum_{\mu, m'}\left(\phi \frac{d |u_{\mu, m'}|^2}{dz} + |u_{\mu, m'}|^2\frac{d\phi}{dz}\right) 
 	\\
-	&=  \frac{d}{dz}\left(\frac{\partial L}{\partial \dot{u'}_{\mu, m'}} \delta u'_{\mu, m'} + \frac{\partial L}{\partial \dot{\bar{u'}}_{\mu, m'}} \delta \bar{u'}_{\mu, m'}\right) 
-	= \frac{d}{dz} \left[ i\left( \frac{\partial L}{\partial \dot{u}_{\mu, m'}} u_{\mu, m'} - \frac{\partial L}{\partial \dot{\bar{u}}_{\mu, m'}} \bar{u}_{\mu, m'} \right) \phi \right]
-	\\
-	&= 0
+	&= L + \frac{d}{dz} \left(\frac{\phi}{2} \sum_{\mu, m'} |u_{\mu, m'}|^2 \right)
 \end{align*}
-Como la igualdad debe satisfacerse $\forall \phi$, hemos encontrado una cantidad conservada que denotaremos $P$:
-\begin{align*}
-	P &= i\left( \frac{\partial L}{\partial \dot{u}_{\mu, m'}} u_{\mu, m'} - \frac{\partial L}{\partial \dot{\bar{u}}_{\mu, m'}} \bar{u}_{\mu, m'} \right) = \sum_{\mu, m'}\frac{-1}{2} \left( - |u'_{\mu, m'}|^2 - |u'_{\mu, m'}|^2\right)
-	\\
-	&=
-	\sum_{\mu, m'} |u'_{\mu, m'}|^2
-\end{align*}
-Esta cantidad está asociada a la potencia total del sistema.
+En vitud del Teorema de Noether, hemos encontrado una cantidad conservada a partir de una derivada total inducida por una transformación infinitesimal de parámetro $\phi$. Esta cantidad $P$ es proporcional a la potencia total del sistema:
+\begin{equation*}
+	P =\sum_{\mu, m'} |u_{\mu, m'}|^2
+\end{equation*}
 
 
 
