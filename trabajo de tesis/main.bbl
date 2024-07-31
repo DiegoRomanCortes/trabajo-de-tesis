@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -407,6 +407,26 @@ Maxim Mazanov, Diego Román-Cortés, Gabriel Cáceres-Aravena, Christofer Cid,
 \newblock \doi{10.1021/acs.nanolett.4c00728}.
 \newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c00728}.
 \newblock PMID: 38574276.
+
+\bibitem[Zhang(2024)]{NHHamiltonian}
+Qi~Zhang.
+\newblock Hamiltonian formulation of linear non-{Hermitian} systems.
+\newblock \emph{Physica Scripta}, 99\penalty0 (8):\penalty0 085262, August
+  2024.
+\newblock ISSN 0031-8949, 1402-4896.
+\newblock \doi{10.1088/1402-4896/ad6045}.
+\newblock URL
+  \url{https://iopscience.iop.org/article/10.1088/1402-4896/ad6045}.
+
+\bibitem[Alexandre et~al.(2017)Alexandre, Millington, and
+  Seynaeve]{NHsymmetries}
+Jean Alexandre, Peter Millington, and Dries Seynaeve.
+\newblock Symmetries and conservation laws in non-{Hermitian} field theories.
+\newblock \emph{Physical Review D}, 96\penalty0 (6):\penalty0 065027, September
+  2017.
+\newblock ISSN 2470-0010, 2470-0029.
+\newblock \doi{10.1103/PhysRevD.96.065027}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.96.065027}.
 
 \bibitem[Pedrola(2015)]{bpm}
 Ginés~Lifante Pedrola.
