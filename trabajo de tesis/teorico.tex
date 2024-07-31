@@ -488,7 +488,7 @@ Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ só
 \end{align*}
 
 \begin{equation*}
- D_{\mu, \nu, m', m} = -D_{\nu, \mu, m, m'} = \frac{\epsilon_0 c}{4k_0}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
+ D_{\mu, \nu, m', m} = -D_{\nu, \mu, m, m'} = frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
 \end{equation*}
 
 Finalmente, es posible hacer el cambio de variables $a_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger:
@@ -501,12 +501,12 @@ Finalmente, es posible hacer el cambio de variables $a_{\nu, m} \equiv a_{\nu, m
 
 Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, considerando una distancia $d$ entre guías \textcolor{red}{INCLUIR ESQUEMA PARA EXPLICAR ACOPLAMIENTO}. El índice de refracción en este caso es $n^2 = n_1^2 + n_2^2$, con $n_1^2(\textbf{r})=n_2^2(\textbf{r}+\textbf{d})$. Dada la simetría del problema, la constante de acoplamiento se puede desarrollar como 
 \begin{align}
-	C_{1 \to 2} &=  \frac{\epsilon_0 c}{4k_0}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_1^2(\textbf{r}) \textbf{E}_{2}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
-	= \frac{\epsilon_0 c}{4k_0}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_2^2(\textbf{r}+\textbf{d}) \textbf{E}_{1}(\textbf{r}+\textbf{d}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
+	C_{1 \to 2} &=  \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_1^2(\textbf{r}) \textbf{E}_{2}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
+	=\frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_2^2(\textbf{r}+\textbf{d}) \textbf{E}_{1}(\textbf{r}+\textbf{d}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
 	\nonumber	
 	\\	
-	&= \frac{\epsilon_0 c}{4k_0}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}-\textbf{d}) dxdy 
-	= \frac{\epsilon_0 c}{4k_0}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{2}^*(\textbf{r}) dxdy 
+	&= \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}-\textbf{d}) dxdy 
+	= \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{2}^*(\textbf{r}) dxdy 
 	\nonumber
 	\\	
 	&= C_{2\to1} \equiv C
@@ -516,26 +516,32 @@ Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, conside
 \begin{equation}
 	i\frac{d a_1}{dz} + C a_2 = 0, \quad\quad i\frac{d a_2}{dz} + C a_1 = 0 \nonumber
 \end{equation}
-Redefiniendo $C_{\mu, \mu, m', m,'} \equiv \beta_{\mu, m'}$, es posible encontrar un Lagrangiano para la ecuación (\ref{eqn:CMT1}) definiendo nuevas variables $\bar{v}_{\mu, m'}$ que en sistemas no Hermíticos se conocen como vectores izquierda \cite{NHHamiltonian}:
-\begin{equation}
-	L = \sum_{\mu, m'} \bar{v}^*_{\mu, m'}\left( i \frac{ d u_{\mu, m'}}{dz}   -
-\sum_{\nu, m} C_{\mu, \nu, m', m}  u_{\nu, m}\right)
-\end{equation}
-Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{u}_{\mu, m'}} = i\bar{v}^*_{\mu, m'}$ el Hamiltoniano del sistema se escribe como:
+Redefiniendo $C_{\mu, \mu, m', m,'} \equiv \beta_{\mu, m'}$, es posible encontrar un Lagrangiano para la ecuación (\ref{eqn:CMT1}) definiendo nuevas variables $\bar{b}_{\mu, m'}$ que en sistemas no Hermíticos tales que \cite{NHHamiltonian}:
 \begin{align*}
-	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{u}}_{\mu, m'} - L = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} u_{\nu, m}\bar{v}^*_{\mu, m'}
+	a_{\mu, m'} &= \sum_j c_j(z) u^{(j)}_{\mu, m'}
+	\\
+	\bar{b}_{\mu, m'} &= \sum_j \bar{c}_j(z) \bar{v}^{(j)}_{\mu, m'} = \sum_j \frac{|C_j|^2}{c_j^*(z)} \bar{v}^{(j)}_{\mu, m'} = \sum_j \frac{|C_j|^2}{\sum_{\nu, m} a^*_{\nu, m} \bar{v}^{(j)}_{\nu, m}} \bar{v}^{(j)}_{\mu, m'}
+\end{align*}
+
+\begin{equation}
+	L = \sum_{\mu, m'} \bar{b}^*_{\mu, m'}\left( i \frac{ d a_{\mu, m'}}{dz}   -
+\sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right)
+\end{equation}
+Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = i\bar{b}^*_{\mu, m'}$ el Hamiltoniano del sistema se escribe como:
+\begin{align*}
+	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{a}}_{\mu, m'} - L = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} a_{\nu, m}\bar{b}^*_{\mu, m'}
 \end{align*}
 Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 \begin{align*}
-	\delta L &= \sum_{\mu, m'} \frac{\partial L}{\partial u_{\mu, m'}} \delta u_{\mu, m'} +  \frac{\partial L}{\partial \bar{v}^*_{\mu, m'}} \delta \bar{v}^*_{\mu, m'} + \ \frac{\partial L}{\partial \dot{u}_{\mu, m'}} \delta \dot{u}_{\mu, m'} + \frac{\partial L}{\partial \dot{\bar{v}}^*_{\mu, m'}} \delta \dot{\bar{v}}^*_{\mu, m'}
+	\delta L &= \sum_{\mu, m'} \frac{\partial L}{\partial a_{\mu, m'}} \delta a_{\mu, m'} +  \frac{\partial L}{\partial \bar{v}^*_{\mu, m'}} \delta \bar{b}^*_{\mu, m'} + \ \frac{\partial L}{\partial \dot{a}_{\mu, m'}} \delta \dot{a}_{\mu, m'} + \frac{\partial L}{\partial \dot{\bar{b}}^*_{\mu, m'}} \delta \dot{\bar{v}}^*_{\mu, m'}
 	\\
-	&= \sum_{\mu, m'} \left( \frac{\partial L}{\partial u_{\mu, m'}} - \frac{d}{dz}\frac{\partial L}{\partial \dot{u}_{\mu, m'}} \right)\delta u_{\mu, m'} + \left( \frac{\partial L}{\partial\bar{v}^*_{\mu, m'}} - \frac{d}{dz}\frac{\partial L}{\partial  \dot{\bar{v}}^*_{\mu, m'}} \right)\delta \bar{v}^*_{\mu, m'} + \frac{d}{dz}\left(\frac{\partial L}{\partial \dot{u}_{\mu, m'}}\delta u_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{v}}^*_{\mu, m'}}\delta \bar{v}^*_{\mu, m'}\right)
+	&= \sum_{\mu, m'} \left( \frac{\partial L}{\partial a_{\mu, m'}} - \frac{d}{dz}\frac{\partial L}{\partial \dot{a}_{\mu, m'}} \right)\delta a_{\mu, m'} + \left( \frac{\partial L}{\partial\bar{b}^*_{\mu, m'}} - \frac{d}{dz}\frac{\partial L}{\partial  \dot{\bar{b}}^*_{\mu, m'}} \right)\delta \bar{b}^*_{\mu, m'} + \frac{d}{dz}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{b}}^*_{\mu, m'}}\delta \bar{b}^*_{\mu, m'}\right)
 	\\	
-	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{u}_{\mu, m'}}\delta u_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{v}}^*_{\mu, m'}}\delta \bar{v}^*_{\mu, m'}\right) = 0.
+	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{b}}^*_{\mu, m'}}\delta \bar{b}^*_{\mu, m'}\right) = 0.
 \end{align*}
-Considerando el par de transformaciones $u_{\mu, m'}\to u'_{\mu, m'} = e^{i\phi}u_{\mu, m'}$, $\bar{v}^*_{\mu, m'}\to \bar{v'}^*_{\mu, m'} = e^{-i\phi}\bar{v}^*_{\mu, m'}$ que dejan invariante el Lagrangiano, infinitesimalmente se tiene $\delta u_{\mu, m'} = i\phi u_{\mu, m'}$ y $\delta \bar{v}^*_{\mu, m'} = -i\phi \bar{v}^*_{\mu, m'}$, por lo que la cantidad conservada $P$ es:
+Considerando el par de transformaciones $u_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{a}^*_{\mu, m'}\to \bar{v'}^*_{\mu, m'} = e^{-i\phi}\bar{b}^*_{\mu, m'}$ que dejan invariante el Lagrangiano, infinitesimalmente se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{b}^*_{\mu, m'} = -i\phi \bar{b}^*_{\mu, m'}$, por lo que la cantidad conservada $P$ es:
 \begin{equation}
-	P = \sum_{\mu, m'} \bar{v}^*_{\mu, m'} u_{\mu, m'}.
+	P = \sum_{\mu, m'} \bar{b}^*_{\mu, m'} a_{\mu, m'}.
 \end{equation}
 
 
