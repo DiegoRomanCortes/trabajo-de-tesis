@@ -482,13 +482,12 @@ donde se han definido y usado
 	   C_{\mu, \nu, m', m} &\equiv \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy , \quad\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy \approx \frac{k_0}{\epsilon_0 c \beta_{\nu, m}} \delta_{\nu,\mu}\delta_{m,m'}.
 \end{align*}
 
-Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{\mu, \nu, m', m}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis). Cuando $m=m'$, el acoplamiento $C_{\mu, \nu, m', m}$ es nulo por definición. Notemos que $C_{\mu, \nu, m', m} \neq C_{\nu, \mu, m, m'}$ en general:
+Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{\mu, \nu, m', m}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente, por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis), aunque existen formas de tomar en cuenta estos efectos de no ortogonalidad \citep{schulz_geometric_2022}. Cuando $m=m'$, el acoplamiento $C_{\mu, \nu, m', m}$ es nulo por definición. Notemos que $C_{\mu, \nu, m', m} \neq C_{\nu, \mu, m, m'}$ en general:
 \begin{align*}
-	C_{\mu, \nu, m', m} &= \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m} + n^2_{m} - n^2_{m'}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^* dxdy = C_{\nu, \mu, m, m'} + D_{\nu, \mu, m, m'}
+	C_{\mu, \nu, m', m} &= \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m'} + n^2_{m'} - n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^* dxdy = C_{\nu, \mu, m, m'} + D_{\nu, \mu, m, m'}
 \end{align*}
-
 \begin{equation*}
- D_{\mu, \nu, m', m} = -D_{\nu, \mu, m, m'} = frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
+ D_{\nu, \mu, m, m'} = -D_{\mu, \nu, m', m} = \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
 \end{equation*}
 
 Finalmente, es posible hacer el cambio de variables $a_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger:
@@ -516,11 +515,15 @@ Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, conside
 \begin{equation}
 	i\frac{d a_1}{dz} + C a_2 = 0, \quad\quad i\frac{d a_2}{dz} + C a_1 = 0 \nonumber
 \end{equation}
-Redefiniendo $C_{\mu, \mu, m', m,'} \equiv \beta_{\mu, m'}$, es posible encontrar un Lagrangiano para la ecuación (\ref{eqn:CMT1}) definiendo nuevas variables $\bar{b}_{\mu, m'}$ que en sistemas no Hermíticos tales que \cite{NHHamiltonian}:
+Redefiniendo $C_{\mu, \mu, m', m,'} \equiv \beta_{\mu, m'}$, es posible encontrar un Lagrangiano para la ecuación (\ref{eqn:CMT1}) definiendo nuevas variables $\bar{b}^*_{\mu, m'}$ que en sistemas no Hermíticos tales que \cite{NHHamiltonian}:
 \begin{align*}
 	a_{\mu, m'} &= \sum_j c_j(z) u^{(j)}_{\mu, m'}
 	\\
-	\bar{b}_{\mu, m'} &= \sum_j \bar{c}_j(z) \bar{v}^{(j)}_{\mu, m'} = \sum_j \frac{|C_j|^2}{c_j^*(z)} \bar{v}^{(j)}_{\mu, m'} = \sum_j \frac{|C_j|^2}{\sum_{\nu, m} a^*_{\nu, m} \bar{v}^{(j)}_{\nu, m}} \bar{v}^{(j)}_{\mu, m'}
+	\bar{b}^*_{\mu, m'} &= \sum_j \bar{c}_j(z) \bar{v}^{*(j)}_{\mu, m'} = \sum_j \frac{|C_j|^2}{c_j(z)} \bar{v}^{*(j)}_{\mu, m'} = \sum_j \frac{|C_j|^2}{\sum_{\nu, m} a_{\nu, m} \bar{v}^{*(j)}_{\nu, m}} \bar{v}^{*(j)}_{\mu, m'}
+	\\
+	 \sum_{\nu, \mu, m, m'}\bar{v}^{*(i)}_{\mu, m'} C_{\nu, \mu, m, m'}u^{(j)}_{\nu, m}  &= \lambda_j \delta_{i, j} +\sum_{\nu, \mu, m, m'}\bar{v}^{*(j)}_{\mu, m'} D_{\mu, \nu, m', m} u^{(j)}_{\nu, m}
+	 \\
+	 &= \lambda_i^* \delta_{i, j}
 \end{align*}
 
 \begin{equation}
@@ -539,7 +542,7 @@ Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 	\\	
 	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{b}}^*_{\mu, m'}}\delta \bar{b}^*_{\mu, m'}\right) = 0.
 \end{align*}
-Considerando el par de transformaciones $u_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{a}^*_{\mu, m'}\to \bar{v'}^*_{\mu, m'} = e^{-i\phi}\bar{b}^*_{\mu, m'}$ que dejan invariante el Lagrangiano, infinitesimalmente se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{b}^*_{\mu, m'} = -i\phi \bar{b}^*_{\mu, m'}$, por lo que la cantidad conservada $P$ es:
+Considerando el par de transformaciones $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{b}^*_{\mu, m'}\to \bar{b'}^*_{\mu, m'} = e^{-i\phi}\bar{b}^*_{\mu, m'}$ que dejan invariante el Lagrangiano, infinitesimalmente se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{b}^*_{\mu, m'} = -i\phi \bar{b}^*_{\mu, m'}$, por lo que la cantidad conservada $P$ es:
 \begin{equation}
 	P = \sum_{\mu, m'} \bar{b}^*_{\mu, m'} a_{\mu, m'}.
 \end{equation}

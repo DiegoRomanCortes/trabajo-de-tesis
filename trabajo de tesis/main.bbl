@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -407,6 +407,17 @@ Maxim Mazanov, Diego Román-Cortés, Gabriel Cáceres-Aravena, Christofer Cid,
 \newblock \doi{10.1021/acs.nanolett.4c00728}.
 \newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c00728}.
 \newblock PMID: 38574276.
+
+\bibitem[Schulz et~al.(2022)Schulz, Jörg, and Freymann]{schulz_geometric_2022}
+J.~Schulz, C.~Jörg, and G.~von Freymann.
+\newblock Geometric control of next-nearest-neighbor coupling in evanescently
+  coupled dielectric waveguides.
+\newblock \emph{Optics Express}, 30\penalty0 (6):\penalty0 9869--9877, March
+  2022.
+\newblock ISSN 1094-4087.
+\newblock \doi{10.1364/OE.447921}.
+\newblock URL \url{https://opg.optica.org/oe/abstract.cfm?uri=oe-30-6-9869}.
+\newblock Publisher: Optica Publishing Group.
 
 \bibitem[Zhang(2024)]{NHHamiltonian}
 Qi~Zhang.
