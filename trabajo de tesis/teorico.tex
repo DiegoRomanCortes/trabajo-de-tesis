@@ -221,13 +221,17 @@ Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{media/slabgraphical}
+	\includegraphics[width=0.7\linewidth]{media/slabgraphical.pdf}
 	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
 \end{figure}
 
-\textcolor{red}{AÑADIR LA FORMA ESPACIAL DE LOS CUATRO MODOS MORADOS}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/TETMfields.pdf}
+	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
+\end{figure}
 
-La condición de corte (\textit{cutoff}) en guías de onda es equivalente a que la energía deje de decaer en la región $x > a$, es decir, se debe cumplir que $\beta = 0$. 
+La condición de corte (\textit{cutoff}) en guías de onda es equivalente a que la energía deje de decaer en la región $|x| > a$, es decir, se debe cumplir que $\beta = 0$. 
 Los modos simétricos o pares cumplen esta condición para $\sin(\alpha a) = 0$, lo que implica que $\alpha = m \pi/a$, con $m$ entero. En particular, considerando $m=0$  y barriendo $n_1 \to n_0$, siempre existen al menos dos modos, uno TE y uno TM hasta que $n_1 < n_0$.  
 Los modos antisimétricos o impares deben cumplir por su parte que $\cos(\alpha a) = 0$, lo que implica que $\alpha = (m\pi \pm \pi/2)/a$. De esta condición se deduce que el primer par de modos exictados ($m=1$) existe siempre que $\lambda^2 \le 4(2a)^2 (n_1^2-n_0^2) $.
 
@@ -404,7 +408,10 @@ El caso más sencillo de estudiar es imponiendo $\ell = 0$. La ecuación (\ref{e
 
 De las ecuaciones (\ref{eqn:fiber_polarization_E}) y (\ref{eqn:fiber_polarization_H}) es directo notar que la condiciones de modos transversales impiden que el denominador se anule, lo que permite afirmar sin ambigüedad que las componentes longitudinales se hacen cero para $\ell = 0$ en los casos respectivos: $H_0^1 = 0$ para TE y $E_0^1 = 0$ para TM.
 
-En este caso, las condiciones de \textit{cutoff} serán cuando $\beta \to V$
+En este caso, las condiciones de corte se dan cuando los términos $\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)}$ y $\frac{K'_0(\beta a)}{\beta a K_0(\beta a)}$ divergen simultáneamente. Esto ocurre cuando $\alpha a = V$ y $J_0(\alpha a) = 0$. Denotando $x_{0,m}=$2.405,  5.520,  8.654, $\cdots$ al $m$-ésimo cero de la funcion $J_0(x)$, la longitud de onda de corte está dada por 
+\begin{equation}
+(\lambda_c)_{0,m} = 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{0,m}}, \quad\text{(modos TE y TM).}
+\end{equation} Contrario al caso de la guía de onda tipo losa, en fibras ópticas se hace necesario estar bajo un umbral de corte máximo $(\lambda_c)_{0,1}$ no nulo para que los modos TE o TM existan.
 
 \begin{figure}[H]
 	\centering
@@ -418,7 +425,6 @@ Interpretando la ecuación (\ref{eqn:fiber_trascendental}) como una cuadrática 
 \end{align*}
 
 Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell(r)$,  es posible obtener dos tipos de soluciones llamadas HE y EH:
-
 \begin{align}
 		\frac{J_{\ell-1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta}, \quad \text{(modos HE)}
 		\label{eqn:HE}
@@ -428,6 +434,17 @@ Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell
 		\\
 		\Delta &= \left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \nonumber
 \end{align}
+Para $\ell = 0$, se recuperan las relaciones obtenidas para los modos  TE y TM. El caso $\ell=1$ es de especial interés. La $m$-ésima asíntota estará determinada por el $m$-ésimo cero de $J_1(x)$. Por lo que, debido a un razonamiento similar al caso $\ell =0$, las condiciones de corte son
+\begin{align*}
+	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m}} \quad \text{(modos HE)}
+	\\
+	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m+1}} \quad \text{(modos EH)}
+\end{align*}
+con $x_{1m}=0$, 3.832,  7.016, 10.173, $\dots$.
+En particular, el modo $\text{HE}_{11}$ siempre existe.
+\begin{figure}[H]
+	\centering	\includegraphics[width=0.6\linewidth]{media/fibergraphicalHE_EH.pdf}
+\end{figure}
 
 
 
@@ -455,7 +472,6 @@ donde se ha usado la aproximación de guiaje débil para anular el lado de derec
 
 \section{Teoría de modos acoplados}
 	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $\nu$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
-
 \begin{align}
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2 \right)\sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}
 	\nonumber
@@ -548,7 +564,7 @@ Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 	\\	
 	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{b}}^*_{\mu, m'}}\delta \bar{b}^*_{\mu, m'}\right) = 0.
 \end{align*}
-Considerando el par de transformaciones $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{b}^*_{\mu, m'}\to \bar{b'}^*_{\mu, m'} = e^{-i\phi}\bar{b}^*_{\mu, m'}$ que dejan invariante el Lagrangiano, infinitesimalmente se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{b}^*_{\mu, m'} = -i\phi \bar{b}^*_{\mu, m'}$, por lo que la cantidad conservada $P$ es:
+Considerando el par de transformaciones $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{b}^*_{\mu, m'}\to \bar{b'}^*_{\mu, m'} = e^{-i\phi}\bar{b}^*_{\mu, m'}$ que dejan invariante el Lagrangiano, considerando $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{b}^*_{\mu, m'} = -i\phi \bar{b}^*_{\mu, m'}$, por lo que la cantidad conservada, $P$, es:
 \begin{equation}
 	P = \sum_{\mu, m'} \bar{b}^*_{\mu, m'} a_{\mu, m'}.
 \end{equation}

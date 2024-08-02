@@ -7,10 +7,10 @@ n0 = 1.48
 dn1 = 1e-3
 n1 = n0 + dn1
 
-dn2 = 15e-3
+dn2 = 6e-3
 n2 = n0 + dn2
 
-dn3 = 30e-3
+dn3 = 15e-3
 n3 = n0 + dn3
 
 a = 3e-6
@@ -21,17 +21,12 @@ R1 = k0*a*np.sqrt(n1**2-n0**2)
 R2 = k0*a*np.sqrt(n2**2-n0**2)
 R3 = k0*a*np.sqrt(n3**2-n0**2)
 
-x = np.linspace(0, 6*np.pi/2, 800)
+x = np.linspace(0, 4*np.pi/2, 800)
 
 y1 = x * np.tan(x)
 y2 = - x / np.tan(x)
 y1[:-1][np.diff(y1) < 0] = np.nan
 y2[:-1][np.diff(y2) < 0] = np.nan
-
-y3 = x * np.tan(x) * (n0/n1)**2
-y4 = - x / np.tan(x) * (n0/n1)**2
-y3[:-1][np.diff(y1) < 0] = np.nan
-y4[:-1][np.diff(y2) < 0] = np.nan
 
 
 
@@ -117,10 +112,6 @@ ax.plot(x, np.sqrt(R1**2-x**2), label=r'$V_1$', color=colors[2])
 ax.plot(x, np.sqrt(R2**2-x**2), label=r'$V_2$', color=colors[3])
 ax.plot(x, np.sqrt(R3**2-x**2), label=r'$V_3$', color=colors[4])
 
-# ax.plot(x, np.sqrt(R1**2-(x*(n1/n0))**2), "--", label=r'$V_1$', color=colors[2])
-# ax.plot(x, np.sqrt(R2**2-(x*(n2/n0))**2), "--", label=r'$V_2$', color=colors[3])
-# ax.plot(x, np.sqrt(R3**2-(x*(n3/n0))**2), "--", label=r'$V_3$', color=colors[4])
-
 
 ax.plot(sol1x, sol1y, 'o', color=colors[2])
 ax.plot(sol2xaux2, sol2yaux2, 'o', color=colors[3])
@@ -128,16 +119,16 @@ ax.plot(sol3xaux2, sol3yaux2, 'o', color=colors[4])
 
 
 ax.set_ylim(0.0, 1.1*R3)
-# ax.set_xticks([0, np.pi/2, np.pi, 3*np.pi/2, 2*np.pi])
-# ax.set_xticklabels(['0', r'$\pi/2$', r'$\pi$', r'$3\pi/2$', r'$2\pi$'])
+ax.set_xticks([0, np.pi/2, np.pi, 3*np.pi/2, 2*np.pi])
+ax.set_xticklabels(['0', r'$\pi/2$', r'$\pi$', r'$3\pi/2$', r'$2\pi$'])
 
-# ax.set_yticks([0, np.pi/2, np.pi, 3*np.pi/2, 2*np.pi])
-# ax.set_yticklabels(['0', r'$\pi/2$', r'$\pi$', r'$3\pi/2$', r'$2\pi$'])
+ax.set_yticks([0, np.pi/2, np.pi, 3*np.pi/2, 2*np.pi])
+ax.set_yticklabels(['0', r'$\pi/2$', r'$\pi$', r'$3\pi/2$', r'$2\pi$'])
 
-# ax.set_xlabel(r'$\alpha a$')
-# ax.set_ylabel(r'$\beta a$')
+ax.set_xlabel(r'$\alpha a$')
+ax.set_ylabel(r'$\beta a$')
 
-fig.legend()
-fig.savefig('../media/slabgraphical.png')
+fig.legend(loc='lower left', fontsize='xx-small', ncol=5, bbox_to_anchor=(0.12, 0.88))
+fig.savefig('../media/slabgraphical.pdf')
 
 plt.close('all')
