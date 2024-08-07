@@ -413,7 +413,7 @@ De las ecuaciones (\ref{eqn:fiber_polarization_E}) y (\ref{eqn:fiber_polarizatio
 
 Las condiciones de corte se dan cuando $\beta a \to 0$. Utilizando las expresiones asintóticas para las funciones de Bessel con argumentos pequeños y sus relaciones de recurrencia, se tiene
 \begin{align*}
-	\frac{\alpha a J_0(\alpha a)}{J_1(\alpha a)}  = -\frac{\beta a K_{0}(\beta a)} {K_1(\beta a)} \approx (\beta a)^2(\ln(\beta a/2)+\gamma) \to 0,
+	\frac{\alpha a J_0(\alpha a)}{J_1(\alpha a)}  = -\frac{\beta a K_{0}(\beta a)} {K_1(\beta a)} \approx (\beta a)^2\ln\left(\frac{\beta a e^\gamma}{2}\right) \to 0,
 \end{align*}
 por lo que se hace necesario que $\left. J_0(\alpha a)\right|_{\alpha a \to V} = 0$. Denotando $x_{0,m}=$ 2.405,  5.520,  8.654, $\cdots$ al $m$-ésimo cero de la funcion $J_0(x)$, la longitud de onda de corte está dada por 
 \begin{equation}
@@ -441,30 +441,38 @@ Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell
 		\\
 		\Delta &= \left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \nonumber
 \end{align}
-Para $\ell = 0$, se recuperan las relaciones obtenidas para los modos  TE$_m$ (HE$_{0m}$) y TM$_m$ (EH$_{0m}$). Para $\ell \neq 0$ se debe tener poner atención a las asíntotas de las funciones de Bessel cuando $\beta a \to 0$ y $\alpha a \to V$.
+
+Para $\ell = 0$, se recuperan las relaciones obtenidas para los modos  TE$_m$ (HE$_{0m}$) y TM$_m$ (EH$_{0m}$). Para $\ell \neq 0$ se hace necesario considerar las expresiones asintóticas de las funciones de Bessel cuando $\beta a \to 0$ y $\alpha a \to V$:
 \begin{align*}
 	\frac{K'_\ell (x)}{xK_\ell (x)} &= -\frac{K_{\ell-1} (x)}{xK_\ell (x)}-\frac{\ell}{x^2}\approx \left\{\begin{matrix}
-	\ln(x/2)+\gamma-\frac{1}{x^2} \quad\text{si }\ell = 1
+	\ln(xe^\gamma/2)-\frac{1}{x^2} \quad\text{si }\ell = 1
 	\\
-	\frac{
+	-\frac{
 	1}{2(\ell-1)}-\frac{\ell}{x^2}\quad \text{si }\ell > 1
-	\end{matrix}\right.
+	\end{matrix}\right. .
 \end{align*}
 
 
-El caso $\ell=1$ es de especial interés. La $m$-ésima asíntota estará determinada por el $m$-ésimo cero de $J_1(x)$. Por lo que, debido a un razonamiento similar al caso $\ell =0$, las condiciones de corte son
+El caso $\ell=1$ es de especial interés. La condición de modos HE se desarrolla como
 \begin{align*}
-	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m}} \quad \text{(modos HE)}_{1m}
-	\\
-	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m+1}} \quad \text{(modos EH)}_{1m}
+	\frac{\alpha a J_1(\alpha a)}{J_0(\alpha a)} &= \left\{\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \left[ \ln\left(\frac{2}{e^\gamma \beta a}\right)+\frac{1}{(\beta a)^2} \right]+\frac{1}{(\alpha a)^2}-\sqrt{\Delta}\right\}^{-1} \to 0.
 \end{align*}
-con $x_{1m}=0$, 3.832,  7.016, 10.173, $\dots$.
+
+Basta considerar la función $J_1(\alpha a)|_{\alpha a \to V} = 0$. Por otro lado, la condición EH elimina el cero $x=0$ del cociente $\frac{\alpha aJ_1(\alpha a)}{J_2(\alpha a)}$ lo que hace que esté ``desfasada'' respecto a la condición HE. Usando un razonamiento similar al caso $\ell =0$, las condiciones de corte son
+\begin{align*}
+	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m}} \quad \left(\text{modos HE}_{1m}\right)
+	\\
+	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m+1}} \quad \left(\text{modos EH}_{1m}\right)
+\end{align*}
+con $x_{1,m}=0$, 3.832,  7.016, 10.173, $\dots$.
 En particular, el modo $\text{HE}_{11}$ siempre existe.
 \begin{figure}[H]
 	\centering	\includegraphics[width=0.6\linewidth]{media/fibergraphicalHE_EH.pdf}
 \end{figure}
 
+El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego:
 
+\textcolor{red}{NO SÉ SI INCLUIR LA DERIVACIÓN DE LA CONDICIÓN DE CUTOFF}
 
 \section{Modos normales en guías de onda}
 
