@@ -17,17 +17,22 @@
 \contentsline {chapter}{\numberline {4}Métodos experimentales}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Escritura de guías de onda}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo}{19}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Montaje de modulación espacial de luz}{19}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Circuito óptico}{19}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Generación de hologramas}{20}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Análisis de imágenes}{20}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Moléculas Fotónicas}{21}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Acoplamiento interorbital SP}{22}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Ángulo mágico en modos P}{23}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Haces con momentum orbital angular (OAM)}{24}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Conclusiones}{26}{chapter.9}%
-\contentsline {chapter}{\numberline {}Bibliograf\'ia}{31}{chapter*.15}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Ortogonalidad de los modos normales }{32}{Appendix.alph1.Alph1}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Código en Python para cálculo de modos normales }{33}{Appendix.alph1.Alph2}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {C}Código en C de BPM }{34}{Appendix.alph1.Alph3}%
-\contentsline {chapter}{Ap\'{e}ndice \numberline {D}Código en Python generador de hologramas }{35}{Appendix.alph1.Alph4}%
+\contentsline {section}{\numberline {4.3}Montaje de modulación espacial de luz}{20}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Etapa premodulación}{20}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Etapa de modulación}{20}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Etapa de de-magnificación}{20}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Etapa de acoplamiento}{20}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Etapa de captura en cámara}{20}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Circuito óptico}{20}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Generación de hologramas}{21}{subsection.4.3.7}%
+\contentsline {section}{\numberline {4.4}Análisis de imágenes}{21}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Moléculas Fotónicas}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Acoplamiento interorbital SP}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Ángulo mágico en modos P}{24}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Haces con momentum orbital angular (OAM)}{25}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Conclusiones}{27}{chapter.9}%
+\contentsline {chapter}{\numberline {}Bibliograf\'ia}{32}{chapter*.15}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {A}Ortogonalidad de los modos normales }{33}{Appendix.alph1.Alph1}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {B}Código en Python para cálculo de modos normales }{34}{Appendix.alph1.Alph2}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {C}Código en C de BPM }{35}{Appendix.alph1.Alph3}%
+\contentsline {chapter}{Ap\'{e}ndice \numberline {D}Código en Python generador de hologramas }{36}{Appendix.alph1.Alph4}%
