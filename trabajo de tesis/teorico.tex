@@ -396,10 +396,16 @@ Finalmente, la ecuación trascendental que satifacen $\alpha$, $\beta$ y $k_z$ e
 
 Dado que, en principio, los valores de $k_z$ ya están determinados por la ecuación anterior, es posible obtener dos relaciones entre $H_0^1$ y $E_0^1$:
 \begin{align}
-\frac{E_0^1}{H_0^1} &=  -\frac{i k_z \ell}{\omega\epsilon_0}\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]  \left[ n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)} \right]^{-1} \label{eqn:fiber_polarization_E}
+\frac{E_0^1}{H_0^1} &=  -\frac{i k_z \ell}{\omega\epsilon_0}\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]  \left[ n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)} \right]^{-1} \label{eqn:fiber_polarization_E},
 \\
-\frac{H_0^1}{E_0^1} &=  \frac{i k_z \ell}{ \omega\mu_0}\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]  \left[ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)} \right]^{-1} \label{eqn:fiber_polarization_H}
+\frac{H_0^1}{E_0^1} &=  \frac{i k_z \ell}{ \omega\mu_0}\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]  \left[ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)} \right]^{-1} \label{eqn:fiber_polarization_H}.
 \end{align}
+Tomando raíz cuadrado al cociente de las ecuaciones (\ref{eqn:fiber_polarization_E}) y (\ref{eqn:fiber_polarization_H}) se tiene:
+
+\begin{equation}
+	\frac{E_0^1}{H_0^1} = i \sqrt{\frac{\mu_0}{\epsilon_0}} \frac{\sqrt{ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}{\sqrt{n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}
+	\label{eqn:fiber_polarization_simplified}
+\end{equation}
 
 \subsection{Modos TE y TM}
 El caso más sencillo de estudiar es imponiendo $\ell = 0$. La ecuación (\ref{eqn:fiber_trascendental}) implica:
@@ -409,7 +415,7 @@ El caso más sencillo de estudiar es imponiendo $\ell = 0$. La ecuación (\ref{e
 	n_1^2\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)} + n_0^2 \frac{K'_0(\beta a)}{\beta a K_0(\beta a)} &= 0, \quad \text{(modos TM)}
 \end{align*}
 
-De las ecuaciones (\ref{eqn:fiber_polarization_E}) y (\ref{eqn:fiber_polarization_H}) es directo notar que la condiciones de modos transversales impiden que el denominador se anule, lo que permite afirmar sin ambigüedad que las componentes longitudinales se hacen cero para $\ell = 0$ en los casos respectivos: $H_0^1 = 0$ para TE y $E_0^1 = 0$ para TM.
+De la ecuación (\ref{eqn:fiber_polarization_simplified}) es directo notar que la condiciones de modos transversales que las componentes longitudinales se hacen cero en los casos respectivos: $H_0^1 = 0$ para TE y $E_0^1 = 0$ para TM.
 
 Las condiciones de corte se dan cuando $\beta a \to 0$. Utilizando las expresiones asintóticas para las funciones de Bessel con argumentos pequeños y sus relaciones de recurrencia, se tiene
 \begin{align*}

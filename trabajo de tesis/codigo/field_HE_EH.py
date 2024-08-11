@@ -17,15 +17,15 @@ a = 3e-6
 
 V = k0*a*np.sqrt(n1**2-n0**2)
 
-ell = 0
+ell = 1
 
-alpha = 3.437777/a #TE = 3.437777 TM = 3.453521 HE = 2.166564
+alpha = 4.607987149/a #TE1 = 3.437777 TM1 = 3.453521 HE11 = 2.166564 HE21 = 3.447657 EH11 = 4.607987
 beta = np.sqrt(V**2 - (alpha*a)**2)/a
 kz = np.sqrt(beta**2 + k0**2*n0**2)
 
 
-x = np.linspace(-2*a, 2*a, 20)
-y = np.linspace(-2*a, 2*a, 20)
+x = np.linspace(-2*a, 2*a, 200)
+y = np.linspace(-2*a, 2*a, 200)
 z = 0
 
 X,Y = np.meshgrid(x, y)
@@ -40,13 +40,13 @@ print(TE*TM - ell**2*(1/(alpha*a)**2 + 1/(beta*a)**2)**2 * (kz/k0)**2)
 atol = 1e-6
 if np.abs(TE) < atol:
     E1 = 0
-    H1 = 1
+    H1 = 1j
 elif np.abs(TM) < atol:
-    E1 = 1
+    E1 = 1j
     H1 = 0
 else:
-    E1 = 1
-    H1 = E1 * 1j * kz * ell * (1/((alpha*a)**2) + 1/((beta*a)**2))/(omega*mu_0) / TE
+    E1 = -1j
+    H1 = -E1 * 1j * np.sqrt(epsilon_0/mu_0) * np.sqrt(TM/TE)
 
 E0 = E1 * jv(ell, alpha*a)/kn(ell, beta*a)
 H0 = H1 * jv(ell, alpha*a)/kn(ell, beta*a)
@@ -78,10 +78,20 @@ plt.style.use(['science'])
 fig, axs = plt.subplots(1, 2, dpi=400, sharey=True)
 Ex = E_rho*np.cos(PHI)-E_phi*np.sin(PHI)
 Ey = E_rho*np.sin(PHI)+E_phi*np.cos(PHI)
-axs[0].quiver(X*1e6, Y*1e6, np.real(Ex), np.real(Ey), scale=5e4)
+step = 10
+scale = 2e2
+axs[0].contourf(X*1e6, Y*1e6, np.sqrt(np.real(Ex)**2 + np.real(Ey)**2), cmap='hot')
+axs[0].quiver(X[::step, ::step]*1e6, Y[::step, ::step]*1e6, np.real(Ex[::step, ::step]), np.real(Ey[::step, ::step]), scale=scale)
 axs[0].set_aspect('equal')
+axs[0].set_xlabel(r'$x$ ($\mu$m)')
+axs[0].set_ylabel(r'$y$ ($\mu$m)')
 
-axs[1].quiver(X*1e6, Y*1e6, np.imag(Ex), np.imag(Ey), scale=5e4)
+axs[1].contourf(X*1e6, Y*1e6, np.sqrt(np.imag(Ex)**2 + np.imag(Ey)**2), cmap='hot')
+axs[1].quiver(X[::step, ::step]*1e6, Y[::step, ::step]*1e6, np.imag(Ex[::step, ::step]), np.imag(Ey[::step, ::step]), scale=scale)
+axs[1].set_xlabel(r'$x$ ($\mu$m)')
 axs[1].set_aspect('equal')
+
 # ax.imshow(np.abs(E_rho)**2, extent=[x[0]*1e6, x[-1]*1e6, y[0]*1e6, y[-1]*1e6], cmap='hot', origin='lower')
 fig.show()
+fig.savefig('../media/fiberEH11.pdf')
+# plt.close("all")
