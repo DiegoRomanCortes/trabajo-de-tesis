@@ -47,6 +47,7 @@ for idx, xi in enumerate(x_to_plot):
 
 
 colors = ['#0C5DA5', '#00B945', '#FF9500', '#FF2C00', '#845B97', '#474747', '#9e9e9e']
+ax.plot(x_to_plot*1e6, n_shape, color=colors[4])
 for n in range(4):
     E = E_field(x_to_plot, n)
     ax.plot(x_to_plot*1e6, scale*E+kz[n]/k0, color=colors[n])
@@ -56,5 +57,4 @@ ax.set_xlabel(r'$x$ ($\mu$m)')
 ax.set_ylabel(r'$n_{\text{eff}}+E(x)$')
 ax.set_yticks([n0, n3])
 ax.set_yticklabels(["$n_0$", "$n_1$"])
-ax.plot(x_to_plot*1e6, n_shape, color=colors[4])
 fig.savefig('../media/TETMfields.pdf', bbox_inches='tight')
