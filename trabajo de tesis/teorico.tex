@@ -529,7 +529,7 @@ donde se ha usado la aproximación de guiaje débil para anular el lado de derec
 	&= 0,
 	\nonumber	
 \end{align}
-donde se ha usado que $\left|\frac{d^2 a_{\nu, m}}{d z^2}\right|\ll 2\beta_{\nu,m}\left|\frac{d a_{\nu, m}}{d z}\right|  $, conocida como aproximación paraxial. Aplicando producto punto con $\textbf{E}_{\mu, m'}^*$ e integrando en todo el plano $xy$:
+donde se ha usado la aproximación paraxial $\left|\frac{d^2 a_{\nu, m}}{d z^2}\right|\ll 2\beta_{\nu,m}\left|\frac{d a_{\nu, m}}{d z}\right|  $. Aplicando producto punto con $\textbf{E}_{\mu, m'}^*$ e integrando en todo el plano $xy$:
 \begin{align}
 	  \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &= 0
 	  \nonumber
@@ -590,12 +590,12 @@ Redefiniendo $C_{\mu, \mu, m', m,'} \equiv \beta_{\mu, m'}$, es posible encontra
 \end{align*}
 
 \begin{equation}
-	L = \sum_{\mu, m'} \bar{b}^*_{\mu, m'}\left( i \frac{ d a_{\mu, m'}}{dz}   +
+	L = -\sum_{\mu, m'} \bar{b}^*_{\mu, m'}\left( i \frac{ d a_{\mu, m'}}{dz}   +
 \sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right)
 \end{equation}
-Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = i\bar{b}^*_{\mu, m'}$ el Hamiltoniano del sistema se escribe como:
+Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = -i\bar{b}^*_{\mu, m'}$ el Hamiltoniano del sistema se escribe como:
 \begin{align*}
-	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{a}}_{\mu, m'} - L = -\sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} a_{\nu, m}\bar{b}^*_{\mu, m'} = i\sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} a_{\nu, m}\Pi_{\mu, m'}
+	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{a}}_{\mu, m'} - L = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} a_{\nu, m}\bar{b}^*_{\mu, m'} = i\sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} a_{\nu, m}\Pi_{\mu, m'}
 \end{align*}
 Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 \begin{align*}
@@ -605,7 +605,7 @@ Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 	\\	
 	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{b}}^*_{\mu, m'}}\delta \bar{b}^*_{\mu, m'}\right) = 0.
 \end{align*}
-Considerando el par de transformaciones $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{b}^*_{\mu, m'}\to \bar{b'}^*_{\mu, m'} = e^{-i\phi}\bar{b}^*_{\mu, m'}$ que dejan invariante el Lagrangiano, considerando $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{b}^*_{\mu, m'} = -i\phi \bar{b}^*_{\mu, m'}$, por lo que la cantidad conservada, $P$, es:
+Considerando el par de transformaciones $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{b}^*_{\mu, m'}\to \bar{b'}^*_{\mu, m'} = e^{-i\phi}\bar{b}^*_{\mu, m'}$ que dejan invariante el Lagrangiano, y con $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{b}^*_{\mu, m'} = -i\phi \bar{b}^*_{\mu, m'}$, por lo que la cantidad conservada, $P$, es:
 \begin{equation}
 	P = \sum_{\mu, m'} \bar{b}^*_{\mu, m'} a_{\mu, m'}.
 \end{equation}
