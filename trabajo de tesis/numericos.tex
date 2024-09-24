@@ -35,6 +35,6 @@ con $\psi(x,y,z)$, $n_0$, $n(x,y)$ y $k_0$ la envolvente de la componente horizo
 
 Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}), con el objetivo de describir de forma discreta una red fotónica, es posible derivar las llamadas ecuaciones discretas tipo Schrödinger \cite{discretesolitons, artificialFB, FBdynamics}
 \begin{equation}
-	-i\frac{\partial u_{\vec{n}} }{\partial z} = \beta_{\vec{n}}u_{\vec{n}} + \sum_{\vec{m}\neq\vec{n}} C_{\vec{n},\vec{m}}u_{\vec{m}}, \label{eqn:CMT}
+	\frac{d }{d z} |a\rangle  = i\hat{C} |a\rangle, \label{eqn:CMT_mat}
 \end{equation}
-con $u_{\vec{n}}, \beta_{\vec{n}}$ y $C_{\vec{n}, \vec{m}}$ la envolvente normalizada del campo eléctrico, la constante de propagación normalizada y las constantes de acoplamiento entre los modos de las guías en las posiciones de la red $\vec{n}$ y $\vec{m}$, respectivamente.
+donde utiliza la notación de Dirac para liberar a la ecuación (\ref{eqn:CMT1}) de alguna elección particular de base, con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$.

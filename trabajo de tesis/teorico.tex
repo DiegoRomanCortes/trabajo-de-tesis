@@ -213,7 +213,7 @@ Asumiendo $\alpha$, $\beta$ y $k_z$ conocidos, las amplitudes deben cumplir las 
 \end{aligned} 
 \end{equation*}
 Las ecuaciones superiores imponen que $E_1 = 0$ cuando se satisface la condición de modos TE. Análogamente, las ecuaciones inferiores imponen $H_1 = 0$ en el caso de modos TM. Efectivamente, los nombres TE y TM se han puesto por transversal eléctrico y transversal magnético, respectivamente.
-Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente.
+Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente: un condición inicial arbitraria será una combinación lineal de modos TE y TM.
 
 \subsection{Soluciones gráficas y comparación entre modos TE y TM}
 
@@ -553,7 +553,7 @@ Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ só
  D_{\nu, \mu, m, m'} = -D_{\mu, \nu, m', m} = \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
 \end{equation*}
 
-Sin embargo, salvo que se indique lo contrario, se asumirá la condición de reciprocidad ($C_{\mu, \nu, m', m} = C_{\nu, \mu, m, m'}$). Finalmente, es posible hacer el cambio de variables $a_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger:
+Sin embargo, salvo que se indique lo contrario, se asumirá la condición de reciprocidad, $C_{\mu, \nu, m', m} = C_{\nu, \mu, m, m'}$. Finalmente, es posible hacer el cambio de variables $a_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger:
 \begin{equation}
 	  	 -i\frac{d a_{\mu, m'}}{dz} = \beta_{\mu, m'} a_{\mu, m'} + \sum_{\nu, m\neq m'}C_{\mu, \nu, m', m}   a_{\nu, m}.
 	\label{eqn:CMT1}
@@ -596,11 +596,12 @@ Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 	\\	
 	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{a}}_{\mu, m'}}\delta \bar{a}_{\mu, m'}\right) = 0.
 \end{align*}
-Considerando el par de transformaciones asociadas al grupo unitario U(1), $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{a}_{\mu, m'}\to \bar{a'}_{\mu, m'} = e^{-i\phi}\bar{a}_{\mu, m'}$ que dejan invariante el Lagrangiano, y considerando $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{a}_{\mu, m'} = -i\phi \bar{a}_{\mu, m'}$, por lo que la cantidad conservada, $P$, que se identifica con la potencia del sistema es:
+Considerando el par de transformaciones asociadas al grupo unitario U(1), $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{a}_{\mu, m'}\to \bar{a'}_{\mu, m'} = e^{-i\phi}\bar{a}_{\mu, m'}$ que dejan invariante el Lagrangiano, y considerando $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{a}_{\mu, m'} = -i\phi \bar{a}_{\mu, m'}$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
 \begin{equation}
 	P = \sum_{\mu, m'} |a_{\mu, m'}|^2. \label{eqn:power}
 \end{equation}
 
-\section{Propiedades de la red: Bandas}
+\section{Propiedades de la red: Relación de dispersión en el espacio recíproco}
+
 
 
