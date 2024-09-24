@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.23)  16 SEP 2024 11:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.3.23)  23 SEP 2024 23:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1096,7 +1096,7 @@ your preamble.
 
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
-<imagenes/escudoU2014.pdf, id=147, 320.19624pt x 689.57625pt>
+<imagenes/escudoU2014.pdf, id=151, 320.19624pt x 689.57625pt>
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
 <use imagenes/escudoU2014.pdf>
 Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 54.
@@ -1207,7 +1207,7 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
 
 pdfTeX warning: /usr/bin/pdflatex (file ./media/slab.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<media/slab.pdf, id=347, 963.6pt x 542.025pt>
+<media/slab.pdf, id=352, 963.6pt x 542.025pt>
 File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
 Package pdftex.def Info: media/slab.pdf  used on input line 86.
@@ -1224,13 +1224,13 @@ Overfull \hbox (27.33864pt too wide) detected at line 192
 
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 218.
-<media/slabgraphical.pdf, id=375, 246.45837pt x 192.50116pt>
+<media/slabgraphical.pdf, id=380, 246.45837pt x 192.50116pt>
 File: media/slabgraphical.pdf Graphic file (type pdf)
 <use media/slabgraphical.pdf>
 Package pdftex.def Info: media/slabgraphical.pdf  used on input line 224.
 (pdftex.def)             Requested size: 330.42041pt x 258.1pt.
 [6]
-<media/TETMfields.pdf, id=380, 230.77599pt x 179.71974pt>
+<media/TETMfields.pdf, id=385, 230.77599pt x 179.71974pt>
 File: media/TETMfields.pdf Graphic file (type pdf)
 <use media/TETMfields.pdf>
 Package pdftex.def Info: media/TETMfields.pdf  used on input line 230.
@@ -1242,39 +1242,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
                    \relax 
 l.377 \end{align}
                   [9]
-<media/fibergraphical.pdf, id=449, 219.55031pt x 182.08086pt>
+<media/fibergraphical.pdf, id=454, 219.55031pt x 182.08086pt>
 File: media/fibergraphical.pdf Graphic file (type pdf)
 <use media/fibergraphical.pdf>
 Package pdftex.def Info: media/fibergraphical.pdf  used on input line 431.
 (pdftex.def)             Requested size: 330.42041pt x 274.05133pt.
  [10] [11 <./media/fibergraphical.pdf>]
-<media/fibergraphicalHE_EH.pdf, id=486, 219.55031pt x 192.96445pt>
+<media/fibergraphicalHE_EH.pdf, id=491, 219.55031pt x 192.96445pt>
 File: media/fibergraphicalHE_EH.pdf Graphic file (type pdf)
 <use media/fibergraphicalHE_EH.pdf>
 Package pdftex.def Info: media/fibergraphicalHE_EH.pdf  used on input line 476.
 
 (pdftex.def)             Requested size: 283.22162pt x 248.94576pt.
-<media/fiberHE11.pdf, id=487, 233.56532pt x 122.74963pt>
+<media/fiberHE11.pdf, id=492, 233.56532pt x 122.74963pt>
 File: media/fiberHE11.pdf Graphic file (type pdf)
 <use media/fiberHE11.pdf>
 Package pdftex.def Info: media/fiberHE11.pdf  used on input line 484.
 (pdftex.def)             Requested size: 236.01561pt x 216.24979pt.
-<media/fiberTE1.pdf, id=489, 233.56532pt x 122.74963pt>
+<media/fiberTE1.pdf, id=494, 233.56532pt x 122.74963pt>
 File: media/fiberTE1.pdf Graphic file (type pdf)
 <use media/fiberTE1.pdf>
 Package pdftex.def Info: media/fiberTE1.pdf  used on input line 485.
 (pdftex.def)             Requested size: 155.77116pt x 216.16737pt.
-<media/fiberTM1.pdf, id=491, 233.56532pt x 122.74963pt>
+<media/fiberTM1.pdf, id=496, 233.56532pt x 122.74963pt>
 File: media/fiberTM1.pdf Graphic file (type pdf)
 <use media/fiberTM1.pdf>
 Package pdftex.def Info: media/fiberTM1.pdf  used on input line 486.
 (pdftex.def)             Requested size: 155.77116pt x 216.16737pt.
-<media/fiberHE21.pdf, id=493, 233.56532pt x 122.74963pt>
+<media/fiberHE21.pdf, id=498, 233.56532pt x 122.74963pt>
 File: media/fiberHE21.pdf Graphic file (type pdf)
 <use media/fiberHE21.pdf>
 Package pdftex.def Info: media/fiberHE21.pdf  used on input line 487.
 (pdftex.def)             Requested size: 155.77116pt x 216.16737pt.
-<media/fiberHE31.pdf, id=495, 233.56532pt x 122.74963pt>
+<media/fiberHE31.pdf, id=500, 233.56532pt x 122.74963pt>
 File: media/fiberHE31.pdf Graphic file (type pdf)
 <use media/fiberHE31.pdf>
 Package pdftex.def Info: media/fiberHE31.pdf  used on input line 488.
@@ -1286,23 +1286,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 484--489
 
 [12 <./media/fibergraphicalHE_EH.pdf>] [13 <./media/fiberHE11.pdf> <./media/fib
 erTE1.pdf> <./media/fiberTM1.pdf> <./media/fiberHE21.pdf> <./media/fiberHE31.pd
-f>] [14] [15]) [16
+f>] [14]
+Overfull \hbox (8.78632pt too wide) in paragraph at lines 556--557
+[]\OT1/txr/m/n/12 Sin em-bar-go, sal-vo que se in-di-que lo con-tra-rio, se asu
+-mir[]a la con-di-ci[]on de re-ci-pro-ci-dad ($\OML/txmi/m/it/12 C[] \OT1/txr/m
+/n/12 =
+ []
+
+[15]) [16
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5.
 24}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.82 \include{teorico.tex}
-                          ] [17]
+                          ]
 \openout2 = `numericos.aux'.
 
  (./numericos.tex
 Cap\'{\i }tulo 3.
-[18
+[17
 
 
 
 
-]) [19]
+]) [18]
 \openout2 = `metodos.aux'.
 
  (./metodos.tex
@@ -1317,23 +1324,23 @@ File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package pdftex.def Info: media/SC_setup.png  used on input line 13.
 (pdftex.def)             Requested size: 472.03123pt x 174.63484pt.
-[20
+[19
 
 
 
 
- <./media/fabrication.png>] [21 <./media/SC_setup.png>]
+ <./media/fabrication.png>] [20 <./media/SC_setup.png>]
 <media/SLM_setup.png, id=669, 1927.2pt x 1084.05pt>
 File: media/SLM_setup.png Graphic file (type png)
 <use media/SLM_setup.png>
 Package pdftex.def Info: media/SLM_setup.png  used on input line 30.
 (pdftex.def)             Requested size: 472.03123pt x 333.833pt.
- [22]) [23 <./media/SLM_setup.png>]
+ [21]) [22 <./media/SLM_setup.png>]
 \openout2 = `moleculas.aux'.
 
  (./moleculas.tex
 Cap\'{\i }tulo 5.
-) [24
+) [23
 
 
 
@@ -1343,7 +1350,7 @@ Cap\'{\i }tulo 5.
 
  (./sp.tex
 Cap\'{\i }tulo 6.
-) [25
+) [24
 
 
 
@@ -1358,7 +1365,7 @@ File: media/dipoles.jpg Graphic file (type jpg)
 <use media/dipoles.jpg>
 Package pdftex.def Info: media/dipoles.jpg  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 81.74814pt.
-) [26
+) [25
 
 
 
@@ -1378,17 +1385,17 @@ File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
 (pdftex.def)             Requested size: 472.03123pt x 236.01633pt.
-) [27
+) [26
 
 
 
 
- <./media/OAM-free.png>] [28 <./media/vortex.png>]
+ <./media/OAM-free.png>] [27 <./media/vortex.png>]
 \openout2 = `conclu.aux'.
 
  (./conclu.tex
 Cap\'{\i }tulo 9.
-) [29
+) [28
 
 
 
@@ -1398,7 +1405,7 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 11.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
-) [30
+) [29
 
 
 
@@ -1408,27 +1415,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--116
 suarios -[] aumentan -[] preferencia -[] por -[]
  []
 
-[31]
+[30]
 Underfull \hbox (badness 1024) in paragraph at lines 226--235
 []\OT1/txr/m/n/12 Sebabrata Mukher-jee, Ale-xan-der Sprac-klen, Ma-nuel Va-lien
 -te, Eri-ka An-ders-son, Pa-trik
  []
 
-[32] [33]) (./anexoA.tex [34]
+[31] [32]) (./anexoA.tex [33]
 Ap\'{e}ndice A.
-) (./anexoB.tex [35
+) (./anexoB.tex [34
 
 ]
 Ap\'{e}ndice B.
-) (./anexoC.tex [36
+) (./anexoC.tex [35
 
 ]
 Ap\'{e}ndice C.
-) (./anexoD.tex [37
+) (./anexoD.tex [36
 
 ]
 Ap\'{e}ndice D.
-) [38
+) [37
 
 ] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
@@ -1436,14 +1443,20 @@ LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux) (./numericos.aux)
 (./metodos.aux) (./moleculas.aux) (./sp.aux) (./magico.aux) (./oam.aux)
 (./conclu.aux))
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DE9869ECCA3E6DD4909FF0600B475359;7837.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: E0F42B97FE25BA6C93CAF8F1CBE8C92B;7922
+(rerunfilecheck)             After:  72E49FEB687922CCA2FD68D0A29C5880;8049.
  ) 
 Here is how much of TeX's memory you used:
- 37795 strings out of 476091
- 841850 string characters out of 5794081
+ 37799 strings out of 476091
+ 841911 string characters out of 5794081
  1879330 words of memory out of 5000000
- 57282 multiletter control sequences out of 15000+600000
+ 57285 multiletter control sequences out of 15000+600000
  547832 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,103p,1052b,764s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1469,10 +1482,10 @@ xlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (46 pages, 8085278 bytes).
+Output written on main.pdf (45 pages, 8084083 bytes).
 PDF statistics:
- 963 PDF objects out of 1000 (max. 8388607)
- 832 compressed objects within 9 object streams
- 179 named destinations out of 1000 (max. 500000)
- 426 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 964 PDF objects out of 1000 (max. 8388607)
+ 834 compressed objects within 9 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 434 words of extra memory for PDF output out of 10000 (max. 10000000)
 
