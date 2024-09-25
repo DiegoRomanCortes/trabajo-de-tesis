@@ -1,23 +1,4 @@
 \chapter{Métodos numéricos}
-\section{COMSOL: método de elementos finitos}
-A partir de la ecuación (\ref{eqn:rotordoble}) y separando el campo eléctrico $\textbf{E}(\textbf{r}) = \textbf{E}_1(\textbf{r}) e^{-i \phi_1 (\textbf{r})}$ en una envolvente lenta $\textbf{E}_1(\textbf{r})$ y una fase rápidamente oscilante $\phi_1 (\textbf{r})$ ,
-
-\begin{align}
-\nabla\times[\nabla\times(\textbf{E}_1 e^{-i \phi_1 })] &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1} \nonumber
-\\
-\nabla\times[ e^{-i \phi_1} \times (\nabla \times \textbf{E}_1) + \nabla(e^{-i \phi_1})\times \textbf{E}_1] &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}\nonumber
-\\
-\nabla\times[ e^{-i \phi_1}  (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1  ] &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}\nonumber
-\\
-e^{-i \phi_1}  \nabla\times[ (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1] + \nabla(e^{-i \phi_1})\times  (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1  &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}\nonumber
-\\
-e^{-i \phi_1}  \nabla\times[ (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1] - i\textbf{k}_1 e^{-i \phi_1}\times  (\nabla  - i  \textbf{k} _1)\times\textbf{E}_1  &=  n^2k_0^2 \textbf{E}_1 e^{-i \phi_1}\nonumber
-\\
-	(\nabla-i\textbf{k}_1)\times((\nabla-i\textbf{k}_1)\times \textbf{E}_1) &= n^2k_0^2 \textbf{E}_1,
-	 \label{eqn:comsol}
-\end{align}
-con $\textbf{k}_1 = \nabla\phi_1(\textbf{r})$.
-El software comercial COMSOL \textit{Multiphysics} puede integrar numéricamente la ecuación (\ref{eqn:comsol})  mediante elementos finitos más gruesos que los que se tendría que usar a partir de la ecuación (\ref{eqn:rotordoble}) debido a la separación entre envolvente y fase, sin haber hecho aproximación alguna.
 
 \section{Expansión en modos normales}
 
@@ -33,7 +14,7 @@ con $\psi(x,y,z)$, $n_0$, $n(x,y)$ y $k_0$ la envolvente de la componente horizo
 
 \section{Ecuaciones dinámicas discretas tipo Schrödinger}
 
-Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}), con el objetivo de describir de forma discreta una red fotónica, es posible derivar las llamadas ecuaciones discretas tipo Schrödinger \cite{discretesolitons, artificialFB, FBdynamics}
+Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}), con el objetivo de describir de forma discreta una red fotónica, es posible derivar las llamadas ecuaciones discretas tipo Schrödinger 
 \begin{equation}
 	\frac{d }{d z} |a\rangle  = i\hat{C} |a\rangle, \label{eqn:CMT_mat}
 \end{equation}

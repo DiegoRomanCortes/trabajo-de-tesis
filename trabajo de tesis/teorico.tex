@@ -512,7 +512,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, el campo elé
 donde se ha usado la aproximación de guiaje débil para anular el lado de derecho de la ecuación (\ref{eqn:helmholz}). Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, las cuales son ortogonales (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil. 
 
 \section{Teoría de modos acoplados}
-	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $\nu$-ésimo modo de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
+	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Binding}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $\nu$-ésimo modo guiado de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
 \begin{align}
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2 \right)\sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}
 	\nonumber
@@ -553,12 +553,16 @@ Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ só
  D_{\nu, \mu, m, m'} = -D_{\mu, \nu, m', m} = \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
 \end{equation*}
 
-Sin embargo, salvo que se indique lo contrario, se asumirá la condición de reciprocidad, $C_{\mu, \nu, m', m} = C_{\nu, \mu, m, m'}$. Finalmente, es posible hacer el cambio de variables $a_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger:
+Sin embargo, salvo que se indique lo contrario, se asumirá la condición de reciprocidad, $C_{\mu, \nu, m', m} = C_{\nu, \mu, m, m'}$. Finalmente, es posible hacer el cambio de variables $a_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger \cite{discretesolitons, artificialFB, FBdynamics}:
 \begin{equation}
 	  	 -i\frac{d a_{\mu, m'}}{dz} = \beta_{\mu, m'} a_{\mu, m'} + \sum_{\nu, m\neq m'}C_{\mu, \nu, m', m}   a_{\nu, m}.
 	\label{eqn:CMT1}
 \end{equation}
-
+o, libre de la elección particular de enumeración de índices ($\mu, m'$) y redefiniendo $C_{\mu, \mu, m', m,'} \equiv \beta_{\mu, m'}$:
+\begin{equation}
+	-i\frac{d }{d z} |a\rangle  = \hat{C} |a\rangle, \label{eqn:CMT_mat}
+\end{equation}
+con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$.
 
 
 Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, considerando una distancia $d$ entre guías \textcolor{red}{INCLUIR ESQUEMA PARA EXPLICAR ACOPLAMIENTO}. El índice de refracción en este caso es $n^2 = n_1^2 + n_2^2$, con $n_1^2(\textbf{r})=n_2^2(\textbf{r}+\textbf{d})$. Dada la simetría del problema, la constante de acoplamiento se puede desarrollar como 
@@ -578,7 +582,7 @@ Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, conside
 \begin{equation}
 	i\frac{d a_1}{dz} + C a_2 = 0, \quad\quad i\frac{d a_2}{dz} + C a_1 = 0 \nonumber
 \end{equation}
-Redefiniendo $C_{\mu, \mu, m', m,'} \equiv \beta_{\mu, m'}$, es posible encontrar un Lagrangiano para la ecuación (\ref{eqn:CMT1}):
+Es posible encontrar un Lagrangiano para la ecuación (\ref{eqn:CMT1}):
 
 \begin{equation}
 	L = -\sum_{\mu, m'} \bar{a}_{\mu, m'}\left( i \frac{ d a_{\mu, m'}}{dz}   +
@@ -603,5 +607,5 @@ Considerando el par de transformaciones asociadas al grupo unitario U(1), $a_{\m
 
 \section{Propiedades de la red: Relación de dispersión en el espacio recíproco}
 
-
+Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear el Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:CMT_mat}) con la matriz $\hat{C}$ hermítica es justificación suficiente para invocar el Teorema de Bloch: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz del estilo $|a\rangle = e^{i(\beta z + \textbf{k}\cdot \textbf{r})}|A\rangle$, con $|A\rangle$ un vector constante con la misma dimensionalidad que número de sitios en la celda unitaria de la red.
 

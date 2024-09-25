@@ -10,11 +10,10 @@
 \contentsline {section}{\numberline {2.4}Modos normales en guías de onda}{13}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Teoría de modos acoplados}{14}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Propiedades de la red: Relación de dispersión en el espacio recíproco}{16}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Métodos numéricos}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}COMSOL: método de elementos finitos}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Expansión en modos normales}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Beam Propagation Method}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Ecuaciones dinámicas discretas tipo Schrödinger}{18}{section.3.4}%
+\contentsline {chapter}{\numberline {3}Métodos numéricos}{18}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Expansión en modos normales}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Beam Propagation Method}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Ecuaciones dinámicas discretas tipo Schrödinger}{18}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Métodos experimentales}{19}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Escritura de guías de onda}{19}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo}{20}{section.4.2}%

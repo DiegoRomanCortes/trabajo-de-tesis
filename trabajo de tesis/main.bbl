@@ -419,16 +419,6 @@ J.~Schulz, C.~Jörg, and G.~von Freymann.
 \newblock URL \url{https://opg.optica.org/oe/abstract.cfm?uri=oe-30-6-9869}.
 \newblock Publisher: Optica Publishing Group.
 
-\bibitem[Zhang(2024)]{NHHamiltonian}
-Qi~Zhang.
-\newblock Hamiltonian formulation of linear non-{Hermitian} systems.
-\newblock \emph{Physica Scripta}, 99\penalty0 (8):\penalty0 085262, August
-  2024.
-\newblock ISSN 0031-8949, 1402-4896.
-\newblock \doi{10.1088/1402-4896/ad6045}.
-\newblock URL
-  \url{https://iopscience.iop.org/article/10.1088/1402-4896/ad6045}.
-
 \bibitem[Alexandre et~al.(2017)Alexandre, Millington, and
   Seynaeve]{NHsymmetries}
 Jean Alexandre, Peter Millington, and Dries Seynaeve.
@@ -438,6 +428,14 @@ Jean Alexandre, Peter Millington, and Dries Seynaeve.
 \newblock ISSN 2470-0010, 2470-0029.
 \newblock \doi{10.1103/PhysRevD.96.065027}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.96.065027}.
+
+\bibitem[Joannopoulos et~al.(2008)Joannopoulos, Johnson, Winn, and
+  Meade]{joannopoulos_photonic_2008}
+John~D. Joannopoulos, Steven~G. Johnson, Joshua~N. Winn, and Robert~D. Meade.
+\newblock \emph{Photonic crystals: molding the flow of light}.
+\newblock Princeton University Press, Princeton Oxford, 2nd edition edition,
+  2008.
+\newblock ISBN 978-0-691-12456-8.
 
 \bibitem[Pedrola(2015)]{bpm}
 Ginés~Lifante Pedrola.

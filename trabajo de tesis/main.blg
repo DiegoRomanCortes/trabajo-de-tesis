@@ -17,43 +17,43 @@ Warning--empty year in fibra2
 Warning--empty year in fibra
 You've used 51 entries,
             2481 wiz_defined-function locations,
-            989 strings with 17915 characters,
-and the built_in function-call counts, 23041 in all, are:
-= -- 1919
-> -- 1446
-< -- 9
-+ -- 541
-- -- 438
-* -- 2208
-:= -- 3885
-add.period$ -- 258
+            986 strings with 17922 characters,
+and the built_in function-call counts, 23039 in all, are:
+= -- 1909
+> -- 1466
+< -- 8
++ -- 547
+- -- 444
+* -- 2209
+:= -- 3890
+add.period$ -- 256
 call.type$ -- 51
 change.case$ -- 101
 chr.to.int$ -- 50
 cite$ -- 57
 duplicate$ -- 949
-empty$ -- 1870
-format.name$ -- 492
-if$ -- 4760
+empty$ -- 1863
+format.name$ -- 498
+if$ -- 4757
 int.to.chr$ -- 2
 int.to.str$ -- 52
-missing$ -- 48
-newline$ -- 368
+missing$ -- 49
+newline$ -- 366
 num.names$ -- 144
-pop$ -- 275
+pop$ -- 280
 preamble$ -- 1
 purify$ -- 51
 quote$ -- 0
-skip$ -- 498
+skip$ -- 497
 stack$ -- 0
-substring$ -- 1052
-swap$ -- 135
+substring$ -- 1034
+swap$ -- 134
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 354
+type$ -- 351
 warning$ -- 3
-while$ -- 150
+while$ -- 149
 width$ -- 0
-write$ -- 874
+write$ -- 871
 (There were 3 warnings)

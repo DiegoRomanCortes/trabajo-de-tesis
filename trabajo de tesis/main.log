@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.7.4)  24 SEP 2024 17:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.7.4)  25 SEP 2024 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -970,15 +970,18 @@ File: ot1txr.fd 2000/12/15 v3.1
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 
-(./intro.aux) (./teorico.aux) (./numericos.aux) (./metodos.aux)
-(./moleculas.aux) (./sp.aux) (./magico.aux) (./oam.aux) (./conclu.aux))
+(./intro.aux) (./teorico.aux) (./numericos.aux
+
+LaTeX Warning: Label `eqn:CMT_mat' multiply defined.
+
+) (./metodos.aux) (./moleculas.aux) (./sp.aux) (./magico.aux) (./oam.aux)
+(./conclu.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 51.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 51.
-
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 51.
@@ -1096,7 +1099,7 @@ your preamble.
 
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
-<imagenes/escudoU2014.pdf, id=151, 320.19624pt x 689.57625pt>
+<imagenes/escudoU2014.pdf, id=147, 320.19624pt x 689.57625pt>
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
 <use imagenes/escudoU2014.pdf>
 Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 54.
@@ -1207,7 +1210,7 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
 
 pdfTeX warning: /usr/bin/pdflatex (file ./media/slab.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<media/slab.pdf, id=352, 963.6pt x 542.025pt>
+<media/slab.pdf, id=347, 963.6pt x 542.025pt>
 File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
 Package pdftex.def Info: media/slab.pdf  used on input line 86.
@@ -1224,13 +1227,13 @@ Overfull \hbox (27.33864pt too wide) detected at line 192
 
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 218.
-<media/slabgraphical.pdf, id=380, 246.45837pt x 192.50116pt>
+<media/slabgraphical.pdf, id=375, 246.45837pt x 192.50116pt>
 File: media/slabgraphical.pdf Graphic file (type pdf)
 <use media/slabgraphical.pdf>
 Package pdftex.def Info: media/slabgraphical.pdf  used on input line 224.
 (pdftex.def)             Requested size: 330.42041pt x 258.1pt.
 [6]
-<media/TETMfields.pdf, id=385, 230.77599pt x 179.71974pt>
+<media/TETMfields.pdf, id=380, 230.77599pt x 179.71974pt>
 File: media/TETMfields.pdf Graphic file (type pdf)
 <use media/TETMfields.pdf>
 Package pdftex.def Info: media/TETMfields.pdf  used on input line 230.
@@ -1242,39 +1245,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
                    \relax 
 l.377 \end{align}
                   [9]
-<media/fibergraphical.pdf, id=454, 219.55031pt x 182.08086pt>
+<media/fibergraphical.pdf, id=449, 219.55031pt x 182.08086pt>
 File: media/fibergraphical.pdf Graphic file (type pdf)
 <use media/fibergraphical.pdf>
 Package pdftex.def Info: media/fibergraphical.pdf  used on input line 431.
 (pdftex.def)             Requested size: 330.42041pt x 274.05133pt.
  [10] [11 <./media/fibergraphical.pdf>]
-<media/fibergraphicalHE_EH.pdf, id=491, 219.55031pt x 192.96445pt>
+<media/fibergraphicalHE_EH.pdf, id=486, 219.55031pt x 192.96445pt>
 File: media/fibergraphicalHE_EH.pdf Graphic file (type pdf)
 <use media/fibergraphicalHE_EH.pdf>
 Package pdftex.def Info: media/fibergraphicalHE_EH.pdf  used on input line 476.
 
 (pdftex.def)             Requested size: 283.22162pt x 248.94576pt.
-<media/fiberHE11.pdf, id=492, 233.56532pt x 122.74963pt>
+<media/fiberHE11.pdf, id=487, 233.56532pt x 122.74963pt>
 File: media/fiberHE11.pdf Graphic file (type pdf)
 <use media/fiberHE11.pdf>
 Package pdftex.def Info: media/fiberHE11.pdf  used on input line 484.
 (pdftex.def)             Requested size: 236.01561pt x 216.24979pt.
-<media/fiberTE1.pdf, id=494, 233.56532pt x 122.74963pt>
+<media/fiberTE1.pdf, id=489, 233.56532pt x 122.74963pt>
 File: media/fiberTE1.pdf Graphic file (type pdf)
 <use media/fiberTE1.pdf>
 Package pdftex.def Info: media/fiberTE1.pdf  used on input line 485.
 (pdftex.def)             Requested size: 155.77116pt x 216.16737pt.
-<media/fiberTM1.pdf, id=496, 233.56532pt x 122.74963pt>
+<media/fiberTM1.pdf, id=491, 233.56532pt x 122.74963pt>
 File: media/fiberTM1.pdf Graphic file (type pdf)
 <use media/fiberTM1.pdf>
 Package pdftex.def Info: media/fiberTM1.pdf  used on input line 486.
 (pdftex.def)             Requested size: 155.77116pt x 216.16737pt.
-<media/fiberHE21.pdf, id=498, 233.56532pt x 122.74963pt>
+<media/fiberHE21.pdf, id=493, 233.56532pt x 122.74963pt>
 File: media/fiberHE21.pdf Graphic file (type pdf)
 <use media/fiberHE21.pdf>
 Package pdftex.def Info: media/fiberHE21.pdf  used on input line 487.
 (pdftex.def)             Requested size: 155.77116pt x 216.16737pt.
-<media/fiberHE31.pdf, id=500, 233.56532pt x 122.74963pt>
+<media/fiberHE31.pdf, id=495, 233.56532pt x 122.74963pt>
 File: media/fiberHE31.pdf Graphic file (type pdf)
 <use media/fiberHE31.pdf>
 Package pdftex.def Info: media/fiberHE31.pdf  used on input line 488.
@@ -1293,33 +1296,36 @@ Overfull \hbox (7.79105pt too wide) in paragraph at lines 556--557
 /n/12 =
  []
 
-[15]) [16
+[15] [16
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.5.
-24}) has been already used, duplicate ignored
+25}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.82 \include{teorico.tex}
-                          ]
+l.611 
+      ]) [17]
 \openout2 = `numericos.aux'.
 
  (./numericos.tex
 Cap\'{\i }tulo 3.
-[17
+
+LaTeX Warning: Reference `eqn:comsol' on page 18 undefined on input line 7.
+
+) [18
 
 
 
 
-]) [18]
+]
 \openout2 = `metodos.aux'.
 
  (./metodos.tex
 Cap\'{\i }tulo 4.
-<media/fabrication.png, id=653, 1927.2pt x 1084.05pt>
+<media/fabrication.png, id=647, 1927.2pt x 1084.05pt>
 File: media/fabrication.png Graphic file (type png)
 <use media/fabrication.png>
 Package pdftex.def Info: media/fabrication.png  used on input line 6.
 (pdftex.def)             Requested size: 283.22162pt x 229.12283pt.
-<media/SC_setup.png, id=656, 1927.2pt x 1084.05pt>
+<media/SC_setup.png, id=650, 1927.2pt x 1084.05pt>
 File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package pdftex.def Info: media/SC_setup.png  used on input line 13.
@@ -1330,7 +1336,7 @@ Package pdftex.def Info: media/SC_setup.png  used on input line 13.
 
 
  <./media/fabrication.png>] [20 <./media/SC_setup.png>]
-<media/SLM_setup.png, id=670, 1927.2pt x 1084.05pt>
+<media/SLM_setup.png, id=664, 1927.2pt x 1084.05pt>
 File: media/SLM_setup.png Graphic file (type png)
 <use media/SLM_setup.png>
 Package pdftex.def Info: media/SLM_setup.png  used on input line 30.
@@ -1360,7 +1366,7 @@ Cap\'{\i }tulo 6.
 
  (./magico.tex
 Cap\'{\i }tulo 7.
-<media/dipoles.jpg, id=691, 1589.94pt x 275.3487pt>
+<media/dipoles.jpg, id=685, 1589.94pt x 275.3487pt>
 File: media/dipoles.jpg Graphic file (type jpg)
 <use media/dipoles.jpg>
 Package pdftex.def Info: media/dipoles.jpg  used on input line 5.
@@ -1375,12 +1381,12 @@ Package pdftex.def Info: media/dipoles.jpg  used on input line 5.
 
  (./oam.tex
 Cap\'{\i }tulo 8.
-<media/OAM-free.png, id=696, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=690, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=697, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=691, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
@@ -1443,14 +1449,20 @@ LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux) (./numericos.aux)
 (./metodos.aux) (./moleculas.aux) (./sp.aux) (./magico.aux) (./oam.aux)
 (./conclu.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AD524DA92F1C5A950460DF7155A9921D;8126.
+(rerunfilecheck)             Checksum: AD461634EDF444213D353836A272C510;7881.
  ) 
 Here is how much of TeX's memory you used:
- 37799 strings out of 476091
- 841915 string characters out of 5794082
+ 37796 strings out of 476091
+ 841929 string characters out of 5794082
  1879330 words of memory out of 5000000
- 57285 multiletter control sequences out of 15000+600000
+ 57283 multiletter control sequences out of 15000+600000
  547832 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,103p,1052b,764s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1476,10 +1488,10 @@ xlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (45 pages, 8083866 bytes).
+Output written on main.pdf (45 pages, 8084367 bytes).
 PDF statistics:
- 965 PDF objects out of 1000 (max. 8388607)
- 835 compressed objects within 9 object streams
- 180 named destinations out of 1000 (max. 500000)
- 434 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 957 PDF objects out of 1000 (max. 8388607)
+ 827 compressed objects within 9 object streams
+ 179 named destinations out of 1000 (max. 500000)
+ 426 words of extra memory for PDF output out of 10000 (max. 10000000)
 
