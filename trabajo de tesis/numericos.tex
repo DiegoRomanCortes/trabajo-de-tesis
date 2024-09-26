@@ -4,7 +4,8 @@
 
 \section{Beam Propagation Method} 
 
-Por otro lado, utilizando la aproximación paraxial escogiendo el eje $z$  como dirección de propagación y seleccionando la polarización horizontal del campo, es posible simplificar la ecuación (\ref{eqn:comsol}) y llegar a la formulación de un método numérico escalar conocido como \textit{Beam Propagation Method}, utilizado ampliamente en esta área de investigación \cite{bics, interorbital, OAMCaging, vortex, bpm}. Éste consiste en resolver numéricamente la ecuación
+
+método numérico escalar conocido como \textit{Beam Propagation Method}, utilizado ampliamente en esta área de investigación \cite{bics, interorbital, OAMCaging, vortex, bpm}. Éste consiste en resolver numéricamente la ecuación
 \begin{equation}
 	2in_0k_0\frac{\partial}{\partial z}\psi(x,y,z) = \nabla_\perp^2 \psi (x,y,z) + \left(n^2-n_0^2\right)k_0^2 \psi (x,y,z), \label{eqn:paraxial}
 \end{equation}
@@ -14,8 +15,4 @@ con $\psi(x,y,z)$, $n_0$, $n(x,y)$ y $k_0$ la envolvente de la componente horizo
 
 \section{Ecuaciones dinámicas discretas tipo Schrödinger}
 
-Aplicando teoría acoplada de modos \cite{coupledmodetheory} a la ecuación (\ref{eqn:paraxial}), con el objetivo de describir de forma discreta una red fotónica, es posible derivar las llamadas ecuaciones discretas tipo Schrödinger 
-\begin{equation}
-	\frac{d }{d z} |a\rangle  = i\hat{C} |a\rangle, \label{eqn:CMT_mat}
-\end{equation}
-donde utiliza la notación de Dirac para liberar a la ecuación (\ref{eqn:CMT1}) de alguna elección particular de base, con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$.
+

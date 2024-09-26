@@ -562,33 +562,15 @@ o, libre de la elección particular de enumeración de índices ($\mu, m'$) y re
 \begin{equation}
 	-i\frac{d }{d z} |a\rangle  = \hat{C} |a\rangle, \label{eqn:CMT_mat}
 \end{equation}
-con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$.
+con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$. Esto permite definir el operador de evolución espacial $U(z) = e^{i\hat{C}z}$ tal que $|a(z)\rangle=U(z-z_0)|a(z_0)\rangle$ que será de utilidad en los métodos numéricos de resolución de la ecuación (\ref{eqn:CMT_mat}).
 
 
-Para fijar ideas, consideremos el caso del dímero monomodal homogéneo, considerando una distancia $d$ entre guías \textcolor{red}{INCLUIR ESQUEMA PARA EXPLICAR ACOPLAMIENTO}. El índice de refracción en este caso es $n^2 = n_1^2 + n_2^2$, con $n_1^2(\textbf{r})=n_2^2(\textbf{r}+\textbf{d})$. Dada la simetría del problema, la constante de acoplamiento se puede desarrollar como 
-\begin{align}
-	C_{1 \to 2} &=  \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_1^2(\textbf{r}) \textbf{E}_{2}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
-	=\frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty}  n_2^2(\textbf{r}+\textbf{d}) \textbf{E}_{1}(\textbf{r}+\textbf{d}) \cdot \textbf{E}_{1}^*(\textbf{r}) dxdy 
-	\nonumber	
-	\\	
-	&= \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{1}^*(\textbf{r}-\textbf{d}) dxdy 
-	= \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} n_2^2(\textbf{r}) \textbf{E}_{1}(\textbf{r}) \cdot \textbf{E}_{2}^*(\textbf{r}) dxdy 
-	\nonumber
-	\\	
-	&= C_{2\to1} \equiv C
-	\nonumber
-\end{align}
- por lo que las dos ecuaciones dinámicas se escriben como:
-\begin{equation}
-	i\frac{d a_1}{dz} + C a_2 = 0, \quad\quad i\frac{d a_2}{dz} + C a_1 = 0 \nonumber
-\end{equation}
-Es posible encontrar un Lagrangiano para la ecuación (\ref{eqn:CMT1}):
-
+Es posible plantear un principio de mínima acción si se propone el siguiente Lagrangiano para la ecuación (\ref{eqn:CMT1}):
 \begin{equation}
 	L = -\sum_{\mu, m'} \bar{a}_{\mu, m'}\left( i \frac{ d a_{\mu, m'}}{dz}   +
-\sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right)
+\sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right) \label{eqn:lagrangian}
 \end{equation}
-Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = -i\bar{a}_{\mu, m'}$ el Hamiltoniano del sistema se escribe como:
+Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = -i\bar{a}_{\mu, m'}$ el Hamiltoniano del sistema se escribe en función del Lagrangiano de la ecuación (\ref{eqn:lagrangian}) como:
 \begin{align}
 	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{a}}_{\mu, m'} - L = i\sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} \Pi_{\mu, m'} a_{\nu, m} = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} |a_{\nu, m}|^2 \label{eqn:hamiltoniano}
 \end{align}
@@ -604,8 +586,13 @@ Considerando el par de transformaciones asociadas al grupo unitario U(1), $a_{\m
 \begin{equation}
 	P = \sum_{\mu, m'} |a_{\mu, m'}|^2. \label{eqn:power}
 \end{equation}
+Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que son de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:CMT_mat}).
+\subsection{Teorema de Bloch}
 
-\section{Propiedades de la red: Relación de dispersión en el espacio recíproco}
+Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear el Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:CMT_mat}) con la matriz $\hat{C}$ hermítica es justificación suficiente para invocar el Teorema de Bloch: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $|a\rangle = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}|A\rangle$, con $|A\rangle$ un vector constante con la misma dimensionalidad que número de sitios en la celda unitaria de la red.
 
-Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear el Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:CMT_mat}) con la matriz $\hat{C}$ hermítica es justificación suficiente para invocar el Teorema de Bloch: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz del estilo $|a\rangle = e^{i(\beta z + \textbf{k}\cdot \textbf{r})}|A\rangle$, con $|A\rangle$ un vector constante con la misma dimensionalidad que número de sitios en la celda unitaria de la red.
+\subsection{Ejemplo: Red 1D multimodal}
 
+\begin{align*}
+	 \lambda = \beta_\mu + 2 C_\mu \cos(k a)
+\end{align*}
