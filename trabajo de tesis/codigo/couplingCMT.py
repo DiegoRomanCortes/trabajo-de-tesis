@@ -38,37 +38,8 @@ def E_field(x, n):
 plt.style.use(['science'])
 fig, ax = plt.subplots(dpi=300)
 
-scale = 0.0007
-x_to_plot = np.linspace(-40e-6, 50e-6, 10000)
-
-n_shape = np.zeros_like(x_to_plot)
-for idx, xi in enumerate(x_to_plot):
-    if np.abs(xi-d) < a or np.abs(xi+d) < a or np.abs(xi) < a or np.abs(xi-2*d) < a:
-        n_shape[idx] = n3
-    else:
-        n_shape[idx] = n0
-
-
-colors = ['#0C5DA5', '#00B945', '#FF9500', '#FF2C00', '#845B97', '#474747', '#9e9e9e']
-ax.plot((x_to_plot)*1e6, n_shape, color=colors[0])
-for n in range(1):
-    E1 = E_field(x_to_plot+d, n)
-    E2 = E_field(x_to_plot, n)
-    E3 = E_field(x_to_plot-d, n)
-    E4 = E_field(x_to_plot-2*d, n)
-
-    ax.plot((x_to_plot)*1e6, scale*E1+kz[n]/k0, color=colors[1])
-    ax.plot((x_to_plot)*1e6, scale*E2+kz[n]/k0, color=colors[2])
-    ax.plot((x_to_plot)*1e6, scale*E3+kz[n]/k0, color=colors[3])
-    ax.plot((x_to_plot)*1e6, scale*E4+kz[n]/k0, color=colors[4])
-    
-    # ax.plot(x_to_plot*1e6, kz[n]/k0*np.ones_like(x_to_plot), "--", color=colors[n])
-
-ax.set_xlabel(r'$x$ ($\mu$m)')
-ax.set_ylabel(r'$n_{\text{eff}}+E(x)$')
-ax.set_yticks([n0, n3])
-ax.set_yticklabels(["$n_0$", "$n_1$"])
-fig.savefig('../media/coupling.pdf', bbox_inches='tight')
+scale = 1
+x_to_plot = np.linspace(-30e-6, 50e-6, 10000)
 
 n_shape_0 = np.zeros_like(x_to_plot)
 n_shape_1 = np.zeros_like(x_to_plot)
@@ -76,42 +47,81 @@ n_shape_2 = np.zeros_like(x_to_plot)
 n_shape_3 = np.zeros_like(x_to_plot)
 n_shape_4 = np.zeros_like(x_to_plot)
 
+n1 = 1.0
+n2 = 1.2
 for idx, xi in enumerate(x_to_plot):
     if np.abs(xi+d) < a:
-        n_shape_1[idx] = n3
+        n_shape_1[idx] = n2
+    elif np.abs(xi+d) >= a and np.abs(xi+d) <  d/2:
+        n_shape_1[idx] = n1
     else:
-        n_shape_1[idx] = n0
+        n_shape_1[idx] = 0
     if np.abs(xi) < a:
-        n_shape_2[idx] = n3
+        n_shape_2[idx] = n2
+    elif np.abs(xi) >= a and np.abs(xi) <  d/2:
+        n_shape_2[idx] = n1
     else:
-        n_shape_2[idx] = n0
+        n_shape_2[idx] = 0
     if np.abs(xi-d) < a:
-        n_shape_3[idx] = n3
+        n_shape_3[idx] = n2
+    elif np.abs(xi-d) >= a and np.abs(xi-d) < d/2:
+        n_shape_3[idx] = n1
     else:
-        n_shape_3[idx] = n0
+        n_shape_3[idx] = 0
     if np.abs(xi-2*d) < a:
-        n_shape_4[idx] = n3
+        n_shape_4[idx] = n2
+    elif np.abs(xi-2*d) >= a and np.abs(xi-2*d) <  d/2:
+        n_shape_4[idx] = n1
     else:
-        n_shape_4[idx] = n0
+        n_shape_4[idx] = 0
+
+n_shape = n_shape_1 + n_shape_2 + n_shape_3 + n_shape_4
+n_shape[n_shape < n1] = n1
+
+n_shape2 = n_shape_1**2 + n_shape_2**2 + n_shape_3**2 + n_shape_4**2
+n_shape2[n_shape2 < n1**2] = n1**2
+colors = ['#0C5DA5', '#00B945', '#FF9500', '#FF2C00', '#845B97', '#474747', '#9e9e9e']
+ax.plot((x_to_plot)*1e6, (n_shape2 - n_shape_3**2), color=colors[0])
+for n in range(1):
+    E1 = E_field(x_to_plot+d, n)
+    E2 = E_field(x_to_plot, n)
+    E3 = E_field(x_to_plot-d, n)
+    E4 = E_field(x_to_plot-2*d, n)
+
+    ax.plot((x_to_plot)*1e6, scale*E1, color=colors[1])
+    # ax.plot((x_to_plot)*1e6, scale*E2, color=colors[2])
+    ax.plot((x_to_plot)*1e6, scale*E3, color=colors[3])
+    # ax.plot((x_to_plot)*1e6, scale*E4, color=colors[4])
+    
+    # ax.plot(x_to_plot*1e6, kz[n]/k0*np.ones_like(x_to_plot), "--", color=colors[n])
+    ax.plot((x_to_plot)*1e6,  E1*E3*300, color="black")
+
+ax.set_xlabel(r'$x$ ($\mu$m)')
+ax.set_ylabel(r'$n^2-n_m^2, E_{m\prime}, E_{m}$')
+ax.set_yticks([])
+# ax.set_yticklabels(["$n_0$", "$n_1$"])
+fig.savefig('../media/coupling.pdf', bbox_inches='tight')
+
+
 
 constant = epsilon_0 * c * k0**2 / 2 * 1e-2
 
-coupling11 = np.trapz(E1*E1*(n_shape - n_shape_1), x_to_plot) * constant
-coupling12 = np.trapz(E1*E2*(n_shape - n_shape_2), x_to_plot) * constant
-coupling13 = np.trapz(E1*E3*(n_shape - n_shape_3), x_to_plot)* constant
-coupling14 = np.trapz(E1*E4*(n_shape - n_shape_4), x_to_plot)* constant
+coupling11 = np.trapz(E1*E1*(n_shape2 - n_shape_1**2), x_to_plot) * constant
+coupling12 = np.trapz(E1*E2*(n_shape2 - n_shape_2**2), x_to_plot) * constant
+coupling13 = np.trapz(E1*E3*(n_shape2 - n_shape_3**2), x_to_plot)* constant
+coupling14 = np.trapz(E1*E4*(n_shape2 - n_shape_4**2), x_to_plot)* constant
 
-coupling21 = np.trapz(E1*E2*(n_shape - n_shape_1), x_to_plot)* constant
-coupling23 = np.trapz(E2*E3*(n_shape - n_shape_3), x_to_plot)* constant
-coupling24 = np.trapz(E2*E4*(n_shape - n_shape_4), x_to_plot)* constant
+coupling21 = np.trapz(E1*E2*(n_shape2 - n_shape_1**2), x_to_plot)* constant
+coupling23 = np.trapz(E2*E3*(n_shape2 - n_shape_3**2), x_to_plot)* constant
+coupling24 = np.trapz(E2*E4*(n_shape2 - n_shape_4**2), x_to_plot)* constant
 
-coupling31 = np.trapz(E1*E3*(n_shape - n_shape_1), x_to_plot)* constant
-coupling32 = np.trapz(E2*E3*(n_shape - n_shape_2), x_to_plot)* constant
-coupling34 = np.trapz(E3*E4*(n_shape - n_shape_4), x_to_plot)* constant
+coupling31 = np.trapz(E1*E3*(n_shape2 - n_shape_1**2), x_to_plot)* constant
+coupling32 = np.trapz(E2*E3*(n_shape2 - n_shape_2**2), x_to_plot)* constant
+coupling34 = np.trapz(E3*E4*(n_shape2 - n_shape_4**2), x_to_plot)* constant
 
-coupling41 = np.trapz(E1*E4*(n_shape - n_shape_1), x_to_plot)* constant
-coupling42 = np.trapz(E2*E4*(n_shape - n_shape_2), x_to_plot)* constant
-coupling43 = np.trapz(E3*E4*(n_shape - n_shape_3), x_to_plot)* constant
+coupling41 = np.trapz(E1*E4*(n_shape2 - n_shape_1**2), x_to_plot)* constant
+coupling42 = np.trapz(E2*E4*(n_shape2 - n_shape_2**2), x_to_plot)* constant
+coupling43 = np.trapz(E3*E4*(n_shape2 - n_shape_3**2), x_to_plot)* constant
 
 print(coupling12, coupling13, coupling14)
 print(coupling21, coupling23, coupling24)
