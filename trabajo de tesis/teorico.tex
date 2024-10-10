@@ -548,11 +548,8 @@ donde se han definido y usado
 Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{\mu, \nu, m', m}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente: el efecto de primeros vecinos es 2 órdenes de magnitud mayor que el de segundos vecinos (ver Figura \ref{fig:couplingCMT}), por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis), aunque existen formas de tomar en cuenta estos efectos de no ortogonalidad \citep{schulz_geometric_2022}. Cuando $m=m'$, el acoplamiento $C_{\mu, \nu, m', m}$ es nulo por definición. Notemos que $C_{\mu, \nu, m', m} \neq C_{\nu, \mu, m, m'}$ en general:
 
 \begin{align*}
-	C_{\mu, \nu, m', m} &= \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m'} + n^2_{m'} - n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^* dxdy = C_{\nu, \mu, m, m'} + D_{\nu, \mu, m, m'}
+	C_{\mu, \nu, m', m} &=  C_{\nu, \mu, m, m'} + \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
 \end{align*}
-\begin{equation*}
- D_{\nu, \mu, m, m'} = -D_{\mu, \nu, m', m} = \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
-\end{equation*}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{media/coupling.pdf}
@@ -570,26 +567,26 @@ o, libre de la elección particular de enumeración de índices ($\mu, m'$) y re
 con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$. Esto permite definir el operador de evolución espacial $U(z) = e^{i\hat{C}z}$ tal que $|a(z)\rangle=U(z-z_0)|a(z_0)\rangle$ que será de utilidad en los métodos numéricos de resolución de la ecuación (\ref{eqn:CMT_mat}).
 
 
-Es posible plantear un principio de mínima acción si se propone el siguiente Lagrangiano para la ecuación (\ref{eqn:CMT1}):
+Es posible plantear un principio de mínima acción si se propone el siguiente Lagrangiano tipo Schrödinger para la ecuación (\ref{eqn:CMT1}):
 \begin{equation}
-	L = -\sum_{\mu, m'} \bar{a}_{\mu, m'}\left( i \frac{ d a_{\mu, m'}}{dz}   +
-\sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right) \label{eqn:lagrangian}
+	L = -\sum_{\mu, m'} a_{\mu, m'}^*\left( i \frac{ d a_{\mu, m'}}{dz}   +
+\sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right) = -\langle a|\left(i\frac{d}{d z} +\hat{C}\right)| a \rangle \label{eqn:lagrangian}
 \end{equation}
-Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = -i\bar{a}_{\mu, m'}$ el Hamiltoniano del sistema se escribe en función del Lagrangiano de la ecuación (\ref{eqn:lagrangian}) como:
+Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = -ia_{\mu, m'}^*$ el Hamiltoniano del sistema se escribe en función del Lagrangiano de la ecuación (\ref{eqn:lagrangian}) como:
 \begin{align}
-	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{a}}_{\mu, m'} - L = i\sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} \Pi_{\mu, m'} a_{\nu, m} = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} |a_{\nu, m}|^2 \label{eqn:hamiltoniano}
+	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{a}}_{\mu, m'} - L = i\sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} \Pi_{\mu, m'} a_{\nu, m} = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} |a_{\nu, m}|^2 = \langle a|\hat{C}| a \rangle  \label{eqn:hamiltoniano}
 \end{align}
 Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 \begin{align*}
-	\delta L &= \sum_{\mu, m'} \frac{\partial L}{\partial a_{\mu, m'}} \delta a_{\mu, m'} +  \frac{\partial L}{\partial \bar{a}_{\mu, m'}} \delta \bar{a}_{\mu, m'} + \ \frac{\partial L}{\partial \dot{a}_{\mu, m'}} \delta \dot{a}_{\mu, m'} + \frac{\partial L}{\partial \dot{\bar{a}}_{\mu, m'}} \delta \dot{\bar{a}}_{\mu, m'}
+	\delta L &= \sum_{\mu, m'} \frac{\partial L}{\partial a_{\mu, m'}} \delta a_{\mu, m'} +  \frac{\partial L}{\partial {a}_{\mu, m'}^*} \delta {a}_{\mu, m'}^* + \ \frac{\partial L}{\partial \dot{a}_{\mu, m'}} \delta \dot{a}_{\mu, m'} + \frac{\partial L}{\partial \dot{{a}}_{\mu, m'}^*} \delta \dot{{a}}_{\mu, m'}^*
 	\\
-	&= \sum_{\mu, m'} \left( \frac{\partial L}{\partial a_{\mu, m'}} - \frac{d}{dz}\frac{\partial L}{\partial \dot{a}_{\mu, m'}} \right)\delta a_{\mu, m'} + \left( \frac{\partial L}{\partial\bar{a}_{\mu, m'}} - \frac{d}{dz}\frac{\partial L}{\partial  \dot{\bar{a}}_{\mu, m'}} \right)\delta \bar{a}_{\mu, m'} + \frac{d}{dz}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{a}}^*_{\mu, m'}}\delta \bar{a}_{\mu, m'}\right)
+	&= \sum_{\mu, m'} \left( \frac{\partial L}{\partial a_{\mu, m'}} - \frac{d}{dz}\frac{\partial L}{\partial \dot{a}_{\mu, m'}} \right)\delta a_{\mu, m'} + \left( \frac{\partial L}{\partial {a}_{\mu, m'}^*} - \frac{d}{dz}\frac{\partial L}{\partial  \dot{{a}}_{\mu, m'}^*} \right)\delta {a}_{\mu, m'}^* + \frac{d}{dz}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{{a}}^*_{\mu, m'}}\delta {a}_{\mu, m'}^*\right)
 	\\	
-	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{\bar{a}}_{\mu, m'}}\delta \bar{a}_{\mu, m'}\right) = 0.
+	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{{a}}_{\mu, m'}^*}\delta {a}_{\mu, m'}^*\right) = 0.
 \end{align*}
-Considerando el par de transformaciones asociadas al grupo unitario U(1), $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, $\bar{a}_{\mu, m'}\to \bar{a'}_{\mu, m'} = e^{-i\phi}\bar{a}_{\mu, m'}$ que dejan invariante el Lagrangiano, y considerando $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta \bar{a}_{\mu, m'} = -i\phi \bar{a}_{\mu, m'}$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
+Considerando el par de transformaciones asociadas al grupo unitario U(1), $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, ${a}_{\mu, m'}^* \to {a'}_{\mu, m'}^* = e^{-i\phi}{a}_{\mu, m'}^*$ que dejan invariante el Lagrangiano, y tomando $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta {a}_{\mu, m'}^* = -i\phi {a}_{\mu, m'}^*$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
 \begin{equation}
-	P = \sum_{\mu, m'} |a_{\mu, m'}|^2. \label{eqn:power}
+	P = \sum_{\mu, m'} |a_{\mu, m'}|^2 = \langle a|a\rangle. \label{eqn:power}
 \end{equation}
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que son de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:CMT_mat}).
 \subsection{Teorema de Bloch}
