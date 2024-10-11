@@ -476,17 +476,16 @@ En particular, el modo $\text{HE}_{11}$ siempre existe.
 	\centering	\includegraphics[width=0.6\linewidth]{media/fibergraphicalHE_EH.pdf}
 \end{figure}
 
-El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego:
-
-\textcolor{red}{NO SÉ SI INCLUIR LA DERIVACIÓN DE LA CONDICIÓN DE CUTOFF}
+El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego y no será relevante para esta tesis. Sin embargo, se incluyen en la Figura \ref{fig:vortices} por completitud.
 
 \begin{figure}[H]
-	\includegraphics[width=0.5\linewidth, trim={0 0 3.5cm 0},clip]{media/fiberHE11.pdf}
-	\includegraphics[width=0.33\linewidth, trim={1.2cm 0 3.9cm 0},clip]{media/fiberTE1.pdf}
-	\includegraphics[width=0.33\linewidth, trim={1.2cm 0 3.9cm 0},clip]{media/fiberTM1.pdf}
-		\includegraphics[width=0.33\linewidth, trim={1.2cm 0 3.9cm 0},clip]{media/fiberHE21.pdf}
-		\includegraphics[width=0.33\linewidth, trim={1.2cm 0 3.9cm 0},clip]{media/fiberHE31.pdf}
-		
+	\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberHE11.pdf}
+	\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberTE1.pdf}
+	\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberTM1.pdf}
+		\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberHE21.pdf}
+		\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberHE12.pdf}
+	\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberHE31.pdf}
+		\caption{Vórtices. \label{fig:vortices}}
 \end{figure}
 
 \section{Modos normales en guías de onda}
@@ -546,7 +545,6 @@ donde se han definido y usado
 \end{align*}
 
 Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{\mu, \nu, m', m}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente: el efecto de primeros vecinos es 2 órdenes de magnitud mayor que el de segundos vecinos (ver Figura \ref{fig:couplingCMT}), por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis), aunque existen formas de tomar en cuenta estos efectos de no ortogonalidad \citep{schulz_geometric_2022}. Cuando $m=m'$, el acoplamiento $C_{\mu, \nu, m', m}$ es nulo por definición. Notemos que $C_{\mu, \nu, m', m} \neq C_{\nu, \mu, m, m'}$ en general:
-
 \begin{align*}
 	C_{\mu, \nu, m', m} &=  C_{\nu, \mu, m, m'} + \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
 \end{align*}

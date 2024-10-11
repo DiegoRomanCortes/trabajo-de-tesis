@@ -19,13 +19,13 @@ V = k0*a*np.sqrt(n1**2-n0**2)
 
 ell = 1
 
-alpha =   4.60798715/a #TE1 = 3.437777 TM1 = 3.453521 HE11 = 2.166564 HE21 = 3.447657 EH11 = 4.60798715 HE12 = 4.947020 H31 = 4.613618
+alpha =   4.607987148/a #TE1 = 3.437777 TM1 = 3.453521 HE11 = 2.166564 HE21 = 3.447657 EH11 = 4.60798715 HE12 = 4.947020 H31 = 4.613618
 beta = np.sqrt(V**2 - (alpha*a)**2)/a
 kz = np.sqrt(k0**2*n1**2-alpha**2)
 
 
-x = np.linspace(-2*a, 2*a, 400)
-y = np.linspace(-2*a, 2*a, 400)
+x = np.linspace(-2*a, 2*a, 200)
+y = np.linspace(-2*a, 2*a, 200)
 z = 0
 
 X,Y = np.meshgrid(x, y)
@@ -135,6 +135,6 @@ axs[1, 1].set_xlabel(r'$x$ ($\mu$m)')
 axs[1, 1].set_aspect('equal')
 
 # ax.imshow(np.abs(E_rho)**2, extent=[x[0]*1e6, x[-1]*1e6, y[0]*1e6, y[-1]*1e6], cmap='hot', origin='lower')
-fig.show()
-fig.savefig('../media/fiberEH11.pdf')
-# plt.close("all")
+# fig.show()
+# fig.savefig('../media/fiberEH11.pdf')
+plt.close("all")
