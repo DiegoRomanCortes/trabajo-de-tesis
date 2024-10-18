@@ -1,29 +1,32 @@
 \chapter{Marco teórico}
 
+Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda escritas dentro de una muestra de vidrio borosilicato.  
+Es por ello que se supone un medio lineal no magnético sin fuentes de carga ni de corriente libres. 
+
 \section{Desde las ecuaciones de Maxwell a propagación de la luz en guías de onda dieléctricas}
 
-Esta tesis estudia el comportamiento de luz láser de baja potencia (1 mW de potencia de salida) propagada en guías de onda dieléctricas escritas dentro de una muestra de borosilicato. Es por ello que se supone un medio lineal no magnético sin fuentes de carga y de corriente libres. Las ecuaciones de Maxwell (SI) en este régimen son:
+Las ecuaciones de Maxwell (SI) en este régimen son:
 \begin{align}
-	\nabla\cdot\textbf{D} &= 0, \label{eqn:gauss}
+	\nabla\cdot\left[\varepsilon(\textbf{r})\textbf{E}\right] &= 0, \label{eqn:gauss}
 	\\	
-	\nabla\times\textbf{E} &= -\frac{\partial \textbf{B}}{\partial t}, \label{eqn:faraday-lenz}
+	\nabla\times\textbf{E} &= -\mu_0 \frac{\partial \textbf{H}}{\partial t}, \label{eqn:faraday-lenz}
 	\\	
-	\nabla\cdot\textbf{B} &= 0, \label{eqn:div0}
+	\nabla\cdot\textbf{H} &= 0, \label{eqn:div0}
 	\\	
-	\nabla\times\textbf{H} &= \frac{\partial \textbf{D}}{\partial t}, \label{eqn:ampere-maxwell}
+	\nabla\times\textbf{H} &=\varepsilon(\textbf{r}) \frac{\partial \textbf{E}}{\partial t}, \label{eqn:ampere-maxwell}
 \end{align}
-donde \textbf{E}, \textbf{B}, $\textbf{D}=\varepsilon(\textbf{r})\textbf{E}$ y $\textbf{H}=\textbf{B}/\mu_0$ son los campos eléctrico, campo de densidad de flujo magnético, campo desplazamiento eléctrico y campo magnético, respectivamente. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.47$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
+donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.47$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
 
-Aplicando rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}), usando la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y asumiendo una solución temporal harmónica proporcional a $e^{-i\omega t}$ se tiene:
-
+Aplicando rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}), usando la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y asumiendo una solución temporal armónica proporcional a $e^{-i\omega t}$ se tiene:
 \begin{align}
-	\nabla\times\nabla\times\textbf{E} &= -\frac{\partial}{\partial t}(\nabla\times\textbf{B}) = -\frac{\partial}{\partial t}\left(\mu_0\frac{\partial \textbf{D}}{\partial t}\right) = -\frac{n^2}{c^2}\frac{\partial^2 \textbf{E}}{\partial t^2} = n^2k_0^2 \textbf{E}, \label{eqn:rotordoble}
+	\nabla\times\nabla\times\textbf{E} &= -\mu_0 \frac{\partial}{\partial t}(\nabla\times\textbf{H}) =  -\frac{n^2}{c^2}\frac{\partial^2 \textbf{E}}{\partial t^2} = n^2k_0^2 \textbf{E}, \label{eqn:rotordoble}
 \end{align}
-donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Notemos que, por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$, y usando la ley de Gauss (\ref{eqn:gauss}) se deduce que $\nabla\cdot \textbf{E} = -\frac{\nabla n^2}{n^2}\cdot\textbf{E}$. Con esto, se obtiene la ecuación 
+donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Notemos que, por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$ y usando la ley de Gauss (\ref{eqn:gauss}) se deduce que $\nabla\cdot \textbf{E} = -\frac{\nabla n^2}{n^2}\cdot\textbf{E}$. Con esto, se obtiene la ecuación 
 \begin{equation}
 	\left(\nabla^2  + k_0^2n^2\right)\textbf{E} = -\nabla\left( \frac{\nabla n^2}{n^2} \cdot \textbf{E}  \right). \label{eqn:helmholz}
 \end{equation}
-Análogamente para \textbf{H}, es posible aplicar rotor a la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y usar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en conjunto con la divergencia nula de \textbf{B} (\ref{eqn:div0}) y por consiguiente de \textbf{H}:
+
+Análogamente, es posible aplicar rotor a la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y usar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en conjunto con la divergencia nula del campo magnético \textbf{H} (\ref{eqn:div0}):
 \begin{align}
 	\nabla\times\nabla\times \textbf{H} &= -i \omega \nabla\times\left(\epsilon_0 n^2 \textbf{E}\right) = -i\omega \epsilon_0  \left(n^2 \nabla\times \textbf{E} + \nabla n^2 \times \textbf{E}\right),
 	\nonumber
@@ -33,13 +36,14 @@ Análogamente para \textbf{H}, es posible aplicar rotor a la ecuación de Ampèr
 	  k_0^2 n^2\textbf{H} - i\omega \epsilon_0 \nabla n^2 \times \textbf{E} .
 	 	\nonumber
 \end{align}
-La ecuación (\ref{eqn:helmholz}) análoga para \textbf{H} es, por consiguiente:
+
+La ecuación análoga a (\ref{eqn:helmholz}) para \textbf{H} es, por consiguiente:
 \begin{align}
 	 \left(\nabla^2  + k_0^2 n^2 \right) \textbf{H} &= i\omega \epsilon_0 \nabla n^2 \times \textbf{E}.
 	 \label{eqn:helmholzH}
 \end{align}
 
-Será útil separar las componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{ik_z z}$ en $z$. Separando $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $, las ecuaciones de Maxwell que involucran rotores se escriben como
+Será útil separar los componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{ik_z z}$ en la variable espacial $z$. Si se considera las descomposiciones $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $, las ecuaciones de Maxwell que involucran rotores se escriben como
 \begin{align}
 	\nabla_\perp \times  \textbf{E}_\perp + \frac{\partial}{\partial z} (\hat{\textbf{z}} \times \textbf{E}_\perp) + \nabla_\perp \times (\hat{\textbf{z}} E_z) &= i\omega\mu_0(\textbf{H}_\perp +\hat{\textbf{z}} H_z),
 	\label{eqn:Efield}
@@ -48,27 +52,37 @@ Será útil separar las componentes longitudinales y transversales de los campos
 	\label{eqn:Hfield}
 \end{align}
 
-Tomando producto cruz en la dirección $\hat{\textbf{z}}$ a las ecuaciones (\ref{eqn:Efield}) y (\ref{eqn:Hfield}) y considerando dependencia en $z$ del tipo $e^{ik_z z}$, se puede expresar $E_z$ y $H_z$ en función de $\textbf{E}_\perp$ y $\textbf{H}_\perp$ para luego invertir las relaciones: 
-\begin{equation}
+Luego de aplicar producto punto y producto cruz en la dirección $\hat{\textbf{z}}$ a las ecuaciones (\ref{eqn:Efield}) y (\ref{eqn:Hfield}), se puede expresar $E_z$ y $H_z$ en función de $\textbf{E}_\perp$ y $\textbf{H}_\perp$:
+\begin{equation*}
 \begin{aligned}[c]
 	 i\nabla_\perp E_z &= k_z\textbf{E}_\perp +\omega \mu_0 \hat{\textbf{z}} \times \textbf{H}_\perp  ,
 	 	  	 \\
 	 	  	i\hat{\textbf{z}} \times \nabla_\perp H_z &= k_z \hat{\textbf{z}} \times\textbf{H}_\perp + \omega\epsilon_0 n^2 \textbf{E}_\perp,
-	 \\
-	  \hat{\textbf{z}} \times \textbf{H}_\perp &= i\frac{(\omega\epsilon_0 n^2 \nabla_\perp E_z  - \hat{\textbf{z}} \times \nabla_\perp H_z k_z)}{k_0^2 n^2 - k_z^2},
-	  \\
-	  	 \textbf{H}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}\left[k_z\nabla_\perp H_z + \omega \epsilon_0 n^2\hat{\textbf{z}} \times \nabla_\perp E_z\right],
 \end{aligned} 
+\quad
 \begin{aligned}[c]
 	i \nabla_\perp H_z &= k_z \textbf{H}_\perp - \omega \epsilon_0 n^2  \hat{\textbf{z}} \times \textbf{E}_\perp ,
 	\\
-	i\hat{\textbf{z}} \times\nabla_\perp E_z &= k_z  \hat{\textbf{z}} \times \textbf{E}_\perp - \omega \mu_0 \textbf{H}_\perp,
-	\\
+	i\hat{\textbf{z}} \times\nabla_\perp E_z &= k_z  \hat{\textbf{z}} \times \textbf{E}_\perp - \omega \mu_0 \textbf{H}_\perp.
+\end{aligned}
+\end{equation*}
+
+Finalmente, los componentes perpendiculares de los campos, $\textbf{H}_\perp$ y $\textbf{E}_\perp$ se pueden despejar en términos de los componentes longitudinales $H_z$ y $E_z$:
+
+\begin{equation}
+\begin{aligned}[c]
+ \hat{\textbf{z}} \times \textbf{H}_\perp &= i\frac{(\omega\epsilon_0 n^2 \nabla_\perp E_z  - \hat{\textbf{z}} \times \nabla_\perp H_z k_z)}{k_0^2 n^2 - k_z^2},
+ \\
+\textbf{H}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}\left[k_z\nabla_\perp H_z + \omega \epsilon_0 n^2\hat{\textbf{z}} \times \nabla_\perp E_z\right],
+\end{aligned}
+\begin{aligned}[c]
 	\hat{\textbf{z}} \times \textbf{E}_\perp &= -i\frac{(k_z\hat{\textbf{z}} \times \nabla_\perp E_z + \omega\mu_0 \nabla_\perp H_z)  }{k_0^2 n^2 - k_z^2},
 	\\
-	\textbf{E}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}\left[k_z \nabla_\perp E_z - \omega\mu_0 \hat{\textbf{z}} \times \nabla_\perp H_z\right]. \label{eqn:transversal}
+\textbf{E}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}\left[k_z \nabla_\perp E_z - \omega\mu_0 \hat{\textbf{z}} \times \nabla_\perp H_z\right]. \label{eqn:transversal}
 \end{aligned}
 \end{equation}
+
+Las ecuaciones (\ref{eqn:helmholz}), (\ref{eqn:helmholzH}) y (\ref{eqn:transversal}) serán las herramientas análiticas para los dos casos de estudio de las siguientes secciones.
 \section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
 
 El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuya forma analítica para el constraste $n(x)$ es la siguiente, con $n_1 > n_0$:
@@ -216,7 +230,7 @@ Asumiendo $\alpha$, $\beta$ y $k_z$ conocidos, las amplitudes deben cumplir las 
 \end{aligned} 
 \end{equation*}
 Las ecuaciones superiores imponen que $E_1 = 0$ cuando se satisface la condición de modos TE. Análogamente, las ecuaciones inferiores imponen $H_1 = 0$ en el caso de modos TM. Efectivamente, los nombres TE y TM se han puesto por transversal eléctrico y transversal magnético, respectivamente.
-Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente: un condición inicial arbitraria será una combinación lineal de modos TE y TM.
+Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente: un condición inicial arbitraria se propagará como una combinación lineal de los modos TE y TM que soporte la guía.
 
 \subsection{Soluciones gráficas y comparación entre modos TE y TM}
 
@@ -252,7 +266,8 @@ En la sección anterior se estudió el sistema más sencillo en el que se puede 
 	\end{matrix}\right.
 	,\nonumber
 \end{equation}
-donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. Al considerar las componentes longitudinales $\Psi$ = $\{E_z, H_z\}$ del campo eléctrico y magnético, respectivamente, usando separación de variables $\Psi =  R(\rho)\Phi(\phi) e^{ik_z z} $ las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) toman la forma:
+donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. 
+Al considerar las componentes longitudinales $\Psi$ = $\{E_z, H_z\}$ del campo eléctrico y magnético y  si se utiliza el método de separación de variables con $\Psi =  R(\rho)\Phi(\phi) e^{ik_z z} $,  las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) toman la forma:
 
 \begin{align}
 	\left[\frac{\partial^2}{\partial \rho^2} + \frac{\partial}{\rho\partial \rho} + \frac{\partial^2}{\rho^2\partial \phi^2} +\left( k_0^2n^2 - k_z^2 \right)\right]  R(\rho)\Phi(\phi) = 0
@@ -394,7 +409,7 @@ Buscando soluciones no triviales:
 \end{align*}
 Finalmente, la ecuación trascendental que satifacen $\alpha$, $\beta$ y $k_z$ es:
 \begin{equation}
-	\left( \frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right)\left( n_1^2\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right) = \ell^2 \left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \left( \frac{k_z}{k_0} \right)^2 \label{eqn:fiber_trascendental}
+	\left( \frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right)\left( n_1^2\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right) = \ell^2 \left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \left( \frac{k_z}{k_0} \right)^2 . \label{eqn:fiber_trascendental}
 \end{equation}
 
 Dado que, en principio, los valores de $k_z$ ya están determinados por la ecuación anterior, es posible obtener dos relaciones entre $H_0^1$ y $E_0^1$:
@@ -406,7 +421,7 @@ Dado que, en principio, los valores de $k_z$ ya están determinados por la ecuac
 Tomando raíz cuadrada al cociente de las ecuaciones (\ref{eqn:fiber_polarization_E}) y (\ref{eqn:fiber_polarization_H}) se tiene:
 
 \begin{equation}
-	\frac{E_0^1}{H_0^1} = i \sqrt{\frac{\mu_0}{\epsilon_0}} \frac{\sqrt{ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}{\sqrt{n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}
+	\frac{E_0^1}{H_0^1} = i \sqrt{\frac{\mu_0}{\epsilon_0}} \frac{\sqrt{ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}{\sqrt{n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}.
 	\label{eqn:fiber_polarization_simplified}
 \end{equation}
 
@@ -522,7 +537,7 @@ donde se ha usado la aproximación de guiaje débil para anular el lado de derec
 	&= \sum_{\nu, m} \left[a_{\nu, m} e^{i\beta_{\nu, m} z} \left(\nabla_\perp^2 +k_0^2n^2 \right)\textbf{E}_{\nu, m} + \textbf{E}_{\nu, m}\frac{d^2}{d z^2}\left(a_{\nu, m} e^{i\beta_{\nu, m} z}\right)\right]
 	\nonumber	
 	\\
-	&= \sum_{\nu, m} \left[a_{\nu, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{\nu,m}^2 \right) + \frac{d^2 a_{\nu, m}}{d z^2}  +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
+	&\approx \sum_{\nu, m} \left[a_{\nu, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{\nu,m}^2 \right) + \frac{d^2 a_{\nu, m}}{d z^2}  +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
 		\nonumber	
 	\\
 	&\approx \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
@@ -533,10 +548,10 @@ donde se ha usado la aproximación de guiaje débil para anular el lado de derec
 \end{align}
 donde se ha usado la aproximación paraxial $\left|\frac{d^2 a_{\nu, m}}{d z^2}\right|\ll 2\beta_{\nu,m}\left|\frac{d a_{\nu, m}}{d z}\right|  $. Aplicando producto punto con $\textbf{E}_{\mu, m'}^*$ e integrando en todo el plano $xy$:
 \begin{align}
-	  \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &= 0
+	  \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &= 0,
 	  \nonumber
 	  \\
-	  \sum_{\nu, m} \left(i\frac{2k_0}{\epsilon_0 c}\frac{d a_{\nu, m}}{d z} \delta_{\nu,\mu}\delta_{m,m'} +  \frac{2k_0}{\epsilon_0 c}C_{\mu, \nu, m', m}   a_{\nu, m} \right)e^{i\beta_{\nu, m} z} &= 0
+	  \sum_{\nu, m} \left(i\frac{2k_0}{\epsilon_0 c}\frac{d a_{\nu, m}}{d z} \delta_{\nu,\mu}\delta_{m,m'} +  \frac{2k_0}{\epsilon_0 c}C_{\mu, \nu, m', m}   a_{\nu, m} \right)e^{i\beta_{\nu, m} z} &= 0,
 	  \nonumber
 	  \\
 	  	  i\frac{d a_{\mu, m'}}{d z} e^{i\beta_{\mu, m'} z} +  \sum_{\nu, m\neq m'}C_{\mu, \nu, m', m}   a_{\nu, m} e^{i\beta_{\nu, m} z} &= 0,
@@ -547,11 +562,11 @@ donde se han definido y usado
 	   C_{\mu, \nu, m', m} &\equiv \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy , \quad\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy \approx \frac{k_0}{\epsilon_0 c \beta_{\nu, m}} \delta_{\nu,\mu}\delta_{m,m'}.
 \end{align*}
 
-Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{\mu, \nu, m', m}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente: el efecto de primeros vecinos es 2 órdenes de magnitud mayor que el de segundos vecinos (ver Figura \ref{fig:couplingCMT}), por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis), aunque existen formas de tomar en cuenta estos efectos de no ortogonalidad \citep{schulz_geometric_2022}. Cuando $m=m'$, el acoplamiento $C_{\mu, \nu, m', m}$ es nulo por definición. Notemos que $C_{\mu, \nu, m', m} \neq C_{\nu, \mu, m, m'}$ en general:
+Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{\mu, \nu, m', m}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente: el efecto de primeros vecinos es 2 órdenes de magnitud mayor que el de segundos vecinos (ver Figura \ref{fig:couplingCMT}), por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis), aunque existen maneras de tomar en cuenta estos efectos de no ortogonalidad \citep{schulz_geometric_2022}. Cuando $m=m'$, el acoplamiento $C_{\mu, \nu, m', m}$ es aproximadamente nulo. Notemos que $C_{\mu, \nu, m', m} \neq C_{\nu, \mu, m, m'}$ en general:
 \begin{align*}
-	C_{\mu, \nu, m', m} &=  C_{\nu, \mu, m, m'} + \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy
+	C_{\mu, \nu, m', m} &=  C_{\nu, \mu, m, m'} + \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy.
 \end{align*}
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{media/coupling.pdf}
 	\caption{Esquema del acoplamiento entre modos guiados. \label{fig:couplingCMT}}
@@ -565,18 +580,20 @@ o, libre de la elección particular de enumeración de índices ($\mu, m'$) y re
 \begin{equation}
 	-i\frac{d }{d z} |a\rangle  = \hat{C} |a\rangle, \label{eqn:CMT_mat}
 \end{equation}
-con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$. Esto permite definir el operador de evolución espacial $U(z) = e^{i\hat{C}z}$ tal que $|a(z)\rangle=U(z-z_0)|a(z_0)\rangle$ que será de utilidad en los métodos numéricos de resolución de la ecuación (\ref{eqn:CMT_mat}).
+con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$. Esto permite definir el operador de evolución espacial $U(z) = e^{i\hat{C}z}$ tal que $|a(z)\rangle=U(z-z_0)|a(z_0)\rangle$, lo que será de utilidad en los métodos numéricos de resolución de la ecuación (\ref{eqn:CMT_mat}).
 
 
 Es posible plantear un principio de mínima acción si se propone el siguiente Lagrangiano tipo Schrödinger para la ecuación (\ref{eqn:CMT1}):
 \begin{equation}
 	L = -\sum_{\mu, m'} a_{\mu, m'}^*\left( i \frac{ d a_{\mu, m'}}{dz}   +
-\sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right) = -\langle a|\left(i\frac{d}{d z} +\hat{C}\right)| a \rangle \label{eqn:lagrangian}
+\sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right) = -\langle a|\left(i\frac{d}{d z} +\hat{C}\right)| a \rangle . \label{eqn:lagrangian}
 \end{equation}
+
 Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = -ia_{\mu, m'}^*$ el Hamiltoniano del sistema se escribe en función del Lagrangiano de la ecuación (\ref{eqn:lagrangian}) como:
 \begin{align}
 	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{a}}_{\mu, m'} - L = i\sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} \Pi_{\mu, m'} a_{\nu, m} = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} |a_{\nu, m}|^2 = \langle a|\hat{C}| a \rangle  \label{eqn:hamiltoniano}
 \end{align}
+
 Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 \begin{align*}
 	\delta L &= \sum_{\mu, m'} \frac{\partial L}{\partial a_{\mu, m'}} \delta a_{\mu, m'} +  \frac{\partial L}{\partial {a}_{\mu, m'}^*} \delta {a}_{\mu, m'}^* + \ \frac{\partial L}{\partial \dot{a}_{\mu, m'}} \delta \dot{a}_{\mu, m'} + \frac{\partial L}{\partial \dot{{a}}_{\mu, m'}^*} \delta \dot{{a}}_{\mu, m'}^*
@@ -585,11 +602,13 @@ Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
 	\\	
 	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{{a}}_{\mu, m'}^*}\delta {a}_{\mu, m'}^*\right) = 0.
 \end{align*}
+
 Considerando el par de transformaciones asociadas al grupo unitario U(1), $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, ${a}_{\mu, m'}^* \to {a'}_{\mu, m'}^* = e^{-i\phi}{a}_{\mu, m'}^*$ que dejan invariante el Lagrangiano, y tomando $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta {a}_{\mu, m'}^* = -i\phi {a}_{\mu, m'}^*$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
 \begin{equation}
 	P = \sum_{\mu, m'} |a_{\mu, m'}|^2 = \langle a|a\rangle. \label{eqn:power}
 \end{equation}
-Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que son de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:CMT_mat}).
+
+Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:CMT_mat}).
 \subsection{Teorema de Bloch}
 
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear el Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:CMT_mat}) con la matriz $\hat{C}$ hermítica es justificación suficiente para invocar el Teorema de Bloch: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $|a\rangle = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}|A\rangle$, con $|A\rangle$ un vector constante con la misma dimensionalidad que número de sitios en la celda unitaria de la red.
