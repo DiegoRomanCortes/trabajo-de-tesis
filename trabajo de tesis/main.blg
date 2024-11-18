@@ -5,9 +5,8 @@ A level-1 auxiliary file: intro.aux
 A level-1 auxiliary file: teorico.aux
 A level-1 auxiliary file: numericos.aux
 A level-1 auxiliary file: metodos.aux
-A level-1 auxiliary file: moleculas.aux
-A level-1 auxiliary file: sp.aux
 A level-1 auxiliary file: magico.aux
+A level-1 auxiliary file: moleculas.aux
 A level-1 auxiliary file: oam.aux
 A level-1 auxiliary file: conclu.aux
 The style file: unsrtnat.bst
@@ -15,45 +14,45 @@ Database file #1: citations.bib
 Warning--empty year in nobel
 Warning--empty year in fibra2
 Warning--empty year in fibra
-You've used 51 entries,
+You've used 50 entries,
             2481 wiz_defined-function locations,
-            986 strings with 17922 characters,
-and the built_in function-call counts, 23039 in all, are:
-= -- 1909
-> -- 1466
-< -- 8
-+ -- 547
-- -- 444
-* -- 2209
-:= -- 3890
-add.period$ -- 256
-call.type$ -- 51
-change.case$ -- 101
-chr.to.int$ -- 50
-cite$ -- 57
-duplicate$ -- 949
-empty$ -- 1863
-format.name$ -- 498
-if$ -- 4757
+            979 strings with 17698 characters,
+and the built_in function-call counts, 22689 in all, are:
+= -- 1875
+> -- 1459
+< -- 7
++ -- 543
+- -- 442
+* -- 2186
+:= -- 3835
+add.period$ -- 252
+call.type$ -- 50
+change.case$ -- 99
+chr.to.int$ -- 49
+cite$ -- 56
+duplicate$ -- 930
+empty$ -- 1826
+format.name$ -- 495
+if$ -- 4680
 int.to.chr$ -- 2
-int.to.str$ -- 52
-missing$ -- 49
-newline$ -- 366
-num.names$ -- 144
-pop$ -- 280
+int.to.str$ -- 51
+missing$ -- 48
+newline$ -- 360
+num.names$ -- 141
+pop$ -- 274
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 50
 quote$ -- 0
-skip$ -- 497
+skip$ -- 486
 stack$ -- 0
-substring$ -- 1034
-swap$ -- 134
+substring$ -- 1011
+swap$ -- 132
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 351
+type$ -- 344
 warning$ -- 3
-while$ -- 149
+while$ -- 146
 width$ -- 0
-write$ -- 871
+write$ -- 856
 (There were 3 warnings)

@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -444,13 +444,6 @@ Ginés~Lifante Pedrola.
 \newblock Wiley, 2015.
 \newblock ISBN 9781119083382.
 \newblock URL \url{https://books.google.cl/books?id=ZV6-CgAAQBAJ}.
-
-\bibitem[Huang(1994)]{coupledmodetheory}
-Wei-Ping Huang.
-\newblock Coupled-mode theory for optical waveguides: an overview.
-\newblock \emph{Journal of The Optical Society of America A-optics Image
-  Science and Vision}, 11:\penalty0 963--983, 1994.
-\newblock URL \url{https://api.semanticscholar.org/CorpusID:120397076}.
 
 \bibitem[Yuffa(2021)]{greenvectorial}
 Alex~J Yuffa.

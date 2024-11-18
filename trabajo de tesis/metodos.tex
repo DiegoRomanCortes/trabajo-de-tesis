@@ -19,10 +19,20 @@
 Para usar condiciones iniciales distintas a una gaussiana se hace necesario incorporar métodos de modulación espacial de luz. En esta tesis se utilizó una técnica conocida como 
 
 \subsection{Etapa premodulación}
-	El modulador espacial de luz utilizado es un HOLOEYE PLUTO-NIR SLM -  Reflective LCOS, cuya respuesta óptica ocurre con polarización paralela al plano de la mesa óptica. Se utiliza un retardador de media onda ($\lambda/2$) seguido de un polarizador de atenuación 10000:1 con el objetivo de que la polarización de la luz láser coincida con la de la respuesta del SLM. Posteriormente se magnifica y se colima el haz para que abarque todo el área de pixeles disponible.
+	El modulador espacial de luz utilizado es un HOLOEYE PLUTO-NIR SLM -  Reflective LCOS, cuya respuesta óptica ocurre con polarización paralela al plano de la mesa óptica. Se utiliza un retardador de media onda ($\lambda/2$) seguido de un polarizador de atenuación 10000:1 con el objetivo de que la polarización de la luz láser coincida con la de la respuesta del SLM. Posteriormente se magnifica y se colima el haz para que abarque todo el área de pixeles disponible con un par de lentes 20x y $L_1$ de foco 100mm. 
 \subsection{Etapa de modulación}
-	Una rejilla de difracción que maximiza la potencia del primer orden de difracción es utilizada. Para modular en amplitud se debe multiplicar la rejilla por la máscara de amplitud deseada, mientras que para modular en fase basta con sumar el nivel de gris correspondiente a la fase deseada. FIGURA
+	Una rejilla de difracción que maximiza la potencia del primer orden de difracción es utilizada. Para modular en amplitud se debe multiplicar la rejilla por la máscara de amplitud deseada, mientras que para modular en fase basta con sumar el nivel de gris correspondiente a la fase deseada. Un ejemplo de la técnica utilizada se bosqueja en la Figura \ref{fig:SLMblaze}.
+	
+{
+\sidecaptionvpos{figure}{c}
+\begin{SCfigure}[][h]
+	\centering
+	\includegraphics[width=0.35\linewidth, trim={19.5cm 0 0 5cm},clip]{media/SLMblaze4.png}
+	\caption{Algoritmo de modulación espacial de luz para máscaras de amplitud y fase arbitrarias. Los parámetros de la rejilla de difracción están sujetos a la longitud de onda usada (730 nm).     \label{fig:SLMblaze}}
+	\end{SCfigure}
+	}
 \subsection{Etapa de acoplamiento}
+La imagen modulada pasa por un par de lentes $L_2$ de foco 1000 mm y $L_3$ de foco 50 mm para reducir el tamaño al orden de los micrómetros. La inclinación de la cara de entrada de la muestra debe coincidir con el plano de la imagen modulada, por lo que se generan dos pares de haces gaussianos, unos verticales y otros horizontales, de manera de que al trasladar el lente objetivo 4x, los máximos de difracción se generen en el centro de los haces gaussianos. 
 \subsection{Etapa de captura en cámara}
 
 \subsection{Circuito óptico}
