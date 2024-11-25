@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -444,6 +444,22 @@ Ginés~Lifante Pedrola.
 \newblock Wiley, 2015.
 \newblock ISBN 9781119083382.
 \newblock URL \url{https://books.google.cl/books?id=ZV6-CgAAQBAJ}.
+
+\bibitem[Berendsen(1962)]{medmagic}
+Herman J.~C. Berendsen.
+\newblock Nuclear magnetic resonance study of collagen hydration.
+\newblock \emph{The Journal of Chemical Physics}, 36\penalty0 (12):\penalty0
+  3297--3305, 06 1962.
+\newblock ISSN 0021-9606.
+\newblock \doi{10.1063/1.1732460}.
+\newblock URL \url{https://doi.org/10.1063/1.1732460}.
+
+\bibitem[Román-Cortés et~al.(2024)Román-Cortés, Mazanov, Vicencio, and
+  Gorlach]{Pmodecoupling}
+Diego Román-Cortés, Maxim Mazanov, Rodrigo~A. Vicencio, and Maxim~A. Gorlach.
+\newblock Observation of the magic angle and flat band physics in dipolar
+  photonic lattices, 2024.
+\newblock URL \url{https://arxiv.org/abs/2410.20914}.
 
 \bibitem[Yuffa(2021)]{greenvectorial}
 Alex~J Yuffa.

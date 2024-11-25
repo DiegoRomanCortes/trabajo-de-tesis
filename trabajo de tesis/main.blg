@@ -14,45 +14,45 @@ Database file #1: citations.bib
 Warning--empty year in nobel
 Warning--empty year in fibra2
 Warning--empty year in fibra
-You've used 50 entries,
+You've used 52 entries,
             2481 wiz_defined-function locations,
-            979 strings with 17698 characters,
-and the built_in function-call counts, 22689 in all, are:
-= -- 1875
-> -- 1459
-< -- 7
-+ -- 543
-- -- 442
-* -- 2186
-:= -- 3835
-add.period$ -- 252
-call.type$ -- 50
-change.case$ -- 99
-chr.to.int$ -- 49
-cite$ -- 56
-duplicate$ -- 930
-empty$ -- 1826
-format.name$ -- 495
-if$ -- 4680
+            995 strings with 18112 characters,
+and the built_in function-call counts, 23435 in all, are:
+= -- 1941
+> -- 1493
+< -- 8
++ -- 557
+- -- 452
+* -- 2246
+:= -- 3955
+add.period$ -- 261
+call.type$ -- 52
+change.case$ -- 103
+chr.to.int$ -- 51
+cite$ -- 58
+duplicate$ -- 963
+empty$ -- 1896
+format.name$ -- 507
+if$ -- 4840
 int.to.chr$ -- 2
-int.to.str$ -- 51
-missing$ -- 48
-newline$ -- 360
-num.names$ -- 141
-pop$ -- 274
+int.to.str$ -- 53
+missing$ -- 49
+newline$ -- 373
+num.names$ -- 147
+pop$ -- 290
 preamble$ -- 1
-purify$ -- 50
+purify$ -- 52
 quote$ -- 0
-skip$ -- 486
+skip$ -- 507
 stack$ -- 0
-substring$ -- 1011
-swap$ -- 132
+substring$ -- 1042
+swap$ -- 137
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 344
+type$ -- 358
 warning$ -- 3
-while$ -- 146
+while$ -- 151
 width$ -- 0
-write$ -- 856
+write$ -- 887
 (There were 3 warnings)

@@ -34,12 +34,13 @@ Para usar condiciones iniciales distintas a una gaussiana se hace necesario inco
 \subsection{Etapa de acoplamiento}
 La imagen modulada pasa por un par de lentes $L_2$ de foco 1000 mm y $L_3$ de foco 50 mm para reducir el tamaño al orden de los micrómetros. La inclinación de la cara de entrada de la muestra debe coincidir con el plano de la imagen modulada, por lo que se generan dos pares de haces gaussianos, unos verticales y otros horizontales, de manera de que al trasladar el lente objetivo 4x, los máximos de difracción se generen en el centro de los haces gaussianos. 
 \subsection{Etapa de captura en cámara}
-
+Una vez calibrada la inclinación de la muestra, se fija su posición. Un lente objetivo 10x permite magnificar la imagen de salida y capturar los resultados en un Beam Profiler.
 \subsection{Circuito óptico}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth, trim={21cm 5cm 7cm 5cm},clip]{media/SLM_setup}
+	\includegraphics[width=\linewidth, trim={21cm 5cm 7cm 5cm},clip]{media/SLM_setupv1}
 	\caption{Montaje SLM.}
 \end{figure}
-\section{Análisis de imágenes}
+\section{Análisis de imágenes \label{sec:analimag}}
+A partir de las imágenes capturadas es posible extraer información de la potencia que contiene cada sitio del sistema fotónico discreto en estudio. Para ello la imagen completa debe ser seccionada equispaciadamente en rectángulos que encierren las regiones donde existen guias de onda, iluminadas o no.
 
