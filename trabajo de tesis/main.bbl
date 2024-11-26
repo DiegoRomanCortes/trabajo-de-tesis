@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -436,6 +436,21 @@ John~D. Joannopoulos, Steven~G. Johnson, Joshua~N. Winn, and Robert~D. Meade.
 \newblock Princeton University Press, Princeton Oxford, 2nd edition edition,
   2008.
 \newblock ISBN 978-0-691-12456-8.
+
+\bibitem[Qi and Zhang(2011)]{topobulk}
+Xiao-Liang Qi and Shou-Cheng Zhang.
+\newblock Topological insulators and superconductors.
+\newblock \emph{Rev. Mod. Phys.}, 83:\penalty0 1057--1110, Oct 2011.
+\newblock \doi{10.1103/RevModPhys.83.1057}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.83.1057}.
+
+\bibitem[Marte and Stenholm(1997)]{paraxialschrodinger}
+Monika A.~M. Marte and Stig Stenholm.
+\newblock Paraxial light and atom optics: The optical schr\"odinger equation
+  and beyond.
+\newblock \emph{Phys. Rev. A}, 56:\penalty0 2940--2953, Oct 1997.
+\newblock \doi{10.1103/PhysRevA.56.2940}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.56.2940}.
 
 \bibitem[Pedrola(2015)]{bpm}
 Ginés~Lifante Pedrola.
