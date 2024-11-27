@@ -14,7 +14,7 @@ Las ecuaciones de Maxwell (SI) en este régimen son:
 	\\	
 	\nabla\times\textbf{H} &=\varepsilon(\textbf{r}) \frac{\partial \textbf{E}}{\partial t}, \label{eqn:ampere-maxwell}
 \end{align}
-donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.47$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
+donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.48$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
 
 Luego de aplicar rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}), de usar la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se tiene:
 \begin{align}
@@ -506,7 +506,7 @@ El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en 
 
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $z$, el campo eléctrico se puede expresar como una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, el lado izquierdo de las ecuaciones (\ref{eqn:helmholz}), se desarrolla como:
+Si la estructura de guías de onda no varía en la dirección $z$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, el lado izquierdo de las ecuaciones (\ref{eqn:helmholz}), se desarrolla como:
 
 \begin{align}
 	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2\right) \textbf{E}_\nu(x, y)  e^{i\beta_\nu z} \nonumber
@@ -613,5 +613,5 @@ Si bien es posible reformular las ecuaciones de Maxwell como un problema de auto
 Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agruparse en el mismo número de bandas que cantidad de sitios por celda unitaria conformen el sistema, dado que las funciones de Wannier asociadas al Teorema de Bloch aproximan de mejor manera al sistema en cuestión a medida que aumenta el número de celdas.
 
 \subsection{Correspondencia bulto-borde}
-En sistemas hermíticos existe una correspondencia entre la topología de las bandas del sistema, calculadas con condiciones de borde periodicas y los autoestados de borde asociados a la matriz $\hat{C}$, calculados con condiciones de borde abiertas \cite{topobulk}.
+En sistemas hermíticos existe una correspondencia entre las propiedades de las bandas del sistema, calculadas con condiciones de borde periodicas y los autoestados de borde asociados a la matriz $\hat{C}$, calculados con condiciones de borde abiertas \cite{topobulk}.
 
