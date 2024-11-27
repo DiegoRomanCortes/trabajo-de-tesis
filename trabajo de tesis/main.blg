@@ -11,48 +11,72 @@ A level-1 auxiliary file: oam.aux
 A level-1 auxiliary file: conclu.aux
 The style file: unsrtnat.bst
 Database file #1: citations.bib
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1233 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1233 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1233 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1233 of file unsrtnat.bst
 Warning--empty year in nobel
 Warning--empty year in fibra2
 Warning--empty year in fibra
-You've used 54 entries,
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1315 of file unsrtnat.bst
+Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
+while executing---line 1315 of file unsrtnat.bst
+You've used 55 entries,
             2481 wiz_defined-function locations,
-            1011 strings with 18525 characters,
-and the built_in function-call counts, 24305 in all, are:
-= -- 2031
-> -- 1523
-< -- 10
-+ -- 569
-- -- 460
-* -- 2318
-:= -- 4089
-add.period$ -- 271
-call.type$ -- 54
-change.case$ -- 107
-chr.to.int$ -- 53
-cite$ -- 60
-duplicate$ -- 1001
-empty$ -- 1974
-format.name$ -- 521
-if$ -- 5026
+            1017 strings with 18749 characters,
+and the built_in function-call counts, 24636 in all, are:
+= -- 2063
+> -- 1538
+< -- 11
++ -- 575
+- -- 464
+* -- 2340
+:= -- 4145
+add.period$ -- 276
+call.type$ -- 55
+change.case$ -- 109
+chr.to.int$ -- 54
+cite$ -- 61
+duplicate$ -- 1019
+empty$ -- 2002
+format.name$ -- 528
+if$ -- 5097
 int.to.chr$ -- 2
-int.to.str$ -- 55
-missing$ -- 51
-newline$ -- 387
-num.names$ -- 153
-pop$ -- 300
+int.to.str$ -- 56
+missing$ -- 52
+newline$ -- 394
+num.names$ -- 156
+pop$ -- 305
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 55
 quote$ -- 0
-skip$ -- 529
+skip$ -- 542
 stack$ -- 0
-substring$ -- 1108
-swap$ -- 143
+substring$ -- 1110
+swap$ -- 145
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 372
+type$ -- 379
 warning$ -- 3
-while$ -- 159
+while$ -- 161
 width$ -- 0
-write$ -- 921
-(There were 3 warnings)
+write$ -- 938
+(There were 12 error messages)

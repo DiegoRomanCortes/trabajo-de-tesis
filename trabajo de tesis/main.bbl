@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -475,6 +475,13 @@ Diego Román-Cortés, Maxim Mazanov, Rodrigo~A. Vicencio, and Maxim~A. Gorlach.
 \newblock Observation of the magic angle and flat band physics in dipolar
   photonic lattices, 2024.
 \newblock URL \url{https://arxiv.org/abs/2410.20914}.
+
+\bibitem[Polini and V.(2013)]{honeycombdirac}
+Guinea F. Lewenstein M. Manoharan H.~C. Polini, M. and Pellegrini V.
+\newblock Artificial honeycomb lattices for electrons, atoms and photons.
+\newblock \emph{Nature Nanotech}, 8, 2013.
+\newblock \doi{10.1038/nnano.2013.161}.
+\newblock URL \url{https://doi.org/10.1038/nnano.2013.161}.
 
 \bibitem[Yuffa(2021)]{greenvectorial}
 Alex~J Yuffa.
