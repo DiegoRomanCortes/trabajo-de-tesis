@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -428,6 +428,26 @@ Jean Alexandre, Peter Millington, and Dries Seynaeve.
 \newblock ISSN 2470-0010, 2470-0029.
 \newblock \doi{10.1103/PhysRevD.96.065027}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.96.065027}.
+
+\bibitem[Haus et~al.(1987)Haus, Huang, Kawakami, and
+  Whitaker]{haus_coupled-mode}
+H.~Haus, W.~Huang, S.~Kawakami, and N.~Whitaker.
+\newblock Coupled-mode theory of optical waveguides.
+\newblock \emph{Journal of Lightwave Technology}, 5\penalty0 (1):\penalty0
+  16--23, January 1987.
+\newblock ISSN 1558-2213.
+\newblock \doi{10.1109/JLT.1987.1075416}.
+\newblock URL
+  \url{https://ieeexplore.ieee.org/document/1075416/?arnumber=1075416}.
+\newblock Conference Name: Journal of Lightwave Technology.
+
+\bibitem[Christodoulides and Joseph(1988)]{christodoulides_discrete_1988}
+D.~N. Christodoulides and R.~I. Joseph.
+\newblock Discrete self-focusing in nonlinear arrays of coupled waveguides.
+\newblock \emph{Optics Letters}, 13\penalty0 (9):\penalty0 794, September 1988.
+\newblock ISSN 0146-9592, 1539-4794.
+\newblock \doi{10.1364/OL.13.000794}.
+\newblock URL \url{https://opg.optica.org/abstract.cfm?URI=ol-13-9-794}.
 
 \bibitem[Joannopoulos et~al.(2008)Joannopoulos, Johnson, Winn, and
   Meade]{joannopoulos_photonic_2008}
