@@ -8,12 +8,14 @@ Como se adelantó en la sección \ref{cap:maxwell}, la teoría de modos acoplado
 
 \section{Moléculas Fotónicas en Red SP-SSH}
 
-Para la implementación experimental (sección \ref{cap:fs}) de una red que presente acoplamiento SP \citep{interorbital, SPSSH}, se utilizaron los dipolos horizontales de la sección anterior, obtenidos mediante moléculas fotónicas. Un preciso sintonizado de las constantes de propagación de los modos $s$ y $p$ permitió considerar un grado de libertad análogo al del espín del electrón (\textit{pseudoespín}). 
+Para la implementación experimental (sección \ref{cap:fs}) de una red que presente acoplamiento SP \citep{interorbital, SPSSH}, se utilizaron los dipolos horizontales de la sección anterior, obtenidos mediante moléculas fotónicas. Un preciso sintonizado de las constantes de propagación de los modos $s$ y $p$ permitió considerar un grado de libertad análogo al del espín del electrón (\textit{pseudoespín}). El Hamiltoniano $H$ de esta red \citep{SPSSH,toporusos}  es el siguiente
 
 \begin{align*}
-	H &= \sum_n \left[\delta\beta \left(- a^*_{n, 1} a_{n, 1} + b^*_{n, 1} b_{n, 1}  - a^*_{n, 2} a_{n, 2} + b^*_{n, 2} b_{n, 2}\right) +k_{ss, 2}a^*_{n, 2} a_{n, 1} -k_{pp, 2}b^*_{n, 2} b_{n, 1} \right. 
+	H &= \sum_n \left[\frac{\delta\beta}{2} \left( b^*_{n, 1} b_{n, 1} - a^*_{n, 1} a_{n, 1} + b^*_{n, 2} b_{n, 2} - a^*_{n, 2} a_{n, 2} \right) +k_{ss, 2}a^*_{n, 2} a_{n, 1} -k_{pp, 2}b^*_{n, 2} b_{n, 1} \right. 
 	\\	
-	&\left. + k_{ss, 1} \left( a_{n-1, 2}^*a_{n, 1} + a_{n+1, 2}^*a_{n, 2} \right) - k_{pp, 1} \left( b_{n-1, 2}^*b_{n, 1} + b_{n+1, 2}^*b_{n, 2} \right) +k_{sp, 2} \left( a_{n, 2}^* b_{n, 1} - b_{n, 2}^* a_{n, 1} \right) \right]
+	&+ k_{ss, 1} \left( a_{n-1, 2}^*a_{n, 1} + a_{n+1, 2}^*a_{n, 2} \right) - k_{pp, 1} \left( b_{n-1, 2}^*b_{n, 1} + b_{n+1, 2}^*b_{n, 2} \right) + k_{sp, 2} \left( a_{n, 2}^* b_{n, 1} - b_{n, 2}^* a_{n, 1} \right)
+	\\
+	&+ \left. k_{sp, 1} \left( a_{n-1, 2}^* b_{n, 1} - b_{n-1, 2}^* a_{n, 1} + a_{n+1, 1}^*b_{n, 2} - b_{n+1, 1}^* a_{n, 2} \right) \right] + c.c.
 \end{align*}
 
 \begin{figure}[H]
