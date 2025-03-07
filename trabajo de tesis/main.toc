@@ -9,6 +9,9 @@
 \contentsline {subsection}{\numberline {2.3.2}Modos HE y EH}{10}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Modos normales en guías de onda}{12}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Teoría de modos acoplados}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Desde un principio variacional para la constante de propagación $k_z$}{12}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Historia del grupo}{12}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Desde las ecuaciones tipo Helmholz}{12}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Bandas y Topología en Redes Fotónicas}{15}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Correspondencia bulto-borde}{15}{subsection.2.6.1}%
 \contentsline {chapter}{\numberline {3}Métodos numéricos}{16}{chapter.3}%
