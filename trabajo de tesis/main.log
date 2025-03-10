@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  10 MAR 2025 16:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  10 MAR 2025 19:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1221,7 +1221,7 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 
 ]
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 84.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 94.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./media/slab.pdf): PDF inclusion: found
@@ -1229,85 +1229,85 @@ pdfTeX warning: /usr/bin/pdflatex (file ./media/slab.pdf): PDF inclusion: found
 <media/slab.pdf, id=402, 963.6pt x 542.025pt>
 File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
-Package pdftex.def Info: media/slab.pdf  used on input line 98.
+Package pdftex.def Info: media/slab.pdf  used on input line 108.
 (pdftex.def)             Requested size: 283.22162pt x 159.30876pt.
 [3]
-Overfull \hbox (6.60912pt too wide) detected at line 175
+Overfull \hbox (6.60912pt too wide) detected at line 185
 [][] [][]\OML/txmi/m/it/12 :
  []
 
 [4 <./media/slab.pdf>]
-Overfull \hbox (27.33864pt too wide) detected at line 207
+Overfull \hbox (27.33864pt too wide) detected at line 217
 [][] [][]\OML/txmi/m/it/12 :
  []
 
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 233.
-<media/slabgraphical.pdf, id=428, 246.45837pt x 192.50116pt>
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 243.
+<media/slabgraphical.pdf, id=430, 246.45837pt x 192.50116pt>
 File: media/slabgraphical.pdf Graphic file (type pdf)
 <use media/slabgraphical.pdf>
-Package pdftex.def Info: media/slabgraphical.pdf  used on input line 239.
+Package pdftex.def Info: media/slabgraphical.pdf  used on input line 249.
 (pdftex.def)             Requested size: 330.42041pt x 258.1pt.
 [5]
-<media/TETMfields.pdf, id=434, 230.77599pt x 179.71974pt>
+<media/TETMfields.pdf, id=436, 230.77599pt x 179.71974pt>
 File: media/TETMfields.pdf Graphic file (type pdf)
 <use media/TETMfields.pdf>
-Package pdftex.def Info: media/TETMfields.pdf  used on input line 245.
+Package pdftex.def Info: media/TETMfields.pdf  used on input line 255.
 (pdftex.def)             Requested size: 330.42041pt x 257.34552pt.
  [6 <./media/slabgraphical.pdf> <./media/TETMfields.pdf>] [7]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
-11}) has been already used, duplicate ignored
+13}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.393 \end{align}
+l.403 \end{align}
                   [8] [9]
-<media/fibergraphicalHE_EH.pdf, id=513, 219.55031pt x 192.96445pt>
+<media/fibergraphicalHE_EH.pdf, id=515, 219.55031pt x 192.96445pt>
 File: media/fibergraphicalHE_EH.pdf Graphic file (type pdf)
 <use media/fibergraphicalHE_EH.pdf>
-Package pdftex.def Info: media/fibergraphicalHE_EH.pdf  used on input line 492.
+Package pdftex.def Info: media/fibergraphicalHE_EH.pdf  used on input line 502.
 
 (pdftex.def)             Requested size: 283.22162pt x 248.94576pt.
  [10]
-<media/fiberHE11.pdf, id=521, 233.56532pt x 122.74963pt>
+<media/fiberHE11.pdf, id=523, 233.56532pt x 122.74963pt>
 File: media/fiberHE11.pdf Graphic file (type pdf)
 <use media/fiberHE11.pdf>
-Package pdftex.def Info: media/fiberHE11.pdf  used on input line 498.
+Package pdftex.def Info: media/fiberHE11.pdf  used on input line 508.
 (pdftex.def)             Requested size: 155.77116pt x 156.03973pt.
-<media/fiberTE1.pdf, id=523, 233.56532pt x 122.74963pt>
+<media/fiberTE1.pdf, id=525, 233.56532pt x 122.74963pt>
 File: media/fiberTE1.pdf Graphic file (type pdf)
 <use media/fiberTE1.pdf>
-Package pdftex.def Info: media/fiberTE1.pdf  used on input line 499.
+Package pdftex.def Info: media/fiberTE1.pdf  used on input line 509.
 (pdftex.def)             Requested size: 155.77116pt x 156.03973pt.
-<media/fiberTM1.pdf, id=525, 233.56532pt x 122.74963pt>
+<media/fiberTM1.pdf, id=527, 233.56532pt x 122.74963pt>
 File: media/fiberTM1.pdf Graphic file (type pdf)
 <use media/fiberTM1.pdf>
-Package pdftex.def Info: media/fiberTM1.pdf  used on input line 500.
+Package pdftex.def Info: media/fiberTM1.pdf  used on input line 510.
 (pdftex.def)             Requested size: 155.77116pt x 156.03973pt.
-<media/fiberHE21.pdf, id=527, 233.56532pt x 122.74963pt>
+<media/fiberHE21.pdf, id=529, 233.56532pt x 122.74963pt>
 File: media/fiberHE21.pdf Graphic file (type pdf)
 <use media/fiberHE21.pdf>
-Package pdftex.def Info: media/fiberHE21.pdf  used on input line 501.
+Package pdftex.def Info: media/fiberHE21.pdf  used on input line 511.
 (pdftex.def)             Requested size: 155.77116pt x 156.03973pt.
-<media/fiberHE12.pdf, id=529, 233.56532pt x 122.74963pt>
+<media/fiberHE12.pdf, id=531, 233.56532pt x 122.74963pt>
 File: media/fiberHE12.pdf Graphic file (type pdf)
 <use media/fiberHE12.pdf>
-Package pdftex.def Info: media/fiberHE12.pdf  used on input line 502.
+Package pdftex.def Info: media/fiberHE12.pdf  used on input line 512.
 (pdftex.def)             Requested size: 155.77116pt x 156.03973pt.
-<media/fiberHE31.pdf, id=531, 233.56532pt x 122.74963pt>
+<media/fiberHE31.pdf, id=533, 233.56532pt x 122.74963pt>
 File: media/fiberHE31.pdf Graphic file (type pdf)
 <use media/fiberHE31.pdf>
-Package pdftex.def Info: media/fiberHE31.pdf  used on input line 503.
+Package pdftex.def Info: media/fiberHE31.pdf  used on input line 513.
 (pdftex.def)             Requested size: 155.77116pt x 156.03973pt.
  [11 <./media/fiberHE11.pdf> <./media/fiberTE1.pdf> <./media/fiberTM1.pdf> <./m
 edia/fiberHE21.pdf> <./media/fiberHE12.pdf> <./media/fiberHE31.pdf> <./media/fi
 bergraphicalHE_EH.pdf>] [12] [13] [14]
-<media/coupling.pdf, id=670, 278.37239pt x 199.00179pt>
+<media/coupling.pdf, id=673, 278.37239pt x 199.00179pt>
 File: media/coupling.pdf Graphic file (type pdf)
 <use media/coupling.pdf>
-Package pdftex.def Info: media/coupling.pdf  used on input line 645.
+Package pdftex.def Info: media/coupling.pdf  used on input line 655.
 (pdftex.def)             Requested size: 330.42041pt x 236.23203pt.
 
-Overfull \hbox (7.79105pt too wide) in paragraph at lines 648--649
+Overfull \hbox (7.79105pt too wide) in paragraph at lines 658--659
 []\OT1/txr/m/n/12 Sin em-bar-go, sal-vo que se in-di-que lo con-tra-rio, se asu
 -mir[]a la con-di-ci[]on de re-ci-pro-ci-dad, $\OML/txmi/m/it/12 C[] \OT1/txr/m
 /n/12 =
@@ -1333,12 +1333,12 @@ File: ot1txtt.fd 2000/12/15 v3.1
 
  (./metodos.tex
 Cap\'{\i }tulo 4.
-<media/fabrication.png, id=799, 1927.2pt x 1084.05pt>
+<media/fabrication.png, id=802, 1927.2pt x 1084.05pt>
 File: media/fabrication.png Graphic file (type png)
 <use media/fabrication.png>
 Package pdftex.def Info: media/fabrication.png  used on input line 6.
 (pdftex.def)             Requested size: 283.22162pt x 229.12283pt.
-<media/SC_setup.png, id=802, 1927.2pt x 1084.05pt>
+<media/SC_setup.png, id=805, 1927.2pt x 1084.05pt>
 File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package pdftex.def Info: media/SC_setup.png  used on input line 13.
@@ -1349,13 +1349,13 @@ Package pdftex.def Info: media/SC_setup.png  used on input line 13.
 
 
  <./media/fabrication.png> <./media/SC_setup.png>]
-<media/SLMblaze4.png, id=814, 963.6pt x 542.025pt>
+<media/SLMblaze4.png, id=817, 963.6pt x 542.025pt>
 File: media/SLMblaze4.png Graphic file (type png)
 <use media/SLMblaze4.png>
 Package pdftex.def Info: media/SLMblaze4.png  used on input line 30.
 (pdftex.def)             Requested size: 165.2138pt x 161.57301pt.
  [22 <./media/SLMblaze4.png>]
-<media/SLM_setupv1.png, id=822, 1927.2pt x 1084.05pt>
+<media/SLM_setupv1.png, id=825, 1927.2pt x 1084.05pt>
 File: media/SLM_setupv1.png Graphic file (type png)
 <use media/SLM_setupv1.png>
 Package pdftex.def Info: media/SLM_setupv1.png  used on input line 41.
@@ -1377,12 +1377,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<media/26um_15mm_angles.png, id=834, 3327.43124pt x 1062.21844pt>
+<media/26um_15mm_angles.png, id=837, 3327.43124pt x 1062.21844pt>
 File: media/26um_15mm_angles.png Graphic file (type png)
 <use media/26um_15mm_angles.png>
 Package pdftex.def Info: media/26um_15mm_angles.png  used on input line 12.
 (pdftex.def)             Requested size: 472.03123pt x 126.46901pt.
-<media/couplingvsangle.jpg, id=839, 160.4394pt x 157.5486pt>
+<media/couplingvsangle.jpg, id=842, 160.4394pt x 157.5486pt>
 File: media/couplingvsangle.jpg Graphic file (type jpg)
 <use media/couplingvsangle.jpg>
 Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
@@ -1393,7 +1393,7 @@ Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
 
 
  <./media/26um_15mm_angles.png>]
-<media/honeycomb_lattices_bw.png, id=850, 863.225pt x 201.75375pt>
+<media/honeycomb_lattices_bw.png, id=853, 863.225pt x 201.75375pt>
 File: media/honeycomb_lattices_bw.png Graphic file (type png)
 <use media/honeycomb_lattices_bw.png>
 Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
@@ -1404,7 +1404,7 @@ Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
 
  (./moleculas.tex
 Cap\'{\i }tulo 6.
-<media/ssh_sp_model.png, id=868, 1015.54407pt x 460.72125pt>
+<media/ssh_sp_model.png, id=871, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
 Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
@@ -1419,12 +1419,12 @@ Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
 
  (./oam.tex
 Cap\'{\i }tulo 7.
-<media/OAM-free.png, id=877, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=880, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=878, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=881, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
@@ -1495,10 +1495,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7E4375FA678D77E1BED04CBD606E2E56;9575.
  ) 
 Here is how much of TeX's memory you used:
- 38986 strings out of 476091
- 857041 string characters out of 5794081
+ 38991 strings out of 476091
+ 857120 string characters out of 5794081
  2169330 words of memory out of 5000000
- 58325 multiletter control sequences out of 15000+600000
+ 58328 multiletter control sequences out of 15000+600000
  575130 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,16n,103p,1052b,2350s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1528,10 +1528,10 @@ onts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (49 pages, 9786813 bytes).
+Output written on main.pdf (49 pages, 9787188 bytes).
 PDF statistics:
- 1271 PDF objects out of 1440 (max. 8388607)
- 1119 compressed objects within 12 object streams
- 298 named destinations out of 1000 (max. 500000)
+ 1274 PDF objects out of 1440 (max. 8388607)
+ 1122 compressed objects within 12 object streams
+ 300 named destinations out of 1000 (max. 500000)
  533 words of extra memory for PDF output out of 10000 (max. 10000000)
 

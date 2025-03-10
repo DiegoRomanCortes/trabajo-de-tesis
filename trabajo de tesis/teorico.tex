@@ -42,7 +42,17 @@ La ecuación análoga a (\ref{eqn:helmholz}) para \textbf{H} es, por consiguient
 	 \label{eqn:helmholzH}
 \end{align}
 
-Será útil separar los componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{ik_z z}$ en la variable espacial $z$. Si se considera las descomposiciones $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $, las ecuaciones de Maxwell que involucran rotores se escriben como
+Será útil separar los componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{ik_z z}$ en la variable espacial $z$. 
+
+\begin{align}
+	\nabla_\perp \times  \textbf{E} + ik_z \hat{\textbf{z}} \times \textbf{E} &= i\omega\mu_0\textbf{H},
+	\label{eqn:EfieldH}
+	\\
+	\nabla_\perp \times  \textbf{H} + ik_z \hat{\textbf{z}} \times \textbf{H} &= -i\omega \epsilon_0 n^2 \textbf{E}.
+	\label{eqn:HfieldE}
+\end{align}
+
+Si se considera las descomposiciones $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $, las ecuaciones de Maxwell que involucran rotores se escriben como
 \begin{align}
 	\nabla_\perp \times  \textbf{E}_\perp + ik_z \hat{\textbf{z}} \times \textbf{E}_\perp + \nabla_\perp \times (\hat{\textbf{z}} E_z) &= i\omega\mu_0(\textbf{H}_\perp +\hat{\textbf{z}} H_z),
 	\label{eqn:Efield}
@@ -529,7 +539,7 @@ donde se ha usado la aproximación de guiaje débil para anular el lado de derec
 \section{Teoría de modos acoplados}
 \subsection{Desde un principio variacional}
 
-A partir de la ecuaciones (\ref{eqn:Efield}) y (\ref{eqn:Hfield}) es posible depejar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$ 
+A partir de la ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}) es posible despejar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$, similar a lo desarrollado en la referencia \citep{haus_coupled-mode}.
 
 \begin{equation}
 	k_z = \frac{\frac{1}{4i}\iint \left(-\nabla_\perp \times \textbf{E} + i\omega \mu_0 \textbf{H} \right)\cdot\textbf{H}^* + \left(\nabla_\perp\times\textbf{H} + i\omega \varepsilon_0 n^2 \textbf{E} \right)\cdot \textbf{E}^* dxdy}{\frac{1}{4} \iint \left( \textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H}  \right) \cdot \hat{\textbf{z}} dxdy} \label{eqn:kzprevar}
@@ -556,7 +566,7 @@ Se puede escribir la expresión (\ref{eqn:kzprevar}) para la constante de propag
 \begin{align}
 	k_z \sum_{j} P_{ij} a_j &= \sum_{j} H_{ij} a_j 
 	\\
-	-i \sum_{j} P_{ij} \frac{d a_j}{dz} &= \sum_{j} H_{ij} a_j
+	-i \sum_{j} P_{ij} \frac{d a_j}{dz} &= \sum_{j} H_{ij} a_j \label{eqn:non-ortho-CMT-eqs}
 \end{align}
 Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que $H_{ij}$ no es hermítica, pero veamos que sí lo es. Para ello, se hace necesario considerar la resta $H_{ij} - H_{ji}^*$ y notar que se anula:
 \begin{align*}
@@ -582,11 +592,11 @@ Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que
 	\end{align*}
 donde se ha usado que los campos deben decaer a cero en el infinito. 
 \begin{equation}
-	L = \sum_{ij}  a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right).
+	L = -\sum_{ij}  a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right).
 \end{equation}
-El momentum generalizado de este Lagrangiano es $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano asociado es
+El momentum generalizado de este Lagrangiano es $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = -i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano asociado es
 \begin{equation}
-H = \sum_{j} \Pi_j \dot{a_j} - L = \sum_{ij} ia_i^* P_{ij} \dot{a_j} - a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right) = \sum_{ij} a_i^* H_{ij} a_j.
+H = \sum_{j} \Pi_j \dot{a_j} - L = \sum_{ij} -ia_i^* P_{ij} \dot{a_j} + a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right) = \sum_{ij} a_i^* H_{ij} a_j.
 \end{equation}
 Variando el Lagrangiano se tiene:
 \begin{align*}
@@ -600,7 +610,7 @@ Al considerar el par de transformaciones asociadas al grupo unitario U(1), $a_j\
 \begin{equation}
 	P = \sum_{ij} a_i^* P_{ij} a_j.  \label{eqn:power}
 \end{equation}
-Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:CMT_mat}).
+Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
 \subsection{Historia del grupo}
 \subsection{Desde las ecuaciones tipo Helmholz}
 	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Bindi		ng}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $\nu$-ésimo modo guiado de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
