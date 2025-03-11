@@ -537,7 +537,8 @@ Si la estructura de guías de onda no varía en la dirección $z$, por separaci�
 donde se ha usado la aproximación de guiaje débil para anular el lado de derecho de la ecuación (\ref{eqn:helmholz}). Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, las cuales son ortogonales (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil. 
 
 \section{Teoría de modos acoplados}
-\subsection{Desde un principio variacional}
+
+\subsection{Derivación desde un principio variacional}
 
 A partir de la ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}) es posible despejar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$, similar a lo desarrollado en la referencia \citep{haus_coupled-mode}.
 
@@ -621,90 +622,34 @@ Al considerar el par de transformaciones asociadas al grupo unitario U(1), $a_j\
 	P = \sum_{ij} a_i^* P_{ij} a_j = \iint \textbf{S} \cdot \hat{\textbf{z}} dxdy.  \label{eqn:power}
 \end{equation}
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
-\subsection{Historia del grupo}
-\subsection{Desde las ecuaciones tipo Helmholz}
-	Para el estudio de redes fotónicas, es conveniente utilizar herramientas similares a las de la Física del Sólido en lo que respecta a potenciales periódicos. En particular, se puede suponer que los modos guiados de una guía de onda están fuertemente ligados a ella (enlace fuerte o \textit{Tight Bindi		ng}), incluso en presencia de otras guías de onda. Es decir, se supondrá que el $\nu$-ésimo modo guiado de la $m$-ésima guía de onda satisface para toda distancia de propagación $z$ la ecuación (\ref{eqn:eigenfield}), donde el índice de refracción total se puede descomponer en una suma periódica de guías de onda $n^2(\textbf{r}) = \sum_{m} n^2_m(\textbf{r})$. Entonces, descomponiendo el campo eléctrico total de la forma $\textbf{E}(\textbf{r}) = \sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}$ y reemplazando en la ecuación (\ref{eqn:helmholz}) se tiene:
+
+\subsection{Aplicaciones}
+\subsubsection{Arreglo 1D de guías tipo losa}
+Para los modos TE fundamentales se obtuvo $E_z = 0$ y $H_z = H_{a1}\left\{ \begin{matrix}
+\sin(\alpha x), |x|\le a
+\\
+\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
+\end{matrix}\right. $. Como $ \nabla_\perp H_z = \hat{\textbf{x}}H_{a1}\left\{ \begin{matrix}
+\alpha \cos(\alpha x), |x|\le a
+\\
+-\beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
+\end{matrix}\right. $
+
+Dadas las ecuaciones (\ref{eqn:transversal}) se tiene que
+
 \begin{align}
-	(\nabla^2  + k_0^2n^2) \textbf{E}(\textbf{r}) &= \left(\nabla_\perp^2 + \frac{\partial^2}{\partial z^2} + k_0^2n^2 \right)\sum_{\nu, m} \textbf{E}_{\nu, m}(x, y) a_{\nu, m}(z) e^{i\beta_{\nu, m} z}
-	\nonumber
-	\\
-	&= \sum_{\nu, m} \left[a_{\nu, m} e^{i\beta_{\nu, m} z} \left(\nabla_\perp^2 +k_0^2n^2 \right)\textbf{E}_{\nu, m} + \textbf{E}_{\nu, m}\frac{d^2}{d z^2}\left(a_{\nu, m} e^{i\beta_{\nu, m} z}\right)\right]
-	\nonumber	
-	\\
-	&\approx \sum_{\nu, m} \left[a_{\nu, m}  \left(\nabla_\perp^2 +k_0^2n^2 -\beta_{\nu,m}^2 \right) + \frac{d^2 a_{\nu, m}}{d z^2}  +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
-		\nonumber	
-	\\
-	&\approx \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m}
-	\nonumber	
-	\\
-	&= 0,
-	\nonumber	
+	\textbf{E}_\perp &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n^2 - k_z^2}\left\{ \begin{matrix}
+-\alpha \cos(\alpha x), |x|\le a
+\\
+\beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
+\end{matrix}\right.
+\\
+\textbf{H}_\perp &= \hat{\textbf{x}}\frac{ik_z H_{a1}}{k_0^2n^2 - k_z^2}\left\{ \begin{matrix}
+\alpha \cos(\alpha x), |x|\le a
+\\
+-\beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
+\end{matrix}\right.
 \end{align}
-donde se ha usado la aproximación paraxial $\left|\frac{d^2 a_{\nu, m}}{d z^2}\right|\ll 2\beta_{\nu,m}\left|\frac{d a_{\nu, m}}{d z}\right|  $. Aplicando producto punto con $\textbf{E}_{\mu, m'}^*$ e integrando en todo el plano $xy$:
-\begin{align}
-	  \int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \sum_{\nu, m} \left[a_{\nu, m}  k_0^2(n^2 - n^2_{m}) +2i\beta_{\nu,m}\frac{d a_{\nu, m}}{d z} \right]e^{i\beta_{\nu, m} z}\textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy &= 0,
-	  \nonumber
-	  \\
-	  \sum_{\nu, m} \left(i\frac{2k_0}{\epsilon_0 c}\frac{d a_{\nu, m}}{d z} \delta_{\nu,\mu}\delta_{m,m'} +  \frac{2k_0}{\epsilon_0 c}C_{\mu, \nu, m', m}   a_{\nu, m} \right)e^{i\beta_{\nu, m} z} &= 0,
-	  \nonumber
-	  \\
-	  	  i\frac{d a_{\mu, m'}}{d z} e^{i\beta_{\mu, m'} z} +  \sum_{\nu, m\neq m'}C_{\mu, \nu, m', m}   a_{\nu, m} e^{i\beta_{\nu, m} z} &= 0,
-	  	  \nonumber
-\end{align}
-donde se han definido y usado
-\begin{align*}
-	   C_{\mu, \nu, m', m} &\equiv \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2 - n^2_{m}) \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy , \quad\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} \textbf{E}_{\nu, m} \cdot \textbf{E}_{\mu, m'}^* dxdy \approx \frac{k_0}{\epsilon_0 c \beta_{\nu, m}} \delta_{\nu,\mu}\delta_{m,m'}.
-\end{align*}
-
-Es decir, el efecto del modo $(\nu, m)$ en la dinámica del modo $(\mu, m')$ sólo es apreciable al ponderar con la expresión $(n^2 - n^2_{m})$, lo que da origen al término $C_{\mu, \nu, m', m}$ conocido comúnmente como constante de acoplamiento. Sin el peso del contraste, la interacción es evanescente: el efecto de primeros vecinos es 2 órdenes de magnitud mayor que el de segundos vecinos (ver Figura \ref{fig:couplingCMT}), por lo que la aproximación de ortogonalidad se hace razonable con suficiente distancia entre guías (sobre los 15 $\mu$m en los experimentos de esta tesis), aunque existen maneras de tomar en cuenta estos efectos de no ortogonalidad \citep{schulz_geometric_2022}. Cuando $m=m'$, el acoplamiento $C_{\mu, \nu, m', m}$ es aproximadamente nulo. Notemos que $C_{\mu, \nu, m', m} \neq C_{\nu, \mu, m, m'}$ en general:
-\begin{align*}
-	C_{\mu, \nu, m', m} &=  C_{\nu, \mu, m, m'} + \frac{\epsilon_0 k_0 c}{2}\int\displaylimits_{-\infty}^{+\infty}\int\displaylimits_{-\infty}^{+\infty} (n^2_{m'}- n^2_{m}) \textbf{E}_{\mu, m'} \cdot \textbf{E}_{\nu, m}^*   dxdy.
-\end{align*}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\linewidth]{media/coupling.pdf}
-	\caption{Esquema del acoplamiento entre modos guiados. \label{fig:couplingCMT}}
-\end{figure}
-Sin embargo, salvo que se indique lo contrario, se asumirá la condición de reciprocidad, $C_{\mu, \nu, m', m} = C_{\nu, \mu, m, m'}$. Finalmente, es posible hacer el cambio de variables $a_{\nu, m} \equiv a_{\nu, m} e^{i\beta_{\nu, m} z}$ para llegar a las llamadas ecuaciones discretas tipo Schrödinger \cite{discretesolitons, artificialFB, FBdynamics}:
-\begin{equation}
-	  	 -i\frac{d a_{\mu, m'}}{dz} = \beta_{\mu, m'} a_{\mu, m'} + \sum_{\nu, m\neq m'}C_{\mu, \nu, m', m}   a_{\nu, m}.
-	\label{eqn:CMT1}
-\end{equation}
-o, libre de la elección particular de enumeración de índices ($\mu, m'$) y redefiniendo $C_{\mu, \mu, m', m,'} \equiv \beta_{\mu, m'}$:
-\begin{equation}
-	-i\frac{d }{d z} |a\rangle  = \hat{C} |a\rangle, \label{eqn:CMT_mat}
-\end{equation}
-con $a_{\mu, m'} \equiv \langle \mu, m' | a \rangle$. Esto permite definir el operador de evolución espacial $U(z) = e^{i\hat{C}z}$ tal que $|a(z)\rangle=U(z-z_0)|a(z_0)\rangle$, lo que será de utilidad en los métodos numéricos de resolución de la ecuación (\ref{eqn:CMT_mat}).
-
-
-La ecuación (\ref{eqn:CMT1}) se puede obtener desde un principio de mínima acción si se propone un Lagrangiano de campo discreto tipo Schrödinger:
-\begin{equation}
-	L = -\sum_{\mu, m'} a_{\mu, m'}^*\left( i \frac{ d a_{\mu, m'}}{dz}   +
-\sum_{\nu, m} C_{\mu, \nu, m', m}  a_{\nu, m}\right) = -\langle a|\left(i\frac{d}{d z} +\hat{C}\right)| a \rangle . \label{eqn:lagrangian}
-\end{equation}
-
-Notando que el momentum generalizado es $\Pi_{\mu, m'} \equiv \frac{\partial L}{\partial \dot{a}_{\mu, m'}} = -ia_{\mu, m'}^*$, el Hamiltoniano del sistema se escribe en función del Lagrangiano de la ecuación (\ref{eqn:lagrangian}) como:
-\begin{align}
-	H &= \sum_{\mu, m'} \Pi_{\mu, m'} \dot{{a}}_{\mu, m'} - L = i\sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} \Pi_{\mu, m'} a_{\nu, m} = \sum_{\nu, \mu, m, m'} C_{\mu, \nu, m', m} a^*_{\mu, m'} a_{\nu, m} = \langle a|\hat{C}| a \rangle  \label{eqn:hamiltoniano}
-\end{align}
-
-Variando el Lagrangiano $L$ se tiene \cite{NHsymmetries}:
-\begin{align*}
-	\delta L &= \sum_{\mu, m'} \frac{\partial L}{\partial a_{\mu, m'}} \delta a_{\mu, m'} +  \frac{\partial L}{\partial {a}_{\mu, m'}^*} \delta {a}_{\mu, m'}^* + \ \frac{\partial L}{\partial \dot{a}_{\mu, m'}} \delta \dot{a}_{\mu, m'} + \frac{\partial L}{\partial \dot{{a}}_{\mu, m'}^*} \delta \dot{{a}}_{\mu, m'}^*
-	\\
-	&= \sum_{\mu, m'} \left( \frac{\partial L}{\partial a_{\mu, m'}} - \frac{d}{dz}\frac{\partial L}{\partial \dot{a}_{\mu, m'}} \right)\delta a_{\mu, m'} + \left( \frac{\partial L}{\partial {a}_{\mu, m'}^*} - \frac{d}{dz}\frac{\partial L}{\partial  \dot{{a}}_{\mu, m'}^*} \right)\delta {a}_{\mu, m'}^* + \frac{d}{dz}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{{a}}^*_{\mu, m'}}\delta {a}_{\mu, m'}^*\right)
-	\\	
-	&\implies  \frac{d}{dz} \sum_{\mu, m'}\left(\frac{\partial L}{\partial \dot{a}_{\mu, m'}}\delta a_{\mu, m'} +  \frac{\partial L}{\partial \dot{{a}}_{\mu, m'}^*}\delta {a}_{\mu, m'}^*\right) = 0.
-\end{align*}
-
-Al considerar el par de transformaciones asociadas al grupo unitario U(1), $a_{\mu, m'}\to a'_{\mu, m'} = e^{i\phi}a_{\mu, m'}$, ${a}_{\mu, m'}^* \to {a'}_{\mu, m'}^* = e^{-i\phi}{a}_{\mu, m'}^*$ que dejan invariante el Lagrangiano, y si se toma una variación infinitesimal $\phi \ll 1$ se tiene $\delta a_{\mu, m'} = i\phi a_{\mu, m'}$ y $\delta {a}_{\mu, m'}^* = -i\phi {a}_{\mu, m'}^*$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
-\begin{equation}
-	P = \sum_{\mu, m'} |a_{\mu, m'}|^2 = \langle a|a\rangle. \label{eqn:power}
-\end{equation}
-Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:CMT_mat}).
-
-Las mismas ecuaciones se pueden obtener de dos formas más: a través de un principio variacional \citep{haus_coupled-mode} y desde un dímero hacia $n$ guías \citep{christodoulides_discrete_1988}.
-
 \section{Bandas y Topología en Redes Fotónicas}
 
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear el Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:CMT_mat}) con la matriz $\hat{C}$ hermítica es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $|a\rangle = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}|A\rangle$, con $|A\rangle$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$
