@@ -542,9 +542,10 @@ donde se ha usado la aproximación de guiaje débil para anular el lado de derec
 A partir de la ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}) es posible despejar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$, similar a lo desarrollado en la referencia \citep{haus_coupled-mode}.
 
 \begin{equation}
-	k_z = \frac{\frac{1}{4i}\iint \left(-\nabla_\perp \times \textbf{E} + i\omega \mu_0 \textbf{H} \right)\cdot\textbf{H}^* + \left(\nabla_\perp\times\textbf{H} + i\omega \varepsilon_0 n^2 \textbf{E} \right)\cdot \textbf{E}^* dxdy}{\frac{1}{4} \iint \left( \textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H}  \right) \cdot \hat{\textbf{z}} dxdy} \label{eqn:kzprevar}
+	k_z = \frac{\frac{1}{4i}\iint \left(-\nabla_\perp \times \textbf{E} + i\omega \mu_0 \textbf{H} \right)\cdot\textbf{H}^* + \left(\nabla_\perp\times\textbf{H} + i\omega \varepsilon_0 n^2 \textbf{E} \right)\cdot \textbf{E}^* dxdy}{\frac{1}{4} \iint \left( \textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H}  \right) \cdot \hat{\textbf{z}} dxdy}. \label{eqn:kzprevar}
 \end{equation}
-$\textbf{E} = \sum_i a_i \textbf{e}_i$, $\textbf{H} = \sum_i a_i \textbf{h}_i$
+
+De esta manera, al proponer un Ansatz en términos de superposición de modos de las guías individuales del estilo $\textbf{E} = \sum_i a_i \textbf{e}_i$, $\textbf{H} = \sum_i a_i \textbf{h}_i$, los coeficientes $a_i$ quedan indeterminados pero sujetos a minimizar la expresión para $k_z$. Notemos además que el Ansatz simplifica bastante la mencionada expresión.
 \begin{align*}
 	(\textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H})\cdot\hat{\textbf{z}} = \sum_{ij} a_i^*( \textbf{e}_j \times  \textbf{h}_i^* + \textbf{e}_i^* \times  \textbf{h}_j  )\cdot\hat{\textbf{z}} a_j \equiv \sum_{ij} a_i^* p_{ij} a_j
 \end{align*}
@@ -553,22 +554,31 @@ $\textbf{E} = \sum_i a_i \textbf{e}_i$, $\textbf{H} = \sum_i a_i \textbf{h}_i$
 	\\
 	&= i\sum_{ij}  a_i^*\left[ k_z^j p_{ij}  +  \omega \varepsilon_0(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \right] a_j
 \end{align*}
+
 Definiendo 
 \begin{align}
-	P_{ij} &\equiv \frac{1}{4} \iint ( \textbf{e}_j \times  \textbf{h}_i^* + \textbf{e}_i^* \times  \textbf{h}_j  )\cdot\hat{\textbf{z}} dxdy
+	P_{ij} &\equiv \frac{1}{4} \iint ( \textbf{e}_j \times  \textbf{h}_i^* + \textbf{e}_i^* \times  \textbf{h}_j  )\cdot\hat{\textbf{z}} dxdy,
 	\\
-	H_{ij} &\equiv  P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* dxdy
+	H_{ij} &\equiv  P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* dxdy.
 \end{align}
-Se puede escribir la expresión (\ref{eqn:kzprevar}) para la constante de propagación $k_z$ de manera compacta:
+
+Se puede escribir la expresión (\ref{eqn:kzprevar}) para la constante de propagación $k_z$ de manera compacta como un cociente de Rayleigh-Ritz:
 \begin{equation}
-	k_z = \frac{\sum_{ij} a_i^* H_{ij} a_j}{\sum_{ij} a_i^*P_{ij} a_j}
+	k_z = \frac{\sum_{ij} a_i^* H_{ij} a_j}{\sum_{ij} a_i^*P_{ij} a_j}.
 \end{equation}
+
+Diferenciando con respecto a $a_k^*$ para optimizar el valor de $k_z$ se tiene:
 \begin{align}
-	k_z \sum_{j} P_{ij} a_j &= \sum_{j} H_{ij} a_j 
-	\\
-	-i \sum_{j} P_{ij} \frac{d a_j}{dz} &= \sum_{j} H_{ij} a_j \label{eqn:non-ortho-CMT-eqs}
+	\frac{\partial k_z}{\partial a_k^*} &= \frac{\sum_{ij} H_{ij} a_j \delta_{ik}}{\sum_{ij} a_i^*P_{ij} a_j} - \frac{\left(\sum_{ij} a_i^* H_{ij} a_j\right) \left( 
+	\sum_{ij} \delta_{ik} P_{ij} a_j \right) }{\left(\sum_{ij} a_i^*P_{ij} a_j\right)^2} = \frac{\sum_{j} \left(H_{jk}  - k_z P_{kj} \right) a_j}{\sum_{ij} a_i^* P_{ij}a_j} \overset{!}{=} 0.
 \end{align}
-Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que $H_{ij}$ no es hermítica, pero veamos que sí lo es. Para ello, se hace necesario considerar la resta $H_{ij} - H_{ji}^*$ y notar que se anula:
+
+Recuperando $k_z \to -i\frac{\partial}{\partial z}$, se obtienen las ecuaciones de $N$ modos acoplados no ortogonales:
+\begin{equation}
+	-i \sum_{j} P_{kj} \frac{d a_j}{dz} ´= \sum_{j} H_{kj} a_j, \text{ con }k=1,2,\dots,N \label{eqn:non-ortho-CMT-eqs}
+\end{equation}
+	
+Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que $H_{ij}$ no es hermítica, pero veamos que sí lo es. Para ello, basta considerar la resta $H_{ij} - H_{ji}^*$ y notar que se anula:
 \begin{align*}
  H_{ij} - H_{ji}^* &= P_{ij} k_z^j - P_{ji}^* k_z^i  + \frac{\omega \varepsilon_0}{4} \iint(n_i^2-n_j^2) \textbf{e}_i^* \cdot \textbf{e}_j dxdy
 \\
@@ -590,11 +600,11 @@ Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que
 &=
 0,
 	\end{align*}
-donde se ha usado que los campos deben decaer a cero en el infinito. 
+donde se ha usado que los campos deben decaer a cero en el infinito. Las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) se pueden obtener a partir de un Principio de Mínima Acción luego de definir el Lagrangiano $L$ de tipo campo discreto de Schrödinger:
 \begin{equation}
-	L = -\sum_{ij}  a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right).
+	L = -\sum_{ij}  a_i^*\left(i  P_{ij} \frac{d }{dz} + H_{ij}  \right)a_j.
 \end{equation}
-El momentum generalizado de este Lagrangiano es $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = -i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano asociado es
+Los momentos generalizados de este Lagrangiano es $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = -i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano $H$ asociado es
 \begin{equation}
 H = \sum_{j} \Pi_j \dot{a_j} - L = \sum_{ij} -ia_i^* P_{ij} \dot{a_j} + a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right) = \sum_{ij} a_i^* H_{ij} a_j.
 \end{equation}
@@ -608,7 +618,7 @@ Variando el Lagrangiano se tiene:
 \end{align*}
 Al considerar el par de transformaciones asociadas al grupo unitario U(1), $a_j\to a'_j = e^{i\phi}a_j$, ${a}_i^* \to {a'}_i^* = e^{-i\phi}{a}_i^*$ que dejan invariante el Lagrangiano, y si se toma una variación infinitesimal $\phi \ll 1$ se tiene $\delta a_j = i\phi a_j$ y $\delta {a}_i^* = -i\phi {a}_i^*$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
 \begin{equation}
-	P = \sum_{ij} a_i^* P_{ij} a_j.  \label{eqn:power}
+	P = \sum_{ij} a_i^* P_{ij} a_j = \iint \textbf{S} \cdot \hat{\textbf{z}} dxdy.  \label{eqn:power}
 \end{equation}
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
 \subsection{Historia del grupo}
