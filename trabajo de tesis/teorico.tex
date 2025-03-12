@@ -638,18 +638,37 @@ Para los modos TE fundamentales se obtuvo $E_z = 0$ y $H_z = H_{a1}\left\{ \begi
 Dadas las ecuaciones (\ref{eqn:transversal}) se tiene que
 
 \begin{align}
-	\textbf{E}_\perp &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n^2 - k_z^2}\left\{ \begin{matrix}
+	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n^2 - k_z^2}\left\{ \begin{matrix}
 -\alpha \cos(\alpha x), |x|\le a
 \\
 \beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
 \end{matrix}\right.
 \\
-\textbf{H}_\perp &= \hat{\textbf{x}}\frac{ik_z H_{a1}}{k_0^2n^2 - k_z^2}\left\{ \begin{matrix}
+\textbf{h}_{j\perp} &= \hat{\textbf{x}}\frac{ik_z^j H_{a1}}{k_0^2n^2 - k_z^2}\left\{ \begin{matrix}
 \alpha \cos(\alpha x), |x|\le a
 \\
 -\beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
 \end{matrix}\right.
 \end{align}
+$x_j=jb$, con $b\ge a$ y $L=\int dy$. Elementos diagonales tienen la forma:
+\begin{align*}
+	\left(\textbf{e}_j\times\textbf{h}_j^*\right)\cdot \hat{\textbf{z}}&=\frac{k_z^j\omega\mu_0 H_{a1}^2}{(k_0^2n^2-k_z^2)^2} \left\{ \begin{matrix}
+\alpha^2\cos^2(\alpha (x-x_j)), |x-x_j| \le a
+\\
+\beta^2 \sin^2(\alpha a) e^{2\beta a} e^{-2\beta|x-x_j|}, |x-x_j|>a
+\end{matrix}\right.
+\end{align*}
+\begin{align*}
+	P_{jj} &= \frac{k_z^j\omega\mu_0H_{a1}^2 L a}{2}\left[
+ \frac{1}{\alpha^2}+ \frac{\sin^2(\alpha a)}{\beta \alpha^2 a} + \frac{\sin^2(\alpha a)}{\beta^3 a}
+ \right]
+ \\ 
+ &= \frac{k_z\omega\mu_0H_{a1}^2 L a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right]
+\end{align*}
+\begin{align*}
+	H_{jj} - P_{jj} k_z^j = \frac{\omega\epsilon_0}{4} \iint (n^2 - n_j^2)|\textbf{e}_j|^2 dx dy
+\end{align*}
+
 \section{Bandas y Topología en Redes Fotónicas}
 
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear el Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:CMT_mat}) con la matriz $\hat{C}$ hermítica es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $|a\rangle = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}|A\rangle$, con $|A\rangle$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$

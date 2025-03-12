@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  11 MAR 2025 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  12 MAR 2025 12:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1312,7 +1312,7 @@ LaTeX Warning: Command \textasciiacute invalid in math mode on input line 579.
 Missing character: There is no ´ in font txr!
 [13] [14]
 
-LaTeX Warning: Reference `eqn:CMT_mat' on page 15 undefined on input line 655.
+LaTeX Warning: Reference `eqn:CMT_mat' on page 15 undefined on input line 674.
 
 ) [15]
 \openout2 = `numericos.aux'.
@@ -1531,7 +1531,7 @@ xlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (46 pages, 9649538 bytes).
+Output written on main.pdf (46 pages, 9651013 bytes).
 PDF statistics:
  1187 PDF objects out of 1200 (max. 8388607)
  1044 compressed objects within 11 object streams
