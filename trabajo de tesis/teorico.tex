@@ -119,67 +119,67 @@ Como $n(x)=n(-x)$, las soluciones $\Psi$ deben ser pares o impares. En efecto, s
 Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 \le k_z^2 \le k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Con todo esto, 
 \begin{equation*}
 	\Psi_s = \left\{\begin{matrix}
-	\Psi_{s1}\cos(\alpha x),\quad |x|\le a
+	\Psi_{s1}\cos(\alpha x), & |x|\le a
 	\\
-	\Psi_{s0}e^{-\beta|x|}, \quad |x|>a
+	\Psi_{s0}e^{-\beta|x|}, & |x|>a
 	\end{matrix}\right.
 \end{equation*}
 
 \begin{equation*}
 	\nabla_\perp \Psi_s = \left\{\begin{matrix}
-	-\hat{\textbf{x}}\alpha\Psi_{s1}\sin(\alpha x),\quad |x|\le a
+	-\hat{\textbf{x}}\alpha\Psi_{s1}\sin(\alpha x), & |x|\le a
 	\\
-	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{s0}e^{-\beta|x|}, \quad |x|>a
+	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{s0}e^{-\beta|x|}, & |x|>a
 	\end{matrix}\right.
 \end{equation*}
 Por lo que las componentes verticales $E_y$ y $H_y$ pares se escriben debido a la ecuación (\ref{eqn:transversal}) como:
 \begin{equation*}
 	\begin{aligned}[c]
-	 E_y &= \frac{i}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
-	 \omega\mu_0\alpha H_{s1}\sin(\alpha x),	 \quad |x|\le a
+	 E_y &= \frac{i \omega\mu_0}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
+	 \alpha H_{s1}\sin(\alpha x),	 & |x|\le a
 	 \\
-	 \omega\mu_0\frac{|x|}{x}\beta H_{s0}e^{-\beta|x|},\quad |x|>a
+	 \frac{|x|}{x}\beta H_{s0}e^{-\beta|x|}, & |x|>a
 	 \end{matrix}\right.
 \end{aligned} 
 \quad
 	\begin{aligned}[c]
-	 H_y &= \frac{i}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
-	 -\omega \epsilon_0 n^2\alpha E_{s1}\sin(\alpha x),	 \quad |x|\le a
+	 H_y &= \frac{-i\omega \epsilon_0 n^2}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
+	 \alpha E_{s1}\sin(\alpha x),	& |x|\le a
 	 \\
-	 -\omega \epsilon_0 n^2\frac{|x|}{x}\beta E_{s0}e^{-\beta|x|},\quad |x|>a
+	 \frac{|x|}{x}\beta E_{s0}e^{-\beta|x|}, & |x|>a
 	 \end{matrix}\right.
 \end{aligned} 
 \end{equation*}
 Por otro lado, las soluciones impares tienen la forma
 \begin{equation*}
 	\Psi_a = \left\{\begin{matrix}
-	\Psi_{a1}\sin(\alpha x),\quad |x|\le a
+	\Psi_{a1}\sin(\alpha x), & |x|\le a
 	\\
-	\Psi_{a0}e^{-\beta|x|}, \quad |x|>a
+	\Psi_{a0}e^{-\beta|x|}, & |x|>a
 	\end{matrix}\right.
 \end{equation*}
 \begin{equation*}
 	\nabla_\perp \Psi_a = \left\{\begin{matrix}
-	\hat{\textbf{x}}\alpha\Psi_{a1}\cos(\alpha x),\quad |x|\le a
+	\hat{\textbf{x}}\alpha\Psi_{a1}\cos(\alpha x), & |x|\le a
 	\\
-	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{a0}e^{-\beta|x|}, \quad |x|>a
+	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{a0}e^{-\beta|x|}, & |x|>a
 	\end{matrix}\right.
 \end{equation*}
 Por lo que $E_y$ y $H_y$ se escriben como:
 \begin{equation*}
 	\begin{aligned}[c]
-	 E_y &= \frac{i}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
-	 -\omega\mu_0\alpha H_{a1}\cos(\alpha x)	, \quad |x|\le a
+	 E_y &= \frac{i\omega\mu_0}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
+	 -\alpha H_{a1}\cos(\alpha x)	, & |x|\le a
 	 \\
-	 \omega\mu_0\frac{|x|}{x}\beta H_{a0}e^{-\beta|x|},\quad |x|>a
+	 \frac{|x|}{x}\beta H_{a0}e^{-\beta|x|}, & |x|>a
 	 \end{matrix}\right.
 \end{aligned} 
 \quad
 	\begin{aligned}[c]
-	 H_y &= \frac{i}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
-	 \omega \epsilon_0 n^2 \alpha E_{a1}\cos(\alpha x),	 \quad |x|\le a
+	 H_y &= \frac{i\omega \epsilon_0 n^2}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
+	  \alpha E_{a1}\cos(\alpha x),	 & |x|\le a
 	 \\
-	 -\omega \epsilon_0 n^2 \frac{|x|}{x}\beta E_{a0}e^{-\beta|x|},\quad |x|>a
+	 -\frac{|x|}{x}\beta E_{a0}e^{-\beta|x|}, & |x|>a
 	 \end{matrix}\right.
 \end{aligned} .
 \end{equation*}

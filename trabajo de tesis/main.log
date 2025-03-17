@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  17 MAR 2025 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  17 MAR 2025 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1228,12 +1228,7 @@ File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
 Package pdftex.def Info: media/slab.pdf  used on input line 108.
 (pdftex.def)             Requested size: 283.22162pt x 159.30876pt.
-[3]
-Overfull \hbox (6.60912pt too wide) detected at line 185
-[][] [][]\OML/txmi/m/it/12 :
- []
-
-[4 <./media/slab.pdf>]
+[3] [4 <./media/slab.pdf>]
 Overfull \hbox (27.33864pt too wide) detected at line 217
 [][] [][]\OML/txmi/m/it/12 :
  []
@@ -1531,7 +1526,7 @@ xlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (47 pages, 9652270 bytes).
+Output written on main.pdf (47 pages, 9652249 bytes).
 PDF statistics:
  1192 PDF objects out of 1200 (max. 8388607)
  1048 compressed objects within 11 object streams
