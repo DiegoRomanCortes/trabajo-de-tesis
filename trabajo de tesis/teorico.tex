@@ -626,36 +626,36 @@ Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que se
 \subsection{Aplicaciones}
 \subsubsection{Arreglo 1D de guías tipo losa}
 Para los modos TE fundamentales se obtuvo $E_z = 0$ y $H_z = H_{a1}\left\{ \begin{matrix}
-\sin(\alpha x), |x|\le a
+\sin(\alpha x), &|x|\le a
 \\
-\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
+\sin(\alpha a) e^{-\beta(|x|-a)}, &|x| > a
 \end{matrix}\right. $. Como $ \nabla_\perp H_z = \hat{\textbf{x}}H_{a1}\left\{ \begin{matrix}
-\alpha \cos(\alpha x), |x|\le a
+\alpha \cos(\alpha x), &|x|\le a
 \\
--\beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
+-\beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, &|x| > a
 \end{matrix}\right. $
 
 Dadas las ecuaciones (\ref{eqn:transversal}) se tiene que
 
 \begin{align}
-	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n^2 - k_z^2}\left\{ \begin{matrix}
--\alpha \cos(\alpha x), |x|\le a
+	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - k_z^2}\left\{ \begin{matrix}
+-\alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
 \\
-\beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
+\beta\frac{|x-x_j|}{x-x_j}\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
 \end{matrix}\right.
 \\
-\textbf{h}_{j\perp} &= \hat{\textbf{x}}\frac{ik_z^j H_{a1}}{k_0^2n^2 - k_z^2}\left\{ \begin{matrix}
-\alpha \cos(\alpha x), |x|\le a
+\textbf{h}_{j\perp} &= \hat{\textbf{x}}\frac{ik_z^j H_{a1}}{k_0^2n_j^2 - k_z^2}\left\{ \begin{matrix}
+\alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
 \\
--\beta\frac{|x|}{x}\sin(\alpha a) e^{-\beta(|x|-a)}, |x| > a
+-\beta\frac{|x-x_j|}{x-x_j}\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
 \end{matrix}\right.
 \end{align}
-$x_j=jb$, con $b\ge a$ y $L=\int dy$. Elementos diagonales tienen la forma:
+$x_j=jb$, con $b\ge 2a$ y $L=\int dy$. Elementos diagonales tienen la forma:
 \begin{align*}
-	\left(\textbf{e}_j\times\textbf{h}_j^*\right)\cdot \hat{\textbf{z}}&=\frac{k_z^j\omega\mu_0 H_{a1}^2}{(k_0^2n^2-k_z^2)^2} \left\{ \begin{matrix}
-\alpha^2\cos^2(\alpha (x-x_j)), |x-x_j| \le a
+	\left(\textbf{e}_{j\perp}\times\textbf{h}_{j\perp}^*\right)\cdot \hat{\textbf{z}}&=\frac{k_z^j\omega\mu_0 H_{a1}^2}{(k_0^2n_j^2-k_z^2)^2} \left\{ \begin{matrix}
+\alpha^2\cos^2(\alpha (x-x_j)), & |x-x_j| \le a
 \\
-\beta^2 \sin^2(\alpha a) e^{2\beta a} e^{-2\beta|x-x_j|}, |x-x_j|>a
+\beta^2 \sin^2(\alpha a) e^{2\beta a} e^{-2\beta|x-x_j|}, & |x-x_j|>a
 \end{matrix}\right.
 \end{align*}
 \begin{align*}
@@ -663,7 +663,26 @@ $x_j=jb$, con $b\ge a$ y $L=\int dy$. Elementos diagonales tienen la forma:
  \frac{1}{\alpha^2}+ \frac{\sin^2(\alpha a)}{\beta \alpha^2 a} + \frac{\sin^2(\alpha a)}{\beta^3 a}
  \right]
  \\ 
- &= \frac{k_z\omega\mu_0H_{a1}^2 L a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right]
+ &= \frac{k_z^j \omega\mu_0H_{a1}^2 L a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right]
+\end{align*}
+\begin{align}
+	\left(\textbf{e}_{j\perp}\times\textbf{h}_{i\perp}^*\right)\cdot \hat{\textbf{z}}
+	=
+	\frac{k_z^i \omega \mu_0 H_{a1}^2 \beta\sin(\alpha a)}{(k_0^2n_j^2 - k_z^2)(k_0^2n_i^2 - k_z^2)}
+	\left\{
+	\begin{matrix}
+		 \alpha\frac{|x-x_j|}{x-x_j}\cos(\alpha(x-x_i))e^{-\beta(|x-x_j|-a)}, & |x-x_i| \le a
+		\\
+		i \leftrightarrow j, & |x-x_j| \le a
+		\\
+		\beta \sin(\alpha a)e^{-\beta (|x-x_i|+|x-x_j|-2a)}, & \text{otro caso}
+	\end{matrix}
+	\right.
+\end{align}
+\begin{align*}
+	P_{ij} &= \frac{k_z^i L \omega \mu_0 H_{a1}^2 \beta\sin(\alpha a)}{1} \left[
+		\frac{ e^{\beta a} e^{-\beta|i-j|b}}{\alpha \beta^2 k_0^2(n_1^2-n_0^2)}\left[ \beta\cos(\alpha a)\sinh(\beta a) + \alpha \sin(\alpha a)\cosh(\beta a) \right]			
+	 \right]
 \end{align*}
 \begin{align*}
 	H_{jj} - P_{jj} k_z^j = \frac{\omega\epsilon_0}{4} \iint (n^2 - n_j^2)|\textbf{e}_j|^2 dx dy
