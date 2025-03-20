@@ -210,13 +210,18 @@ Buscando soluciones no triviales se tiene que:
 	 \left[ \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a}\right]\left[ n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a}\right] = 0
 \end{equation*}
 Se distinguirá dos tipos de condiciones:
-\begin{align*}
-	\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a}&= 0, & n_0^2 \frac{\cos(\alpha a)}{\beta a} + n_1^2\frac{\sin(\alpha a)}{\alpha a}  &= 0,
+\begin{itemize}
+	\item Modos TE:\begin{align}
+	\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a}&= 0, \label{eqn:TEsim}
 	\\
-	&\qquad\text{(modos TE)}	& &\qquad\text{(modos TM)}	
+	 \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a} &= 0. \label{eqn:TEanti}
+	\end{align}
+	\item Modos TM:\begin{align}
+	n_0^2 \frac{\cos(\alpha a)}{\beta a} + n_1^2\frac{\sin(\alpha a)}{\alpha a}  &= 0, \label{eqn:TMsim}
 	\\
-	 \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a} &= 0, &  n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a} &= 0.
-\end{align*}
+	 n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a} &= 0. \label{eqn:TManti}
+	\end{align}
+\end{itemize}
 Asumiendo $\alpha$, $\beta$ y $k_z$ conocidos, las amplitudes deben cumplir las relaciones:
 \begin{equation*}
 	\begin{aligned}[c]
@@ -497,15 +502,9 @@ En particular, el modo $\text{HE}_{11}$ siempre existe.
 \end{figure}
 
 El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego y no será relevante para esta tesis. Sin embargo, se incluyen en la Figura \ref{fig:vortices} por completitud.
-
 \begin{figure}[H]
-	\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberHE11.pdf}
-	\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberTE1.pdf}
-	\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberTM1.pdf}
-		\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberHE21.pdf}
-		\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberHE12.pdf}
-	\includegraphics[width=0.33\linewidth, trim={1.2cm 1.2cm 3.9cm 0},clip]{media/fiberHE31.pdf}
-		\caption{Vórtices. \label{fig:vortices}}
+	\includegraphics[width=\linewidth]{media/OAM_analitic}
+		\caption{Primeros modos guiados para una guía circular o fibra óptica. \label{fig:vortices}}
 \end{figure}
 
 \section{Modos normales en guías de onda}
