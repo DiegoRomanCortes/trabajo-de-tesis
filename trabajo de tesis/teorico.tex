@@ -89,7 +89,7 @@ Finalmente, los componentes perpendiculares de los campos, $\textbf{H}_\perp$ y 
 \end{aligned}
 \end{equation}
 
-Las ecuaciones (\ref{eqn:helmholz}), (\ref{eqn:helmholzH}) y (\ref{eqn:transversal}) serán las herramientas análiticas para los dos casos de estudio de las siguientes secciones.
+Las ecuaciones (\ref{eqn:helmholz}), (\ref{eqn:helmholzH}) y (\ref{eqn:transversal}) serán las herramientas análiticas para los dos casos de estudio de las siguientes secciones y permiten visualizar la imposibilidad de las guías de onda dieléctricas de albergar modos TEM.
 \section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
 
 El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuya forma analítica para el constraste $n(x)$ es la siguiente, con $n_1 > n_0$:
@@ -462,7 +462,7 @@ Interpretando la ecuación (\ref{eqn:fiber_trascendental}) como una cuadrática 
 	\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\pm\sqrt{\left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 }
 \end{align*}
 
-Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell(r)$,  es posible obtener dos tipos de soluciones que suelen ser llamadas HE y EH debido al campo longitudinal con maor peso:
+Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell(r)$,  es posible obtener dos tipos de soluciones que suelen ser llamadas HE y EH debido al campo longitudinal con mayor peso:
 \begin{align}
 		\frac{J_{\ell-1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta}, \quad \text{(modos HE)}
 		\label{eqn:HE}
@@ -586,9 +586,7 @@ Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que
 \\
 &= \frac{i}{4} \iint \left(\nabla_\perp\times\textbf{e}_j\right) \cdot \textbf{h}_i^*  -\left(\nabla_\perp\times\textbf{h}_j\right) \cdot \textbf{e}_i^* + \left(\nabla_\perp\times\textbf{e}_i^*\right) \cdot \textbf{h}_j - \left(\nabla_\perp\times\textbf{h}_i^*\right) \cdot \textbf{e}_j dxdy
 \\
-&= \frac{i}{4} \iint \nabla_\perp\cdot\left(\textbf{e}_j \times \textbf{h}_i^* +\textbf{e}_i^* \times \textbf{h}_j\right) dxdy
-\\
-&=
+&= \frac{i}{4} \iint \nabla_\perp\cdot\left(\textbf{e}_j \times \textbf{h}_i^* +\textbf{e}_i^* \times \textbf{h}_j\right) dxdy =
 \frac{i}{4} \oint_C \left(\textbf{e}_j \times \textbf{h}_i^* +\textbf{e}_i^* \times \textbf{h}_j\right) \cdot \hat{\textbf{z}} ds
 \\
 &=
@@ -617,7 +615,7 @@ Al considerar el par de transformaciones asociadas al grupo unitario U(1), $a_j\
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
 
 \subsection{Aplicaciones}
-\subsubsection{Arreglo 1D de guías tipo losa}
+\subsubsection{Dímero TE en guías de onda tipo losa}
 Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\ref{eqn:transversal}) se tiene que
 
 \begin{align}
@@ -627,7 +625,7 @@ Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\r
 \beta\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
 \end{matrix}\right.
 \\
-\textbf{h}_{j\perp} &= \hat{\textbf{x}}\frac{ik_z^j H_{a1}}{k_0^2n_j^2 - k_z^2}\left\{ \begin{matrix}
+\textbf{h}_{j\perp} &= \hat{\textbf{x}}\frac{ik_z^j H_{a1}}{k_0^2n_j^2 - (k_z^j)^2}\left\{ \begin{matrix}
 \alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
 \\
 -\beta\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
@@ -650,7 +648,13 @@ $x_j=jb$, con $b\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 \end{align}
 
 \begin{align*}
-	P_{ij} &= k_z^i L \omega \mu_0 H_{a1}^2 \beta\sin^2(\alpha a)e^{-\beta b |i-j|} e^{2\beta a} \left[\frac{1}{\alpha^2(\alpha^2+\beta^2)} + \frac{e^{-2\beta a}+\beta\left(|i-j|b-2a\right)}{2\beta^4} \right]			
+	P_{ij} &= k_z^i L \omega \mu_0 H_{a1}^2 \beta\sin^2(\alpha a)e^{-\beta b} e^{2\beta a} \left[\frac{1}{\alpha^2(\alpha^2+\beta^2)} + \frac{e^{-2\beta a}+\beta\left(b-2a\right)}{2\beta^4} \right]			
+\end{align*}
+
+\begin{align*}
+	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{\omega\epsilon_0}{4} \iint (n^2 - n_j^2)\textbf{e}_j\cdot \textbf{e}_i^* dx dy 
+\\	
+	&= \frac{k_0 \mu_0 L}{2} \frac{ H_{a1}^2}{\alpha^2} \beta \cos^2(\alpha a)e^{2\beta a} e^{-\beta b} 
 \end{align*}
 
 Elementos diagonales tienen la forma:
@@ -665,12 +669,73 @@ Elementos diagonales tienen la forma:
 
 
 \begin{align*}
-	P_{jj} &= \frac{k_z^j \omega\mu_0H_{a1}^2 L a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right]
+	P_{jj} &= \frac{k_z^j L \omega\mu_0H_{a1}^2  a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right]
 \end{align*}
 \begin{align*}
-	H_{jj} - P_{jj} k_z^j = \frac{\omega\epsilon_0}{4} \iint (n^2 - n_j^2)|\textbf{e}_j|^2 dx dy
+	\tilde{H}_{jj} &\equiv H_{jj} - P_{jj} k_z^j = \frac{\omega\epsilon_0}{4} \iint (n^2 - n_j^2)|\textbf{e}_j|^2 dx dy
+	\\
+	&=
+	\frac{\omega \varepsilon_0 L \sin^2(\alpha a)e^{\beta a}e^{-2\beta b}}{4 \beta^3} (n_1^2-n_0^2) \sinh(2\beta a)
 \end{align*}
 
+La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}), que luego de premultiplicar por la inversa de la matriz $P_{ij}$:
+\begin{align*}
+	-i\frac{d}{dz}\begin{pmatrix}
+	a_1
+	\\
+	a_2
+	\end{pmatrix} &= 
+	\frac{1}{P_{ii}^2-P_{ij}^2}	
+	\begin{pmatrix}
+	P_{ii} & -P_{ij}
+	\\
+	-P_{ij} & P_{ii}	
+	\end{pmatrix}
+	\begin{pmatrix}
+	H_{ii} & H_{ij}
+	\\
+	H_{ij} & H_{ii}	
+	\end{pmatrix}
+	\begin{pmatrix}
+	a_1
+	\\
+	a_2
+	\end{pmatrix}
+	\\
+	&= 
+	\frac{1}{P_{ii}^2-P_{ij}^2}	
+	\begin{pmatrix}
+	P_{ii} & -P_{ij}
+	\\
+	-P_{ij} & P_{ii}	
+	\end{pmatrix}
+	\begin{pmatrix}
+	P_{ii}k_z^j + \tilde{H}_{ii} & P_{ij} k_z^j + \tilde{H}_{ij}
+	\\
+	P_{ij} k_z^j + \tilde{H}_{ij} & P_{ii} k_z^j + \tilde{H}_{ii}
+	\end{pmatrix}
+	\begin{pmatrix}
+	a_1
+	\\
+	a_2
+	\end{pmatrix}
+	\\
+	&= 	
+	\begin{pmatrix}
+	k_z^j + \frac{P_{ii} \tilde{H}_{ii} -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2} & \frac{P_{ii} \tilde{H}_{ij}  -P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2}
+	\\
+	\frac{P_{ii} \tilde{H}_{ij} - P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2} &  k_z^j +\frac{P_{ii} \tilde{H}_{ii}  -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2}
+	\end{pmatrix}
+	\begin{pmatrix}
+	a_1
+	\\
+	a_2
+	\end{pmatrix}
+\end{align*}
+
+\begin{equation}
+	V = P^{-1}_{ij}H_{ij}
+\end{equation}
 \section{Bandas y Topología en Redes Fotónicas}
 
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear el Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:CMT_mat}) con la matriz $\hat{C}$ hermítica es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $|a\rangle = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}|A\rangle$, con $|A\rangle$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$
