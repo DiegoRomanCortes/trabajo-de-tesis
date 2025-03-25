@@ -527,7 +527,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, por separaci�
 	\therefore
 	 \left[  \nabla_\perp^2  + k_0^2n^2(x,y) \right]&\textbf{E}_\nu(x,y)  = \beta_\nu^2 \textbf{E}_\nu(x,y), \label{eqn:eigenfield}
 \end{align}
-donde se ha usado la aproximación de guiaje débil para anular el lado de derecho de la ecuación (\ref{eqn:helmholz}), aunque la ecuación es exacta para la componente longitudinal del campo eléctrico $E_z$. Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, las cuales son ortogonales (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil. 
+donde se ha usado la aproximación de guiaje débil para anular el lado de derecho de la ecuación (\ref{eqn:helmholz}), aunque la ecuación sigue siendo exacta para la componente longitudinal del campo eléctrico $E_z$. Notemos que la ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu(x,y)$, las cuales son ortogonales (ver apéndice \ref{sec:orto}). En principio, la forma espacial del índice de refracción $n(x, y)$ puede ser arbitraria siempre y cuando que se satisfaga la condición de guiaje débil. 
 
 \section{Teoría de modos acoplados}
 
@@ -619,7 +619,7 @@ Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que se
 Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\ref{eqn:transversal}) se tiene que
 
 \begin{align}
-	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - k_z^2}\left\{ \begin{matrix}
+	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - (k_z^j)^2}\left\{ \begin{matrix}
 -\alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
 \\
 \beta\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
@@ -631,7 +631,7 @@ Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\r
 -\beta\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
 \end{matrix}\right.
 \end{align}
-$x_j=jb$, con $b\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
+$x_j=jd$, con $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 \begin{align}
 	\left(\textbf{e}_{j\perp}\times\textbf{h}_{i\perp}^*\right)\cdot \hat{\textbf{z}}
 	=
@@ -648,13 +648,11 @@ $x_j=jb$, con $b\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 \end{align}
 
 \begin{align*}
-	P_{ij} &= k_z^i L \omega \mu_0 H_{a1}^2 \beta\sin^2(\alpha a)e^{-\beta b} e^{2\beta a} \left[\frac{1}{\alpha^2(\alpha^2+\beta^2)} + \frac{e^{-2\beta a}+\beta\left(b-2a\right)}{2\beta^4} \right]			
+	P_{ij} &= \frac{L k_z^i k_0  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{-\beta d}e^{\beta a}}{2\beta} \left[\frac{e^{-\beta a} + \beta (d-2a)e^{\beta a}}{\beta^2} - \frac{2\cosh(\beta a)}{\alpha^2+\beta^2} \right]			
 \end{align*}
 
 \begin{align*}
-	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{\omega\epsilon_0}{4} \iint (n^2 - n_j^2)\textbf{e}_j\cdot \textbf{e}_i^* dx dy 
-\\	
-	&= \frac{k_0 \mu_0 L}{2} \frac{ H_{a1}^2}{\alpha^2} \beta \cos^2(\alpha a)e^{2\beta a} e^{-\beta b} 
+	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{L k_0    \mu_0 c H_{a1}^2 }{2 \beta }  \sin^2(\alpha a)e^{2\beta a} e^{-\beta d} 
 \end{align*}
 
 Elementos diagonales tienen la forma:
@@ -669,73 +667,33 @@ Elementos diagonales tienen la forma:
 
 
 \begin{align*}
-	P_{jj} &= \frac{k_z^j L \omega\mu_0H_{a1}^2  a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right]
+	P_{jj} &= \frac{L k_z^j  k_0 \mu_0 c H_{a1}^2  a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right]
 \end{align*}
 \begin{align*}
-	\tilde{H}_{jj} &\equiv H_{jj} - P_{jj} k_z^j = \frac{\omega\epsilon_0}{4} \iint (n^2 - n_j^2)|\textbf{e}_j|^2 dx dy
-	\\
-	&=
-	\frac{\omega \varepsilon_0 L \sin^2(\alpha a)e^{\beta a}e^{-2\beta b}}{4 \beta^3} (n_1^2-n_0^2) \sinh(2\beta a)
+	\tilde{H}_{jj} &\equiv H_{jj} - P_{jj} k_z^j =
+	\frac{L k_0^3  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{2\beta a}e^{-2\beta d}}{4 \beta^3 } (n_1^2-n_0^2) \sinh(2\beta a)
 \end{align*}
 
-La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}), que luego de premultiplicar por la inversa de la matriz $P_{ij}$:
+La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}), que en este caso sigue:
 \begin{align*}
 	-i\frac{d}{dz}\begin{pmatrix}
 	a_1
 	\\
 	a_2
-	\end{pmatrix} &= 
-	\frac{1}{P_{ii}^2-P_{ij}^2}	
+	\end{pmatrix} &= 	
 	\begin{pmatrix}
-	P_{ii} & -P_{ij}
+	k_z^{\text{TE}} + \delta k & V
 	\\
-	-P_{ij} & P_{ii}	
-	\end{pmatrix}
-	\begin{pmatrix}
-	H_{ii} & H_{ij}
-	\\
-	H_{ij} & H_{ii}	
+	V &  k_z^{\text{TE}} +\delta k
 	\end{pmatrix}
 	\begin{pmatrix}
 	a_1
 	\\
 	a_2
-	\end{pmatrix}
-	\\
-	&= 
-	\frac{1}{P_{ii}^2-P_{ij}^2}	
-	\begin{pmatrix}
-	P_{ii} & -P_{ij}
-	\\
-	-P_{ij} & P_{ii}	
-	\end{pmatrix}
-	\begin{pmatrix}
-	P_{ii}k_z^j + \tilde{H}_{ii} & P_{ij} k_z^j + \tilde{H}_{ij}
-	\\
-	P_{ij} k_z^j + \tilde{H}_{ij} & P_{ii} k_z^j + \tilde{H}_{ii}
-	\end{pmatrix}
-	\begin{pmatrix}
-	a_1
-	\\
-	a_2
-	\end{pmatrix}
-	\\
-	&= 	
-	\begin{pmatrix}
-	k_z^j + \frac{P_{ii} \tilde{H}_{ii} -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2} & \frac{P_{ii} \tilde{H}_{ij}  -P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2}
-	\\
-	\frac{P_{ii} \tilde{H}_{ij} - P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2} &  k_z^j +\frac{P_{ii} \tilde{H}_{ii}  -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2}
-	\end{pmatrix}
-	\begin{pmatrix}
-	a_1
-	\\
-	a_2
-	\end{pmatrix}
+	\end{pmatrix},
 \end{align*}
+con $k_z^{\text{TE}} \sim 0.01 \text{ nm}^{-1}$, $V\equiv \frac{P_{ii} \tilde{H}_{ij}  -P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2} \sim 1\text{ cm}^{-1}$ y $\delta k \equiv \frac{P_{ii} \tilde{H}_{ii} -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2} \sim -0.02\text{ cm}^{-1}$ para
 
-\begin{equation}
-	V = P^{-1}_{ij}H_{ij}
-\end{equation}
 \section{Bandas y Topología en Redes Fotónicas}
 
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear el Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:CMT_mat}) con la matriz $\hat{C}$ hermítica es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $|a\rangle = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}|A\rangle$, con $|A\rangle$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$
