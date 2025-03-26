@@ -20,7 +20,7 @@ Esto es, la matriz será una suma de Kronecker de dos matrices tridiagonales con
 Prácticamente toda la matriz es nula (\textit{sparse-like}), por lo que es posible optimizar el proceso de cómputo al utilizar la librería de Python \href{https://docs.scipy.org/doc/scipy/reference/sparse.linalg.html}{\color{magenta}\texttt{scipy.sparse.linalg}}, especialmente diseñada para el álgebra lineal de matrices de escasos elementos. El anexo \ref{sec:codigohelmholtz} contiene una implementación de este algoritmo en Python bajo \href{https://www.gnu.org/licenses/gpl-3.0.html}{\color{magenta}licencia GNU GPL v3}.
 \section{Beam Propagation Method} 
 
-Otra forma de abordar la resolución numérica de la ecuación (\ref{eqn:helmholtznum}) consiste en separar el campo en su envolvente lenta y una fase rápidamente oscilante, condierando que en el rango visible el orden de magnitud es, $k_0 \sim 10 ^{7} m^{-1}$: $\Psi(\textbf{r}) = \phi(x,y,z)\exp(ik_0 n_0 z)$. Luego de reemplazar en la ecuación (\ref{eqn:helmholtznum}) se obtiene la ecuación óptica de Schrödinger \citep{paraxialschrodinger}:
+Otra forma de abordar la resolución numérica de la ecuación (\ref{eqn:helmholtznum}) consiste en separar el campo en su envolvente lenta y una fase rápidamente oscilante, considerando que en el rango visible el orden de magnitud es, $k_0 \sim 10 ^{5} \text{ cm}^{-1}$: $\Psi(\textbf{r}) = \phi(x,y,z)\exp(ik_0 n_0 z)$. Luego de reemplazar en la ecuación (\ref{eqn:helmholtznum}) se obtiene la ecuación óptica de Schrödinger \citep{paraxialschrodinger}:
 
 \begin{equation}
 	2ik_0 n_0\frac{\partial }{\partial z}\phi(x,y, z) = - \left[\nabla_\perp^2 + k_0^2 (n^2(\textbf{r})-n_0^2)\right]\phi(x,y, z), \label{eqn:bpmescalar}
