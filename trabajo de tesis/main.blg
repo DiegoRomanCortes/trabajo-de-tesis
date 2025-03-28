@@ -1,82 +1,48 @@
 This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-A level-1 auxiliary file: intro.aux
-A level-1 auxiliary file: teorico.aux
-A level-1 auxiliary file: numericos.aux
-A level-1 auxiliary file: metodos.aux
-A level-1 auxiliary file: magico.aux
-A level-1 auxiliary file: moleculas.aux
-A level-1 auxiliary file: oam.aux
-A level-1 auxiliary file: conclu.aux
-The style file: unsrtnat.bst
-Database file #1: citations.bib
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1233 of file unsrtnat.bst
-Warning--empty year in nobel
-Warning--empty year in fibra2
-Warning--empty year in fibra
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
-while executing---line 1315 of file unsrtnat.bst
-You've used 54 entries,
-            2481 wiz_defined-function locations,
-            1010 strings with 18518 characters,
-and the built_in function-call counts, 24332 in all, are:
-= -- 2038
-> -- 1523
-< -- 11
-+ -- 569
-- -- 460
-* -- 2317
-:= -- 4098
-add.period$ -- 273
-call.type$ -- 54
-change.case$ -- 107
-chr.to.int$ -- 53
-cite$ -- 60
-duplicate$ -- 1005
-empty$ -- 1971
-format.name$ -- 523
-if$ -- 5032
-int.to.chr$ -- 2
-int.to.str$ -- 55
-missing$ -- 52
-newline$ -- 389
-num.names$ -- 153
-pop$ -- 293
-preamble$ -- 1
-purify$ -- 54
+I found no \citation commands---while reading file main.aux
+I found no \bibdata command---while reading file main.aux
+I found no \bibstyle command---while reading file main.aux
+You've used 0 entries,
+            0 wiz_defined-function locations,
+            83 strings with 482 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
+purify$ -- 0
 quote$ -- 0
-skip$ -- 532
+skip$ -- 0
 stack$ -- 0
-substring$ -- 1105
-swap$ -- 142
+substring$ -- 0
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 372
-warning$ -- 3
-while$ -- 159
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 926
-(There were 12 error messages)
+write$ -- 0
+(There were 3 error messages)
