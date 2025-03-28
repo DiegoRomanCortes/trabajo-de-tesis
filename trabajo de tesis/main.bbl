@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -408,27 +408,6 @@ Maxim Mazanov, Diego Román-Cortés, Gabriel Cáceres-Aravena, Christofer Cid,
 \newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c00728}.
 \newblock PMID: 38574276.
 
-\bibitem[Schulz et~al.(2022)Schulz, Jörg, and Freymann]{schulz_geometric_2022}
-J.~Schulz, C.~Jörg, and G.~von Freymann.
-\newblock Geometric control of next-nearest-neighbor coupling in evanescently
-  coupled dielectric waveguides.
-\newblock \emph{Optics Express}, 30\penalty0 (6):\penalty0 9869--9877, March
-  2022.
-\newblock ISSN 1094-4087.
-\newblock \doi{10.1364/OE.447921}.
-\newblock URL \url{https://opg.optica.org/oe/abstract.cfm?uri=oe-30-6-9869}.
-\newblock Publisher: Optica Publishing Group.
-
-\bibitem[Alexandre et~al.(2017)Alexandre, Millington, and
-  Seynaeve]{NHsymmetries}
-Jean Alexandre, Peter Millington, and Dries Seynaeve.
-\newblock Symmetries and conservation laws in non-{Hermitian} field theories.
-\newblock \emph{Physical Review D}, 96\penalty0 (6):\penalty0 065027, September
-  2017.
-\newblock ISSN 2470-0010, 2470-0029.
-\newblock \doi{10.1103/PhysRevD.96.065027}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevD.96.065027}.
-
 \bibitem[Haus et~al.(1987)Haus, Huang, Kawakami, and
   Whitaker]{haus_coupled-mode}
 H.~Haus, W.~Huang, S.~Kawakami, and N.~Whitaker.
@@ -440,14 +419,6 @@ H.~Haus, W.~Huang, S.~Kawakami, and N.~Whitaker.
 \newblock URL
   \url{https://ieeexplore.ieee.org/document/1075416/?arnumber=1075416}.
 \newblock Conference Name: Journal of Lightwave Technology.
-
-\bibitem[Christodoulides and Joseph(1988)]{christodoulides_discrete_1988}
-D.~N. Christodoulides and R.~I. Joseph.
-\newblock Discrete self-focusing in nonlinear arrays of coupled waveguides.
-\newblock \emph{Optics Letters}, 13\penalty0 (9):\penalty0 794, September 1988.
-\newblock ISSN 0146-9592, 1539-4794.
-\newblock \doi{10.1364/OL.13.000794}.
-\newblock URL \url{https://opg.optica.org/abstract.cfm?URI=ol-13-9-794}.
 
 \bibitem[Joannopoulos et~al.(2008)Joannopoulos, Johnson, Winn, and
   Meade]{joannopoulos_photonic_2008}
@@ -489,12 +460,16 @@ Herman J.~C. Berendsen.
 \newblock \doi{10.1063/1.1732460}.
 \newblock URL \url{https://doi.org/10.1063/1.1732460}.
 
-\bibitem[Román-Cortés et~al.(2024)Román-Cortés, Mazanov, Vicencio, and
-  Gorlach]{Pmodecoupling}
-Diego Román-Cortés, Maxim Mazanov, Rodrigo~A. Vicencio, and Maxim~A. Gorlach.
-\newblock Observation of the magic angle and flat band physics in dipolar
-  photonic lattices, 2024.
-\newblock URL \url{https://arxiv.org/abs/2410.20914}.
+\bibitem[Román-Cort{\'e}s et~al.(2025)Román-Cort{\'e}s, Mazanov, Vicencio,
+  and Gorlach]{Pmodecoupling}
+Diego Román-Cort{\'e}s, Maxim Mazanov, Rodrigo~A. Vicencio, and Maxim~A.
+  Gorlach.
+\newblock Observation of invisibility angle and flat band physics in dipolar
+  photonic lattices.
+\newblock \emph{Nano Letters}, 25\penalty0 (11):\penalty0 4291--4297, 2025.
+\newblock \doi{10.1021/acs.nanolett.4c05951}.
+\newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c05951}.
+\newblock PMID: 40048281.
 
 \bibitem[Polini and V.(2013)]{honeycombdirac}
 Guinea F. Lewenstein M. Manoharan H.~C. Polini, M. and Pellegrini V.
