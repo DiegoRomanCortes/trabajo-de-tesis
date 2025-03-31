@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.4)  28 MAR 2025 16:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  31 MAR 2025 12:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1123,7 +1123,7 @@ your preamble.
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
 Package newfloat Info: `sidecap' package detected.
-<imagenes/escudoU2014.pdf, id=178, 320.19624pt x 689.57625pt>
+<imagenes/escudoU2014.pdf, id=179, 320.19624pt x 689.57625pt>
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
 <use imagenes/escudoU2014.pdf>
 Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 84.
@@ -1201,178 +1201,7 @@ Package newfloat Info: Setting Plan B file extension to `lof'... on input line
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20.74> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 1.
 
-Package natbib Warning: Citation `nobel' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `femto1' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `atto1' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `atto2' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `atto3' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `photons1' on page 1 undefined on input line 2
-.
-
-
-Package natbib Warning: Citation `photons2' on page 1 undefined on input line 2
-.
-
-
-Package natbib Warning: Citation `photons3' on page 1 undefined on input line 2
-.
-
-
-Package natbib Warning: Citation `opticaltweezers' on page 1 undefined on input
- line 2.
-
-
-Package natbib Warning: Citation `led1' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `led2' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `led3' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `fibra2' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `fibra' on page 1 undefined on input line 2.
-
-
-Package natbib Warning: Citation `femto' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `bics' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `lieb1' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `lieb2' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `artificialFB' on page 1 undefined on input li
-ne 4.
-
-
-Package natbib Warning: Citation `FBdynamics' on page 1 undefined on input line
- 4.
-
-
-Package natbib Warning: Citation `strain' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `dendritas' on page 1 undefined on input line 
-4.
-
-
-Package natbib Warning: Citation `splitters' on page 1 undefined on input line 
-4.
-
-
-Package natbib Warning: Citation `BlochOsci' on page 1 undefined on input line 
-4.
-
-
-Package natbib Warning: Citation `Anderson' on page 1 undefined on input line 4
-.
-
-
-Package natbib Warning: Citation `lieb1' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `lieb2' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `artificialFB' on page 1 undefined on input li
-ne 4.
-
-
-Package natbib Warning: Citation `FBdynamics' on page 1 undefined on input line
- 4.
-
-
-Package natbib Warning: Citation `obstopo' on page 1 undefined on input line 4.
-
-
-
-Package natbib Warning: Citation `obsfloquet' on page 1 undefined on input line
- 4.
-
-
-Package natbib Warning: Citation `topo1dphoto' on page 1 undefined on input lin
-e 4.
-
-
-Package natbib Warning: Citation `toporusos' on page 1 undefined on input line 
-4.
-
-
-Package natbib Warning: Citation `discretesolitons' on page 1 undefined on inpu
-t line 4.
-
-
-Package natbib Warning: Citation `qed' on page 1 undefined on input line 4.
-
-
-Package natbib Warning: Citation `squeezed' on page 1 undefined on input line 4
-.
-
-
-Package natbib Warning: Citation `topoquantum' on page 1 undefined on input lin
-e 4.
-
-
-Package natbib Warning: Citation `telecom' on page 1 undefined on input line 4.
-
-
-
-Package natbib Warning: Citation `interorbital' on page 1 undefined on input li
-ne 6.
-
-
-Package natbib Warning: Citation `OAMCaging' on page 1 undefined on input line 
-8.
-
-
-Package natbib Warning: Citation `ABCaging' on page 1 undefined on input line 8
-.
-
-
-Package natbib Warning: Citation `oamapp' on page 1 undefined on input line 8.
-
-
-Package natbib Warning: Citation `oamfree' on page 1 undefined on input line 8.
-
-
-
-Package natbib Warning: Citation `OAMWG' on page 1 undefined on input line 8.
-
-
 Package natbib Warning: Citation `vortex' on page 1 undefined on input line 8.
-
-
-Package natbib Warning: Citation `vortextrim' on page 1 undefined on input line
- 8.
-
-
-Package natbib Warning: Citation `topoOAM' on page 1 undefined on input line 8.
-
-
-
-Package natbib Warning: Citation `molecules' on page 1 undefined on input line 
-8.
-
-
-Package natbib Warning: Citation `SPSSH' on page 1 undefined on input line 8.
 
 ) [1
 
@@ -1397,7 +1226,7 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
 
 pdfTeX warning: /usr/bin/pdflatex (file ./media/slab.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<media/slab.pdf, id=331, 963.6pt x 542.025pt>
+<media/slab.pdf, id=401, 963.6pt x 542.025pt>
 File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
 Package pdftex.def Info: media/slab.pdf  used on input line 107.
@@ -1411,13 +1240,13 @@ File: ts1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 242.
-<media/slabgraphical.pdf, id=359, 246.45837pt x 192.50116pt>
+<media/slabgraphical.pdf, id=429, 246.45837pt x 192.50116pt>
 File: media/slabgraphical.pdf Graphic file (type pdf)
 <use media/slabgraphical.pdf>
 Package pdftex.def Info: media/slabgraphical.pdf  used on input line 248.
 (pdftex.def)             Requested size: 330.42041pt x 258.1pt.
  [5]
-<media/TETMfields.pdf, id=370, 230.77599pt x 179.71974pt>
+<media/TETMfields.pdf, id=440, 230.77599pt x 179.71974pt>
 File: media/TETMfields.pdf Graphic file (type pdf)
 <use media/TETMfields.pdf>
 Package pdftex.def Info: media/TETMfields.pdf  used on input line 254.
@@ -1429,24 +1258,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
                    \relax 
 l.402 \end{align}
                   [8] [9]
-<media/fibergraphicalHE_EH.pdf, id=448, 219.55031pt x 192.96445pt>
+<media/fibergraphicalHE_EH.pdf, id=519, 219.55031pt x 192.96445pt>
 File: media/fibergraphicalHE_EH.pdf Graphic file (type pdf)
 <use media/fibergraphicalHE_EH.pdf>
 Package pdftex.def Info: media/fibergraphicalHE_EH.pdf  used on input line 501.
 
 (pdftex.def)             Requested size: 283.22162pt x 248.94576pt.
  [10]
-<media/OAM_analitic.png, id=457, 1047.16219pt x 682.80093pt>
+<media/OAM_analitic.png, id=527, 1047.16219pt x 682.80093pt>
 File: media/OAM_analitic.png Graphic file (type png)
 <use media/OAM_analitic.png>
 Package pdftex.def Info: media/OAM_analitic.png  used on input line 506.
 (pdftex.def)             Requested size: 472.03123pt x 307.7785pt.
- [11 <./media/fibergraphicalHE_EH.pdf> <./media/OAM_analitic.png>]
-
-Package natbib Warning: Citation `haus_coupled-mode' on page 12 undefined on in
-put line 536.
-
-[12]
+ [11 <./media/fibergraphicalHE_EH.pdf> <./media/OAM_analitic.png>] [12]
 
 LaTeX Warning: Command \textasciiacute invalid in math mode on input line 572.
 
@@ -1455,19 +1279,17 @@ LaTeX Warning: Command \textasciiacute invalid in math mode on input line 572.
 
 Missing character: There is no ´ in font txr!
 [13] [14]
-
-Package natbib Warning: Citation `joannopoulos_photonic_2008' on page 15 undefi
-ned on input line 728.
-
-
-Package natbib Warning: Citation `topobulk' on page 15 undefined on input line 
-733.
+Overfull \hbox (25.76952pt too wide) detected at line 724
+[]
+ []
 
 [15]
-
-Package natbib Warning: Citation `ssh' on page 16 undefined on input line 736.
-
-) [16]
+<media/ssh-model.png, id=613, 883.04906pt x 213.04594pt>
+File: media/ssh-model.png Graphic file (type png)
+<use media/ssh-model.png>
+Package pdftex.def Info: media/ssh-model.png  used on input line 739.
+(pdftex.def)             Requested size: 424.82523pt x 102.49493pt.
+) [16 <./media/ssh-model.png (PNG copy)>]
 \openout2 = `numericos.aux'.
 
  (./numericos.tex
@@ -1476,37 +1298,15 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 20.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
-)
-
-Package natbib Warning: Citation `paraxialschrodinger' on page 17 undefined on 
-input line 23.
-
-[17
+) [17
 
 
 
 
 ]
 
-Package natbib Warning: Citation `bics' on page 18 undefined on input line 28.
-
-
-Package natbib Warning: Citation `interorbital' on page 18 undefined on input l
-ine 28.
-
-
-Package natbib Warning: Citation `OAMCaging' on page 18 undefined on input line
- 28.
-
-
 Package natbib Warning: Citation `vortex' on page 18 undefined on input line 28
 .
-
-
-Package natbib Warning: Citation `bpm' on page 18 undefined on input line 28.
-
-
-Package natbib Warning: Citation `bpm' on page 18 undefined on input line 30.
 
 
 LaTeX Warning: Reference `eqn:CMT_mat' on page 18 undefined on input line 55.
@@ -1516,12 +1316,12 @@ LaTeX Warning: Reference `eqn:CMT_mat' on page 18 undefined on input line 55.
 
  (./metodos.tex
 Cap\'{\i }tulo 4.
-<media/fabrication.png, id=581, 1927.2pt x 1084.05pt>
+<media/fabrication.png, id=671, 1927.2pt x 1084.05pt>
 File: media/fabrication.png Graphic file (type png)
 <use media/fabrication.png>
 Package pdftex.def Info: media/fabrication.png  used on input line 6.
 (pdftex.def)             Requested size: 283.22162pt x 229.12283pt.
-<media/SC_setup.png, id=583, 1927.2pt x 1084.05pt>
+<media/SC_setup.png, id=673, 1927.2pt x 1084.05pt>
 File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package pdftex.def Info: media/SC_setup.png  used on input line 13.
@@ -1532,13 +1332,13 @@ Package pdftex.def Info: media/SC_setup.png  used on input line 13.
 
 
  <./media/fabrication.png> <./media/SC_setup.png>]
-<media/SLMblaze4.png, id=595, 963.6pt x 542.025pt>
+<media/SLMblaze4.png, id=685, 963.6pt x 542.025pt>
 File: media/SLMblaze4.png Graphic file (type png)
 <use media/SLMblaze4.png>
 Package pdftex.def Info: media/SLMblaze4.png  used on input line 30.
 (pdftex.def)             Requested size: 165.2138pt x 161.57301pt.
  [21 <./media/SLMblaze4.png>]
-<media/SLM_setupv1.png, id=603, 1927.2pt x 1084.05pt>
+<media/SLM_setupv1.png, id=693, 1927.2pt x 1084.05pt>
 File: media/SLM_setupv1.png Graphic file (type png)
 <use media/SLM_setupv1.png>
 Package pdftex.def Info: media/SLM_setupv1.png  used on input line 41.
@@ -1560,20 +1360,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-
-Package natbib Warning: Citation `medmagic' on page 23 undefined on input line 
-2.
-
-
-Package natbib Warning: Citation `Pmodecoupling' on page 23 undefined on input 
-line 9.
-
-<media/26um_15mm_angles.png, id=611, 3327.43124pt x 1062.21844pt>
+<media/26um_15mm_angles.png, id=703, 3327.43124pt x 1062.21844pt>
 File: media/26um_15mm_angles.png Graphic file (type png)
 <use media/26um_15mm_angles.png>
 Package pdftex.def Info: media/26um_15mm_angles.png  used on input line 12.
 (pdftex.def)             Requested size: 472.03123pt x 126.46901pt.
-<media/couplingvsangle.jpg, id=616, 160.4394pt x 157.5486pt>
+<media/couplingvsangle.jpg, id=708, 160.4394pt x 157.5486pt>
 File: media/couplingvsangle.jpg Graphic file (type jpg)
 <use media/couplingvsangle.jpg>
 Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
@@ -1584,11 +1376,7 @@ Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
 
 
  <./media/26um_15mm_angles.png>]
-
-Package natbib Warning: Citation `honeycombdirac' on page 24 undefined on input
- line 22.
-
-<media/honeycomb_lattices_bw.png, id=625, 863.225pt x 201.75375pt>
+<media/honeycomb_lattices_bw.png, id=721, 863.225pt x 201.75375pt>
 File: media/honeycomb_lattices_bw.png Graphic file (type png)
 <use media/honeycomb_lattices_bw.png>
 Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
@@ -1597,37 +1385,9 @@ Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
 ) [24 <./media/couplingvsangle.jpg> <./media/honeycomb_lattices_bw.png>]
 \openout2 = `moleculas.aux'.
 
-
-(./moleculas.tex
+ (./moleculas.tex
 Cap\'{\i }tulo 6.
-
-Package natbib Warning: Citation `interorbital' on page 25 undefined on input l
-ine 3.
-
-
-Package natbib Warning: Citation `molecules' on page 25 undefined on input line
- 3.
-
-
-Package natbib Warning: Citation `SPSSH' on page 25 undefined on input line 3.
-
-
-Package natbib Warning: Citation `interorbital' on page 25 undefined on input l
-ine 11.
-
-
-Package natbib Warning: Citation `SPSSH' on page 25 undefined on input line 11.
-
-
-
-Package natbib Warning: Citation `SPSSH' on page 25 undefined on input line 11.
-
-
-
-Package natbib Warning: Citation `toporusos' on page 25 undefined on input line
- 11.
-
-<media/ssh_sp_model.png, id=635, 1015.54407pt x 460.72125pt>
+<media/ssh_sp_model.png, id=739, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
 Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
@@ -1642,12 +1402,12 @@ Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
 
  (./oam.tex
 Cap\'{\i }tulo 7.
-<media/OAM-free.png, id=644, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=748, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=645, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=749, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
@@ -1667,19 +1427,29 @@ Cap\'{\i }tulo 8.
 
 
 
-] (./main.bbl) (./anexoA.tex
-Anexo A.
-
-Package natbib Warning: Citation `greenvectorial' on page 30 undefined on input
- line 29.
-
-) (./anexoB.tex [30
+] (./main.bbl [30
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
+\OT1/txtt/m/n/12 a -[] internet -[] fijo -[] alcanzan -[] el -[] 67 -[] y -[] u
+suarios -[] aumentan -[] preferencia -[] por -[]
+ []
+
+[31]
+Underfull \hbox (badness 1024) in paragraph at lines 226--235
+[]\OT1/txr/m/n/12 Sebabrata Mukher-jee, Ale-xan-der Sprac-klen, Ma-nuel Va-lien
+-te, Eri-ka An-ders-son, Pa-trik
+ []
+
+[32] [33] [34]) (./anexoA.tex [35]
+Anexo A.
+) (./anexoB.tex [36
+
+]
 Anexo B.
-) (./anexoC.tex [31
+) (./anexoC.tex [37
 
 ]
 Anexo C.
@@ -1692,20 +1462,20 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(./codigo/rad2dc.c [32
+(./codigo/rad2dc.c [38
 
-] [33] [34])) (./anexoD.tex [35]
+] [39] [40])) (./anexoD.tex [41]
 Anexo D.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-(./codigo/slm_blaze.py [36
+(./codigo/slm_blaze.py [42
 
 ]))
 
 Package natbib Warning: There were undefined citations.
 
-[37] (./main.aux
+[43] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux) (./numericos.aux) (./metodos.aux) (./magico.aux)
@@ -1714,16 +1484,16 @@ LaTeX Info: Redefining \% on input line 22.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 59E67C8C558658EEBB568AAE8B045C67;9608.
+(rerunfilecheck)             Checksum: 2177F0B462F15FEA83910392301CD756;9610.
  ) 
 Here is how much of TeX's memory you used:
- 39238 strings out of 476091
- 859126 string characters out of 5794082
- 2298330 words of memory out of 5000000
- 58423 multiletter control sequences out of 15000+600000
+ 39504 strings out of 476091
+ 863299 string characters out of 5794081
+ 2304330 words of memory out of 5000000
+ 58624 multiletter control sequences out of 15000+600000
  575791 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,17n,103p,1061b,2340s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,16n,103p,1059b,2338s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1748,10 +1518,10 @@ c/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (45 pages, 9162005 bytes).
+Output written on main.pdf (51 pages, 9231768 bytes).
 PDF statistics:
- 1166 PDF objects out of 1200 (max. 8388607)
- 1030 compressed objects within 11 object streams
- 445 named destinations out of 1000 (max. 500000)
- 467 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1409 PDF objects out of 1440 (max. 8388607)
+ 1264 compressed objects within 13 object streams
+ 509 named destinations out of 1000 (max. 500000)
+ 472 words of extra memory for PDF output out of 10000 (max. 10000000)
 

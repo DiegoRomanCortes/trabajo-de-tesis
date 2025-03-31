@@ -682,9 +682,9 @@ La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:no
 	a_2
 	\end{pmatrix} &= 	
 	\begin{pmatrix}
-	k_z^{\text{TE}} + \delta k & V
+	\tilde{k} & V
 	\\
-	V &  k_z^{\text{TE}} +\delta k
+	V & \tilde{k}
 	\end{pmatrix}
 	\begin{pmatrix}
 	a_1
@@ -692,7 +692,7 @@ La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:no
 	a_2
 	\end{pmatrix},
 \end{align*}
-con $k_z^{\text{TE}} \sim 1.3\times10^5 \text{ cm}^{-1}$, $V\equiv \frac{P_{ii} \tilde{H}_{ij}  -P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2} \sim 1\text{ cm}^{-1}$ y $\delta k \equiv \frac{P_{ii} \tilde{H}_{ii} -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2} \sim -0.02\text{ cm}^{-1}$ para $\lambda = 730$ nm, $n_1 = n_0 + 4\times10^{-4}$ y una distancia entre guías de $d = 18 $ $\mu$m. $(k_z^{\text{TE}}+\delta k)I + V\sigma_x $
+con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\times10^5 \text{ cm}^{-1}$, $V\equiv \frac{P_{ii} \tilde{H}_{ij}  -P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2} \sim 1\text{ cm}^{-1}$ y $\delta k \equiv \frac{P_{ii} \tilde{H}_{ii} -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2} \sim -0.02\text{ cm}^{-1}$ para $\lambda = 730$ nm, $n_1 = n_0 + 4\times10^{-4}$ y una distancia entre guías de $d = 18 $ $\mu$m. La matriz $\hat{P}^{-1}\hat{H}$ se puede escribir en términos de las matrices de Pauli como $\tilde{k}I + V\sigma_x $, lo que permite utilizar sus propiedades para resolver la dinámica del sistema:
 \begin{align*}
 	\begin{pmatrix}
 	a_1(z)
@@ -700,28 +700,27 @@ con $k_z^{\text{TE}} \sim 1.3\times10^5 \text{ cm}^{-1}$, $V\equiv \frac{P_{ii} 
 	a_2(z)
 	\end{pmatrix}
 	=
-	\exp\left\{{i\left[(k_z^{\text{TE}}+\delta k)I + V\sigma_x\right]z }\right\}	\begin{pmatrix}
-	a_1
+	e^{{i\left[\tilde{k}I + V\sigma_x\right]z }}	\begin{pmatrix}
+	a_1(0)
 	\\
-	a_2
+	a_2(0)
 	\end{pmatrix}
 	=
-	e^{i(k_z^{\text{TE}}+\delta k)z}\frac{1}{\sqrt{2}}
+	e^{i\tilde{k}z}
 	\begin{pmatrix}
-	1 & 1
+	\cos(Vz) & i\sin(Vz)
 	\\
-	1 & -1
+	i\sin(Vz) & \cos(Vz)
 	\end{pmatrix}
 	\begin{pmatrix}
-	e^{iVz} & 0
+	a_1(0)
 	\\
-	0 & e^{-iVz}
-	\end{pmatrix}
-	\begin{pmatrix}
-	a_1
-	\\
-	a_2
-	\end{pmatrix}
+	a_2(0)
+	\end{pmatrix}.
+\end{align*}
+
+\begin{align*}
+	V =  \frac{\sin^2(\alpha a)e^{2\beta a}e^{-\beta d}}{4\beta k_z^i}\frac{\left[\frac{a}{ \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{\alpha^2\beta^3 }  \right]    - \frac{e^{-\beta d}(\alpha^2+\beta^2) \sinh(2\beta a)}{ \beta^2}  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]}{ \left[\frac{a}{2 \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{2\alpha^2\beta^3 }  \right]^2 -  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]^2}
 \end{align*}
 \section{Bandas y Topología en Redes Fotónicas}
 
@@ -733,7 +732,13 @@ Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agrupa
 En sistemas hermíticos existe una correspondencia entre las propiedades de las bandas del sistema, calculadas con condiciones de borde periodicas y los autoestados de borde asociados a la matriz $\hat{C}$, calculados con condiciones de borde abiertas \cite{topobulk}.
 
 \subsection{Red de Su-Schireffer-Heeger fotónica}
-\cite{ssh}
+El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. La red SSH fotónica se usará como ejemplo de las herramientas analíticas que posteriormente se utilizarán.
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.9\linewidth]{media/ssh-model.png}
+	\caption{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$).}
+\end{figure}
 \begin{equation}
-	H = \sum_n C_\text{intra} b_n^*a_n + C_\text{inter} \left(b_{n-1}^*a_n + a_{n+1}^*b_n \right) + c.c.
+	H = \sum_n t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c.
 \end{equation}
