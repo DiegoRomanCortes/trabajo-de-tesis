@@ -1,4 +1,4 @@
-\begin{thebibliography}{56}
+\begin{thebibliography}{57}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -458,6 +458,15 @@ Tomoki Ozawa, Hannah~M. Price, Alberto Amo, Nathan Goldman, Mohammad Hafezi,
 \newblock ISSN 0034-6861, 1539-0756.
 \newblock \doi{10.1103/RevModPhys.91.015006}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.91.015006}.
+
+\bibitem[Zak(1989)]{zak_berry}
+J.~Zak.
+\newblock Berry’s phase for energy bands in solids.
+\newblock \emph{Physical Review Letters}, 62\penalty0 (23):\penalty0
+  2747--2750, June 1989.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.62.2747}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.62.2747}.
 
 \bibitem[Marte and Stenholm(1997)]{paraxialschrodinger}
 Monika A.~M. Marte and Stig Stenholm.
