@@ -728,8 +728,6 @@ Si bien es posible reformular las ecuaciones de Maxwell como un problema de auto
 
 Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agruparse en el mismo número de bandas que cantidad de sitios por celda unitaria conformen el sistema, dado que las funciones de Wannier asociadas al Teorema de Bloch aproximan de mejor manera al sistema en cuestión a medida que aumenta el número de celdas.
 
-\subsection{Correspondencia bulto-borde}
-En sistemas hermíticos existe una correspondencia entre las propiedades de las bandas del sistema, calculadas con condiciones de borde periodicas y los autoestados de borde asociados a la matriz $\hat{C}$, calculados con condiciones de borde abiertas \cite{topobulk}.
 
 \subsection{Red de Su-Schireffer-Heeger fotónica}
 El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estructuras localizadas en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
@@ -766,7 +764,16 @@ En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar e
 	\end{pmatrix},
 \end{align*}
 donde se ha usado que $$\frac{1}{N}\sum_n e^{i(k-k')nd} = \left\{\begin{matrix} \frac{N}{N}=1, \text{ si } k = k'
-\\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}=0 \text{ si } k\neq k'
-\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $H(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $H(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\vec{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $H(k)$ en términos de las matrices de Pauli $H(k) = \vec{d} \cdot \vec{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\vec{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\vec{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen. Formalmente, las fases de Zak $\mathcal{Z}_\pm$ asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, 
-
-
+\\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}=0, \text{ si } k\neq k'
+\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $H(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $H(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\vec{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $H(k)$ en términos de las matrices de Pauli $H(k) = \vec{d} \cdot \vec{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\vec{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\vec{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen. Formalmente, las fases de Zak $\mathcal{Z}_\pm$ asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
+\mathcal{Z}_\pm &= i \oint \textbf{v}_\pm^\dagger \frac{d \textbf{v}_\pm}{dk}  dk  = -\frac{1}{2} \int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}}  \frac{d \phi(k)}{d k} dk = -\frac{d}{2}\int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}} \frac{1+\delta\cos(kd)}{\delta^2+1+2\delta\cos(kd)} dk = -\frac{\pi}{2} \left(1 + \frac{1-\delta^2}{\left|1-\delta^2\right|} \right) .
+\end{align*}
+Es decir, 
+\begin{align*}
+\mathcal{Z}_\pm &= \left\{\begin{matrix}
+-\pi, \text{ si } |\delta| < 1
+\\
+0, \text{ si } |\delta| > 1
+\end{matrix}\right. .
+\end{align*}
+El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \textit{transición topológica} puesto que no es posible pasar de un régimen a otro de forma suave. Esto tiene implicancias en el sistema con condiciones de borde abiertas (Dirichlet) debido a la \textit{correspondencia bulto-borde} \cite{topobulk}.

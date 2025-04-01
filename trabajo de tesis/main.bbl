@@ -421,13 +421,6 @@ John~D. Joannopoulos, Steven~G. Johnson, Joshua~N. Winn, and Robert~D. Meade.
   2008.
 \newblock ISBN 978-0-691-12456-8.
 
-\bibitem[Qi and Zhang(2011)]{topobulk}
-Xiao-Liang Qi and Shou-Cheng Zhang.
-\newblock Topological insulators and superconductors.
-\newblock \emph{Rev. Mod. Phys.}, 83:\penalty0 1057--1110, Oct 2011.
-\newblock \doi{10.1103/RevModPhys.83.1057}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.83.1057}.
-
 \bibitem[Su et~al.(1979)Su, Schrieffer, and Heeger]{ssh}
 W.~P. Su, J.~R. Schrieffer, and A.~J. Heeger.
 \newblock Solitons in {Polyacetylene}.
@@ -467,6 +460,13 @@ J.~Zak.
 \newblock ISSN 0031-9007.
 \newblock \doi{10.1103/PhysRevLett.62.2747}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.62.2747}.
+
+\bibitem[Qi and Zhang(2011)]{topobulk}
+Xiao-Liang Qi and Shou-Cheng Zhang.
+\newblock Topological insulators and superconductors.
+\newblock \emph{Rev. Mod. Phys.}, 83:\penalty0 1057--1110, Oct 2011.
+\newblock \doi{10.1103/RevModPhys.83.1057}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.83.1057}.
 
 \bibitem[Marte and Stenholm(1997)]{paraxialschrodinger}
 Monika A.~M. Marte and Stig Stenholm.

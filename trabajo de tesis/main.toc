@@ -13,8 +13,7 @@
 \contentsline {subsection}{\numberline {2.5.2}Aplicaciones}{14}{subsection.2.5.2}%
 \contentsline {subsubsection}{Dímero TE en guías de onda tipo losa}{14}{subsection.2.5.2}%
 \contentsline {section}{\numberline {2.6}Bandas y Topología en Redes Fotónicas}{15}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Correspondencia bulto-borde}{16}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Red de Su-Schireffer-Heeger fotónica}{16}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.1}Red de Su-Schireffer-Heeger fotónica}{16}{subsection.2.6.1}%
 \contentsline {chapter}{\numberline {3}Métodos numéricos}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Expansión en modos normales }{18}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Beam Propagation Method}{18}{section.3.2}%
