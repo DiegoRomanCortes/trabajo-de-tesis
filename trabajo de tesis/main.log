@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  31 MAR 2025 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.3.4)  1 APR 2025 12:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1278,18 +1278,20 @@ LaTeX Warning: Command \textasciiacute invalid in math mode on input line 572.
 LaTeX Warning: Command \textasciiacute invalid in math mode on input line 572.
 
 Missing character: There is no ´ in font txr!
-[13] [14]
-Overfull \hbox (25.76952pt too wide) detected at line 724
-[]
- []
-
-[15]
-<media/ssh-model.png, id=613, 883.04906pt x 213.04594pt>
+[13] [14] [15]
+<media/ssh-model.png, id=615, 1099.85907pt x 261.22594pt>
 File: media/ssh-model.png Graphic file (type png)
 <use media/ssh-model.png>
-Package pdftex.def Info: media/ssh-model.png  used on input line 739.
-(pdftex.def)             Requested size: 424.82523pt x 102.49493pt.
-) [16 <./media/ssh-model.png (PNG copy)>]
+Package pdftex.def Info: media/ssh-model.png  used on input line 745.
+(pdftex.def)             Requested size: 424.82523pt x 100.89714pt.
+)
+Overfull \hbox (34.62437pt too wide) in paragraph at lines 767--135
+\OT1/txr/m/n/12 donde se ha usa-do que $[] [][] \OML/txmi/m/it/12 e[] \OT1/txr/
+m/n/12 = [] = \OML/txmi/m/it/12 ^^N[]$\OT1/txr/m/n/12 , pues $\OML/txmi/m/it/12
+ k; k[] \OMS/txsy/m/n/12 2 []$
+ []
+
+[16 <./media/ssh-model.png (PNG copy)>] [17]
 \openout2 = `numericos.aux'.
 
  (./numericos.tex
@@ -1298,52 +1300,52 @@ LaTeX Font Info:    Trying to load font information for OT1+txtt on input line
 20.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
-) [17
+) [18
 
 
 
 
 ]
 
-Package natbib Warning: Citation `vortex' on page 18 undefined on input line 28
+Package natbib Warning: Citation `vortex' on page 19 undefined on input line 28
 .
 
 
-LaTeX Warning: Reference `eqn:CMT_mat' on page 18 undefined on input line 55.
+LaTeX Warning: Reference `eqn:CMT_mat' on page 19 undefined on input line 55.
 
-) [18] [19]
+) [19] [20]
 \openout2 = `metodos.aux'.
 
  (./metodos.tex
 Cap\'{\i }tulo 4.
-<media/fabrication.png, id=671, 1927.2pt x 1084.05pt>
+<media/fabrication.png, id=677, 1927.2pt x 1084.05pt>
 File: media/fabrication.png Graphic file (type png)
 <use media/fabrication.png>
 Package pdftex.def Info: media/fabrication.png  used on input line 6.
 (pdftex.def)             Requested size: 283.22162pt x 229.12283pt.
-<media/SC_setup.png, id=673, 1927.2pt x 1084.05pt>
+<media/SC_setup.png, id=679, 1927.2pt x 1084.05pt>
 File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package pdftex.def Info: media/SC_setup.png  used on input line 13.
 (pdftex.def)             Requested size: 472.03123pt x 174.63484pt.
-[20
+[21
 
 
 
 
  <./media/fabrication.png> <./media/SC_setup.png>]
-<media/SLMblaze4.png, id=685, 963.6pt x 542.025pt>
+<media/SLMblaze4.png, id=691, 963.6pt x 542.025pt>
 File: media/SLMblaze4.png Graphic file (type png)
 <use media/SLMblaze4.png>
 Package pdftex.def Info: media/SLMblaze4.png  used on input line 30.
 (pdftex.def)             Requested size: 165.2138pt x 161.57301pt.
- [21 <./media/SLMblaze4.png>]
-<media/SLM_setupv1.png, id=693, 1927.2pt x 1084.05pt>
+ [22 <./media/SLMblaze4.png>]
+<media/SLM_setupv1.png, id=699, 1927.2pt x 1084.05pt>
 File: media/SLM_setupv1.png Graphic file (type png)
 <use media/SLM_setupv1.png>
 Package pdftex.def Info: media/SLM_setupv1.png  used on input line 41.
 (pdftex.def)             Requested size: 472.03123pt x 333.833pt.
-) [22 <./media/SLM_setupv1.png>]
+) [23 <./media/SLM_setupv1.png>]
 \openout2 = `magico.aux'.
 
  (./magico.tex
@@ -1360,74 +1362,74 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<media/26um_15mm_angles.png, id=703, 3327.43124pt x 1062.21844pt>
+<media/26um_15mm_angles.png, id=710, 3327.43124pt x 1062.21844pt>
 File: media/26um_15mm_angles.png Graphic file (type png)
 <use media/26um_15mm_angles.png>
 Package pdftex.def Info: media/26um_15mm_angles.png  used on input line 12.
 (pdftex.def)             Requested size: 472.03123pt x 126.46901pt.
-<media/couplingvsangle.jpg, id=708, 160.4394pt x 157.5486pt>
+<media/couplingvsangle.jpg, id=715, 160.4394pt x 157.5486pt>
 File: media/couplingvsangle.jpg Graphic file (type jpg)
 <use media/couplingvsangle.jpg>
 Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
 (pdftex.def)             Requested size: 236.01561pt x 231.76433pt.
-[23
+[24
 
 
 
 
  <./media/26um_15mm_angles.png>]
-<media/honeycomb_lattices_bw.png, id=721, 863.225pt x 201.75375pt>
+<media/honeycomb_lattices_bw.png, id=727, 863.225pt x 201.75375pt>
 File: media/honeycomb_lattices_bw.png Graphic file (type png)
 <use media/honeycomb_lattices_bw.png>
 Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
 .
 (pdftex.def)             Requested size: 472.03123pt x 110.32149pt.
-) [24 <./media/couplingvsangle.jpg> <./media/honeycomb_lattices_bw.png>]
+) [25 <./media/couplingvsangle.jpg> <./media/honeycomb_lattices_bw.png>]
 \openout2 = `moleculas.aux'.
 
  (./moleculas.tex
 Cap\'{\i }tulo 6.
-<media/ssh_sp_model.png, id=739, 1015.54407pt x 460.72125pt>
+<media/ssh_sp_model.png, id=745, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
 Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
 (pdftex.def)             Requested size: 330.42041pt x 149.90135pt.
-) [25
+) [26
 
 
 
 
-] [26 <./media/ssh_sp_model.png (PNG copy)>]
+] [27 <./media/ssh_sp_model.png (PNG copy)>]
 \openout2 = `oam.aux'.
 
  (./oam.tex
 Cap\'{\i }tulo 7.
-<media/OAM-free.png, id=748, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=754, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=749, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=755, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
 (pdftex.def)             Requested size: 472.03123pt x 236.01633pt.
-) [27
+) [28
 
 
 
 
- <./media/OAM-free.png>] [28 <./media/vortex.png>]
+ <./media/OAM-free.png>] [29 <./media/vortex.png>]
 \openout2 = `conclu.aux'.
 
  (./conclu.tex
 Cap\'{\i }tulo 8.
-) [29
+) [30
 
 
 
 
-] (./main.bbl [30
+] (./main.bbl [31
 
 
 
@@ -1437,19 +1439,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--116
 suarios -[] aumentan -[] preferencia -[] por -[]
  []
 
-[31]
+[32]
 Underfull \hbox (badness 1024) in paragraph at lines 226--235
 []\OT1/txr/m/n/12 Sebabrata Mukher-jee, Ale-xan-der Sprac-klen, Ma-nuel Va-lien
 -te, Eri-ka An-ders-son, Pa-trik
  []
 
-[32] [33] [34]) (./anexoA.tex [35]
+[33] [34] [35]) (./anexoA.tex [36]
 Anexo A.
-) (./anexoB.tex [36
+) (./anexoB.tex [37
 
 ]
 Anexo B.
-) (./anexoC.tex [37
+) (./anexoC.tex [38
 
 ]
 Anexo C.
@@ -1462,20 +1464,20 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(./codigo/rad2dc.c [38
+(./codigo/rad2dc.c [39
 
-] [39] [40])) (./anexoD.tex [41]
+] [40] [41])) (./anexoD.tex [42]
 Anexo D.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-(./codigo/slm_blaze.py [42
+(./codigo/slm_blaze.py [43
 
 ]))
 
 Package natbib Warning: There were undefined citations.
 
-[43] (./main.aux
+[44] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux) (./numericos.aux) (./metodos.aux) (./magico.aux)
@@ -1483,17 +1485,20 @@ LaTeX Info: Redefining \% on input line 22.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2177F0B462F15FEA83910392301CD756;9610.
  ) 
 Here is how much of TeX's memory you used:
- 39504 strings out of 476091
- 863299 string characters out of 5794081
+ 39507 strings out of 476091
+ 863331 string characters out of 5794082
  2304330 words of memory out of 5000000
- 58624 multiletter control sequences out of 15000+600000
+ 58626 multiletter control sequences out of 15000+600000
  575791 words of font info for 185 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,16n,103p,1059b,2338s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,21n,103p,1059b,2340s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1505,6 +1510,7 @@ nts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/txfonts/rtxi.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
@@ -1518,10 +1524,10 @@ c/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (51 pages, 9231768 bytes).
+Output written on main.pdf (52 pages, 9247955 bytes).
 PDF statistics:
- 1409 PDF objects out of 1440 (max. 8388607)
- 1264 compressed objects within 13 object streams
- 509 named destinations out of 1000 (max. 500000)
+ 1419 PDF objects out of 1440 (max. 8388607)
+ 1271 compressed objects within 13 object streams
+ 510 named destinations out of 1000 (max. 500000)
  472 words of extra memory for PDF output out of 10000 (max. 10000000)
 

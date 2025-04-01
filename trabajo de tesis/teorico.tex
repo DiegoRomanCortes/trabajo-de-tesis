@@ -719,9 +719,9 @@ con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\time
 	\end{pmatrix}.
 \end{align*}
 
-\begin{align*}
-	V =  \frac{\sin^2(\alpha a)e^{2\beta a}e^{-\beta d}}{4\beta k_z^i}\frac{\left[\frac{a}{ \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{\alpha^2\beta^3 }  \right]    - \frac{e^{-\beta d}(\alpha^2+\beta^2) \sinh(2\beta a)}{ \beta^2}  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]}{ \left[\frac{a}{2 \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{2\alpha^2\beta^3 }  \right]^2 -  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]^2}
-\end{align*}
+%\begin{align*}
+%	V =  \frac{\sin^2(\alpha a)e^{2\beta a}e^{-\beta d}}{4\beta k_z^i}\frac{\left[\frac{a}{ \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{\alpha^2\beta^3 }  \right]    - \frac{e^{-\beta d}(\alpha^2+\beta^2) \sinh(2\beta a)}{ \beta^2}  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]}{ \left[\frac{a}{2 \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{2\alpha^2\beta^3 }  \right]^2 -  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]^2}
+%\end{align*}
 \section{Bandas y Topología en Redes Fotónicas}
 
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear un análogo al Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:non-ortho-CMT-eqs}) con la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $\textbf{a} = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}\textbf{A}$, con $\textbf{A}$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$
@@ -732,13 +732,39 @@ Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agrupa
 En sistemas hermíticos existe una correspondencia entre las propiedades de las bandas del sistema, calculadas con condiciones de borde periodicas y los autoestados de borde asociados a la matriz $\hat{C}$, calculados con condiciones de borde abiertas \cite{topobulk}.
 
 \subsection{Red de Su-Schireffer-Heeger fotónica}
-El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. La red SSH fotónica se usará como ejemplo de las herramientas analíticas que posteriormente se utilizarán.
+El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estructuras localizadas en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
 
-\begin{figure}[H]
-\centering
-	\includegraphics[width=0.9\linewidth]{media/ssh-model.png}
-	\caption{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$).}
-\end{figure}
 \begin{equation}
 	H = \sum_n t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c.
 \end{equation}
+
+
+
+\begin{figure}[h]
+\centering
+	\includegraphics[width=0.9\linewidth]{media/ssh-model.png}
+	\caption{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$). \label{fig:ssh-model}}
+\end{figure}
+En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar el Hamiltoniano en la base de Bloch con $a_n = \frac{1}{\sqrt{N}}\sum_k a_k e^{iknd}$, $b_n = \frac{1}{\sqrt{N}}\sum_k b_k e^{iknd}$ de la siguiente forma:
+\begin{align*}
+	H &= \frac{1}{N}\sum_n \sum_{k k'} \left[\left(t + t' e^{ikd}\right) a_k b_{k'}^* e^{i(k-k')nd}  + \left(t  + t' e^{-ikd}\right) a_k^* b_{k'} e^{-i(k-k')nd} \right]
+	\\
+	&=  \sum_k 
+	\begin{pmatrix}
+		a_k^* & b_k^*		
+	\end{pmatrix}
+	\underbrace{
+	\begin{pmatrix}
+		0 & t+ t'e^{-ikd}
+		\\
+		t+ t'e^{ikd} & 0
+	\end{pmatrix}}_{H(k)}
+	\begin{pmatrix}
+		a_k
+		\\
+		b_k		
+	\end{pmatrix},
+\end{align*}
+donde se ha usado que $\frac{1}{N}\sum_n e^{i(k-k')nd} = \left\{\begin{matrix} \frac{N}{N}=1, \text{ si } k = k'
+\\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}=0 \text{ si } k\neq k'
+\end{matrix}\right. =\delta_{kk'}$, pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $H(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $H(k)$, $\textbf{v}_\pm =\begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$
