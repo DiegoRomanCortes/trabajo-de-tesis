@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -365,6 +365,18 @@ Wei-Guan Shen, Yuan Chen, Hui-Ming Wang, and Xian-Min Jin.
 \newblock \doi{https://doi.org/10.1016/j.optcom.2021.127615}.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S0030401821008646}.
+
+\bibitem[Hu et~al.(2025)Hu, Bongiovanni, Wang, Wang, Song, Xu, Morandotti,
+  Buljan, and Chen]{vortex}
+Zhichan Hu, Domenico Bongiovanni, Ziteng Wang, Xiangdong Wang, Daohong Song,
+  Jingjun Xu, Roberto Morandotti, Hrvoje Buljan, and Zhigang Chen.
+\newblock Topological orbital angular momentum extraction and twofold
+  protection of vortex transport.
+\newblock \emph{Nature Photonics}, 19\penalty0 (2):\penalty0 162--169, Feb
+  2025.
+\newblock ISSN 1749-4893.
+\newblock \doi{10.1038/s41566-024-01564-2}.
+\newblock URL \url{https://doi.org/10.1038/s41566-024-01564-2}.
 
 \bibitem[Polo et~al.(2016)Polo, Mompart, and Ahufinger]{vortextrim}
 J.~Polo, J.~Mompart, and V.~Ahufinger.

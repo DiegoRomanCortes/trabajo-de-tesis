@@ -718,6 +718,12 @@ con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\time
 	\end{pmatrix}.
 \end{align*}
 
+Una forma de encontrar el valor experimental del acomplamiento $V$ es mediante la excitación individual de un modo. Con esto, la razón entre las potencias $|a_1(z)|^2$ y $|a_2(z)|^2$ permite despejar el acoplamiento para una distancia de propagación $z=L$ conocida:
+
+\begin{equation}
+	V = \frac{1}{L}\tan^{-1}\left( \left|\frac{a_2(L)}{a_1(L)}\right|^2 \right)
+\end{equation}
+
 %\begin{align*}
 %	V =  \frac{\sin^2(\alpha a)e^{2\beta a}e^{-\beta d}}{4\beta k_z^i}\frac{\left[\frac{a}{ \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{\alpha^2\beta^3 }  \right]    - \frac{e^{-\beta d}(\alpha^2+\beta^2) \sinh(2\beta a)}{ \beta^2}  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]}{ \left[\frac{a}{2 \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{2\alpha^2\beta^3 }  \right]^2 -  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]^2}
 %\end{align*}
@@ -728,8 +734,8 @@ Si bien es posible reformular las ecuaciones de Maxwell como un problema de auto
 Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agruparse en el mismo número de bandas que cantidad de sitios por celda unitaria conformen el sistema, dado que las funciones de Wannier asociadas al Teorema de Bloch aproximan de mejor manera al sistema en cuestión a medida que aumenta el número de celdas.
 
 
-\subsubsection{Red de Su-Schireffer-Heeger fotónica}
-El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estructuras localizadas en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
+\subsubsection{Red de Su-Schrieffer-Heeger fotónica}
+El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
 
 \begin{equation*}
 	H = \sum_n t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c.
@@ -740,7 +746,7 @@ El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sen
 \begin{figure}[h]
 \centering
 	\includegraphics[width=0.9\linewidth]{media/ssh-model.png}
-	\caption{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$). \label{fig:ssh-model}}
+	\caption[Esquema del modelo SSH.]{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$). \label{fig:ssh-model}}
 \end{figure}
 En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar el Hamiltoniano en la base de Bloch con $a_n = \frac{1}{\sqrt{N}}\sum_k a_k e^{iknd}$, $b_n = \frac{1}{\sqrt{N}}\sum_k b_k e^{iknd}$ de la siguiente forma:
 \begin{align*}
@@ -780,15 +786,21 @@ El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \te
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{media/ssh-winding}
-	\caption{Se fija $t'=1$ y se varía $\delta=\frac{t}{t'}$ para un número $N=100$ de celdas unitarias. Arriba: Componentes del vector $\vec{d}$ y fase asociada. Para $\delta < 1$, se encierra el origen y todos los ángulos están diponibles. Para $\delta > 1$, es imposible acceder a todos los ángulos. Abajo: Bandas en función del cuasimomento $k$ para $\delta < 1$, $\delta = 1$ y $\delta > 1$. Las bandas se tocan en $\delta = 1$. 
+	\caption[Topología de la red SSH.]{Topología de la red SSH. Se fija $t'=1$ y se varía $\delta=\frac{t}{t'}$ para un número $N=100$ de celdas unitarias. Arriba: Componentes del vector $\vec{d}$ y fase asociada. Para $\delta < 1$, se encierra el origen y todos los ángulos están diponibles. Para $\delta > 1$, es imposible acceder a todos los ángulos. Abajo: Bandas en función del cuasimomento $k$ en la primera zona de Brillouin para $\delta < 1$, $\delta = 1$ y $\delta > 1$. Las bandas se tocan en $\delta = 1$. 
 	\label{fig:ssh-topo}}
 \end{figure} 
 
 \begin{figure}[h]
 \centering
 	\includegraphics[width=0.6\linewidth]{media/ssh-open}
-	\caption{Espectro de la red SSH con condiciones de borde abiertas en función del parámetro $\delta=\frac{t}{t'}$, para $t'=1$ fijo y para un número $N=100$ de celdas unitarias. Sólo hay estados de borde a energía cero para $|\delta| < 1$
+	\caption[Espectro de la red SSH.]{Espectro de la red SSH. Condiciones de borde abiertas en función del parámetro $\delta=\frac{t}{t'}$, para $t'=1$ fijo y para un número $N=100$ de celdas unitarias. Sólo hay estados de borde a energía cero para $|\delta| < 1$
 	\label{fig:ssh-open}}
 \end{figure} 
 
 \subsubsection{Red fotónica tipo panel de abeja}
+La red tipo panel de abeja es la estructura subyacente del grafeno y que consiste en una red triangular con base de dos sitios, como se ilustra en la Figura \ref{fig:honeycomb-sketch}. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{media/honeycomb-lattice}
+	\caption[Esquema de una red de panel de abeja.]{Esquema de una red de panel de abeja. En amarillo se encierra la celda unitaria. \label{fig:honeycomb-sketch}}
+\end{figure}
