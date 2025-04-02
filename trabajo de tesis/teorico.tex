@@ -614,8 +614,7 @@ Al considerar el par de transformaciones asociadas al grupo unitario U(1), $a_j\
 \end{equation}
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
 
-\subsection{Aplicaciones}
-\subsubsection{Dímero TE en guías de onda tipo losa}
+\subsection{Dímero TE en guías de onda tipo losa}
 Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\ref{eqn:transversal}) se tiene que
 
 \begin{align}
@@ -722,19 +721,19 @@ con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\time
 %\begin{align*}
 %	V =  \frac{\sin^2(\alpha a)e^{2\beta a}e^{-\beta d}}{4\beta k_z^i}\frac{\left[\frac{a}{ \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{\alpha^2\beta^3 }  \right]    - \frac{e^{-\beta d}(\alpha^2+\beta^2) \sinh(2\beta a)}{ \beta^2}  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]}{ \left[\frac{a}{2 \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{2\alpha^2\beta^3 }  \right]^2 -  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]^2}
 %\end{align*}
-\section{Bandas y Topología en Redes Fotónicas}
+\subsection{Bandas y Topología}
 
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear un análogo al Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:non-ortho-CMT-eqs}) con la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $\textbf{a} = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}\textbf{A}$, con $\textbf{A}$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$
 
 Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agruparse en el mismo número de bandas que cantidad de sitios por celda unitaria conformen el sistema, dado que las funciones de Wannier asociadas al Teorema de Bloch aproximan de mejor manera al sistema en cuestión a medida que aumenta el número de celdas.
 
 
-\subsection{Red de Su-Schireffer-Heeger fotónica}
+\subsubsection{Red de Su-Schireffer-Heeger fotónica}
 El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estructuras localizadas en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
 
-\begin{equation}
+\begin{equation*}
 	H = \sum_n t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c.
-\end{equation}
+\end{equation*}
 
 
 
@@ -763,17 +762,33 @@ En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar e
 		b_k		
 	\end{pmatrix},
 \end{align*}
-donde se ha usado que $$\frac{1}{N}\sum_n e^{i(k-k')nd} = \left\{\begin{matrix} \frac{N}{N}=1, \text{ si } k = k'
-\\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}=0, \text{ si } k\neq k'
-\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $H(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $H(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\vec{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $H(k)$ en términos de las matrices de Pauli $H(k) = \vec{d} \cdot \vec{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\vec{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\vec{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen. Formalmente, las fases de Zak $\mathcal{Z}_\pm$ asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
+donde se ha usado que $$\frac{1}{N}\sum_n e^{i(k-k')nd} = \left\{\begin{matrix} \frac{N}{N}=1, &\text{ si } k = k'
+\\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}e^{i(k-k')d}=0, &\text{ si } k\neq k'
+\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $H(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $H(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\vec{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $H(k)$ en términos de las matrices de Pauli $H(k) = \vec{d} \cdot \vec{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\vec{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\vec{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak $\mathcal{Z}_\pm$ asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
 \mathcal{Z}_\pm &= i \oint \textbf{v}_\pm^\dagger \frac{d \textbf{v}_\pm}{dk}  dk  = -\frac{1}{2} \int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}}  \frac{d \phi(k)}{d k} dk = -\frac{d}{2}\int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}} \frac{1+\delta\cos(kd)}{\delta^2+1+2\delta\cos(kd)} dk = -\frac{\pi}{2} \left(1 + \frac{1-\delta^2}{\left|1-\delta^2\right|} \right) .
 \end{align*}
 Es decir, 
 \begin{align*}
 \mathcal{Z}_\pm &= \left\{\begin{matrix}
--\pi, \text{ si } |\delta| < 1
+-\pi, &\text{ si } |\delta| < 1
 \\
-0, \text{ si } |\delta| > 1
+0, &\text{ si } |\delta| > 1
 \end{matrix}\right. .
 \end{align*}
-El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \textit{transición topológica} puesto que no es posible pasar de un régimen a otro de forma suave. Esto tiene implicancias en el sistema con condiciones de borde abiertas (Dirichlet) debido a la \textit{correspondencia bulto-borde} \cite{topobulk}.
+El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \textit{transición topológica} puesto que no es posible pasar de un régimen a otro de forma suave. Esto tiene implicancias en el sistema con condiciones de borde abiertas (Dirichlet) debido a la \textit{correspondencia bulto-borde} \cite{topobulk}. En concreto, así como se ilustra en la Figura \ref{fig:ssh-open}, la topología del Hamiltoniano $H(k)$ induce la aparición de estados de borde a energía cero al imponer condiciones de borde abiertas.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{media/ssh-winding}
+	\caption{Se fija $t'=1$ y se varía $\delta=\frac{t}{t'}$ para un número $N=100$ de celdas unitarias. Arriba: Componentes del vector $\vec{d}$ y fase asociada. Para $\delta < 1$, se encierra el origen y todos los ángulos están diponibles. Para $\delta > 1$, es imposible acceder a todos los ángulos. Abajo: Bandas en función del cuasimomento $k$ para $\delta < 1$, $\delta = 1$ y $\delta > 1$. Las bandas se tocan en $\delta = 1$. 
+	\label{fig:ssh-topo}}
+\end{figure} 
+
+\begin{figure}[h]
+\centering
+	\includegraphics[width=0.6\linewidth]{media/ssh-open}
+	\caption{Espectro de la red SSH con condiciones de borde abiertas en función del parámetro $\delta=\frac{t}{t'}$, para $t'=1$ fijo y para un número $N=100$ de celdas unitarias. Sólo hay estados de borde a energía cero para $|\delta| < 1$
+	\label{fig:ssh-open}}
+\end{figure} 
+
+\subsubsection{Red fotónica tipo panel de abeja}
