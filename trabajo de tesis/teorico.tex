@@ -16,7 +16,7 @@ Las ecuaciones de Maxwell (SI) en este régimen son:
 \end{align}
 donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.48$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda.
 
-Luego de aplicar rotor por la izquierda a la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}), de usar la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se tiene:
+Luego de aplicar rotor a la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}), de usar la ecuación de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se tiene:
 \begin{align}
 	\nabla\times\nabla\times\textbf{E} &= -\mu_0 \frac{\partial}{\partial t}(\nabla\times\textbf{H}) =  -\frac{n^2}{c^2}\frac{\partial^2 \textbf{E}}{\partial t^2} = n^2k_0^2 \textbf{E}, \label{eqn:rotordoble}
 \end{align}
@@ -241,18 +241,18 @@ Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarizació
 
 \subsection{Soluciones gráficas y comparación entre modos TE y TM}
 
-Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$ a partir de las intersecciones $(\alpha a, \beta a)$. 
+Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$ a partir de las intersecciones $(\alpha a, \beta a)$, como se grafica en la Figura \ref{fig:graphTE}. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{media/slabgraphical.pdf}
+	\includegraphics[width=0.7\linewidth]{media/slabgraphical.pdf \label{fig:graphTE}}
 	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
 \end{figure}
-
+Luego de encontrar $k_z$, se tiene todo lo necesario para reemplazar en las expresiones obtenidas para las componentes del campo electromagnético. En la Figura \ref{fig:E-slab-graph} se grafican cuatro modos del campo eléctrico.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/TETMfields.pdf}
-	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda.}
+	\caption[Soluciones gráficas de los modos TE]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda. \label{fig:E-slab-graph}}
 \end{figure}
 
 La condición de corte (\textit{cutoff}) en guías de onda es equivalente a que la energía deje de decaer en la región $|x| > a$, es decir, se debe cumplir que $\beta a \to 0$. 
@@ -745,7 +745,7 @@ El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sen
 
 \begin{figure}[h]
 \centering
-	\includegraphics[width=0.9\linewidth]{media/ssh-model.png}
+	\includegraphics[width=0.8\linewidth]{media/ssh-model.png}
 	\caption[Esquema del modelo SSH.]{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$). \label{fig:ssh-model}}
 \end{figure}
 En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar el Hamiltoniano en la base de Bloch con $a_n = \frac{1}{\sqrt{N}}\sum_k a_k e^{iknd}$, $b_n = \frac{1}{\sqrt{N}}\sum_k b_k e^{iknd}$ de la siguiente forma:
@@ -785,25 +785,24 @@ El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \te
 
 El Hamiltoniano del modelo SSH presenta diversas simetrías: de reversión temporal, de inversión, partícula-hueco, traslacional y quiral. Esta última es de particular relevancia, pues los estados de borde del modelo SSH están \textit{topológicamente protegidos} ante cualquier desorden que respete la simetría quiral \cite{ssh-course}. El operador quiral en cuestión es la matriz de Pauli $\sigma_z$, pues 
 \begin{align*}
-	\sigma_z H(k) \sigma_z^\dagger &=  -\sigma_z^2 \left(d_x \sigma_x  + d_y \sigma_y\right)  =- H(k)
+	\sigma_z H(k) \sigma_z^\dagger &=  -\cancelto{1}{\sigma_z^2} \left(d_x \sigma_x  + d_y \sigma_y\right)  =- H(k).
 \end{align*}
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{media/ssh-winding}
-	\caption[Topología de la red SSH.]{Topología de la red SSH. Se fija $t'=1$ y se varía $\delta=\frac{t}{t'}$ para un número $N=100$ de celdas unitarias. Arriba: Componentes del vector $\vec{d}$ y fase asociada. Para $\delta < 1$, se encierra el origen y todos los ángulos están diponibles. Para $\delta > 1$, es imposible acceder a todos los ángulos. Abajo: Bandas en función del cuasimomento $k$ en la primera zona de Brillouin para $\delta < 1$, $\delta = 1$ y $\delta > 1$. Las bandas se tocan en $\delta = 1$. 
+	\caption[Topología de la red SSH.]{Topología de la red SSH. Se fija $t'=1$ y se varía $\delta=\frac{t}{t'}$ para un número $N=100$ de celdas unitarias. Arriba: Vectores $\vec{d}$ y su fase. Para $\delta < 1$ ($\delta > 1$), (no) se encierra el origen. Abajo: Bandas en función del cuasimomento $k$ en la primera zona de Brillouin para $\delta < 1$, $\delta = 1$ y $\delta > 1$. 
 	\label{fig:ssh-topo}}
 \end{figure} 
-
 \begin{figure}[h]
 \centering
 	\includegraphics[width=0.6\linewidth]{media/ssh-open}
-	\caption[Espectro de la red SSH.]{Espectro de la red SSH. Condiciones de borde abiertas en función del parámetro $\delta=\frac{t}{t'}$, para $t'=1$ fijo y para un número $N=100$ de celdas unitarias. Sólo hay estados de borde a energía cero para $|\delta| < 1$
+	\caption[Espectro de la red SSH.]{Espectro de la red SSH. Condiciones de borde abiertas en función del parámetro $\delta=\frac{t}{t'}$, para $t'=1$ fijo y para un número $N=100$ de celdas unitarias. Sólo hay estados de borde a energía cero para $|\delta| < 1$.
 	\label{fig:ssh-open}}
 \end{figure} 
 
 \subsubsection{Red fotónica tipo panel de abeja}
-La red tipo panel de abeja es la estructura subyacente del grafeno y que consiste en una red triangular con base de dos sitios, como se ilustra en la Figura \ref{fig:honeycomb-sketch}. 
+La red tipo panel de abeja es la estructura subyacente del grafeno y que consiste en una red triangular con base de dos sitios, como se ilustra en la Figura \ref{fig:honeycomb-sketch}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.4\linewidth]{media/honeycomb-lattice}
