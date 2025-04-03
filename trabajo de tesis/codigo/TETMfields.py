@@ -54,7 +54,7 @@ for n in range(4):
     ax.plot(x_to_plot*1e6, kz[n]/k0*np.ones_like(x_to_plot), "--", color=colors[n])
 
 ax.set_xlabel(r'$x$ ($\mu$m)')
-ax.set_ylabel(r'$n_{\text{eff}}+E(x)$')
+ax.set_ylabel(r'$n_{\text{eff}}+H_z(x)$')
 ax.set_yticks([n0, n3])
 ax.set_yticklabels(["$n_0$", "$n_1$"])
 fig.savefig('../media/TETMfields.pdf', bbox_inches='tight')

@@ -2,6 +2,26 @@
 
 La ecuación (\ref{eqn:eigenfield}) permite en encontrar la condición de ortogonalidad de los modos normales del campo eléctrico  $\textbf{E}_\nu$. Para ello, se puede tomar producto punto a la ecuación por $\textbf{E}_\mu^*$ e integrar en una superficie $S$:
 
+\begin{align*}
+	\begin{pmatrix}
+	\nabla_\perp^2  + k_0^2n^2 + G_{xx} & G_{xy} 
+	\\
+	G_{yx}  & \nabla_\perp^2  + k_0^2n^2 + G_{yy} 
+	\end{pmatrix}
+\textbf{E}^\perp_\nu
+		&=
+	\beta_\nu^2 \textbf{E}^\perp_\nu
+\end{align*}
+
+\begin{align*}
+	 \iint_S \begin{pmatrix}
+	\nabla_\perp^2  + k_0^2n^2 + G_{xx} & G_{xy} 
+	\\
+	G_{yx}  & \nabla_\perp^2  + k_0^2n^2 + G_{yy} 
+	\end{pmatrix}
+\textbf{E}^\perp_\nu \cdot\textbf{E}_\mu^* dxdy &= \beta_\nu^2 \iint_S \textbf{E}_\nu \cdot\textbf{E}_\mu^* dxdy
+\end{align*}
+
 \begin{align}
 	 \iint_S \left(  \nabla_\perp^2  + k_0^2n^2 \right)\textbf{E}_\nu \cdot\textbf{E}_\mu^* dxdy &= \beta_\nu^2 \iint_S \textbf{E}_\nu \cdot\textbf{E}_\mu^* dxdy \label{eqn:munu}
 \end{align}
