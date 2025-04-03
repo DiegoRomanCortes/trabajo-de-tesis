@@ -1,4 +1,4 @@
-\begin{thebibliography}{58}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -479,6 +479,15 @@ Xiao-Liang Qi and Shou-Cheng Zhang.
 \newblock \emph{Rev. Mod. Phys.}, 83:\penalty0 1057--1110, Oct 2011.
 \newblock \doi{10.1103/RevModPhys.83.1057}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/RevModPhys.83.1057}.
+
+\bibitem[Asbóth et~al.(2016)Asbóth, Oroszlány, and Pályi]{ssh-course}
+János~K. Asbóth, László Oroszlány, and András Pályi.
+\newblock \emph{A {Short} {Course} on {Topological} {Insulators}}, volume 919
+  of \emph{Lecture {Notes} in {Physics}}.
+\newblock Springer International Publishing, Cham, 2016.
+\newblock ISBN 978-3-319-25605-4 978-3-319-25607-8.
+\newblock \doi{10.1007/978-3-319-25607-8}.
+\newblock URL \url{http://link.springer.com/10.1007/978-3-319-25607-8}.
 
 \bibitem[Marte and Stenholm(1997)]{paraxialschrodinger}
 Monika A.~M. Marte and Stig Stenholm.

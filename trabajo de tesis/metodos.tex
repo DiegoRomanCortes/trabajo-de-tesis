@@ -13,7 +13,7 @@
 	\includegraphics[width=\linewidth, trim={5cm 9cm 3cm 7cm},clip]{media/SC_setup}
 	\caption{Montaje SC.}
 \end{figure}
-\newpage
+
 \section{Montaje de modulación espacial de luz}
 
 Para usar condiciones iniciales distintas a una gaussiana se hace necesario incorporar métodos de modulación espacial de luz. En esta tesis se utilizó una técnica conocida como 
@@ -25,12 +25,12 @@ Para usar condiciones iniciales distintas a una gaussiana se hace necesario inco
 	
 {
 \sidecaptionvpos{figure}{c}
-\begin{SCfigure}[][h]
-	\centering
-	\includegraphics[width=0.35\linewidth, trim={19.5cm 0 0 5cm},clip]{media/SLMblaze4.png}
-	\caption[{Algoritmo de modulación espacial de luz para máscaras de amplitud y fase arbitrarias.]{Algoritmo de modulación espacial de luz para máscaras de amplitud y fase arbitrarias. Los parámetros de la rejilla de difracción están sujetos a la longitud de onda usada (730 nm).     \label{fig:SLMblaze}}
-	\end{SCfigure}
-	}
+\begin{SCfigure}[]
+    \centering
+    \includegraphics[width=0.35\linewidth, trim={19.5cm 0 0 5cm}, clip]{media/SLMblaze4.png}
+    \caption[Algoritmo de modulación espacial de luz para máscaras de amplitud y fase arbitrarias.]{Algoritmo de modulación espacial de luz para máscaras de amplitud y fase arbitrarias. Los parámetros de la rejilla de difracción están sujetos a la longitud de onda usada (730 nm).\label{fig:SLMblaze}}
+\end{SCfigure}
+}
 \subsection{Etapa de acoplamiento}
 La imagen modulada pasa por un par de lentes $L_2$ de foco 1000 mm y $L_3$ de foco 50 mm para reducir el tamaño al orden de los micrómetros. La inclinación de la cara de entrada de la muestra debe coincidir con el plano de la imagen modulada, por lo que se generan dos pares de haces gaussianos, unos verticales y otros horizontales, de manera de que al trasladar el lente objetivo 4x, los máximos de difracción se generen en el centro de los haces gaussianos. 
 \subsection{Etapa de captura en cámara}
@@ -39,8 +39,8 @@ Una vez calibrada la inclinación de la muestra, se fija su posición. Un lente 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth, trim={21cm 5cm 7cm 5cm},clip]{media/SLM_setupv1}
-	\caption{Montaje SLM.}
 \end{figure}
+
 \section{Análisis de imágenes \label{sec:analimag}}
 A partir de las imágenes capturadas es posible extraer información de la potencia que contiene cada sitio del sistema fotónico discreto en estudio. Para ello la imagen completa debe ser seccionada equispaciadamente en rectángulos que encierren las regiones donde existen guias de onda, iluminadas o no. La potencia de cada sitio será entonces la suma de la intensidad de cada píxel encerrado en su rectángulo respectivo.
 
