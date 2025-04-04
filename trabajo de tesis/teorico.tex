@@ -63,15 +63,15 @@ Si se considera las descomposiciones $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{
 Luego de aplicar producto punto y producto cruz en la dirección $\hat{\textbf{z}}$ a las ecuaciones (\ref{eqn:Efield}) y (\ref{eqn:Hfield}), se puede expresar $E_z$ y $H_z$ en función de $\textbf{E}_\perp$ y $\textbf{H}_\perp$:
 \begin{equation*}
 \begin{aligned}[c]
-	 i\nabla_\perp E_z &= k_z\textbf{E}_\perp +\omega \mu_0 \hat{\textbf{z}} \times \textbf{H}_\perp  ,
+	 -i\nabla_\perp E_z &= k_z\textbf{E}_\perp +\omega \mu_0 \hat{\textbf{z}} \times \textbf{H}_\perp  ,
 	 	  	 \\
 	 	  	i\hat{\textbf{z}} \times \nabla_\perp H_z &= k_z \hat{\textbf{z}} \times\textbf{H}_\perp + \omega\epsilon_0 n^2 \textbf{E}_\perp,
 \end{aligned} 
 \quad
 \begin{aligned}[c]
-	i \nabla_\perp H_z &= k_z \textbf{H}_\perp - \omega \epsilon_0 n^2  \hat{\textbf{z}} \times \textbf{E}_\perp ,
+	-i \nabla_\perp H_z &= k_z \textbf{H}_\perp - \omega \epsilon_0 n^2  \hat{\textbf{z}} \times \textbf{E}_\perp ,
 	\\
-	i\hat{\textbf{z}} \times\nabla_\perp E_z &= k_z  \hat{\textbf{z}} \times \textbf{E}_\perp - \omega \mu_0 \textbf{H}_\perp.
+	i\hat{\textbf{z}} \times\nabla_\perp E_z &=  \omega \mu_0 \textbf{H}_\perp+k_z  \hat{\textbf{z}} \times \textbf{E}_\perp .
 \end{aligned}
 \end{equation*}
 
@@ -530,7 +530,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, por separaci�
 	E_y
 	\end{pmatrix}. \label{eqn:eigenfield}
 \end{align}
-La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, las cuales son ortogonales (ver apéndice \ref{sec:orto}). 
+La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, las cuales son ortogonales en la condición de guiaje débil (ver apéndice \ref{sec:orto}). 
 
 \section{Teoría de modos acoplados}
 
