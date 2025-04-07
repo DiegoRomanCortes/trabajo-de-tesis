@@ -509,7 +509,7 @@ El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en 
 
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $z$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $G_{ij}$ tal que $G_{ij} E_k \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_k \right)$, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
+Si la estructura de guías de onda no varía en la dirección $z$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $G_{ij}$ tal que $G_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) = -\partial_i \left(\partial_j E_j\right)$, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
 
 \begin{align}
 	\begin{pmatrix}
@@ -530,7 +530,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, por separaci�
 	E_y
 	\end{pmatrix}. \label{eqn:eigenfield}
 \end{align}
-La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, las cuales son ortogonales en la condición de guiaje débil (ver apéndice \ref{sec:orto}). 
+La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, que son ortogonales (ver apéndice \ref{sec:orto}). 
 
 \section{Teoría de modos acoplados}
 
@@ -572,7 +572,7 @@ Diferenciando con respecto a $a_k^*$ para optimizar el valor de $k_z$ se tiene:
 
 Recuperando $k_z \to -i\frac{\partial}{\partial z}$, se obtienen las ecuaciones de $N$ modos acoplados no ortogonales:
 \begin{equation}
-	-i \sum_{j} P_{kj} \frac{d a_j}{dz} ´= \sum_{j} H_{kj} a_j, \text{ con }k=1,2,\dots,N \label{eqn:non-ortho-CMT-eqs}
+	-i \sum_{j} P_{kj} \frac{d a_j}{dz} ´= \sum_{j} H_{kj} a_j, \text{ con }k=1,2,\cdots,N. \label{eqn:non-ortho-CMT-eqs}
 \end{equation}
 	
 Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que $H_{ij}$ no es hermítica, pero veamos que sí lo es. Para ello, basta considerar la resta $H_{ij} - H_{ji}^*$ y notar que se anula:
@@ -619,7 +619,6 @@ Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que se
 
 \subsection{Dímero TE en guías de onda tipo losa}
 Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\ref{eqn:transversal}) se tiene que
-
 \begin{align}
 	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - (k_z^j)^2}\left\{ \begin{matrix}
 -\alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
@@ -631,7 +630,7 @@ Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\r
 \alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
 \\
 -\beta\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
-\end{matrix}\right.
+\end{matrix}\right. .
 \end{align}
 $x_j=jd$, con $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 \begin{align}
@@ -646,15 +645,15 @@ $x_j=jd$, con $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 		\\
 		\beta \sin(\alpha a)e^{-\beta (|x-x_i|+|x-x_j|-2a)}, & \text{otro caso}
 	\end{matrix}
-	\right.
+	\right. .
 \end{align}
 
 \begin{align*}
-	P_{ij} &= \frac{L k_z^i k_0  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{-\beta d}e^{\beta a}}{2\beta} \left[\frac{e^{-\beta a} + \beta (d-2a)e^{\beta a}}{\beta^2} - \frac{2\cosh(\beta a)}{\alpha^2+\beta^2} \right]			
+	P_{ij} &= \frac{L k_z^i k_0  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{-\beta d}e^{\beta a}}{2\beta} \left[\frac{e^{-\beta a} + \beta (d-2a)e^{\beta a}}{\beta^2} - \frac{2\cosh(\beta a)}{\alpha^2+\beta^2} \right]			.
 \end{align*}
 
 \begin{align*}
-	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{L k_0    \mu_0 c H_{a1}^2 }{2 \beta }  \sin^2(\alpha a)e^{2\beta a} e^{-\beta d} 
+	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{L k_0    \mu_0 c H_{a1}^2 }{2 \beta }  \sin^2(\alpha a)e^{2\beta a} e^{-\beta d} .
 \end{align*}
 
 Elementos diagonales tienen la forma:
@@ -669,11 +668,11 @@ Elementos diagonales tienen la forma:
 
 
 \begin{align*}
-	P_{jj} &= \frac{L k_z^j  k_0 \mu_0 c H_{a1}^2  a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right]
+	P_{jj} &= \frac{L k_z^j  k_0 \mu_0 c H_{a1}^2  a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right].
 \end{align*}
 \begin{align*}
 	\tilde{H}_{jj} &\equiv H_{jj} - P_{jj} k_z^j =
-	\frac{L k_0^3  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{2\beta a}e^{-2\beta d}}{4 \beta^3 } (n_1^2-n_0^2) \sinh(2\beta a)
+	\frac{L k_0^3  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{2\beta a}e^{-2\beta d}}{4 \beta^3 } (n_1^2-n_0^2) \sinh(2\beta a).
 \end{align*}
 
 La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}), que luego de premultiplicar por la inversa de la matriz $P_{ij}$ toma la forma:
@@ -724,20 +723,20 @@ con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\time
 Una forma de encontrar el valor experimental del acoplamiento $C$ es mediante la excitación individual de un modo. Con esto, la razón entre las potencias $|a_1(z)|^2$ y $|a_2(z)|^2$ permite despejar el acoplamiento para una distancia de propagación $z=L$ conocida:
 
 \begin{equation}
-	C = \frac{1}{L}\tan^{-1}\left( \left|\frac{a_2(L)}{a_1(L)}\right|^2 \right)
+	C = \frac{1}{L}\tan^{-1}\left( \left|\frac{a_2(L)}{a_1(L)}\right|^2 \right).
 \end{equation}
 
 %\begin{align*}
 %	V =  \frac{\sin^2(\alpha a)e^{2\beta a}e^{-\beta d}}{4\beta k_z^i}\frac{\left[\frac{a}{ \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{\alpha^2\beta^3 }  \right]    - \frac{e^{-\beta d}(\alpha^2+\beta^2) \sinh(2\beta a)}{ \beta^2}  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]}{ \left[\frac{a}{2 \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{2\alpha^2\beta^3 }  \right]^2 -  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]^2}
 %\end{align*}
-\subsection{Bandas y Topología}
+\subsection{Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}
 
-Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear un análogo al Teorema de Bloch \cite{joannopoulos_photonic_2008}, en el contexto de sistemas discretos la ecuación tipo Schrödinger (\ref{eqn:non-ortho-CMT-eqs}) con la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. En la práctica, se aplicará un Ansatz de Bloch $\textbf{a} = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}\textbf{A}$, con $\textbf{A}$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$
+Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear un análogo al Teorema de Bloch \cite{joannopoulos_photonic_2008}, la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica de la ecuación (\ref{eqn:non-ortho-CMT-eqs}) es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. 
+%En la práctica, se aplicará un Ansatz de Bloch $\textbf{a} = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}\textbf{A}$, con $\textbf{A}$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$
+%
+%Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agruparse en el mismo número de bandas que cantidad de sitios por celda unitaria conformen el sistema, dado que las funciones de Wannier asociadas al Teorema de Bloch aproximan de mejor manera al sistema en cuestión a medida que aumenta el número de celdas.
 
-Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agruparse en el mismo número de bandas que cantidad de sitios por celda unitaria conformen el sistema, dado que las funciones de Wannier asociadas al Teorema de Bloch aproximan de mejor manera al sistema en cuestión a medida que aumenta el número de celdas.
 
-
-\subsubsection{Red de Su-Schrieffer-Heeger fotónica}
 El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
 
 \begin{equation*}
@@ -748,7 +747,7 @@ El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sen
 
 \begin{figure}[h]
 \centering
-	\includegraphics[width=0.9\linewidth]{media/ssh-model.png}
+	\includegraphics[width=0.8\linewidth]{media/ssh-model.png}
 	\caption[Esquema del modelo SSH.]{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$). \label{fig:ssh-model}}
 \end{figure}
 En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar el Hamiltoniano en la base de Bloch con $a_n = \frac{1}{\sqrt{N}}\sum_k a_k e^{iknd}$, $b_n = \frac{1}{\sqrt{N}}\sum_k b_k e^{iknd}$ de la siguiente forma:
@@ -790,7 +789,6 @@ El Hamiltoniano del modelo SSH presenta diversas simetrías: de reversión tempo
 \begin{align*}
 	\sigma_z H(k) \sigma_z^\dagger &=  -\cancelto{1}{\sigma_z^2} \left(d_x \sigma_x  + d_y \sigma_y\right)  =- H(k).
 \end{align*}
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{media/ssh-winding}

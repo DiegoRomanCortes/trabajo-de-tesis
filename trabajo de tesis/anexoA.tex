@@ -1,21 +1,17 @@
 \chapter{Ortogonalidad de los modos normales \label{sec:orto}}
 
 La ortogonalidad de los modos normales $\textbf{E}_\nu^\perp$ se puede demostrar usando el convenio de Einstein en la ecuación (\ref{eqn:eigenfield}) para simplificar la notación:
-
 \begin{equation}
-	\left(\nabla_\perp^2 + k_0^2n^2\right) E^\nu_i + G_{ij} E^\nu_j = \beta_\nu^2 E^\nu_i,
+	\left(\nabla_\perp^2 + k_0^2n^2\right) E^\nu_i + G_{ij} E^\nu_j = \beta_\nu^2 E^\nu_i, \label{eqn:eigentensorial}
 \end{equation}
-donde $G_{ij}E_j \equiv \partial_i \left(E_j  \partial_j\ln(n^2) \right)$. Al tomar producto punto con $\left(\textbf{E}_\mu^\perp\right)^*$, intercambiar los índices, tomar conjugado y restar, se tiene:
+donde $G_{ij}E_j \equiv \partial_i \left(E_j  \partial_j\ln(n^2) \right) = -\partial_i \partial_j E_j  $. Al tomar producto punto con $\left(\textbf{E}_\mu^\perp\right)^*$, intercambiar los índices, tomar conjugado y restar la ecuación (\ref{eqn:eigentensorial}), se tiene:
 \begin{align*}
-	(\beta_\nu^2-\beta_\mu^2)E^\nu_i \left(E^\mu\right)^*_i &=  \left(E^\mu\right)^*_i \nabla_\perp^2 E^\nu_i - E^\mu_i \nabla_\perp^2 \left(E^\mu\right)^*_i  + \left(E^\mu\right)^*_i G_{ij} E^\nu_j - E^\mu_i G_{ij} \left(E^\mu\right)^*_j
+	(\beta_\nu^2-\beta_\mu^2)E^\nu_i \left(E^\mu\right)^*_i &=  \left(E^\mu\right)^*_i \nabla_\perp^2 E^\nu_i - E^\nu_i \nabla_\perp^2 \left(E^\mu\right)^*_i  + \left(E^\mu\right)^*_i G_{ij} E^\nu_j - E^\nu_i G_{ij} \left(E^\mu\right)^*_j
 	\\
-	&= \nabla \cdot \left[ \left(E^\mu\right)^*_i \nabla_\perp E^\nu_i - E^\nu_i \nabla_\perp \left(E^\mu\right)^*_i \right] + \partial_i \left\{\left[ \left(E^\mu\right)^*_i  E^\nu_j  - E^\nu_i \left(E^\mu\right)^*_j \right] \partial_j   \ln(n^2) \right\}
-	\\
-	&-\left[ E^\nu_j \partial_i \left(E^\mu\right)^*_i -   \left(E^\mu\right)^*_j \partial_i E^\nu_i\right] \partial_j\ln(n^2)
+	&= \nabla \cdot \left[ \left(E^\mu\right)^*_i \nabla_\perp E^\nu_i - E^\nu_i \nabla_\perp \left(E^\mu\right)^*_i \right] + \partial_i \left\{ E_i^\nu \partial_j \left(E^\mu\right)^*_j - \left(E^\mu\right)^*_i \partial_j E_j^\nu  \right\}
 \end{align*}
-Al integrar en el plano transversal, rigr el teorema de la divergencia. Como los campos deben decaer a cero en el infinito, el lado derecho se simplifica a:
+Al integrar en el plano transversal, se puede integrar por partes y notar que los términos son de frontera. Considerando que los campos deben anularse en el infinito, se tiene que:
 \begin{equation}
-	(\beta_\nu^2-\beta_\mu^2)\iint \textbf{E}^\perp_\nu \cdot \left(\textbf{E}^\perp_\mu\right)^* dx dy = \iint  \left[ \left(E^\mu\right)^*_j \partial_i E^\nu_i - E^\nu_j \partial_i \left(E^\mu\right)^*_i\right] \partial_j\ln(n^2) dxdy \approx
-	0.
+	(\beta_\nu^2-\beta_\mu^2)\iint \textbf{E}^\perp_\nu \cdot \left(\textbf{E}^\perp_\mu\right)^* dx dy = 0.
 \end{equation}
-Es decir, si $\beta_\nu \neq \beta_\mu$, los modos son ortogonales en guiaje débil.
+Es decir, si $\beta_\nu^2 \neq \beta_\mu^2$, los modos son ortogonales.
