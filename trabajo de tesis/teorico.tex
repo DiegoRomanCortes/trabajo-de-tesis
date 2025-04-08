@@ -509,13 +509,13 @@ El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en 
 
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $z$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $G_{ij}$ tal que $G_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) = -\partial_i \left(\partial_j E_j\right)$, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
+Si la estructura de guías de onda no varía en la dirección $z$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $D_{ij}$ tal que $D_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) $, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
 
 \begin{align}
 	\begin{pmatrix}
-	\nabla_\perp^2  + k_0^2n^2 + G_{xx} & G_{xy} 
+	\nabla_\perp^2  + k_0^2n^2 + D_{xx} & D_{xy} 
 	\\
-	G_{yx}  & \nabla_\perp^2  + k_0^2n^2 + G_{yy} 
+	D_{yx}  & \nabla_\perp^2  + k_0^2n^2 + D_{yy} 
 	\end{pmatrix}
 	\begin{pmatrix}
 	E_x
@@ -530,7 +530,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, por separaci�
 	E_y
 	\end{pmatrix}. \label{eqn:eigenfield}
 \end{align}
-La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, que son ortogonales (ver apéndice \ref{sec:orto}). 
+La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, que son ortogonales sólo si se cumple la condición de guiaje débil (ver apéndice \ref{sec:orto}). 
 
 \section{Teoría de modos acoplados}
 

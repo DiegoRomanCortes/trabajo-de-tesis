@@ -2,16 +2,16 @@
 
 La ortogonalidad de los modos normales $\textbf{E}_\nu^\perp$ se puede demostrar usando el convenio de Einstein en la ecuación (\ref{eqn:eigenfield}) para simplificar la notación:
 \begin{equation}
-	\left(\nabla_\perp^2 + k_0^2n^2\right) E^\nu_i + G_{ij} E^\nu_j = \beta_\nu^2 E^\nu_i, \label{eqn:eigentensorial}
+	T_{ij} E^\nu_j = \beta_\nu^2 E^\nu_i, \label{eqn:eigentensorial}
 \end{equation}
-donde $G_{ij}E_j \equiv \partial_i \left(E_j  \partial_j\ln(n^2) \right) = -\partial_i \partial_j E_j  $. Al tomar producto punto con $\left(\textbf{E}_\mu^\perp\right)^*$, intercambiar los índices, tomar conjugado y restar la ecuación (\ref{eqn:eigentensorial}), se tiene:
+donde $T_{ij}E_j \equiv \delta_{ij}\left(\nabla_\perp^2 + k_0^2n^2\right)E_j+\partial_i \left(E_j  \partial_j\ln(n^2) \right) $. Es un poco más sencillo demostrar que $T_{ij}$ es un operador hermítico, es decir, que:
 \begin{align*}
-	(\beta_\nu^2-\beta_\mu^2)E^\nu_i \left(E^\mu\right)^*_i &=  \left(E^\mu\right)^*_i \nabla_\perp^2 E^\nu_i - E^\nu_i \nabla_\perp^2 \left(E^\mu\right)^*_i  + \left(E^\mu\right)^*_i G_{ij} E^\nu_j - E^\nu_i G_{ij} \left(E^\mu\right)^*_j
-	\\
-	&= \nabla \cdot \left[ \left(E^\mu\right)^*_i \nabla_\perp E^\nu_i - E^\nu_i \nabla_\perp \left(E^\mu\right)^*_i \right] + \partial_i \left\{ E_i^\nu \partial_j \left(E^\mu\right)^*_j - \left(E^\mu\right)^*_i \partial_j E_j^\nu  \right\}
+	\iint \left(T_{ij} E_j^\mu \right)^*  E_i^\nu dA = \iint \left( E_i^\mu \right)^*  \left(T_{ij} E_j^\nu\right) dA .
 \end{align*}
-Al integrar en el plano transversal, se puede integrar por partes y notar que los términos son de frontera. Considerando que los campos deben anularse en el infinito, se tiene que:
-\begin{equation}
-	(\beta_\nu^2-\beta_\mu^2)\iint \textbf{E}^\perp_\nu \cdot \left(\textbf{E}^\perp_\mu\right)^* dx dy = 0.
-\end{equation}
-Es decir, si $\beta_\nu^2 \neq \beta_\mu^2$, los modos son ortogonales.
+Equivalentemente, notemos que
+\begin{align*}
+	\left(T_{ji} E_i^\mu \right)^* E_j^\nu  - \left( E_i^\mu \right)^*  \left(T_{ij} E_j^\nu \right) &= \nabla_\perp \cdot \left[E_i^\nu \nabla_\perp \left( E_i^\mu \right)^* - \left( E_i^\mu \right)^* \nabla_\perp E_i^\nu \right] 
+	\\	
+	&+ \left[E^\nu_j \partial_j \left( E_i^\mu \right)^*  - \left( E_j^\mu \right)^* \partial_j  E_i^\nu \right] \partial_i \ln(n^2).  
+\end{align*}
+Al integrar en el plano, la divergencia se convierte en un término de frontera que se anula al considerar modos guiados, mientras que el segundo término es cero sólo si $\nabla n^2 = \textbf{0}$. La hermiticidad de $T_{ij}$ permite escoger una base ortogonal de modos normales para el campo eléctrico.
