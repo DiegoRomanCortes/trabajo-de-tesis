@@ -590,7 +590,7 @@ Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que
 &= \frac{i}{4} \iint \left(\nabla_\perp\times\textbf{e}_j\right) \cdot \textbf{h}_i^*  -\left(\nabla_\perp\times\textbf{h}_j\right) \cdot \textbf{e}_i^* + \left(\nabla_\perp\times\textbf{e}_i^*\right) \cdot \textbf{h}_j - \left(\nabla_\perp\times\textbf{h}_i^*\right) \cdot \textbf{e}_j dxdy
 \\
 &= \frac{i}{4} \iint \nabla_\perp\cdot\left(\textbf{e}_j \times \textbf{h}_i^* +\textbf{e}_i^* \times \textbf{h}_j\right) dxdy =
-\frac{i}{4} \oint_C \left(\textbf{e}_j \times \textbf{h}_i^* +\textbf{e}_i^* \times \textbf{h}_j\right) \cdot \hat{\textbf{z}} ds
+\frac{i}{4} \oint_C \left(\textbf{e}_j \times \textbf{h}_i^* +\textbf{e}_i^* \times \textbf{h}_j\right) \cdot \hat{\textbf{n}} ds
 \\
 &=
 0,
@@ -599,11 +599,11 @@ donde se ha usado que los campos deben decaer a cero en el infinito. Las ecuacio
 \begin{equation}
 	L = -\sum_{ij}  a_i^*\left(i  P_{ij} \frac{d }{dz} + H_{ij}  \right)a_j.
 \end{equation}
-Los momentos generalizados de este Lagrangiano es $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = -i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano $H$ asociado es
+Los momentos generalizados de este Lagrangiano son $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = -i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano $H$ asociado es
 \begin{equation}
 H = \sum_{j} \Pi_j \dot{a_j} - L = \sum_{ij} -ia_i^* P_{ij} \dot{a_j} + a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right) = \sum_{ij} a_i^* H_{ij} a_j.
 \end{equation}
-Variando el Lagrangiano se tiene:
+Al variar el Lagrangiano se tiene:
 \begin{align*}
 	\delta L &= \sum_{ij} \frac{\partial L}{\partial a_j} \delta a_{j} +  \frac{\partial L}{\partial {a}_{i}^*} \delta {a}_{i}^* + \ \frac{\partial L}{\partial \dot{a}_{j}} \delta \dot{a}_{j} + \frac{\partial L}{\partial \dot{{a}}_{i}^*} \delta \dot{{a}}_{i}^*
 	\\
@@ -611,7 +611,7 @@ Variando el Lagrangiano se tiene:
 	\\	
 	&\implies  \frac{d}{dz} \sum_{ij}\left(\frac{\partial L}{\partial \dot{a}_{j}}\delta a_{j} +  \frac{\partial L}{\partial \dot{{a}}_{i}^*}\delta {a}_{i}^*\right) = 0.
 \end{align*}
-Al considerar el par de transformaciones asociadas al grupo unitario U(1), $a_j\to a'_j = e^{i\phi}a_j$, ${a}_i^* \to {a'}_i^* = e^{-i\phi}{a}_i^*$ que dejan invariante el Lagrangiano, y si se toma una variación infinitesimal $\phi \ll 1$ se tiene $\delta a_j = i\phi a_j$ y $\delta {a}_i^* = -i\phi {a}_i^*$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
+El par de transformaciones asociadas al grupo unitario U(1), $a_j\to a'_j = e^{i\phi}a_j$, ${a}_i^* \to {a'}_i^* = e^{-i\phi}{a}_i^*$ dejan invariante el Lagrangiano, y si se toma una variación infinitesimal $\phi \ll 1$ se tiene $\delta a_j = i\phi a_j$ y $\delta {a}_i^* = -i\phi {a}_i^*$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
 \begin{equation}
 	P = \sum_{ij} a_i^* P_{ij} a_j = \iint \textbf{S} \cdot \hat{\textbf{z}} dxdy.  \label{eqn:power}
 \end{equation}

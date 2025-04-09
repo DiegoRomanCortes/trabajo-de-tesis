@@ -23,7 +23,7 @@ Prácticamente toda la matriz es nula (\textit{sparse-like}), por lo que es posi
 Otra forma de abordar la resolución numérica de la ecuación (\ref{eqn:helmholtznum}) consiste en separar el campo en su envolvente lenta y una fase rápidamente oscilante, considerando que en el rango visible el orden de magnitud es, $k_0 \sim 10 ^{5} \text{ cm}^{-1}$: $\Psi(\textbf{r}) = \phi(x,y,z)\exp(ik_0 n_0 z)$. Luego de reemplazar en la ecuación (\ref{eqn:helmholtznum}) se obtiene la ecuación óptica de Schrödinger \citep{paraxialschrodinger}:
 
 \begin{equation}
-	2ik_0 n_0\frac{\partial }{\partial z}\phi(x,y, z) = - \left[\nabla_\perp^2 + k_0^2 (n^2(\textbf{r})-n_0^2)\right]\phi(x,y, z), \label{eqn:bpmescalar}
+	-2ik_0 n_0\frac{\partial }{\partial z}\phi(x,y, z) =  \left[\nabla_\perp^2 + k_0^2 (n^2(\textbf{r})-n_0^2)\right]\phi(x,y, z), \label{eqn:bpmescalar}
 \end{equation} 
 donde se ha utilizado la aproximación paraxial $\left| \frac{\partial^2 \phi}{\partial z^2} \right| \ll 2 k_0 n_0\left| \frac{\partial \phi}{\partial z} \right|$. Los algoritmos que resuelven la ecuación (\ref{eqn:bpmescalar}) son conocidos como \textit{Beam Propagation Methods} escalares, utilizados ampliamente en esta área de investigación \cite{bics, interorbital, OAMCaging, vortex, bpm}. Fuera de la aproximación de guiaje débil, los efectos de polarización cruzada son más relevantes y se hace necesaria una descripción vectorial del problema.
 \subsection{Implementación mediante transformada de Fourier (FFTBPM)}
