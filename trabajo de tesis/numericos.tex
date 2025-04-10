@@ -14,10 +14,16 @@ Y el campo total propagado es una combinación lineal de los modos $\Psi_\nu$:
 \begin{equation}
 	\Psi(\textbf{r}) = \sum_\nu a_\nu \Psi_\nu(x,y) e^{i\beta_\nu z}, \quad\text{ con } a_\nu \propto \Psi_\nu(x,y) \cdot \Psi(x, y, z=0).
 \end{equation}
-En vez de integrar directamente la ecuación de valores propios (\ref{eqn:eme}), la estrategia será discretizar el espacio y aproximar al operador Laplaciano transversal $\nabla_\perp^2$ como una matriz, pues $$\frac{\partial^2 \Psi(x,y)}{\partial x^2} \sim \frac{\Psi[i+1,j]-2\Psi[i,j]+\Psi[i-1,j]}{\Delta x ^2}.
+En vez de integrar directamente la ecuación de valores propios (\ref{eqn:eme}), la estrategia será discretizar el espacio y aproximar al operador Laplaciano transversal $\nabla_\perp^2$ como una matriz, pues $$\frac{\partial^2 \Psi(x,y)}{\partial x^2} \sim \frac{\Psi[i+1,j]-2\Psi[i,j]+\Psi[i-1,j]}{\Delta x ^2} \sim \frac{1}{\Delta x ^2}\begin{pmatrix}
+2 & -1 & 0 & \cdots
+\\
+-1 & 2 & -1 & \ddots  
+\\
+0 & \ddots  & \ddots  & \ddots
+\end{pmatrix}.
 $$
-Esto es, la matriz será una suma de Kronecker de dos matrices tridiagonales con valores $-2$ en la diagonal y $-1$ fuera de ella, con un prefactor de $1/\Delta x^2$ o $1/\Delta y^2$.
-Prácticamente toda la matriz es nula (\textit{sparse-like}), por lo que es posible optimizar el proceso de cómputo al utilizar la librería de Python \href{https://docs.scipy.org/doc/scipy/reference/sparse.linalg.html}{\color{magenta}\texttt{scipy.sparse.linalg}}, especialmente diseñada para el álgebra lineal de matrices de escasos elementos. El anexo \ref{sec:codigohelmholtz} contiene una implementación de este algoritmo en Python bajo \href{https://www.gnu.org/licenses/gpl-3.0.html}{\color{magenta}licencia GNU GPL v3}.
+$\nabla^2_\perp \sim \hat{D}_{xx} \otimes I_y + I_x \otimes \hat{D}_{yy}$
+La matriz es nula (\textit{sparse-like}) en las posiciones no diagonales más allá de un espacio, por lo que es posible optimizar el proceso de cómputo al utilizar la librería de Python \href{https://docs.scipy.org/doc/scipy/reference/sparse.linalg.html}{\color{magenta}\texttt{scipy.sparse.linalg}}, especialmente diseñada para el álgebra lineal de matrices de escasos elementos. El anexo \ref{sec:codigohelmholtz} contiene una implementación de este algoritmo en Python bajo \href{https://www.gnu.org/licenses/gpl-3.0.html}{\color{magenta}licencia GNU GPL v3}.
 \section{Beam Propagation Method} 
 
 Otra forma de abordar la resolución numérica de la ecuación (\ref{eqn:helmholtznum}) consiste en separar el campo en su envolvente lenta y una fase rápidamente oscilante, considerando que en el rango visible el orden de magnitud es, $k_0 \sim 10 ^{5} \text{ cm}^{-1}$: $\Psi(\textbf{r}) = \phi(x,y,z)\exp(ik_0 n_0 z)$. Luego de reemplazar en la ecuación (\ref{eqn:helmholtznum}) se obtiene la ecuación óptica de Schrödinger \citep{paraxialschrodinger}:
