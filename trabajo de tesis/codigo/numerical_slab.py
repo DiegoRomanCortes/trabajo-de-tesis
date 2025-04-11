@@ -285,8 +285,6 @@ n_eigen = 4  # Number of eigenvalues to compute
 
 wx = 3E-6  # Width of the refractive index modulation
 
-a1 = 20E-6
-
 def dn_func(x):
     output = cp.heaviside(wx**2 - x**2, 0)
     return output
@@ -305,7 +303,22 @@ H = diags([1, -2, 1], [-1, 0, 1], shape=(N, N)) / dx**2 + diags(k**2)
 # Solve the eigenvalue problem
 eigenvalues, eigenvectors = linalg.eigsh(H, k=n_eigen, which='LA')
 
+V2 = k0**2 * ((n0+dn)**2 - n0**2)
 
+alpha1 = 1.32536161463/wx
+alpha2 = 2.637010116735/wx
+alpha3 = 3.91250184766/wx
+alpha4 = 5.0834430703/wx
+
+kz1 = np.sqrt((k0*(n0+dn))**2 - alpha1**2)
+kz2 = np.sqrt((k0*(n0+dn))**2 - alpha2**2)
+kz3 = np.sqrt((k0*(n0+dn))**2 - alpha3**2)
+kz4 = np.sqrt((k0*(n0+dn))**2 - alpha4**2)
+
+print((kz1 - np.sqrt(eigenvalues[-1].get()))/k0)
+print((kz2 - np.sqrt(eigenvalues[-2].get()))/k0)
+print((kz3 - np.sqrt(eigenvalues[-3].get()))/k0)
+print((kz4 - np.sqrt(eigenvalues[-4].get()))/k0)
 
 plt.style.use('science')
 fig, ax = plt.subplots(1, 1, dpi=300, figsize=(6, 4))
@@ -313,16 +326,17 @@ fig, ax = plt.subplots(1, 1, dpi=300, figsize=(6, 4))
 ax.set_xlabel(r'$x$ ($\mu$m)')
 scale = 1e-2
 colors = ['#0C5DA5', '#00B945', '#FF9500', '#FF2C00', '#845B97', '#474747', '#9e9e9e']
-ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-1].get())/k0 + scale*(eigenvectors[:, -1].get()), color=colors[0])
-ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-1].get())/k0, color=colors[0], linestyle='--')
+ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-1].get())/k0 + scale*(eigenvectors[:, -1].get()/np.sign(eigenvectors[-1, -1].get())), color=colors[0])
+ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-1].get())/k0, color=colors[0], linestyle='dotted')
+# ax.plot(x.get()*1e6, kz1/k0*np.ones(N), color=colors[0], linestyle='solid')
 
-ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-2].get())/k0 + scale*(eigenvectors[:, -2].get()), color=colors[1])
+ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-2].get())/k0 + scale*(eigenvectors[:, -2].get()/np.sign(eigenvectors[-1, -2].get())), color=colors[1])
 ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-2].get())/k0, color=colors[1], linestyle='--')
 
-ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-3].get())/k0 + scale*(eigenvectors[:, -3].get()), color=colors[2])
+ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-3].get())/k0 + scale*(eigenvectors[:, -3].get()/np.sign(eigenvectors[-1, -3].get())), color=colors[2])
 ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-3].get())/k0, color=colors[2], linestyle='--')
 
-ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-4].get())/k0 + scale*(eigenvectors[:, -4].get()), color=colors[3])
+ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-4].get())/k0 + scale*(eigenvectors[:, -4].get()/np.sign(eigenvectors[-1, -4].get())), color=colors[3])
 ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-4].get())/k0, color=colors[3], linestyle='--')
 
 ax.plot(x.get()*1e6, n.get(), color=colors[4])
