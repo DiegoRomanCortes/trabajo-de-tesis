@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  10 APR 2025 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  11 APR 2025 15:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1249,72 +1249,72 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
 
 ]
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 93.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 91.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./media/slab.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<media/slab.pdf, id=388, 963.6pt x 542.025pt>
+<media/slab.pdf, id=387, 963.6pt x 542.025pt>
 File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
-Package pdftex.def Info: media/slab.pdf  used on input line 107.
+Package pdftex.def Info: media/slab.pdf  used on input line 105.
 (pdftex.def)             Requested size: 283.22162pt x 159.30876pt.
 [3] [4 <./media/slab.pdf>]
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 2
-14.
+12.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 242.
-<media/slabgraphical.pdf, id=417, 246.45837pt x 192.50116pt>
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 240.
+<media/slabgraphical.pdf, id=416, 246.45837pt x 192.50116pt>
 File: media/slabgraphical.pdf Graphic file (type pdf)
 <use media/slabgraphical.pdf>
-Package pdftex.def Info: media/slabgraphical.pdf  used on input line 248.
+Package pdftex.def Info: media/slabgraphical.pdf  used on input line 246.
 (pdftex.def)             Requested size: 330.42041pt x 258.1pt.
  [5]
-<media/TETMfields.pdf, id=428, 230.77599pt x 179.71974pt>
+<media/TETMfields.pdf, id=427, 230.77599pt x 179.71974pt>
 File: media/TETMfields.pdf Graphic file (type pdf)
 <use media/TETMfields.pdf>
-Package pdftex.def Info: media/TETMfields.pdf  used on input line 254.
+Package pdftex.def Info: media/TETMfields.pdf  used on input line 252.
 (pdftex.def)             Requested size: 330.42041pt x 257.34552pt.
  [6 <./media/slabgraphical.pdf> <./media/TETMfields.pdf>] [7]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
 17}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \end{align}
+l.400 \end{align}
                   [8] [9]
-<media/OAM_analitic.png, id=514, 1047.16219pt x 682.80093pt>
+<media/OAM_analitic.png, id=513, 1047.16219pt x 682.80093pt>
 File: media/OAM_analitic.png Graphic file (type png)
 <use media/OAM_analitic.png>
-Package pdftex.def Info: media/OAM_analitic.png  used on input line 506.
+Package pdftex.def Info: media/OAM_analitic.png  used on input line 504.
 (pdftex.def)             Requested size: 472.03123pt x 307.7785pt.
  [10] [11 <./media/OAM_analitic.png>]
 
-LaTeX Warning: Command \textasciiacute invalid in math mode on input line 575.
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 573.
 
 
-LaTeX Warning: Command \textasciiacute invalid in math mode on input line 575.
+LaTeX Warning: Command \textasciiacute invalid in math mode on input line 573.
 
 Missing character: There is no ´ in font txr!
 [12] [13] [14]
-<media/ssh-model.png, id=571, 1181.16281pt x 230.36063pt>
+<media/ssh-model.png, id=570, 1181.16281pt x 230.36063pt>
 File: media/ssh-model.png Graphic file (type png)
 <use media/ssh-model.png>
-Package pdftex.def Info: media/ssh-model.png  used on input line 750.
+Package pdftex.def Info: media/ssh-model.png  used on input line 748.
 (pdftex.def)             Requested size: 377.62642pt x 73.64659pt.
  [15 <./media/ssh-model.png (PNG copy)>]
-<media/ssh-winding.png, id=586, 448.074pt x 224.94037pt>
+<media/ssh-winding.png, id=585, 448.074pt x 224.94037pt>
 File: media/ssh-winding.png Graphic file (type png)
 <use media/ssh-winding.png>
-Package pdftex.def Info: media/ssh-winding.png  used on input line 794.
+Package pdftex.def Info: media/ssh-winding.png  used on input line 792.
 (pdftex.def)             Requested size: 472.03123pt x 236.97005pt.
-<media/ssh-open.png, id=587, 238.491pt x 184.0476pt>
+<media/ssh-open.png, id=586, 238.491pt x 184.0476pt>
 File: media/ssh-open.png Graphic file (type png)
 <use media/ssh-open.png>
-Package pdftex.def Info: media/ssh-open.png  used on input line 799.
+Package pdftex.def Info: media/ssh-open.png  used on input line 797.
 (pdftex.def)             Requested size: 283.22162pt x 218.58406pt.
 
 
@@ -1329,7 +1329,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  (./numericos.tex
 Cap\'{\i }tulo 3.
 LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
-26.
+20.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
 File: ot1txtt.fd 2000/12/15 v3.1
 ) [18
@@ -1343,12 +1343,12 @@ File: ot1txtt.fd 2000/12/15 v3.1
 
  (./metodos.tex
 Cap\'{\i }tulo 4.
-<media/fabrication.png, id=652, 1927.2pt x 1084.05pt>
+<media/fabrication.png, id=651, 1927.2pt x 1084.05pt>
 File: media/fabrication.png Graphic file (type png)
 <use media/fabrication.png>
 Package pdftex.def Info: media/fabrication.png  used on input line 6.
 (pdftex.def)             Requested size: 283.22162pt x 229.12283pt.
-<media/SC_setup.png, id=654, 1927.2pt x 1084.05pt>
+<media/SC_setup.png, id=653, 1927.2pt x 1084.05pt>
 File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package pdftex.def Info: media/SC_setup.png  used on input line 13.
@@ -1359,13 +1359,13 @@ Package pdftex.def Info: media/SC_setup.png  used on input line 13.
 
 
  <./media/fabrication.png> <./media/SC_setup.png>]
-<media/SLMblaze4.png, id=666, 963.6pt x 542.025pt>
+<media/SLMblaze4.png, id=665, 963.6pt x 542.025pt>
 File: media/SLMblaze4.png Graphic file (type png)
 <use media/SLMblaze4.png>
 Package pdftex.def Info: media/SLMblaze4.png  used on input line 30.
 (pdftex.def)             Requested size: 165.2138pt x 161.57301pt.
  [22 <./media/SLMblaze4.png>]
-<media/SLM_setupv1.png, id=674, 1927.2pt x 1084.05pt>
+<media/SLM_setupv1.png, id=673, 1927.2pt x 1084.05pt>
 File: media/SLM_setupv1.png Graphic file (type png)
 <use media/SLM_setupv1.png>
 Package pdftex.def Info: media/SLM_setupv1.png  used on input line 41.
@@ -1387,12 +1387,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<media/26um_15mm_angles.png, id=685, 3327.43124pt x 1062.21844pt>
+<media/26um_15mm_angles.png, id=684, 3327.43124pt x 1062.21844pt>
 File: media/26um_15mm_angles.png Graphic file (type png)
 <use media/26um_15mm_angles.png>
 Package pdftex.def Info: media/26um_15mm_angles.png  used on input line 12.
 (pdftex.def)             Requested size: 472.03123pt x 126.46901pt.
-<media/couplingvsangle.jpg, id=690, 160.4394pt x 157.5486pt>
+<media/couplingvsangle.jpg, id=689, 160.4394pt x 157.5486pt>
 File: media/couplingvsangle.jpg Graphic file (type jpg)
 <use media/couplingvsangle.jpg>
 Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
@@ -1403,7 +1403,7 @@ Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
 
 
  <./media/26um_15mm_angles.png>]
-<media/honeycomb_lattices_bw.png, id=702, 863.225pt x 201.75375pt>
+<media/honeycomb_lattices_bw.png, id=701, 863.225pt x 201.75375pt>
 File: media/honeycomb_lattices_bw.png Graphic file (type png)
 <use media/honeycomb_lattices_bw.png>
 Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
@@ -1414,7 +1414,7 @@ Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
 
  (./moleculas.tex
 Cap\'{\i }tulo 6.
-<media/ssh_sp_model.png, id=720, 1015.54407pt x 460.72125pt>
+<media/ssh_sp_model.png, id=719, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
 Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
@@ -1429,12 +1429,12 @@ Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
 
  (./oam.tex
 Cap\'{\i }tulo 7.
-<media/OAM-free.png, id=730, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=729, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=731, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=730, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
@@ -1505,12 +1505,12 @@ LaTeX Info: Redefining \% on input line 22.
 (./numericos.aux) (./metodos.aux) (./magico.aux) (./moleculas.aux) (./oam.aux)
 (./conclu.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F8F6110CE0125AC536B6426D15947090;9553.
+(rerunfilecheck)             Checksum: A4B93969BDAA8A05C251FB621A6EDB44;9494.
  ) 
 Here is how much of TeX's memory you used:
  40147 strings out of 476091
  875427 string characters out of 5794081
- 2304330 words of memory out of 5000000
+ 2303330 words of memory out of 5000000
  59257 multiletter control sequences out of 15000+600000
  574441 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1538,10 +1538,10 @@ s/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (51 pages, 9400856 bytes).
+Output written on main.pdf (51 pages, 9400616 bytes).
 PDF statistics:
- 1393 PDF objects out of 1440 (max. 8388607)
- 1245 compressed objects within 13 object streams
+ 1392 PDF objects out of 1440 (max. 8388607)
+ 1244 compressed objects within 13 object streams
  510 named destinations out of 1000 (max. 500000)
  461 words of extra memory for PDF output out of 10000 (max. 10000000)
 

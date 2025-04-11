@@ -287,8 +287,8 @@ n_eigen = 3  # Number of eigenvalues to compute
 wx = 2.1E-6  # Width of the refractive index modulation
 
 a1 = 20E-6
-distances = cp.linspace(2E-6, 30E-6, num=29)
-np.save('distances.npy', distances)
+distances = cp.linspace(10E-6, 30E-6, num=21)
+np.save('dimol/distances.npy', distances)
 def dn_func(x):
     output = cp.tanh(33.0*cp.exp(-(x/wx)**2))
     return output
@@ -317,11 +317,11 @@ H2 = diags([1, -2, 1], [-1, 0, 1], shape=(N, N)) / dx**2 + diags(k2**2)
 # Solve the eigenvalue problem
 eigenvalues2, eigenvectors2 = linalg.eigsh(H2, k=n_eigen, which='LA')
 
-np.save('eigenvalues1.npy', eigenvalues1)
-np.save('eigenvectors1.npy', eigenvectors1)
+np.save('dimol/eigenvalues1.npy', eigenvalues1)
+np.save('dimol/eigenvectors1.npy', eigenvectors1)
 
-np.save('eigenvalues2.npy', eigenvalues2)
-np.save('eigenvectors2.npy', eigenvectors2)
+np.save('dimol/eigenvalues2.npy', eigenvalues2)
+np.save('dimol/eigenvectors2.npy', eigenvectors2)
 
 # Coupled waveguides
 for idx, ai in enumerate(distances):
@@ -330,8 +330,8 @@ for idx, ai in enumerate(distances):
     dn_array += dn1 * dn_func(x+ai/2)
     dn_array += dn2 * dn_func(x-ai/2)
 
-    np.save(f'dn1_array_{idx}.npy', (n0+dn_array)**2 - ((n0+dn1 * dn_func(x+ai/2)))**2)
-    np.save(f'dn2_array_{idx}.npy', (n0+dn_array)**2 - ((n0+dn2 * dn_func(x-ai/2)))**2)
+    np.save(f'dimol/dn1_array_{idx}.npy', (n0+dn_array)**2 - ((n0+dn1 * dn_func(x+ai/2)))**2)
+    np.save(f'dimol/dn2_array_{idx}.npy', (n0+dn_array)**2 - ((n0+dn2 * dn_func(x-ai/2)))**2)
     n = n0 + dn_array
     k = k0 * n
 
