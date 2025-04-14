@@ -1,9 +1,9 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Marco teórico}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Desde las ecuaciones de Maxwell a propagación en guías de onda dieléctricas }{2}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Propagación en guías de onda dieléctricas desde las ecuaciones de Maxwell }{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Soluciones analíticas para guía de onda tipo losa o \textit {slab}}{3}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Soluciones gráficas y comparación entre modos TE y TM}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Soluciones gráficas y comparación entre modos TE y TM }{5}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Soluciones analíticas para fibra óptica circular}{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Modos TE y TM}{9}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Modos HE y EH}{10}{subsection.2.3.2}%
@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.5.3}Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}{15}{subsection.2.5.3}%
 \contentsline {chapter}{\numberline {3}Métodos numéricos}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Expansión en modos normales }{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Beam Propagation Method}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Beam Propagation Method}{19}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{19}{subsection.3.2.1}%
 \contentsline {section}{\numberline {3.3}Desde teoría de modos acoplados}{20}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Métodos experimentales}{21}{chapter.4}%
@@ -35,7 +35,7 @@
 \contentsline {section}{\numberline {6.2}Moléculas Fotónicas en Red SP-SSH}{26}{section.6.2}%
 \contentsline {chapter}{\numberline {7}Haces con momentum orbital angular (OAM)}{28}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Conclusiones}{30}{chapter.8}%
-\contentsline {chapter}{\numberline {}Bibliograf\'ia}{36}{chapter*.22}%
+\contentsline {chapter}{\numberline {}Bibliograf\'ia}{36}{chapter*.23}%
 \contentsline {chapter}{Anexo \numberline {A}Ortogonalidad de los modos normales }{37}{Appendix.alph1.Alph1}%
 \contentsline {chapter}{Anexo \numberline {B}Código en Python para cálculo de modos normales }{38}{Appendix.alph1.Alph2}%
 \contentsline {chapter}{Anexo \numberline {C}Código en C de BPM }{39}{Appendix.alph1.Alph3}%

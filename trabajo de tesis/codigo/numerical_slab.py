@@ -267,43 +267,13 @@ colors = [(0,0,0),
 nodes = np.linspace(0, 1, num=255)
 thorlabs = LinearSegmentedColormap.from_list("thorlabs", list(zip(nodes, colors)))
 
-# Define the parameters
-N = 200  # Number of grid points
-L = 20e-6  # Length of the domain
-
-dx = L / (N - 1)
-x = cp.linspace(-L/2, L/2, num=N)
-np.save('dimol/x.npy', x)
-
-n0 = 1.48  # Refractive index of the background
-dn = 15E-3  # Amplitude of the refractive index modulation
-
-wavelength = 730E-9  # Wavelength of the light
-k0 = 2 * cp.pi / wavelength  # Wavenumber
-
-n_eigen = 4  # Number of eigenvalues to compute
 
 wx = 3E-6  # Width of the refractive index modulation
-
-def dn_func(x):
-    output = cp.heaviside(wx**2 - x**2, 0)
-    return output
-
-# Coupled waveguides
-dn_array = cp.zeros(N)
-
-dn_array += dn * dn_func(x)
-
-n = n0 + dn_array
-k = k0 * n
-
-
-H = diags([1, -2, 1], [-1, 0, 1], shape=(N, N)) / dx**2 + diags(k**2)
-
-# Solve the eigenvalue problem
-eigenvalues, eigenvectors = linalg.eigsh(H, k=n_eigen, which='LA')
-
-V2 = k0**2 * ((n0+dn)**2 - n0**2)
+n0 = 1.48  # Refractive index of the background
+dn = 15E-3  # Amplitude of the refractive index modulation
+L = 300e-6  # Length of the domain
+wavelength = 730E-9  # Wavelength of the light
+k0 = 2 * cp.pi / wavelength  # Wavenumber
 
 alpha1 = 1.32536161463/wx
 alpha2 = 2.637010116735/wx
@@ -315,31 +285,93 @@ kz2 = np.sqrt((k0*(n0+dn))**2 - alpha2**2)
 kz3 = np.sqrt((k0*(n0+dn))**2 - alpha3**2)
 kz4 = np.sqrt((k0*(n0+dn))**2 - alpha4**2)
 
-print((kz1 - np.sqrt(eigenvalues[-1].get()))/k0)
-print((kz2 - np.sqrt(eigenvalues[-2].get()))/k0)
-print((kz3 - np.sqrt(eigenvalues[-3].get()))/k0)
-print((kz4 - np.sqrt(eigenvalues[-4].get()))/k0)
+def dn_func(x):
+    output = cp.heaviside(wx**2 - x**2, 0)
+    return output
+
+
+# Define the parameters
+Ns = cp.logspace(8, 16, num=50, base=2).astype("int")  # Different grid sizes for testing
+print(Ns)
+delta_ks = cp.zeros((len(Ns), 4))
+speeds = np.zeros((len(Ns)))
+for idx, N in enumerate(Ns):
+    N = N.get()
+    x, dx = cp.linspace(-L/2, L/2, num=N, retstep=True)
+    n_eigen = 4  # Number of eigenvalues to compute
+
+    # Coupled waveguides
+    dn_array = cp.zeros(N)
+    dn_array += dn * dn_func(x)
+    n = n0 + dn_array
+    k = k0 * n
+
+    H = diags([1, -2, 1], [-1, 0, 1], shape=(N, N)) / dx**2 + diags(k**2)
+
+    # Time the eigenvalue computation
+    start = cp.cuda.Event()
+    end = cp.cuda.Event()
+    start.record()
+
+    # Solve the eigenvalue problem
+    eigenvalues, eigenvectors = linalg.eigsh(H, k=n_eigen, which='LA')
+
+    end.record()
+    end.synchronize()
+    speeds[idx] = cp.cuda.get_elapsed_time(start, end) / 1000  # Convert ms to seconds
+
+    delta_ks[idx, 0] = cp.abs((kz1 - cp.sqrt(eigenvalues[-1]))/kz1)
+    delta_ks[idx, 1] = cp.abs((kz2 - cp.sqrt(eigenvalues[-2]))/kz2)
+    delta_ks[idx, 2] = cp.abs((kz3 - cp.sqrt(eigenvalues[-3]))/kz3)
+    delta_ks[idx, 3] = cp.abs((kz4 - cp.sqrt(eigenvalues[-4]))/kz4)  
+
 
 plt.style.use('science')
 fig, ax = plt.subplots(1, 1, dpi=300, figsize=(6, 4))
 
-ax.set_xlabel(r'$x$ ($\mu$m)')
-scale = 1e-2
-colors = ['#0C5DA5', '#00B945', '#FF9500', '#FF2C00', '#845B97', '#474747', '#9e9e9e']
-ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-1].get())/k0 + scale*(eigenvectors[:, -1].get()/np.sign(eigenvectors[-1, -1].get())), color=colors[0])
-ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-1].get())/k0, color=colors[0], linestyle='dotted')
-# ax.plot(x.get()*1e6, kz1/k0*np.ones(N), color=colors[0], linestyle='solid')
+ax2 = ax.twinx()
+ax2.set_yscale('log')
+ax2.set_ylabel(r'$t$ (s)')
+ax2.plot(L/(Ns.get()-1), speeds, '.-', color='gray', label=r'time')
 
-ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-2].get())/k0 + scale*(eigenvectors[:, -2].get()/np.sign(eigenvectors[-1, -2].get())), color=colors[1])
-ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-2].get())/k0, color=colors[1], linestyle='--')
+ax.set_xlabel(r'$\Delta x$ ($\mu$m)')
+ax.set_ylabel(r'$\Delta n_{\text{eff}}/n_{\text{eff}}^\text{analitical}$')
+ax.set_xscale('log')
+ax.set_yscale('log')
+ax.plot(L/(Ns.get()-1), delta_ks.get()[:, 0]/k0, '*', label=r'Mode $1$')
+ax.plot(L/(Ns.get()-1), delta_ks.get()[:, 1]/k0, '*', label=r'Mode $2$')
+ax.plot(L/(Ns.get()-1), delta_ks.get()[:, 2]/k0, '*', label=r'Mode $3$')
+ax.plot(L/(Ns.get()-1), delta_ks.get()[:, 3]/k0, '*', label=r'Mode $4$')
 
-ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-3].get())/k0 + scale*(eigenvectors[:, -3].get()/np.sign(eigenvectors[-1, -3].get())), color=colors[2])
-ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-3].get())/k0, color=colors[2], linestyle='--')
 
-ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-4].get())/k0 + scale*(eigenvectors[:, -4].get()/np.sign(eigenvectors[-1, -4].get())), color=colors[3])
-ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-4].get())/k0, color=colors[3], linestyle='--')
+handles1, labels1 = ax.get_legend_handles_labels()
+handles2, labels2 = ax2.get_legend_handles_labels()
+ax.legend(handles1 + handles2, labels1 + labels2, loc=(0.25, 0.7), fontsize='x-small')  # Combine legends
+# ax.grid()
 
-ax.plot(x.get()*1e6, n.get(), color=colors[4])
 fig.show()
+print()
+
+# plt.style.use('science')
+# fig, ax = plt.subplots(1, 1, dpi=300, figsize=(6, 4))
+
+# ax.set_xlabel(r'$x$ ($\mu$m)')
+# scale = 1e-2
+# colors = ['#0C5DA5', '#00B945', '#FF9500', '#FF2C00', '#845B97', '#474747', '#9e9e9e']
+# ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-1].get())/k0 + scale*(eigenvectors[:, -1].get()/np.sign(eigenvectors[-1, -1].get())), color=colors[0])
+# ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-1].get())/k0, color=colors[0], linestyle='dotted')
+# # ax.plot(x.get()*1e6, kz1/k0*np.ones(N), color=colors[0], linestyle='solid')
+
+# ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-2].get())/k0 + scale*(eigenvectors[:, -2].get()/np.sign(eigenvectors[-1, -2].get())), color=colors[1])
+# ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-2].get())/k0, color=colors[1], linestyle='--')
+
+# ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-3].get())/k0 + scale*(eigenvectors[:, -3].get()/np.sign(eigenvectors[-1, -3].get())), color=colors[2])
+# ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-3].get())/k0, color=colors[2], linestyle='--')
+
+# ax.plot(x.get()*1e6, np.sqrt(eigenvalues[-4].get())/k0 + scale*(eigenvectors[:, -4].get()/np.sign(eigenvectors[-1, -4].get())), color=colors[3])
+# ax.plot(x.get()*1e6, np.ones(N)*np.sqrt(eigenvalues[-4].get())/k0, color=colors[3], linestyle='--')
+
+# ax.plot(x.get()*1e6, n.get(), color=colors[4])
+# fig.show()
 print()
 
