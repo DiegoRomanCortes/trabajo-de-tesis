@@ -19,13 +19,13 @@ $$
 $\nabla^2_\perp \sim \hat{D}_{xx} \otimes I_y + I_x \otimes \hat{D}_{yy}$
 La matriz es nula (\textit{sparse-like}) en las posiciones no diagonales más allá de un espacio, por lo que es posible optimizar el proceso de cómputo al utilizar la librería de Python \href{https://docs.scipy.org/doc/scipy/reference/sparse.linalg.html}{\color{magenta}\texttt{scipy.sparse.linalg}}, especialmente diseñada para el álgebra lineal de matrices de escasos elementos. El anexo \ref{sec:codigohelmholtz} contiene una implementación de este algoritmo en Python bajo \href{https://www.gnu.org/licenses/gpl-3.0.html}{\color{magenta}licencia GNU GPL v3}.
 
-En la Figura \ref{fig:emenumerror} se valida el método numérico mediante comparación con las soluciones analíticas obtenidas en la subsección \ref{cap:solslabTETM}. La complejidad del problema es del orden $O(N^2)$ debido a la construcción de las matrices de $N\times N$, lo que se refleja en la dependecia del tiempo de ejecución en función del paso $\Delta x \equiv \frac{L}{N-1}$.
+En la Figura \ref{fig:emenumerror} se valida el método numérico mediante comparación con las soluciones analíticas obtenidas en la subsección \ref{cap:solslabTETM}. La complejidad del problema es del orden $O(N^2)$ debido a la construcción de las matrices de $N\times N$, lo que se refleja en la dependencia del tiempo de ejecución en función del paso $\Delta x \equiv \frac{L}{N-1}$.
 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{media/numerical_slab}
-	\caption{Error relativo y tiempo de ejecución de las soluciones numéricas a la ecuación (\ref{eqn:eme}) con respecto a las soluciones analíticas, en función del paso $\Delta x$. \label{fig:emenumerror}}
+	\caption[Error relativo y tiempo de ejecución.]{Error relativo y tiempo de ejecución de las soluciones numéricas a la ecuación (\ref{eqn:eme}) con respecto a las soluciones analíticas, en función del paso $\Delta x$. \label{fig:emenumerror}}
 \end{figure}
 \section{Beam Propagation Method} 
 
@@ -59,6 +59,14 @@ $\phi(z_0+\Delta z)=\mathcal{F}^{-1}\left\{\exp\left(\frac{ik^2\Delta z}{4k_0 n_
 
 \item Se itera hasta llegar a la distancia de propagación $z$ deseada.
 \end{enumerate}
+En la Figura \ref{fig:num-exp-comp} se comparan los perfiles de salida experimental y numérico, alcanzando una similtud razonable. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/num_exp_comparison.png}
+	\caption{Comparación entre simulación y experimento. Arriba: Experimento. Abajo: Propagación numérica. \label{fig:num-exp-comp}}
+\end{figure}
+
+
 
 \section{Desde teoría de modos acoplados}
 Se puede decir que la simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) es lo más compacta posible en tanto la matriz de acoplamientos $\hat{C}$ codifica todas las propiedades de la red que se deseen estudiar de manera semiempírica. En este sentido, la diagonalización de la matriz $\hat{C}$ es una herramienta numérica útil en el estudio del comportamiento de redes fotónicas ante variaciones de parámetros tales como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de dos modos distintos). Incluso, es posible explorar sistemas ``no físicos'' debido a los grados de libertad en las entradas de la matriz $\hat{C}$.

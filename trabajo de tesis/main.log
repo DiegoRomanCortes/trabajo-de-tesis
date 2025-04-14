@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  14 APR 2025 12:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  14 APR 2025 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1315,7 +1315,7 @@ Package pdftex.def Info: media/ssh-winding.png  used on input line 792.
 File: media/ssh-open.png Graphic file (type png)
 <use media/ssh-open.png>
 Package pdftex.def Info: media/ssh-open.png  used on input line 797.
-(pdftex.def)             Requested size: 283.22162pt x 218.58406pt.
+(pdftex.def)             Requested size: 330.42041pt x 255.01381pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1343,39 +1343,45 @@ Package pdftex.def Info: media/numerical_slab.png  used on input line 27.
 
 
 
-] [19 <./media/numerical_slab.png>]) [20]
+] [19 <./media/numerical_slab.png>]
+<media/num_exp_comparison.png, id=652, 1052.93375pt x 489.83pt>
+File: media/num_exp_comparison.png Graphic file (type png)
+<use media/num_exp_comparison.png>
+Package pdftex.def Info: media/num_exp_comparison.png  used on input line 65.
+(pdftex.def)             Requested size: 330.42041pt x 153.71428pt.
+) [20 <./media/num_exp_comparison.png>] [21]
 \openout2 = `metodos.aux'.
 
  (./metodos.tex
 Cap\'{\i }tulo 4.
-<media/fabrication.png, id=661, 1927.2pt x 1084.05pt>
+<media/fabrication.png, id=669, 1927.2pt x 1084.05pt>
 File: media/fabrication.png Graphic file (type png)
 <use media/fabrication.png>
 Package pdftex.def Info: media/fabrication.png  used on input line 6.
 (pdftex.def)             Requested size: 283.22162pt x 229.12283pt.
-<media/SC_setup.png, id=663, 1927.2pt x 1084.05pt>
+<media/SC_setup.png, id=671, 1927.2pt x 1084.05pt>
 File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package pdftex.def Info: media/SC_setup.png  used on input line 13.
 (pdftex.def)             Requested size: 472.03123pt x 174.63484pt.
-[21
+[22
 
 
 
 
  <./media/fabrication.png> <./media/SC_setup.png>]
-<media/SLMblaze4.png, id=675, 963.6pt x 542.025pt>
+<media/SLMblaze4.png, id=683, 963.6pt x 542.025pt>
 File: media/SLMblaze4.png Graphic file (type png)
 <use media/SLMblaze4.png>
 Package pdftex.def Info: media/SLMblaze4.png  used on input line 30.
 (pdftex.def)             Requested size: 165.2138pt x 161.57301pt.
- [22 <./media/SLMblaze4.png>]
-<media/SLM_setupv1.png, id=683, 1927.2pt x 1084.05pt>
+ [23 <./media/SLMblaze4.png>]
+<media/SLM_setupv1.png, id=691, 1927.2pt x 1084.05pt>
 File: media/SLM_setupv1.png Graphic file (type png)
 <use media/SLM_setupv1.png>
 Package pdftex.def Info: media/SLM_setupv1.png  used on input line 41.
 (pdftex.def)             Requested size: 472.03123pt x 333.833pt.
-) [23 <./media/SLM_setupv1.png>]
+) [24 <./media/SLM_setupv1.png>]
 \openout2 = `magico.aux'.
 
  (./magico.tex
@@ -1392,74 +1398,74 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<media/26um_15mm_angles.png, id=694, 3327.43124pt x 1062.21844pt>
+<media/26um_15mm_angles.png, id=703, 3327.43124pt x 1062.21844pt>
 File: media/26um_15mm_angles.png Graphic file (type png)
 <use media/26um_15mm_angles.png>
 Package pdftex.def Info: media/26um_15mm_angles.png  used on input line 12.
 (pdftex.def)             Requested size: 472.03123pt x 126.46901pt.
-<media/couplingvsangle.jpg, id=699, 160.4394pt x 157.5486pt>
+<media/couplingvsangle.jpg, id=708, 160.4394pt x 157.5486pt>
 File: media/couplingvsangle.jpg Graphic file (type jpg)
 <use media/couplingvsangle.jpg>
 Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
 (pdftex.def)             Requested size: 236.01561pt x 231.76433pt.
-[24
+[25
 
 
 
 
  <./media/26um_15mm_angles.png>]
-<media/honeycomb_lattices_bw.png, id=711, 863.225pt x 201.75375pt>
+<media/honeycomb_lattices_bw.png, id=719, 863.225pt x 201.75375pt>
 File: media/honeycomb_lattices_bw.png Graphic file (type png)
 <use media/honeycomb_lattices_bw.png>
 Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
 .
 (pdftex.def)             Requested size: 472.03123pt x 110.32149pt.
-) [25 <./media/couplingvsangle.jpg> <./media/honeycomb_lattices_bw.png>]
+) [26 <./media/couplingvsangle.jpg> <./media/honeycomb_lattices_bw.png>]
 \openout2 = `moleculas.aux'.
 
  (./moleculas.tex
 Cap\'{\i }tulo 6.
-<media/ssh_sp_model.png, id=729, 1015.54407pt x 460.72125pt>
+<media/ssh_sp_model.png, id=738, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
 Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
 (pdftex.def)             Requested size: 330.42041pt x 149.90135pt.
-) [26
+) [27
 
 
 
 
-] [27 <./media/ssh_sp_model.png (PNG copy)>]
+] [28 <./media/ssh_sp_model.png (PNG copy)>]
 \openout2 = `oam.aux'.
 
  (./oam.tex
 Cap\'{\i }tulo 7.
-<media/OAM-free.png, id=739, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=747, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=740, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=748, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
 (pdftex.def)             Requested size: 472.03123pt x 236.01633pt.
-) [28
+) [29
 
 
 
 
- <./media/OAM-free.png>] [29 <./media/vortex.png>]
+ <./media/OAM-free.png>] [30 <./media/vortex.png>]
 \openout2 = `conclu.aux'.
 
  (./conclu.tex
 Cap\'{\i }tulo 8.
-) [30
+) [31
 
 
 
 
-] (./main.bbl [31
+] (./main.bbl [32
 
 
 
@@ -1469,19 +1475,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--116
 suarios -[] aumentan -[] preferencia -[] por -[]
  []
 
-[32]
+[33]
 Underfull \hbox (badness 1024) in paragraph at lines 226--235
 []\OT1/txr/m/n/12 Sebabrata Mukher-jee, Ale-xan-der Sprac-klen, Ma-nuel Va-lien
 -te, Eri-ka An-ders-son, Pa-trik
  []
 
-[33] [34] [35]) (./anexoA.tex [36]
+[34] [35] [36]) (./anexoA.tex [37]
 Anexo A.
-) (./anexoB.tex [37
+) (./anexoB.tex [38
 
 ]
 Anexo B.
-) (./anexoC.tex [38
+) (./anexoC.tex [39
 
 ]
 Anexo C.
@@ -1494,32 +1500,32 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(./codigo/rad2dc.c [39
+(./codigo/array1d.c [40
 
-] [40] [41])) (./anexoD.tex [42]
+] [41] [42])) (./anexoD.tex [43]
 Anexo D.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-(./codigo/slm_blaze.py [43
+(./codigo/slm_blaze.py [44
 
-])) [44] (./main.aux
+])) [45] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux)
 (./numericos.aux) (./metodos.aux) (./magico.aux) (./moleculas.aux) (./oam.aux)
 (./conclu.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 964E7C12CB364160DDBDA3A8E64E2A59;9489.
+(rerunfilecheck)             Checksum: 4B68CB9A5776D10913D1254F04D887BC;9489.
  ) 
 Here is how much of TeX's memory you used:
- 40161 strings out of 476091
- 875783 string characters out of 5794081
- 2303330 words of memory out of 5000000
- 59269 multiletter control sequences out of 15000+600000
+ 40165 strings out of 476091
+ 875989 string characters out of 5794081
+ 2301330 words of memory out of 5000000
+ 59272 multiletter control sequences out of 15000+600000
  574441 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,21n,103p,1374b,2349s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,21n,103p,1374b,2347s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1543,10 +1549,10 @@ s/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (51 pages, 9498588 bytes).
+Output written on main.pdf (52 pages, 9619363 bytes).
 PDF statistics:
- 1403 PDF objects out of 1440 (max. 8388607)
- 1252 compressed objects within 13 object streams
+ 1409 PDF objects out of 1440 (max. 8388607)
+ 1255 compressed objects within 13 object streams
  511 named destinations out of 1000 (max. 500000)
- 466 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 471 words of extra memory for PDF output out of 10000 (max. 10000000)
 
