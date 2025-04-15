@@ -16,9 +16,9 @@ Las ecuaciones de Maxwell (SI) en este régimen son:
 \end{align}
 donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.48$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda. Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) se tiene:
 \begin{align}
-	\nabla\times\left(\frac{\nabla\times\textbf{E}}{i\omega\mu_0}\right) &=  -\frac{n^2}{c^2}\frac{\partial^2 \textbf{E}}{\partial t^2} = i\omega \varepsilon_0 n^2 \textbf{E} \implies \nabla\times\nabla\times\textbf{E} = k_0^2n^2\textbf{E} \ , \label{eqn:rotordoble}
+	\nabla\times\left(\frac{\nabla\times\textbf{E}}{i\omega\mu_0}\right) &= -i\omega \varepsilon_0 n^2 \textbf{E} \implies \nabla\times\nabla\times\textbf{E} = k_0^2n^2\textbf{E} \ , \label{eqn:rotordoble}
 \end{align}
-donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$. Al aplicar la ley de Gauss (\ref{eqn:gauss}) se deduce que $\nabla\cdot \textbf{E} = -\frac{\nabla n^2}{n^2}\cdot\textbf{E}$. Con esto, se obtiene la ecuación 
+donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Por identidad de cálculo vectorial, se tiene que $\nabla\times\nabla\times\textbf{E} = \nabla(\nabla\cdot\textbf{E}) - \nabla^2\textbf{E}$. La ley de Gauss (\ref{eqn:gauss}) implica que $\nabla\cdot \textbf{E} = -\frac{\nabla n^2}{n^2}\cdot\textbf{E}$. Al reemplazar en la ecuación (\ref{eqn:rotordoble}), se obtiene la ecuación 
 \begin{equation}
 	\left(\nabla^2  + k_0^2n^2\right)\textbf{E} = -\nabla\left( \frac{\nabla n^2}{n^2} \cdot \textbf{E}  \right) \ . \label{eqn:helmholz}
 \end{equation}
@@ -120,15 +120,18 @@ Para encontrar soluciones cuya energía esté localizada en la guía de onda y q
 	\\
 	\Psi_{s0}e^{-\beta|x|}, & |x|>a
 	\end{matrix}\right.
-\end{equation*}
-
-\begin{equation*}
+	\
+	\implies 	
+	\	
 	\nabla_\perp \Psi_s = \left\{\begin{matrix}
 	-\hat{\textbf{x}}\alpha\Psi_{s1}\sin(\alpha x), & |x|\le a
 	\\
 	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{s0}e^{-\beta|x|}, & |x|>a
 	\end{matrix}\right.
+	\
+	.
 \end{equation*}
+
 Por lo que las componentes verticales $E_y$ y $H_y$ pares se escriben debido a la ecuación (\ref{eqn:transversal}) como:
 \begin{equation*}
 	\begin{aligned}[c]
@@ -138,13 +141,15 @@ Por lo que las componentes verticales $E_y$ y $H_y$ pares se escriben debido a l
 	 \frac{|x|}{x}\beta H_{s0}e^{-\beta|x|}, & |x|>a
 	 \end{matrix}\right.
 \end{aligned} 
-\quad
+,\quad
 	\begin{aligned}[c]
 	 H_y &= \frac{-i\omega \epsilon_0 n^2}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
 	 \alpha E_{s1}\sin(\alpha x),	& |x|\le a
 	 \\
 	 \frac{|x|}{x}\beta E_{s0}e^{-\beta|x|}, & |x|>a
 	 \end{matrix}\right.
+	 \
+	 .
 \end{aligned} 
 \end{equation*}
 Por otro lado, las soluciones impares tienen la forma
@@ -154,13 +159,16 @@ Por otro lado, las soluciones impares tienen la forma
 	\\
 	\Psi_{a0}e^{-\beta|x|}, & |x|>a
 	\end{matrix}\right.
-\end{equation*}
-\begin{equation*}
-	\nabla_\perp \Psi_a = \left\{\begin{matrix}
+	\
+	\implies
+	\
+		\nabla_\perp \Psi_a = \left\{\begin{matrix}
 	\hat{\textbf{x}}\alpha\Psi_{a1}\cos(\alpha x), & |x|\le a
 	\\
 	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{a0}e^{-\beta|x|}, & |x|>a
 	\end{matrix}\right.
+	\
+	.
 \end{equation*}
 Por lo que $E_y$ y $H_y$ se escriben como:
 \begin{equation*}
@@ -171,7 +179,7 @@ Por lo que $E_y$ y $H_y$ se escriben como:
 	 \frac{|x|}{x}\beta H_{a0}e^{-\beta|x|}, & |x|>a
 	 \end{matrix}\right.
 \end{aligned} 
-\quad
+,\quad
 	\begin{aligned}[c]
 	 H_y &= \frac{i\omega \epsilon_0 n^2}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
 	  \alpha E_{a1}\cos(\alpha x),	 & |x|\le a
@@ -381,7 +389,6 @@ Separando por componentes y reemplazando:
 		\end{matrix}
 		\right.
 \end{align*}
-
 Ahora sí, imponiendo continuidad en $z$ y $\phi$:
 \begin{align}
 	H_0^{1} J_\ell(\alpha a) &= H_0^{0} K_\ell (\beta a)
@@ -426,28 +433,29 @@ Dado que, en principio, los valores de $k_z$ ya están determinados por la ecuac
 Tomando raíz cuadrada al cociente de las ecuaciones (\ref{eqn:fiber_polarization_E}) y (\ref{eqn:fiber_polarization_H}) se tiene:
 
 \begin{equation}
-	\frac{E_0^1}{H_0^1} = i \sqrt{\frac{\mu_0}{\epsilon_0}} \frac{\sqrt{ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}{\sqrt{n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}.
+	\frac{E_0^1}{H_0^1} = i \sqrt{\frac{\mu_0}{\epsilon_0}} \frac{\sqrt{ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}{\sqrt{n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}} \ .
 	\label{eqn:fiber_polarization_simplified}
 \end{equation}
 
 \subsection{Modos TE y TM}
 El caso más sencillo de estudiar es imponiendo $\ell = 0$. La ecuación (\ref{eqn:fiber_trascendental}) implica:
 \begin{align*}
-	\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)} + \frac{K'_0(\beta a)}{\beta a K_0(\beta a)}&=  0, \quad \text{(modos TE)}
+	\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)} + \frac{K'_0(\beta a)}{\beta a K_0(\beta a)}&=  0 \ , \quad \text{(modos TE)}
 	\\
-	n_1^2\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)} + n_0^2 \frac{K'_0(\beta a)}{\beta a K_0(\beta a)} &= 0, \quad \text{(modos TM)}
+	n_1^2\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)} + n_0^2 \frac{K'_0(\beta a)}{\beta a K_0(\beta a)} &= 0 \ , \quad \text{(modos TM)}
 \end{align*}
 
 De la ecuación (\ref{eqn:fiber_polarization_simplified}) es directo notar que la condiciones de modos transversales que las componentes longitudinales se hacen cero en los casos respectivos: $H_0^1 = 0$ para TE y $E_0^1 = 0$ para TM.
 
 Las condiciones de corte se dan cuando $\beta a \to 0$. Utilizando las expresiones asintóticas para las funciones de Bessel con argumentos pequeños y sus relaciones de recurrencia, se tiene
 \begin{align*}
-	\frac{\alpha a J_0(\alpha a)}{J_1(\alpha a)}  = -\frac{\beta a K_{0}(\beta a)} {K_1(\beta a)} \approx (\beta a)^2\ln\left(\frac{\beta a e^\gamma}{2}\right) \to 0,
+	\frac{\alpha a J_0(\alpha a)}{J_1(\alpha a)}  = -\frac{\beta a K_{0}(\beta a)} {K_1(\beta a)} \approx (\beta a)^2\ln\left(\frac{\beta a e^\gamma}{2}\right) \to 0 \ ,
 \end{align*}
 por lo que se hace necesario que $\left. J_0(\alpha a)\right|_{\alpha a \to V} = 0$. Denotando $x_{0,m}=$ 2.405,  5.520,  8.654, $\cdots$ al $m$-ésimo cero de la funcion $J_0(x)$, la longitud de onda de corte está dada por 
 \begin{equation}
 (\lambda_c)_{0,m} = 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{0,m}}, \quad\text{(modos TE y TM).}
-\end{equation} Contrario al caso de la guía de onda tipo losa, en fibras ópticas se hace necesario estar bajo un umbral de corte máximo $(\lambda_c)_{0,1}$ no nulo para que los modos TE o TM existan.
+\end{equation} 
+Contrario al caso de la guía de onda tipo losa, en fibras ópticas se hace necesario estar bajo un umbral de corte máximo $(\lambda_c)_{0,1}$ no nulo para que los modos TE o TM existan.
 
 %\begin{figure}[H]
 %	\centering
@@ -484,7 +492,7 @@ Para $\ell = 0$, se recuperan las relaciones obtenidas para los modos  TE$_m$ (H
 
 El caso $\ell=1$ es de especial interés. La condición de modos HE se desarrolla como
 \begin{align*}
-	\frac{\alpha a J_1(\alpha a)}{J_0(\alpha a)} &= \left\{\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \left[ \ln\left(\frac{2}{e^\gamma \beta a}\right)+\frac{1}{(\beta a)^2} \right]+\frac{1}{(\alpha a)^2}-\sqrt{\Delta}\right\}^{-1} \to 0.
+	\frac{\alpha a J_1(\alpha a)}{J_0(\alpha a)} &= \left\{\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \left[ \ln\left(\frac{2}{e^\gamma \beta a}\right)+\frac{1}{(\beta a)^2} \right]+\frac{1}{(\alpha a)^2}-\sqrt{\Delta}\right\}^{-1} \to 0 \ .
 \end{align*}
 
 Basta considerar la función $J_1(\alpha a)|_{\alpha a \to V} = 0$. Por otro lado, la condición EH elimina el cero $x=0$ del cociente $\frac{\alpha aJ_1(\alpha a)}{J_2(\alpha a)}$ lo que hace que esté ``desfasada'' respecto a la condición HE. Usando un razonamiento similar al caso $\ell =0$, las condiciones de corte son
@@ -526,7 +534,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, por separaci�
 	E_x
 	\\
 	E_y
-	\end{pmatrix}. \label{eqn:eigenfield}
+	\end{pmatrix} \ . \label{eqn:eigenfield}
 \end{align}
 La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, que son ortogonales sólo si se cumple la condición de guiaje débil (ver apéndice \ref{sec:orto}). 
 
@@ -537,7 +545,7 @@ La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ 
 A partir de la ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}) es posible despejar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$, similar a lo desarrollado en la referencia \citep{haus_coupled-mode}.
 
 \begin{equation}
-	k_z = \frac{\frac{1}{4i}\iint \left(-\nabla_\perp \times \textbf{E} + i\omega \mu_0 \textbf{H} \right)\cdot\textbf{H}^* + \left(\nabla_\perp\times\textbf{H} + i\omega \varepsilon_0 n^2 \textbf{E} \right)\cdot \textbf{E}^* dxdy}{\frac{1}{4} \iint \left( \textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H}  \right) \cdot \hat{\textbf{z}} dxdy}. \label{eqn:kzprevar}
+	k_z = \frac{\frac{1}{4i}\iint \left(-\nabla_\perp \times \textbf{E} + i\omega \mu_0 \textbf{H} \right)\cdot\textbf{H}^* + \left(\nabla_\perp\times\textbf{H} + i\omega \varepsilon_0 n^2 \textbf{E} \right)\cdot \textbf{E}^* dxdy}{\frac{1}{4} \iint \left( \textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H}  \right) \cdot \hat{\textbf{z}} dxdy} \ . \label{eqn:kzprevar}
 \end{equation}
 
 De esta manera, al proponer un Ansatz en términos de superposición de modos de las guías individuales del estilo $\textbf{E} = \sum_i a_i \textbf{e}_i$, $\textbf{H} = \sum_i a_i \textbf{h}_i$, los coeficientes $a_i$ quedan indeterminados pero sujetos a minimizar la expresión para $k_z$. Notemos además que el Ansatz simplifica bastante la mencionada expresión.
@@ -554,23 +562,23 @@ Definiendo
 \begin{align}
 	P_{ij} &\equiv \frac{1}{4} \iint ( \textbf{e}_j \times  \textbf{h}_i^* + \textbf{e}_i^* \times  \textbf{h}_j  )\cdot\hat{\textbf{z}} dxdy,
 	\\
-	H_{ij} &\equiv  P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* dxdy.
+	H_{ij} &\equiv  P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* dxdy \ .
 \end{align}
 
 Se puede escribir la expresión (\ref{eqn:kzprevar}) para la constante de propagación $k_z$ de manera compacta como un cociente de Rayleigh-Ritz:
 \begin{equation}
-	k_z = \frac{\sum_{ij} a_i^* H_{ij} a_j}{\sum_{ij} a_i^*P_{ij} a_j}.
+	k_z = \frac{\sum_{ij} a_i^* H_{ij} a_j}{\sum_{ij} a_i^*P_{ij} a_j} \ .
 \end{equation}
 
 Diferenciando con respecto a $a_k^*$ para optimizar el valor de $k_z$ se tiene:
 \begin{align}
 	\frac{\partial k_z}{\partial a_k^*} &= \frac{\sum_{ij} H_{ij} a_j \delta_{ik}}{\sum_{ij} a_i^*P_{ij} a_j} - \frac{\left(\sum_{ij} a_i^* H_{ij} a_j\right) \left( 
-	\sum_{ij} \delta_{ik} P_{ij} a_j \right) }{\left(\sum_{ij} a_i^*P_{ij} a_j\right)^2} = \frac{\sum_{j} \left(H_{jk}  - k_z P_{kj} \right) a_j}{\sum_{ij} a_i^* P_{ij}a_j} \overset{!}{=} 0.
+	\sum_{ij} \delta_{ik} P_{ij} a_j \right) }{\left(\sum_{ij} a_i^*P_{ij} a_j\right)^2} = \frac{\sum_{j} \left(H_{jk}  - k_z P_{kj} \right) a_j}{\sum_{ij} a_i^* P_{ij}a_j} \overset{!}{=} 0 \ .
 \end{align}
 
 Recuperando $k_z \to -i\frac{\partial}{\partial z}$, se obtienen las ecuaciones de $N$ modos acoplados no ortogonales:
 \begin{equation}
-	-i \sum_{j} P_{kj} \frac{d a_j}{dz} ´= \sum_{j} H_{kj} a_j, \text{ con }k=1,2,\cdots,N. \label{eqn:non-ortho-CMT-eqs}
+	-i \sum_{j} P_{kj} \frac{d a_j}{dz} ´= \sum_{j} H_{kj} a_j, \text{ con }k=1,2,\cdots,N \ . \label{eqn:non-ortho-CMT-eqs}
 \end{equation}
 	
 Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que $H_{ij}$ no es hermítica, pero veamos que sí lo es. Para ello, basta considerar la resta $H_{ij} - H_{ji}^*$ y notar que se anula:
@@ -591,15 +599,15 @@ Claramente $P_{ij}$ es una matriz hermítica. A primera vista, puede parecer que
 \frac{i}{4} \oint_C \left(\textbf{e}_j \times \textbf{h}_i^* +\textbf{e}_i^* \times \textbf{h}_j\right) \cdot \hat{\textbf{n}} ds
 \\
 &=
-0,
+0 \ ,
 	\end{align*}
 donde se ha usado que los campos deben decaer a cero en el infinito. Las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) se pueden obtener a partir de un Principio de Mínima Acción luego de definir el Lagrangiano $L$ de tipo campo discreto de Schrödinger:
 \begin{equation}
-	L = -\sum_{ij}  a_i^*\left(i  P_{ij} \frac{d }{dz} + H_{ij}  \right)a_j.
+	L = -\sum_{ij}  a_i^*\left(i  P_{ij} \frac{d }{dz} + H_{ij}  \right)a_j \ .
 \end{equation}
 Los momentos generalizados de este Lagrangiano son $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = -i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano $H$ asociado es
 \begin{equation}
-H = \sum_{j} \Pi_j \dot{a_j} - L = \sum_{ij} -ia_i^* P_{ij} \dot{a_j} + a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right) = \sum_{ij} a_i^* H_{ij} a_j.
+H = \sum_{j} \Pi_j \dot{a_j} - L = \sum_{ij} -ia_i^* P_{ij} \dot{a_j} + a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right) = \sum_{ij} a_i^* H_{ij} a_j \ .
 \end{equation}
 Al variar el Lagrangiano se tiene:
 \begin{align*}
@@ -607,11 +615,11 @@ Al variar el Lagrangiano se tiene:
 	\\
 	&= \sum_{ij} \left( \frac{\partial L}{\partial a_{j}} - \frac{d}{dz}\frac{\partial L}{\partial \dot{a}_{j}} \right)\delta a_{j} + \left( \frac{\partial L}{\partial {a}_{i}^*} - \frac{d}{dz}\frac{\partial L}{\partial  \dot{{a}}_{i}^*} \right)\delta {a}_{i}^* + \frac{d}{dz}\left(\frac{\partial L}{\partial \dot{a}_{j}}\delta a_{j} +  \frac{\partial L}{\partial \dot{{a}}^*_{i}}\delta {a}_{i}^*\right)
 	\\	
-	&\implies  \frac{d}{dz} \sum_{ij}\left(\frac{\partial L}{\partial \dot{a}_{j}}\delta a_{j} +  \frac{\partial L}{\partial \dot{{a}}_{i}^*}\delta {a}_{i}^*\right) = 0.
+	&\implies  \frac{d}{dz} \sum_{ij}\left(\frac{\partial L}{\partial \dot{a}_{j}}\delta a_{j} +  \frac{\partial L}{\partial \dot{{a}}_{i}^*}\delta {a}_{i}^*\right) = 0 \ .
 \end{align*}
-El par de transformaciones asociadas al grupo unitario U(1), $a_j\to a'_j = e^{i\phi}a_j$, ${a}_i^* \to {a'}_i^* = e^{-i\phi}{a}_i^*$ dejan invariante el Lagrangiano, y si se toma una variación infinitesimal $\phi \ll 1$ se tiene $\delta a_j = i\phi a_j$ y $\delta {a}_i^* = -i\phi {a}_i^*$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema es:
+El par de transformaciones asociadas al grupo unitario U(1), $a_j\to a'_j = e^{i\phi}a_j$, ${a}_i^* \to {a'}_i^* = e^{-i\phi}{a}_i^*$ dejan invariante el Lagrangiano, y si se toma una variación infinitesimal $\phi \ll 1$ se tiene $\delta a_j = i\phi a_j$ y $\delta {a}_i^* = -i\phi {a}_i^*$, por lo que la cantidad conservada, $P$, que se identifica con la potencia total del sistema y está directamente relacionada con el vector de Poynting es:
 \begin{equation}
-	P = \sum_{ij} a_i^* P_{ij} a_j = \iint \textbf{S} \cdot \hat{\textbf{z}} dxdy.  \label{eqn:power}
+	P = \sum_{ij} a_i^* P_{ij} a_j = \iint \textbf{S} \cdot \hat{\textbf{z}} dxdy \ .  \label{eqn:power}
 \end{equation}
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
 
@@ -647,11 +655,11 @@ $x_j=jd$, con $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 \end{align}
 
 \begin{align*}
-	P_{ij} &= \frac{L k_z^i k_0  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{-\beta d}e^{\beta a}}{2\beta} \left[\frac{e^{-\beta a} + \beta (d-2a)e^{\beta a}}{\beta^2} - \frac{2\cosh(\beta a)}{\alpha^2+\beta^2} \right]			.
+	P_{ij} &= \frac{L k_z^i k_0  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{-\beta d}e^{\beta a}}{2\beta} \left[\frac{e^{-\beta a} + \beta (d-2a)e^{\beta a}}{\beta^2} - \frac{2\cosh(\beta a)}{\alpha^2+\beta^2} \right] \ .
 \end{align*}
 
 \begin{align*}
-	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{L k_0    \mu_0 c H_{a1}^2 }{2 \beta }  \sin^2(\alpha a)e^{2\beta a} e^{-\beta d} .
+	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{L k_0    \mu_0 c H_{a1}^2 }{2 \beta }  \sin^2(\alpha a)e^{2\beta a} e^{-\beta d} \ .
 \end{align*}
 
 Elementos diagonales tienen la forma:
@@ -670,7 +678,7 @@ Elementos diagonales tienen la forma:
 \end{align*}
 \begin{align*}
 	\tilde{H}_{jj} &\equiv H_{jj} - P_{jj} k_z^j =
-	\frac{L k_0^3  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{2\beta a}e^{-2\beta d}}{4 \beta^3 } (n_1^2-n_0^2) \sinh(2\beta a).
+	\frac{L k_0^3  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{2\beta a}e^{-2\beta d}}{4 \beta^3 } (n_1^2-n_0^2) \sinh(2\beta a) \ .
 \end{align*}
 
 La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}), que luego de premultiplicar por la inversa de la matriz $P_{ij}$ toma la forma:
@@ -689,7 +697,7 @@ La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:no
 	a_1
 	\\
 	a_2
-	\end{pmatrix},
+	\end{pmatrix} \ ,
 \end{align*}
 con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\times10^5 \text{ cm}^{-1}$, $C\equiv \frac{P_{ii} \tilde{H}_{ij}  -P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2} \sim 1\text{ cm}^{-1}$ y $\delta k \equiv \frac{P_{ii} \tilde{H}_{ii} -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2} \sim -0.02\text{ cm}^{-1}$ para $\lambda = 730$ nm, $n_1 = n_0 + 4\times10^{-4}$ y una distancia entre guías de $d = 18 $ $\mu$m. La matriz $\hat{P}^{-1}\hat{H}$ se puede escribir en términos de las matrices de Pauli como $\tilde{k}I + C\sigma_x $, lo que permite utilizar sus propiedades para resolver la dinámica del sistema:
 \begin{align*}
@@ -715,13 +723,13 @@ con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\time
 	a_1(0)
 	\\
 	a_2(0)
-	\end{pmatrix}.
+	\end{pmatrix} \ .
 \end{align*}
 
 Una forma de encontrar el valor experimental del acoplamiento $C$ es mediante la excitación individual de un modo. Con esto, la razón entre las potencias $|a_1(z)|^2$ y $|a_2(z)|^2$ permite despejar el acoplamiento para una distancia de propagación $z=L$ conocida:
 
 \begin{equation}
-	C = \frac{1}{L}\tan^{-1}\left( \left|\frac{a_2(L)}{a_1(L)}\right|^2 \right).
+	C = \frac{1}{L}\tan^{-1}\left( \left|\frac{a_2(L)}{a_1(L)}\right|^2 \right) \ .
 \end{equation}
 
 %\begin{align*}
@@ -746,7 +754,7 @@ El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sen
 \begin{figure}[h]
 \centering
 	\includegraphics[width=0.8\linewidth]{media/ssh-model.png}
-	\caption[Esquema del modelo SSH.]{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$). \label{fig:ssh-model}}
+	\caption[Esquema del modelo SSH.]{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$). Se muestran dos configuraciones distintas. \label{fig:ssh-model}}
 \end{figure}
 En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar el Hamiltoniano en la base de Bloch con $a_n = \frac{1}{\sqrt{N}}\sum_k a_k e^{iknd}$, $b_n = \frac{1}{\sqrt{N}}\sum_k b_k e^{iknd}$ de la siguiente forma:
 \begin{align*}
@@ -782,7 +790,6 @@ Es decir,
 \end{matrix}\right. .
 \end{align*}
 El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \textit{transición topológica} puesto que no es posible pasar de un régimen a otro de forma suave. Esto tiene implicancias en el sistema con condiciones de borde abiertas (Dirichlet) debido a la \textit{correspondencia bulto-borde} \cite{topobulk}. En concreto, así como se ilustra en la Figura \ref{fig:ssh-open}, la topología del Hamiltoniano $H(k)$ induce la aparición de estados de borde a energía cero al imponer condiciones de borde abiertas.
-
 El Hamiltoniano del modelo SSH presenta diversas simetrías: de reversión temporal, de inversión, partícula-hueco, traslacional y quiral. Esta última es de particular relevancia, pues los estados de borde del modelo SSH están \textit{topológicamente protegidos} ante cualquier desorden que respete la simetría quiral \cite{ssh-course}. El operador quiral en cuestión es la matriz de Pauli $\sigma_z$, pues 
 \begin{align*}
 	\sigma_z H(k) \sigma_z^\dagger &=  -\cancelto{1}{\sigma_z^2} \left(d_x \sigma_x  + d_y \sigma_y\right)  =- H(k).

@@ -14,4 +14,13 @@ Equivalentemente, notemos que
 	\\	
 	&+ \left[E^\nu_j \partial_j \left( E_i^\mu \right)^*  - \left( E_j^\mu \right)^* \partial_j  E_i^\nu \right] \partial_i \ln(n^2).  
 \end{align*}
-Al integrar en el plano, la divergencia se convierte en un término de frontera que se anula al considerar modos guiados (que decaen a cero en el infinito), mientras que el segundo término es cero sólo si $\nabla n^2 = \textbf{0}$. La hermiticidad de $T_{ij}$ permite escoger una base ortogonal de modos normales para el campo eléctrico.
+Al integrar en el plano, la divergencia se convierte en un término de frontera que se anula al considerar modos guiados (que decaen a cero en el infinito), mientras que el segundo término es cero sólo si $\nabla n^2 = \textbf{0}$. La hermiticidad de $T_{ij}$ permite escoger una base ortogonal de modos normales para el campo eléctrico. No obstante, el sistema completo sí es hermítico. Para ello, será necesario volver hasta la ecuación (\ref{eqn:rotordoble}), tomar producto punto con el conjugado de otro modo e integrar en el volumen:
+\begin{align*}
+	\iiint dV \left(\nabla\times\nabla\times\textbf{E}^\nu \right)  \cdot \left(\textbf{E}^\mu\right)^* &= \iiint dV n^2\frac{\omega_\nu^2}{c^2} \textbf{E}^\nu \cdot \left(\textbf{E}^\mu\right)^*
+	\\
+	\iiint dV \left[\nabla\times\nabla\times\left(\textbf{E}^\mu\right)^* \right]  \cdot \textbf{E}^\nu &= \iiint dV n^2 \frac{\omega_\mu^2}{c^2} \left(\textbf{E}^\mu\right)^* \cdot \textbf{E}^\nu  
+\end{align*}
+Restando ambas ecuaciones se tiene
+\begin{align*}
+	\iint dV \nabla \cdot \left( \left(\nabla\times\textbf{E}^\nu\right) \times \right)
+\end{align*}

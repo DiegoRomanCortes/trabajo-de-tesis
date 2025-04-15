@@ -15,8 +15,8 @@
 \contentsline {chapter}{\numberline {3}Métodos numéricos}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Expansión en modos normales }{18}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Beam Propagation Method}{19}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{19}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Desde teoría de modos acoplados}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{20}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Desde teoría de modos acoplados}{21}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Métodos experimentales}{22}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Escritura de guías de onda }{22}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo}{22}{section.4.2}%

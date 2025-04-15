@@ -1,9 +1,11 @@
 \chapter{Métodos numéricos}
-A partir de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}), se puede aplicar la aproximación de guiaje débil para despreciar el lado derecho de ambas ecuaciones a fin de ignorar el efecto cruzado entre componentes de los campos. Las ecuaciones resultantes son del tipo Helmholtz:
+En este capítulo se presentan los métodos numéricos fundamentales utilizados en el desarrollo de esta tesis. Dado que muchos sistemas fotónicos carecen de soluciones analíticas exactas, los enfoques numéricos resultan esenciales para modelar su comportamiento electromagnético. Estos métodos permiten aproximar soluciones con precisión controlada, incluso en geometrías donde no existe alguna simetría a explotar.
+
+El punto de partida lo constituyen las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}), que describen la propagación de campos electromagnéticos en medios dieléctricos. Cuando se aplica la aproximación de guiaje débil los términos del lado derecho de ambas ecuaciones pueden despreciarse. Esta simplificación elimina los efectos cruzados entre componentes de campo, reduciendo el sistema a ecuaciones escalares de tipo Helmholtz:
 \begin{equation}
-	\left[\nabla^2 + k_0^2 n^2(\textbf{r})\right]\Psi(\textbf{r}) = 0. \label{eqn:helmholtznum}
+\left[\nabla^2 + k_0^2 n^2(\textbf{r})\right]\Psi(\textbf{r}) = 0, \label{eqn:helmholtznum}
 \end{equation}
-La ecuación (\ref{eqn:helmholtznum}) es la base de todos los métodos numéricos utilizados en esta tesis.
+donde la ecuación (\ref{eqn:helmholtznum}) no solo sirve como marco teórico, sino también como base para los algoritmos desarrollados en los siguientes capítulos. Su versatilidad permite adaptar diferentes esquemas numéricos según las simetrías del problema, como se detallará en las secciones posteriores.
 \section{Expansión en modos normales \label{cap:eme}}
 Este método numérico es útil cuando los sistemas fotónicos en estudio son invariantes en la dirección de propagación $z$. Esto es, $n(\textbf{r})\equiv n(x,y)$. La soluciones de la ecuación (\ref{eqn:helmholtznum}) se pueden expandir en ondas planas con perfiles transversales: $\Psi(\textbf{r}) = \Psi(x,y) \exp({i\beta z})$. Con ésto, cada modo transversal $\nu$ debe cumplir la siguiente ecuación a resolver numéricamente:
 \begin{equation}
@@ -59,14 +61,20 @@ $\phi(z_0+\Delta z)=\mathcal{F}^{-1}\left\{\exp\left(\frac{ik^2\Delta z}{4k_0 n_
 
 \item Se itera hasta llegar a la distancia de propagación $z$ deseada.
 \end{enumerate}
-En la Figura \ref{fig:num-exp-comp} se comparan los perfiles de salida experimental y numérico, alcanzando una similtud razonable. 
+En la Figura \ref{fig:num-exp-comp} se comparan los resultados experimentales con las simulaciones numéricas obtenidas mediante BPM. Los perfiles de intensidad normalizados muestran un acuerdo cualitativo notable, particularmente en la distribución espacial de los lóbulos principales.
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\linewidth]{media/num_exp_comparison.png}
-	\caption{Comparación entre simulación y experimento. Arriba: Experimento. Abajo: Propagación numérica. \label{fig:num-exp-comp}}
+\centering
+\includegraphics[width=0.6\linewidth]{media/num_exp_comparison.png}
+\caption{
+Excitación del sitio central de una red unidimensional.
+\textbf{Arriba:} Medición experimental a $\lambda$ = 730 nm.
+\textbf{Abajo:} Simulación numérica realizada con BPM.
+\label{fig:num-exp-comp}
+}
 \end{figure}
+Este nivel de concordancia valida la aproximación de guiaje débil empleada en la ecuación (\ref{eqn:helmholtznum}), así como la aproximación paraxial y refuerza la confiabilidad del método numérico para el diseño de dispositivos fotónicos con geometrías análogas.
 
 
 
 \section{Desde teoría de modos acoplados}
-Se puede decir que la simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) es lo más compacta posible en tanto la matriz de acoplamientos $\hat{C}$ codifica todas las propiedades de la red que se deseen estudiar de manera semiempírica. En este sentido, la diagonalización de la matriz $\hat{C}$ es una herramienta numérica útil en el estudio del comportamiento de redes fotónicas ante variaciones de parámetros tales como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de dos modos distintos). Incluso, es posible explorar sistemas ``no físicos'' debido a los grados de libertad en las entradas de la matriz $\hat{C}$.
+Se puede decir que la simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) es lo más compacta posible en tanto la matriz de acoplamientos $\hat{C}\equiv \hat{P}^{-1}\hat{H}$ codifica todas las propiedades de la red que se deseen estudiar de manera semiempírica. En este sentido, la diagonalización de la matriz $\hat{C}$ es una herramienta numérica útil en el estudio del comportamiento de redes fotónicas ante variaciones de parámetros tales como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de dos modos distintos). Incluso, es posible explorar sistemas ``no físicos'' debido a los grados de libertad en las entradas de la matriz $\hat{C}$.
