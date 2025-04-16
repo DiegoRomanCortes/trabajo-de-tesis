@@ -17,7 +17,6 @@
 \contentsline {section}{\numberline {3.2}Beam Propagation Method}{19}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{20}{subsection.3.2.1}%
 \contentsline {section}{\numberline {3.3}Desde teoría de modos acoplados}{21}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Diagonalización y espectro de una red tipo panel de abeja}{21}{subsection.3.3.1}%
 \contentsline {chapter}{\numberline {4}Métodos experimentales}{22}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Escritura de guías de onda }{22}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo}{22}{section.4.2}%
@@ -36,7 +35,7 @@
 \contentsline {section}{\numberline {6.2}Moléculas Fotónicas en Red SP-SSH}{27}{section.6.2}%
 \contentsline {chapter}{\numberline {7}Haces con momentum orbital angular (OAM)}{29}{chapter.7}%
 \contentsline {chapter}{\numberline {8}Conclusiones}{31}{chapter.8}%
-\contentsline {chapter}{\numberline {}Bibliograf\'ia}{37}{chapter*.24}%
+\contentsline {chapter}{\numberline {}Bibliograf\'ia}{37}{chapter*.25}%
 \contentsline {chapter}{Anexo \numberline {A}Ortogonalidad de los modos normales }{38}{Appendix.alph1.Alph1}%
 \contentsline {chapter}{Anexo \numberline {B}Código en Python para cálculo de modos normales }{39}{Appendix.alph1.Alph2}%
 \contentsline {chapter}{Anexo \numberline {C}Código en C de BPM }{40}{Appendix.alph1.Alph3}%

@@ -77,7 +77,17 @@ Este nivel de concordancia valida la aproximación de guiaje débil empleada en 
 
 
 \section{Desde teoría de modos acoplados}
-Se puede decir que la simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) es lo más compacta posible en tanto la matriz de acoplamientos $\hat{C}\equiv \hat{P}^{-1}\hat{H}$ codifica todas las propiedades de la red que se deseen estudiar de manera semiempírica. En este sentido, la diagonalización de la matriz $\hat{C}$ es una herramienta numérica útil en el estudio del comportamiento de redes fotónicas ante variaciones de parámetros tales como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de dos modos distintos). Incluso, es posible explorar sistemas ``no físicos'' debido a los grados de libertad en las entradas de la matriz $\hat{C}$. En la aproximaión de guiaje débil, la ecuación
-(\ref{eqn:pij-simpli}) se puede simplificar despreciando los términos longitudianles, debido a que $\nabla n^2 \sim 0 \implies \nabla \cdot \left(n^2 \textbf{E}\right) = 0 \sim n^2 \nabla \cdot \textbf{E}$, el orden de magnitud de la parte longitudinal del campo es $| E_z | \sim |\nabla_\perp \cdot \textbf{E}_\perp |/ \beta $.
+Se puede decir que la simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) es lo más compacta posible en tanto la matriz de acoplamientos $\hat{C}\equiv \hat{P}^{-1}\hat{H}$ codifica todas las propiedades de la red que se deseen estudiar de manera semiempírica. En este sentido, la diagonalización de la matriz $\hat{C}$ es una herramienta numérica útil en el estudio del comportamiento de redes fotónicas ante variaciones de parámetros tales como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de dos modos distintos). Incluso, es posible explorar sistemas ``no físicos'' debido a los grados de libertad en las entradas de la matriz $\hat{C}$. 
+En la aproximación de guiaje débil, las ecuaciones
+(\ref{eqn:pij-simpli}) y (\ref{eqn:hij}) se pueden simplificar despreciando los términos longitudinales, pues $\nabla n^2 \sim 0 \implies \nabla \cdot \left(n^2 \textbf{E}\right) = 0 \sim n^2 \nabla \cdot \textbf{E}$, el orden de magnitud de la parte longitudinal del campo es $| E_z | \sim |\nabla_\perp \cdot \textbf{E}_\perp |/ \beta $. Con ésto, los modos a estudiar son cuasi-transversales y la matrices $\hat{P}$ y $\hat{H}$ se reducen a:
+\begin{equation*}
+	P_{ij} \sim \frac{k_z^i+k_z^j}{4\omega\mu_0}\iint \left(\textbf{e}_i^\perp\right)^* \cdot \textbf{e}_j^\perp dxdy \ ,
+	\quad
+	H_{ij} \sim P_{ij}k_z^j+\frac{\omega \varepsilon_0}{4}\iint \left(n^2-n_j^2\right) \left(\textbf{e}_i^\perp\right)^* \cdot \textbf{e}_j^\perp dx dy \ .
+\end{equation*}
 
-\subsection{Diagonalización y espectro de una red tipo panel de abeja}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{codigo/dimol/coupler.png}
+	\caption{Com}
+\end{figure}

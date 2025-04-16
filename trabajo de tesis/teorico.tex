@@ -561,11 +561,11 @@ Definiendo
 	P_{ij} &\equiv \frac{1}{4} \iint ( \textbf{e}_j \times  \textbf{h}_i^* + \textbf{e}_i^* \times  \textbf{h}_j  )\cdot\hat{\textbf{z}} dxdy \ , \label{eqn:pij-ori}
 	\\
 	&= \frac{1}{4 \omega \mu_0} \iint \left[ 
-(\beta_i + \beta_j) \left( \textbf{e}_i^* \cdot \textbf{e}_j - e_{z,i}^* e_{z,j} \right) 
+(k_z^i + k_z^j) \left( \textbf{e}_i^* \cdot \textbf{e}_j - e_{z,i}^* e_{z,j} \right) 
 + i \left( \textbf{e}_i^* \cdot \nabla_\perp e_{z,j} + \textbf{e}_j \cdot \nabla_\perp e_{z,i}^* \right) 
 \right] dxdy \ ,	 \label{eqn:pij-simpli}
 	\\
-	H_{ij} &\equiv  P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* dxdy \ ,
+	H_{ij} &\equiv  P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* dxdy \ , \label{eqn:hij}
 \end{align} 
 se puede escribir la expresión (\ref{eqn:kzprevar}) para la constante de propagación $k_z$ de manera compacta como un cociente de Rayleigh-Ritz:
 \begin{equation}

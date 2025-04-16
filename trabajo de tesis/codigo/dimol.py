@@ -273,21 +273,21 @@ L = 150e-6  # Length of the domain
 
 dx = L / (N - 1)
 x = cp.linspace(-L/2, L/2, num=N)
-np.save('x.npy', x)
+np.save('dimol/x.npy', x)
 
 n0 = 1.48  # Refractive index of the background
-dn1 = 3.20E-4  # Amplitude of the refractive index modulation
-dn2 = 3.20E-4  # Amplitude of the refractive index modulation
+dn1 = 4.00E-4  # Amplitude of the refractive index modulation
+dn2 = 4.00E-4  # Amplitude of the refractive index modulation
 
 wavelength = 730E-9  # Wavelength of the light
 k0 = 2 * cp.pi / wavelength  # Wavenumber
 
 n_eigen = 3  # Number of eigenvalues to compute
 
-wx = 2.1E-6  # Width of the refractive index modulation
+wx = 3E-6  # Width of the refractive index modulation
 
 a1 = 20E-6
-distances = cp.linspace(10E-6, 30E-6, num=21)
+distances = cp.linspace(10E-6, 30E-6, num=31)
 np.save('dimol/distances.npy', distances)
 def dn_func(x):
     output = cp.tanh(33.0*cp.exp(-(x/wx)**2))
@@ -340,5 +340,5 @@ for idx, ai in enumerate(distances):
 
     # Solve the eigenvalue problem
     eigenvalues, eigenvectors = linalg.eigsh(H, k=n_eigen, which='LA')
-    np.save(f'eigenvalues_{idx}.npy', eigenvalues)
-    np.save(f'eigenvectors_{idx}.npy', eigenvectors)
+    np.save(f'dimol/eigenvalues_{idx}.npy', eigenvalues)
+    np.save(f'dimol/eigenvectors_{idx}.npy', eigenvectors)
