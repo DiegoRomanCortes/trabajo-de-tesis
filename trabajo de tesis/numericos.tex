@@ -36,7 +36,7 @@ Otra forma de abordar la integración numérica de la ecuación (\ref{eqn:helmho
 \begin{equation}
 	-2ik_0 n_0\frac{\partial }{\partial z}\phi(x,y, z) =  \left[\nabla_\perp^2 + k_0^2 (n^2(\textbf{r})-n_0^2)\right]\phi(x,y, z), \label{eqn:bpmescalar}
 \end{equation} 
-donde se ha utilizado la aproximación paraxial $\left| \frac{\partial^2 \phi}{\partial z^2} \right| \ll 2 k_0 n_0\left| \frac{\partial \phi}{\partial z} \right|$. Los algoritmos que resuelven la ecuación (\ref{eqn:bpmescalar}) son conocidos como \textit{Beam Propagation Methods} escalares, utilizados ampliamente en esta área de investigación \cite{bics, interorbital, OAMCaging, vortex, bpm}. Fuera de la aproximación de guiaje débil, los efectos de polarización cruzada son más relevantes y se hace necesaria una descripción vectorial del problema.
+donde se ha utilizado la aproximación paraxial $\left| \frac{\partial^2 \phi}{\partial z^2} \right| \ll 2 k_0 n_0\left| \frac{\partial \phi}{\partial z} \right|$. Los algoritmos que resuelven la ecuación (\ref{eqn:bpmescalar}) son conocidos como \textit{Beam Propagation Methods} (BPM) escalares, utilizados ampliamente en esta área de investigación \cite{bics, interorbital, OAMCaging, vortex, bpm}. Fuera de la aproximación de guiaje débil, los efectos de polarización cruzada son más relevantes y se hace necesaria una descripción vectorial del problema.
 \subsection{Implementación mediante transformada de Fourier (FFTBPM)}
 La ecuación (\ref{eqn:bpmescalar}) se puede escribir en términos de operadores lineales como \citep{bpm}: 
 \begin{equation}
@@ -65,7 +65,7 @@ En la Figura \ref{fig:num-exp-comp} se comparan los resultados experimentales co
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth]{media/num_exp_comparison.png}
-\caption{
+\caption[Excitación del sitio central de una red unidimensional.]{
 Excitación del sitio central de una red unidimensional.
 \textbf{Arriba:} Medición experimental a $\lambda$ = 730 nm.
 \textbf{Abajo:} Simulación numérica realizada con BPM.
@@ -75,19 +75,22 @@ Excitación del sitio central de una red unidimensional.
 Este nivel de concordancia valida la aproximación de guiaje débil empleada en la ecuación (\ref{eqn:helmholtznum}), así como la aproximación paraxial y refuerza la confiabilidad del método numérico para el diseño de dispositivos fotónicos con geometrías análogas.
 
 
-
 \section{Desde teoría de modos acoplados}
-Se puede decir que la simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) es lo más compacta posible en tanto la matriz de acoplamientos $\hat{C}\equiv \hat{P}^{-1}\hat{H}$ codifica todas las propiedades de la red que se deseen estudiar de manera semiempírica. En este sentido, la diagonalización de la matriz $\hat{C}$ es una herramienta numérica útil en el estudio del comportamiento de redes fotónicas ante variaciones de parámetros tales como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de dos modos distintos). Incluso, es posible explorar sistemas ``no físicos'' debido a los grados de libertad en las entradas de la matriz $\hat{C}$. 
-En la aproximación de guiaje débil, las ecuaciones
-(\ref{eqn:pij-simpli}) y (\ref{eqn:hij}) se pueden simplificar despreciando los términos longitudinales, pues $\nabla n^2 \sim 0 \implies \nabla \cdot \left(n^2 \textbf{E}\right) = 0 \sim n^2 \nabla \cdot \textbf{E}$, el orden de magnitud de la parte longitudinal del campo es $| E_z | \sim |\nabla_\perp \cdot \textbf{E}_\perp |/ \beta $. Con ésto, los modos a estudiar son cuasi-transversales y la matrices $\hat{P}$ y $\hat{H}$ se reducen a:
-\begin{equation*}
-	P_{ij} \sim \frac{k_z^i+k_z^j}{4\omega\mu_0}\iint \left(\textbf{e}_i^\perp\right)^* \cdot \textbf{e}_j^\perp dxdy \ ,
-	\quad
-	H_{ij} \sim P_{ij}k_z^j+\frac{\omega \varepsilon_0}{4}\iint \left(n^2-n_j^2\right) \left(\textbf{e}_i^\perp\right)^* \cdot \textbf{e}_j^\perp dx dy \ .
-\end{equation*}
+
+La simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) representa la formulación más compacta posible, dado que la matriz de acoplamientos $\hat{C} \equiv \hat{P}^{-1}\hat{H}$ codifica todas las propiedades de la red que se desean estudiar de manera semiempírica. En este sentido, la diagonalización de $\hat{C}$ constituye una herramienta numérica valiosa para analizar el comportamiento de redes fotónicas ante variaciones de parámetros como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de modos distintos). Además, este enfoque permite explorar incluso sistemas ``no físicos'', gracias a los grados de libertad disponibles en las entradas de $\hat{C}$.
+
+En la aproximación de guiaje débil se puede despreciar las componentes longitudinales del campo eléctrico, $
+ \nabla \cdot (n^2 \textbf{E}) = 0 \overset{\nabla n^2 \sim 0}{\sim }n^2 \nabla \cdot \textbf{E} \ ,$
+donde el orden de magnitud de la componente longitudinal del campo es $|E_z| \sim |\nabla_\perp \cdot \textbf{E}_\perp|/\beta$. Así, los modos estudiados son cuasi-transversales, y la matriz $\hat{P}$ se reduce a:
+\begin{equation}
+    P_{ij} \sim \frac{k_z^i + k_z^j}{4\omega\mu_0} \iint \left(\textbf{e}_i^\perp\right)^* \cdot \textbf{e}_j^\perp dxdy  \ .
+    \label{eqn:CMTnum}
+\end{equation}
+Las ecuación (\ref{eqn:CMTnum}) en conjunto con la ecuación ((\ref{eqn:hij})) son particularmente útiles para comparar el método EME (Sección \ref{cap:eme}) con CMT mediante el análisis de los autovalores de la matriz de acoplamientos. La Figura \ref{fig:EMECMT} muestra los autovalores de un acoplador fotónico a distintas distancias calcuados con ambos métodos.
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\linewidth]{codigo/dimol/coupler.png}
-	\caption{Com}
+    \centering
+    \includegraphics[width=0.6\linewidth]{codigo/dimol/coupler.png}
+    \caption[Comparación entre EME y CMT]{Comparación los autovalores con el método de Expansión en Modos Normales (EME) y con la Teoría de Modos Acoplados (CMT). Se observa mayor divergencia cuando la distancia entre guías es pequeña. Parámetros utilizados: $\Delta n = 4\times10^{-4}$, $\lambda = 730$ nm y $a = 3\,\mu$m.}
+    \label{fig:EMECMT}
 \end{figure}

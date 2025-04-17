@@ -69,6 +69,11 @@ ax.plot(distances, np.sqrt(eigenvalues_couplers[:, -2])/(k0) - n0, '-', color='b
 ax.plot(distances, (eigenvalues_couplers_CMT[:, 0]/(k0))- n0, '--', color='red', label='CMT')
 ax.plot(distances, (eigenvalues_couplers_CMT[:, 1]/(k0))- n0, '--', color='red')
 
+ax2 = ax.twinx()
+ax2.set_yscale('log')
+ax2.plot(distances, np.abs(np.sqrt(eigenvalues_couplers[:, -1])/(k0)  - ( (eigenvalues_couplers_CMT[:, 0]/(k0))))/np.sqrt(eigenvalues_couplers[:, -1])/(k0), '-', color='green', label='Error')
+# ax2.plot(distances, (np.sqrt(eigenvalues_couplers[:, -2])/(k0)  - ( (eigenvalues_couplers_CMT[:, 1]/(k0))))/np.sqrt(eigenvalues_couplers[:, -2])/(k0), '-', color='green')
+ax2.set_ylabel('Relative error')
 ax.set_xlabel('Separation distance ($\mu$m)')
 ax.set_ylabel(r'$\beta/k_0 - n_0$')
 
@@ -76,7 +81,7 @@ ax.set_ylabel(r'$\beta/k_0 - n_0$')
 ax.ticklabel_format(axis='y', style='scientific', scilimits=(0, 0))
 ax.yaxis.offsetText.set_fontsize(7)  # Adjust the font size of the offset text
 
-fig.legend(fontsize=7, loc=(0.75, 0.7))
+fig.legend(fontsize=7, loc=(0.60, 0.7))
 ax.set_title('Coupler eigenvalues')
 plt.tight_layout()
 # fig.show()
