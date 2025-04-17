@@ -14,7 +14,7 @@ Este método numérico es útil cuando los sistemas fotónicos en estudio son in
 \end{equation}
 Y el campo total propagado es una combinación lineal de los modos $\Psi_\nu$: 
 \begin{equation}
-	\Psi(\textbf{r}) = \sum_\nu a_\nu \Psi_\nu(x,y) e^{i\beta_\nu z}, \quad\text{ con } a_\nu \propto \Psi_\nu(x,y) \cdot \Psi(x, y, z=0).
+	\Psi(\textbf{r}) = \sum_\nu a_\nu \Psi_\nu(x,y) e^{i\beta_\nu z}, \quad\text{ con } a_\nu \propto \Psi_\nu(x,y) \cdot \Psi(x, y, z=0). \label{eqn:emedin}
 \end{equation}
 En vez de integrar directamente la ecuación de valores propios (\ref{eqn:eme}), la estrategia será discretizar el espacio y aproximar al operador Laplaciano transversal $\nabla_\perp^2$ como una matriz, pues $$\frac{\partial^2 \Psi(x,y)}{\partial x^2} \sim \frac{\Psi[i+1,j]-2\Psi[i,j]+\Psi[i-1,j]}{\Delta x ^2}  \ .
 $$
@@ -80,17 +80,19 @@ Este nivel de concordancia valida la aproximación de guiaje débil empleada en 
 La simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) representa la formulación más compacta posible, dado que la matriz de acoplamientos $\hat{C} \equiv \hat{P}^{-1}\hat{H}$ codifica todas las propiedades de la red que se desean estudiar de manera semiempírica. En este sentido, la diagonalización de $\hat{C}$ constituye una herramienta numérica valiosa para analizar el comportamiento de redes fotónicas ante variaciones de parámetros como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de modos distintos). Además, este enfoque permite explorar incluso sistemas ``no físicos'', gracias a los grados de libertad disponibles en las entradas de $\hat{C}$.
 
 En la aproximación de guiaje débil se puede despreciar las componentes longitudinales del campo eléctrico, $
- \nabla \cdot (n^2 \textbf{E}) = 0 \overset{\nabla n^2 \sim 0}{\sim }n^2 \nabla \cdot \textbf{E} \ ,$
+ \nabla \cdot (n^2 \textbf{E})  \overset{\nabla n^2 \sim 0}{\sim }n^2 \nabla \cdot \textbf{E} = 0 \ ,$
 donde el orden de magnitud de la componente longitudinal del campo es $|E_z| \sim |\nabla_\perp \cdot \textbf{E}_\perp|/\beta$. Así, los modos estudiados son cuasi-transversales, y la matriz $\hat{P}$ se reduce a:
 \begin{equation}
     P_{ij} \sim \frac{k_z^i + k_z^j}{4\omega\mu_0} \iint \left(\textbf{e}_i^\perp\right)^* \cdot \textbf{e}_j^\perp dxdy  \ .
     \label{eqn:CMTnum}
 \end{equation}
-Las ecuación (\ref{eqn:CMTnum}) en conjunto con la ecuación ((\ref{eqn:hij})) son particularmente útiles para comparar el método EME (Sección \ref{cap:eme}) con CMT mediante el análisis de los autovalores de la matriz de acoplamientos. La Figura \ref{fig:EMECMT} muestra los autovalores de un acoplador fotónico a distintas distancias calcuados con ambos métodos.
+La ecuación (\ref{eqn:CMTnum}) en conjunto con la ecuación (\ref{eqn:hij}) son particularmente útiles para comparar el método EME (Sección \ref{cap:eme}) con CMT mediante el análisis de los autovalores de la matriz de acoplamientos. La Figura \ref{fig:EMECMT} muestra los autovalores de un acoplador fotónico a distintas distancias calcuados con ambos métodos.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{codigo/dimol/coupler.png}
-    \caption[Comparación entre EME y CMT]{Comparación los autovalores con el método de Expansión en Modos Normales (EME) y con la Teoría de Modos Acoplados (CMT). Se observa mayor divergencia cuando la distancia entre guías es pequeña. Parámetros utilizados: $\Delta n = 4\times10^{-4}$, $\lambda = 730$ nm y $a = 3\,\mu$m.}
+    \caption[Comparación entre EME y CMT]{Comparación los autovalores con el método de Expansión en Modos Normales (EME) y con la Teoría de Modos Acoplados (CMT). Se observa mayor divergencia cuando la distancia entre guías es pequeña. Parámetros utilizados: $n_0=1.48$, $\Delta n = 4\times10^{-4}$, $\lambda = 730$ nm y $a = 3\,\mu$m.}
     \label{fig:EMECMT}
 \end{figure}
+
+Además de los autovalores, se comprobarán los autoestados indirectamente mediante la ecuación (\ref{eqn:emedin}) y viendo si el perfil es cercano o no al de la Figura \ref{fig:num-exp-comp}.
