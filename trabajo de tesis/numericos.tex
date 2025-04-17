@@ -26,7 +26,7 @@ En la Figura \ref{fig:emenumerror} se valida el método numérico mediante compa
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{media/numerical_slab}
+	\includegraphics[width=0.8\linewidth]{media/numerical_slab}
 	\caption[Error relativo y tiempo de ejecución.]{Error relativo y tiempo de ejecución de las soluciones numéricas a la ecuación (\ref{eqn:eme}) con respecto a las soluciones analíticas, en función del paso $\Delta x$. \label{fig:emenumerror}}
 \end{figure}
 \section{Beam Propagation Method} 
@@ -62,6 +62,7 @@ $\phi(z_0+\Delta z)=\mathcal{F}^{-1}\left\{\exp\left(\frac{ik^2\Delta z}{4k_0 n_
 \item Se itera hasta llegar a la distancia de propagación $z$ deseada.
 \end{enumerate}
 En la Figura \ref{fig:num-exp-comp} se comparan los resultados experimentales con las simulaciones numéricas obtenidas mediante BPM. Los perfiles de intensidad normalizados muestran un acuerdo cualitativo notable, particularmente en la distribución espacial de los lóbulos principales.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth]{media/num_exp_comparison.png}
@@ -72,27 +73,41 @@ Excitación del sitio central de una red unidimensional.
 \label{fig:num-exp-comp}
 }
 \end{figure}
-Este nivel de concordancia valida la aproximación de guiaje débil empleada en la ecuación (\ref{eqn:helmholtznum}), así como la aproximación paraxial y refuerza la confiabilidad del método numérico para el diseño de dispositivos fotónicos con geometrías análogas.
+
+Este nivel de concordancia valida la aproximación de guiado débil empleada en la ecuación (\ref{eqn:helmholtznum}), así como la aproximación paraxial, y refuerza la confiabilidad del método numérico para el diseño de dispositivos fotónicos con geometrías análogas.
 
 
-\section{Desde teoría de modos acoplados}
+\section{Desde la teoría de modos acoplados}
 
 La simulación numérica de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}) representa la formulación más compacta posible, dado que la matriz de acoplamientos $\hat{C} \equiv \hat{P}^{-1}\hat{H}$ codifica todas las propiedades de la red que se desean estudiar de manera semiempírica. En este sentido, la diagonalización de $\hat{C}$ constituye una herramienta numérica valiosa para analizar el comportamiento de redes fotónicas ante variaciones de parámetros como la dimerización (razón entre dos constantes de acoplamiento) o el desintonizado (diferencia entre constantes de propagación de modos distintos). Además, este enfoque permite explorar incluso sistemas ``no físicos'', gracias a los grados de libertad disponibles en las entradas de $\hat{C}$.
 
-En la aproximación de guiaje débil se puede despreciar las componentes longitudinales del campo eléctrico, $
- \nabla \cdot (n^2 \textbf{E})  \overset{\nabla n^2 \sim 0}{\sim }n^2 \nabla \cdot \textbf{E} = 0 \ ,$
+En la aproximación de guiaje débil se pueden despreciar las componentes longitudinales del campo eléctrico:
+\[ \nabla \cdot (n^2 \textbf{E}) \overset{\nabla n^2 \sim 0}{\sim} n^2 \nabla \cdot \textbf{E} = 0,\]
 donde el orden de magnitud de la componente longitudinal del campo es $|E_z| \sim |\nabla_\perp \cdot \textbf{E}_\perp|/\beta$. Así, los modos estudiados son cuasi-transversales, y la matriz $\hat{P}$ se reduce a:
 \begin{equation}
-    P_{ij} \sim \frac{k_z^i + k_z^j}{4\omega\mu_0} \iint \left(\textbf{e}_i^\perp\right)^* \cdot \textbf{e}_j^\perp dxdy  \ .
+    P_{ij} \sim \frac{k_z^i + k_z^j}{4\omega\mu_0} \iint \left(\textbf{e}_i^\perp\right)^* \cdot \textbf{e}_j^\perp dxdy.
     \label{eqn:CMTnum}
 \end{equation}
-La ecuación (\ref{eqn:CMTnum}) en conjunto con la ecuación (\ref{eqn:hij}) son particularmente útiles para comparar el método EME (Sección \ref{cap:eme}) con CMT mediante el análisis de los autovalores de la matriz de acoplamientos. La Figura \ref{fig:EMECMT} muestra los autovalores de un acoplador fotónico a distintas distancias calcuados con ambos métodos.
 
-\begin{figure}[H]
+La ecuación (\ref{eqn:CMTnum}), que cuantifica el solapamiento entre modos, junto con la ecuación (\ref{eqn:hij}) que describe los elementos de matriz del operador Hamiltoniano, constituyen herramientas fundamentales para el análisis comparativo entre el método de Expansión en Modos Normales (EME) y la Teoría de Modos Acoplados (CMT). Esta comparación se realiza a través de un estudio sistemático del espectro de autovalores de la matriz de acoplamientos $\hat{C}$, el cual contiene información esencial sobre las constantes de propagación efectivas del sistema. 
+
+La Figura \ref{fig:EMECMT} presenta un análisis cuantitativo de esta comparación, mostrando la evolución de los autovalores para un acoplador fotónico dieléctrico en función de la distancia de separación entre guías. Se observa que ambos métodos convergen asintóticamente para distancias mayores a $a > 4\,\mu$m, donde la aproximación de campo débil de CMT resulta válida. Sin embargo, en el régimen de acoplamiento fuerte ($a < 3\,\mu$m), las discrepancias comienzan a hacerse notar.
+
+Más allá del análisis espectral, la validez de los autoestados calculados puede verificarse indirectamente mediante la ecuación (\ref{eqn:emedin}), que relaciona la evolución del campo con la proyección sobre los modos propios del sistema y comparando cualitativamente los perfiles dinámicos obtenidos con los resultados experimentales y numéricos mostrados en la Figura \ref{fig:num-exp-comp}
+
+Este análisis permite establecer los límites de aplicabilidad de cada método numérico: mientras que EME proporciona resultados precisos en todo el rango de parámetros a costa de mayor complejidad computacional, CMT ofrece una alternativa eficiente para sistemas débilmente acoplados donde la aproximación de modos localizados sigue siendo válida.
+\begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\linewidth]{codigo/dimol/coupler.png}
-    \caption[Comparación entre EME y CMT]{Comparación los autovalores con el método de Expansión en Modos Normales (EME) y con la Teoría de Modos Acoplados (CMT). Se observa mayor divergencia cuando la distancia entre guías es pequeña. Parámetros utilizados: $n_0=1.48$, $\Delta n = 4\times10^{-4}$, $\lambda = 730$ nm y $a = 3\,\mu$m.}
+    \includegraphics[width=0.65\linewidth]{codigo/dimol/coupler.png}
+    \caption[Comparación entre EME y CMT]{Comparación de los autovalores obtenidos con el método de Expansión en Modos Normales (EME) y con la Teoría de Modos Acoplados (CMT). Se observa mayor divergencia cuando la distancia entre guías es pequeña. Parámetros utilizados: $n_0=1.48$, $\Delta n = 4\times10^{-4}$, $\lambda = 730$ nm y $a = 3\,\mu$m.}
     \label{fig:EMECMT}
 \end{figure}
 
-Además de los autovalores, se comprobarán los autoestados indirectamente mediante la ecuación (\ref{eqn:emedin}) y viendo si el perfil es cercano o no al de la Figura \ref{fig:num-exp-comp}.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\linewidth]{codigo/1darraycmt/1darraycmt.png}
+	\caption[Dinámica con EME y CMT]{Perfil dinámico de un arreglo unidimensional de 21 guías simulado con CMT y con EME. Los resultados son similares a los de la Figura \ref{fig:num-exp-comp}.}
+	\label{fig:1darraycmt}
+\end{figure}

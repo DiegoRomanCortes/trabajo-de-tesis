@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 from cupyx.scipy.sparse import diags, linalg
 
 # Define the parameters
-N = 4000  # Number of grid points
-L = 400e-6  # Length of the domain
+N = 5000  # Number of grid points
+L = 500e-6  # Length of the domain
 
 dx = L / (N - 1)
 x = cp.linspace(-L/2, L/2, num=N)
@@ -49,7 +49,7 @@ np.save('1darraycmt/eigenvectors_CMT.npy', eigenvectors1)
 dn_array = cp.zeros(N)
 dn_array += dn1 * dn_func(x)
 
-for i in range(10):
+for i in range(1, 11):
     dn_array += dn1 * dn_func(x-i*a1)
     dn_array += dn1 * dn_func(x+i*a1)
 

@@ -28,6 +28,7 @@ eigenvalues_couplers = np.zeros((len(distances), 3))
 C_mat = np.zeros((len(distances), 2, 2))
 eigenvalues_couplers_CMT = np.zeros((len(distances), 2))
 for idx, dist in enumerate(distances):
+    print(f"Distance: {dist}")
     eigenvalues_couplers[idx, :] = np.load(f'dimol/eigenvalues_{idx}.npy')
     dnmdn1s = np.load(f'dimol/dn1_array_{idx}.npy')
     dnmdn2s = np.load(f'dimol/dn2_array_{idx}.npy')

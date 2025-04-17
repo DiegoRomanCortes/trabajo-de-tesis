@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  17 APR 2025 12:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  17 APR 2025 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,13 +1215,13 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
  [5] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [6
+
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [6
 
-]
 [7]
 \openout2 = `intro.aux'.
 
@@ -1254,7 +1254,7 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17.28> not available
 
 pdfTeX warning: /usr/bin/pdflatex (file ./media/slab.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<media/slab.pdf, id=409, 963.6pt x 542.025pt>
+<media/slab.pdf, id=411, 963.6pt x 542.025pt>
 File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
 Package pdftex.def Info: media/slab.pdf  used on input line 105.
@@ -1268,13 +1268,13 @@ File: ts1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 248.
-<media/slabgraphical.pdf, id=427, 246.45837pt x 192.50116pt>
+<media/slabgraphical.pdf, id=429, 246.45837pt x 192.50116pt>
 File: media/slabgraphical.pdf Graphic file (type pdf)
 <use media/slabgraphical.pdf>
 Package pdftex.def Info: media/slabgraphical.pdf  used on input line 254.
 (pdftex.def)             Requested size: 330.42041pt x 258.1pt.
  [5]
-<media/TETMfields.pdf, id=439, 230.77599pt x 179.71974pt>
+<media/TETMfields.pdf, id=441, 230.77599pt x 179.71974pt>
 File: media/TETMfields.pdf Graphic file (type pdf)
 <use media/TETMfields.pdf>
 Package pdftex.def Info: media/TETMfields.pdf  used on input line 260.
@@ -1286,7 +1286,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.2.3.
                    \relax 
 l.407 \end{align}
                   [8] [9]
-<media/OAM_analitic.png, id=524, 1047.16219pt x 682.80093pt>
+<media/OAM_analitic.png, id=526, 1047.16219pt x 682.80093pt>
 File: media/OAM_analitic.png Graphic file (type png)
 <use media/OAM_analitic.png>
 Package pdftex.def Info: media/OAM_analitic.png  used on input line 512.
@@ -1300,18 +1300,18 @@ LaTeX Warning: Command \textasciiacute invalid in math mode on input line 583.
 
 Missing character: There is no ´ in font txr!
 [12] [13] [14]
-<media/ssh-model.png, id=583, 1181.16281pt x 230.36063pt>
+<media/ssh-model.png, id=585, 1181.16281pt x 230.36063pt>
 File: media/ssh-model.png Graphic file (type png)
 <use media/ssh-model.png>
 Package pdftex.def Info: media/ssh-model.png  used on input line 758.
 (pdftex.def)             Requested size: 377.62642pt x 73.64659pt.
  [15 <./media/ssh-model.png (PNG copy)>]
-<media/ssh-winding.png, id=598, 448.074pt x 224.94037pt>
+<media/ssh-winding.png, id=600, 448.074pt x 224.94037pt>
 File: media/ssh-winding.png Graphic file (type png)
 <use media/ssh-winding.png>
 Package pdftex.def Info: media/ssh-winding.png  used on input line 801.
 (pdftex.def)             Requested size: 472.03123pt x 236.97005pt.
-<media/ssh-open.png, id=599, 238.491pt x 184.0476pt>
+<media/ssh-open.png, id=601, 238.491pt x 184.0476pt>
 File: media/ssh-open.png Graphic file (type png)
 <use media/ssh-open.png>
 Package pdftex.def Info: media/ssh-open.png  used on input line 806.
@@ -1338,34 +1338,48 @@ File: ot1txtt.fd 2000/12/15 v3.1
 
 
 ]
-<media/numerical_slab.png, id=634, 423.984pt x 213.1965pt>
+<media/numerical_slab.png, id=636, 423.984pt x 213.1965pt>
 File: media/numerical_slab.png Graphic file (type png)
 <use media/numerical_slab.png>
 Package pdftex.def Info: media/numerical_slab.png  used on input line 29.
-(pdftex.def)             Requested size: 472.03123pt x 237.36333pt.
+(pdftex.def)             Requested size: 377.62642pt x 189.89067pt.
  [19 <./media/numerical_slab.png>]
-<media/num_exp_comparison.png, id=659, 1052.93375pt x 489.83pt>
+<media/num_exp_comparison.png, id=661, 1052.93375pt x 489.83pt>
 File: media/num_exp_comparison.png Graphic file (type png)
 <use media/num_exp_comparison.png>
-Package pdftex.def Info: media/num_exp_comparison.png  used on input line 67.
+Package pdftex.def Info: media/num_exp_comparison.png  used on input line 68.
 (pdftex.def)             Requested size: 283.22162pt x 131.7551pt.
  [20 <./media/num_exp_comparison.png>]
-<codigo/dimol/coupler.png, id=678, 238.491pt x 175.18248pt>
+<codigo/dimol/coupler.png, id=681, 238.491pt x 175.18248pt>
 File: codigo/dimol/coupler.png Graphic file (type png)
 <use codigo/dimol/coupler.png>
-Package pdftex.def Info: codigo/dimol/coupler.png  used on input line 93.
-(pdftex.def)             Requested size: 283.22162pt x 208.05539pt.
-) [21 <./codigo/dimol/coupler.png>] [22]
+Package pdftex.def Info: codigo/dimol/coupler.png  used on input line 101.
+(pdftex.def)             Requested size: 306.81741pt x 225.39023pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<codigo/1darraycmt/1darraycmt.png, id=682, 244.2726pt x 192.4791pt>
+File: codigo/1darraycmt/1darraycmt.png Graphic file (type png)
+<use codigo/1darraycmt/1darraycmt.png>
+Package pdftex.def Info: codigo/1darraycmt/1darraycmt.png  used on input line 1
+10.
+(pdftex.def)             Requested size: 306.81741pt x 241.78186pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [21] [22 <./codigo/dimol/coupler.png> <./codigo/1darraycmt/1darraycmt.png>]
 \openout2 = `metodos.aux'.
 
- (./metodos.tex
+
+(./metodos.tex
 Cap\'{\i }tulo 4.
-<media/fabrication.png, id=691, 1927.2pt x 1084.05pt>
+<media/fabrication.png, id=696, 1927.2pt x 1084.05pt>
 File: media/fabrication.png Graphic file (type png)
 <use media/fabrication.png>
 Package pdftex.def Info: media/fabrication.png  used on input line 6.
 (pdftex.def)             Requested size: 283.22162pt x 229.12283pt.
-<media/SC_setup.png, id=693, 1927.2pt x 1084.05pt>
+<media/SC_setup.png, id=698, 1927.2pt x 1084.05pt>
 File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package pdftex.def Info: media/SC_setup.png  used on input line 13.
@@ -1376,13 +1390,13 @@ Package pdftex.def Info: media/SC_setup.png  used on input line 13.
 
 
  <./media/fabrication.png> <./media/SC_setup.png>]
-<media/SLMblaze4.png, id=706, 963.6pt x 542.025pt>
+<media/SLMblaze4.png, id=711, 963.6pt x 542.025pt>
 File: media/SLMblaze4.png Graphic file (type png)
 <use media/SLMblaze4.png>
 Package pdftex.def Info: media/SLMblaze4.png  used on input line 30.
 (pdftex.def)             Requested size: 165.2138pt x 161.57301pt.
  [24 <./media/SLMblaze4.png>]
-<media/SLM_setupv1.png, id=714, 1927.2pt x 1084.05pt>
+<media/SLM_setupv1.png, id=719, 1927.2pt x 1084.05pt>
 File: media/SLM_setupv1.png Graphic file (type png)
 <use media/SLM_setupv1.png>
 Package pdftex.def Info: media/SLM_setupv1.png  used on input line 41.
@@ -1404,12 +1418,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<media/26um_15mm_angles.png, id=726, 3327.43124pt x 1062.21844pt>
+<media/26um_15mm_angles.png, id=731, 3327.43124pt x 1062.21844pt>
 File: media/26um_15mm_angles.png Graphic file (type png)
 <use media/26um_15mm_angles.png>
 Package pdftex.def Info: media/26um_15mm_angles.png  used on input line 12.
 (pdftex.def)             Requested size: 472.03123pt x 126.46901pt.
-<media/couplingvsangle.jpg, id=731, 160.4394pt x 157.5486pt>
+<media/couplingvsangle.jpg, id=736, 160.4394pt x 157.5486pt>
 File: media/couplingvsangle.jpg Graphic file (type jpg)
 <use media/couplingvsangle.jpg>
 Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
@@ -1420,7 +1434,7 @@ Package pdftex.def Info: media/couplingvsangle.jpg  used on input line 18.
 
 
  <./media/26um_15mm_angles.png>]
-<media/honeycomb_lattices_bw.png, id=742, 863.225pt x 201.75375pt>
+<media/honeycomb_lattices_bw.png, id=747, 863.225pt x 201.75375pt>
 File: media/honeycomb_lattices_bw.png Graphic file (type png)
 <use media/honeycomb_lattices_bw.png>
 Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
@@ -1431,7 +1445,7 @@ Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 27
 
  (./moleculas.tex
 Cap\'{\i }tulo 6.
-<media/ssh_sp_model.png, id=760, 1015.54407pt x 460.72125pt>
+<media/ssh_sp_model.png, id=765, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
 Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
@@ -1446,12 +1460,12 @@ Package pdftex.def Info: media/ssh_sp_model.png  used on input line 23.
 
  (./oam.tex
 Cap\'{\i }tulo 7.
-<media/OAM-free.png, id=770, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=775, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 472.03123pt x 283.2079pt.
-<media/vortex.png, id=771, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=776, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
@@ -1522,13 +1536,13 @@ LaTeX Info: Redefining \% on input line 22.
 (./numericos.aux) (./metodos.aux) (./magico.aux) (./moleculas.aux) (./oam.aux)
 (./conclu.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CDE294DC676F9E5A2B9731B98DC656C6;9489.
+(rerunfilecheck)             Checksum: DBC84EEF5F24478F6EC9D3FF168DAF95;9507.
  ) 
 Here is how much of TeX's memory you used:
- 40184 strings out of 476091
- 876323 string characters out of 5794081
+ 40196 strings out of 476091
+ 876641 string characters out of 5794081
  2301330 words of memory out of 5000000
- 59284 multiletter control sequences out of 15000+600000
+ 59293 multiletter control sequences out of 15000+600000
  574441 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,21n,103p,1374b,2349s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1555,10 +1569,10 @@ s/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (54 pages, 9726792 bytes).
+Output written on main.pdf (54 pages, 9839013 bytes).
 PDF statistics:
- 1432 PDF objects out of 1440 (max. 8388607)
- 1274 compressed objects within 13 object streams
- 516 named destinations out of 1000 (max. 500000)
- 476 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1438 PDF objects out of 1440 (max. 8388607)
+ 1277 compressed objects within 13 object streams
+ 517 named destinations out of 1000 (max. 500000)
+ 481 words of extra memory for PDF output out of 10000 (max. 10000000)
 
