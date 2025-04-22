@@ -1,32 +1,33 @@
 \chapter{Métodos experimentales}
 
-En este capítulo se describen los métodos experimentales que hacen posible la escritura de guías de onda para la creación de redes fotónicas y la caracterización de las mismas. Los procedimientos incluyen técnicas de fabricación mediante láser femtosegundo, sistemas de excitación óptica y métodos de modulación espacial de luz.
+En este capítulo se detallan los procedimientos experimentales desarrollados para la fabricación y caracterización de redes fotónicas basadas en guías de onda. La metodología comprende tres aspectos fundamentales: (1) escritura directa de guías mediante láser femtosegundo, (2) sistemas de excitación óptica con láser supercontinuo, y (3) técnicas avanzadas de modulación espacial de luz para el control de condiciones iniciales.
+
 
 \section{Escritura de guías de onda \label{cap:fs}}
 
-La fabricación de guías de onda se realizó mediante la técnica de escritura directa con láser femtosegundo \citep{femto_writing}. Este método permite crear estructuras tridimensionales en sustratos de vidrio mediante el efecto de cambio de índice de refracción inducido por láser.
+La fabricación de guías de onda se realizó mediante la técnica de escritura directa con láser femtosegundo. Este método permite crear estructuras tridimensionales en sustratos de vidrio mediante el efecto de cambio de índice de refracción inducido por láser \citep{femto_writing}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth, trim={18cm 4cm 15cm 6cm},clip]{media/fabrication}
-    \caption{Esquema de la técnica de escritura de guías de onda.}
+    \caption[Esquema de la técnica de escritura de guías de onda.]{Esquema de la técnica de escritura de guías de onda. El haz láser es focalizado mediante objetivo microscópico (20x) mientras la muestra se desplaza en tres ejes mediante una plataforma controlada por computadora.}
 \end{figure}
 
 Los parámetros de escritura que funcionan para excitar modos en el espectro visible son:
 \begin{itemize}
     \item Tasa de repetición: 1 kHz.
     \item Velocidad de escritura: 0.1 - 10 mm/s.
-    \item Potencia de llegada: 
+    \item Potencia de llegada medida: 10.0 - 16.0 mW (90.0 - 144.0 mW).
 \end{itemize}
 
 \section{Montaje de excitación láser supercontinuo}
 
-Para la caracterización óptica de las guías de onda se implementó un sistema de excitación basado en un láser supercontinuo (SC). La fuente SC proporciona un ancho de banda amplio (450-2400 nm) con una potencia máxima de 1 mW por canal.
+Para la caracterización óptica se implementó un sistema de excitación basado en láser supercontinuo (SC) de banda ancha (450-2400 nm). La configuración permite seleccionar longitudes de onda específicas mediante filtros sintonizables, con una resolución espectral de $\pm$5 nm y una potencia de salida de 1 mW por longitud de onda.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth, trim={5cm 9cm 3cm 7cm},clip]{media/SC_setup}
-    \caption{Montaje SC. (a) Fuente láser de fibra, (b) Sistema de colimación, (c) Filtros sintonizables, (d) Etapa de acoplamiento a fibra óptica.}
+    \caption{Montaje de excitación láser supercontinuo.}
 \end{figure}
 
 \section{Montaje de modulación espacial de luz}
@@ -34,7 +35,7 @@ Para la caracterización óptica de las guías de onda se implementó un sistema
 Para usar condiciones iniciales distintas a una gaussiana se hace necesario incorporar métodos de modulación espacial de luz. En esta tesis se utilizó una técnica conocida como grabado de fase mediante holograma \citep{terhalle}.
 
 \subsection{Etapa premodulación}
-El modulador espacial de luz utilizado es un HOLOEYE PLUTO-NIR SLM - Reflective LCOS, cuya respuesta óptica ocurre con polarización paralela al plano de la mesa óptica. Se utiliza un retardador de media onda ($\lambda/2$) seguido de un polarizador Glan-Thompson 100.000:1 con el objetivo de que la polarización de la luz láser coincida con la de la respuesta del SLM. Posteriormente se magnifica y se colima el haz para que abarque todo el área de pixeles disponible con un par de lentes 20x y $L_1$ de foco 100mm (telescopio).
+El modulador espacial de luz utilizado es un HOLOEYE PLUTO-NIR SLM - Reflective LCOS (resolución 1920$\times$1080 px, tamaño de píxel 8 $\mu$m), cuya respuesta óptica ocurre con polarización paralela al plano de la mesa óptica. Se utiliza un retardador de media onda ($\lambda/2$) seguido de un polarizador Glan-Thompson 100.000:1 con el objetivo de que la polarización de la luz láser coincida con la de la respuesta del SLM. Posteriormente se magnifica y se colima el haz para que abarque todo el área de pixeles disponible con un par de lentes 20x y $L_1$ de foco 100mm (telescopio).
 
 \subsection{Etapa de modulación}
 Una rejilla de difracción que maximiza la potencia del primer orden de difracción es utilizada. Para modular en amplitud se debe multiplicar la rejilla por la máscara de amplitud deseada, mientras que para modular en fase basta con sumar el nivel de gris correspondiente a la fase deseada. En la Figura \ref{fig:SLMblaze} se bosqueja el algoritmo implementado en Python en el anexo \ref{sec:codigoSLM}.
@@ -53,6 +54,8 @@ La imagen modulada pasa por un par de lentes $L_2$ de foco 1000 mm y $L_3$ de fo
 
 \subsection{Etapa de captura en cámara}
 Una vez calibrada la inclinación de la muestra, se fija su posición. Un lente objetivo 10x permite magnificar la imagen de salida y capturar los resultados en un Beam Profiler modelo BC106N-VIS con resolución espacial de 6.45 $\mu$m/píxel \citep{thorlabs_beam_profiler}.
+
+Opcionalmente, se puede intervenir el montaje para superponer un interferómetro tipo Mach-Zehnder. Para ello, se debe colocar un Beam Splitter entre el lente $L_1$ y el SLM para usar el haz previo a la modulación como referencia. Para recombinar los haces y hacerlos interferir, se debe colocar otro Beam Splitter entre el obejtivo 10x y la cámara final. Dado que el haz de referencia tiende a ser más potente que la luz propagada, suele requerirse además un filtro de densidad neutra (ND-FIlter) para equiparar ambos haces.
 
 \subsection{Circuito óptico}
 \begin{figure}[H]
