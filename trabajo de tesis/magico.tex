@@ -11,20 +11,16 @@ Al considerar qué sucede con el acoplamiento entre modos $p_y$ de guías elípt
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[trim={0 2cm 0 4cm},clip, width=\linewidth]{media/26um_15mm_angles.png}
+	\includegraphics[trim={0 2cm 0 4cm},clip, width=\linewidth]{media/26um_15mm_angles_v2.png}
 	\caption{Barrido en ángulo que captura el paso por acoplamiento nulo en $\sim$0.50 rad para una misma distancia de propagación de 15 mm. \label{fig:angulobarrido}}
 \end{figure}
-Se hizo un análisis de las imágenes como el descrito en la sección \ref{sec:analimag}. Luego, utilizando la descripción discreta (\ref{eqn:non-ortho-CMT-eqs}) de la constante de acoplamiento $C = \frac{1}{L}\arctan\left(\sqrt{P_2/P_1}\right)$ se caracterizó su comportameinto en función del ángulo $\theta$ medido desde la horizontal para una distancia de separación fija de 25 $\mu$m. El signo negativo se añadió de manera que la tendencia de los datos fuera continua, como se aprecia en la Figura \ref{fig:coupangle}.
-\begin{figure}[H]
-\centering
-	\includegraphics[width=0.5\linewidth]{media/couplingvsangle.jpg}
-	\caption{Curva de acomplamiento en función del ángulo entre modos P.\label{fig:coupangle}}
-\end{figure}
+Se hizo un análisis de las imágenes como el descrito en la sección \ref{sec:analimag}. Luego, mediante la ecuación \ref{eqn:coupling-simp} para el acomplamiento dinámico, se caracterizó su comportameinto en función del ángulo $\theta$ medido desde la horizontal para una distancia de separación fija de 25 $\mu$m. El signo negativo se añadió de manera que la tendencia de los datos fuera continua, como se aprecia en la Figura \ref{fig:invisibility-coup}. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{codigo/eigenvalues_vs_angle.png}
-	\caption{ Constantes de propagación en función del 
-	ángulo para modos P. \label{fig:invisibility-coup}}
+	\includegraphics[width=0.9\linewidth]{codigo/eigenvalues_vs_angle.png}
+	\caption[Constantes de propagación y acoplamientos en función del 
+	ángulo para modos P]{Constantes de propagación y acoplamientos en función del 
+	ángulo para modos P, calculados numéricamente con EME. Se compara con los datos experimentales extraídos de la Figura \ref{fig:angulobarrido}. \label{fig:invisibility-coup}}
 \end{figure}
 \section{Redes tipo panal de abeja}
 La red tipo panal de abeja es conocida por ser la red subyacente del grafeno. Su característica más relevante para efectos de esta tesis tiene relación con sus bandas de Bloch: ambas dispersivas y con la presencia de un cono de Dirac en su intersección \citep{honeycombdirac}.

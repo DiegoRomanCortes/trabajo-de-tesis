@@ -11,29 +11,28 @@ couplings = np.zeros(len(angles))
 plt.style.use('science')
 fig, ax = plt.subplots(1, 1, dpi=400)
 ax2 = ax.twinx()
+
+eigenvalues_all = [np.load(f'eigenvalues_{i}.npy')[:-2] for i in range(len(angles))]
+eigenvalues_all = np.array(eigenvalues_all)
+
 sign = 1
 
-eigenvalues = np.load(f'eigenvalues_{0}.npy')[:-2]
-ax.plot(0, (np.sqrt(eigenvalues[(1-sign)//2])- k0*n0)*1e-2, 'r.-', label=r'$k_z^{+-}$')
-ax.plot(0, (np.sqrt(eigenvalues[(1+sign)//2])- k0*n0)*1e-2, 'g.-', label=r'$k_z^{++}$')
+kz_minus = (np.sqrt(eigenvalues_all[:, (1-sign)//2]) - k0*n0) * 1e-2
+kz_plus = (np.sqrt(eigenvalues_all[:, (1+sign)//2]) - k0*n0) * 1e-2
+couplings = np.abs(np.sqrt(eigenvalues_all[:, 0]) - np.sqrt(eigenvalues_all[:, 1])) * 1e-2 / 2
+idx_magic = np.argmin(np.abs(couplings))
+print(f"idx_magic: {idx_magic}")
+couplings[idx_magic:] *= -1
 
-couplings[0] = sign*np.abs(np.sqrt(eigenvalues)[0]-np.sqrt(eigenvalues)[1])*1e-2/2
+kz_temp = kz_plus[idx_magic:].copy()
+kz_plus[idx_magic:] = kz_minus[idx_magic:]
+kz_minus[idx_magic:] = kz_temp
 
-ax2.plot(0, couplings[0], 'k.-', label=r'$\Delta k_z / 2$')
 
-for i in range(1, len(angles)):
-    angle = angles[i]
-    eigenvalues = np.load(f'eigenvalues_{i}.npy')[:-2]
-    # print(eigenvalues)
-    ax.plot((angle), (np.sqrt(eigenvalues[(1-sign)//2])- k0*n0)*1e-2, 'r.-')
-    ax.plot((angle), (np.sqrt(eigenvalues[(1+sign)//2])- k0*n0)*1e-2, 'g.-')
 
-    if(np.abs(np.sqrt(eigenvalues)[0]-np.sqrt(eigenvalues)[1])*1e-2 < 0.05):
-        idx_magic = i
-        print(i)
-        sign = -1
-    couplings[i] = sign*np.abs(np.sqrt(eigenvalues)[0]-np.sqrt(eigenvalues)[1])*1e-2/2
-    ax2.plot((angle), couplings[i], 'k.-')
+ax.plot(angles, kz_minus, 'r', label=r'$k_z^{+-}$')
+ax.plot(angles, kz_plus, 'g', label=r'$k_z^{++}$')
+ax2.plot(angles, couplings, 'k-', label=r'$\Delta k_z / 2$')
 
 ax2.hlines(y=0, xmin=angles[0], xmax=angles[-1], color='k', linestyle='--', linewidth=0.5)
 ax2.vlines(angles[idx_magic], ymin=couplings.min(), ymax=couplings.max(), color='k', linestyle='--', linewidth=0.5)
@@ -41,11 +40,16 @@ ax2.vlines(angles[idx_magic], ymin=couplings.min(), ymax=couplings.max(), color=
 ax2.text(angles[idx_magic-1], couplings.min(), r"$\theta_m$", ha="center", va="bottom", fontsize=14)
 
 ax2.set_ylabel(r'Coupling (cm$^{-1}$)')
+
+angles_exp = np.array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])*np.pi/40
+couplings_exp = np.array([ 0.18982468,  0.19759136,  0.19167419,  0.18454876,  0.18354335, 0.14111277,  0.11345177,  0.07334573, -0.08385819, -0.13810501, -0.22390854, -0.32961958, -0.44581551, -0.59109267, -0.6538189, -0.78539816, -0.86393798, -0.93583845, -1.05301696, -1.13995956, -1.21760956])
+
+ax2.plot(angles_exp, couplings_exp, 'k.', label='Exp. data')
 ax.ticklabel_format(axis='y', style='sci')
 ax.set_xlabel('Angle (rad)')
 ax.set_ylabel(r'$k_z - k_0 n_0$ (cm$^{-1}$)')
 ax.set_title('Propagation constants vs Angle')
-fig.legend(loc=(0.6, 0.5), fontsize=7)
+fig.legend(loc=(0.6, 0.55), fontsize=5)
 
 fig.savefig('./eigenvalues_vs_angle.png')
 plt.close("all")
