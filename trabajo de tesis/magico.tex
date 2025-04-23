@@ -12,22 +12,31 @@ Al considerar qué sucede con el acoplamiento entre modos $p_y$ de guías elípt
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim={0 2cm 0 4cm},clip, width=\linewidth]{media/26um_15mm_angles_v2.png}
-	\caption{Barrido en ángulo que captura el paso por acoplamiento nulo en $\sim$0.50 rad para una misma distancia de propagación de 15 mm. \label{fig:angulobarrido}}
+	\caption[Barrido de ángulo experimental.]{Barrido de ángulo experimental para una distancia de propagación de 15 mm. Se aprecia el efecto de ángulo mágico entre 0.50 y 0.66 rad. \label{fig:angulobarrido}}
 \end{figure}
 Se hizo un análisis de las imágenes como el descrito en la sección \ref{sec:analimag}. Luego, mediante la ecuación \ref{eqn:coupling-simp} para el acomplamiento dinámico, se caracterizó su comportameinto en función del ángulo $\theta$ medido desde la horizontal para una distancia de separación fija de 25 $\mu$m. El signo negativo se añadió de manera que la tendencia de los datos fuera continua, como se aprecia en la Figura \ref{fig:invisibility-coup}. 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.9\linewidth]{codigo/eigenvalues_vs_angle.png}
+	\includegraphics[width=0.8\linewidth]{codigo/eigenvalues_vs_angle.png}
 	\caption[Constantes de propagación y acoplamientos en función del 
-	ángulo para modos P]{Constantes de propagación y acoplamientos en función del 
+	ángulo para modos P.]{Constantes de propagación y acoplamientos en función del 
 	ángulo para modos P, calculados numéricamente con EME. Se compara con los datos experimentales extraídos de la Figura \ref{fig:angulobarrido}. \label{fig:invisibility-coup}}
 \end{figure}
 \section{Redes tipo panal de abeja}
-La red tipo panal de abeja es conocida por ser la red subyacente del grafeno. Su característica más relevante para efectos de esta tesis tiene relación con sus bandas de Bloch: ambas dispersivas y con la presencia de un cono de Dirac en su intersección \citep{honeycombdirac}.
+La red tipo panal de abeja es conocida por ser la red subyacente del grafeno. Su característica más relevante para efectos de esta tesis tiene relación con sus bandas de Bloch: ambas dispersivas y con la presencia de un punto de Dirac  \citep{honeycombdirac}.
 
-Una vez encontrados los parámetros de fabricación de la sección anterior, se estudió el mismo efecto en una red tipo panal de abeja de forma que la distancia entre sitios permanece fija (Figura \ref{fig:HCLBW}). Se hizo un barrido de ángulos para evidenciar el efecto. 
+Una vez encontrados los parámetros de fabricación de la sección anterior, se estudió el mismo efecto en una red tipo panal de abeja de forma que la distancia entre sitios permanece fija, sólo variando el ángulo (ver Figura \ref{fig:HCLBW}). 
+
 \begin{figure}[H]
 \centering
-	\includegraphics[width=\linewidth]{media/honeycomb_lattices_bw.png}
-	\caption{Imágenes microscópicas de redes fotónicas tipo panel de abeja.\label{fig:HCLBW}}
+	\includegraphics[width=0.8\linewidth]{media/honeycomb_lattices_bw.png}
+	\caption[Imágenes microscópicas de redes fotónicas tipo panel de abeja de modos P.]{Imágenes microscópicas de redes fotónicas tipo panel de abeja de modos P iluminadas con luz blanca. \label{fig:HCLBW}}
+\end{figure}
+
+Un modelo a primeros vecinos consistiría en un acoplamiento vertical $\varkappa_\sigma$ y otro dependiente del ángulo $\varkappa_\theta$, sin embargo es necesario considerar acoplamientos hasta terceros vecinos y correcciones no ortogonales para describir adecuadamente la dinámica experimental.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{media/honeycomb-lattice.png}
+\caption{Esquema del modelo de honeycomb de modos P con terceros vecinos.}
 \end{figure}
