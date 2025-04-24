@@ -1,4 +1,4 @@
-\chapter{Marco teórico}
+\chapter{Marco Teórico}
 
 En este capítulo se desarrollarán las herramientas analítico-teóricas que permiten describir los sistemas fótonicos estudiados en esta tesis. Éstos consisten en la propagación de luz láser de baja potencia (1 mW de potencia de salida) propagada en sistemas acoplados de guías de onda, las cuales están escritas dentro de una muestra de vidrio borosilicato. Estas condiciones experimentales permiten describir el comportamiento de la luz utilizando las ecuaciones de Maxwell aplicadas a un medio lineal, isotrópico, no magnético y sin fuentes de carga ni de corriente libres. 
 
@@ -627,7 +627,7 @@ Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que se
 
 \subsection{Dímero TE en guías de onda tipo losa}
 Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\ref{eqn:transversal}) se tiene que
-\begin{align}
+\begin{align*}
 	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - (k_z^j)^2}\left\{ \begin{matrix}
 -\alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
 \\
@@ -639,11 +639,11 @@ Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\r
 \\
 -\beta\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
 \end{matrix}\right. .
-\end{align}
+\end{align*}
 $x_j=jd$, con $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
-\begin{align}
+\begin{align*}
 	\left(\textbf{e}_{j\perp}\times\textbf{h}_{i\perp}^*\right)\cdot \hat{\textbf{z}}
-	=
+	&=
 	\frac{k_z^i \omega \mu_0 H_{a1}^2 \beta\sin(\alpha a)}{(k_0^2n_j^2 - k_z^2)(k_0^2n_i^2 - k_z^2)}
 	\left\{
 	\begin{matrix}
@@ -654,13 +654,9 @@ $x_j=jd$, con $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 		\beta \sin(\alpha a)e^{-\beta (|x-x_i|+|x-x_j|-2a)}, & \text{otro caso}
 	\end{matrix}
 	\right. .
-\end{align}
-
-\begin{align*}
+\\
 	P_{ij} &= \frac{L k_z^i k_0  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{-\beta d}e^{\beta a}}{2\beta} \left[\frac{e^{-\beta a} + \beta (d-2a)e^{\beta a}}{\beta^2} - \frac{2\cosh(\beta a)}{\alpha^2+\beta^2} \right] \ .
-\end{align*}
-
-\begin{align*}
+\\
 	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{L k_0    \mu_0 c H_{a1}^2 }{2 \beta }  \sin^2(\alpha a)e^{2\beta a} e^{-\beta d} \ .
 \end{align*}
 
@@ -671,14 +667,9 @@ Elementos diagonales tienen la forma:
 \\
 \beta^2 \sin^2(\alpha a) e^{2\beta a} e^{-2\beta|x-x_j|}, & |x-x_j|>a
 \end{matrix}\right.
-\end{align*}
-
-
-
-\begin{align*}
+\\
 	P_{jj} &= \frac{L k_z^j  k_0 \mu_0 c H_{a1}^2  a}{2 \alpha^2} \left[1 + \frac{\sin^2(\alpha a)}{a \beta^3 } k_0^2 \left( n_1^2 - n_0^2 \right) \right].
-\end{align*}
-\begin{align*}
+\\
 	\tilde{H}_{jj} &\equiv H_{jj} - P_{jj} k_z^j =
 	\frac{L k_0^3  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{2\beta a}e^{-2\beta d}}{4 \beta^3 } (n_1^2-n_0^2) \sinh(2\beta a) \ .
 \end{align*}
@@ -755,7 +746,7 @@ El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sen
 
 \begin{figure}[h]
 \centering
-	\includegraphics[width=0.8\linewidth]{media/ssh-model.png}
+	\includegraphics[width=\linewidth]{media/ssh-model.png}
 	\caption[Esquema del modelo SSH.]{Esquema del modelo SSH. En amarillo se encierra la celda unitaria, donde se distinguen los sitios A y B y el acoplamiento intracelda (intercelda) $t$ ($t'$). Se muestran dos configuraciones distintas. \label{fig:ssh-model}}
 \end{figure}
 En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar el Hamiltoniano en la base de Bloch con $a_n = \frac{1}{\sqrt{N}}\sum_k a_k e^{iknd}$, $b_n = \frac{1}{\sqrt{N}}\sum_k b_k e^{iknd}$ de la siguiente forma:
