@@ -25,7 +25,7 @@ Se analizaron las imágenes siguiendo el método descrito en la Sección \ref{se
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\linewidth]{codigo/eigenvalues_vs_angle.png}
-    \caption[Constantes de propagación y acoplamientos angulares para modos P]{Constantes de propagación y acoplamientos en función del ángulo para modos P, calculados numéricamente mediante EME. Los resultados se comparan con los datos experimentales extraídos de la Figura \ref{fig:angulobarrido}. \label{fig:invisibility-coup}}
+    \caption[Constantes de propagación y acoplamientos angulares para modos P]{Constantes de propagación y acoplamientos en función del ángulo para modos $p_y$, calculados numéricamente mediante EME. Los resultados se comparan con los datos experimentales extraídos de la Figura \ref{fig:angulobarrido}. \label{fig:invisibility-coup}}
 \end{figure}
 
 \section{Redes tipo panal de abeja}
@@ -37,20 +37,28 @@ Una vez determinados los parámetros de fabricación en la sección anterior, se
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{media/honeycomb_lattices_bw.png}
-    \caption[Micrografías de redes fotónicas tipo panal de abeja para modos P]{Micrografías de redes fotónicas tipo panal de abeja para modos P bajo iluminación con luz blanca. \label{fig:HCLBW}}
+    \caption[Micrografías de redes fotónicas tipo panal de abeja para modos P]{Micrografías de redes fotónicas tipo panal de abeja para modos $p_y$ bajo iluminación con luz blanca. \label{fig:HCLBW}}
 \end{figure}
 
-Un modelo de primeros vecinos consideraría únicamente el acoplamiento vertical $\varkappa_\sigma$ y el acoplamiento angular $\varkappa_\theta$. No obstante, la descripción precisa de los datos experimentales requiere incluir acoplamientos hasta terceros vecinos, así como correcciones por no ortogonalidad. La Figura \ref{fig:honeycombmodel} muestra un esquema del modelo completo. El Hamiltoniano del sistema se expresa como:
-\begin{equation}
-\hat{H}_\Sigma = \hat{H}_{NN} + \hat{H}_{NNN} + \hat{H}_{NNNN} \ ,
-\end{equation}
-donde $\hat{H}_{NN}$, $\hat{H}_{NNN}$ y $\hat{H}_{NNNN}$ contienen acoplamientos a primeros vecinos $\varkappa_\sigma$ y $\varkappa_\theta$, a segundos vecinos $t_\pi$ y $t_{\theta 2}$, de largo alcance $t_{\theta 1}$ y $t_{\theta 3}$, respectivamente.
 
-{
-	\sidecaptionvpos{figure}{c}
-	\begin{SCfigure}[]
-		\centering
-		\includegraphics[width=0.25\linewidth]{media/honeycomb-lattice.png}
-		\caption{Esquema del modelo de panal de abeja para modos P con acoplamientos hasta terceros vecinos. \label{fig:honeycombmodel}}
-	\end{SCfigure}
-}
+Un modelo de primeros vecinos consideraría únicamente el acoplamiento vertical $\varkappa_\sigma$ y el acoplamiento angular $\varkappa_\theta$. Sin embargo, la descripción precisa de los datos experimentales requiere incluir acoplamientos hasta terceros vecinos, así como correcciones por no ortogonalidad. La Figura~\ref{fig:honeycombmodel} muestra un esquema del modelo completo. El Hamiltoniano del sistema se expresa como:
+
+\begin{equation}
+	\hat{H}_\Sigma = \hat{H}_{NN} + \hat{H}_{NNN} + \hat{H}_{NNNN} \,,
+\end{equation}
+
+donde $\hat{H}_{NN}$, $\hat{H}_{NNN}$ y $\hat{H}_{NNNN}$ contienen los acoplamientos a primeros vecinos ($\varkappa_\sigma$ y $\varkappa_\theta$), a segundos vecinos ($t_\pi$ y $t_{\theta 2}$), y de largo alcance ($t_{\theta 1}$ y $t_{\theta 3}$), respectivamente (ver Figura \ref{fig:honeycombmodel}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.25\linewidth]{media/honeycomb-lattice.png} \
+	\includegraphics[width=0.55\linewidth]{codigo/NNNN_overlap_vs_angle.png}
+	\caption[Modelo de panal de abeja para modos $p_y$ con acoplamientos hasta terceros vecinos.]{\textbf{Izquierda:} Esquema del modelo de panal de abeja para modos $p_y$ con acoplamientos hasta terceros vecinos. \textbf{Derecha:} (Arriba) Valores absolutos de los acoplamientos en función del ángulo $\theta$. (Abajo) Integrales de solapamiento normalizadas, en función del ángulo $\theta$ .\label{fig:honeycombmodel}}
+\end{figure}
+
+Además, se define la matriz no ortogonal $\hat{c}$ a partir de la matriz $\hat{P}$ [ecuación~(\ref{eqn:CMTnum})] como $c_{ij} = \frac{P_{ij}}{I}$, donde $I = P_{ii}$ es la intensidad del modo $p_y$, de modo que los elementos diagonales de $\hat{c}$ sean iguales a 1. De manera similar a los acoplamientos, se grafica en la Figura \ref{fig:honeycombmodel} la magnitud de los "solapes" en función del ángulo
+
+La dinámica está regida por una modificación de las ecuaciones~(\ref{eqn:non-ortho-CMT-eqs}):
+\begin{equation}
+	-i\frac{d \Psi(z)}{dz} = \hat{c}^{-1} \hat{H}_\Sigma \Psi(z) \ .
+\end{equation}

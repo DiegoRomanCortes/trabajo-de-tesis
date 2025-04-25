@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.5.3}Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}{15}{subsection.2.5.3}%
 \contentsline {chapter}{\numberline {3}Métodos Numéricos}{18}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Expansión en Modos Normales }{18}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Beam Propagation Method}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Método de Propagación de Haces}{19}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{20}{subsection.3.2.1}%
 \contentsline {section}{\numberline {3.3}Desde la teoría de modos acoplados}{21}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Métodos Experimentales}{23}{chapter.4}%
