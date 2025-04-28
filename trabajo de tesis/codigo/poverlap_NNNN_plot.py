@@ -7,7 +7,6 @@ wavelength = 730E-9  # Wavelength of the light
 k0 = 2 * np.pi / wavelength  # Wavenumber
 
 angles = np.load("angles.npy")
-overlaps = np.zeros(len(angles))
 plt.style.use('science')
 fig, axs = plt.subplots(2, 1, dpi=500, sharex='col', figsize=(5, 5))
 
