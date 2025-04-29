@@ -185,11 +185,32 @@ for k in range(len(angles)):
     
     # V = np.linalg.inv(np.conj(T)) @ H @ np.linalg.inv(T)
     V = np.linalg.inv(C) @ H
+    print(ishermitian(V))
     eigenvalues, eigenvectors = eig(V)
     lambdas[k, :] = eigenvalues
     eigenmodes[k, :, :] = eigenvectors
     print("Eigenvalues:", eigenvalues)
     print(f" {k/len(angles)*100:.0f} % complete")
+
+    # for i in range(N):
+    #     if np.abs(lambdas[k, i]) < 0.2:
+    #         fig, ax = plt.subplots(1, 1, dpi=400)
+    #         ax.set_facecolor('black')
+    #         vmax = np.max(np.abs(eigenmodes[k, :, i]))
+    #         sc = ax.scatter(guias_real[:, 0], guias_real[:, 1], c=(eigenmodes[k, :, i])/vmax, cmap=cm.berlin, s=10, vmin=-1, vmax=1)
+    #         ax.set_title(r'Angle = '+f'{angles[k]:.2f}, Eigenvalue = {lambdas[k, i]:.2f}')
+    #         fig.colorbar(sc, label='Intensity', aspect=5)
+    #         if k < 9:
+    #             if i < 9:
+    #                 fig.savefig(f'eigenmode_0{k+1}_0{i+1}.png')
+    #             else:
+    #                 fig.savefig(f'eigenmode_0{k+1}_{i+1}.png')
+    #         else:
+    #             if i < 9:
+    #                 fig.savefig(f'eigenmode_{k+1}_0{i+1}.png')
+    #             else:
+    #                 fig.savefig(f'eigenmode_{k+1}_{i+1}.png')
+    #         plt.close('all')
     
 
 # Plot the eigenvalues vs the coupling constant

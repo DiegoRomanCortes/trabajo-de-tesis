@@ -94,9 +94,9 @@ El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuy
 
 \begin{equation*}
 	n(x) = \left\{\begin{matrix}
-	n_1, \quad |x| \le a
+	n_1 \ , \quad |x| \le a
 	\\
-	n_0, \quad |x| > a
+	n_0 \ , \quad |x| > a
  	\end{matrix}\right.
 \end{equation*}
 
@@ -108,7 +108,7 @@ El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuy
 
 Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) son de tipo Helmholz. Definiendo $\Psi = \{E_z, H_z\} $:
 \begin{align*}
-	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0.
+	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0 \ .
 \end{align*}
 
 Como $n(x)=n(-x)$, las soluciones $\Psi$ deben ser pares o impares. En efecto, si $\Psi(x)$ es solución, el cambio $x\to x'=-x$ implica que $\Psi(-x)=\pm \Psi(x)$, pues $\Psi(x)$ es un campo real.
@@ -116,17 +116,17 @@ Como $n(x)=n(-x)$, las soluciones $\Psi$ deben ser pares o impares. En efecto, s
 Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 \le k_z^2 \le k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Con todo esto, 
 \begin{equation*}
 	\Psi_s = \left\{\begin{matrix}
-	\Psi_{s1}\cos(\alpha x), & |x|\le a
+	\Psi_{s1}\cos(\alpha x) \ , & |x|\le a
 	\\
-	\Psi_{s0}e^{-\beta|x|}, & |x|>a
+	\Psi_{s0}e^{-\beta|x|} \ , & |x|>a
 	\end{matrix}\right.
 	\
 	\implies 	
 	\	
 	\nabla_\perp \Psi_s = \left\{\begin{matrix}
-	-\hat{\textbf{x}}\alpha\Psi_{s1}\sin(\alpha x), & |x|\le a
+	-\hat{\textbf{x}}\alpha\Psi_{s1}\sin(\alpha x) \ , & |x|\le a
 	\\
-	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{s0}e^{-\beta|x|}, & |x|>a
+	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{s0}e^{-\beta|x|} \ , & |x|>a
 	\end{matrix}\right.
 	\
 	.
@@ -136,17 +136,17 @@ Por lo que las componentes verticales $E_y$ y $H_y$ pares se escriben debido a l
 \begin{equation*}
 	\begin{aligned}[c]
 	 E_y &= \frac{i \omega\mu_0}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
-	 \alpha H_{s1}\sin(\alpha x),	 & |x|\le a
+	 \alpha H_{s1}\sin(\alpha x) \ ,	 & |x|\le a
 	 \\
-	 \frac{|x|}{x}\beta H_{s0}e^{-\beta|x|}, & |x|>a
+	 \frac{|x|}{x}\beta H_{s0}e^{-\beta|x|} \ , & |x|>a
 	 \end{matrix}\right.
 \end{aligned} 
 ,\quad
 	\begin{aligned}[c]
 	 H_y &= \frac{-i\omega \epsilon_0 n^2}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
-	 \alpha E_{s1}\sin(\alpha x),	& |x|\le a
+	 \alpha E_{s1}\sin(\alpha x) \ ,	& |x|\le a
 	 \\
-	 \frac{|x|}{x}\beta E_{s0}e^{-\beta|x|}, & |x|>a
+	 \frac{|x|}{x}\beta E_{s0}e^{-\beta|x|} \ , & |x|>a
 	 \end{matrix}\right.
 	 \
 	 .
@@ -155,17 +155,17 @@ Por lo que las componentes verticales $E_y$ y $H_y$ pares se escriben debido a l
 Por otro lado, las soluciones impares tienen la forma
 \begin{equation*}
 	\Psi_a = \left\{\begin{matrix}
-	\Psi_{a1}\sin(\alpha x), & |x|\le a
+	\Psi_{a1}\sin(\alpha x) \ , & |x|\le a
 	\\
-	\Psi_{a0}e^{-\beta|x|}, & |x|>a
+	\Psi_{a0}e^{-\beta|x|} \ , & |x|>a
 	\end{matrix}\right.
 	\
 	\implies
 	\
 		\nabla_\perp \Psi_a = \left\{\begin{matrix}
-	\hat{\textbf{x}}\alpha\Psi_{a1}\cos(\alpha x), & |x|\le a
+	\hat{\textbf{x}}\alpha\Psi_{a1}\cos(\alpha x) \ , & |x|\le a
 	\\
-	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{a0}e^{-\beta|x|}, & |x|>a
+	-\hat{\textbf{x}}\frac{|x|}{x}\beta\Psi_{a0}e^{-\beta|x|} \ , & |x|>a
 	\end{matrix}\right.
 	\
 	.
@@ -174,40 +174,40 @@ Por lo que $E_y$ y $H_y$ se escriben como:
 \begin{equation*}
 	\begin{aligned}[c]
 	 E_y &= \frac{i\omega\mu_0}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
-	 -\alpha H_{a1}\cos(\alpha x)	, & |x|\le a
+	 -\alpha H_{a1}\cos(\alpha x) \ , & |x|\le a
 	 \\
-	 \frac{|x|}{x}\beta H_{a0}e^{-\beta|x|}, & |x|>a
+	 \frac{|x|}{x}\beta H_{a0}e^{-\beta|x|} \ , & |x|>a
 	 \end{matrix}\right.
 \end{aligned} 
 ,\quad
 	\begin{aligned}[c]
 	 H_y &= \frac{i\omega \epsilon_0 n^2}{k_0^2n^2-k_z^2} \left\{\begin{matrix}
-	  \alpha E_{a1}\cos(\alpha x),	 & |x|\le a
+	  \alpha E_{a1}\cos(\alpha x) \ ,	 & |x|\le a
 	 \\
-	 -\frac{|x|}{x}\beta E_{a0}e^{-\beta|x|}, & |x|>a
+	 -\frac{|x|}{x}\beta E_{a0}e^{-\beta|x|} \ , & |x|>a
 	 \end{matrix}\right.
 \end{aligned} .
 \end{equation*}
 Imponiendo continuidad de las componentes tangenciales $E_y$, $E_z$, $H_y$ y $H_z$:
 \begin{equation*}
 	\begin{aligned}[c]
-	 E_{s1}\cos(\alpha a) = E_{s0}e^{-\beta a},
+	 E_{s1}\cos(\alpha a) = E_{s0}e^{-\beta a} \ ,
 	 \\	 
-	 H_{s1}\cos(\alpha a) = H_{s0}e^{-\beta a},
+	 H_{s1}\cos(\alpha a) = H_{s0}e^{-\beta a} \ ,
 	 \\
-	 	  n_1 ^2 E_{s1}\sin(\alpha a)/\alpha = -n_0^2 E_{s0}e^{-\beta a}/\beta,
+	 	  n_1 ^2 E_{s1}\sin(\alpha a)/\alpha = -n_0^2 E_{s0}e^{-\beta a}/\beta \ ,
 	  \\
-	  H_{s1}\sin(\alpha a)/\alpha = - H_{s0}e^{-\beta a}/\beta,
+	  H_{s1}\sin(\alpha a)/\alpha = - H_{s0}e^{-\beta a}/\beta \ ,
 \end{aligned} 
 \quad
 	\begin{aligned}[c]
-		 E_{a1}\sin(\alpha a) = E_{a0}e^{-\beta a},
+		 E_{a1}\sin(\alpha a) = E_{a0}e^{-\beta a} \ ,
 	 	   \\
-	 H_{a1}\sin(\alpha a) = H_{a0}e^{-\beta a},
+	 H_{a1}\sin(\alpha a) = H_{a0}e^{-\beta a} \ ,
 	 \\
-	  n_1 ^2 E_{a1}\cos(\alpha a)/\alpha = n_0^2 E_{a0}e^{-\beta a}/\beta,
+	  n_1 ^2 E_{a1}\cos(\alpha a)/\alpha = n_0^2 E_{a0}e^{-\beta a}/\beta \ ,
 	 	 \\
-	  H_{a1}\cos(\alpha a)/\alpha = H_{a0}e^{-\beta a}/\beta.
+	  H_{a1}\cos(\alpha a)/\alpha = H_{a0}e^{-\beta a}/\beta \ .
 \end{aligned} 
 \end{equation*}
 Buscando soluciones no triviales se tiene que:
@@ -218,32 +218,32 @@ Buscando soluciones no triviales se tiene que:
 Se distinguirá dos tipos de condiciones:
 \begin{itemize}
 	\item Modos TE:\begin{align}
-	\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a}&= 0, \label{eqn:TEsim}
+	\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a}&= 0 \ , \label{eqn:TEsim}
 	\\
-	 \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a} &= 0. \label{eqn:TEanti}
+	 \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a} &= 0 \ . \label{eqn:TEanti}
 	\end{align}
 	\item Modos TM:\begin{align}
-	n_0^2 \frac{\cos(\alpha a)}{\beta a} + n_1^2\frac{\sin(\alpha a)}{\alpha a}  &= 0, \label{eqn:TMsim}
+	n_0^2 \frac{\cos(\alpha a)}{\beta a} + n_1^2\frac{\sin(\alpha a)}{\alpha a}  &= 0 \ , \label{eqn:TMsim}
 	\\
-	 n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a} &= 0. \label{eqn:TManti}
+	 n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a} &= 0 \ . \label{eqn:TManti}
 	\end{align}
 \end{itemize}
 Asumiendo $\alpha$, $\beta$ y $k_z$ conocidos, las amplitudes deben cumplir las relaciones:
 \begin{equation*}
 	\begin{aligned}[c]
-	E_{s1} \left[n_0^2 \frac{\cos(\alpha a)}{\beta a}+n_1 ^2 \frac{\sin(\alpha a)}{\alpha a}\right] = 0,
+	E_{s1} \left[n_0^2 \frac{\cos(\alpha a)}{\beta a}+n_1 ^2 \frac{\sin(\alpha a)}{\alpha a}\right] = 0 \ ,
 		\\
-	H_{s1} \left[\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a} \right] = 0,
+	H_{s1} \left[\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a} \right] = 0 \ ,
 \end{aligned} 
 \quad\quad
 	\begin{aligned}[c]
-	E_{a1} \left[ n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a}\right] = 0,
+	E_{a1} \left[ n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a}\right] = 0 \ ,
 		\\
-	H_{a1} \left[ \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a}\right] = 0.
+	H_{a1} \left[ \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a}\right] = 0 \ .
 \end{aligned} 
 \end{equation*}
 Las ecuaciones superiores imponen que $E_1 = 0$ cuando se satisface alguna condición de modos TE. Análogamente, las ecuaciones inferiores imponen $H_1 = 0$ en el caso de modos TM. Efectivamente, los nombres TE y TM se han puesto por transversal eléctrico y transversal magnético, respectivamente.
-Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente: un condición inicial arbitraria se propagará como una combinación lineal de los modos TE y TM que soporte la guía.
+Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente: una condición inicial arbitraria se propagará como una combinación lineal de los modos TE y TM que soporte la guía.
 
 \subsection{Soluciones gráficas y comparación entre modos TE y TM \label{cap:solslabTETM}}
 
@@ -265,7 +265,7 @@ La condición de corte (\textit{cutoff}) en guías de onda es equivalente a que 
 Los modos simétricos o pares cumplen esta condición para $\sin(V) = 0$, lo que implica que $V = m \pi$, con $m$ entero. En particular, considerando $m=0$  y barriendo $n_1 \to n_0$, siempre existen al menos dos modos, uno TE y otro TM hasta que $n_1 < n_0$.  
 Los modos antisimétricos o impares deben cumplir por su parte que $\cos(V) = 0$, lo que implica que $V = (m\pi \pm \pi/2)$. De esta condición se deduce que el primer par de modos exictados ($m=0$) existe siempre que $\lambda \le \lambda_c \equiv 4a\sqrt{n_1^2-n_0^2}$. Escrito de forma compacta para el $m$-ésimo modo:
 \begin{align*}
-	 (\lambda_c)_m = \frac{4a}{m-1}  \sqrt{n_1^2-n_0^2}.
+	 (\lambda_c)_m = \frac{4a}{m-1}  \sqrt{n_1^2-n_0^2} \ .
 \end{align*}
 
 \section{Soluciones analíticas para fibra óptica circular}
@@ -277,7 +277,7 @@ En la sección anterior se estudió el sistema más sencillo en el que se puede 
 	\\
 	n_0, \quad \text{si } \rho > a
 	\end{matrix}\right.
-	,\nonumber
+	\ ,\nonumber
 \end{equation}
 donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. 
 Al considerar las componentes longitudinales $\Psi$ = $\{E_z, H_z\}$ del campo eléctrico y magnético y  si se utiliza el método de separación de variables con $\Psi =  R(\rho)\Phi(\phi) e^{ik_z z} $,  las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) toman la forma:
@@ -305,7 +305,7 @@ Imponiendo condiciones de periodicidad $\Phi(\phi)=\Phi(\phi + 2\pi)$, se tiene 
 	C_2 K_\ell (\beta\rho) + D_2 I_\ell (\beta\rho), \quad \text{si } \rho > a  
 	\end{matrix}
 	\right.
-	. \nonumber
+	\ . \nonumber
 \end{align}
 Necesariamente se debe imponer $D_1 = D_2 = 0$ para que la solución sea finita para $\rho = 0$ y para $\rho \to +\infty$. Es decir, la parte radial de la solución es
 \begin{align*}
@@ -317,7 +317,7 @@ Necesariamente se debe imponer $D_1 = D_2 = 0$ para que la solución sea finita 
 	C_2 K_\ell (\beta\rho), \quad \text{si } \rho > a  
 	\end{matrix}
 	\right.
-	. \nonumber
+	\ . \nonumber
 \end{align*}
 En este caso, para imponer las condiciones de continuidad en $\textbf{E}_{||} = E_\phi \boldsymbol{\hat{\phi}} + E_z \hat{\textbf{z}}$ y $\textbf{H}_{||}= H_\phi \hat{\boldsymbol{\phi}} + H_z \hat{\textbf{z}}$, se hace necesario relacionar el resto de componentes del campo con $E_z$ y $H_z$ para lo cual se usará la ecuación (\ref{eqn:transversal}). 
 
@@ -326,9 +326,9 @@ Como
 	\nabla_\perp \Psi =
 	\left\{	
 	\begin{matrix}
-		\Psi_0^1\left[\boldsymbol{\hat{\rho}}\alpha J'_\ell (\alpha \rho) + i \boldsymbol{\hat{\phi}} \ell J_\ell (\alpha \rho)/\rho\right] e^{i\ell\phi} e^{i k_z z}, \quad \text{si } \rho \le a  
+		\Psi_0^1\left[\boldsymbol{\hat{\rho}}\alpha J'_\ell (\alpha \rho) + i \boldsymbol{\hat{\phi}} \ell J_\ell (\alpha \rho)/\rho\right] e^{i\ell\phi} e^{i k_z z} \ , \quad \text{si } \rho \le a  
 		\\
-		\Psi_0^0\left[\boldsymbol{\hat{\rho}}\beta K'_\ell (\beta\rho) +i \boldsymbol{\hat{\phi}}\ell K_\ell (\alpha \rho)/\rho \right]e^{i\ell\phi} e^{i k_z z} , \quad \text{si } \rho > a  
+		\Psi_0^0\left[\boldsymbol{\hat{\rho}}\beta K'_\ell (\beta\rho) +i \boldsymbol{\hat{\phi}}\ell K_\ell (\alpha \rho)/\rho \right]e^{i\ell\phi} e^{i k_z z} \ , \quad \text{si } \rho > a  
 	\end{matrix}
 	\right.
 \end{equation*}
@@ -338,54 +338,54 @@ Separando por componentes y reemplazando:
 		H_z &=  e^{i\ell\phi}e^{i k_z z}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	 H_0^1 J_\ell (\alpha \rho), \quad \text{si } \rho \le a  
+	  	 H_0^1 J_\ell (\alpha \rho) \ , \quad \text{si } \rho \le a  
 	  	 \\
-	  	 H_0^0 K_\ell (\beta \rho), \quad \text{si } \rho > a  
+	  	 H_0^0 K_\ell (\beta \rho) \ , \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.	
 		\\
 	  	 H_r &= \frac{i e^{i\ell\phi}e^{i k_z z} }{k_0^2 n^2 - k_z^2}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	  k_z \alpha H_0^1 J'_\ell (\alpha \rho) - i\omega \epsilon_0 n^2\ell E_0^1 J_\ell (\alpha \rho)/\rho, \quad \text{si } \rho \le a  
+	  	  k_z \alpha H_0^1 J'_\ell (\alpha \rho) - i\omega \epsilon_0 n^2\ell E_0^1 J_\ell (\alpha \rho)/\rho \ , \quad \text{si } \rho \le a  
 	  	 \\
-	  	 k_z \beta H_0^0  K'_\ell (\beta \rho) - i\omega \epsilon_0 n^2\ell E_0^0 K_\ell (\beta \rho)/\rho  , \quad \text{si } \rho > a  
+	  	 k_z \beta H_0^0  K'_\ell (\beta \rho) - i\omega \epsilon_0 n^2\ell E_0^0 K_\ell (\beta \rho)/\rho \ , \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.
 	  	 \\
 		H_\phi &= \frac{ie^{i\ell\phi} e^{i k_z z}}{k_0^2 n^2 - k_z^2}
 		\left\{
 		\begin{matrix}
-			ik_z\ell H_0^1  J_\ell (\alpha \rho)/\rho + \omega \epsilon_0 n^2  \alpha E_0^1 J'_\ell (\alpha \rho), \quad \text{si } \rho \le a  
+			ik_z\ell H_0^1  J_\ell (\alpha \rho)/\rho + \omega \epsilon_0 n^2  \alpha E_0^1 J'_\ell (\alpha \rho) \ , \quad \text{si } \rho \le a  
 			\\
-			ik_z \ell H_0^0  K_\ell (\beta \rho)/\rho + \omega \epsilon_0 n^2 \beta E_0^0  K'_\ell (\beta \rho), \quad \text{si } \rho > a  
+			ik_z \ell H_0^0  K_\ell (\beta \rho)/\rho + \omega \epsilon_0 n^2 \beta E_0^0  K'_\ell (\beta \rho) \ , \quad \text{si } \rho > a  
 		\end{matrix}
 		\right.
 		\\
 		E_z &= e^{i\ell\phi} e^{i k_z z}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	 E_0^1 J_\ell (\alpha \rho), \quad \text{si } \rho \le a  
+	  	 E_0^1 J_\ell (\alpha \rho) \ , \quad \text{si } \rho \le a  
 	  	 \\
-	  	 E_0^0 K_\ell (\beta \rho), \quad \text{si } \rho > a  
+	  	 E_0^0 K_\ell (\beta \rho) \ , \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.	
 		\\
 	E_r &= \frac{i e^{i\ell\phi} e^{i k_z z} }{k_0^2 n^2 - k_z^2}
 	  	 \left\{
 		\begin{matrix}	  	 
-	  	  k_z \alpha E_0^1 J'_\ell (\alpha \rho)+i\omega \mu_0 \ell H_0^1 J_\ell (\alpha \rho)/\rho , \quad \text{si } \rho \le a  
+	  	  k_z \alpha E_0^1 J'_\ell (\alpha \rho)+i\omega \mu_0 \ell H_0^1 J_\ell (\alpha \rho)/\rho \ , \quad \text{si } \rho \le a  
 	  	 \\
-	  	 k_z \beta E_0^0  K'_\ell (\beta \rho) +i\omega \mu_0 \ell H_0^0 K_\ell (\beta \rho)/\rho, \quad \text{si } \rho > a  
+	  	 k_z \beta E_0^0  K'_\ell (\beta \rho) +i\omega \mu_0 \ell H_0^0 K_\ell (\beta \rho)/\rho \ , \quad \text{si } \rho > a  
 	  	 \end{matrix}
 	  	 \right.
 	\\
 	E_\phi &= \frac{i e^{i\ell\phi} e^{i k_z z}}{k_0^2 n^2 - k_z^2}
 		\left\{
 		\begin{matrix}
-			ik_z \ell E_0^1   J_\ell (\alpha \rho)/\rho -\omega \mu_0  \alpha H_0^1  J'_\ell (\alpha \rho), \quad \text{si } \rho \le a  
+			ik_z \ell E_0^1   J_\ell (\alpha \rho)/\rho -\omega \mu_0  \alpha H_0^1  J'_\ell (\alpha \rho) \ , \quad \text{si } \rho \le a  
 			\\
-			ik_z \ell E_0^0   K_\ell (\beta \rho)/\rho -\omega \mu_0 \beta H_0^0   K'_\ell (\beta \rho) , \quad \text{si } \rho > a  
+			ik_z \ell E_0^0   K_\ell (\beta \rho)/\rho -\omega \mu_0 \beta H_0^0   K'_\ell (\beta \rho) \ , \quad \text{si } \rho > a  
 		\end{matrix}
 		\right.
 \end{align*}
@@ -453,7 +453,7 @@ Las condiciones de corte se dan cuando $\beta a \to 0$. Utilizando las expresion
 \end{align*}
 por lo que se hace necesario que $\left. J_0(\alpha a)\right|_{\alpha a \to V} = 0$. Denotando $x_{0,m}=$ 2.405,  5.520,  8.654, $\cdots$ al $m$-ésimo cero de la funcion $J_0(x)$, la longitud de onda de corte está dada por 
 \begin{equation}
-(\lambda_c)_{0,m} = 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{0,m}}, \quad\text{(modos TE y TM).}
+(\lambda_c)_{0,m} = 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{0,m}} \ , \quad\text{(modos TE y TM).}
 \end{equation} 
 Contrario al caso de la guía de onda tipo losa, en fibras ópticas se hace necesario estar bajo un umbral de corte máximo $(\lambda_c)_{0,1}$ no nulo para que los modos TE o TM existan.
 
@@ -470,13 +470,13 @@ Interpretando la ecuación (\ref{eqn:fiber_trascendental}) como una cuadrática 
 
 Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell(r)$,  es posible obtener dos tipos de soluciones que suelen ser llamadas HE y EH debido al campo longitudinal con mayor peso:
 \begin{align}
-		\frac{J_{\ell-1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta}, \quad \text{(modos HE)}
+		\frac{J_{\ell-1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta} \ , \quad \text{(modos HE)}
 		\label{eqn:HE}
 	\\
-		\frac{J_{\ell+1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= \left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta}, \quad \text{(modos EH)}
+		\frac{J_{\ell+1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= \left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta} \ , \quad \text{(modos EH)}
 		\label{eqn:EH}
 		\\
-		\Delta &= \left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \nonumber
+		\Delta &= \left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \ . \nonumber
 \end{align}
 
 Para $\ell = 0$, se recuperan las relaciones obtenidas para los modos  TE$_m$ (HE$_{0m}$) y TM$_m$ (EH$_{0m}$). Para $\ell \neq 0$ se hace necesario considerar las expresiones asintóticas de las funciones de Bessel cuando $\beta a \to 0$ y $\alpha a \to V$:
@@ -497,9 +497,9 @@ El caso $\ell=1$ es de especial interés. La condición de modos HE se desarroll
 
 Basta considerar la función $J_1(\alpha a)|_{\alpha a \to V} = 0$. Por otro lado, la condición EH elimina el cero $x=0$ del cociente $\frac{\alpha aJ_1(\alpha a)}{J_2(\alpha a)}$ lo que hace que esté ``desfasada'' respecto a la condición HE. Usando un razonamiento similar al caso $\ell =0$, las condiciones de corte son
 \begin{align*}
-	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m}} \quad \left(\text{modos HE}_{1m}\right)
+	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m}} \ ,  \quad \left(\text{modos HE}_{1m}\right)
 	\\
-	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m+1}} \quad \left(\text{modos EH}_{1m}\right)
+	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m+1}} \ , \quad \left(\text{modos EH}_{1m}\right)
 \end{align*}
 con $x_{1,m}=0$, 3.832,  7.016, 10.173, $\dots$.
 En particular, el modo $\text{HE}_{11}$ siempre existe.
@@ -537,8 +537,7 @@ Si la estructura de guías de onda no varía en la dirección $z$, por separaci�
 \end{align}
 La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, que son ortogonales sólo si se cumple la condición de guiaje débil (ver apéndice \ref{sec:orto}). 
 
-\section{Teoría de modos acoplados}
-
+\section{Teoría de Modos Acoplados}
 \subsection{Derivación desde un principio variacional}
 
 A partir de la ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}) es posible despejar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$, similar a lo desarrollado en la referencia \citep{haus_coupled-mode}.
@@ -785,7 +784,7 @@ Es decir,
 El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \textit{transición topológica} puesto que no es posible pasar de un régimen a otro de forma suave. Esto tiene implicancias en el sistema con condiciones de borde abiertas (Dirichlet) debido a la \textit{correspondencia bulto-borde} \cite{topobulk}. En concreto, así como se ilustra en la Figura \ref{fig:ssh-open}, la topología del Hamiltoniano $H(k)$ induce la aparición de estados de borde a energía cero al imponer condiciones de borde abiertas.
 El Hamiltoniano del modelo SSH presenta diversas simetrías: de reversión temporal, de inversión, partícula-hueco, traslacional y quiral. Esta última es de particular relevancia, pues los estados de borde del modelo SSH están \textit{topológicamente protegidos} ante cualquier desorden que respete la simetría quiral \cite{ssh-course}. El operador quiral en cuestión es la matriz de Pauli $\sigma_z$, pues 
 \begin{align*}
-	\sigma_z H(k) \sigma_z^\dagger &=  -\cancelto{1}{\sigma_z^2} \left(d_x \sigma_x  + d_y \sigma_y\right)  =- H(k).
+	\sigma_z H(k) \sigma_z^\dagger &=  -\cancelto{1}{\sigma_z^2} \left(d_x \sigma_x  + d_y \sigma_y\right)  =- H(k) \ .
 \end{align*}
 \begin{figure}[h]
 	\centering
