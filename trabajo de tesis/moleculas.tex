@@ -4,12 +4,16 @@ La técnica de escritura de guías de onda descrita en el capítulo \ref{cap:fs}
 
 \section{Autoestados del acoplador fotónico para distancias de separación arbitrarias}
 
-Como se adelantó en la sección \ref{cap:maxwell}, la teoría de modos acoplados es una buena descripción de los sistemas fotónicos en estudio siempre que la distancia de separación entre guías de onda sea superior a 15 $\mu$m, pues la constante de acoplamiento tiene un comportamiento exponencial decreciente. Más allá del régimen discreto, se hace necesario descibir el sistema como una sola macroguía. Una herramienta numérica que es agnóstica entre ambos regímenes es la de Expansión en Modos Normales, detallada en la sección \ref{cap:eme}. Es por ello que se simula un par de guías de onda a distintas distancias para determinar el comportamiento de sus autoestados. 
+Como se adelantó en la Sección~\ref{cap:CMT}, la teoría de modos acoplados (CMT) describe adecuadamente los sistemas fotónicos en estudio cuando la distancia entre guías de onda supera los 13\,$\mu$m. Para separaciones menores, el sistema debe considerarse como una única macroguía. La expansión en modos normales (EME), descrita en la Sección~\ref{cap:eme}, proporciona una herramienta numérica válida para ambos regímenes. Mediante simulaciones de pares de guías de onda a diferentes distancias, se caracterizó el comportamiento de sus autoestados. La Figura~\ref{fig:molecule-coup} muestra que el autoestado antisimétrico ($+-$) sólo existe para distancias mayores a 13\,$\mu$m, ya que por debajo de este umbral se convierte en un modo de radiaci\'on ($k_z^{+-} < k_0 n_0$). En contraste, el autoestado simétrico ($++$) persiste y puede describirse como una única entidad, lo que en esta tesis llamaremos \textit{molécula fotónica}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{codigo/dimol2/eigenvalues_vs_angle.png}
-	\caption[Constantes de propagación y acoplamientos angulares para modos fundamentales]{Constantes de propagación y acoplamientos en función del ángulo para modos fundamentales, calculados numéricamente mediante EME. \label{fig:molecule-coup}}
+	\includegraphics[width=0.50\linewidth]{codigo/dimol2/eigenvalues_vs_angle_1.png}
+	\includegraphics[width=0.45\linewidth]{codigo/dimol3/eigenvalues_vs_wavelength.png}
+	\caption[Propagaci\'on y acoplamientos en mol\'eculas fot\'onicas]{
+		\textbf{Izquierda:} Constantes de propagación y acoplamientos en función de la distancia para modos fundamentales, calculados mediante EME. 
+		\textbf{Derecha:} Constantes de acoplamiento en función de la longitud de onda.
+		\label{fig:molecule-coup}}
 \end{figure}
 
 \section{Moléculas Fotónicas en Red SP-SSH}
@@ -27,5 +31,5 @@ Para la implementación experimental (sección \ref{cap:fs}) de una red que pres
 \begin{figure}[H]
 \centering
 	\includegraphics[width=0.7\linewidth]{media/ssh_sp_model}
-	\caption{Esquema de la red SP-SSH.}
+	\caption{Esquema de la red SP-SSH y los acoplamientos considerados.}
 \end{figure}

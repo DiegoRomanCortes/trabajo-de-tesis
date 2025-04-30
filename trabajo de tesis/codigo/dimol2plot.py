@@ -263,10 +263,12 @@ colors = [(0,0,0),
 nodes = np.linspace(0, 1, num=255)
 thorlabs = LinearSegmentedColormap.from_list("thorlabs", list(zip(nodes, colors)))
 
-Nx = 101
-Ny = 101
-Lx = 100E-6
-Ly = 100E-6
+# Define the parameters
+Nx = 500
+Ny = 500
+Lx = 80E-6
+Ly = 80E-6
+
 x, dx = np.linspace(-Lx/2, Lx/2, Nx, retstep=True)
 y, dy = np.linspace(-Ly/2, Ly/2, Ny, retstep=True)
 X, Y = np.meshgrid(x, y, indexing="xy")
@@ -288,24 +290,24 @@ eigenvectors_all = np.array(eigenvectors_all)
 eigenvectors_all = np.reshape(eigenvectors_all, (len(distances), Nx*Ny, n_eigen))
 
 
-for i in range(len(distances)):
-    plt.style.use('science')
-    fig, ax = plt.subplots(1, 1, dpi=400)
-    ax.imshow(np.abs(eigenvectors_all[i, :, 0].reshape(Nx, Ny) )**2, cmap=thorlabs, extent=[x[0], x[-1], y[0], y[-1]], aspect='auto')
-    ax.set_title(f"Distance: {distances[i]:.2f} um")
-    ax.set_xlabel(r'$x$ ($\mu$m)')
-    ax.set_ylabel(r'$y$ ($\mu$m)')
-    fig.savefig(f'./dimol2/eigenvectors_pm_{i}.png')
-    plt.close("all")
+# for i in range(len(distances)):
+#     plt.style.use('science')
+#     fig, ax = plt.subplots(1, 1, dpi=400)
+#     ax.imshow(np.abs(eigenvectors_all[i, :, -1].reshape(Nx, Ny) )**2, cmap=thorlabs, extent=[x[0], x[-1], y[0], y[-1]], aspect='auto')
+#     ax.set_title(f"Distance: {distances[i]:.2f} um"+f"\nEigenvalue: {np.sqrt(eigenvalues_all[i, -1])/k0 - n0:.2e}")
+#     ax.set_xlabel(r'$x$ ($\mu$m)')
+#     ax.set_ylabel(r'$y$ ($\mu$m)')
+#     fig.savefig(f'./dimol2/eigenvectors_{i}_pp.png')
+#     plt.close("all")
 
-    plt.style.use('science')
-    fig, ax = plt.subplots(1, 1, dpi=400)
-    ax.imshow(np.abs(eigenvectors_all[i, :, 1].reshape(Nx, Ny) )**2, cmap=thorlabs, extent=[x[0], x[-1], y[0], y[-1]], aspect='auto')
-    ax.set_title(f"Distance: {distances[i]:.2f} um")
-    ax.set_xlabel(r'$x$ ($\mu$m)')
-    ax.set_ylabel(r'$y$ ($\mu$m)')
-    fig.savefig(f'./dimol2/eigenvectors_pp_{i}.png')
-    plt.close("all")
+#     plt.style.use('science')
+#     fig, ax = plt.subplots(1, 1, dpi=400)
+#     ax.imshow(np.abs(eigenvectors_all[i, :, -2].reshape(Nx, Ny) )**2, cmap=thorlabs, extent=[x[0], x[-1], y[0], y[-1]], aspect='auto')
+#     ax.set_title(f"Distance: {distances[i]:.2f} um"+f"\nEigenvalue: {np.sqrt(eigenvalues_all[i, -2])/k0 - n0:.2e}")
+#     ax.set_xlabel(r'$x$ ($\mu$m)')
+#     ax.set_ylabel(r'$y$ ($\mu$m)')
+#     fig.savefig(f'./dimol2/eigenvectors_{i}_pm.png')
+#     plt.close("all")
 
 
     
@@ -317,13 +319,13 @@ couplings = np.abs(np.sqrt(eigenvalues_all[:, 0]) - np.sqrt(eigenvalues_all[:, 1
 
 
 plt.style.use('science')
-fig, ax = plt.subplots(1, 1, dpi=400)
+fig, ax = plt.subplots(1, 1, dpi=600)
 ax2 = ax.twinx()
 
-idx = 10
+idx = 9
 
 ax.plot(distances[idx:], kz_minus[idx:], 'r', label=r'$k_z^{+-}$')
-ax.plot(distances[idx:], kz_plus[idx:], 'g', label=r'$k_z^{++}$')
+ax.plot(distances, kz_plus, 'g', label=r'$k_z^{++}$')
 ax2.plot(distances[idx:], couplings[idx:], 'k-', label=r'$\Delta k_z / 2$')
 
 ax2.set_ylabel(r'Coupling (cm$^{-1}$)')
@@ -333,8 +335,8 @@ ax.ticklabel_format(axis='y', style='sci')
 ax.set_xlabel(r'Distance ($\mu$m)')
 ax.set_ylabel(r'$k_z - k_0 n_0$ (cm$^{-1}$)')
 ax.set_title('Propagation constants vs Distance')
-fig.legend(loc=(0.6, 0.25), fontsize=10)
+fig.legend(loc=(0.15, 0.20), fontsize=8)
 
-fig.savefig('./dimol2/eigenvalues_vs_angle.png')
+fig.savefig('./dimol2/eigenvalues_vs_angle.png', dpi=600)
 plt.close("all")
 

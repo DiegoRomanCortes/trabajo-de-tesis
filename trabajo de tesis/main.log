@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  29 APR 2025 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  30 APR 2025 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,7 +1018,7 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \xmathstrut@dim=\dimen323
 )
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 8
-2.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
@@ -1030,48 +1030,48 @@ LaTeX Info: Redefining \% on input line 22.
 (./moleculas.aux) (./oam.aux) (./conclu.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 82.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 81.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-82.
+81.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 81.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-82.
+81.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 81.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-82.
+81.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 81.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 8
-2.
+1.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1135,9 +1135,9 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
-Package hyperref Info: Link coloring OFF on input line 82.
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+Package hyperref Info: Link coloring OFF on input line 81.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -1149,7 +1149,7 @@ Package hyperref Info: Link coloring OFF on input line 82.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 82.
+ on input line 81.
 
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
@@ -1157,27 +1157,27 @@ Package newfloat Info: `sidecap' package detected.
 <imagenes/escudoU2014.pdf, id=171, 320.19624pt x 689.57625pt>
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
 <use imagenes/escudoU2014.pdf>
-Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 85.
+Package pdftex.def Info: imagenes/escudoU2014.pdf  used on input line 84.
 (pdftex.def)             Requested size: 38.42189pt x 82.74557pt.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 8
-5.
+4.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 8
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 8
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 8
-5.
+4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1187,13 +1187,13 @@ File: utxsyc.fd 2000/12/15 v3.1
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./imagenes/escudoU2014.pdf
 >]
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24.88> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 87.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 86.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 \begin{dedicatoria}
+l.97 \begin{dedicatoria}
                          [1
 
 ] [2
@@ -1475,41 +1475,48 @@ File: media/ipr-bulk-exp.png Graphic file (type png)
 <use media/ipr-bulk-exp.png>
 Package pdftex.def Info: media/ipr-bulk-exp.png  used on input line 72.
 (pdftex.def)             Requested size: 212.41261pt x 179.41989pt.
- [30 <./codigo/honeycomb_eigenvalues_vs_angle.png> <./media/ipr-corner-exp.png 
-(PNG copy)> <./media/cuasi-ssh.png (PNG copy)> <./media/ipr-bulk-exp.png (PNG c
-opy)>]) [31]
+ [30 <./codigo/honeycomb_eigenvalues_vs_angle.png> <./media/ipr-corner-exp.png>
+ <./media/cuasi-ssh.png> <./media/ipr-bulk-exp.png (PNG copy)>]) [31]
 \openout2 = `moleculas.aux'.
 
  (./moleculas.tex
 Cap\'{\i }tulo 6.
-<codigo/dimol2/eigenvalues_vs_angle.png, id=813, 267.21832pt x 194.04495pt>
-File: codigo/dimol2/eigenvalues_vs_angle.png Graphic file (type png)
-<use codigo/dimol2/eigenvalues_vs_angle.png>
-Package pdftex.def Info: codigo/dimol2/eigenvalues_vs_angle.png  used on input 
-line 11.
-(pdftex.def)             Requested size: 330.42041pt x 239.9648pt.
+<codigo/dimol2/eigenvalues_vs_angle_1.png, id=814, 262.3401pt x 194.04495pt>
+File: codigo/dimol2/eigenvalues_vs_angle_1.png Graphic file (type png)
+<use codigo/dimol2/eigenvalues_vs_angle_1.png>
+Package pdftex.def Info: codigo/dimol2/eigenvalues_vs_angle_1.png  used on inpu
+t line 11.
+(pdftex.def)             Requested size: 236.01561pt x 174.5796pt.
+<codigo/dimol3/eigenvalues_vs_wavelength.png, id=815, 231.62535pt x 194.04495pt
+>
+File: codigo/dimol3/eigenvalues_vs_wavelength.png Graphic file (type png)
+<use codigo/dimol3/eigenvalues_vs_wavelength.png>
+Package pdftex.def Info: codigo/dimol3/eigenvalues_vs_wavelength.png  used on i
+nput line 12.
+(pdftex.def)             Requested size: 212.41261pt x 177.96094pt.
 [32
 
 
 
 
- <./codigo/dimol2/eigenvalues_vs_angle.png>]
-<media/ssh_sp_model.png, id=824, 1015.54407pt x 460.72125pt>
+ <./codigo/dimol2/eigenvalues_vs_angle_1.png> <./codigo/dimol3/eigenvalues_vs_w
+avelength.png>]
+<media/ssh_sp_model.png, id=827, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
-Package pdftex.def Info: media/ssh_sp_model.png  used on input line 29.
+Package pdftex.def Info: media/ssh_sp_model.png  used on input line 33.
 (pdftex.def)             Requested size: 330.42041pt x 149.90135pt.
 ) [33 <./media/ssh_sp_model.png (PNG copy)>]
 \openout2 = `oam.aux'.
 
  (./oam.tex
 Cap\'{\i }tulo 7.
-<media/OAM-free.png, id=829, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=832, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 5.
 (pdftex.def)             Requested size: 377.62642pt x 226.56047pt.
-<media/vortex.png, id=830, 1277.7336pt x 638.8668pt>
+<media/vortex.png, id=833, 1277.7336pt x 638.8668pt>
 File: media/vortex.png Graphic file (type png)
 <use media/vortex.png>
 Package pdftex.def Info: media/vortex.png  used on input line 11.
@@ -1580,13 +1587,13 @@ LaTeX Info: Redefining \% on input line 22.
 (./numericos.aux) (./metodos.aux) (./magico.aux) (./moleculas.aux) (./oam.aux)
 (./conclu.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4C9C8CBF289A0D923F1EB33AE91395DC;9558.
+(rerunfilecheck)             Checksum: 014B85ED4FA14D320D621A917FD43E7F;9566.
  ) 
 Here is how much of TeX's memory you used:
- 40270 strings out of 476091
- 878727 string characters out of 5794081
+ 40280 strings out of 476091
+ 879102 string characters out of 5794081
  2301330 words of memory out of 5000000
- 59351 multiletter control sequences out of 15000+600000
+ 59358 multiletter control sequences out of 15000+600000
  574441 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  94i,21n,103p,1391b,2349s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1614,10 +1621,10 @@ lic/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (57 pages, 11067937 bytes).
+Output written on main.pdf (57 pages, 11510406 bytes).
 PDF statistics:
- 1496 PDF objects out of 1728 (max. 8388607)
- 1316 compressed objects within 14 object streams
+ 1499 PDF objects out of 1728 (max. 8388607)
+ 1317 compressed objects within 14 object streams
  526 named destinations out of 1000 (max. 500000)
- 516 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 521 words of extra memory for PDF output out of 10000 (max. 10000000)
 
