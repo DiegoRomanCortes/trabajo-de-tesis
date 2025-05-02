@@ -8,19 +8,21 @@ donde $T_{ij}E_j \equiv \delta_{ij}\left(\nabla_\perp^2 + k_0^2n^2\right)E_j+\pa
 \begin{align*}
 	\iint \left(T_{ij} E_j^\mu \right)^*  E_i^\nu dA = \iint \left( E_i^\mu \right)^*  \left(T_{ij} E_j^\nu\right) dA .
 \end{align*}
-Equivalentemente, notemos que
+Equivalentemente, notemos que:
 \begin{align*}
 	\left(T_{ji} E_i^\mu \right)^* E_j^\nu  - \left( E_i^\mu \right)^*  \left(T_{ij} E_j^\nu \right) &= \nabla_\perp \cdot \left[E_i^\nu \nabla_\perp \left( E_i^\mu \right)^* - \left( E_i^\mu \right)^* \nabla_\perp E_i^\nu \right] 
 	\\	
 	&+ \left[E^\nu_j \partial_j \left( E_i^\mu \right)^*  - \left( E_j^\mu \right)^* \partial_j  E_i^\nu \right] \partial_i \ln(n^2).  
 \end{align*}
-Al integrar en el plano, la divergencia se convierte en un término de frontera que se anula al considerar modos guiados (que decaen a cero en el infinito), mientras que el segundo término es cero sólo si $\nabla n^2 = \textbf{0}$. La hermiticidad de $T_{ij}$ permite escoger una base ortogonal de modos normales para el campo eléctrico. No obstante, el sistema completo sí es hermítico. Para ello, será necesario volver hasta la ecuación (\ref{eqn:rotordoble}), tomar producto punto con el conjugado de otro modo e integrar en el volumen:
+Al integrar en el plano, la divergencia se convierte en un término de frontera que se anula al considerar modos guiados (que decaen a cero en el infinito), mientras que el segundo término es cero sólo si $\nabla n^2 = \textbf{0}$. La hermiticidad de $T_{ij}$ permite escoger una base ortogonal de modos normales para el campo eléctrico. 
+
+No obstante, el sistema completo sí es hermítico. Para ello, será necesario volver hasta la ecuación (\ref{eqn:rotordoble}), tomar producto punto con el conjugado de otro modo e integrar en el volumen:
 \begin{align*}
 	\iiint_V dV \left(\nabla\times\nabla\times\textbf{E}^\nu \right)  \cdot \left(\textbf{E}^\mu\right)^* &= \iiint_V dV n^2\frac{\omega_\nu^2}{c^2} \textbf{E}^\nu \cdot \left(\textbf{E}^\mu\right)^*
 	\\
 	\iiint_V dV \left[\nabla\times\nabla\times\left(\textbf{E}^\mu\right)^* \right]  \cdot \textbf{E}^\nu &= \iiint_V dV n^2 \frac{\omega_\mu^2}{c^2} \left(\textbf{E}^\mu\right)^* \cdot \textbf{E}^\nu  
 \end{align*}
-Restando ambas ecuaciones se tiene
+Restando ambas ecuaciones se tiene:
 \begin{align*}
 	\frac{ \omega_\nu^2 - \omega_\mu^2}{c^2} \iiint_V dV n^2 \textbf{E}^\nu \cdot \left(\textbf{E}^\mu\right)^*
 	&= \iiint_V dV \nabla \cdot \left[ \left(\nabla\times\textbf{E}^\nu\right) \times \left(\textbf{E}^\mu \right)^* - \left(\nabla\times\textbf{E}^\mu\right)^* \times \left(\textbf{E}^\nu \right) \right]
