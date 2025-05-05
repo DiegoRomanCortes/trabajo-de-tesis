@@ -761,7 +761,7 @@ En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar e
 		0 & t+ t'e^{-ikd}
 		\\
 		t+ t'e^{ikd} & 0
-	\end{pmatrix}}_{H(k)}
+	\end{pmatrix}}_{\hat{H}(k)}
 	\begin{pmatrix}
 		a_k
 		\\
@@ -770,7 +770,7 @@ En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar e
 \end{align*}
 donde se ha usado que $$\frac{1}{N}\sum_n e^{i(k-k')nd} = \left\{\begin{matrix} \frac{N}{N}=1, &\text{ si } k = k'
 \\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}e^{i(k-k')d}=0, &\text{ si } k\neq k'
-\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $H(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $H(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\textbf{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $H(k)$ en términos de las matrices de Pauli $H(k) = \textbf{d} \cdot \mathbf{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\textbf{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\vec{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak $\mathcal{Z}_\pm$ asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
+\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $\hat{H}(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $\hat{H}(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\textbf{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $\hat{H}(k)$ en términos de las matrices de Pauli $\hat{H}(k) = \textbf{d} \cdot \bm{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\textbf{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\textbf{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak $\mathcal{Z}_\pm$ asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
 \mathcal{Z}_\pm &= i \oint \textbf{v}_\pm^\dagger \frac{d \textbf{v}_\pm}{dk}  dk  = -\frac{1}{2} \int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}}  \frac{d \phi(k)}{d k} dk = -\frac{d}{2}\int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}} \frac{1+\delta\cos(kd)}{\delta^2+1+2\delta\cos(kd)} dk = -\frac{\pi}{2} \left(1 + \frac{1-\delta^2}{\left|1-\delta^2\right|} \right) .
 \end{align*}
 Es decir, 
@@ -781,10 +781,10 @@ Es decir,
 0, &\text{ si } |\delta| > 1
 \end{matrix}\right. .
 \end{align*}
-El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \textit{transición topológica} puesto que no es posible pasar de un régimen a otro de forma suave. Esto tiene implicancias en el sistema con condiciones de borde abiertas (Dirichlet) debido a la \textit{correspondencia bulto-borde} \cite{topobulk}. En concreto, así como se ilustra en la Figura \ref{fig:ssh-open}, la topología del Hamiltoniano $H(k)$ induce la aparición de estados de borde a energía cero al imponer condiciones de borde abiertas.
+El cambio en la fase de Zak al variar el parámetro $\delta$  se conoce como \textit{transición topológica} puesto que no es posible pasar de un régimen a otro de forma suave. Esto tiene implicancias en el sistema con condiciones de borde abiertas (Dirichlet) debido a la \textit{correspondencia bulto-borde} \cite{topobulk}. En concreto, así como se ilustra en la Figura \ref{fig:ssh-open}, la topología del Hamiltoniano $\hat{H}(k)$ induce la aparición de estados de borde a energía cero al imponer condiciones de borde abiertas.
 El Hamiltoniano del modelo SSH presenta diversas simetrías: de reversión temporal, de inversión, partícula-hueco, traslacional y quiral. Esta última es de particular relevancia, pues los estados de borde del modelo SSH están \textit{topológicamente protegidos} ante cualquier desorden que respete la simetría quiral \cite{ssh-course}. El operador quiral en cuestión es la matriz de Pauli $\sigma_z$, pues 
 \begin{align*}
-	\sigma_z H(k) \sigma_z^\dagger &=  -\cancelto{1}{\sigma_z^2} \left(d_x \sigma_x  + d_y \sigma_y\right)  =- H(k) \ .
+	\left\{\hat{H}(k), \sigma_z \right\} = \left\{d_x \sigma_x + d_y\sigma_y , \sigma_z \right\} = d_x \cancelto{0}{\left\{\sigma_x, \sigma_z \right\}} + d_y \cancelto{0}{\{\sigma_y, \sigma_z\}} = 0 \ .
 \end{align*}
 \begin{figure}[h]
 	\centering

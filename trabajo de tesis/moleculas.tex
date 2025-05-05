@@ -22,13 +22,13 @@ Si bien las constantes de propagación de los modos $S$ y $P$ en una misma molé
 
 \section{Moléculas Fotónicas en Red SP-SSH}
 
-Para la implementación experimental (sección \ref{cap:fs}) de una red que presente acoplamiento SP \citep{interorbital, toporusos, SPSSH}, se utilizaron los modos $P$ horizontales de la sección anterior, obtenidos mediante moléculas fotónicas. Un preciso sintonizado de las constantes de propagación de los modos $S$ y $P$ permitió considerar un grado de libertad análogo al del espín del electrón (\textit{pseudoespín}). El Hamiltoniano $H$ de esta red \citep{SPSSH} e ilustrado en la Figura \ref{fig:sp-ssh-model} es el siguiente:
+Para la implementación experimental (sección \ref{cap:fs}) de una red que presente acoplamiento SP \citep{interorbital, toporusos, SPSSH}, se utilizaron los modos $P$ horizontales de la sección anterior, obtenidos mediante moléculas fotónicas. Un preciso sintonizado de las constantes de propagación de los modos $S$ ($k_z^S$) y $P$ ($k_z^P$) permitió considerar un grado de libertad análogo al del espín del electrón (\textit{pseudoespín}). El Hamiltoniano $H$ de esta red \citep{SPSSH} e ilustrado en la Figura \ref{fig:sp-ssh-model} es el siguiente:
 \begin{align*}
-	H &= \sum_n \left[\frac{\delta\beta}{2} \left( b^*_{n, 1} b_{n, 1} - a^*_{n, 1} a_{n, 1} + b^*_{n, 2} b_{n, 2} - a^*_{n, 2} a_{n, 2} \right) +\varkappa_{ss, 2}a^*_{n, 2} a_{n, 1} -\varkappa_{pp, 2}b^*_{n, 2} b_{n, 1} \right. 
+	H &= \sum_n \left[\frac{\delta\beta}{2} \left( p^*_{n, 1} p_{n, 1} - s^*_{n, 1} s_{n, 1} + p^*_{n, 2} p_{n, 2} - s^*_{n, 2} s_{n, 2} \right) +\varkappa_{ss, 2}s^*_{n, 2} s_{n, 1} -\varkappa_{pp, 2}p^*_{n, 2} p_{n, 1} \right. 
 	\\	
-	&+ \varkappa_{ss, 1} \left( a_{n-1, 2}^*a_{n, 1} + a_{n+1, 2}^*a_{n, 2} \right) - \varkappa_{pp, 1} \left( b_{n-1, 2}^*b_{n, 1} + b_{n+1, 2}^*b_{n, 2} \right) + \varkappa_{sp, 2} \left( a_{n, 2}^* b_{n, 1} - b_{n, 2}^* a_{n, 1} \right)
+	&+ \varkappa_{ss, 1} \left( s_{n-1, 2}^*s_{n, 1} + s_{n+1, 2}^*s_{n, 2} \right) - \varkappa_{pp, 1} \left( p_{n-1, 2}^*p_{n, 1} + p_{n+1, 2}^*p_{n, 2} \right) + \varkappa_{sp, 2} \left( a_{n, 2}^* p_{n, 1} - p_{n, 2}^* a_{n, 1} \right)
 	\\
-	&+ \left. \varkappa_{sp, 1} \left( a_{n-1, 2}^* b_{n, 1} - b_{n-1, 2}^* a_{n, 1} + a_{n+1, 1}^*b_{n, 2} - b_{n+1, 1}^* a_{n, 2} \right) \right] + c.c. \ .
+	&+ \left. \varkappa_{sp, 1} \left( s_{n-1, 2}^* p_{n, 1} - p_{n-1, 2}^* s_{n, 1} + s_{n+1, 1}^*p_{n, 2} - p_{n+1, 1}^* s_{n, 2} \right) \right] + c.c. \ .
 \end{align*}
 
 \begin{figure}[H]
@@ -36,21 +36,30 @@ Para la implementación experimental (sección \ref{cap:fs}) de una red que pres
 	\includegraphics[width=0.7\linewidth]{media/ssh_sp_model}
 	\caption{Esquema de la red SP-SSH y los acoplamientos considerados. \label{fig:sp-ssh-model}}
 \end{figure}
+Si se elige la base $\textbf{v}^n = \left( s_1^n, p_1^n, s_2^n, p_2^n \right)^T$, el Hamiltoniano de Bloch se puede escribir en bloques como:
+\begin{equation*}
+	\hat{H}(k) = \begin{pmatrix}
+		\hat{\beta} & e^{-ikx} \hat{\varkappa}_{1-} +  \hat{\varkappa}_{2+}
+		\\
+		e^{ikx} \hat{\varkappa}_{1+} +  \hat{\varkappa}_{2-} & \hat{\beta}
+	\end{pmatrix} \ , 
+\end{equation*}
+donde $\hat{\beta} = \frac{k_z^S - k_z^P}{2} \hat{\sigma}_z$ y $\hat{\varkappa}_{i\pm} = \begin{pmatrix}
+	\varkappa_{ss, i} & \pm\varkappa_{sp, i}
+	\\
+	\mp\varkappa_{sp, i} & - \varkappa_{pp, i}
+\end{pmatrix}$.
 
-
-
-
-
-\section{Caracterización Topológica de la Red SP-SSH}
-El modelo SP-SSH permite explorar nuevas fases topológicas más allá del modelo SSH convencional, ya que incorpora dos orbitales (modos $S$ y $P$) cuyas combinaciones lineales pueden interpretarse como un pseudoespín. La presencia de términos tipo espín-órbita ($\varkappa_{sp}$), junto con diferencias en las constantes de propagación ($\delta \beta$), genera un diagrama de fases topológicas no trivial, como se observa en la Figura~\ref{fig:sp-ssh-phase-diagram}.
+\section{Topología en la Red SP-SSH}
+El modelo SP-SSH permite explorar nuevas fases topológicas más allá del modelo SSH convencional, ya que incorpora dos orbitales (modos $S$ y $P$) cuyas combinaciones lineales pueden interpretarse como un pseudoespín. Genera un diagrama de fases topológicas no trivial, como se observa en la Figura~\ref{fig:sp-ssh-phase-diagram}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\linewidth]{media/sp-ssh-phase-diagram.png }
-	\caption{Diagrama de fase. \label{fig:sp-ssh-phase-diagram}}
+	\caption{Diagrama de fases topológicas. \label{fig:sp-ssh-phase-diagram}}
 \end{figure}
 
-La topología de estas fases puede caracterizarse mediante el cálculo de los bucles de Wilson (ver Figura~\ref{fig:sp-wilson}). Estos bucles son una generalización de lo mostrado en la Figura \ref{fig:ssh-topo} relativo a la fase que toma el vector $\textbf{d}(k)$.
+La topología de estas fases se hace evidente al graficar en el plano complejo el determinante de $\hat{h}$  (ver Figura~\ref{fig:sp-wilson}). Estos bucles son una generalización de lo mostrado en la Figura \ref{fig:ssh-topo} relativo al ángulo que forma la proyección en el plano $xy$ del vector $\textbf{d}(k)$.
 
 \begin{figure}[H]
 	\centering
@@ -62,4 +71,4 @@ En particular, la red SP-SSH presenta dos mecanismos topológicos: Uno debido a 
 
 \section{Implementación Experimental}
 
-Para llevar a cabo la implementación experimental del modelo SP-SSH, se fabricó una red de guías de onda usando la técnica de escritura femtosegundo descrita en el Capítulo~\ref{cap:fs}, ajustando las separaciones y contrastes de índice para lograr los acoplamientos deseados ($\varkappa_{ss},\varkappa_{pp},\varkappa_{sp}$).
+Para llevar a cabo la implementación experimental del modelo SP-SSH, se fabricó una red de guías de onda usando la técnica de escritura femtosegundo descrita en el Capítulo~\ref{cap:fs}, ajustando las separaciones y contrastes de índice para lograr los acoplamientos $\varkappa_{ss}$, $\varkappa_{pp}$, $\varkappa_{sp}$ deseados, y $k_z^S \sim k_z^P$ para $\lambda=730$ nm.
