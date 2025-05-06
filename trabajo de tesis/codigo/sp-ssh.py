@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 from matplotlib.widgets import Slider, Button
 
 # Initialize all parameters
-init_Delta = 1.0
-init_kappa_sp1 = 0.5
+init_Delta = 0.5
+init_kappa_sp1 = 1.0
 init_kappa_sp2 = 1.0
-init_kappa_ss1 = 0.2
-init_kappa_ss2 = 0.2
-init_kappa_pp1 = 0.2
-init_kappa_pp2 = 0.2
+init_kappa_ss1 = 0.5
+init_kappa_ss2 = 1.0
+init_kappa_pp1 = 2.0
+init_kappa_pp2 = 2.0
 
 # Create the figure and subplots
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
@@ -21,30 +21,33 @@ k = np.linspace(-np.pi, np.pi, 200)
 # Calculate d-vector and energy (now including all kappa terms)
 def calculate_d_and_energy(k, Delta, kappa_sp1, kappa_sp2, kappa_ss1, kappa_ss2, kappa_pp1, kappa_pp2):
     # d_x(k) = Δ (constant)
-    dx = Delta * np.ones_like(k)
+    k_mat_1_minus = np.array([[kappa_ss1, -kappa_sp1], [kappa_sp1, -kappa_pp1]])
+    k_mat_2_plus = np.array([[kappa_ss2, kappa_sp2], [-kappa_sp2, -kappa_pp2]])
+    h_mat = np.exp(-1j * k[:, np.newaxis, np.newaxis]) * k_mat_1_minus + k_mat_2_plus
+    det_h = np.linalg.det(h_mat)
+    dx = np.real(det_h)
     
     # d_z(k) = -κ_{sp,1} e^{-ik} + κ_{sp,2} (real part)
-    dz = -kappa_sp1 * np.cos(k) + kappa_sp2
-    
-    # d_0(k) = (κ_{ss,1} - κ_{pp,1})/2 e^{-ik} + (κ_{ss,2} - κ_{pp,2})/2 (optional energy offset)
-    d0 = (kappa_ss1 - kappa_pp1)/2 * np.cos(k) + (kappa_ss2 - kappa_pp2)/2
+    dz = np.imag(det_h)
     
     # Energy = ±sqrt(dx² + dz²) (ignoring d0 for simplicity)
-    E = np.sqrt(dx**2 + dz**2)
-    return dx, dz, E, d0
+    E = np.sqrt(dx.real**2 + dz.imag**2)
+    return dx, dz, E
 
 # Initial calculation
-dx, dz, E, _ = calculate_d_and_energy(k, init_Delta, init_kappa_sp1, init_kappa_sp2, 
+dx, dz, E = calculate_d_and_energy(k, init_Delta, init_kappa_sp1, init_kappa_sp2, 
                                     init_kappa_ss1, init_kappa_ss2, init_kappa_pp1, init_kappa_pp2)
 
 # Plot initial d-vector trajectory
 scatter = ax1.scatter(dx, dz, c=np.arctan2(dz, dx), s=10, cmap='hsv', vmin=-np.pi, vmax=np.pi)
 ax1.scatter(0, 0, c='black', s=30, zorder=3)
-ax1.set_xlabel('$d_x$', fontsize=12)
-ax1.set_ylabel('$d_z$', fontsize=12)
+ax1.set_xlabel('Re[Det[$\hat{h}$]]', fontsize=12)
+ax1.set_ylabel('Im[Det[$\hat{h}$]]', fontsize=12)
 ax1.set_title('$\mathbf{d}(k)$ trajectory', fontsize=14)
 ax1.grid(True)
-ax1.set_aspect('equal')
+# # ax1.set_aspect('equal')
+# ax1.set_xlim(-2, 2)
+# ax1.set_ylim(-2, 2)
 
 # Plot initial energy bands
 line_upper, = ax2.plot(k, E, 'r-', lw=2, label='$E_+(k)$')
@@ -63,29 +66,29 @@ slider_height = 0.03
 slider_spacing = 0.04
 
 ax_Delta = plt.axes([0.25, slider_y_pos, 0.65, slider_height])
-Delta_slider = Slider(ax=ax_Delta, label='$\Delta$', valmin=0, valmax=2, valinit=init_Delta, valstep=0.1)
+Delta_slider = Slider(ax=ax_Delta, label='$\Delta$', valmin=0, valmax=6, valinit=init_Delta, valstep=0.1)
 
 ax_kappa_sp1 = plt.axes([0.25, slider_y_pos - slider_spacing, 0.65, slider_height])
-kappa_sp1_slider = Slider(ax=ax_kappa_sp1, label='$\kappa_{sp,1}$', valmin=0, valmax=2, valinit=init_kappa_sp1, valstep=0.1)
+kappa_sp1_slider = Slider(ax=ax_kappa_sp1, label='$\kappa_{sp,1}$', valmin=0, valmax=3, valinit=init_kappa_sp1, valstep=0.1)
 
 ax_kappa_sp2 = plt.axes([0.25, slider_y_pos - 2*slider_spacing, 0.65, slider_height])
-kappa_sp2_slider = Slider(ax=ax_kappa_sp2, label='$\kappa_{sp,2}$', valmin=0, valmax=2, valinit=init_kappa_sp2, valstep=0.1)
+kappa_sp2_slider = Slider(ax=ax_kappa_sp2, label='$\kappa_{sp,2}$', valmin=0, valmax=3, valinit=init_kappa_sp2, valstep=0.1)
 
 ax_kappa_ss1 = plt.axes([0.25, slider_y_pos - 3*slider_spacing, 0.65, slider_height])
-kappa_ss1_slider = Slider(ax=ax_kappa_ss1, label='$\kappa_{ss,1}$', valmin=-1, valmax=1, valinit=init_kappa_ss1, valstep=0.1)
-
-ax_kappa_pp1 = plt.axes([0.25, slider_y_pos - 4*slider_spacing, 0.65, slider_height])
-kappa_pp1_slider = Slider(ax=ax_kappa_pp1, label='$\kappa_{pp,1}$', valmin=-1, valmax=1, valinit=init_kappa_pp1, valstep=0.1)
+kappa_ss1_slider = Slider(ax=ax_kappa_ss1, label='$\kappa_{ss,1}$', valmin=0, valmax=3, valinit=init_kappa_ss1, valstep=0.1)
 
 ax_kappa_ss2 = plt.axes([0.25, slider_y_pos - 5*slider_spacing, 0.65, slider_height])
-kappa_ss2_slider = Slider(ax=ax_kappa_ss2, label='$\kappa_{ss,2}$', valmin=-1, valmax=1, valinit=init_kappa_ss2, valstep=0.1)
+kappa_ss2_slider = Slider(ax=ax_kappa_ss2, label='$\kappa_{ss,2}$', valmin=0, valmax=3, valinit=init_kappa_ss2, valstep=0.1)
+
+ax_kappa_pp1 = plt.axes([0.25, slider_y_pos - 4*slider_spacing, 0.65, slider_height])
+kappa_pp1_slider = Slider(ax=ax_kappa_pp1, label='$\kappa_{pp,1}$', valmin=0, valmax=3, valinit=init_kappa_pp1, valstep=0.1)
 
 ax_kappa_pp2 = plt.axes([0.25, slider_y_pos - 6*slider_spacing, 0.65, slider_height])
-kappa_pp2_slider = Slider(ax=ax_kappa_pp2, label='$\kappa_{pp,2}$', valmin=-1, valmax=1, valinit=init_kappa_pp2, valstep=0.1)
+kappa_pp2_slider = Slider(ax=ax_kappa_pp2, label='$\kappa_{pp,2}$', valmin=0, valmax=3, valinit=init_kappa_pp2, valstep=0.1)
 
 # Update function (now includes all parameters)
 def update(val):
-    dx, dz, E, _ = calculate_d_and_energy(
+    dx, dz, E = calculate_d_and_energy(
         k, 
         Delta_slider.val, 
         kappa_sp1_slider.val, 
