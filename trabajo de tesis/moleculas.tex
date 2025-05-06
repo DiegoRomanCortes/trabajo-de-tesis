@@ -40,46 +40,45 @@ Si se elige la base $\mathbf{v}^n = \left( s_1^n, p_1^n, s_2^n, p_2^n \right)^T$
 	\hat{H}(k) = \begin{pmatrix}
 		\hat{\beta} & e^{-ika} \hat{\varkappa}_{1-} + \hat{\varkappa}_{2+} \\
 		e^{ika} \hat{\varkappa}_{1+} + \hat{\varkappa}_{2-} & \hat{\beta}
-	\end{pmatrix},
+	\end{pmatrix} \ ,
 \end{equation*}
 donde $\hat{\beta} = \frac{k_z^S - k_z^P}{2} \hat{\sigma}_z$ y $\hat{\varkappa}_{i\pm} = \begin{pmatrix}
 	\varkappa_{ss, i} & \pm\varkappa_{sp, i} \\
 	\mp\varkappa_{sp, i} & - \varkappa_{pp, i}
-\end{pmatrix}$.
+\end{pmatrix} \ .$
 
 \section{Topología en la Red SP-SSH}
-El modelo SP-SSH permite explorar nuevas fases topológicas más allá del modelo SSH convencional, ya que incorpora dos orbitales (modos $S$ y $P$) cuyas combinaciones lineales pueden interpretarse como un pseudoespín. Genera un diagrama de fases topológicas no trivial, como se observa en la Figura~\ref{fig:sp-ssh-phase-diagram}. Al aplicar la transformación unitaria 
+El modelo SP-SSH permite explorar nuevas fases topológicas más allá del modelo SSH convencional, ya que incorpora dos orbitales (modos $S$ y $P$) cuyas combinaciones lineales pueden interpretarse como un pseudoespín. Al aplicar la transformación unitaria 
 \begin{equation*}
 	\hat{U} = \frac{1}{\sqrt{2}}\begin{pmatrix}
 		1 & 1 & 0 & 0 \\
 		0 & 0 & 1 & -1 \\
 		1 & -1 & 0 & 0 \\
 		0 & 0 & 1 & 1
-	\end{pmatrix},
+	\end{pmatrix} \ ,
 \end{equation*} 
 se hace más evidente cómo interpretar el sistema. En particular, para $\Delta\beta = 0$ y $\varkappa_{ss,1}=\varkappa_{pp,1}$ se tiene 
 \begin{equation*}
 	\hat{H} = \begin{pmatrix}
 		\hat{H}_+ & 0 \\
 		0 & \hat{H}_-
-	\end{pmatrix},
+	\end{pmatrix} \ ,
 \end{equation*} 
 con
 \begin{equation*}
 	\hat{H}_\pm = \begin{pmatrix}
 		0 & e^{-ika}(\varkappa_{ss,1}\mp \varkappa_{sp,1}) + (\varkappa_{ss,2}\pm \varkappa_{sp,2}) \\
 		e^{ika}(\varkappa_{ss,1}\mp \varkappa_{sp,1}) + (\varkappa_{ss,2}\pm \varkappa_{sp,2}) & 0
-	\end{pmatrix}.
+	\end{pmatrix} \ .
 \end{equation*}
-Es decir, se tienen dos subsistemas tipo SSH, con acoplamiento intercelda (intracelda) $\varkappa_{ss,1}\mp \varkappa_{sp,1}$ ($\varkappa_{ss,2}\pm \varkappa_{sp,2}$). En el caso $\varkappa_{ss,1}\neq\varkappa_{pp,1}$ aún es posible capturar la topología mediante el determinante de $\hat{h}=e^{-ika}\hat{\varkappa}_{1-} + \hat{\varkappa}_{2+}$ (ver Figura~\ref{fig:sp-wilson}). Al graficar en el plano complejo se puede contar el número de vueltas (\textit{winding number}) en torno al origen al barrer todos los cuasimomentos en la primera zona de Brillouin. Estos bucles son una generalización de lo mostrado en la Figura~\ref{fig:ssh-topo} relativo al ángulo que forma la proyección en el plano $xy$ del vector $\mathbf{d}(k)$.
+Es decir, se tienen dos subsistemas tipo SSH, con acoplamiento intercelda (intracelda) $\varkappa_{ss,1}\mp \varkappa_{sp,1}$ ($\varkappa_{ss,2}\pm \varkappa_{sp,2}$). En el caso $\varkappa_{ss,1}\neq\varkappa_{pp,1}$ aún es posible capturar la topología mediante el determinante de $\hat{h}=e^{-ika}\hat{\varkappa}_{1-} + \hat{\varkappa}_{2+}$ (ver Figura~\ref{fig:sp-wilson}) ya que en el plano complejo se puede contar el número de vueltas (\textit{winding number}) en torno al origen al barrer todos los cuasimomentos en la primera zona de Brillouin. Estos bucles son una generalización de lo mostrado en la Figura~\ref{fig:ssh-topo} relativo al ángulo que forma la proyección en el plano $xy$ del vector $\mathbf{d}(k)$.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{media/ssh-sp-winding-number.png}
-	\caption{Determinante de la matriz-bloque no diagonal $\hat{h}$. \label{fig:sp-wilson}}
+	\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-0.png}\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-1.png}\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-2.png}
+	\caption{Determinante de la matriz-bloque $\hat{h}$ para los cuasimomentos $-\frac{\pi}{a} \le k  < \frac{\pi}{a}$. Se aprecian exactamente tres fases topológicas distintas. \label{fig:sp-wilson}}
 \end{figure}
-
-Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$), basta con variar $\Delta \beta$ y observar cuando hay cierre de brecha en las bandas.
+Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$), basta con variar $\Delta \beta$ y observar cuando hay cierre de brecha en las bandas, como se observa en la Figura~\ref{fig:sp-ssh-phase-diagram}.  La red SP-SSH presenta dos mecanismos topológicos: uno debido a la hibridización SP y otro debido a la dimerización.
 
 \begin{figure}[H]
 	\centering
@@ -87,8 +86,8 @@ Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$
 	\caption{Diagrama de fases topológicas. \label{fig:sp-ssh-phase-diagram}}
 \end{figure}
 
-La red SP-SSH presenta dos mecanismos topológicos: uno debido a la hibridización SP y otro debido a la dimerización, lo que da origen a un máximo de 4 estados de borde.
+
 
 \section{Implementación Experimental}
 
-Para llevar a cabo la implementación experimental del modelo SP-SSH, se fabricó una red de guías de onda usando la técnica de escritura femtosegundo descrita en el Capítulo~\ref{cap:fs}, ajustando las separaciones y contrastes de índice para lograr los acoplamientos $\varkappa_{ss}$, $\varkappa_{pp}$, $\varkappa_{sp}$ deseados, y $k_z^S \sim k_z^P$ para $\lambda=730$ nm.
+Para llevar a cabo la implementación experimental del modelo SP-SSH, se fabricó un total de 25 redes fotónicas usando la técnica de escritura con láser femtosegundo descrita en el Capítulo~\ref{cap:fs}, ajustando tanto las separaciones entre guías ($dx_1$, $dx_2$, $dy$) y moléculas ($dx_0$) como los contrastes de índice para lograr los acoplamientos $\varkappa_{ss}$, $\varkappa_{pp}$, $\varkappa_{sp}$ deseados, y la degeneración de los modos $S$ y $P$ ($k_z^S \sim k_z^P$) para $\lambda=730$ nm, aunque la medición fue realizada con la técnica de barrido en longitud de onda (Capítulo \ref{cap:wavelength}) entre 700 y 780 nm, con un paso de 5 nm. Se excitó la guía $S$ de un borde y se comparó la potencia del modo $S$ excitado con respecto a la potencia total del sistema.
