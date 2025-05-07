@@ -31,7 +31,7 @@ Para la implementación experimental (Sección~\ref{cap:fs}) de una red que pres
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{media/ssh_sp_model}
+	\includegraphics[width=0.8\linewidth]{media/ssh_sp_model}
 	\caption{Esquema de la red SP-SSH y los acoplamientos considerados. \label{fig:sp-ssh-model}}
 \end{figure}
 
@@ -75,14 +75,14 @@ Es decir, se tienen dos subsistemas tipo SSH, con acoplamiento intercelda (intra
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-0.png}\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-1.png}\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-2.png}
+	\includegraphics[width=\linewidth]{media/sp-ssh-012.png}
 	\caption[Topología de la Red SP-SSH para $\Delta\beta = 0$.]{Topología de la Red SP-SSH para $\Delta\beta = 0$. Determinante de la matriz-bloque $\hat{h}$ para los cuasimomentos $-\frac{\pi}{a} \le k  < \frac{\pi}{a}$. Se aprecian exactamente tres fases topológicas distintas. \label{fig:sp-wilson}}
 \end{figure}
 Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$), basta con variar $\Delta \beta$ y observar cuando hay cierre de brecha en las bandas, como se observa en la Figura~\ref{fig:sp-ssh-phase-diagram}.  La red SP-SSH presenta dos mecanismos topológicos: uno debido a la hibridización SP y otro debido a la dimerización.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{media/sp-ssh-phase-diagram.png}
+	\includegraphics[width=0.4\linewidth]{media/sp-ssh-phase-diagram.png}
 	\caption{Diagrama de fases topológicas. \label{fig:sp-ssh-phase-diagram}}
 \end{figure}
 
@@ -90,17 +90,25 @@ Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$
 
 \section{Implementación Experimental}
 
-Para llevar a cabo la implementación experimental del modelo SP-SSH, se fabricó un total de 25 redes fotónicas usando la técnica de escritura con láser femtosegundo descrita en el Capítulo~\ref{cap:fs}, ajustando tanto las separaciones entre guías ($dx_1$, $dx_2=25 \ \mu$m, $dy=20 \ \mu$m) y moléculas ($dx_0=7 \ \mu$m) como los contrastes de índice para lograr los acoplamientos $\varkappa_{ss}$, $\varkappa_{pp}$, $\varkappa_{sp}$ deseados, y la degeneración de los modos $S$ y $P$ ($k_z^S \sim k_z^P$) para $\lambda=730$ nm, aunque la medición fue realizada con la técnica de barrido en longitud de onda (Capítulo \ref{cap:wavelength}) entre 700 y 780 nm, con un paso de 5 nm. La Figura \ref{fig:sp-ssh-exp} muestra resultados representativos del análisis y comparación numérico-experimental posteriormente realizada. 
-Se excitó la guía $S$ de un extremo de la red y se comparó la potencia del modo $S$ excitado con respecto al total del sistema.
+Para implementar experimentalmente el modelo SP-SSH, se fabricaron 25 redes fotónicas mediante la técnica de escritura con láser femtosegundo descrita en el Capítulo~\ref{cap:fs}. Los parámetros geométricos se ajustaron con separaciones entre moléculas: $dx_1$ variable, $dx_2 = 25$ $\mu$m, $dy = 20$ $\mu$m y entre guías: $dx_0 = 7$ $\mu$m. Se optimizaron los contrastes de índice de refracción para lograr degeneración de modos: $k_z^S \sim k_z^P$ en $\lambda = 730$ nm \cite{interorbital}.
+
+Las mediciones se realizaron mediante barrido de longitud de onda (Capítulo~\ref{cap:wavelength}) con $\lambda \in$ 700 - 780 nm y paso de 5 nm. La excitación se aplicó a la guía $S$ en un extremo de la red, midiendo la potencia relativa en el mismo extremo ($I_{\text{edge}}/I_{\text{total}}$). Aunque inicialmente no se distinguen claramente las fases topológicas con polarización de bulto $P_\Sigma=1/2$ o $P_\Sigma=1$, el análisis numérico revela que durante la segunda transición topológica la razón $I_{\text{edge}}/I_{\text{total}}$ debería formar una meseta. La Figura~\ref{fig:sp-ssh-num} confirma este comportamiento, mientras que la Figura~\ref{fig:sp-ssh-exp} muestra resultados experimentales representativos: Uno para una $\lambda =$ 680 nm, donde sólo se aprecia topología por dimerización y otro para $\lambda =$ 725 nm, donde ocurre una doble transición topológica al cambiar la dimerización.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{media/sp-ssh-exp.png}
-	\caption[Imágenes experimentales al excitar el modo S extremo.]{Imágenes experimentales al excitar la guía inferior del extremo derecho. \textbf{Izquierda:} Red SP-SSH homogénea ($dx_1 = dx_2$) variando la longitud de onda de excitación. \textbf{Derecha:} Arriba (Abajo): Excitación de la guía inferior del extremo izquierdo en redes SP-SSH con distinta dimerización para longitud de onda 680 nm (725 nm).  \label{fig:sp-ssh-exp}}
+	\includegraphics[width=0.9\linewidth]{media/sp-ssh-exp-num.png}
+	\caption[Análisis numérico-experimental del modelo SP-SSH]{
+		\textbf{Izquierda:} Resultados numéricos mostrando la meseta característica. 
+		\textbf{Derecha:} Comparación cuantitativa entre datos experimentales y simulaciones.
+		\label{fig:sp-ssh-num}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\linewidth]{media/sp-ssh-exp-num.png}
-	\caption{Análisis de los datos experimentales. \label{fig:sp-ssh-num}}
+	\includegraphics[width=\linewidth]{media/sp-ssh-exp.png}
+	\caption[Caracterización experimental de redes SP-SSH]{
+		\textbf{Izquierda:} Red SP-SSH homogénea ($dx_1 = dx_2$) para diferentes longitudes de onda. 
+		\textbf{Derecha:} Arriba: Excitación en 680 nm para distintas dimerizaciones. 
+		Abajo: Misma excitación en 725 nm.
+		\label{fig:sp-ssh-exp}}
 \end{figure}

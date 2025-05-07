@@ -515,7 +515,7 @@ El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en 
 
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $z$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $D_{ij}$ tal que $D_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) $, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
+Si la estructura de guías de onda no varía en la dirección $\hat{\textbf{z}}$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $D_{ij}$ tal que $D_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) $, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
 \begin{align}
 	\begin{pmatrix}
 	\nabla_\perp^2  + k_0^2n^2 + D_{xx} & D_{xy} 
@@ -606,11 +606,11 @@ donde se ha usado que los campos deben decaer a cero en el infinito. Las ecuacio
 \begin{equation}
 	L = -\sum_{ij}  a_i^*\left(i  P_{ij} \frac{d }{dz} + H_{ij}  \right)a_j \ .
 \end{equation}
-Los momentos generalizados de este Lagrangiano son $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = -i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano $H$ asociado es
+Los momentos generalizados de este Lagrangiano son $\Pi_k=\frac{\partial L}{\partial \dot{a_k}} = -i\sum_{j} a_j^* P_{jk}$, por lo que el Hamiltoniano $H$ asociado es:
 \begin{equation}
 H = \sum_{j} \Pi_j \dot{a_j} - L = \sum_{ij} -ia_i^* P_{ij} \dot{a_j} + a_i^*\left(i  P_{ij} \frac{d a_j}{dz} + H_{ij} a_j \right) = \sum_{ij} a_i^* H_{ij} a_j \ .
 \end{equation}
-Al variar el Lagrangiano se tiene:
+Dado que el Lagrangiano no depende explícitamtente de $z$, el Hamiltoniano $H$ es una cantidad conservada. Al variar el Lagrangiano se tiene:
 \begin{align*}
 	\delta L &= \sum_{ij} \frac{\partial L}{\partial a_j} \delta a_{j} +  \frac{\partial L}{\partial {a}_{i}^*} \delta {a}_{i}^* + \ \frac{\partial L}{\partial \dot{a}_{j}} \delta \dot{a}_{j} + \frac{\partial L}{\partial \dot{{a}}_{i}^*} \delta \dot{{a}}_{i}^*
 	\\

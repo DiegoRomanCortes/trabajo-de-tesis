@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  7 MAY 2025 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.1.12)  7 MAY 2025 16:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1391,18 +1391,18 @@ File: media/SC_setup.png Graphic file (type png)
 Package pdftex.def Info: media/SC_setup.png  used on input line 30.
 (pdftex.def)             Requested size: 472.03123pt x 174.63484pt.
  [24 <./media/SC_setup.png>]
-<media/SLMblaze4.png, id=743, 963.6pt x 542.025pt>
+<media/SLMblaze4.png, id=744, 963.6pt x 542.025pt>
 File: media/SLMblaze4.png Graphic file (type png)
 <use media/SLMblaze4.png>
 Package pdftex.def Info: media/SLMblaze4.png  used on input line 48.
 (pdftex.def)             Requested size: 165.2138pt x 161.57301pt.
  [25 <./media/SLMblaze4.png>]
-<media/SLM_setupv1.png, id=753, 1927.2pt x 1084.05pt>
+<media/SLM_setupv1.png, id=754, 1927.2pt x 1084.05pt>
 File: media/SLM_setupv1.png Graphic file (type png)
 <use media/SLM_setupv1.png>
 Package pdftex.def Info: media/SLM_setupv1.png  used on input line 64.
 (pdftex.def)             Requested size: 472.03123pt x 333.833pt.
-<media/OAM-free.png, id=755, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=756, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package pdftex.def Info: media/OAM-free.png  used on input line 71.
@@ -1425,7 +1425,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<media/26um_15mm_angles_v2.png, id=769, 3327.43124pt x 1062.21844pt>
+<media/26um_15mm_angles_v2.png, id=770, 3327.43124pt x 1062.21844pt>
 File: media/26um_15mm_angles_v2.png Graphic file (type png)
 <use media/26um_15mm_angles_v2.png>
 Package pdftex.def Info: media/26um_15mm_angles_v2.png  used on input line 19.
@@ -1436,48 +1436,48 @@ Package pdftex.def Info: media/26um_15mm_angles_v2.png  used on input line 19.
 
 
  <./media/26um_15mm_angles_v2.png>]
-<codigo/eigenvalues_vs_angle.png, id=784, 277.87814pt x 194.04495pt>
+<codigo/eigenvalues_vs_angle.png, id=785, 277.87814pt x 194.04495pt>
 File: codigo/eigenvalues_vs_angle.png Graphic file (type png)
 <use codigo/eigenvalues_vs_angle.png>
 Package pdftex.def Info: codigo/eigenvalues_vs_angle.png  used on input line 27
 .
 (pdftex.def)             Requested size: 330.42041pt x 230.73572pt.
-<media/honeycomb_lattices_bw.png, id=789, 863.225pt x 201.75375pt>
+<media/honeycomb_lattices_bw.png, id=790, 863.225pt x 201.75375pt>
 File: media/honeycomb_lattices_bw.png Graphic file (type png)
 <use media/honeycomb_lattices_bw.png>
 Package pdftex.def Info: media/honeycomb_lattices_bw.png  used on input line 37
 .
 (pdftex.def)             Requested size: 472.03123pt x 110.32149pt.
  [29 <./codigo/eigenvalues_vs_angle.png> <./media/honeycomb_lattices_bw.png>]
-<media/honeycomb-lattice.png, id=800, 313.9228pt x 606.01407pt>
+<media/honeycomb-lattice.png, id=801, 313.9228pt x 606.01407pt>
 File: media/honeycomb-lattice.png Graphic file (type png)
 <use media/honeycomb-lattice.png>
 Package pdftex.def Info: media/honeycomb-lattice.png  used on input line 51.
 (pdftex.def)             Requested size: 118.0078pt x 227.8003pt.
-<codigo/NNNN_overlap_vs_angle.png, id=801, 325.64862pt x 311.77278pt>
+<codigo/NNNN_overlap_vs_angle.png, id=802, 325.64862pt x 311.77278pt>
 File: codigo/NNNN_overlap_vs_angle.png Graphic file (type png)
 <use codigo/NNNN_overlap_vs_angle.png>
 Package pdftex.def Info: codigo/NNNN_overlap_vs_angle.png  used on input line 5
 2.
 (pdftex.def)             Requested size: 259.6186pt x 248.57175pt.
-<codigo/honeycomb_eigenvalues_vs_angle.png, id=806, 241.23726pt x 193.97269pt>
+<codigo/honeycomb_eigenvalues_vs_angle.png, id=807, 241.23726pt x 193.97269pt>
 File: codigo/honeycomb_eigenvalues_vs_angle.png Graphic file (type png)
 <use codigo/honeycomb_eigenvalues_vs_angle.png>
 Package pdftex.def Info: codigo/honeycomb_eigenvalues_vs_angle.png  used on inp
 ut line 62.
 (pdftex.def)             Requested size: 212.41261pt x 170.7971pt.
-<media/ipr-corner-exp.png, id=807, 662.475pt x 432.11438pt>
+<media/ipr-corner-exp.png, id=808, 662.475pt x 432.11438pt>
 File: media/ipr-corner-exp.png Graphic file (type png)
 <use media/ipr-corner-exp.png>
 Package pdftex.def Info: media/ipr-corner-exp.png  used on input line 63.
 (pdftex.def)             Requested size: 236.01561pt x 153.94563pt.
  [30 <./media/honeycomb-lattice.png> <./codigo/NNNN_overlap_vs_angle.png>]
-<media/cuasi-ssh.png, id=817, 574.39594pt x 479.54156pt>
+<media/cuasi-ssh.png, id=818, 574.39594pt x 479.54156pt>
 File: media/cuasi-ssh.png Graphic file (type png)
 <use media/cuasi-ssh.png>
 Package pdftex.def Info: media/cuasi-ssh.png  used on input line 71.
 (pdftex.def)             Requested size: 236.01561pt x 197.0377pt.
-<media/ipr-bulk-exp.png, id=818, 717.43031pt x 606.01407pt>
+<media/ipr-bulk-exp.png, id=819, 717.43031pt x 606.01407pt>
 File: media/ipr-bulk-exp.png Graphic file (type png)
 <use media/ipr-bulk-exp.png>
 Package pdftex.def Info: media/ipr-bulk-exp.png  used on input line 72.
@@ -1488,13 +1488,13 @@ Package pdftex.def Info: media/ipr-bulk-exp.png  used on input line 72.
 
  (./moleculas.tex
 Cap\'{\i }tulo 6.
-<codigo/dimol2/eigenvalues_vs_angle_1.png, id=836, 262.3401pt x 194.04495pt>
+<codigo/dimol2/eigenvalues_vs_angle_1.png, id=837, 262.3401pt x 194.04495pt>
 File: codigo/dimol2/eigenvalues_vs_angle_1.png Graphic file (type png)
 <use codigo/dimol2/eigenvalues_vs_angle_1.png>
 Package pdftex.def Info: codigo/dimol2/eigenvalues_vs_angle_1.png  used on inpu
 t line 13.
 (pdftex.def)             Requested size: 217.13753pt x 160.61609pt.
-<codigo/dimol3/eigenvalues_vs_wavelength.png, id=837, 231.62535pt x 194.04495pt
+<codigo/dimol3/eigenvalues_vs_wavelength.png, id=838, 231.62535pt x 194.04495pt
 >
 File: codigo/dimol3/eigenvalues_vs_wavelength.png Graphic file (type png)
 <use codigo/dimol3/eigenvalues_vs_wavelength.png>
@@ -1508,56 +1508,46 @@ nput line 14.
 
  <./codigo/dimol2/eigenvalues_vs_angle_1.png> <./codigo/dimol3/eigenvalues_vs_w
 avelength.png>]
-<media/ssh_sp_model.png, id=852, 1015.54407pt x 460.72125pt>
+<media/ssh_sp_model.png, id=853, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
 Package pdftex.def Info: media/ssh_sp_model.png  used on input line 34.
-(pdftex.def)             Requested size: 330.42041pt x 149.90135pt.
+(pdftex.def)             Requested size: 377.62642pt x 171.31482pt.
  [34 <./media/ssh_sp_model.png (PNG copy)>]
-<media/sp-ssh-0.png, id=859, 578.16pt x 433.62pt>
-File: media/sp-ssh-0.png Graphic file (type png)
-<use media/sp-ssh-0.png>
-Package pdftex.def Info: media/sp-ssh-0.png  used on input line 78.
-(pdftex.def)             Requested size: 155.77116pt x 139.47055pt.
-<media/sp-ssh-1.png, id=861, 578.16pt x 433.62pt>
-File: media/sp-ssh-1.png Graphic file (type png)
-<use media/sp-ssh-1.png>
-Package pdftex.def Info: media/sp-ssh-1.png  used on input line 78.
-(pdftex.def)             Requested size: 155.77116pt x 139.47055pt.
-<media/sp-ssh-2.png, id=863, 578.16pt x 433.62pt>
-File: media/sp-ssh-2.png Graphic file (type png)
-<use media/sp-ssh-2.png>
-Package pdftex.def Info: media/sp-ssh-2.png  used on input line 78.
-(pdftex.def)             Requested size: 155.77116pt x 139.47055pt.
-<media/sp-ssh-phase-diagram.png, id=866, 686.565pt x 552.56438pt>
+<media/sp-ssh-012.png, id=860, 1099.85907pt x 357.58594pt>
+File: media/sp-ssh-012.png Graphic file (type png)
+<use media/sp-ssh-012.png>
+Package pdftex.def Info: media/sp-ssh-012.png  used on input line 78.
+(pdftex.def)             Requested size: 472.03123pt x 153.46431pt.
+<media/sp-ssh-phase-diagram.png, id=862, 686.565pt x 552.56438pt>
 File: media/sp-ssh-phase-diagram.png Graphic file (type png)
 <use media/sp-ssh-phase-diagram.png>
 Package pdftex.def Info: media/sp-ssh-phase-diagram.png  used on input line 85.
 
-(pdftex.def)             Requested size: 236.01561pt x 189.94353pt.
- [35 <./media/sp-ssh-0.png> <./media/sp-ssh-1.png> <./media/sp-ssh-2.png>]
-<media/sp-ssh-exp.png, id=882, 625.58719pt x 737.00343pt>
-File: media/sp-ssh-exp.png Graphic file (type png)
-<use media/sp-ssh-exp.png>
-Package pdftex.def Info: media/sp-ssh-exp.png  used on input line 98.
-(pdftex.def)             Requested size: 472.03123pt x 556.1137pt.
- [36 <./media/sp-ssh-phase-diagram.png>]
-<media/sp-ssh-exp-num.png, id=887, 999.735pt x 421.575pt>
+(pdftex.def)             Requested size: 188.8096pt x 151.95145pt.
+ [35 <./media/sp-ssh-012.png>]
+<media/sp-ssh-exp-num.png, id=875, 1193.96063pt x 421.575pt>
 File: media/sp-ssh-exp-num.png Graphic file (type png)
 <use media/sp-ssh-exp-num.png>
-Package pdftex.def Info: media/sp-ssh-exp-num.png  used on input line 104.
-(pdftex.def)             Requested size: 472.03123pt x 199.04729pt.
-) [37 <./media/sp-ssh-exp.png>] [38 <./media/sp-ssh-exp-num.png>]
+Package pdftex.def Info: media/sp-ssh-exp-num.png  used on input line 99.
+(pdftex.def)             Requested size: 424.82523pt x 149.99788pt.
+<media/sp-ssh-exp.png, id=876, 625.58719pt x 737.00343pt>
+File: media/sp-ssh-exp.png Graphic file (type png)
+<use media/sp-ssh-exp.png>
+Package pdftex.def Info: media/sp-ssh-exp.png  used on input line 108.
+(pdftex.def)             Requested size: 472.03123pt x 556.1137pt.
+) [36 <./media/sp-ssh-phase-diagram.png> <./media/sp-ssh-exp-num.png>] [37 <./m
+edia/sp-ssh-exp.png>]
 \openout2 = `conclu.aux'.
 
  (./conclu.tex
 Cap\'{\i }tulo 7.
-) [39
+) [38
 
 
 
 
-] (./main.bbl [40
+] (./main.bbl [39
 
 
 
@@ -1567,15 +1557,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--116
 suarios -[] aumentan -[] preferencia -[] por -[]
  []
 
-[41]
+[40]
 Underfull \hbox (badness 1024) in paragraph at lines 226--235
 []\OT1/txr/m/n/12 Sebabrata Mukher-jee, Ale-xan-der Sprac-klen, Ma-nuel Va-lien
 -te, Eri-ka An-ders-son, Pa-trik
  []
 
-[42] [43] [44]) (./anexoA.tex [45]
+[41] [42] [43]) (./anexoA.tex [44]
 Anexo A.
-) (./anexoB.tex [46
+) (./anexoB.tex [45
 
 ]
 Anexo B.
@@ -1585,9 +1575,9 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(./codigo/scalar-eme.py [47
+(./codigo/scalar-eme.py [46
 
-])) (./anexoC.tex [48]
+])) (./anexoC.tex [47]
 Anexo C.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1595,29 +1585,29 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-(./codigo/array1d.c [49
+(./codigo/array1d.c [48
 
-] [50] [51])) (./anexoD.tex [52]
+] [49] [50])) (./anexoD.tex [51]
 Anexo D.
-(./codigo/slm_blaze.py [53
+(./codigo/slm_blaze.py [52
 
-])) [54] (./main.aux
+])) [53] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux)
 (./numericos.aux) (./metodos.aux) (./magico.aux) (./moleculas.aux)
 (./conclu.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F1071BD0597BDCDEFEF59BC46CBE05FE;9969.
+(rerunfilecheck)             Checksum: 98D003D1B79050838250D52BF378AC62;9977.
  ) 
 Here is how much of TeX's memory you used:
- 40444 strings out of 476091
- 881628 string characters out of 5794081
+ 40430 strings out of 476091
+ 881342 string characters out of 5794081
  2301330 words of memory out of 5000000
- 59415 multiletter control sequences out of 15000+600000
+ 59404 multiletter control sequences out of 15000+600000
  574441 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,21n,103p,1426b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,21n,103p,1409b,2357s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1642,10 +1632,10 @@ lic/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (62 pages, 12432543 bytes).
+Output written on main.pdf (61 pages, 12598734 bytes).
 PDF statistics:
- 1679 PDF objects out of 1728 (max. 8388607)
- 1478 compressed objects within 15 object streams
- 632 named destinations out of 1000 (max. 500000)
- 580 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1668 PDF objects out of 1728 (max. 8388607)
+ 1475 compressed objects within 15 object streams
+ 631 named destinations out of 1000 (max. 500000)
+ 552 words of extra memory for PDF output out of 10000 (max. 10000000)
 
