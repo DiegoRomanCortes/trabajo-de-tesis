@@ -76,7 +76,7 @@ Es decir, se tienen dos subsistemas tipo SSH, con acoplamiento intercelda (intra
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-0.png}\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-1.png}\includegraphics[width=0.33\linewidth, trim={7cm 5cm 3cm 1cm},clip]{media/sp-ssh-2.png}
-	\caption{Determinante de la matriz-bloque $\hat{h}$ para los cuasimomentos $-\frac{\pi}{a} \le k  < \frac{\pi}{a}$. Se aprecian exactamente tres fases topológicas distintas. \label{fig:sp-wilson}}
+	\caption[Topología de la Red SP-SSH para $\Delta\beta = 0$.]{Topología de la Red SP-SSH para $\Delta\beta = 0$. Determinante de la matriz-bloque $\hat{h}$ para los cuasimomentos $-\frac{\pi}{a} \le k  < \frac{\pi}{a}$. Se aprecian exactamente tres fases topológicas distintas. \label{fig:sp-wilson}}
 \end{figure}
 Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$), basta con variar $\Delta \beta$ y observar cuando hay cierre de brecha en las bandas, como se observa en la Figura~\ref{fig:sp-ssh-phase-diagram}.  La red SP-SSH presenta dos mecanismos topológicos: uno debido a la hibridización SP y otro debido a la dimerización.
 
@@ -90,4 +90,17 @@ Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$
 
 \section{Implementación Experimental}
 
-Para llevar a cabo la implementación experimental del modelo SP-SSH, se fabricó un total de 25 redes fotónicas usando la técnica de escritura con láser femtosegundo descrita en el Capítulo~\ref{cap:fs}, ajustando tanto las separaciones entre guías ($dx_1$, $dx_2$, $dy$) y moléculas ($dx_0$) como los contrastes de índice para lograr los acoplamientos $\varkappa_{ss}$, $\varkappa_{pp}$, $\varkappa_{sp}$ deseados, y la degeneración de los modos $S$ y $P$ ($k_z^S \sim k_z^P$) para $\lambda=730$ nm, aunque la medición fue realizada con la técnica de barrido en longitud de onda (Capítulo \ref{cap:wavelength}) entre 700 y 780 nm, con un paso de 5 nm. Se excitó la guía $S$ de un borde y se comparó la potencia del modo $S$ excitado con respecto a la potencia total del sistema.
+Para llevar a cabo la implementación experimental del modelo SP-SSH, se fabricó un total de 25 redes fotónicas usando la técnica de escritura con láser femtosegundo descrita en el Capítulo~\ref{cap:fs}, ajustando tanto las separaciones entre guías ($dx_1$, $dx_2=25 \ \mu$m, $dy=20 \ \mu$m) y moléculas ($dx_0=7 \ \mu$m) como los contrastes de índice para lograr los acoplamientos $\varkappa_{ss}$, $\varkappa_{pp}$, $\varkappa_{sp}$ deseados, y la degeneración de los modos $S$ y $P$ ($k_z^S \sim k_z^P$) para $\lambda=730$ nm, aunque la medición fue realizada con la técnica de barrido en longitud de onda (Capítulo \ref{cap:wavelength}) entre 700 y 780 nm, con un paso de 5 nm. La Figura \ref{fig:sp-ssh-exp} muestra resultados representativos del análisis y comparación numérico-experimental posteriormente realizada. 
+Se excitó la guía $S$ de un extremo de la red y se comparó la potencia del modo $S$ excitado con respecto al total del sistema.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{media/sp-ssh-exp.png}
+	\caption[Imágenes experimentales al excitar el modo S extremo.]{Imágenes experimentales al excitar la guía inferior del extremo derecho. \textbf{Izquierda:} Red SP-SSH homogénea ($dx_1 = dx_2$) variando la longitud de onda de excitación. \textbf{Derecha:} Arriba (Abajo): Excitación de la guía inferior del extremo izquierdo en redes SP-SSH con distinta dimerización para longitud de onda 680 nm (725 nm).  \label{fig:sp-ssh-exp}}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{media/sp-ssh-exp-num.png}
+	\caption{Análisis de los datos experimentales. \label{fig:sp-ssh-num}}
+\end{figure}

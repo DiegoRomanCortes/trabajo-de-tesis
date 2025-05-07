@@ -28,7 +28,7 @@ Para la caracterización óptica se implementó un sistema de excitación basado
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth, trim={5cm 9cm 3cm 7cm},clip]{media/SC_setup}
-    \caption{Montaje de excitación por láser supercontinuo. Filtro: Modulador acústico e iris. HWP: Retardador de media onda.}
+    \caption[Montaje de excitación por láser supercontinuo.]{Montaje de excitación por láser supercontinuo. Filtro: Modulador acústico e iris. HWP: Retardador de media onda.}
 \end{figure}
 
 \section{Montaje de modulación espacial de luz}
@@ -64,7 +64,13 @@ Opcionalmente, se puede intervenir el montaje para superponer un interferómetro
     \includegraphics[width=\linewidth, trim={21cm 5cm 7cm 5cm},clip]{media/SLM_setupv1}
     \caption{Diagrama completo del sistema de modulación espacial.}
 \end{figure}
-
+\subsection{Generación de imágenes complejas}
+Una forma de verificar el control que se tiene en cuanto a la amplitud y la fase es mediante la generación de vórtices ópticos en el espacio libre, pues tienen bien definido su Momentum Angular Orbital (OAM). Se instaló un interferómetro Mach-Zehnder dentro del Cirucito Óptico. Para ello se deben agregar dos Beams Splitter extra: Uno entre el lente L1 y el modulador y otro entre el espejo M y la cámara. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{media/OAM-free.png}
+	\caption[Generación de OAMs e interferencia tipo Mach-Zehnder.]{Generación de OAMs e interferencia tipo Mach-Zehnder. Se aprecia la carga de los OAMs ($\ell$) contando la cantidad de espirales originados desde el centro. \label{fig:OAM}}
+\end{figure}
 \section{Análisis de imágenes \label{sec:analimag}}
 A partir de las imágenes capturadas es posible extraer información de la potencia que contiene cada sitio del sistema fotónico discreto en estudio. Para ello la imagen completa debe ser seccionada equispaciadamente en rectángulos que encierren las regiones donde existen guías de onda, iluminadas o no. La potencia de cada sitio será entonces la suma de la intensidad de cada píxel encerrado en su rectángulo respectivo.
 
