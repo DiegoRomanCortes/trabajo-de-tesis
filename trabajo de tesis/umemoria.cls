@@ -83,6 +83,8 @@
 \renewenvironment{itemize}{\olditem\setlength{\parskip}{\smallskipamount}}{\oldenditem}
 
 %% Entornos nuevos
+
+
 \newenvironment{abstract}{%
 \clearpage
 \if@en
@@ -92,9 +94,28 @@
 \fi
 }{\vfill\null}
 
+\newcommand{\abstractheader}{%
+	\hfill% Push content to right
+	\begin{minipage}[t]{0.65\textwidth}% Right-aligned box
+		\raggedright% Left-align text inside
+		RESUMEN DE LA TESIS PARA OPTAR \\ AL GRADO DE \MakeUppercase{\@tesisA},\\\MakeUppercase{\@tesisB}\\
+		POR: \MakeUppercase\@author\\
+		FECHA: 2025\\
+		PROF. GUÍA: \MakeUppercase\@guia
+	\end{minipage}
+}
+
 \newenvironment{resumen}{%
-\chapter*{Resumen}
-}{\vfill\null}
+	\clearpage% Start new page
+	\abstractheader% Place header
+	\vspace*{1cm}% Space below header
+	\begin{center}
+		\Large\bfseries \@title% Centered title
+	\end{center}
+	\vspace{1em}% Space after title
+	\noindent% Prevent paragraph indentation
+}{\vfill\null}% End with vertical fill
+%\makeatother
 
 \newenvironment{dedicatoria}{\clearpage\null\vspace{\stretch{1}}\begin{flushright}\itshape}{\end{flushright}\vspace{\stretch{2}}\null}
 \let\thanks\undefined
@@ -186,10 +207,25 @@
 \let\memoria\setmemoria
 \let\setmemoria\relax
 
+% Initialize variables
+%\makeatletter
+% Initialize variables
 \global\let\@tesis\@empty
-\newcommand{\settesis}[1]{\def\@tesis{#1}}
-\let\tesis\settesis
-\let\settesis\relax
+\def\@tesisA{} % First part
+\def\@tesisB{} % Second part
+
+% Main splitting mechanism
+\def\split@tesis#1,#2\@nil{%
+	\def\@tesisA{#1}%
+	\def\@tesisB{#2}%
+}
+
+% User command
+\newcommand{\tesis}[1]{%
+	\def\@tesis{#1}%
+	\expandafter\split@tesis\@tesis\@nil
+}
+%\makeatother
 
 \global\let\@cotutela\@empty
 \newcommand{\setcotutela}[1]{\def\@cotutela{#1}}
@@ -241,8 +277,11 @@
 			\MakeUppercase\@title
 
 		\vspace{1cm}
-		\if\@tesis\@empty\else
-			TESIS PARA OPTAR AL GRADO DE\\\MakeUppercase\@tesis
+		\ifx\@tesis\@empty\else
+		TESIS PARA OPTAR AL GRADO DE \MakeUppercase{\@tesisA},% <- Comma here
+		\ifx\@tesisB\@empty\else
+		\ \\\MakeUppercase{\@tesisB}% Space before B if exists
+		\fi
 			\if\@cotutela\@empty\else
 				\\\bigskip EN COTUTELA CON \MakeUppercase\@cotutela
 			\fi
@@ -251,7 +290,7 @@
 			\if\@tesis\@empty\else
 				\\\bigskip
 			\fi
-			 MEMORIA PARA OPTAR AL TÍTULO DE\\\MakeUppercase\@memoria
+			 MEMORIA PARA OPTAR AL TÍTULO DE \MakeUppercase\@memoria
 		\fi
 
 		\vspace{1cm}

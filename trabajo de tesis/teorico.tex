@@ -14,7 +14,7 @@ Las ecuaciones de Maxwell (SI) en este régimen son:
 	\\	
 	\nabla\times\textbf{H} &=\varepsilon(\textbf{r}) \frac{\partial \textbf{E}}{\partial t} \ , \label{eqn:ampere-maxwell}
 \end{align}
-donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda son invariantes en la dirección de propagación $z$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.48$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda. Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) se tiene:
+donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda son invariantes en la dirección de propagación $\hat{\textbf{z}}$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.48$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda. Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) se tiene:
 \begin{align}
 	\nabla\times\left(\frac{\nabla\times\textbf{E}}{i\omega\mu_0}\right) &= -i\omega \varepsilon_0 n^2 \textbf{E} \implies \nabla\times\nabla\times\textbf{E} = k_0^2n^2\textbf{E} \ , \label{eqn:rotordoble}
 \end{align}
@@ -49,7 +49,7 @@ Será útil separar los componentes longitudinales y transversales de los campos
 	\label{eqn:HfieldE}
 \end{align}
 
-Si se considera las descomposiciones $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $, las ecuaciones de Maxwell que involucran rotores se escriben como
+Si se considera las descomposiciones $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $, las ecuaciones de Maxwell que involucran rotores se escriben como:
 \begin{align}
 	\nabla_\perp \times  \textbf{E}_\perp + ik_z \hat{\textbf{z}} \times \textbf{E}_\perp + \nabla_\perp \times (\hat{\textbf{z}} E_z) &= i\omega\mu_0(\textbf{H}_\perp +\hat{\textbf{z}} H_z) \ ,
 	\label{eqn:Efield}
@@ -515,7 +515,7 @@ El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en 
 
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $\hat{\textbf{z}}$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el Laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $D_{ij}$ tal que $D_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) $, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
+Si la estructura de guías de onda no varía en la dirección $\hat{\textbf{z}}$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $D_{ij}$ tal que $D_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) $, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
 \begin{align}
 	\begin{pmatrix}
 	\nabla_\perp^2  + k_0^2n^2 + D_{xx} & D_{xy} 
@@ -540,32 +540,48 @@ La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ 
 \section{Teoría de Modos Acoplados}
 \subsection{Derivación desde un principio variacional}
 
-A partir de la ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}) es posible despejar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$, similar a lo desarrollado en la referencia \citep{haus_coupled-mode}.
+A partir de las ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}), es posible expresar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$, siguiendo un desarrollo análogo al presentado en \citep{haus_coupled-mode}. 
 
 \begin{equation}
-	k_z = \frac{\frac{1}{4i}\iint \left(-\nabla_\perp \times \textbf{E} + i\omega \mu_0 \textbf{H} \right)\cdot\textbf{H}^* + \left(\nabla_\perp\times\textbf{H} + i\omega \varepsilon_0 n^2 \textbf{E} \right)\cdot \textbf{E}^* dxdy}{\frac{1}{4} \iint \left( \textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H}  \right) \cdot \hat{\textbf{z}} dxdy} \ . \label{eqn:kzprevar}
+	k_z = \frac{
+		\frac{1}{4i} \iint \left[
+		\left(-\nabla_\perp \times \textbf{E} + i\omega \mu_0 \textbf{H}\right) \cdot \textbf{H}^* 
+		+ \left(\nabla_\perp \times \textbf{H} + i\omega \varepsilon_0 n^2 \textbf{E}\right) \cdot \textbf{E}^*
+		\right] dxdy
+	}{
+		\frac{1}{4} \iint \left( 
+		\textbf{E} \times \textbf{H}^* + \textbf{E}^* \times \textbf{H}
+		\right) \cdot \hat{\textbf{z}} \, dxdy
+	} \ . 
+	\label{eqn:kzprevar}
 \end{equation}
 
-De esta manera, al proponer un Ansatz en términos de superposición de modos de las guías individuales del estilo $\textbf{E} = \sum_i a_i \textbf{e}_i$, $\textbf{H} = \sum_i a_i \textbf{h}_i$, los coeficientes $a_i$ quedan indeterminados pero sujetos a minimizar la expresión para $k_z$. Notemos además que el Ansatz simplifica bastante la mencionada expresión.
+Al proponer una solución en forma de superposición de modos de las guías individuales del estilo
 \begin{align*}
-	(\textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H})\cdot\hat{\textbf{z}} = \sum_{ij} a_i^*( \textbf{e}_j \times  \textbf{h}_i^* + \textbf{e}_i^* \times  \textbf{h}_j  )\cdot\hat{\textbf{z}} a_j \equiv \sum_{ij} a_i^* p_{ij} a_j \ .
+	\textbf{E} &= \sum_i a_i \textbf{e}_i, \quad \textbf{H} = \sum_i a_i \textbf{h}_i,
 \end{align*}
+donde $a_i$ representa la amplitud del $i$-ésimo modo. Los coeficientes permanecen indeterminados pero sujetos a minimizar la expresión para $k_z$. Sustituyendo estas expansiones en (\ref{eqn:kzprevar}), se obtiene una expresión simplificada para la constante de propagación del sistema $k_z$:
+
 \begin{align*}
-	\text{integrando numerador} &= i\sum_{ij} a_i^* k_z^j (\hat{\textbf{z}}\times\textbf{e}_j )\cdot\textbf{h}_i^* a_j + a_j\left(\omega \varepsilon_0 (n^2-n_j^2) \textbf{e}_j-k_z^j \hat{\textbf{z}}\times\textbf{h}_j \right)\cdot \textbf{e}_i^* a_i^* \ ,
-	\\
-	&= i\sum_{ij}  a_i^*\left[ k_z^j p_{ij}  +  \omega \varepsilon_0(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \right] a_j \ .
+	(\textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H})\cdot\hat{\textbf{z}} 
+	&= \sum_{ij} a_i^* \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \, a_j 
+	\equiv \sum_{ij} a_i^* p_{ij} a_j.
 \end{align*}
-Definiendo 
+
+El integrando del numerador se desarrolla como:
+\begin{align*}
+	\text{integrando numerador} &= i\sum_{ij} \Big[ a_i^* k_z^j (\hat{\textbf{z}}\times\textbf{e}_j )\cdot\textbf{h}_i^* a_j  + a_j \left(\omega \varepsilon_0 (n^2-n_j^2) \textbf{e}_j - k_z^j \hat{\textbf{z}}\times\textbf{h}_j \right) \cdot \textbf{e}_i^* a_i^* \Big], \\
+	&= i\sum_{ij} a_i^* \left[ k_z^j p_{ij} + \omega \varepsilon_0(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \right] a_j,
+\end{align*}
+donde $k_z^j$ es la constante de propagación del $j$-ésimo modo aislado (en general, $k_z \neq k_z^j$). 
+
+Definiendo las siguientes cantidades fundamentales:
 \begin{align}
-	P_{ij} &\equiv \frac{1}{4} \iint ( \textbf{e}_j \times  \textbf{h}_i^* + \textbf{e}_i^* \times  \textbf{h}_j  )\cdot\hat{\textbf{z}} dxdy \ , \label{eqn:pij-ori}
-	\\
-	&= \frac{1}{4 \omega \mu_0} \iint \left[ 
-(k_z^i + k_z^j) \left( \textbf{e}_i^* \cdot \textbf{e}_j - e_{z,i}^* e_{z,j} \right) 
-+ i \left( \textbf{e}_i^* \cdot \nabla_\perp e_{z,j} + \textbf{e}_j \cdot \nabla_\perp e_{z,i}^* \right) 
-\right] dxdy \ ,	 \label{eqn:pij-simpli}
-	\\
-	H_{ij} &\equiv  P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* dxdy \ , \label{eqn:hij}
-\end{align} 
+	P_{ij} &\equiv \frac{1}{4} \iint \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \, dxdy, \label{eqn:pij-ori} \\
+	&= \frac{1}{4 \omega \mu_0} \iint \Big[ 
+	(k_z^i + k_z^j) \left( \textbf{e}_i^* \cdot \textbf{e}_j - e_{z,i}^* e_{z,j} \right)  + i \left( \textbf{e}_i^* \cdot \nabla_\perp e_{z,j} + \textbf{e}_j \cdot \nabla_\perp e_{z,i}^* \right) \Big] dxdy, \label{eqn:pij-simpli} \\
+	H_{ij} &\equiv P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint (n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \, dxdy, \label{eqn:hij}
+\end{align}
 se puede escribir la expresión (\ref{eqn:kzprevar}) para la constante de propagación $k_z$ de manera compacta como un cociente de Rayleigh-Ritz:
 \begin{equation}
 	k_z = \frac{\sum_{ij} a_i^* H_{ij} a_j}{\sum_{ij} a_i^*P_{ij} a_j} \ .

@@ -50,7 +50,7 @@ eigenvalues_CMT_calc, eigenvecs_CMT_calc = np.linalg.eig(C_mat)
 
 
 plt.style.use('science')
-fig, ax = plt.subplots(1, 1, dpi=400)
+fig, ax = plt.subplots(1, 1, dpi=600, figsize=(10, 6))
 
 ini_EME = np.exp(-x**2/(2*3E-6**2), dtype=complex)
 ini_CMT = np.zeros(len(eigenvalues_EME), dtype=complex)
@@ -68,12 +68,13 @@ for i in range(len(eigenvalues_EME)):
 sol_CMT /= np.max(np.abs(sol_CMT))
 sol_EME /= np.max(np.abs(sol_EME))
 ax.plot(x*1e6, np.abs(sol_EME)**2, label='EME')
-ax.set_xlabel(r'$x$ ($\mu$m)')
-ax.set_ylabel('Intensity (a.u.)')
+ax.set_xlabel(r'$x$ ($\mu$m)', fontsize=16)
+ax.set_ylabel('Intensity (a.u.)', fontsize=16)
+ax.tick_params(axis='both', which='major', labelsize=14)
 
 ax.plot(np.arange(-10, 11)*distance*1e6, np.abs(sol_CMT)**2, ".--",label='CMT')
-ax.legend(loc=(0.7, 0.8), fontsize=8)
-ax.set_title('Output field comparison between EME and CMT', fontsize=10)
-fig.savefig('1darraycmt/1darraycmt.png', dpi=300)
-fig.show()
+ax.legend(loc=(0.7, 0.8), fontsize=14)
+# ax.set_title('Output field comparison between EME and CMT', fontsize=10)
+fig.savefig('1darraycmt/1darraycmt.png', dpi=600)
+# fig.show()
 print()
