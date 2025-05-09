@@ -7,7 +7,6 @@ A level-1 auxiliary file: numericos.aux
 A level-1 auxiliary file: metodos.aux
 A level-1 auxiliary file: magico.aux
 A level-1 auxiliary file: moleculas.aux
-A level-1 auxiliary file: oam.aux
 A level-1 auxiliary file: conclu.aux
 The style file: unsrtnat.bst
 Database file #1: citations.bib
@@ -39,45 +38,45 @@ Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan 
 while executing---line 1315 of file unsrtnat.bst
 Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
 while executing---line 1315 of file unsrtnat.bst
-You've used 61 entries,
+You've used 55 entries,
             2481 wiz_defined-function locations,
-            1073 strings with 20348 characters,
-and the built_in function-call counts, 27492 in all, are:
-= -- 2320
-> -- 1701
+            1024 strings with 18874 characters,
+and the built_in function-call counts, 24831 in all, are:
+= -- 2095
+> -- 1539
 < -- 13
-+ -- 637
-- -- 514
-* -- 2626
-:= -- 4624
-add.period$ -- 315
-call.type$ -- 61
-change.case$ -- 119
-chr.to.int$ -- 60
-cite$ -- 69
-duplicate$ -- 1139
-empty$ -- 2227
-format.name$ -- 583
-if$ -- 5688
++ -- 577
+- -- 466
+* -- 2377
+:= -- 4173
+add.period$ -- 285
+call.type$ -- 55
+change.case$ -- 107
+chr.to.int$ -- 54
+cite$ -- 63
+duplicate$ -- 1025
+empty$ -- 2008
+format.name$ -- 529
+if$ -- 5134
 int.to.chr$ -- 2
-int.to.str$ -- 62
-missing$ -- 61
-newline$ -- 445
-num.names$ -- 171
-pop$ -- 328
+int.to.str$ -- 56
+missing$ -- 55
+newline$ -- 403
+num.names$ -- 153
+pop$ -- 298
 preamble$ -- 1
-purify$ -- 61
+purify$ -- 55
 quote$ -- 0
-skip$ -- 598
+skip$ -- 540
 stack$ -- 0
-substring$ -- 1246
-swap$ -- 163
+substring$ -- 1123
+swap$ -- 149
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 415
+type$ -- 373
 warning$ -- 4
-while$ -- 179
+while$ -- 161
 width$ -- 0
-write$ -- 1059
+write$ -- 957
 (There were 12 error messages)

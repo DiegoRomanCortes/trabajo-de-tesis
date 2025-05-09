@@ -53,23 +53,37 @@ Una rejilla de difracción que maximiza la potencia del primer orden de difracci
 \subsection{Etapa de acoplamiento}
 La imagen modulada pasa por un par de lentes $L_2$ de foco 1000 mm y $L_3$ de foco 50 mm para reducir el tamaño al orden de los micrómetros. La inclinación de la cara de entrada de la muestra debe coincidir con el plano de la imagen modulada, por lo que se generan dos pares de haces gaussianos, unos verticales y otros horizontales, de manera de que al trasladar el lente objetivo 4x, los máximos de difracción se generen en el centro de los haces gaussianos.
 
-\subsection{Etapa de captura en cámara}
-Una vez calibrada la inclinación de la muestra, se fija su posición. Un lente objetivo 10x permite magnificar la imagen de salida y capturar los resultados en un Beam Profiler modelo BC106N-VIS con resolución espacial de 6.45 $\mu$m/píxel \citep{thorlabs_beam_profiler}.
+\subsection{Etapa de Captura en Cámara}
+Una vez calibrada la inclinación de la muestra, se fija su posición en el montaje experimental. La imagen de salida se magnifica mediante un objetivo 10x y se captura utilizando un perfilómetro de haz (Beam Profiler BC106N-VIS, Thorlabs) con resolución espacial de 6.45 $\mu$m/px \citep{thorlabs_beam_profiler}.
 
-Opcionalmente, se puede intervenir el montaje para superponer un interferómetro tipo Mach-Zehnder. Para ello, se debe colocar un Beam Splitter entre el lente $L_1$ y el SLM para usar el haz previo a la modulación como referencia. Para recombinar los haces y hacerlos interferir, se debe colocar otro Beam Splitter entre el objetivo 10x y la cámara final. Dado que el haz de referencia tiende a ser más potente que la luz propagada, suele requerirse además un filtro de densidad neutra (ND-Filter) para equiparar ambos haces.
+\subsubsection{Configuración Interferométrica Opcional}
+El montaje puede modificarse para incorporar un interferómetro Mach-Zehnder mediante:
+\begin{itemize}
+	\item Un \textit{beam splitter} entre la lente $L_1$ y el SLM, utilizando el haz previo a la modulación como referencia.
+	\item Un segundo \textit{beam splitter} antes de la cámara para recombinar los haces.
+	\item Un filtro de densidad neutra (ND-Filter) para equilibrar las intensidades ($I_{\text{ref}} \approx I_{\text{muestra}}$).
+\end{itemize}
 
-\subsection{Circuito óptico}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth, trim={21cm 5cm 7cm 5cm},clip]{media/SLM_setupv1}
-    \caption{Diagrama completo del sistema de modulación espacial.}
-\end{figure}
-\subsection{Generación de imágenes complejas \label{cap:oam}}
-Una forma de verificar el control que se tiene en cuanto a la amplitud y la fase es mediante la generación de vórtices ópticos en el espacio libre, pues tienen bien definido su Momentum Angular Orbital (OAM). Con un interferómetro Mach-Zehnder es posible capturar el patrón de interferencia para la extracción del momentum angular $\ell$: basta contar la cantidad de espirales que se originan desde el centro de simetría. A su vez, el signo de $\ell$ se puede inferir con la dirección de giro del OAM.
+\subsection{Circuito Óptico}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{media/OAM-free.png}
-	\caption[Generación de OAMs e interferencia tipo Mach-Zehnder.]{Generación de OAMs e interferencia tipo Mach-Zehnder. Se aprecia la carga de los OAMs ($\ell$) contando la cantidad de espirales originados desde el centro. \label{fig:OAM}}
+	\includegraphics[width=0.8\linewidth, trim={21cm 5cm 7cm 5cm}, clip]{media/SLM_setupv1}
+	\caption[Diagrama del sistema de modulación espacial de luz]{Diagrama completo del sistema experimental para modulación espacial de luz, mostrando los componentes ópticos y sus disposiciones relativas.}
+	\label{fig:SLM_setup}
+\end{figure}
+
+\subsection{Generación de Imágenes Complejas \label{cap:oam}}
+La capacidad de control preciso sobre amplitud y fase se verifica mediante la generación de vórtices ópticos, cuantificados por su Momentum Angular Orbital (OAM). El análisis interferométrico permite:
+\begin{itemize}
+	\item Determinar la carga topológica $\ell$ contando las ramas espirales en el patrón de interferencia.
+	\item Establecer el signo de $\ell$ mediante la dirección de rotación del frente de fase.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.95\linewidth]{media/OAM-free.png}
+	\caption[Caracterización de vórtices ópticos mediante interferometría Mach-Zehnder.]{Caracterización de vórtices ópticos mediante interferometría Mach-Zehnder. \textbf{Arriba:} Intensidad para diferentes cargas OAM ($\ell$). \textbf{Centro y Abajo:} Patrones de interferencia correspondientes, donde el número de ramas espirales indica $|\ell|$ y el sentido de giro da cuenta del signo de $\ell$.}
+	\label{fig:OAM}
 \end{figure}
 \section{Análisis de imágenes \label{sec:analimag}}
 A partir de las imágenes capturadas es posible extraer información de la potencia que contiene cada sitio del sistema fotónico discreto en estudio. Para ello la imagen completa debe ser seccionada equispaciadamente en rectángulos que encierren las regiones donde existen guías de onda, iluminadas o no. La potencia de cada sitio será entonces la suma de la intensidad de cada píxel encerrado en su rectángulo respectivo.

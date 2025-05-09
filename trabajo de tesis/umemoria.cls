@@ -72,7 +72,11 @@
 \addto\captionsspanish{\renewcommand\listfigurename{Índice de Ilustraciones}}
 
 %% Interlineado
-\setlength{\parskip}{2ex} %interlineado doble
+
+
+% Configuración de interlineado y párrafos
+
+
 
 %% Renovar enumerate e itemize
 \let\oldenum\enumerate

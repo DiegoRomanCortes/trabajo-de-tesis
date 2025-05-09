@@ -1,4 +1,4 @@
-\begin{thebibliography}{61}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -310,6 +310,17 @@ Zhiwen Li, Siqi Hu, Qiao Zhang, Ruijuan Tian, Linpeng Gu, Yisong Zhu, Qingchen
 \newblock \doi{10.1021/acsphotonics.1c01622}.
 \newblock URL \url{https://doi.org/10.1021/acsphotonics.1c01622}.
 
+\bibitem[Román-Cort{\'e}s et~al.(2025)Román-Cort{\'e}s, Mazanov, Vicencio,
+  and Gorlach]{Pmodecoupling}
+Diego Román-Cort{\'e}s, Maxim Mazanov, Rodrigo~A. Vicencio, and Maxim~A.
+  Gorlach.
+\newblock Observation of invisibility angle and flat band physics in dipolar
+  photonic lattices.
+\newblock \emph{Nano Letters}, 25\penalty0 (11):\penalty0 4291--4297, 2025.
+\newblock \doi{10.1021/acs.nanolett.4c05951}.
+\newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c05951}.
+\newblock PMID: 40048281.
+
 \bibitem[Guzm\'an-Silva et~al.(2021)Guzm\'an-Silva, C\'aceres-Aravena, and
   Vicencio]{interorbital}
 Diego Guzm\'an-Silva, Gabriel C\'aceres-Aravena, and Rodrigo~A. Vicencio.
@@ -317,91 +328,6 @@ Diego Guzm\'an-Silva, Gabriel C\'aceres-Aravena, and Rodrigo~A. Vicencio.
 \newblock \emph{Phys. Rev. Lett.}, 127:\penalty0 066601, Aug 2021.
 \newblock \doi{10.1103/PhysRevLett.127.066601}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.127.066601}.
-
-\bibitem[J{\"o}rg et~al.(2020)J{\"o}rg, Queralt{\'o}, Kremer, Pelegr{\'i},
-  Schulz, Szameit, von Freymann, Mompart, and Ahufinger]{OAMCaging}
-Christina J{\"o}rg, Gerard Queralt{\'o}, Mark Kremer, Gerard Pelegr{\'i},
-  Julian Schulz, Alexander Szameit, Georg von Freymann, Jordi Mompart, and
-  Ver{\`o}nica Ahufinger.
-\newblock Artificial gauge field switching using orbital angular momentum modes
-  in optical waveguides.
-\newblock \emph{Light: Science {\&} Applications}, 9\penalty0 (1):\penalty0
-  150, Aug 2020.
-\newblock ISSN 2047-7538.
-\newblock \doi{10.1038/s41377-020-00385-6}.
-\newblock URL \url{https://doi.org/10.1038/s41377-020-00385-6}.
-
-\bibitem[C\'aceres-Aravena et~al.(2022)C\'aceres-Aravena, Guzm\'an-Silva,
-  Salinas, and Vicencio]{ABCaging}
-Gabriel C\'aceres-Aravena, Diego Guzm\'an-Silva, Ignacio Salinas, and
-  Rodrigo~A. Vicencio.
-\newblock Controlled transport based on multiorbital aharonov-bohm photonic
-  caging.
-\newblock \emph{Phys. Rev. Lett.}, 128:\penalty0 256602, Jun 2022.
-\newblock \doi{10.1103/PhysRevLett.128.256602}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.128.256602}.
-
-\bibitem[Lian et~al.(2022)Lian, Qi, Wang, Bai, Wang, and Lu]{oamapp}
-Yudong Lian, Xuan Qi, Yuhe Wang, Zhenxu Bai, Yulei Wang, and Zhiwei Lu.
-\newblock Oam beam generation in space and its applications: A review.
-\newblock \emph{Optics and Lasers in Engineering}, 151:\penalty0 106923, 2022.
-\newblock ISSN 0143-8166.
-\newblock \doi{https://doi.org/10.1016/j.optlaseng.2021.106923}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0143816621003924}.
-
-\bibitem[Anguita et~al.(2014)Anguita, Herreros, and Djordjevic]{oamfree}
-Jaime~A. Anguita, Joaquín Herreros, and Ivan~B. Djordjevic.
-\newblock Coherent multimode oam superpositions for multidimensional
-  modulation.
-\newblock \emph{IEEE Photonics Journal}, 6\penalty0 (2):\penalty0 1--11, 2014.
-\newblock \doi{10.1109/JPHOT.2014.2309645}.
-
-\bibitem[Shen et~al.(2022)Shen, Chen, Wang, and Jin]{OAMWG}
-Wei-Guan Shen, Yuan Chen, Hui-Ming Wang, and Xian-Min Jin.
-\newblock Oam mode conversion in a photonic chip.
-\newblock \emph{Optics Communications}, 507:\penalty0 127615, 2022.
-\newblock ISSN 0030-4018.
-\newblock \doi{https://doi.org/10.1016/j.optcom.2021.127615}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S0030401821008646}.
-
-\bibitem[Hu et~al.(2025)Hu, Bongiovanni, Wang, Wang, Song, Xu, Morandotti,
-  Buljan, and Chen]{vortex}
-Zhichan Hu, Domenico Bongiovanni, Ziteng Wang, Xiangdong Wang, Daohong Song,
-  Jingjun Xu, Roberto Morandotti, Hrvoje Buljan, and Zhigang Chen.
-\newblock Topological orbital angular momentum extraction and twofold
-  protection of vortex transport.
-\newblock \emph{Nature Photonics}, 19\penalty0 (2):\penalty0 162--169, Feb
-  2025.
-\newblock ISSN 1749-4893.
-\newblock \doi{10.1038/s41566-024-01564-2}.
-\newblock URL \url{https://doi.org/10.1038/s41566-024-01564-2}.
-
-\bibitem[Polo et~al.(2016)Polo, Mompart, and Ahufinger]{vortextrim}
-J.~Polo, J.~Mompart, and V.~Ahufinger.
-\newblock Geometrically induced complex tunnelings for ultracold atoms carrying
-  orbital angular momentum.
-\newblock \emph{Phys. Rev. A}, 93:\penalty0 033613, Mar 2016.
-\newblock \doi{10.1103/PhysRevA.93.033613}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.93.033613}.
-
-\bibitem[Jiang et~al.(2023)Jiang, Wu, Qin, and Ke]{topoOAM}
-Chuang Jiang, Yanting Wu, Meiyan Qin, and Shaolin Ke.
-\newblock Topological bound modes with orbital angular momentum in optical
-  waveguide arrays.
-\newblock \emph{Journal of Lightwave Technology}, 41\penalty0 (7):\penalty0
-  2205--2211, 2023.
-\newblock \doi{10.1109/JLT.2022.3200139}.
-
-\bibitem[Bayer et~al.(1998)Bayer, Gutbrod, Reithmaier, Forchel, Reinecke,
-  Knipp, Dremin, and Kulakovskii]{molecules}
-M.~Bayer, T.~Gutbrod, J.~P. Reithmaier, A.~Forchel, T.~L. Reinecke, P.~A.
-  Knipp, A.~A. Dremin, and V.~D. Kulakovskii.
-\newblock Optical modes in photonic molecules.
-\newblock \emph{Phys. Rev. Lett.}, 81:\penalty0 2582--2585, Sep 1998.
-\newblock \doi{10.1103/PhysRevLett.81.2582}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.81.2582}.
 
 \bibitem[Mazanov et~al.(2024)Mazanov, Román-Cortés, Cáceres-Aravena, Cid,
   Gorlach, and Vicencio]{SPSSH}
@@ -497,6 +423,31 @@ Monika A.~M. Marte and Stig Stenholm.
 \newblock \doi{10.1103/PhysRevA.56.2940}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.56.2940}.
 
+\bibitem[J{\"o}rg et~al.(2020)J{\"o}rg, Queralt{\'o}, Kremer, Pelegr{\'i},
+  Schulz, Szameit, von Freymann, Mompart, and Ahufinger]{OAMCaging}
+Christina J{\"o}rg, Gerard Queralt{\'o}, Mark Kremer, Gerard Pelegr{\'i},
+  Julian Schulz, Alexander Szameit, Georg von Freymann, Jordi Mompart, and
+  Ver{\`o}nica Ahufinger.
+\newblock Artificial gauge field switching using orbital angular momentum modes
+  in optical waveguides.
+\newblock \emph{Light: Science {\&} Applications}, 9\penalty0 (1):\penalty0
+  150, Aug 2020.
+\newblock ISSN 2047-7538.
+\newblock \doi{10.1038/s41377-020-00385-6}.
+\newblock URL \url{https://doi.org/10.1038/s41377-020-00385-6}.
+
+\bibitem[Hu et~al.(2025)Hu, Bongiovanni, Wang, Wang, Song, Xu, Morandotti,
+  Buljan, and Chen]{vortex}
+Zhichan Hu, Domenico Bongiovanni, Ziteng Wang, Xiangdong Wang, Daohong Song,
+  Jingjun Xu, Roberto Morandotti, Hrvoje Buljan, and Zhigang Chen.
+\newblock Topological orbital angular momentum extraction and twofold
+  protection of vortex transport.
+\newblock \emph{Nature Photonics}, 19\penalty0 (2):\penalty0 162--169, Feb
+  2025.
+\newblock ISSN 1749-4893.
+\newblock \doi{10.1038/s41566-024-01564-2}.
+\newblock URL \url{https://doi.org/10.1038/s41566-024-01564-2}.
+
 \bibitem[Pedrola(2015)]{bpm}
 Ginés~Lifante Pedrola.
 \newblock \emph{Beam Propagation Method for Design of Optical Waveguide
@@ -537,22 +488,20 @@ Herman J.~C. Berendsen.
 \newblock \doi{10.1063/1.1732460}.
 \newblock URL \url{https://doi.org/10.1063/1.1732460}.
 
-\bibitem[Román-Cort{\'e}s et~al.(2025)Román-Cort{\'e}s, Mazanov, Vicencio,
-  and Gorlach]{Pmodecoupling}
-Diego Román-Cort{\'e}s, Maxim Mazanov, Rodrigo~A. Vicencio, and Maxim~A.
-  Gorlach.
-\newblock Observation of invisibility angle and flat band physics in dipolar
-  photonic lattices.
-\newblock \emph{Nano Letters}, 25\penalty0 (11):\penalty0 4291--4297, 2025.
-\newblock \doi{10.1021/acs.nanolett.4c05951}.
-\newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c05951}.
-\newblock PMID: 40048281.
-
 \bibitem[Polini and V.(2013)]{honeycombdirac}
 Guinea F. Lewenstein M. Manoharan H.~C. Polini, M. and Pellegrini V.
 \newblock Artificial honeycomb lattices for electrons, atoms and photons.
 \newblock \emph{Nature Nanotech}, 8, 2013.
 \newblock \doi{10.1038/nnano.2013.161}.
 \newblock URL \url{https://doi.org/10.1038/nnano.2013.161}.
+
+\bibitem[Bayer et~al.(1998)Bayer, Gutbrod, Reithmaier, Forchel, Reinecke,
+  Knipp, Dremin, and Kulakovskii]{molecules}
+M.~Bayer, T.~Gutbrod, J.~P. Reithmaier, A.~Forchel, T.~L. Reinecke, P.~A.
+  Knipp, A.~A. Dremin, and V.~D. Kulakovskii.
+\newblock Optical modes in photonic molecules.
+\newblock \emph{Phys. Rev. Lett.}, 81:\penalty0 2582--2585, Sep 1998.
+\newblock \doi{10.1103/PhysRevLett.81.2582}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.81.2582}.
 
 \end{thebibliography}

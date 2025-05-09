@@ -51,6 +51,9 @@
 \usepackage{listings}
 \usepackage{mathtools}
 \usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{fontspec} % Necesario para fuentes específicas
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -129,7 +132,28 @@ Y estalla en luminarias dentro del sueño\\
 \mainmatter
 \titleformat{\chapter}
   {\normalfont\LARGE\bfseries}{\thechapter.}{1em}{}
-\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
+
+\titlespacing*{\section}
+{0pt} % Left indent
+{0pt} % Space before section (adjust this value)
+{0pt} % Space after section (matches paragraph spacing)
+
+% For subsection spacing (if needed)
+\titlespacing*{\subsection}
+{0pt}
+{0pt}
+{0pt}
+
+% Configuración de fuentes (elige UNA de estas opciones)
+%\setmainfont{Arial}
+%\setmainfont{Times New Roman}
+%\setmainfont{Verdana}
+%\setmainfont{Georgia}
+
+\setstretch{1.15} % Interlineado 1.15
+\setlength{\parskip}{1.0\baselineskip} % Doble espacio entre párrafos
+\justifying % Texto justificado
 
 \include{intro.tex}
 \include{teorico.tex}

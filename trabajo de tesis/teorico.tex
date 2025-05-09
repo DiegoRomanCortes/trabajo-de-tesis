@@ -1,7 +1,6 @@
 \chapter{Marco Teórico}
 
 En este capítulo se desarrollarán las herramientas analítico-teóricas que permiten describir los sistemas fótonicos estudiados en esta tesis. Éstos consisten en la propagación de luz láser de baja potencia (1 mW de potencia de salida) propagada en sistemas acoplados de guías de onda, las cuales están escritas dentro de una muestra de vidrio borosilicato. Estas condiciones experimentales permiten describir el comportamiento de la luz utilizando las ecuaciones de Maxwell aplicadas a un medio lineal, isotrópico, no magnético y sin fuentes de carga ni de corriente libres. 
-
 \section{Propagación en guías de onda dieléctricas desde las ecuaciones de Maxwell \label{cap:maxwell}}
 
 Las ecuaciones de Maxwell (SI) en este régimen son:
@@ -14,7 +13,7 @@ Las ecuaciones de Maxwell (SI) en este régimen son:
 	\\	
 	\nabla\times\textbf{H} &=\varepsilon(\textbf{r}) \frac{\partial \textbf{E}}{\partial t} \ , \label{eqn:ampere-maxwell}
 \end{align}
-donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda son invariantes en la dirección de propagación $\hat{\textbf{z}}$, por lo que el índice de refracción $n=\sqrt{\varepsilon/\varepsilon_0}$ dependerá de las coordenadas transversales al eje óptico, es decir, $n \equiv n(x,y) = n_0 + \Delta n(x,y)$, con $n_0=1.48$ el índice de refracción del borosilicato y $\Delta n \sim 10^{-5}-10^{-3}$ el contraste de las guías de onda. Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) se tiene:
+donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda consideradas son sistemas ópticamente invariantes en la dirección de propagación $\hat{\textbf{z}}$. Por lo tanto, el perfil de índice de refracción puede expresarse como $n(x,y) = n_0 + \Delta n(x,y)$ donde $n_0 = 1.48$ es el índice de refracción del sustrato de borosilicato y $\Delta n(x,y)$ representa la modulación transversal del índice, con valores máximos en el rango $10^{-5} - 10^{-3}$. Esta variación espacial del índice, $\Delta n(x,y)$, es responsable del confinamiento óptico en el plano transversal $(x,y)$, permitiendo la propagación guiada de los modos electromagnéticos a lo largo del eje $\hat{\textbf{z}}$. Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) se tiene:
 \begin{align}
 	\nabla\times\left(\frac{\nabla\times\textbf{E}}{i\omega\mu_0}\right) &= -i\omega \varepsilon_0 n^2 \textbf{E} \implies \nabla\times\nabla\times\textbf{E} = k_0^2n^2\textbf{E} \ , \label{eqn:rotordoble}
 \end{align}
@@ -22,7 +21,6 @@ donde $k_0 \equiv \omega/c$ es el número de onda en el vacío. Por identidad de
 \begin{equation}
 	\left(\nabla^2  + k_0^2n^2\right)\textbf{E} = -\nabla\left( \frac{\nabla n^2}{n^2} \cdot \textbf{E}  \right) \ . \label{eqn:helmholz}
 \end{equation}
-
 Análogamente, es posible aplicar combinar las ecuaciones de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) y de Faraday-Lenz (\ref{eqn:faraday-lenz}) en conjunto con la divergencia nula del campo magnético \textbf{H} (\ref{eqn:div0}):
 \begin{align}
 	\nabla\times \left(\frac{\nabla\times\textbf{H}}{-i\omega \varepsilon_0 n^2}\right) = i\omega \mu_0 \textbf{H} &\implies \nabla\times \left(\frac{1}{n^2}\nabla\times\textbf{H}\right) = k_0^2 \textbf{H} \ ,
@@ -33,13 +31,11 @@ Análogamente, es posible aplicar combinar las ecuaciones de Ampère-Maxwell (\r
 	  k_0^2 n^2\textbf{H} \ .
 	 	\nonumber
 \end{align}
-
 La ecuación análoga a (\ref{eqn:helmholz}) para \textbf{H} es, por consiguiente:
 \begin{align}
 	 \left(\nabla^2  + k_0^2 n^2 \right) \textbf{H} &= i\omega \epsilon_0 \nabla n^2 \times \textbf{E} \ .
 	 \label{eqn:helmholzH}
 \end{align}
-
 Será útil separar los componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{ik_z z}$ en la variable espacial $z$. 
 \begin{align}
 	\nabla_\perp \times  \textbf{E} + ik_z \hat{\textbf{z}} \times \textbf{E} &= i\omega\mu_0\textbf{H} \ ,
@@ -48,7 +44,6 @@ Será útil separar los componentes longitudinales y transversales de los campos
 	\nabla_\perp \times  \textbf{H} + ik_z \hat{\textbf{z}} \times \textbf{H} &= -i\omega \epsilon_0 n^2 \textbf{E} \ .
 	\label{eqn:HfieldE}
 \end{align}
-
 Si se considera las descomposiciones $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{z}} E_z$ y $\textbf{H}=\textbf{H}_\perp +\hat{\textbf{z}} H_z$, $\nabla_\perp \equiv - \hat{\textbf{z}}\times (\hat{\textbf{z}}\times\nabla)   $, las ecuaciones de Maxwell que involucran rotores se escriben como:
 \begin{align}
 	\nabla_\perp \times  \textbf{E}_\perp + ik_z \hat{\textbf{z}} \times \textbf{E}_\perp + \nabla_\perp \times (\hat{\textbf{z}} E_z) &= i\omega\mu_0(\textbf{H}_\perp +\hat{\textbf{z}} H_z) \ ,
@@ -57,7 +52,6 @@ Si se considera las descomposiciones $\textbf{E}=\textbf{E}_\perp +\hat{\textbf{
 	\nabla_\perp \times  \textbf{H}_\perp + ik_z \hat{\textbf{z}} \times \textbf{H}_\perp + \nabla_\perp \times (\hat{\textbf{z}} H_z) &= -i\omega \epsilon_0 n^2 (\textbf{E}_\perp +\hat{\textbf{z}} E_z) \ .
 	\label{eqn:Hfield}
 \end{align}
-
 Luego de aplicar producto cruz en la dirección $\hat{\textbf{z}}$ a las ecuaciones (\ref{eqn:Efield}) y (\ref{eqn:Hfield}), se puede expresar $E_z$ y $H_z$ en función de $\textbf{E}_\perp$ y $\textbf{H}_\perp$:
 \begin{equation*}
 \begin{aligned}[c]
@@ -72,7 +66,6 @@ Luego de aplicar producto cruz en la dirección $\hat{\textbf{z}}$ a las ecuacio
 	i\hat{\textbf{z}} \times\nabla_\perp E_z &=  \omega \mu_0 \textbf{H}_\perp+k_z  \hat{\textbf{z}} \times \textbf{E}_\perp \ .
 \end{aligned}
 \end{equation*}
-
 Finalmente, los componentes perpendiculares de los campos, $\textbf{H}_\perp$ y $\textbf{E}_\perp$, se pueden despejar en términos de los componentes longitudinales, $H_z$ y $E_z$:
 \begin{equation}
 \begin{aligned}[c]
@@ -86,12 +79,9 @@ Finalmente, los componentes perpendiculares de los campos, $\textbf{H}_\perp$ y 
 \textbf{E}_\perp &= \frac{i}{k_0^2 n^2 - k_z^2}\left(k_z \nabla_\perp E_z - \omega\mu_0 \hat{\textbf{z}} \times \nabla_\perp H_z\right) \ . \label{eqn:transversal}
 \end{aligned}
 \end{equation}
-
 Las ecuaciones (\ref{eqn:helmholz}), (\ref{eqn:helmholzH}) y (\ref{eqn:transversal}) serán las herramientas analíticas para los dos casos de estudio de las siguientes secciones y permiten visualizar la imposibilidad de las guías de onda dieléctricas de albergar modos TEM.
 \section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
-
 El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuya forma analítica para el contraste $n(x)$ es la siguiente, con $n_1 > n_0$:
-
 \begin{equation*}
 	n(x) = \left\{\begin{matrix}
 	n_1 \ , \quad |x| \le a
@@ -99,20 +89,16 @@ El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuy
 	n_0 \ , \quad |x| > a
  	\end{matrix}\right. \ .
 \end{equation*}
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{media/slab.pdf}
 	\caption[Forma de una guía de onda tipo losa.]{Forma de una guía de onda tipo losa. En las direcciones $\mathbf{\hat{y}}$ (vertical) y $\mathbf{\hat{z}}$ (hacia dentro de la página) la estructura es invariante.}
 \end{figure}
-
 Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) son de tipo Helmholz. Definiendo $\Psi = \{E_z, H_z\} $:
 \begin{align*}
 	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0 \ .
 \end{align*}
-
 Como $n(x)=n(-x)$, las soluciones $\Psi$ deben ser pares o impares. En efecto, si $\Psi(x)$ es solución, el cambio $x\to x'=-x$ implica que $\Psi(-x)=\pm \Psi(x)$, pues $\Psi(x)$ es un campo real.
-
 Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 \le k_z^2 \le k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Con todo esto, 
 \begin{equation*}
 	\Psi_s = \left\{\begin{matrix}
@@ -131,7 +117,6 @@ Para encontrar soluciones cuya energía esté localizada en la guía de onda y q
 	\
 	.
 \end{equation*}
-
 Por lo que las componentes verticales $E_y$ y $H_y$ pares se escriben debido a la ecuación (\ref{eqn:transversal}) como:
 \begin{equation*}
 	\begin{aligned}[c]
@@ -267,7 +252,6 @@ Los modos antisimétricos o impares deben cumplir por su parte que $\cos(V) = 0$
 \begin{align*}
 	 (\lambda_c)_m = \frac{4a}{m-1}  \sqrt{n_1^2-n_0^2} \ .
 \end{align*}
-
 \section{Soluciones analíticas para fibra óptica circular}
 En la sección anterior se estudió el sistema más sencillo en el que se puede hablar de guías de onda dieléctricas. El siguiente paso en complejidad consiste en guías de onda circulares. Para ello, se considerará que el índice de refracción varía radialmente según 
 \begin{equation}
@@ -281,7 +265,6 @@ En la sección anterior se estudió el sistema más sencillo en el que se puede 
 \end{equation}
 donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. 
 Al considerar las componentes longitudinales $\Psi$ = $\{E_z, H_z\}$ del campo eléctrico y magnético y  si se utiliza el método de separación de variables con $\Psi =  R(\rho)\Phi(\phi) e^{ik_z z} $,  las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) toman la forma:
-
 \begin{align}
 	\left[\frac{\partial^2}{\partial \rho^2} + \frac{\partial}{\rho\partial \rho} + \frac{\partial^2}{\rho^2\partial \phi^2} +\left( k_0^2n^2 - k_z^2 \right)\right]  R(\rho)\Phi(\phi) = 0
 	\nonumber
@@ -423,7 +406,6 @@ Finalmente, la ecuación trascendental que satifacen $\alpha$, $\beta$ y $k_z$ e
 \begin{equation}
 	\left( \frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right)\left( n_1^2\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)} \right) = \ell^2 \left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \left( \frac{k_z}{k_0} \right)^2 . \label{eqn:fiber_trascendental}
 \end{equation}
-
 Dado que, en principio, los valores de $k_z$ ya están determinados por la ecuación anterior, es posible obtener dos relaciones entre $H_0^1$ y $E_0^1$:
 \begin{align}
 \frac{E_0^1}{H_0^1} &=  -\frac{i k_z \ell}{\omega\epsilon_0}\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]  \left[ n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)} \right]^{-1} \label{eqn:fiber_polarization_E},
@@ -431,12 +413,10 @@ Dado que, en principio, los valores de $k_z$ ya están determinados por la ecuac
 \frac{H_0^1}{E_0^1} &=  \frac{i k_z \ell}{ \omega\mu_0}\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]  \left[ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)} \right]^{-1} \label{eqn:fiber_polarization_H}.
 \end{align}
 Tomando raíz cuadrada al cociente de las ecuaciones (\ref{eqn:fiber_polarization_E}) y (\ref{eqn:fiber_polarization_H}) se tiene:
-
 \begin{equation}
 	\frac{E_0^1}{H_0^1} = i \sqrt{\frac{\mu_0}{\epsilon_0}} \frac{\sqrt{ \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}}{\sqrt{n_1^2 \frac{J'_\ell(\alpha a)}{\alpha a J_\ell(\alpha a)} + n_0^2 \frac{K'_\ell(\beta a)}{\beta a K_\ell(\beta a)}}} \ .
 	\label{eqn:fiber_polarization_simplified}
 \end{equation}
-
 \subsection{Modos TE y TM}
 El caso más sencillo de estudiar es imponiendo $\ell = 0$. La ecuación (\ref{eqn:fiber_trascendental}) implica:
 \begin{align*}
@@ -444,7 +424,6 @@ El caso más sencillo de estudiar es imponiendo $\ell = 0$. La ecuación (\ref{e
 	\\
 	n_1^2\frac{J'_{0}(\alpha a)}{\alpha a J_0(\alpha a)} + n_0^2 \frac{K'_0(\beta a)}{\beta a K_0(\beta a)} &= 0 \ , \quad \text{(modos TM)}
 \end{align*}
-
 De la ecuación (\ref{eqn:fiber_polarization_simplified}) es directo notar que la condiciones de modos transversales que las componentes longitudinales se hacen cero en los casos respectivos: $H_0^1 = 0$ para TE y $E_0^1 = 0$ para TM.
 
 Las condiciones de corte se dan cuando $\beta a \to 0$. Utilizando las expresiones asintóticas para las funciones de Bessel con argumentos pequeños y sus relaciones de recurrencia, se tiene
@@ -478,7 +457,6 @@ Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell
 		\\
 		\Delta &= \left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 \ . \nonumber
 \end{align}
-
 Para $\ell = 0$, se recuperan las relaciones obtenidas para los modos  TE$_m$ (HE$_{0m}$) y TM$_m$ (EH$_{0m}$). Para $\ell \neq 0$ se hace necesario considerar las expresiones asintóticas de las funciones de Bessel cuando $\beta a \to 0$ y $\alpha a \to V$:
 \begin{align*}
 	\frac{K'_\ell (x)}{xK_\ell (x)} &= -\frac{K_{\ell-1} (x)}{xK_\ell (x)}-\frac{\ell}{x^2}\approx \left\{\begin{matrix}
@@ -488,13 +466,10 @@ Para $\ell = 0$, se recuperan las relaciones obtenidas para los modos  TE$_m$ (H
 	1}{2(\ell-1)}-\frac{\ell}{x^2}\quad \text{si }\ell > 1
 	\end{matrix}\right. .
 \end{align*}
-
-
 El caso $\ell=1$ es de especial interés. La condición de modos HE se desarrolla como
 \begin{align*}
 	\frac{\alpha a J_1(\alpha a)}{J_0(\alpha a)} &= \left\{\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \left[ \ln\left(\frac{2}{e^\gamma \beta a}\right)+\frac{1}{(\beta a)^2} \right]+\frac{1}{(\alpha a)^2}-\sqrt{\Delta}\right\}^{-1} \to 0 \ .
 \end{align*}
-
 Basta considerar la función $J_1(\alpha a)|_{\alpha a \to V} = 0$. Por otro lado, la condición EH elimina el cero $x=0$ del cociente $\frac{\alpha aJ_1(\alpha a)}{J_2(\alpha a)}$ lo que hace que esté ``desfasada'' respecto a la condición HE. Usando un razonamiento similar al caso $\ell =0$, las condiciones de corte son
 \begin{align*}
 	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m}} \ ,  \quad \left(\text{modos HE}_{1m}\right)
@@ -502,12 +477,7 @@ Basta considerar la función $J_1(\alpha a)|_{\alpha a \to V} = 0$. Por otro lad
 	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m+1}} \ , \quad \left(\text{modos EH}_{1m}\right)
 \end{align*}
 con $x_{1,m}=0$, 3.832,  7.016, 10.173, $\dots$.
-En particular, el modo $\text{HE}_{11}$ siempre existe.
-%\begin{figure}[H]
-%	\centering	\includegraphics[width=0.6\linewidth]{media/fibergraphicalHE_EH.pdf}
-%\end{figure}
-
-El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego y no será relevante para esta tesis. Sin embargo, se incluyen en la Figura \ref{fig:vortices} por completitud.
+En particular, el modo $\text{HE}_{11}$ siempre existe. El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego y no será relevante para esta tesis. Sin embargo, se incluyen en la Figura \ref{fig:vortices} por completitud.
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{media/OAM_analitic}
 		\caption{Primeros modos guiados para una guía circular o fibra óptica. \label{fig:vortices}}
@@ -555,25 +525,22 @@ A partir de las ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}), es posible
 	} \ . 
 	\label{eqn:kzprevar}
 \end{equation}
-
 Al proponer una solución en forma de superposición de modos de las guías individuales del estilo
 \begin{align*}
 	\textbf{E} &= \sum_i a_i \textbf{e}_i, \quad \textbf{H} = \sum_i a_i \textbf{h}_i,
 \end{align*}
 donde $a_i$ representa la amplitud del $i$-ésimo modo. Los coeficientes permanecen indeterminados pero sujetos a minimizar la expresión para $k_z$. Sustituyendo estas expansiones en (\ref{eqn:kzprevar}), se obtiene una expresión simplificada para la constante de propagación del sistema $k_z$:
-
 \begin{align*}
 	(\textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H})\cdot\hat{\textbf{z}} 
 	&= \sum_{ij} a_i^* \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \, a_j 
 	\equiv \sum_{ij} a_i^* p_{ij} a_j.
 \end{align*}
-
 El integrando del numerador se desarrolla como:
 \begin{align*}
 	\text{integrando numerador} &= i\sum_{ij} \Big[ a_i^* k_z^j (\hat{\textbf{z}}\times\textbf{e}_j )\cdot\textbf{h}_i^* a_j  + a_j \left(\omega \varepsilon_0 (n^2-n_j^2) \textbf{e}_j - k_z^j \hat{\textbf{z}}\times\textbf{h}_j \right) \cdot \textbf{e}_i^* a_i^* \Big], \\
 	&= i\sum_{ij} a_i^* \left[ k_z^j p_{ij} + \omega \varepsilon_0(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \right] a_j,
 \end{align*}
-donde $k_z^j$ es la constante de propagación del $j$-ésimo modo aislado (en general, $k_z \neq k_z^j$). 
+donde $k_z^j$ es la constante de propagación del $j$-ésimo modo aislado \footnote{en general, $k_z \neq k_z^j$.}. 
 
 Definiendo las siguientes cantidades fundamentales:
 \begin{align}
@@ -586,18 +553,15 @@ se puede escribir la expresión (\ref{eqn:kzprevar}) para la constante de propag
 \begin{equation}
 	k_z = \frac{\sum_{ij} a_i^* H_{ij} a_j}{\sum_{ij} a_i^*P_{ij} a_j} \ .
 \end{equation}
-
 Diferenciando con respecto a $a_k^*$ para optimizar el valor de $k_z$ se tiene:
 \begin{align}
 	\frac{\partial k_z}{\partial a_k^*} &= \frac{\sum_{ij} H_{ij} a_j \delta_{ik}}{\sum_{ij} a_i^*P_{ij} a_j} - \frac{\left(\sum_{ij} a_i^* H_{ij} a_j\right) \left( 
 	\sum_{ij} \delta_{ik} P_{ij} a_j \right) }{\left(\sum_{ij} a_i^*P_{ij} a_j\right)^2} = \frac{\sum_{j} \left(H_{jk}  - k_z P_{kj} \right) a_j}{\sum_{ij} a_i^* P_{ij}a_j} \overset{!}{=} 0 \ .
 \end{align}
-
 Recuperando $k_z \to -i\frac{\partial}{\partial z}$, se obtienen las ecuaciones de $N$ modos acoplados no ortogonales:
 \begin{equation}
 	-i \sum_{j} P_{kj} \frac{d a_j}{dz} ´= \sum_{j} H_{kj} a_j, \text{ con }k=1,2,\cdots,N \ . \label{eqn:non-ortho-CMT-eqs}
 \end{equation}
-	
 Claramente, de la expresión (\ref{eqn:pij-ori}) para $P_{ij}$, se cumple hermiticidad. A primera vista, puede parecer que $H_{ij}$ no es hermítica, pero veamos que sí lo es. Para ello, basta considerar la resta $H_{ij} - H_{ji}^*$ y notar que se anula:
 \begin{align*}
  H_{ij} - H_{ji}^* &= P_{ij} k_z^j - P_{ji}^* k_z^i  + \frac{\omega \varepsilon_0}{4} \iint(n_i^2-n_j^2) \textbf{e}_i^* \cdot \textbf{e}_j dxdy
@@ -653,9 +617,8 @@ Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\r
 \alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
 \\
 -\beta\sin(\alpha a) e^{-\beta(|x-x_j|-a)}, &|x-x_j| > a
-\end{matrix}\right. .
-\end{align*}
-$x_j=jd$, con $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
+\end{matrix}\right. \ ,
+\end{align*} con $x_j=jd$, $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 \begin{align*}
 	\left(\textbf{e}_{j\perp}\times\textbf{h}_{i\perp}^*\right)\cdot \hat{\textbf{z}}
 	&=
@@ -674,7 +637,6 @@ $x_j=jd$, con $d\ge 2a$ y $L=\int dy$. Elementos no diagonales tienen la forma:
 \\
 	\tilde{H}_{ij} &\equiv H_{ij} - P_{ij} k_z^j = \frac{L k_0    \mu_0 c H_{a1}^2 }{2 \beta }  \sin^2(\alpha a)e^{2\beta a} e^{-\beta d} \ .
 \end{align*}
-
 Elementos diagonales tienen la forma:
 \begin{align*}
 	\left(\textbf{e}_{j\perp}\times\textbf{h}_{j\perp}^*\right)\cdot \hat{\textbf{z}}&=\frac{k_z^j\omega\mu_0 H_{a1}^2}{(k_0^2n_j^2-k_z^2)^2} \left\{ \begin{matrix}
@@ -688,7 +650,6 @@ Elementos diagonales tienen la forma:
 	\tilde{H}_{jj} &\equiv H_{jj} - P_{jj} k_z^j =
 	\frac{L k_0^3  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{2\beta a}e^{-2\beta d}}{4 \beta^3 } (n_1^2-n_0^2) \sinh(2\beta a) \ .
 \end{align*}
-
 La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}), que luego de premultiplicar por la inversa de la matriz $P_{ij}$ toma la forma:
 \begin{align*}
 	-i\frac{d}{dz}\begin{pmatrix}
@@ -733,32 +694,17 @@ con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\time
 	a_2(0)
 	\end{pmatrix} \ .
 \end{align*}
-
 Una forma de encontrar el valor experimental del acoplamiento $C$ es mediante la excitación individual de un modo. Con esto, la razón entre las potencias $|a_1(z)|^2$ y $|a_2(z)|^2$ permite despejar el acoplamiento para una distancia de propagación $z=L<\frac{\pi}{2C}$ conocida:
-
 \begin{equation}
 	C = \frac{1}{L}\tan^{-1}\left( \left|\frac{a_2(L)}{a_1(L)}\right|^2 \right) \ . \label{eqn:coupling-simp}
 \end{equation}
-
-%\begin{align*}
-%	V =  \frac{\sin^2(\alpha a)e^{2\beta a}e^{-\beta d}}{4\beta k_z^i}\frac{\left[\frac{a}{ \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{\alpha^2\beta^3 }  \right]    - \frac{e^{-\beta d}(\alpha^2+\beta^2) \sinh(2\beta a)}{ \beta^2}  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]}{ \left[\frac{a}{2 \alpha^2} + \frac{\sin^2(\alpha a)(\alpha^2+\beta^2)}{2\alpha^2\beta^3 }  \right]^2 -  \left[\frac{1 + \beta (d-2a)e^{2\beta a}}{2\beta^3}\sin^2(\alpha a)e^{-\beta d} - \frac{\cosh(\beta a)e^{-\beta d}e^{\beta a}\sin^2(\alpha a)}{\beta(\alpha^2+\beta^2)} \right]^2}
-%\end{align*}
 \subsection{Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}
 
-Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear un análogo al Teorema de Bloch \cite{joannopoulos_photonic_2008}, la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica de la ecuación (\ref{eqn:non-ortho-CMT-eqs}) es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$. 
-%En la práctica, se aplicará un Ansatz de Bloch $\textbf{a} = e^{i(\lambda z + \textbf{k}\cdot \textbf{r})}\textbf{A}$, con $\textbf{A}$ un vector constante de la misma dimensionalidad que número de sitios en la celda unitaria de la red. De esta manera, será posible etiquetar $\lambda \equiv \lambda_n(\textbf{k})$
-%
-%Para sistemas finitos, los autovalores de la matriz $\hat{C}$ tenderán a agruparse en el mismo número de bandas que cantidad de sitios por celda unitaria conformen el sistema, dado que las funciones de Wannier asociadas al Teorema de Bloch aproximan de mejor manera al sistema en cuestión a medida que aumenta el número de celdas.
-
-
+Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear un análogo al Teorema de Bloch \cite{joannopoulos_photonic_2008}, la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica de la ecuación (\ref{eqn:non-ortho-CMT-eqs}) es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$.
 El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
-
 \begin{equation*}
 	H = \sum_n t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c.
 \end{equation*}
-
-
-
 \begin{figure}[h]
 \centering
 	\includegraphics[width=\linewidth]{media/ssh-model.png}
@@ -807,8 +753,7 @@ El Hamiltoniano del modelo SSH presenta diversas simetrías: de reversión tempo
 	\includegraphics[width=\linewidth]{media/ssh-winding}
 	\caption[Topología de la red SSH.]{Topología de la red SSH. Se fija $t'=1$ y se varía $\delta=\frac{t}{t'}$ para un número $N=100$ de celdas unitarias. Arriba: Vectores $\textbf{d}$ y su fase. Para $\delta < 1$ ($\delta > 1$), (no) se encierra el origen. Abajo: Bandas en función del cuasimomento $k$ en la primera zona de Brillouin para $\delta < 1$, $\delta = 1$ y $\delta > 1$. 
 	\label{fig:ssh-topo}}
-\end{figure} 
-\begin{figure}[h]
+\end{figure} \begin{figure}[h]
 \centering	\includegraphics[width=0.7\linewidth]{media/ssh-open}
 	\caption[Espectro de la red SSH.]{Espectro de la red SSH. Condiciones de borde abiertas en función del parámetro $\delta=\frac{t}{t'}$, para $t'=1$ fijo y para un número $N=100$ de celdas unitarias.
 	\label{fig:ssh-open}}
