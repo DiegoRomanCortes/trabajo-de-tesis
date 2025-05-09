@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{50}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -114,25 +114,26 @@ Hogares con acceso a internet fijo alcanzan el 67\% y usuarios aumentan
 \newblock URL
   \url{https://www.subtel.gob.cl/hogares-con-acceso-a-internet-fijo-alcanzan-el-67-y-usuarios-aumentan-preferencia-por-redes-de-alta-velocidad}.
 
-\bibitem[Szameit et~al.(2005)Szameit, Bl\"{o}mer, Burghoff, Schreiber, Pertsch,
-  Nolte, T\"{u}nnermann, and Lederer]{femto}
-Alexander Szameit, Dominik Bl\"{o}mer, Jonas Burghoff, Thomas Schreiber, Thomas
-  Pertsch, Stefan Nolte, Andreas T\"{u}nnermann, and Falk Lederer.
-\newblock Discrete nonlinear localization in femtosecond laser written
-  waveguides in fused silica.
-\newblock \emph{Opt. Express}, 13\penalty0 (26):\penalty0 10552--10557, Dec
-  2005.
-\newblock \doi{10.1364/OPEX.13.010552}.
-\newblock URL \url{https://opg.optica.org/oe/abstract.cfm?URI=oe-13-26-10552}.
+\bibitem[Zhang et~al.(2022)Zhang, Ning, Zhong, Belić, Zhang, Feng, Liang,
+  Zhang, and Xiao]{BlochOsci}
+Zhaoyang Zhang, Shaohuan Ning, Hua Zhong, Milivoj~R. Belić, Yiqi Zhang, Yuan
+  Feng, Shun Liang, Yanpeng Zhang, and Min Xiao.
+\newblock Experimental demonstration of optical bloch oscillation in
+  electromagnetically induced photonic lattices.
+\newblock \emph{Fundamental Research}, 2\penalty0 (3):\penalty0 401--404, 2022.
+\newblock ISSN 2667-3258.
+\newblock \doi{https://doi.org/10.1016/j.fmre.2021.08.019}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S2667325821001746}.
 
-\bibitem[Plotnik et~al.(2011)Plotnik, Peleg, Dreisow, Heinrich, Nolte, Szameit,
-  and Segev]{bics}
-Yonatan Plotnik, Or~Peleg, Felix Dreisow, Matthias Heinrich, Stefan Nolte,
-  Alexander Szameit, and Mordechai Segev.
-\newblock Experimental observation of optical bound states in the continuum.
-\newblock \emph{Phys. Rev. Lett.}, 107:\penalty0 183901, Oct 2011.
-\newblock \doi{10.1103/PhysRevLett.107.183901}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.107.183901}.
+\bibitem[Schwartz et~al.(2007)Schwartz, Bartal, Fishman, and Segev]{Anderson}
+Tal Schwartz, Guy Bartal, Shmuel Fishman, and Mordechai Segev.
+\newblock Transport and anderson localization in disordered two-dimensional
+  photonic lattices.
+\newblock \emph{Nature}, 446\penalty0 (7131):\penalty0 52--55, Mar 2007.
+\newblock ISSN 1476-4687.
+\newblock \doi{10.1038/nature05623}.
+\newblock URL \url{https://doi.org/10.1038/nature05623}.
 
 \bibitem[Vicencio et~al.(2015)Vicencio, Cantillano, Morales-Inostroza, Real,
   Mej\'{\i}a-Cort\'es, Weimann, Szameit, and Molina]{lieb1}
@@ -169,57 +170,6 @@ Rodrigo~A. Vicencio.
   2021.
 \newblock \doi{10.1080/23746149.2021.1878057}.
 \newblock URL \url{https://doi.org/10.1080/23746149.2021.1878057}.
-
-\bibitem[Rom{\'a}n-Cort{\'e}s et~al.(2021)Rom{\'a}n-Cort{\'e}s, Fadic,
-  Cid-Lara, Guzm{\'a}n-Silva, Real, and Vicencio]{strain}
-Diego Rom{\'a}n-Cort{\'e}s, Guillermo Fadic, Christofer Cid-Lara, Diego
-  Guzm{\'a}n-Silva, Basti{\'a}n Real, and Rodrigo~A. Vicencio.
-\newblock Strain induced localization to delocalization transition on a lieb
-  photonic ribbon lattice.
-\newblock \emph{Scientific Reports}, 11\penalty0 (1):\penalty0 21411, Nov 2021.
-\newblock ISSN 2045-2322.
-\newblock \doi{10.1038/s41598-021-00967-3}.
-\newblock URL \url{https://doi.org/10.1038/s41598-021-00967-3}.
-
-\bibitem[Cubillos~Cornejo et~al.(2023)Cubillos~Cornejo, Guzm{\'a}n-Silva,
-  Cornejo, Bordeu, and Vicencio]{dendritas}
-Javier Cubillos~Cornejo, Diego Guzm{\'a}n-Silva, V{\'i}ctor~Hugo Cornejo,
-  Ignacio Bordeu, and Rodrigo~A. Vicencio.
-\newblock Transport and localization on dendrite-inspired flat band linear
-  photonic lattices.
-\newblock \emph{Scientific Reports}, 13\penalty0 (1):\penalty0 13057, Aug 2023.
-\newblock ISSN 2045-2322.
-\newblock \doi{10.1038/s41598-023-39985-8}.
-\newblock URL \url{https://doi.org/10.1038/s41598-023-39985-8}.
-
-\bibitem[Vildoso et~al.(2023)Vildoso, Vicencio, and Petrovic]{splitters}
-Paloma Vildoso, Rodrigo~A. Vicencio, and Jovana Petrovic.
-\newblock Ultra-low-loss broadband multiport optical splitters.
-\newblock \emph{Opt. Express}, 31\penalty0 (8):\penalty0 12703--12716, Apr
-  2023.
-\newblock \doi{10.1364/OE.486855}.
-\newblock URL \url{https://opg.optica.org/oe/abstract.cfm?URI=oe-31-8-12703}.
-
-\bibitem[Zhang et~al.(2022)Zhang, Ning, Zhong, Belić, Zhang, Feng, Liang,
-  Zhang, and Xiao]{BlochOsci}
-Zhaoyang Zhang, Shaohuan Ning, Hua Zhong, Milivoj~R. Belić, Yiqi Zhang, Yuan
-  Feng, Shun Liang, Yanpeng Zhang, and Min Xiao.
-\newblock Experimental demonstration of optical bloch oscillation in
-  electromagnetically induced photonic lattices.
-\newblock \emph{Fundamental Research}, 2\penalty0 (3):\penalty0 401--404, 2022.
-\newblock ISSN 2667-3258.
-\newblock \doi{https://doi.org/10.1016/j.fmre.2021.08.019}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S2667325821001746}.
-
-\bibitem[Schwartz et~al.(2007)Schwartz, Bartal, Fishman, and Segev]{Anderson}
-Tal Schwartz, Guy Bartal, Shmuel Fishman, and Mordechai Segev.
-\newblock Transport and anderson localization in disordered two-dimensional
-  photonic lattices.
-\newblock \emph{Nature}, 446\penalty0 (7131):\penalty0 52--55, Mar 2007.
-\newblock ISSN 1476-4687.
-\newblock \doi{10.1038/nature05623}.
-\newblock URL \url{https://doi.org/10.1038/nature05623}.
 
 \bibitem[Mukherjee et~al.(2017)Mukherjee, Spracklen, Valiente, Andersson,
   {\"O}hberg, Goldman, and Thomson]{obstopo}
@@ -299,16 +249,6 @@ Joaquin Medina~Due{\~{n}}as, Gabriel O'Ryan~P{\'{e}}rez, Carla
 \newblock ISSN 2521-327X.
 \newblock \doi{10.22331/q-2021-08-17-526}.
 \newblock URL \url{https://doi.org/10.22331/q-2021-08-17-526}.
-
-\bibitem[Li et~al.(2022)Li, Hu, Zhang, Tian, Gu, Zhu, Yuan, Yi, Li, Liu, Hao,
-  Gan, and Zhao]{telecom}
-Zhiwen Li, Siqi Hu, Qiao Zhang, Ruijuan Tian, Linpeng Gu, Yisong Zhu, Qingchen
-  Yuan, Ruixuan Yi, Chen Li, Yan Liu, Yue Hao, Xuetao Gan, and Jianlin Zhao.
-\newblock Telecom-band waveguide-integrated mos2 photodetector assisted by hot
-  electrons.
-\newblock \emph{ACS Photonics}, 9\penalty0 (1):\penalty0 282--289, 2022.
-\newblock \doi{10.1021/acsphotonics.1c01622}.
-\newblock URL \url{https://doi.org/10.1021/acsphotonics.1c01622}.
 
 \bibitem[Román-Cort{\'e}s et~al.(2025)Román-Cort{\'e}s, Mazanov, Vicencio,
   and Gorlach]{Pmodecoupling}
@@ -422,6 +362,15 @@ Monika A.~M. Marte and Stig Stenholm.
 \newblock \emph{Phys. Rev. A}, 56:\penalty0 2940--2953, Oct 1997.
 \newblock \doi{10.1103/PhysRevA.56.2940}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.56.2940}.
+
+\bibitem[Plotnik et~al.(2011)Plotnik, Peleg, Dreisow, Heinrich, Nolte, Szameit,
+  and Segev]{bics}
+Yonatan Plotnik, Or~Peleg, Felix Dreisow, Matthias Heinrich, Stefan Nolte,
+  Alexander Szameit, and Mordechai Segev.
+\newblock Experimental observation of optical bound states in the continuum.
+\newblock \emph{Phys. Rev. Lett.}, 107:\penalty0 183901, Oct 2011.
+\newblock \doi{10.1103/PhysRevLett.107.183901}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.107.183901}.
 
 \bibitem[J{\"o}rg et~al.(2020)J{\"o}rg, Queralt{\'o}, Kremer, Pelegr{\'i},
   Schulz, Szameit, von Freymann, Mompart, and Ahufinger]{OAMCaging}

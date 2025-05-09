@@ -38,45 +38,45 @@ Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan 
 while executing---line 1315 of file unsrtnat.bst
 Too many commas in name 1 of "Polini, M., Guinea, F., Lewenstein, M., Manoharan H. C. and Pellegrini V." for entry honeycombdirac
 while executing---line 1315 of file unsrtnat.bst
-You've used 55 entries,
+You've used 50 entries,
             2481 wiz_defined-function locations,
-            1024 strings with 18874 characters,
-and the built_in function-call counts, 24831 in all, are:
-= -- 2095
-> -- 1539
+            985 strings with 17292 characters,
+and the built_in function-call counts, 22077 in all, are:
+= -- 1886
+> -- 1314
 < -- 13
-+ -- 577
-- -- 466
-* -- 2377
-:= -- 4173
-add.period$ -- 285
-call.type$ -- 55
-change.case$ -- 107
-chr.to.int$ -- 54
-cite$ -- 63
-duplicate$ -- 1025
-empty$ -- 2008
-format.name$ -- 529
-if$ -- 5134
++ -- 497
+- -- 396
+* -- 2081
+:= -- 3691
+add.period$ -- 258
+call.type$ -- 50
+change.case$ -- 97
+chr.to.int$ -- 49
+cite$ -- 58
+duplicate$ -- 930
+empty$ -- 1814
+format.name$ -- 454
+if$ -- 4584
 int.to.chr$ -- 2
-int.to.str$ -- 56
-missing$ -- 55
-newline$ -- 403
-num.names$ -- 153
-pop$ -- 298
+int.to.str$ -- 51
+missing$ -- 50
+newline$ -- 366
+num.names$ -- 138
+pop$ -- 275
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 50
 quote$ -- 0
-skip$ -- 540
+skip$ -- 494
 stack$ -- 0
-substring$ -- 1123
-swap$ -- 149
+substring$ -- 988
+swap$ -- 135
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 373
+type$ -- 338
 warning$ -- 4
-while$ -- 161
+while$ -- 144
 width$ -- 0
-write$ -- 957
+write$ -- 868
 (There were 12 error messages)
