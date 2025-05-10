@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -279,6 +279,15 @@ Maxim Mazanov, Diego Román-Cortés, Gabriel Cáceres-Aravena, Christofer Cid,
 \newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c00728}.
 \newblock PMID: 38574276.
 
+\bibitem[Su et~al.(1979)Su, Schrieffer, and Heeger]{ssh}
+W.~P. Su, J.~R. Schrieffer, and A.~J. Heeger.
+\newblock Solitons in {Polyacetylene}.
+\newblock \emph{Physical Review Letters}, 42\penalty0 (25):\penalty0
+  1698--1701, June 1979.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.42.1698}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.42.1698}.
+
 \bibitem[Haus et~al.(1987)Haus, Huang, Kawakami, and
   Whitaker]{haus_coupled-mode}
 H.~Haus, W.~Huang, S.~Kawakami, and N.~Whitaker.
@@ -298,15 +307,6 @@ John~D. Joannopoulos, Steven~G. Johnson, Joshua~N. Winn, and Robert~D. Meade.
 \newblock Princeton University Press, Princeton Oxford, 2nd edition edition,
   2008.
 \newblock ISBN 978-0-691-12456-8.
-
-\bibitem[Su et~al.(1979)Su, Schrieffer, and Heeger]{ssh}
-W.~P. Su, J.~R. Schrieffer, and A.~J. Heeger.
-\newblock Solitons in {Polyacetylene}.
-\newblock \emph{Physical Review Letters}, 42\penalty0 (25):\penalty0
-  1698--1701, June 1979.
-\newblock ISSN 0031-9007.
-\newblock \doi{10.1103/PhysRevLett.42.1698}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.42.1698}.
 
 \bibitem[Malkova et~al.(2009)Malkova, Hromada, Wang, Bryant, and
   Chen]{ssh-photonic}
@@ -452,5 +452,14 @@ M.~Bayer, T.~Gutbrod, J.~P. Reithmaier, A.~Forchel, T.~L. Reinecke, P.~A.
 \newblock \emph{Phys. Rev. Lett.}, 81:\penalty0 2582--2585, Sep 1998.
 \newblock \doi{10.1103/PhysRevLett.81.2582}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.81.2582}.
+
+\bibitem[Vicencio et~al.(2025)Vicencio, Rom\'an-Cort\'es, Rubio-Sald\'{\i}as,
+  Vildoso, and Foa~Torres]{nonsymm}
+Rodrigo~A. Vicencio, Diego Rom\'an-Cort\'es, Mart\'{\i}n Rubio-Sald\'{\i}as,
+  Paloma Vildoso, and Luis E.~F. Foa~Torres.
+\newblock Nonsymmetric evanescent coupling in photonics.
+\newblock \emph{Phys. Rev. A}, 111:\penalty0 043510, Apr 2025.
+\newblock \doi{10.1103/PhysRevA.111.043510}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.111.043510}.
 
 \end{thebibliography}

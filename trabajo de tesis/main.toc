@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {2.3.1}Modos TE y TM}{11}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Modos HE y EH}{12}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Modos normales en guías de onda}{13}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Teoría de Modos Acoplados}{14}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Teoría de Modos Acoplados }{14}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Derivación desde un principio variacional}{14}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Dímero TE en guías de onda tipo losa}{16}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}{18}{subsection.2.5.3}%
@@ -37,11 +37,17 @@
 \contentsline {section}{\numberline {6.2}Moléculas Fotónicas en Red SP-SSH}{38}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Topología en la Red SP-SSH}{39}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Implementación Experimental}{41}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusiones }{43}{chapter.7}%
-\contentsline {chapter}{\numberline {}Bibliograf\'ia}{49}{chapter*.32}%
-\contentsline {chapter}{Anexo \numberline {A}Ortogonalidad de los Modos Normales }{50}{Appendix.alph1.Alph1}%
-\contentsline {section}{\numberline {A.1}Hermiticidad del Operador $T_{ij}$}{50}{section.alph1.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Ortogonalidad del Sistema Completo}{50}{section.alph1.Alph1.2}%
-\contentsline {chapter}{Anexo \numberline {B}Código en Python para cálculo de modos normales }{52}{Appendix.alph1.Alph2}%
-\contentsline {chapter}{Anexo \numberline {C}Código en C de BPM }{55}{Appendix.alph1.Alph3}%
-\contentsline {chapter}{Anexo \numberline {D}Código en Python generador de hologramas }{60}{Appendix.alph1.Alph4}%
+\contentsline {chapter}{\numberline {7}Acoplamiento Evanescente No Simétrico}{43}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Origen del Acoplamiento No Simétrico}{43}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Modelo Dinámico y Reducción Efectiva}{43}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Estimación de Integrales y Escalamiento Asintótico}{44}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Validación Numérica y Comparación con CMT}{44}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Implicancias y Aplicaciones}{44}{section.7.5}%
+\contentsline {chapter}{\numberline {8}Conclusiones }{46}{chapter.8}%
+\contentsline {chapter}{\numberline {}Bibliograf\'ia}{52}{chapter*.32}%
+\contentsline {chapter}{Anexo \numberline {A}Ortogonalidad de los Modos Normales }{53}{Appendix.alph1.Alph1}%
+\contentsline {section}{\numberline {A.1}Hermiticidad del Operador $T_{ij}$}{53}{section.alph1.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Ortogonalidad del Sistema Completo}{53}{section.alph1.Alph1.2}%
+\contentsline {chapter}{Anexo \numberline {B}Código en Python para cálculo de modos normales }{55}{Appendix.alph1.Alph2}%
+\contentsline {chapter}{Anexo \numberline {C}Código en C de BPM }{58}{Appendix.alph1.Alph3}%
+\contentsline {chapter}{Anexo \numberline {D}Código en Python generador de hologramas }{63}{Appendix.alph1.Alph4}%

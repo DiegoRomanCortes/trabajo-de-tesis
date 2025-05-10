@@ -1,0 +1,74 @@
+\chapter{Acoplamiento Evanescente No Simétrico}
+\label{cap:asymmetric}
+
+Los modelos discretos en fotónica, como la teoría de modos acoplados (CMT), suelen asumir acoplamientos simétricos entre guías de onda: es decir, que la constante de acoplamiento entre dos sitios \( C_{i\to j} \) es igual a \( C_{j\to i} \). Esta suposición garantiza la hermiticidad del Hamiltoniano efectivo y suele estar justificada cuando las guías son idénticas y lo suficientemente separadas. Sin embargo, esta simetría puede romperse de forma inherente en sistemas reales, incluso en ausencia de pérdida o ganancia, cuando las guías presentan distintos perfiles de índice de refracción \cite{nonsymm}.
+
+\section{Origen del Acoplamiento No Simétrico}
+
+El acoplamiento evanescente entre guías de onda depende de la superposición de las colas de los modos ópticos fuera del núcleo de confinamiento. Cuando dos guías tienen diferentes contrastes de índice (\( \Delta n_1 \ne \Delta n_2 \)), los perfiles modales presentan colas evanescentes de distinta amplitud y extensión, generando un acoplamiento no recíproco.
+
+Este acoplamiento puede cuantificarse mediante la teoría de modos acoplados no ortogonal descrita en la sección \ref{cap:CMTteo}.
+
+\section{Modelo Dinámico y Reducción Efectiva}
+
+Con estas consideraciones, las ecuaciones dinámicas para un dimero fotónico generalizado son, siguiendo la ecuación (\ref{eqn:non-ortho-CMT-eqs}):
+\begin{equation}
+	-i
+	\frac{d}{dz}
+	\begin{pmatrix}
+	P_{11} & P_{12}
+	\\
+	P_{12} & P_{22}	
+\end{pmatrix}
+\begin{pmatrix}
+	u_1
+	\\
+	u_2	
+\end{pmatrix}
+=
+\begin{pmatrix}
+	H_{11} & H_{12}
+	\\
+	H_{12} & H_{22}	
+\end{pmatrix}
+\begin{pmatrix}
+	u_1
+	\\
+	u_2	
+\end{pmatrix} \iff -i\frac{d}{dz}\textbf{v} = \underbrace{\hat{P}^{-1/2}\hat{H}\hat{P}^{-1/2}}_{\equiv \hat{H}'} \textbf{v} \ ,
+\end{equation}
+donde $\textbf{v}=\hat{P}^{1/2}\textbf{u}$ es una base ortogonalizada y $\hat{P}^{1/2}$ existe debido a que $\hat{P}$ es definida semi-positiva \cite{haus_coupled-mode}. Dado que $\hat{H}$ es simétrica, $\hat{H}'$ también lo es y por tanto los autovalores $\lambda$ deben ser reales. Al proponer una solución del tipo $e^{i\lambda z}$, el problema se transforma en encontrar los valores de $\lambda$ que satisfagan $\text{Det}[ \hat{H} - \lambda\hat{P}]=0$. 
+
+
+Estas ecuaciones pueden desacoplarse en forma efectiva, obteniendo acoplamientos dados por las entradas de la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$:
+\begin{align}
+	\hat{C} &=  \frac{1}{P_{11}P_{22}-|P_{12}|^2}\begin{pmatrix}
+P_{22}H_{11} - P_{12}H_{12} & P_{22}H_{12} - P_{12}H_{22}
+\\
+P_{11}H_{12} - P_{12}H_{11} & P_{11}H_{22} - P_{12}H_{12}	
+\end{pmatrix} \ ,
+\end{align}
+El sistema presenta entonces una dinámica no recíproca, donde la transferencia de energía depende del sitio de entrada. Esto puede medirse con el desbalance de intensidad:
+\begin{equation}
+	I(z) = \frac{P_1(z) - P_2(z)}{P_1(z) + P_2(z)},
+\end{equation}
+que se vuelve asimétrico bajo inversión del sitio excitado.
+
+\section{Estimación de Integrales y Escalamiento Asintótico}
+
+Utilizando modelos de guía tipo losa o \textit{slab}, se obtienen soluciones analíticas para los perfiles modales TE. Se encuentra que:
+\begin{equation}
+	\frac{C_{21}}{C_{12}} \approx \left( \frac{\Delta n_2}{\Delta n_1} \right)^2 e^{(\gamma_2 - \gamma_1)d},
+\end{equation}
+donde \( \gamma_i \) representa el decaimiento evanescente y \( d \) la distancia entre guías. Esta relación muestra que la asimetría crece con la separación y con el contraste de índice.
+\section{Validación Numérica y Comparación con CMT}
+Mediante el método de expansión modal (EME) y resolución de Helmholtz en 2D, se calculan los modos propios y los acoplamientos reales. Las predicciones de la teoría de modos acoplados corregida muestran buen acuerdo con simulaciones, incluso para acoplamientos fuertes o desintonizados considerables. Se confirma que la asimetría en la dinámica obedece a la razón \( C_{21}/C_{12} \).
+\section{Implicancias y Aplicaciones}
+Este estudio demuestra que el acoplamiento no simétrico es un fenómeno físico genuino en fotónica, incluso en ausencia de pérdida, ganancia o elementos no Hermíticos explícitos. Sus consecuencias incluyen:
+\begin{itemize}
+	\item \textbf{Ruptura de reciprocidad}: sin necesidad de agentes externos.
+	\item \textbf{Desfase en la formación de estados simétricos/antisimétricos}: imposibilita operaciones ideales tipo Hadamard.
+	\item \textbf{Diseño de dispositivos direccionales}: como divisores asimétricos o rectificadores ópticos.
+\end{itemize}
+Estos resultados son relevantes para el diseño de redes topológicas no Hermíticas y para el control preciso de luz en plataformas fotónicas integradas.
+
