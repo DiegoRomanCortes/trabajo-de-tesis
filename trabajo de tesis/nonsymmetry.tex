@@ -52,24 +52,21 @@ y su promedio absoluto como:
 \end{equation}
 La cantidad \( \bar{I}(z) \) resulta especialmente útil para detectar asimetrías globales en la dinámica: cualquier desviación de cero implica una evolución no simétrica, revelando la presencia de acoplamientos evanescentes no recíprocos.
 
-\section{Validación Numérica y Comparación con CMT}
+\section{Validación Numérica}
 
-Utilizando el método de Expansión en Modos Normales (EME) y resolución numérica de Helmholtz en 2D, se calcularon los modos propios y los acoplamientos efectivos. Se comprobó que la teoría de CMT corregida predice con precisión la dinámica observada, incluso en regímenes de acoplamiento fuerte y desintonizados significativos. En particular, la razón \( C_{21}/C_{12} \) permite cuantificar el grado de no simetría.
+Utilizando el método de Expansión en Modos Normales (EME, Sección~\ref{cap:eme}), se calcularon los modos propios y los acoplamientos efectivos. Se comprobó que la CMT corregida predice con precisión la dinámica observada, incluso en regímenes de acoplamiento fuerte y para desintonizados significativos. En particular, la razón \( C_{21}/C_{12} \) permite cuantificar el grado de no reciprocidad del sistema. En la Figura~\ref{fig:nonotrho-num} se muestra dicha razón calculada mediante EME+CMT: primero se obtienen numéricamente los modos en las guías individuales y luego se introducen en las definiciones de la CMT.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{media/cij-nonortho.png}
 	\caption{Constantes de acoplamiento y su razón para un dímero homogéneo (inhomogéneo) en función de la distancia de separación. \label{fig:nonotrho-num}}
 \end{figure}
 \section{Comprobación Experimental}
-
 Para validar este efecto, se fabricaron dímeros mediante la técnica de escritura por láser femtosegundo descrito en la sección \ref{cap:fs}, variando el canal de entrada \( i \), la potencia de escritura \( P_{g}^i \), la distancia entre guías \( d \), y la longitud de propagación efectiva \( z \). En particular, se exploró el caso \( \Delta P = P_g^1 - P_g^2 = 5\,\mathrm{mW} \), con separación \( d = 18\,\mu\mathrm{m} \). La Figura~\ref{fig:nosymexp} muestra que la excitación de la guía superior favorece la transferencia energética hacia la guía inferior, mientras que la excitación inversa alcanza una distribución energética 1:1 para $z=11$ mm.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{media/nonsymm-exp.png}
 	\caption{Perfiles de salida para distintas longitudes de propagación \( z_i \), excitando la guía superior (izquierda) e inferior (derecha), con \( d = 18\,\mu\mathrm{m} \). \label{fig:nosymexp}}
 \end{figure}
-
 Mediante modelos de guías tipo losa (\textit{slab}) y modos TE, se obtienen expresiones analíticas para los acoplamientos:
 \begin{equation}
 	\frac{C_{21}}{C_{12}} \approx \left( \frac{\Delta n_2}{\Delta n_1} \right)^2 e^{(\gamma_2 - \gamma_1) d} \ ,
@@ -87,5 +84,5 @@ Este estudio demuestra que el acoplamiento no simétrico es un fenómeno físico
 	\item \textbf{Extensión a redes}: posibilidad de diseñar redes no Hermíticas con acoplamientos direccionados.
 \end{itemize}
 
-En conjunto, estos resultados permiten reinterpretar la teoría de modos acoplados en el contexto de sistemas no ideales, y abren nuevas oportunidades en el diseño de redes ópticas con funcionalidad direccional o topológica.
+En conjunto, estos resultados permiten reinterpretar la teoría de modos acoplados y abren nuevas oportunidades en el diseño de redes ópticas con funcionalidad direccional.
 

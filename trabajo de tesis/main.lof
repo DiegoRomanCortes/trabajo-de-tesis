@@ -2,40 +2,40 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Forma de una guía de onda tipo losa.}}{5}{figure.caption.4}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Soluciones gráficas de los modos TE.}}{7}{figure.caption.5}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Forma espacial de la componente longitudinal del campo magnético.}}{8}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Primeros modos guiados para una guía circular o fibra óptica. \relax }}{13}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Esquema del modelo SSH.}}{18}{figure.caption.8}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Topología de la red SSH.}}{20}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Espectro de la red SSH.}}{20}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Soluciones gráficas de los modos TE.}}{8}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Forma espacial de la componente longitudinal del campo magnético.}}{9}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Primeros modos normales guiados para una guía circular o fibra óptica. \relax }}{14}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Esquema del modelo SSH.}}{19}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Topología de la red SSH.}}{21}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Espectro de la red SSH.}}{21}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Error relativo y tiempo de ejecución.}}{22}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Excitación del sitio central de una red unidimensional.}}{24}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparación entre EME y CMT.}}{26}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Dinámica con EME y CMT.}}{26}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Error relativo y tiempo de ejecución.}}{23}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Excitación del sitio central de una red unidimensional.}}{25}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Comparación entre EME y CMT.}}{27}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Dinámica con EME y CMT.}}{27}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema de la técnica de escritura de guías de onda.}}{27}{figure.caption.15}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Montaje de excitación por láser supercontinuo.}}{28}{figure.caption.16}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Modulación espacial de luz para máscaras de amplitud y fase arbitrarias.}}{29}{figure.caption.17}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama del sistema de modulación espacial de luz}}{30}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Caracterización de vórtices ópticos mediante interferometría Mach-Zehnder.}}{31}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema de la técnica de escritura de guías de onda.}}{28}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Montaje de excitación por láser supercontinuo.}}{29}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Modulación espacial de luz para máscaras de amplitud y fase arbitrarias.}}{30}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagrama del sistema de modulación espacial de luz}}{31}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Caracterización de vórtices ópticos mediante interferometría Mach-Zehnder.}}{32}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Barrido angular experimental}}{32}{figure.caption.20}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Constantes de propagación y acoplamientos angulares para modos P}}{33}{figure.caption.21}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Micrografías de redes fotónicas tipo panal de abeja para modos P}}{33}{figure.caption.22}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Modelo de panal de abeja para modos $p_y$ con acoplamientos hasta terceros vecinos}}{34}{figure.caption.23}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Espectro de la red de panal de abeja de modos $p_y$ en función del ángulo}}{35}{figure.caption.24}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Descomposición de la red en cadenas cuasi-SSH}}{36}{figure.caption.25}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Barrido angular experimental}}{33}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Constantes de propagación y acoplamientos angulares para modos P}}{34}{figure.caption.21}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Micrografías de redes fotónicas tipo panal de abeja para modos P}}{34}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Modelo de panal de abeja para modos $p_y$ con acoplamientos hasta terceros vecinos}}{35}{figure.caption.23}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Espectro de la red de panal de abeja de modos $p_y$ en función del ángulo}}{36}{figure.caption.24}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Descomposición de la red en cadenas cuasi-SSH}}{37}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Propagación y acoplamientos en moléculas fotónicas}}{38}{figure.caption.26}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Esquema de la red SP-SSH y los acoplamientos considerados. \relax }}{39}{figure.caption.27}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Topología de la Red SP-SSH para $\Delta \beta = 0$.}}{40}{figure.caption.28}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagrama de fases topológicas. \relax }}{40}{figure.caption.29}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Análisis numérico-experimental del modelo SP-SSH}}{41}{figure.caption.30}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Caracterización experimental de redes SP-SSH}}{42}{figure.caption.31}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Propagación y acoplamientos en moléculas fotónicas}}{39}{figure.caption.26}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Esquema de la red SP-SSH y los acoplamientos considerados. \relax }}{40}{figure.caption.27}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Topología de la Red SP-SSH para $\Delta \beta = 0$.}}{41}{figure.caption.28}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Diagrama de fases topológicas. \relax }}{41}{figure.caption.29}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Análisis numérico-experimental del modelo SP-SSH}}{42}{figure.caption.30}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Caracterización experimental de redes SP-SSH}}{43}{figure.caption.31}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Constantes de acoplamiento y su razón para un dímero homogéneo (inhomogéneo) en función de la distancia de separación. \relax }}{44}{figure.caption.32}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Perfiles de salida para distintas longitudes de propagación \( z_i \), excitando la guía superior (izquierda) e inferior (derecha), con \( d = 18\,\mu \mathrm {m} \). \relax }}{45}{figure.caption.33}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Constantes de acoplamiento y su razón para un dímero homogéneo (inhomogéneo) en función de la distancia de separación. \relax }}{45}{figure.caption.32}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Perfiles de salida para distintas longitudes de propagación \( z_i \), excitando la guía superior (izquierda) e inferior (derecha), con \( d = 18\,\mu \mathrm {m} \). \relax }}{46}{figure.caption.33}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

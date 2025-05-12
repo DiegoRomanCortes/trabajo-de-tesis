@@ -36,7 +36,7 @@ La ecuación análoga a (\ref{eqn:helmholz}) para \textbf{H} es, por consiguient
 	 \left(\nabla^2  + k_0^2 n^2 \right) \textbf{H} &= i\omega \epsilon_0 \nabla n^2 \times \textbf{E} \ .
 	 \label{eqn:helmholzH}
 \end{align}
-Será útil separar los componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{ik_z z}$ en la variable espacial $z$. 
+En esta tesis se trabajará con sistemas en los que la luz viaja a través de una estructura de guías de onda constantes en la dirección $\hat{\textbf{z}}$ y periódicas en la dirección transversal. Es por ello que será útil separar los componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{i k_z z}$ en la variable espacial $z$:
 \begin{align}
 	\nabla_\perp \times  \textbf{E} + ik_z \hat{\textbf{z}} \times \textbf{E} &= i\omega\mu_0\textbf{H} \ ,
 	\label{eqn:EfieldH}
@@ -81,14 +81,15 @@ Finalmente, los componentes perpendiculares de los campos, $\textbf{H}_\perp$ y 
 \end{equation}
 Las ecuaciones (\ref{eqn:helmholz}), (\ref{eqn:helmholzH}) y (\ref{eqn:transversal}) serán las herramientas analíticas para los dos casos de estudio de las siguientes secciones y permiten visualizar la imposibilidad de las guías de onda dieléctricas de albergar modos TEM.
 \section{Soluciones analíticas para guía de onda tipo losa o \textit{slab}}
-El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuya forma analítica para el contraste $n(x)$ es la siguiente, con $n_1 > n_0$:
+El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuya forma analítica para el contraste $n(x)$ es la siguiente:
 \begin{equation*}
 	n(x) = \left\{\begin{matrix}
 	n_1 \ , \quad |x| \le a
 	\\
 	n_0 \ , \quad |x| > a
- 	\end{matrix}\right. \ .
+ 	\end{matrix}\right. \ ,
 \end{equation*}
+con $n_1 > n_0$
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{media/slab.pdf}
@@ -228,7 +229,7 @@ Asumiendo $\alpha$, $\beta$ y $k_z$ conocidos, las amplitudes deben cumplir las 
 \end{aligned} 
 \end{equation*}
 Las ecuaciones superiores imponen que $E_1 = 0$ cuando se satisface alguna condición de modos TE. Análogamente, las ecuaciones inferiores imponen $H_1 = 0$ en el caso de modos TM. Efectivamente, los nombres TE y TM se han puesto por transversal eléctrico y transversal magnético, respectivamente.
-Un corolario para los modos TE es que $E_z = E_x = 0$ por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente: una condición inicial arbitraria se propagará como una combinación lineal de los modos TE y TM que soporte la guía.
+Un corolario para los modos TE es que $E_z = E_x = 0$, por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente: una condición inicial arbitraria se propagará como una combinación lineal de los modos TE y TM que soporte la guía.
 
 \subsection{Soluciones gráficas y comparación entre modos TE y TM \label{cap:solslabTETM}}
 
@@ -239,7 +240,7 @@ Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\
 	\includegraphics[width=0.7\linewidth]{media/slabgraphical.pdf}
 	\caption[Soluciones gráficas de los modos TE.]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda. \label{fig:graphTE}}
 \end{figure}
-Luego de encontrar $k_z$, se tiene todo lo necesario para reemplazar en las expresiones obtenidas para las componentes del campo electromagnético. En la Figura \ref{fig:E-slab-graph} se grafica la forma espacial de cuatro modos.
+Luego de encontrar $k_z$, se tiene todo lo necesario para reemplazar en las expresiones obtenidas para las componentes del campo electromagnético. En la Figura \ref{fig:E-slab-graph} se grafica la forma espacial de cuatro modos, que se corresponden con los cuatro puntos morados de la Figura \ref{fig:graphTE}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/TETMfields.pdf}
@@ -263,7 +264,7 @@ En la sección anterior se estudió el sistema más sencillo en el que se puede 
 	\end{matrix}\right.
 	\ ,\nonumber
 \end{equation}
-donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas a usar, más apropiadas para este problema. 
+donde la tupla $(\rho, \phi, z)$ define las coordenadas cilíndricas más apropiadas a usar para este problema. 
 Al considerar las componentes longitudinales $\Psi$ = $\{E_z, H_z\}$ del campo eléctrico y magnético y  si se utiliza el método de separación de variables con $\Psi =  R(\rho)\Phi(\phi) e^{ik_z z} $,  las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) toman la forma:
 \begin{align}
 	\left[\frac{\partial^2}{\partial \rho^2} + \frac{\partial}{\rho\partial \rho} + \frac{\partial^2}{\rho^2\partial \phi^2} +\left( k_0^2n^2 - k_z^2 \right)\right]  R(\rho)\Phi(\phi) = 0
@@ -480,7 +481,7 @@ con $x_{1,m}=0$, 3.832,  7.016, 10.173, $\dots$.
 En particular, el modo $\text{HE}_{11}$ siempre existe. El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego y no será relevante para esta tesis. Sin embargo, se incluyen en la Figura \ref{fig:vortices} por completitud.
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{media/OAM_analitic}
-		\caption{Primeros modos guiados para una guía circular o fibra óptica. \label{fig:vortices}}
+		\caption{Primeros modos normales guiados para una guía circular o fibra óptica. \label{fig:vortices}}
 \end{figure}
 
 \section{Modos normales en guías de onda}
@@ -701,7 +702,7 @@ Una forma de encontrar el valor experimental del acoplamiento $C$ es mediante la
 \subsection{Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}
 
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear un análogo al Teorema de Bloch \cite{joannopoulos_photonic_2008}, la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica de la ecuación (\ref{eqn:non-ortho-CMT-eqs}) es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$.
-El célebre modelo de Su-Schrieffer-Heeger (SSH) es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
+Para ejemplificar lo anterior se usará el célebre modelo de Su-Schrieffer-Heeger (SSH), que es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
 \begin{equation*}
 	H = \sum_n t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c.
 \end{equation*}
@@ -751,18 +752,10 @@ El Hamiltoniano del modelo SSH presenta diversas simetrías: de reversión tempo
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{media/ssh-winding}
-	\caption[Topología de la red SSH.]{Topología de la red SSH. Se fija $t'=1$ y se varía $\delta=\frac{t}{t'}$ para un número $N=100$ de celdas unitarias. Arriba: Vectores $\textbf{d}$ y su fase. Para $\delta < 1$ ($\delta > 1$), (no) se encierra el origen. Abajo: Bandas en función del cuasimomento $k$ en la primera zona de Brillouin para $\delta < 1$, $\delta = 1$ y $\delta > 1$. 
+	\caption[Topología de la red SSH.]{Topología de la red SSH. Arriba: Vectores $\textbf{d}$ y su fase. Para $\delta < 1$ ($\delta > 1$), (no) se encierra el origen. Abajo: Bandas en función del cuasimomento $k$ en la primera zona de Brillouin para $\delta < 1$, $\delta = 1$ y $\delta > 1$. Se fija $t'=1$ y se varía $\delta=\frac{t}{t'}$ para un número $N=100$ de celdas unitarias. 
 	\label{fig:ssh-topo}}
 \end{figure} \begin{figure}[h]
 \centering	\includegraphics[width=0.7\linewidth]{media/ssh-open}
-	\caption[Espectro de la red SSH.]{Espectro de la red SSH. Condiciones de borde abiertas en función del parámetro $\delta=\frac{t}{t'}$, para $t'=1$ fijo y para un número $N=100$ de celdas unitarias.
+	\caption[Espectro de la red SSH.]{Espectro de la red SSH finita. Se aprecia la aparición de los estados de borde a energía cero para $\delta < 1$. Condiciones de borde abiertas en función del parámetro $\delta=\frac{t}{t'}$, para $t'=1$ fijo y para un número $N=100$ de celdas unitarias.
 	\label{fig:ssh-open}}
 \end{figure} 
-
-%\subsubsection{Red fotónica tipo panel de abeja}
-%La red tipo panel de abeja es la estructura subyacente del grafeno y que consiste en una red triangular con base de dos sitios, como se ilustra en la Figura \ref{fig:honeycomb-sketch}.
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=0.4\linewidth]{media/honeycomb-lattice}
-%	\caption[Esquema de una red de panel de abeja.]{Esquema de una red de panel de abeja. En amarillo se encierra la celda unitaria. \label{fig:honeycomb-sketch}}
-%\end{figure}
