@@ -13,7 +13,9 @@ Las ecuaciones de Maxwell en este régimen, en el Sistema Internacional de Unida
 	\\	
 	\nabla\times\textbf{H} &=\varepsilon(\textbf{r}) \frac{\partial \textbf{E}}{\partial t} \ , \label{eqn:ampere-maxwell}
 \end{align}
-donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda consideradas son sistemas ópticamente invariantes en la dirección de propagación $\hat{\textbf{z}}$. Por lo tanto, el perfil de índice de refracción puede expresarse como $n(x,y) = n_0 + \Delta n(x,y)$ donde $n_0 = 1.48$ es el índice de refracción del sustrato de borosilicato y $\Delta n(x,y)$ representa la modulación transversal del índice, con valores máximos en el rango $10^{-5} - 10^{-3}$. Esta variación espacial del índice, $\Delta n(x,y)$, es responsable del confinamiento óptico en el plano transversal $(x,y)$, permitiendo la propagación guiada de los modos electromagnéticos a lo largo del eje $\hat{\textbf{z}}$. Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) obteniendo:
+donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda consideradas son sistemas invariantes en la dirección de propagación $\hat{\textbf{z}}$. Por lo tanto, el perfil de índice de refracción puede expresarse como $n(x,y) = n_0 + \Delta n(x,y)$ donde $n_0 = 1.48$ es el índice de refracción del sustrato de borosilicato y $\Delta n(x,y)$ representa la modulación transversal del índice, con valores máximos en el rango $10^{-5} - 10^{-3}$. Esta variación espacial del índice, $\Delta n(x,y)$, es responsable del confinamiento óptico en el plano transversal $(x,y)$, permitiendo la propagación guiada de los modos electromagnéticos a lo largo del eje $\hat{\textbf{z}}$. 
+
+Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) obteniendo:
 \begin{align}
 	\nabla\times\left(\frac{\nabla\times\textbf{E}}{i\omega\mu_0}\right) &= -i\omega \varepsilon_0 n^2 \textbf{E} \implies \nabla\times\nabla\times\textbf{E} = k_0^2n^2\textbf{E} \ , \label{eqn:rotordoble}
 \end{align}
@@ -236,13 +238,13 @@ Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{media/slabgraphical.pdf}
+	\includegraphics[width=0.5\linewidth]{media/slabgraphical.pdf}
 	\caption[Soluciones gráficas de los modos TE.]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda. \label{fig:graphTE}}
 \end{figure}
 Luego de encontrar $k_z$, se tiene todo lo necesario para reemplazar en las expresiones obtenidas para las componentes del campo electromagnético. En la Figura \ref{fig:E-slab-graph} se grafica la forma espacial de cuatro modos, que se corresponden con los cuatro puntos morados de la Figura \ref{fig:graphTE}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\linewidth]{media/TETMfields.pdf}
+	\includegraphics[width=0.5\linewidth]{media/TETMfields.pdf}
 	\caption[Forma espacial de la componente longitudinal del campo magnético.]{ Forma espacial de la componente longitudinal del campo magnético. \label{fig:E-slab-graph}}
 \end{figure}
 
@@ -277,7 +279,7 @@ Al considerar las componentes longitudinales $\Psi$ = $\{E_z, H_z\}$ del campo e
 \therefore \Phi(\phi) = A e^{i\ell\phi}
 \nonumber
 \end{align}
-Imponiendo condiciones de periodicidad $\Phi(\phi)=\Phi(\phi + 2\pi)$, se tiene necesariamente que $\ell$ es un número entero. Por consiguiente, la ecuación para $R(\rho)$ es de tipo Bessel entera, por lo que buscando soluciones tales que $k_0^2 n_0^2 < \beta_z^2 < k_0^2 n_1^2$ y definiendo nuevamente $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
+Luego de imponer condiciones de periodicidad $\Phi(\phi)=\Phi(\phi + 2\pi)$, se tiene necesariamente que $\ell$ es un número entero. Por consiguiente, la ecuación para $R(\rho)$ es de tipo Bessel entera, por lo que buscando soluciones tales que $k_0^2 n_0^2 < \beta_z^2 < k_0^2 n_1^2$ y definiendo nuevamente $\alpha^2 \equiv k_0^2n_1^2 - k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$ se tiene:
 \begin{align}
 	\frac{d^2 R}{d\rho^2} + \frac{1}{\rho}\frac{dR}{d\rho} + \left( k_0^2n^2 - k_z^2 -\frac{\ell^2}{\rho^2}\right)R  = 0
 	\nonumber
@@ -449,7 +451,7 @@ Interpretando (\ref{eqn:fiber_trascendental}) como una ecuación cuadrática en 
 	\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\pm\sqrt{\left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 }
 \end{align*}
 
-Haciendo uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell(r)$,  es posible obtener dos tipos de soluciones que suelen ser llamadas HE y EH debido al campo longitudinal con mayor peso:
+Si se hace uso de las relaciones de recurrencia de las funciones de Bessel $J_\ell(r)$,  es posible obtener dos tipos de soluciones que suelen ser llamadas HE y EH debido al campo longitudinal con mayor peso:
 \begin{align}
 		\frac{J_{\ell-1}(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}+\frac{\ell}{(\alpha a)^2}-\sqrt{\Delta} \ , \quad \text{(modos HE)}
 		\label{eqn:HE}
@@ -514,7 +516,7 @@ La ecuación (\ref{eqn:eigenfield}) constituye un problema de autovalores para \
 
 Bajo esta aproximación, se suelen considerar un modos cuasi-transversales, donde el campo eléctrico está principalmente polarizado en una dirección fija (por ejemplo, \( E_y \)), y la ecuación de Helmholtz se reduce a:
 \begin{equation}
-	\left[\nabla_\perp^2 + k_0^2 n^2(x,y) \right] \phi(x,y) = \beta^2 \phi(x,y),
+	\left[\nabla_\perp^2 + k_0^2 n^2(x,y) \right] \phi(x,y) = \beta^2 \phi(x,y) \ ,
 \end{equation}
 donde \( \phi(x,y) \) representa el perfil transversal del campo. Esta aproximación resulta válida para muchas geometrías experimentales, especialmente cuando la luz está polarizada linealmente y las variaciones del índice no inducen acoplamiento entre polarizaciones ortogonales.
 
@@ -538,27 +540,27 @@ A partir de las ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}), es posible
 \end{equation}
 Al proponer una solución en forma de superposición de modos de las guías individuales del estilo
 \begin{align*}
-	\textbf{E} &= \sum_i a_i \textbf{e}_i, \quad \textbf{H} = \sum_i a_i \textbf{h}_i,
+	\textbf{E} &= \sum_i a_i \textbf{e}_i \ , \quad \textbf{H} = \sum_i a_i \textbf{h}_i \ ,
 \end{align*}
 donde $a_i$ representa la amplitud del $i$-ésimo modo. Los coeficientes permanecen indeterminados pero sujetos a minimizar la expresión para $k_z$. Sustituyendo estas expansiones en (\ref{eqn:kzprevar}), se obtiene una expresión simplificada para la constante de propagación del sistema $k_z$:
 \begin{align*}
 	(\textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H})\cdot\hat{\textbf{z}} 
 	&= \sum_{ij} a_i^* \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \, a_j 
-	\equiv \sum_{ij} a_i^* p_{ij} a_j.
+	\equiv \sum_{ij} a_i^* p_{ij} a_j \ .
 \end{align*}
 El integrando del numerador se desarrolla como:
 \begin{align*}
-	\text{integrando numerador} &= i\sum_{ij} \Big[ a_i^* k_z^j (\hat{\textbf{z}}\times\textbf{e}_j )\cdot\textbf{h}_i^* a_j  + a_j \left(\omega \varepsilon_0 (n^2-n_j^2) \textbf{e}_j - k_z^j \hat{\textbf{z}}\times\textbf{h}_j \right) \cdot \textbf{e}_i^* a_i^* \Big], \\
-	&= i\sum_{ij} a_i^* \left[ k_z^j p_{ij} + \omega \varepsilon_0(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \right] a_j,
+	\text{integrando numerador} &= i\sum_{ij} \Big[ a_i^* k_z^j (\hat{\textbf{z}}\times\textbf{e}_j )\cdot\textbf{h}_i^* a_j  + a_j \left(\omega \varepsilon_0 (n^2-n_j^2) \textbf{e}_j - k_z^j \hat{\textbf{z}}\times\textbf{h}_j \right) \cdot \textbf{e}_i^* a_i^* \Big] \ , \\
+	&= i\sum_{ij} a_i^* \left[ k_z^j p_{ij} + \omega \varepsilon_0(n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \right] a_j \ ,
 \end{align*}
-donde $k_z^j$ es la constante de propagación del $j$-ésimo modo aislado \footnote{en general, $k_z \neq k_z^j$.}. 
+donde $k_z^j$ es la constante de propagación del $j$-ésimo modo aislado\footnote{en general, $k_z \neq k_z^j$.}. 
 
 Definiendo las siguientes cantidades fundamentales:
 \begin{align}
-	P_{ij} &\equiv \frac{1}{4} \iint \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \, dxdy, \label{eqn:pij-ori} \\
+	P_{ij} &\equiv \frac{1}{4} \iint \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \ , dxdy, \label{eqn:pij-ori} \\
 	&= \frac{1}{4 \omega \mu_0} \iint \Big[ 
-	(k_z^i + k_z^j) \left( \textbf{e}_i^* \cdot \textbf{e}_j - e_{z,i}^* e_{z,j} \right)  + i \left( \textbf{e}_i^* \cdot \nabla_\perp e_{z,j} + \textbf{e}_j \cdot \nabla_\perp e_{z,i}^* \right) \Big] dxdy, \label{eqn:pij-simpli} \\
-	H_{ij} &\equiv P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint (n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \, dxdy, \label{eqn:hij}
+	(k_z^i + k_z^j) \left( \textbf{e}_i^* \cdot \textbf{e}_j - e_{z,i}^* e_{z,j} \right)  + i \left( \textbf{e}_i^* \cdot \nabla_\perp e_{z,j} + \textbf{e}_j \cdot \nabla_\perp e_{z,i}^* \right) \Big] dxdy \ , \label{eqn:pij-simpli} \\
+	H_{ij} &\equiv P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint (n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \, dxdy \ , \label{eqn:hij}
 \end{align}
 se puede escribir la expresión (\ref{eqn:kzprevar}) para la constante de propagación $k_z$ de manera compacta como un cociente de Rayleigh-Ritz:
 \begin{equation}
@@ -571,7 +573,7 @@ Diferenciando con respecto a $a_k^*$ para optimizar el valor de $k_z$ se tiene:
 \end{align}
 Recuperando $k_z \to -i\frac{\partial}{\partial z}$, se obtienen las ecuaciones de $N$ modos acoplados no ortogonales:
 \begin{equation}
-	-i \sum_{j} P_{kj} \frac{d a_j}{dz} ´= \sum_{j} H_{kj} a_j, \text{ con }k=1,2,\cdots,N \ . \label{eqn:non-ortho-CMT-eqs}
+	-i \sum_{j} P_{kj} \frac{d a_j}{dz} ´= \sum_{j} H_{kj} a_j \ , \text{ con }k=1,2,\cdots,N \ . \label{eqn:non-ortho-CMT-eqs}
 \end{equation}
 Claramente, de la expresión (\ref{eqn:pij-ori}) para $P_{ij}$, se cumple hermiticidad. A primera vista, puede parecer que $H_{ij}$ no es hermítica, pero veamos que sí lo es. Para ello, basta considerar la resta $H_{ij} - H_{ji}^*$ y notar que se anula:
 \begin{align*}

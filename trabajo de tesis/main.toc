@@ -4,14 +4,14 @@
 \contentsline {section}{\numberline {2.1}Propagación en guías de onda dieléctricas desde las ecuaciones de Maxwell }{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Soluciones analíticas para guía de onda tipo losa o \textit {slab} }{6}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Soluciones gráficas y comparación entre modos TE y TM }{8}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}Soluciones analíticas para fibra óptica circular}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Soluciones analíticas para fibra óptica circular}{9}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Modos TE y TM}{12}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Modos HE y EH}{13}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}Modos normales en guías de onda}{15}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Teoría de Modos Acoplados }{16}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Derivación desde un principio variacional}{16}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.4}Modos normales en guías de onda}{14}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Teoría de Modos Acoplados }{15}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Derivación desde un principio variacional}{15}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Dímero TE en guías de onda tipo losa}{18}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}{20}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.3}Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}{19}{subsection.2.5.3}%
 \contentsline {chapter}{\numberline {3}Métodos Numéricos }{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Expansión en Modos Normales }{23}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Método de Propagación de Haces}{24}{section.3.2}%

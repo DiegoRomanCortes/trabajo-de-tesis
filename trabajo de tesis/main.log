@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  13 MAY 2025 12:52
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  13 MAY 2025 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1276,26 +1276,26 @@ File: media/slab.pdf Graphic file (type pdf)
  [6] [7]
 File: media/slabgraphical.pdf Graphic file (type pdf)
 <use media/slabgraphical.pdf>
- [8]
 File: media/TETMfields.pdf Graphic file (type pdf)
 <use media/TETMfields.pdf>
- [9] [10] [11] [12] [13]
+ [8] [9] [10] [11] [12]
 File: media/OAM_analitic.png Graphic file (type bmp)
 <media/OAM_analitic.png>
- [14] [15] [16]
+ [13] [14] [15]
 Missing character: There is no ´ ("B4) in font txr!
-[17] [18] [19]
+[16] [17] [18]
 File: media/ssh-model.png Graphic file (type bmp)
 <media/ssh-model.png>
- [20]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19] [20]
 File: media/ssh-winding.png Graphic file (type bmp)
 <media/ssh-winding.png>
 File: media/ssh-open.png Graphic file (type bmp)
 <media/ssh-open.png>
 )
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
