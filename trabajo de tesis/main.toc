@@ -5,48 +5,48 @@
 \contentsline {section}{\numberline {2.2}Soluciones analíticas para guía de onda tipo losa o \textit {slab} }{6}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Soluciones gráficas y comparación entre modos TE y TM }{8}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}Soluciones analíticas para fibra óptica circular}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Modos TE y TM}{13}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Modos HE y EH}{14}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.1}Modos TE y TM}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Modos HE y EH}{13}{subsection.2.3.2}%
 \contentsline {section}{\numberline {2.4}Modos normales en guías de onda}{15}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Teoría de Modos Acoplados }{16}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Derivación desde un principio variacional}{16}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Dímero TE en guías de onda tipo losa}{19}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.2}Dímero TE en guías de onda tipo losa}{18}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}{20}{subsection.2.5.3}%
-\contentsline {chapter}{\numberline {3}Métodos Numéricos }{24}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Expansión en Modos Normales }{24}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Método de Propagación de Haces}{25}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{26}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Desde la Teoría de Modos Acoplados }{27}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Métodos Experimentales }{30}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Escritura directa de guías de onda }{30}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo }{31}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Montaje de modulación espacial de luz}{31}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Etapa premodulación}{31}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Etapa de modulación}{32}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Etapa de acoplamiento}{32}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Etapa de Captura en Cámara}{32}{subsection.4.3.4}%
-\contentsline {subsubsection}{Configuración Interferométrica Opcional}{33}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Circuito Óptico}{33}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Generación de Imágenes Complejas }{33}{subsection.4.3.6}%
-\contentsline {section}{\numberline {4.4}Análisis de imágenes }{34}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Acoplamiento de modos $p_y$ y ángulo de invisibilidad }{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Acopladores}{35}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Redes tipo panal de abeja}{36}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Acoplamiento Evanescente No Simétrico}{40}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Origen de la dinámica no simétrica}{40}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Validación Numérica}{41}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Comprobación Experimental}{42}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Implicancias y Aplicaciones}{42}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Moléculas Fotónicas }{43}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Autoestados del acoplador fotónico para distancias de separación pequeñas}{43}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Moléculas Fotónicas en Red SP-SSH}{44}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Topología en la Red SP-SSH}{45}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Implementación Experimental}{46}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Conclusiones}{48}{chapter.8}%
-\contentsline {chapter}{\numberline {}Bibliograf\'ia}{55}{chapter*.34}%
-\contentsline {chapter}{Anexo \numberline {A}Ortogonalidad de los Modos Normales }{56}{Appendix.alph1.Alph1}%
-\contentsline {section}{\numberline {A.1}Hermiticidad del Operador $T_{ij}$}{56}{section.alph1.Alph1.1}%
-\contentsline {section}{\numberline {A.2}Ortogonalidad del Sistema Completo}{56}{section.alph1.Alph1.2}%
-\contentsline {chapter}{Anexo \numberline {B}Código en Python para cálculo de modos normales }{58}{Appendix.alph1.Alph2}%
-\contentsline {chapter}{Anexo \numberline {C}Código en C de BPM }{61}{Appendix.alph1.Alph3}%
-\contentsline {chapter}{Anexo \numberline {D}Código en Python generador de hologramas }{66}{Appendix.alph1.Alph4}%
+\contentsline {chapter}{\numberline {3}Métodos Numéricos }{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Expansión en Modos Normales }{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Método de Propagación de Haces}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{25}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Desde la Teoría de Modos Acoplados }{26}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Métodos Experimentales }{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Escritura directa de guías de onda }{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo }{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Montaje de modulación espacial de luz}{30}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Etapa premodulación}{30}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Etapa de modulación}{31}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Etapa de acoplamiento}{31}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Etapa de Captura en Cámara}{31}{subsection.4.3.4}%
+\contentsline {subsubsection}{Configuración Interferométrica Opcional}{32}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Circuito Óptico}{32}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Generación de Imágenes Complejas }{32}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}Análisis de imágenes }{33}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Acoplamiento de modos $p_y$ y ángulo de invisibilidad }{34}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Acopladores}{34}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Redes tipo panal de abeja}{35}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Acoplamiento Evanescente No Simétrico}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Origen de la dinámica no simétrica}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Validación Numérica}{40}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Comprobación Experimental}{41}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Implicancias y Aplicaciones}{41}{section.6.4}%
+\contentsline {chapter}{\numberline {7}Moléculas Fotónicas }{42}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Autoestados del acoplador fotónico para distancias de separación pequeñas}{42}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Moléculas Fotónicas en Red SP-SSH}{43}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Topología en la Red SP-SSH}{44}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Implementación Experimental}{45}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Conclusiones}{47}{chapter.8}%
+\contentsline {chapter}{\numberline {}Bibliograf\'ia}{54}{chapter*.34}%
+\contentsline {chapter}{Anexo \numberline {A}Ortogonalidad de los Modos Normales }{55}{Appendix.alph1.Alph1}%
+\contentsline {section}{\numberline {A.1}Hermiticidad del Operador $T_{ij}$}{55}{section.alph1.Alph1.1}%
+\contentsline {section}{\numberline {A.2}Ortogonalidad del Sistema Completo}{55}{section.alph1.Alph1.2}%
+\contentsline {chapter}{Anexo \numberline {B}Código en Python para cálculo de modos normales }{57}{Appendix.alph1.Alph2}%
+\contentsline {chapter}{Anexo \numberline {C}Código en C de BPM }{60}{Appendix.alph1.Alph3}%
+\contentsline {chapter}{Anexo \numberline {D}Código en Python generador de hologramas }{65}{Appendix.alph1.Alph4}%
