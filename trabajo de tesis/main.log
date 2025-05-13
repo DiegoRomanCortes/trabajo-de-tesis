@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  13 MAY 2025 12:40
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  13 MAY 2025 12:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1482,9 +1482,9 @@ Overfull \hbox (3.64058pt too wide) detected at line 18
 []
  []
 
-) (./anexoB.tex [55
+[55
 
-] [56]
+]) (./anexoB.tex [56]
 Anexo B.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1514,9 +1514,6 @@ LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux)
 (./numericos.aux) (./metodos.aux) (./magico.aux) (./nonsymmetry.aux)
 (./moleculas.aux) (./conclu.aux))
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 842078C8A639AC0D87E1D7205F25255A;11546.
  ) 
