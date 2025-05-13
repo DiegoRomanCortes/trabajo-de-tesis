@@ -100,7 +100,7 @@
 
 \newcommand{\abstractheader}{%
 	\hfill% Push content to right
-	\begin{minipage}[t]{0.65\textwidth}% Right-aligned box
+	\begin{minipage}[t]{0.53\textwidth}% Right-aligned box
 		\raggedright% Left-align text inside
 		RESUMEN DE LA TESIS PARA OPTAR \\ AL GRADO DE \MakeUppercase{\@tesisA},\\\MakeUppercase{\@tesisB}\\
 		POR: \MakeUppercase\@author\\

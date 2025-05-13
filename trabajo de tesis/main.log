@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  12 MAY 2025 18:09
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  13 MAY 2025 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1283,7 +1283,11 @@ Missing character: There is no ´ ("B4) in font txr!
 [17] [18] [19]
 File: media/ssh-model.png Graphic file (type bmp)
 <media/ssh-model.png>
- [20]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20] [21]
 File: media/ssh-winding.png Graphic file (type bmp)
 <media/ssh-winding.png>
 File: media/ssh-open.png Graphic file (type bmp)
@@ -1292,15 +1296,12 @@ File: media/ssh-open.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[21] [22]
+[22] [23]
 \openout2 = `numericos.aux'.
 
  (./numericos.tex
 Capítulo 3.
-[23
+[24
 
 
 
@@ -1308,15 +1309,16 @@ Capítulo 3.
 ]
 File: media/numerical_slab.png Graphic file (type bmp)
 <media/numerical_slab.png>
- [24]
+ [25]
 Overfull \hbox (19.42622pt too wide) in paragraph at lines 38--38
 |[]\TU/lmr/bx/n/14.4 Implementación mediante transformada de Fourier (FFTBPM)| 
 
  []
 
+[26]
 File: media/num_exp_comparison.png Graphic file (type bmp)
 <media/num_exp_comparison.png>
-[25] [26]
+ [27]
 File: codigo/dimol/coupler.png Graphic file (type bmp)
 <codigo/dimol/coupler.png>
 File: codigo/1darraycmt/1darraycmt.png Graphic file (type bmp)
@@ -1328,9 +1330,197 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27] [28]
+[28] [29]
 \openout2 = `metodos.aux'.
 
  (./metodos.tex
 Capítulo 4.
-File: med
+File: media/fabrication1.png Graphic file (type bmp)
+<media/fabrication1.png>
+[30
+
+
+
+
+]
+File: media/SC_setup.png Graphic file (type bmp)
+<media/SC_setup.png>
+ [31]
+File: media/SLMblaze4.png Graphic file (type bmp)
+<media/SLMblaze4.png>
+ [32]
+File: media/SLM_setupv1.png Graphic file (type bmp)
+<media/SLM_setupv1.png>
+ [33]
+File: media/OAM-free.png Graphic file (type bmp)
+<media/OAM-free.png>
+) [34]
+\openout2 = `magico.aux'.
+
+ (./magico.tex
+Capítulo 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+File: media/26um_15mm_angles_v2.png Graphic file (type bmp)
+<media/26um_15mm_angles_v2.png>
+File: codigo/eigenvalues_vs_angle.png Graphic file (type bmp)
+<codigo/eigenvalues_vs_angle.png>
+[35
+
+
+
+
+]
+File: media/honeycomb_lattices_bw.png Graphic file (type bmp)
+<media/honeycomb_lattices_bw.png>
+ [36]
+File: media/honeycomb-lattice.png Graphic file (type bmp)
+<media/honeycomb-lattice.png>
+File: codigo/NNNN_overlap_vs_angle.png Graphic file (type bmp)
+<codigo/NNNN_overlap_vs_angle.png>
+File: codigo/honeycomb_eigenvalues_vs_angle.png Graphic file (type bmp)
+<codigo/honeycomb_eigenvalues_vs_angle.png>
+File: media/ipr-corner-exp.png Graphic file (type bmp)
+<media/ipr-corner-exp.png>
+ [37]
+File: media/cuasi-ssh.png Graphic file (type bmp)
+<media/cuasi-ssh.png>
+File: media/ipr-bulk-exp.png Graphic file (type bmp)
+<media/ipr-bulk-exp.png>
+ [38]) [39]
+\openout2 = `nonsymmetry.aux'.
+
+ (./nonsymmetry.tex
+Capítulo 6.
+[40
+
+
+
+
+]
+File: media/imbalance-nonortho.png Graphic file (type bmp)
+<media/imbalance-nonortho.png>
+File: media/nonsymm-exp.png Graphic file (type bmp)
+<media/nonsymm-exp.png>
+ [41]) [42]
+\openout2 = `moleculas.aux'.
+
+ (./moleculas.tex
+Capítulo 7.
+File: codigo/dimol2/eigenvalues_vs_angle_1.png Graphic file (type bmp)
+<codigo/dimol2/eigenvalues_vs_angle_1.png>
+File: codigo/dimol3/eigenvalues_vs_wavelength.png Graphic file (type bmp)
+<codigo/dimol3/eigenvalues_vs_wavelength.png>
+[43
+
+
+
+
+]
+File: media/ssh_sp_model.png Graphic file (type bmp)
+<media/ssh_sp_model.png>
+ [44]
+File: media/sp-ssh-012.png Graphic file (type bmp)
+<media/sp-ssh-012.png>
+File: media/sp-ssh-phase-diagram.png Graphic file (type bmp)
+<media/sp-ssh-phase-diagram.png>
+ [45]
+File: media/sp-ssh-exp-num.png Graphic file (type bmp)
+<media/sp-ssh-exp-num.png>
+File: media/sp-ssh-exp.png Graphic file (type bmp)
+<media/sp-ssh-exp.png>
+) [46] [47]
+\openout2 = `conclu.aux'.
+
+ (./conclu.tex
+Capítulo 8.
+[48
+
+
+
+
+]) [49] (./main.bbl [50
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
+[][][][][][] [][] [] [][] [][][][][][][][] [][] [][][][] [][] [][][][][][][][] 
+[][] [][] [][] [][] [][] [] [][] [][][][][][][][] [][] [][][][][][][][] [][] []
+[][][][][][][][][][] [][]
+ []
+
+[51] [52] [53] [54]) (./anexoA.tex [55]
+Anexo A.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 9.
+
+
+Overfull \hbox (3.64058pt too wide) detected at line 18
+[]
+ []
+
+) (./anexoB.tex [56
+
+] [57]
+Anexo B.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 3.
+
+(./codigo/scalar-eme.py [58
+
+] [59])) (./anexoC.tex [60]
+Anexo C.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+(./codigo/array1d.c [61
+
+] [62] [63] [64])) (./anexoD.tex [65]
+Anexo D.
+(./codigo/slm_blaze.py [66
+
+])) [67] (./main.aux
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+ (./intro.aux) (./teorico.aux)
+(./numericos.aux) (./metodos.aux) (./magico.aux) (./nonsymmetry.aux)
+(./moleculas.aux) (./conclu.aux))
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 842078C8A639AC0D87E1D7205F25255A;11546.
+ ) 
+Here is how much of TeX's memory you used:
+ 41688 strings out of 476775
+ 958511 string characters out of 5808212
+ 2222991 words of memory out of 5000000
+ 61038 multiletter control sequences out of 15000+600000
+ 556175 words of font info for 179 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 94i,21n,103p,1463b,2119s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (74 pages).

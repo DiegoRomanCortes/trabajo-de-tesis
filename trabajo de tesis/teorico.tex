@@ -1,6 +1,6 @@
 \chapter{Marco Teórico \label{cap:teo}}
 
-En este capítulo se desarrollarán las herramientas analítico-teóricas que permiten describir los sistemas fótonicos estudiados en esta tesis. Éstos consisten en la propagación de luz láser de baja potencia (1 mW de potencia de salida) propagada en sistemas acoplados de guías de onda, las cuales están escritas dentro de una muestra de vidrio borosilicato. Estas condiciones experimentales permiten describir el comportamiento de la luz utilizando las ecuaciones de Maxwell aplicadas a un medio lineal, isotrópico, no magnético y sin fuentes de carga ni de corriente libres. 
+En este capítulo se desarrollarán las herramientas analítico-teóricas que permiten describir los sistemas fótonicos estudiados en esta tesis. Estos consisten en la propagación de luz láser de baja potencia (1 mW de potencia de salida) propagada en sistemas acoplados de guías de onda, las cuales están escritas dentro de una muestra de vidrio borosilicato. Estas condiciones experimentales permiten describir el comportamiento de la luz utilizando las ecuaciones de Maxwell aplicadas a un medio lineal, isotrópico, no magnético y sin fuentes de carga ni de corriente libres. 
 \section{Propagación en guías de onda dieléctricas desde las ecuaciones de Maxwell \label{cap:maxwell}}
 
 Las ecuaciones de Maxwell en este régimen, en el Sistema Internacional de Unidades, son:
@@ -13,7 +13,7 @@ Las ecuaciones de Maxwell en este régimen, en el Sistema Internacional de Unida
 	\\	
 	\nabla\times\textbf{H} &=\varepsilon(\textbf{r}) \frac{\partial \textbf{E}}{\partial t} \ , \label{eqn:ampere-maxwell}
 \end{align}
-donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda consideradas son sistemas ópticamente invariantes en la dirección de propagación $\hat{\textbf{z}}$. Por lo tanto, el perfil de índice de refracción puede expresarse como $n(x,y) = n_0 + \Delta n(x,y)$ donde $n_0 = 1.48$ es el índice de refracción del sustrato de borosilicato y $\Delta n(x,y)$ representa la modulación transversal del índice, con valores máximos en el rango $10^{-5} - 10^{-3}$. Esta variación espacial del índice, $\Delta n(x,y)$, es responsable del confinamiento óptico en el plano transversal $(x,y)$, permitiendo la propagación guiada de los modos electromagnéticos a lo largo del eje $\hat{\textbf{z}}$. Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) se tiene:
+donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. Las guías de onda consideradas son sistemas ópticamente invariantes en la dirección de propagación $\hat{\textbf{z}}$. Por lo tanto, el perfil de índice de refracción puede expresarse como $n(x,y) = n_0 + \Delta n(x,y)$ donde $n_0 = 1.48$ es el índice de refracción del sustrato de borosilicato y $\Delta n(x,y)$ representa la modulación transversal del índice, con valores máximos en el rango $10^{-5} - 10^{-3}$. Esta variación espacial del índice, $\Delta n(x,y)$, es responsable del confinamiento óptico en el plano transversal $(x,y)$, permitiendo la propagación guiada de los modos electromagnéticos a lo largo del eje $\hat{\textbf{z}}$. Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) obteniendo:
 \begin{align}
 	\nabla\times\left(\frac{\nabla\times\textbf{E}}{i\omega\mu_0}\right) &= -i\omega \varepsilon_0 n^2 \textbf{E} \implies \nabla\times\nabla\times\textbf{E} = k_0^2n^2\textbf{E} \ , \label{eqn:rotordoble}
 \end{align}
@@ -89,13 +89,12 @@ El sistema más simple que se puede estudiar es una guía de onda tipo losa, cuy
 	n_0 \ , \quad |x| > a
  	\end{matrix}\right. \ ,
 \end{equation*}
-con $n_1 > n_0$.
-\begin{figure}[H]
+con $n_1 > n_0$. \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{media/slab.pdf}
 	\caption[Forma de una guía de onda tipo losa.]{Forma de una guía de onda tipo losa. En las direcciones $\mathbf{\hat{y}}$ (vertical) y $\mathbf{\hat{z}}$ (hacia dentro de la página) la estructura es invariante.}
 \end{figure}
-Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) son de tipo Helmholz. Definiendo $\Psi = \{E_z, H_z\} $:
+Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) son de tipo Helmholtz. Definiendo $\Psi = \{E_z, H_z\} $:
 \begin{align*}
 	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0 \ .
 \end{align*}
@@ -272,7 +271,9 @@ Al considerar las componentes longitudinales $\Psi$ = $\{E_z, H_z\}$ del campo e
 	\\
 \rho^2\frac{d^2 R}{Rd\rho^2} + \rho\frac{dR}{Rd\rho} + \rho^2\left( k_0^2n^2 - k_z^2 \right) + \underbrace{\frac{d^2 \Phi}{\Phi d\phi^2}}_{-\ell^2} = 0
 \nonumber
-\\
+\end{align}
+\vspace{-3em}
+\begin{align}
 \therefore \Phi(\phi) = A e^{i\ell\phi}
 \nonumber
 \end{align}
@@ -303,7 +304,7 @@ Necesariamente se debe imponer $D_1 = D_2 = 0$ para que la solución sea finita 
 	\right.
 	\ . \nonumber
 \end{align*}
-En este caso, para imponer las condiciones de continuidad en $\textbf{E}_{||} = E_\phi \boldsymbol{\hat{\phi}} + E_z \hat{\textbf{z}}$ y $\textbf{H}_{||}= H_\phi \hat{\boldsymbol{\phi}} + H_z \hat{\textbf{z}}$, se hace necesario relacionar el resto de componentes del campo con $E_z$ y $H_z$ para lo cual se usará la ecuación (\ref{eqn:transversal}). 
+En este caso, para imponer las condiciones de continuidad en $\textbf{E}_{||} = E_\phi \boldsymbol{\hat{\phi}} + E_z \hat{\textbf{z}}$ y $\textbf{H}_{||}= H_\phi \hat{\boldsymbol{\phi}} + H_z \hat{\textbf{z}}$, se hace necesario relacionar el resto de componentes del campo con $E_z$ y $H_z$ para lo cual se requieren las ecuaciones (\ref{eqn:transversal}). 
 
 Como 
 \begin{equation*}
@@ -373,7 +374,7 @@ Separando por componentes y reemplazando:
 		\end{matrix}
 		\right.
 \end{align*}
-Ahora sí, imponiendo continuidad en $z$ y $\phi$:
+Luego, imponiendo continuidad en $z$ y $\phi$:
 \begin{align}
 	H_0^{1} J_\ell(\alpha a) &= H_0^{0} K_\ell (\beta a)
 	\label{eqn:cont1}
@@ -443,7 +444,7 @@ Contrario al caso de la guía de onda tipo losa, en fibras ópticas se hace nece
 %\end{figure}
 
 \subsection{Modos HE y EH}
-Interpretando la ecuación (\ref{eqn:fiber_trascendental}) como una cuadrática en $J_\ell'(\alpha a)/\alpha a J_\ell(\alpha a)$:
+Interpretando (\ref{eqn:fiber_trascendental}) como una ecuación cuadrática en $J_\ell'(\alpha a)/\alpha a J_\ell(\alpha a)$:
 \begin{align*}
 	\frac{J_\ell'(\alpha a)}{\alpha a J_\ell(\alpha a)} &= -\left(\frac{n_1^2+n_0^2}{2n_1^2}\right) \frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\pm\sqrt{\left(\frac{n_1^2-n_0^2}{2n_1^2}\right)^2\left(\frac{K_\ell'(\beta a)}{\beta a K_\ell(\beta a)}\right)^2+ \left( \frac{ k_z \ell}{ k_0 n_1} \right)^2\left[ \left(\frac{1}{\alpha a}\right)^2 + \left(\frac{1}{\beta a}\right)^2 \right]^2 }
 \end{align*}
@@ -486,33 +487,42 @@ En particular, el modo $\text{HE}_{11}$ siempre existe. El caso $\ell \ge 2$ tie
 
 \section{Modos normales en guías de onda}
 
-Si la estructura de guías de onda no varía en la dirección $\hat{\textbf{z}}$, por separación de variables la solución para el campo eléctrico es una onda plana del tipo $\textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z}$. A su vez, es conveniente separar el laplaciano como $\nabla^2 \equiv \nabla_\perp^2 + \frac{\partial^2}{\partial z^2}$. De esta forma, definiendo el operador $D_{ij}$ tal que $D_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) $, la parte transversal de las ecuaciones (\ref{eqn:helmholz}), se puede escribir como:
+Si la estructura de guías de onda no varía en la dirección \( \hat{\textbf{z}} \), la solución para el campo eléctrico puede escribirse, por separación de variables, como una onda plana del tipo \( \textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z} \). A su vez, resulta conveniente separar el operador laplaciano como \( \nabla^2 = \nabla_\perp^2 + \frac{\partial^2}{\partial z^2} \). 
+
+Definiendo el operador \( D_{ij} \) tal que \( D_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) \), la parte transversal de las ecuaciones de Helmholtz (\ref{eqn:helmholz}) puede escribirse como:
 \begin{align}
 	\begin{pmatrix}
-	\nabla_\perp^2  + k_0^2n^2 + D_{xx} & D_{xy} 
-	\\
-	D_{yx}  & \nabla_\perp^2  + k_0^2n^2 + D_{yy} 
+		\nabla_\perp^2  + k_0^2n^2 + D_{xx} & D_{xy} 
+		\\
+		D_{yx}  & \nabla_\perp^2  + k_0^2n^2 + D_{yy} 
 	\end{pmatrix}
 	\begin{pmatrix}
-	E_x
-	\\
-	E_y
+		E_x
+		\\
+		E_y
 	\end{pmatrix}
-		&=
+	=
 	\beta_\nu^2 
 	\begin{pmatrix}
-	E_x
-	\\
-	E_y
+		E_x
+		\\
+		E_y
 	\end{pmatrix} \ . \label{eqn:eigenfield}
 \end{align}
-La ecuación (\ref{eqn:eigenfield}) es un problema de autovalores $\beta_\nu^2$ y autofunciones $\textbf{E}_\nu^\perp(x,y)$, que son ortogonales sólo si se cumple la condición de guiaje débil (ver apéndice \ref{sec:orto}). 
 
+La ecuación (\ref{eqn:eigenfield}) constituye un problema de autovalores para \( \beta_\nu^2 \), cuyas autofunciones \( \textbf{E}_\nu^\perp(x,y) \) describen los perfiles transversales de los modos guiados. En general, se trata de un sistema vectorial acoplado de segundo orden, cuya resolución requiere técnicas numéricas. No obstante, en el régimen de \textit{guiaje débil}, en el que el índice de refracción varía levemente respecto a un fondo homogéneo \( n_0 \), se puede desacoplar el sistema y tratarlo como un problema escalar para un componente dominante del campo eléctrico\footnote{ver Apéndice \ref{sec:orto}.}.
+
+Bajo esta aproximación, se suelen considerar un modos cuasi-transversales, donde el campo eléctrico está principalmente polarizado en una dirección fija (por ejemplo, \( E_y \)), y la ecuación de Helmholtz se reduce a:
+\begin{equation}
+	\left[\nabla_\perp^2 + k_0^2 n^2(x,y) \right] \phi(x,y) = \beta^2 \phi(x,y),
+\end{equation}
+donde \( \phi(x,y) \) representa el perfil transversal del campo. Esta aproximación resulta válida para muchas geometrías experimentales, especialmente cuando la luz está polarizada linealmente y las variaciones del índice no inducen acoplamiento entre polarizaciones ortogonales.
+
+Los modos obtenidos de esta ecuación permiten calcular las constantes de propagación \( \beta_\nu \), los perfiles espaciales del campo \( \phi_\nu(x,y) \), y otras magnitudes relevantes como los factores de confinamiento o las velocidades de grupo. Además, estos modos sirven como base para métodos posteriores, como la Expansión en Modos Normales (EME) o la Teoría de Modos Acoplados (CMT), utilizadas para describir dinámicas en redes fotónicas.
 \section{Teoría de Modos Acoplados \label{cap:CMTteo}}
 \subsection{Derivación desde un principio variacional}
 
 A partir de las ecuaciones (\ref{eqn:EfieldH}) y (\ref{eqn:HfieldE}), es posible expresar la constante de propagación $k_z$ en términos del vector de Poynting $\textbf{S} = \frac{1}{2} \text{Re}\{\textbf{E} \times \textbf{H}^*\}$, siguiendo un desarrollo análogo al presentado en \citep{haus_coupled-mode}. 
-
 \begin{equation}
 	k_z = \frac{
 		\frac{1}{4i} \iint \left[
@@ -700,8 +710,7 @@ Una forma de encontrar el valor experimental del acoplamiento $C$ es mediante la
 	C = \frac{1}{L}\tan^{-1}\left( \left|\frac{a_2(L)}{a_1(L)}\right|^2 \right) \ . \label{eqn:coupling-simp}
 \end{equation}
 \subsection{Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}
-
-Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en analogía a Mecánica Cuántica para plantear un análogo al Teorema de Bloch \cite{joannopoulos_photonic_2008}, la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica de la ecuación (\ref{eqn:non-ortho-CMT-eqs}) es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$.
+Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en simulitud con la mecánica cuántica para plantear un análogo al teorema de Bloch \cite{joannopoulos_photonic_2008}, la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica de la ecuación (\ref{eqn:non-ortho-CMT-eqs}) es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$.
 Para ejemplificar lo anterior se usará el célebre modelo de Su-Schrieffer-Heeger (SSH), que es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
 \begin{equation*}
 	H = \sum_n t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c.
@@ -733,7 +742,7 @@ En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar e
 \end{align*}
 donde se ha usado que $$\frac{1}{N}\sum_n e^{i(k-k')nd} = \left\{\begin{matrix} \frac{N}{N}=1, &\text{ si } k = k'
 \\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}e^{i(k-k')d}=0, &\text{ si } k\neq k'
-\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $\hat{H}(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $\hat{H}(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\textbf{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $\hat{H}(k)$ en términos de las matrices de Pauli $\hat{H}(k) = \textbf{d} \cdot \bm{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\textbf{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\textbf{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak $\mathcal{Z}_\pm$ asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
+\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $\hat{H}(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $\hat{H}(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\textbf{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $\hat{H}(k)$ en términos de las matrices de Pauli $\hat{H}(k) = \textbf{d} \cdot \bm{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\textbf{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\textbf{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak, $\mathcal{Z}_\pm$, asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
 \mathcal{Z}_\pm &= i \oint \textbf{v}_\pm^\dagger \frac{d \textbf{v}_\pm}{dk}  dk  = -\frac{1}{2} \int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}}  \frac{d \phi(k)}{d k} dk = -\frac{d}{2}\int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}} \frac{1+\delta\cos(kd)}{\delta^2+1+2\delta\cos(kd)} dk = -\frac{\pi}{2} \left(1 + \frac{1-\delta^2}{\left|1-\delta^2\right|} \right) .
 \end{align*}
 Es decir, 
