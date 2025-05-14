@@ -444,15 +444,6 @@ Guinea F. Lewenstein M. Manoharan H.~C. Polini, M. and Pellegrini V.
 \newblock \doi{10.1038/nnano.2013.161}.
 \newblock URL \url{https://doi.org/10.1038/nnano.2013.161}.
 
-\bibitem[Bayer et~al.(1998)Bayer, Gutbrod, Reithmaier, Forchel, Reinecke,
-  Knipp, Dremin, and Kulakovskii]{molecules}
-M.~Bayer, T.~Gutbrod, J.~P. Reithmaier, A.~Forchel, T.~L. Reinecke, P.~A.
-  Knipp, A.~A. Dremin, and V.~D. Kulakovskii.
-\newblock Optical modes in photonic molecules.
-\newblock \emph{Phys. Rev. Lett.}, 81:\penalty0 2582--2585, Sep 1998.
-\newblock \doi{10.1103/PhysRevLett.81.2582}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.81.2582}.
-
 \bibitem[Vicencio et~al.(2025)Vicencio, Rom\'an-Cort\'es, Rubio-Sald\'{\i}as,
   Vildoso, and Foa~Torres]{nonsymm}
 Rodrigo~A. Vicencio, Diego Rom\'an-Cort\'es, Mart\'{\i}n Rubio-Sald\'{\i}as,
@@ -461,5 +452,14 @@ Rodrigo~A. Vicencio, Diego Rom\'an-Cort\'es, Mart\'{\i}n Rubio-Sald\'{\i}as,
 \newblock \emph{Phys. Rev. A}, 111:\penalty0 043510, Apr 2025.
 \newblock \doi{10.1103/PhysRevA.111.043510}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.111.043510}.
+
+\bibitem[Bayer et~al.(1998)Bayer, Gutbrod, Reithmaier, Forchel, Reinecke,
+  Knipp, Dremin, and Kulakovskii]{molecules}
+M.~Bayer, T.~Gutbrod, J.~P. Reithmaier, A.~Forchel, T.~L. Reinecke, P.~A.
+  Knipp, A.~A. Dremin, and V.~D. Kulakovskii.
+\newblock Optical modes in photonic molecules.
+\newblock \emph{Phys. Rev. Lett.}, 81:\penalty0 2582--2585, Sep 1998.
+\newblock \doi{10.1103/PhysRevLett.81.2582}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.81.2582}.
 
 \end{thebibliography}
