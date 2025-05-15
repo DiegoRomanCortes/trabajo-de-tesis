@@ -1,7 +1,7 @@
 \chapter{Marco Teórico \label{cap:teo}}
 
-En este capítulo se desarrollarán las herramientas analítico-teóricas que permiten describir los sistemas fótonicos estudiados en esta tesis. Estos consisten en la propagación de luz láser de baja potencia (1 mW de potencia de salida) propagada en sistemas acoplados de guías de onda, las cuales están escritas dentro de una muestra de vidrio de borosilicato. Estas condiciones experimentales permiten describir el comportamiento de la luz utilizando las ecuaciones de Maxwell aplicadas a un medio lineal, isotrópico, no magnético y sin fuentes de carga ni de corriente libres. 
-\section{Propagación en guías de onda dieléctricas desde las ecuaciones de Maxwell \label{cap:maxwell}}
+En este capítulo se desarrollarán las herramientas analítico-teóricas que permiten describir los sistemas fótonicos estudiados en esta tesis. Estos consisten en la propagación de luz láser de baja potencia (1 mW de potencia de salida) propagada en sistemas acoplados de guías de ondas, las cuales están escritas dentro de una muestra de vidrio de borosilicato. Estas condiciones experimentales permiten describir el comportamiento de la luz utilizando las ecuaciones de Maxwell aplicadas a un medio lineal, isotrópico, no magnético y sin fuentes de carga ni de corriente libres. 
+\section{Propagación en guías de ondas dieléctricas desde las ecuaciones de Maxwell \label{cap:maxwell}}
 
 Las ecuaciones de Maxwell en este régimen, en el Sistema Internacional de Unidades, son:
 \begin{align}
@@ -13,7 +13,7 @@ Las ecuaciones de Maxwell en este régimen, en el Sistema Internacional de Unida
 	\\	
 	\nabla\times\textbf{H} &=\varepsilon(\textbf{r}) \frac{\partial \textbf{E}}{\partial t} \ , \label{eqn:ampere-maxwell}
 \end{align}
-donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. En general, las guías de onda consideradas son sistemas invariantes en la dirección de propagación $\hat{\textbf{z}}$. Por lo tanto, el perfil de índice de refracción puede expresarse como $n(x,y) = n_0 + \Delta n(x,y)$ donde $n_0 = 1.48$ es el índice de refracción del sustrato de borosilicato y $\Delta n(x,y)$ representa la modulación transversal del índice, con valores máximos en el rango de $10^{-5} - 10^{-3}$. Esta variación espacial del índice, $\Delta n(x,y)$, es responsable del confinamiento óptico en el plano transversal $(x,y)$, permitiendo la propagación guiada de los modos electromagnéticos a lo largo del eje $\hat{\textbf{z}}$. 
+donde \textbf{E} es el campo eléctrico y \textbf{H} es el campo magnético. En general, las guías de ondas consideradas son sistemas invariantes en la dirección de propagación $\hat{\textbf{z}}$. Por lo tanto, el perfil de índice de refracción puede expresarse como $n(x,y) = n_0 + \Delta n(x,y)$ donde $n_0 = 1.48$ es el índice de refracción del sustrato de borosilicato y $\Delta n(x,y)$ representa la modulación transversal del índice, con valores máximos en el rango de $10^{-5} - 10^{-3}$. Esta variación espacial del índice, $\Delta n(x,y)$, es responsable del confinamiento óptico en el plano transversal $(x,y)$, permitiendo la propagación guiada de los modos electromagnéticos a lo largo del eje $\hat{\textbf{z}}$. 
 
 Luego de asumir una solución temporal armónica proporcional a $e^{-i\omega t}$ se puede reemplazar la ecuación de Faraday-Lenz (\ref{eqn:faraday-lenz}) en la de Ampère-Maxwell (\ref{eqn:ampere-maxwell}) obteniendo:
 \begin{align}
@@ -38,7 +38,7 @@ La ecuación análoga a (\ref{eqn:helmholz}) para \textbf{H} es, por consiguient
 	 \left(\nabla^2  + k_0^2 n^2 \right) \textbf{H} &= i\omega \epsilon_0 \nabla n^2 \times \textbf{E} \ .
 	 \label{eqn:helmholzH}
 \end{align}
-En esta tesis se trabajará con sistemas en los que la luz viaja a través de una estructura de guías de onda constantes en la dirección $\hat{\textbf{z}}$ y periódicas en la dirección transversal. Es por ello que será útil separar los componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{i k_z z}$ en la variable espacial $z$:
+En esta tesis se trabajará con sistemas en los que la luz viaja a través de una estructura de guías de ondas constantes en la dirección $\hat{\textbf{z}}$ y periódicas en la dirección transversal. Es por ello que será útil separar los componentes longitudinales y transversales de los campos, asumiendo una dependencia del tipo onda plana $e^{i k_z z}$ en la variable espacial $z$:
 \begin{align}
 	\nabla_\perp \times  \textbf{E} + ik_z \hat{\textbf{z}} \times \textbf{E} &= i\omega\mu_0\textbf{H} \ ,
 	\label{eqn:EfieldH}
@@ -82,8 +82,8 @@ Finalmente, los componentes perpendiculares de los campos, $\textbf{H}_\perp$ y 
 \end{aligned}
 \end{equation}
 Las ecuaciones (\ref{eqn:helmholz}), (\ref{eqn:helmholzH}) y (\ref{eqn:transversal}) serán las herramientas analíticas para los dos casos de estudio de las siguientes secciones.
-\section{Soluciones analíticas para guías de onda tipo baldosa o \textit{slab} unidimensionales \label{cap:slab}}
-El sistema más simple que se puede estudiar es una guía de onda tipo baldosa, cuya forma analítica para el contraste $n(x)$ es la siguiente:
+\section{Soluciones analíticas para guías de ondas tipo baldosa o \textit{slab} unidimensionales \label{cap:slab}}
+El sistema más simple que se puede estudiar es una guía de ondas tipo baldosa, cuya forma analítica para el contraste $n(x)$ es la siguiente:
 \begin{equation*}
 	n(x) = \left\{\begin{matrix}
 	n_1 \ , \quad |x| \le a
@@ -94,14 +94,14 @@ El sistema más simple que se puede estudiar es una guía de onda tipo baldosa, 
 con $n_1 > n_0$. \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{media/slab.pdf}
-	\caption[Forma de una guía de onda tipo losa.]{Forma de una guía de onda tipo losa. En las direcciones $\mathbf{\hat{y}}$ (vertical) y $\mathbf{\hat{z}}$ (hacia dentro de la página) la estructura es invariante.}
+	\caption[Forma de una guía de ondas tipo baldosa.]{Forma de una guía de ondas tipo baldosa. En las direcciones $\mathbf{\hat{y}}$ (vertical) y $\mathbf{\hat{z}}$ (hacia dentro de la página) la estructura es invariante.}
 \end{figure}
 Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) son de tipo Helmholtz. Definiendo $\Psi = \{E_z, H_z\} $:
 \begin{align*}
 	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0 \ .
 \end{align*}
 Como $n(x)=n(-x)$, las soluciones $\Psi$ deben ser pares o impares. En efecto, si $\Psi(x)$ es solución, el cambio $x\to x'=-x$ implica que $\Psi(-x)=\pm \Psi(x)$, pues $\Psi(x)$ es un campo real.
-Para encontrar soluciones cuya energía esté localizada en la guía de onda y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 \le k_z^2 \le k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Con todo esto, 
+Para encontrar soluciones cuya energía esté localizada en la guía de ondas y que decaiga fuera de ella, se impondrá $k_0^2n_0^2 \le k_z^2 \le k_0^2n_1^2$. Se hace natural definir $\alpha^2\equiv k_0^2n_1^2-k_z^2$ y $\beta^2\equiv k_z^2 - k_0^2n_0^2$. Con todo esto, 
 \begin{equation*}
 	\Psi_s = \left\{\begin{matrix}
 	\Psi_{s1}\cos(\alpha x) \ , & |x|\le a
@@ -239,7 +239,7 @@ Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\linewidth]{media/slabgraphical.pdf}
-	\caption[Soluciones gráficas de los modos TE.]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de onda. \label{fig:graphTE}}
+	\caption[Soluciones gráficas de los modos TE.]{Soluciones gráficas de los modos TE. A mayor contraste $\Delta n = n_1-n_0$, mayor cantidad de modos guiados soporta la guía de ondas. \label{fig:graphTE}}
 \end{figure}
 Luego de encontrar $k_z$, se tiene todo lo necesario para reemplazar en las expresiones obtenidas para las componentes del campo electromagnético. En la Figura \ref{fig:E-slab-graph} se grafica la forma espacial de cuatro modos, que se corresponden con los cuatro puntos morados de la Figura \ref{fig:graphTE}.
 \begin{figure}[H]
@@ -248,14 +248,14 @@ Luego de encontrar $k_z$, se tiene todo lo necesario para reemplazar en las expr
 	\caption[Forma espacial de la componente longitudinal del campo magnético.]{ Forma espacial de la componente longitudinal del campo magnético. \label{fig:E-slab-graph}}
 \end{figure}
 
-La condición de corte (\textit{cutoff}) en guías de onda es equivalente a que la energía deje de decaer en la región $|x| > a$, es decir, se debe cumplir que $\beta a \to 0$. 
+La condición de corte (\textit{cutoff}) en guías de ondas es equivalente a que la energía deje de decaer en la región $|x| > a$, es decir, se debe cumplir que $\beta a \to 0$. 
 Los modos simétricos o pares cumplen esta condición para $\sin(V) = 0$, lo que implica que $V = m \pi$, con $m$ entero. En particular, considerando $m=0$  y barriendo $n_1 \to n_0$, siempre existen al menos dos modos, uno TE y otro TM mientras $n_1 > n_0$.  
 Los modos antisimétricos o impares deben cumplir por su parte que $\cos(V) = 0$, lo que implica que $V = (m\pi \pm \pi/2)$. De esta condición se deduce que el primer par de modos excitados ($m=0$) existe siempre que $\lambda \le \lambda_c \equiv 4a\sqrt{n_1^2-n_0^2}$. Escrito de forma compacta para el $m$-ésimo modo:
 \begin{align*}
 	 (\lambda_c)_m = \frac{4a}{m-1}  \sqrt{n_1^2-n_0^2} \ .
 \end{align*}
 \section{Soluciones analíticas para fibra óptica circular}
-En la sección anterior se estudió el sistema más sencillo en el que se puede hablar de guías de onda dieléctricas. El siguiente paso en complejidad consiste en guías de onda circulares. Para ello, se considerará que el índice de refracción varía radialmente según 
+En la sección anterior se estudió el sistema más sencillo en el que se puede hablar de guías de ondas dieléctricas. El siguiente paso en complejidad consiste en guías de ondas circulares. Para ello, se considerará que el índice de refracción varía radialmente según 
 \begin{equation}
 	n( \rho ) = 
 	\left\{\begin{matrix}
@@ -438,7 +438,7 @@ por lo que se hace necesario que $\left. J_0(\alpha a)\right|_{\alpha a \to V} =
 \begin{equation}
 (\lambda_c)_{0,m} = 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{0,m}} \ , \quad\text{(modos TE y TM).}
 \end{equation} 
-Contrario al caso de la guía de onda tipo losa, en fibras ópticas se hace necesario estar bajo un umbral de corte máximo $(\lambda_c)_{0,1}$ no nulo para que los modos TE o TM existan.
+Contrario al caso de la guía de ondas tipo baldosa, en fibras ópticas se hace necesario estar bajo un umbral de corte máximo $(\lambda_c)_{0,1}$ no nulo para que los modos TE o TM existan.
 
 %\begin{figure}[H]
 %	\centering
@@ -487,9 +487,9 @@ En particular, el modo $\text{HE}_{11}$ siempre existe. El caso $\ell \ge 2$ tie
 		\caption{Primeros modos normales guiados para una guía circular o fibra óptica. \label{fig:vortices}}
 \end{figure}
 
-\section{Modos normales en guías de onda}
+\section{Modos normales en guías de ondas}
 
-Si la estructura de guías de onda no varía en la dirección \( \hat{\textbf{z}} \), la solución para el campo eléctrico puede escribirse, por separación de variables, como una onda plana del tipo \( \textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z} \). A su vez, resulta conveniente separar el operador laplaciano como \( \nabla^2 = \nabla_\perp^2 + \frac{\partial^2}{\partial z^2} \). 
+Si la estructura de guías de ondas no varía en la dirección \( \hat{\textbf{z}} \), la solución para el campo eléctrico puede escribirse, por separación de variables, como una onda plana del tipo \( \textbf{E}(\textbf{r}) = \textbf{E}_\nu(x, y) e^{i\beta_\nu z} \). A su vez, resulta conveniente separar el operador laplaciano como \( \nabla^2 = \nabla_\perp^2 + \frac{\partial^2}{\partial z^2} \). 
 
 Definiendo el operador \( D_{ij} \) tal que \( D_{ij} E_j \equiv \partial_i\left(\frac{\partial_j n^2}{n^2}E_j \right) \), la parte transversal de las ecuaciones de Helmholtz (\ref{eqn:helmholz}) puede escribirse como:
 \begin{align}
@@ -516,9 +516,9 @@ La ecuación (\ref{eqn:eigenfield}) constituye un problema de autovalores para \
 
 Bajo esta aproximación, se suelen considerar un modos cuasi-transversales, donde el campo eléctrico está principalmente polarizado en una dirección fija (por ejemplo, \( E_y \)), y la ecuación de Helmholtz se reduce a:
 \begin{equation}
-	\left[\nabla_\perp^2 + k_0^2 n^2(x,y) \right] \phi(x,y) = \beta^2 \phi(x,y) \ ,
+	\left[\nabla_\perp^2 + k_0^2 n^2(x,y) \right] \phi_\nu(x,y) = \beta_\nu^2 \phi_\nu(x,y) \ ,
 \end{equation}
-donde \( \phi(x,y) \) representa el perfil transversal del campo. Esta aproximación resulta válida para muchas geometrías experimentales, especialmente cuando la luz está polarizada linealmente y las variaciones del índice no inducen acoplamiento entre polarizaciones ortogonales.
+donde \( \phi_\nu(x,y) \) representa el perfil transversal del campo. Esta aproximación resulta válida para muchas geometrías experimentales, especialmente cuando la luz está polarizada linealmente y las variaciones del índice no inducen acoplamiento entre polarizaciones ortogonales.
 
 Los modos obtenidos de esta ecuación permiten calcular las constantes de propagación \( \beta_\nu \), los perfiles espaciales del campo \( \phi_\nu(x,y) \), y otras magnitudes relevantes como los factores de confinamiento o las velocidades de grupo. Además, estos modos sirven como base para métodos posteriores, como la Expansión en Modos Normales (EME) o la Teoría de Modos Acoplados (CMT), utilizadas para describir dinámicas en redes fotónicas.
 \section{Teoría de Modos Acoplados \label{cap:CMTteo}}
@@ -617,7 +617,7 @@ El par de transformaciones asociadas al grupo unitario U(1), $a_j\to a'_j = e^{i
 \end{equation}
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
 
-\subsection{Dímero TE en guías de onda tipo losa}
+\subsection{Dímero TE en guías de ondas tipo losa}
 Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\ref{eqn:transversal}) se tiene que
 \begin{align*}
 	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - (k_z^j)^2}\left\{ \begin{matrix}
