@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Debian)  (format=lualatex 2025.3.4)  26 MAY 2025 16:21
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Debian)  (format=lualatex 2025.3.4)  26 MAY 2025 16:26
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1818,7 +1818,7 @@ LaTeX Info: Redefining \% on input line 22.
 (./numericos.aux) (./metodos.aux) (./magico.aux) (./nonsymmetry.aux)
 (./moleculas.aux) (./conclu.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 04FC924BA3A670A080E07D3396CB3C1F;12061.
+(rerunfilecheck)             Checksum: B994E73D27EFEC165C753025B69FB0C6;12106.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -1857,7 +1857,7 @@ dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (78 pages, 16912575 bytes).
+Output written on main.pdf (78 pages, 16912618 bytes).
 
 PDF statistics: 3004 PDF objects out of 3580 (max. 8388607)
  1655 compressed objects within 17 object streams

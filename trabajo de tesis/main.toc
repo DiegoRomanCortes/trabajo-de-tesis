@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {3.1}Expansión en Modos Normales }{23}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Método de Propagación de Haces}{24}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{25}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Desde la Teoría de Modos Acoplados }{26}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Comentarios sobre Teoría de Modos Acoplados }{26}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Métodos Experimentales }{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Escritura directa de guías de onda }{29}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo }{30}{section.4.2}%
