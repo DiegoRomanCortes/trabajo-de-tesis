@@ -252,8 +252,9 @@ La condición de corte (\textit{cutoff}) en guías de ondas es equivalente a que
 Los modos simétricos o pares cumplen esta condición para $\sin(V) = 0$, lo que implica que $V = m \pi$, con $m$ entero. En particular, considerando $m=0$  y barriendo $n_1 \to n_0$, siempre existen al menos dos modos, uno TE y otro TM mientras $n_1 > n_0$.  
 Los modos antisimétricos o impares deben cumplir por su parte que $\cos(V) = 0$, lo que implica que $V = (m\pi \pm \pi/2)$. De esta condición se deduce que el primer par de modos excitados ($m=0$) existe siempre que $\lambda \le \lambda_c \equiv 4a\sqrt{n_1^2-n_0^2}$. Escrito de forma compacta para el $m$-ésimo modo:
 \begin{align*}
-	 (\lambda_c)_m = \frac{4a}{m-1}  \sqrt{n_1^2-n_0^2} \ .
+	 (\lambda_c)_m = \frac{4a}{m-1}  \sqrt{n_1^2-n_0^2} \ ,
 \end{align*}
+lo que para $a=4 \text{ }\mu$m y $\Delta n = 5\times 10^{-4}$  significa una longitud de onda de corte para el segundo modo de $\lambda_c \approx 615 \text{ nm}$.
 \section{Soluciones analíticas para fibra óptica circular}
 En la sección anterior se estudió el sistema más sencillo en el que se puede hablar de guías de ondas dieléctricas. El siguiente paso en complejidad consiste en guías de ondas circulares. Para ello, se considerará que el índice de refracción varía radialmente según 
 \begin{equation}
@@ -436,9 +437,9 @@ Las condiciones de corte se dan cuando $\beta a \to 0$. Utilizando las expresion
 \end{align*}
 por lo que se hace necesario que $\left. J_0(\alpha a)\right|_{\alpha a \to V} = 0$. Denotando $x_{0,m}=$ 2.405,  5.520,  8.654, $\cdots$ al $m$-ésimo cero de la funcion $J_0(x)$, la longitud de onda de corte está dada por 
 \begin{equation}
-(\lambda_c)_{0,m} = 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{0,m}} \ , \quad\text{(modos TE y TM).}
+(\lambda_c)_{0,m} = 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{0,m}} \ , \quad\text{(modos TE y TM)},
 \end{equation} 
-Contrario al caso de la guía de ondas tipo baldosa, en fibras ópticas se hace necesario estar bajo un umbral de corte máximo $(\lambda_c)_{0,1}$ no nulo para que los modos TE o TM existan.
+lo que se traduce en una longitud de onda de corte de $\lambda_c\approx 616$ nm para los mismos parámetros de la sección \ref{cap:slab}, $a=4 \text{ }\mu$m y $\Delta n = 5\times 10^{-4}$ . Contrario al caso de la guía de ondas tipo baldosa, en fibras ópticas se hace necesario estar bajo un umbral de corte máximo $(\lambda_c)_{0,1}$ no nulo para que los modos TE o TM existan. Como se verá más adelante, esto se debe a que los modos puramente transversales corresponden a modos excitados: el modo fundamental es híbrido.
 
 %\begin{figure}[H]
 %	\centering
@@ -480,8 +481,8 @@ Basta considerar la función $J_1(\alpha a)|_{\alpha a \to V} = 0$. Por otro lad
 	\\
 	(\lambda_c)_{1,m} &= 2\pi a \frac{\sqrt{n_1^2 - n_0^2}}{x_{1,m+1}} \ , \quad \left(\text{modos EH}_{1m}\right)
 \end{align*}
-con $x_{1,m}=0$, 3.832,  7.016, 10.173, $\dots$.
-En particular, el modo $\text{HE}_{11}$ siempre existe. El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego y no será relevante para esta tesis. Sin embargo, se incluyen en la Figura \ref{fig:vortices} por completitud.
+con $x_{1,m}=$0, 3.832,  7.016, 10.173, $\dots$. En particular, el modo $\text{HE}_{11}$ siempre existe. Las longitudes de onda de corte finitas mayores son $\lambda_c \approx 252$ nm para los modos $\text{HE}_{12}$ y $\text{EH}_{11}$ 
+El caso $\ell \ge 2$ tiene un desarrollo distinto por las forma asintóticas en juego y no será relevante para esta tesis. Sin embargo, se incluyen en la Figura \ref{fig:vortices} por completitud.
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{media/OAM_analitic}
 		\caption{Primeros modos normales guiados para una guía circular o fibra óptica. \label{fig:vortices}}
@@ -512,15 +513,15 @@ Definiendo el operador \( D_{ij} \) tal que \( D_{ij} E_j \equiv \partial_i\left
 	\end{pmatrix} \ . \label{eqn:eigenfield}
 \end{align}
 
-La ecuación (\ref{eqn:eigenfield}) constituye un problema de autovalores para \( \beta_\nu^2 \), cuyas autofunciones \( \textbf{E}_\nu^\perp(x,y) \) describen los perfiles transversales de los modos guiados. En general, se trata de un sistema vectorial acoplado de segundo orden, cuya resolución requiere técnicas numéricas. No obstante, en el régimen de \textit{guiaje débil}, en el que el índice de refracción varía levemente respecto a un fondo homogéneo \( n_0 \), se puede desacoplar el sistema y tratarlo como un problema escalar para un componente dominante del campo eléctrico\footnote{ver Apéndice \ref{sec:orto}.}.
+La ecuación (\ref{eqn:eigenfield}) constituye un problema de autovalores para \( \beta_\nu^2 \), cuyas autofunciones \( \textbf{E}_\nu^\perp(x,y) \) describen los perfiles transversales de los modos guiados. En general, se trata de un sistema vectorial acoplado de segundo orden, cuya resolución requiere técnicas numéricas. No obstante, en el régimen de \textit{guiaje débil}, en el que el índice de refracción varía levemente respecto a un fondo homogéneo \( n_0 \), se puede desacoplar el sistema y tratarlo como un problema escalar para una componente dominante del campo eléctrico\footnote{ver Apéndice \ref{sec:orto}.}.
 
-Bajo esta aproximación, se suelen considerar un modos cuasi-transversales, donde el campo eléctrico está principalmente polarizado en una dirección fija (por ejemplo, \( E_y \)), y la ecuación de Helmholtz se reduce a:
+Bajo esta aproximación, se suelen considerar modos cuasi-transversales, donde el campo eléctrico está principalmente polarizado en una dirección fija (por ejemplo, \( E_y \)), y la ecuación de Helmholtz se reduce a:
 \begin{equation}
 	\left[\nabla_\perp^2 + k_0^2 n^2(x,y) \right] \phi_\nu(x,y) = \beta_\nu^2 \phi_\nu(x,y) \ ,
 \end{equation}
 donde \( \phi_\nu(x,y) \) representa el perfil transversal del campo. Esta aproximación resulta válida para muchas geometrías experimentales, especialmente cuando la luz está polarizada linealmente y las variaciones del índice no inducen acoplamiento entre polarizaciones ortogonales.
 
-Los modos obtenidos de esta ecuación permiten calcular las constantes de propagación \( \beta_\nu \), los perfiles espaciales del campo \( \phi_\nu(x,y) \), y otras magnitudes relevantes como los factores de confinamiento o las velocidades de grupo. Además, estos modos sirven como base para métodos posteriores, como la Expansión en Modos Normales (EME) o la Teoría de Modos Acoplados (CMT), utilizadas para describir dinámicas en redes fotónicas.
+Los modos obtenidos de esta ecuación permiten calcular las constantes de propagación \( \beta_\nu \), los perfiles espaciales del campo \( \phi_\nu(x,y) \), y otras magnitudes relevantes como los factores de confinamiento o las velocidades de grupo. Además, estos modos sirven como base para métodos posteriores, como la Expansión en Modos Normales (EME) o la Teoría de Modos Acoplados (CMT), utilizadas para describir la dinámica en redes fotónicas.
 \section{Teoría de Modos Acoplados \label{cap:CMTteo}}
 \subsection{Derivación desde un principio variacional}
 
@@ -542,7 +543,7 @@ Al proponer una solución en forma de superposición de modos de las guías indi
 \begin{align*}
 	\textbf{E} &= \sum_i a_i \textbf{e}_i \ , \quad \textbf{H} = \sum_i a_i \textbf{h}_i \ ,
 \end{align*}
-donde $a_i$ representa la amplitud del $i$-ésimo modo. Los coeficientes permanecen indeterminados pero sujetos a minimizar la expresión para $k_z$. Sustituyendo estas expansiones en (\ref{eqn:kzprevar}), se obtiene una expresión simplificada para la constante de propagación del sistema $k_z$:
+donde $a_i$ representa la amplitud del $i$-ésimo modo, los coeficientes permanecen indeterminados pero sujetos a minimizar la expresión para $k_z$. Sustituyendo estas expansiones en (\ref{eqn:kzprevar}), se obtiene una expresión simplificada para la constante de propagación del sistema $k_z$:
 \begin{align*}
 	(\textbf{E}\times\textbf{H}^* + \textbf{E}^*\times\textbf{H})\cdot\hat{\textbf{z}} 
 	&= \sum_{ij} a_i^* \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \, a_j 
@@ -617,7 +618,7 @@ El par de transformaciones asociadas al grupo unitario U(1), $a_j\to a'_j = e^{i
 \end{equation}
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
 
-\subsection{Dímero TE en guías de ondas tipo losa}
+\subsection{Dímero TE en guías de ondas tipo baldosa}
 Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\ref{eqn:transversal}) se tiene que
 \begin{align*}
 	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - (k_z^j)^2}\left\{ \begin{matrix}
@@ -663,7 +664,7 @@ Elementos diagonales tienen la forma:
 	\tilde{H}_{jj} &\equiv H_{jj} - P_{jj} k_z^j =
 	\frac{L k_0^3  \mu_0 c H_{a1}^2 \sin^2(\alpha a)e^{2\beta a}e^{-2\beta d}}{4 \beta^3 } (n_1^2-n_0^2) \sinh(2\beta a) \ .
 \end{align*}
-La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}), que luego de premultiplicar por la inversa de la matriz $P_{ij}$ toma la forma:
+La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:non-ortho-CMT-eqs}), que luego de premultiplicar por la inversa de la matriz $P_{ij}$ toma la forma compacta:
 \begin{align*}
 	-i\frac{d}{dz}\begin{pmatrix}
 	a_1
@@ -681,7 +682,7 @@ La dinámica está regida por el sistema acoplado de las ecuaciones (\ref{eqn:no
 	a_2
 	\end{pmatrix} \ ,
 \end{align*}
-con $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\times10^5 \text{ cm}^{-1}$, $C\equiv \frac{P_{ii} \tilde{H}_{ij}  -P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2} \sim 1\text{ cm}^{-1}$ y $\delta k \equiv \frac{P_{ii} \tilde{H}_{ii} -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2} \sim -0.02\text{ cm}^{-1}$ para $\lambda = 730$ nm, $n_1 = n_0 + 4\times10^{-4}$ y una distancia entre guías de $d = 18 $ $\mu$m. La matriz $\hat{P}^{-1}\hat{H}$ se puede escribir en términos de las matrices de Pauli como $\tilde{k}I + C\sigma_x $, lo que permite utilizar sus propiedades para resolver la dinámica del sistema:
+con, por ejemplo, $\tilde{k}\equiv k_z^{\text{TE}} + \delta k$, $k_z^{\text{TE}} \sim 1.3\times10^5 \text{ cm}^{-1}$, $C\equiv \frac{P_{ii} \tilde{H}_{ij}  -P_{ij}\tilde{H}_{ii}}{P_{ii}^2-P_{ij}^2} \sim 1\text{ cm}^{-1}$ y $\delta k \equiv \frac{P_{ii} \tilde{H}_{ii} -P_{ij}\tilde{H}_{ij}}{P_{ii}^2-P_{ij}^2} \sim -0.02\text{ cm}^{-1}$ para $\lambda = 730$ nm, $n_1 = n_0 + 4\times10^{-4}$ y una distancia entre guías de $d = 18 $ $\mu$m. La matriz $\hat{P}^{-1}\hat{H}$ se puede escribir en términos de las matrices de Pauli como $\tilde{k}I + C\sigma_x $, lo que permite utilizar sus propiedades para resolver la dinámica del sistema:
 \begin{align*}
 	\begin{pmatrix}
 	a_1(z)
@@ -713,9 +714,9 @@ Una forma de encontrar el valor experimental del acoplamiento $C$ es mediante la
 \end{equation}
 \subsection{Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en simulitud con la mecánica cuántica para plantear un análogo al teorema de Bloch \cite{joannopoulos_photonic_2008}, la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica de la ecuación (\ref{eqn:non-ortho-CMT-eqs}) es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$.
-Para ejemplificar lo anterior se usará el célebre modelo de Su-Schrieffer-Heeger (SSH), que es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
+Para ejemplificar lo anterior se usará el célebre modelo de Su-Schrieffer-Heeger (SSH), que es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Estado Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
 \begin{equation*}
-	H = \sum_n t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c.
+	H = \sum_n \left( t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c. \right)
 \end{equation*}
 \begin{figure}[h]
 \centering
@@ -744,7 +745,7 @@ En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar e
 \end{align*}
 donde se ha usado que $$\frac{1}{N}\sum_n e^{i(k-k')nd} = \left\{\begin{matrix} \frac{N}{N}=1, &\text{ si } k = k'
 \\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}e^{i(k-k')d}=0, &\text{ si } k\neq k'
-\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $\hat{H}(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $\hat{H}(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define $\textbf{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $\hat{H}(k)$ en términos de las matrices de Pauli $\hat{H}(k) = \textbf{d} \cdot \bm{\sigma}$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\textbf{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\textbf{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak, $\mathcal{Z}_\pm$, asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
+\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $\hat{H}(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $\hat{H}(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define el vector $\textbf{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $\hat{H}(k)$ en términos de las matrices de Pauli $\hat{H}(k) = \textbf{d} \cdot \bm{\sigma} = d_x\sigma_x + d_y\sigma_y$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\textbf{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv \frac{t}{t'} < 1$, el vector $\textbf{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak, $\mathcal{Z}_\pm$, asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
 \mathcal{Z}_\pm &= i \oint \textbf{v}_\pm^\dagger \frac{d \textbf{v}_\pm}{dk}  dk  = -\frac{1}{2} \int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}}  \frac{d \phi(k)}{d k} dk = -\frac{d}{2}\int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}} \frac{1+\delta\cos(kd)}{\delta^2+1+2\delta\cos(kd)} dk = -\frac{\pi}{2} \left(1 + \frac{1-\delta^2}{\left|1-\delta^2\right|} \right) .
 \end{align*}
 Es decir, 
