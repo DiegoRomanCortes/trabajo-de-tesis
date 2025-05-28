@@ -44,14 +44,14 @@ ax2.vlines(angles[idx_magic], ymin=couplings_exp.min(), ymax=couplings_exp.max()
 
 ax2.text(angles[idx_magic-1], couplings.min(), r"$\theta_m$", ha="center", va="bottom", fontsize=14)
 
-ax2.set_ylabel(r'Coupling (cm$^{-1}$)')
+ax2.set_ylabel(r'Acoplamiento (cm$^{-1}$)')
 
 
-ax2.plot(angles_exp, couplings_exp, 'k.', label='Exp. data')
+ax2.plot(angles_exp, couplings_exp, 'k.', label='Datos exp.')
 ax.ticklabel_format(axis='y', style='sci')
-ax.set_xlabel('Angle (rad)')
+ax.set_xlabel('Ángulo (rad)')
 ax.set_ylabel(r'$k_z - k_0 n_0$ (cm$^{-1}$)')
-ax.set_title('Propagation constants vs Angle')
+ax.set_title('Constantes de propagación vs Ángulo')
 fig.legend(loc=(0.6, 0.55), fontsize=5)
 
 fig.savefig('./eigenvalues_vs_angle.png')
