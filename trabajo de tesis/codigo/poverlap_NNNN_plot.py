@@ -66,7 +66,7 @@ axs[0].plot(angles, np.abs(coupling_t_theta_3), "lightgreen", label=r'$t_{\theta
 
 axs[0].set_yscale('log')
 
-axs[0].set_ylabel(r'Coupling (cm$^{-1}$)')
+axs[0].set_ylabel(r'Acoplamiento (cm$^{-1}$)')
 # axs[0].set_xlabel('Angle (rad)')
 
 axs[0].legend(loc='lower right', fontsize=10, fancybox=True, ncol=2)
@@ -80,8 +80,8 @@ ax.plot(angles, np.abs(overlap_t_theta_3), "lightgreen", label=r'$c_{\theta 3}$'
 
 ax.set_yscale('log')
 
-ax.set_xlabel('Angle (rad)')
-ax.set_ylabel(r'Overlap (arb. units)')
+ax.set_xlabel('Ángulo (rad)')
+ax.set_ylabel(r'Solapes (arb. units)')
 
 ax.legend(loc='lower right', fontsize=10, fancybox=True, ncol=2)
 

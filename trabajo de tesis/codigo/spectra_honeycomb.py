@@ -234,9 +234,9 @@ for i in range(len(angles)):
     sc = ax.scatter(angles[i]*np.ones(N), np.abs(lambdas[i, :]), c=IPR, cmap=cm.batlow, s=1, marker=mpl.markers.MarkerStyle("."), vmin=vmin, vmax=vmax)
 
 fig.colorbar(sc, label='IPR')
-ax.set_xlabel(r'Angle $\theta$ (rad)')
+ax.set_xlabel(r'Ángulo $\theta$ (rad)')
 # ax.set_xlabel('Angle (rad)')
-ax.set_ylabel(r'Eigenvalues (cm$^{-1}$)')
+ax.set_ylabel(r'Espectro (cm$^{-1}$)')
 # ax.set_title('Eigenvalues vs Coupling Constant,'+r' $C_V$ = '+f'{coupling_pp_vertical:.2f}')
-ax.set_title('Eigenvalues vs Angle')
+# ax.set_title('Eigenvalues vs Angle')
 fig.savefig('honeycomb_eigenvalues_vs_angle.png')

@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Forma de una guía de ondas tipo baldosa.}}{6}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Forma de una guía de ondas tipo placa.}}{6}{figure.caption.4}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Soluciones gráficas de los modos TE.}}{8}{figure.caption.5}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Forma espacial de la componente longitudinal del campo magnético.}}{9}{figure.caption.6}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Primeros modos normales guiados para una guía circular o fibra óptica. \relax }}{14}{figure.caption.7}%
@@ -27,15 +27,16 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Espectro de la red de panal de abeja de modos $p_y$ en función del ángulo}}{37}{figure.caption.24}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Descomposición de la red en cadenas cuasi-SSH}}{38}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Promedio absoluto de desbalances de intensidad $\bar {I}(z)$ en función de la distancia de propagación $z$}}{40}{figure.caption.26}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Perfiles de salida para distintas longitudes de propagación.}}{41}{figure.caption.27}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de acoplamiento no simétrico.\relax }}{39}{figure.caption.26}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Promedio absoluto de desbalances de intensidad $\bar {I}(z)$ en función de la distancia de propagación $z$}}{41}{figure.caption.27}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Perfiles de salida para distintas longitudes de propagación.}}{41}{figure.caption.28}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Propagación y acoplamientos en moléculas fotónicas}}{42}{figure.caption.28}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Esquema de la red SP-SSH y los acoplamientos considerados. \relax }}{43}{figure.caption.29}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Topología de la Red SP-SSH para $\Delta \beta = 0$.}}{44}{figure.caption.30}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Diagrama de fases topológicas. \relax }}{45}{figure.caption.31}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Análisis numérico-experimental del modelo SP-SSH}}{45}{figure.caption.32}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Caracterización experimental de redes SP-SSH}}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Propagación y acoplamientos en moléculas fotónicas}}{43}{figure.caption.29}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Esquema de la red SP-SSH y los acoplamientos considerados. \relax }}{44}{figure.caption.30}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Topología de la Red SP-SSH para $\Delta \beta = 0$.}}{45}{figure.caption.31}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Diagrama de fases topológicas. \relax }}{46}{figure.caption.32}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Análisis numérico-experimental del modelo SP-SSH}}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Caracterización experimental de redes SP-SSH}}{47}{figure.caption.34}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
