@@ -24,28 +24,28 @@
 \contentsline {subsection}{\numberline {4.3.1}Etapa premodulación}{30}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Etapa de modulación}{31}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Etapa de acoplamiento}{31}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Etapa de Captura en Cámara}{31}{subsection.4.3.4}%
-\contentsline {subsubsection}{Configuración Interferométrica Opcional}{32}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Circuito Óptico}{32}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Generación de Imágenes Complejas }{32}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.4}Etapa de captura en cámara}{31}{subsection.4.3.4}%
+\contentsline {subsubsection}{Configuración interferométrica opcional}{32}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Circuito óptico}{32}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Generación de imágenes complejas }{32}{subsection.4.3.6}%
 \contentsline {section}{\numberline {4.4}Análisis de imágenes }{33}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Acoplamiento de modos $p_y$ y ángulo de invisibilidad }{34}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Acoplamiento de Modos $p_y$ y Ángulo de Invisibilidad }{34}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Acopladores}{34}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Redes tipo panal de abeja}{35}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Acoplamiento Evanescente No Simétrico}{39}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Origen de la dinámica no simétrica}{39}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Validación Numérica}{40}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Comprobación Experimental}{41}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Implicancias y Aplicaciones}{42}{section.6.4}%
+\contentsline {section}{\numberline {6.2}Validación numérica}{40}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Comprobación experimental}{41}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Implicancias y aplicaciones}{42}{section.6.4}%
 \contentsline {chapter}{\numberline {7}Moléculas Fotónicas }{43}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Autoestados del acoplador fotónico para distancias de separación pequeñas}{43}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Moléculas Fotónicas en Red SP-SSH}{44}{section.7.2}%
 \contentsline {section}{\numberline {7.3}Topología en la Red SP-SSH}{45}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Implementación Experimental}{46}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Implementación experimental}{46}{section.7.4}%
 \contentsline {chapter}{\numberline {8}Conclusiones}{48}{chapter.8}%
 \contentsline {chapter}{\numberline {}Bibliograf\'ia}{55}{chapter*.35}%
 \contentsline {chapter}{Anexo \numberline {A}Artículos publicados y enviados en orden cronológico}{56}{Appendix.alph1.Alph1}%
-\contentsline {chapter}{Anexo \numberline {B}Ortogonalidad de los Modos Normales }{61}{Appendix.alph1.Alph2}%
+\contentsline {chapter}{Anexo \numberline {B}Ortogonalidad de los modos normales }{61}{Appendix.alph1.Alph2}%
 \contentsline {section}{\numberline {B.1}Hermiticidad del Operador $T_{ij}$}{61}{section.alph1.Alph2.1}%
 \contentsline {section}{\numberline {B.2}Ortogonalidad del Sistema Completo}{61}{section.alph1.Alph2.2}%
 \contentsline {chapter}{Anexo \numberline {C}Código en Python para cálculo de modos normales }{63}{Appendix.alph1.Alph3}%

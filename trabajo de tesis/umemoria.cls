@@ -102,7 +102,7 @@
 	\hfill% Push content to right
 	\begin{minipage}[t]{0.53\textwidth}% Right-aligned box
 		\raggedright% Left-align text inside
-		RESUMEN DE LA TESIS PARA OPTAR \\ AL GRADO DE \MakeUppercase{\@tesisA},\\\MakeUppercase{\@tesisB}\\
+		RESUMEN DE LA TESIS PARA OPTAR \\ AL GRADO DE \MakeUppercase{\@tesisA}\MakeUppercase{\@tesisB}, \MakeUppercase{\@tesisC} \\
 		POR: \MakeUppercase\@author\\
 		FECHA: 2025\\
 		PROF. GUÍA: \MakeUppercase\@guia
@@ -114,10 +114,10 @@
 	\abstractheader% Place header
 	\vspace*{1cm}% Space below header
 	\begin{center}
-		\Large\bfseries \@title% Centered title
+		\bfseries \MakeUppercase{\@title}% Centered title
 	\end{center}
 	\vspace{1em}% Space after title
-	\noindent% Prevent paragraph indentation
+	%\noindent% Prevent paragraph indentation
 }{\vfill\null}% End with vertical fill
 %\makeatother
 
@@ -217,11 +217,12 @@
 \global\let\@tesis\@empty
 \def\@tesisA{} % First part
 \def\@tesisB{} % Second part
-
+\def\@tesisC{} % Third part
 % Main splitting mechanism
-\def\split@tesis#1,#2\@nil{%
+\def\split@tesis#1,#2, #3\@nil{%
 	\def\@tesisA{#1}%
 	\def\@tesisB{#2}%
+	\def\@tesisC{#3}%
 }
 
 % User command
@@ -282,9 +283,9 @@
 
 		\vspace{1cm}
 		\ifx\@tesis\@empty\else
-		TESIS PARA OPTAR AL GRADO DE \MakeUppercase{\@tesisA},% <- Comma here
+		TESIS PARA OPTAR AL GRADO DE \MakeUppercase{\@tesisA}% <- Comma here
 		\ifx\@tesisB\@empty\else
-		\ \\\MakeUppercase{\@tesisB}% Space before B if exists
+		\ \\\MakeUppercase{\@tesisB}, \MakeUppercase{\@tesisC}% Space before B if exists
 		\fi
 			\if\@cotutela\@empty\else
 				\\\bigskip EN COTUTELA CON \MakeUppercase\@cotutela
