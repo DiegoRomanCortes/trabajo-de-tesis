@@ -1,6 +1,6 @@
 \chapter{Marco Teórico \label{cap:teo}}
 
-En este capítulo se desarrollarán las herramientas analítico-teóricas que permiten describir los sistemas fótonicos estudiados en esta tesis. Estos consisten en la propagación de luz láser de baja potencia (1 mW de potencia de salida) propagada en sistemas acoplados de guías de ondas, las cuales están escritas dentro de una muestra de vidrio de borosilicato. Estas condiciones experimentales permiten describir el comportamiento de la luz utilizando las ecuaciones de Maxwell aplicadas a un medio lineal, isotrópico, no magnético y sin fuentes de carga ni de corriente libres. 
+En este capítulo se desarrollarán las herramientas analítico-teóricas que permiten describir los sistemas fótonicos estudiados en esta tesis. Estos consisten en la propagación de luz láser de baja potencia\footnote{1 mW de potencia de salida, dentro del régimen de seguridad de láseres tipo 3b.} propagada en sistemas acoplados de guías de ondas, las cuales están escritas dentro de una muestra de vidrio de borosilicato. Estas condiciones experimentales permiten describir el comportamiento de la luz utilizando las ecuaciones de Maxwell aplicadas a un medio lineal, isotrópico, no magnético y sin fuentes de carga ni de corriente libres. 
 \section{Propagación en guías de ondas dieléctricas desde las ecuaciones de Maxwell \label{cap:maxwell}}
 
 Las ecuaciones de Maxwell en este régimen, en el Sistema Internacional de Unidades, son:
@@ -95,8 +95,7 @@ con $n_1 > n_0$. \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{media/slab.pdf}
 	\caption[Forma de una guía de ondas tipo placa.]{Forma de una guía de ondas tipo placa. En las direcciones $\mathbf{\hat{y}}$ (vertical) y $\mathbf{\hat{z}}$ (hacia dentro de la página) la estructura es invariante.}
-\end{figure}
-Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) son de tipo Helmholtz. Definiendo $\Psi = \{E_z, H_z\} $:
+\end{figure} Dado que $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, los lados derechos de las ecuaciones (\ref{eqn:helmholz}) y (\ref{eqn:helmholzH}) son de tipo Helmholtz. Definiendo $\Psi = \{E_z, H_z\} $:
 \begin{align*}
 	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0 \ .
 \end{align*}
@@ -234,7 +233,7 @@ Un corolario para los modos TE es que $E_z = E_x = 0$, por lo que la polarizaci�
 
 \subsection{Soluciones gráficas y comparación entre modos TE y TM \label{cap:solslabTETM}}
 
-Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$ a partir de las intersecciones $(\alpha a, \beta a)$, como se grafica en la Figura \ref{fig:graphTE}. 
+Usando las dos ecuaciones de modos TE junto a la restricción $(\alpha a)^2 + (\beta a)^2 = k_0^2 a^2(n_1^2 - n_0^2) \equiv V^2$ es posible obtener soluciones gráficas para las constantes de propagación $k_z$ a partir de las intersecciones $(\alpha a, \beta a)$, como se grafica en la Figura \ref{fig:graphTE}. La cantidad de modos aumenta con la diferencia entre índices de refracción.
 
 \begin{figure}[H]
 	\centering
@@ -619,7 +618,7 @@ El par de transformaciones asociadas al grupo unitario U(1), $a_j\to a'_j = e^{i
 Se tienen entonces dos cantidades conservadas en la dinámica, $H$ y $P$, que serán de utilidad para verificar la validez de soluciones numéricas a la ecuación (\ref{eqn:non-ortho-CMT-eqs}).
 
 \subsection{Dímero TE en guías de ondas tipo placa}
-Para los modos TE fundamentales (condición antisimétrica) y las ecuaciones (\ref{eqn:transversal}) se tiene que
+Mediante las ecuaciones de las componentes transversales (\ref{eqn:transversal}) en el caso de modos TE fundamentales (\ref{eqn:TEanti}), se tiene: 
 \begin{align*}
 	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - (k_z^j)^2}\left\{ \begin{matrix}
 -\alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a
@@ -714,7 +713,7 @@ Una forma de encontrar el valor experimental del acoplamiento $C$ es mediante la
 \end{equation}
 \subsection{Bandas y Topología: Red de Su-Schrieffer-Heeger fotónica}
 Si bien es posible reformular las ecuaciones de Maxwell como un problema de autovalores en simulitud con la mecánica cuántica para plantear un análogo al teorema de Bloch \cite{joannopoulos_photonic_2008}, la matriz $\hat{C}\equiv\hat{P}^{-1}\hat{H}$ hermítica de la ecuación (\ref{eqn:non-ortho-CMT-eqs}) es justificación suficiente para invocarlo: Es posible expresar las soluciones del sistema en una base de cuasimomento cuya periodicidad sea la misma que la de la matriz $\hat{C}$.
-Para ejemplificar lo anterior se usará el célebre modelo de Su-Schrieffer-Heeger (SSH), que es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Estado Sólido, corresponde a una red unidimensional con base de dos sitios. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
+Para ejemplificar lo anterior se usará el célebre modelo de Su-Schrieffer-Heeger (SSH), que es uno de los sistemas más sencillos que exhibe \textit{estados de borde topológicos} \cite{ssh, ssh-photonic, topological-photonics}. Originado para explicar la formación de estados electrónicos localizados en el poliacetileno, consiste en considerar únicamente dos tipos de acoplamiento: uno fuerte (enlace doble) y uno débil (enlace simple). En términos de Física del Estado Sólido, corresponde a una red unidimensional con base de dos sitios, cuyas amplitudes modales se denotan $a_n$ y $b_n$. En la Figura \ref{fig:ssh-model} se ilustra el modelo a estudiar, que se corresponde al siguiente Hamiltoniano $H$. 
 \begin{equation*}
 	H = \sum_n \left( t b_n^*a_n + t'  a_{n+1}^*b_n  + c.c. \right) \ .
 \end{equation*}
