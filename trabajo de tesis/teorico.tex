@@ -203,12 +203,12 @@ Buscando soluciones no triviales se tiene que:
 \end{equation*}
 Se distinguirá dos tipos de condiciones:
 \begin{itemize}
-	\item Modos TE:\begin{align}
+	\item Modos eléctricos transversales (TE):\begin{align}
 	\frac{\cos(\alpha a)}{\beta a} + \frac{\sin(\alpha a)}{\alpha a}&= 0 \ , \label{eqn:TEsim}
 	\\
 	 \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a} &= 0 \ . \label{eqn:TEanti}
 	\end{align}
-	\item Modos TM:\begin{align}
+	\item Modos magnéticos transversales (TM):\begin{align}
 	n_0^2 \frac{\cos(\alpha a)}{\beta a} + n_1^2\frac{\sin(\alpha a)}{\alpha a}  &= 0 \ , \label{eqn:TMsim}
 	\\
 	 n_0^2\frac{\sin(\alpha a)}{\beta a} - n_1^2\frac{\cos(\alpha a)}{\alpha a} &= 0 \ . \label{eqn:TManti}
@@ -228,7 +228,7 @@ Asumiendo $\alpha$, $\beta$ y $k_z$ conocidos, las amplitudes deben cumplir las 
 	H_{a1} \left[ \frac{\sin(\alpha a)}{\beta a} - \frac{\cos(\alpha a)}{\alpha a}\right] = 0 \ .
 \end{aligned} 
 \end{equation*}
-Las ecuaciones superiores imponen que $E_1 = 0$ cuando se satisface alguna condición de modos TE. Análogamente, las ecuaciones inferiores imponen $H_1 = 0$ en el caso de modos TM. Efectivamente, los nombres TE y TM se han puesto por transversal eléctrico y transversal magnético, respectivamente.
+Las ecuaciones superiores imponen que $E_1 = 0$ cuando se satisface alguna condición de modos TE. Análogamente, las ecuaciones inferiores imponen $H_1 = 0$ en el caso de modos TM, lo que impone transversalidad en la oscilación de los campos respectivos.
 Un corolario para los modos TE es que $E_z = E_x = 0$, por lo que la polarización del campo eléctrico será exclusivamente en la dirección $\hat{\textbf{y}}$. Así mismo, sólo un haz polarizado en $\hat{\textbf{x}}$ podría excitar un modo TM, por lo que en un experimento se debe tener esto presente: una condición inicial arbitraria se propagará como una combinación lineal de los modos TE y TM que soporte la guía.
 
 \subsection{Soluciones gráficas y comparación entre modos TE y TM \label{cap:solslabTETM}}
@@ -744,7 +744,7 @@ En condiciones de borde periódicas (Born-von Karman), es posible diagonalizar e
 \end{align*}
 donde se ha usado que $$\frac{1}{N}\sum_n e^{i(k-k')nd} = \left\{\begin{matrix} \frac{N}{N}=1, &\text{ si } k = k'
 \\ \frac{1}{N}\frac{1-\cancelto{1}{e^{i(k-k')Nd}}}{1-e^{i(k-k')d}}e^{i(k-k')d}=0, &\text{ si } k\neq k'
-\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $\hat{H}(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $\hat{H}(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define el vector $\textbf{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $\hat{H}(k)$ en términos de las matrices de Pauli $\hat{H}(k) = \textbf{d} \cdot \bm{\sigma} = d_x\sigma_x + d_y\sigma_y$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\textbf{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv t/t' < 1$, el vector $\textbf{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak, $\mathcal{Z}_\pm$, asociadas a los autoestados del bulto cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
+\end{matrix}\right. =\delta_{kk'},$$ pues $k, k' \in  \left\{\frac{2\pi l}{Nd}, l=0,\pm 1, \dots , \pm \frac{N}{2}\right\}$ pertenecen a la red recíproca 1D. El espectro de $\hat{H}(k)$ es $\lambda_k = \pm\sqrt{t^2+t'^2+2tt'\cos(kd)}$, lo que pareciera indicar que el sistema es simétrico entre $t$ y $t'$. Sin embargo, el cuadro no está completo sin los autovectores de $\hat{H}(k)$, $\textbf{v}_\pm =\frac{1}{\sqrt{2}} \begin{pmatrix} \pm e^{-i\phi(k)} \\  1 \end{pmatrix}$, con $\phi(k)=\tan^{-1}\left(\frac{t'\sin(kd)}{t+t'\cos(kd)}\right)$. Si se define el vector $\textbf{d}(k) \equiv \begin{pmatrix}t+t'\cos(kd) \\ t'\sin(kd) \\ 0 \end{pmatrix}$ es posible escribir el Hamiltoniano $\hat{H}(k)$ en términos de las matrices de Pauli $\hat{H}(k) = \textbf{d} \cdot \bm{\sigma} = d_x\sigma_x + d_y\sigma_y$, además de asociar la fase $\phi(k)$ al ángulo que forma la proyección del vector $\textbf{d}(k)$ en el plano $xy$,  $\phi(k)=\tan^{-1}\left( \frac{d_y}{d_x} \right)$. En particular, cuando $\delta \equiv t/t' < 1$, el vector $\textbf{d}(k)$ encierra el origen una vez, mientras que para $\delta > 1$ no se encierra el origen, como se aprecia en la Figura \ref{fig:ssh-topo}. Formalmente, las fases de Zak, $\mathcal{Z}_\pm$, asociadas a los autoestados del bulto (zona lo suficientemente alejada de los bordes) cambian dependiendo del valor de $\delta$. Por definición \citep{zak_berry}, \begin{align*}
 \mathcal{Z}_\pm &= i \oint \textbf{v}_\pm^\dagger \frac{d \textbf{v}_\pm}{dk}  dk  = -\frac{1}{2} \int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}}  \frac{d \phi(k)}{d k} dk = -\frac{d}{2}\int_{-\frac{\pi}{d}}^{{\frac{\pi}{d}}} \frac{1+\delta\cos(kd)}{\delta^2+1+2\delta\cos(kd)} dk = -\frac{\pi}{2} \left(1 + \frac{1-\delta^2}{\left|1-\delta^2\right|} \right) \ .
 \end{align*}
 Es decir, 

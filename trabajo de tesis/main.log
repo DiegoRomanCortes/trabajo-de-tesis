@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  26 JUN 2025 17:12
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  27 JUN 2025 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1365,7 +1365,7 @@ File: media/SLM_setupv1.png Graphic file (type bmp)
  [32]
 File: media/OAM-free.png Graphic file (type bmp)
 <media/OAM-free.png>
-) [33]
+ [33]) [34]
 \openout2 = `magico.aux'.
 
  (./magico.tex
@@ -1386,7 +1386,7 @@ File: media/26um_15mm_angles_v2.png Graphic file (type bmp)
 <media/26um_15mm_angles_v2.png>
 File: codigo/eigenvalues_vs_angle.png Graphic file (type bmp)
 <codigo/eigenvalues_vs_angle.png>
-[34
+[35
 
 
 
@@ -1394,7 +1394,7 @@ File: codigo/eigenvalues_vs_angle.png Graphic file (type bmp)
 ]
 File: media/honeycomb_lattices_bw.png Graphic file (type bmp)
 <media/honeycomb_lattices_bw.png>
- [35]
+ [36]
 File: media/honeycomb-lattice.png Graphic file (type bmp)
 <media/honeycomb-lattice.png>
 File: codigo/NNNN_overlap_vs_angle.png Graphic file (type bmp)
@@ -1403,19 +1403,19 @@ File: codigo/honeycomb_eigenvalues_vs_angle.png Graphic file (type bmp)
 <codigo/honeycomb_eigenvalues_vs_angle.png>
 File: media/ipr-corner-exp.png Graphic file (type bmp)
 <media/ipr-corner-exp.png>
- [36]
+ [37]
 File: media/cuasi-ssh.png Graphic file (type bmp)
 <media/cuasi-ssh.png>
 File: media/ipr-bulk-exp.png Graphic file (type bmp)
 <media/ipr-bulk-exp.png>
- [37]) [38]
+ [38]) [39]
 \openout2 = `nonsymmetry.aux'.
 
  (./nonsymmetry.tex
 Capítulo 6.
 File: media/nonsympaper.png Graphic file (type bmp)
 <media/nonsympaper.png>
-[39
+[40
 
 
 
@@ -1423,17 +1423,17 @@ File: media/nonsympaper.png Graphic file (type bmp)
 ]
 File: media/imbalance-nonortho.png Graphic file (type bmp)
 <media/imbalance-nonortho.png>
- [40]
+ [41]
 File: media/nonsymm-exp.png Graphic file (type bmp)
 <media/nonsymm-exp.png>
- [41]) [42]
+ [42]) [43]
 \openout2 = `moleculas.aux'.
 
  (./moleculas.tex
 Capítulo 7.
 File: media/eigenvalues_vs_angle.png Graphic file (type bmp)
 <media/eigenvalues_vs_angle.png>
-[43
+[44
 
 
 
@@ -1441,27 +1441,27 @@ File: media/eigenvalues_vs_angle.png Graphic file (type bmp)
 ]
 File: media/ssh_sp_model.png Graphic file (type bmp)
 <media/ssh_sp_model.png>
- [44]
+ [45] [46]
 File: media/sp-ssh-012.png Graphic file (type bmp)
 <media/sp-ssh-012.png>
 File: media/sp-ssh-phase-diagram.png Graphic file (type bmp)
 <media/sp-ssh-phase-diagram.png>
- [45]
+ [47]
 File: media/sp-ssh-exp-num.png Graphic file (type bmp)
 <media/sp-ssh-exp-num.png>
 File: media/sp-ssh-exp.png Graphic file (type bmp)
 <media/sp-ssh-exp.png>
-) [46] [47]
+) [48] [49]
 \openout2 = `conclu.aux'.
 
  (./conclu.tex
 Capítulo 8.
-[48
+[50
 
 
 
 
-]) [49] (./main.bbl [50
+]) [51] (./main.bbl [52
 
 
 
@@ -1472,25 +1472,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--116
 [][][][][][][][][][] [][]
  []
 
-[51] [52] [53] [54]) (./anexoPapers.tex [55]
+[53] [54] [55] [56]) (./anexoPapers.tex [57]
 Anexo A.
 File: media/strainlieb.pdf Graphic file (type pdf)
 <use media/strainlieb.pdf, page 1>
-[56
+[58
 
 ]
 File: media/molpap.pdf Graphic file (type pdf)
 <use media/molpap.pdf, page 1>
- [57]
+ [59]
 File: media/dipolepap.pdf Graphic file (type pdf)
 <use media/dipolepap.pdf, page 1>
- [58]
+ [60]
 File: media/nonsympap.pdf Graphic file (type pdf)
 <use media/nonsympap.pdf, page 1>
- [59]
+ [61]
 File: media/2Dradpap.pdf Graphic file (type pdf)
 <use media/2Dradpap.pdf, page 1>
-) (./anexoA.tex [60]
+) (./anexoA.tex [62]
 Anexo B.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1509,9 +1509,9 @@ Overfull \hbox (3.64058pt too wide) detected at line 18
 []
  []
 
-[61
+[63
 
-]) (./anexoB.tex [62]
+]) (./anexoB.tex [64]
 Anexo C.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1519,9 +1519,9 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(./codigo/scalar-eme.py [63
+(./codigo/scalar-eme.py [65
 
-] [64])) (./anexoC.tex [65]
+] [66])) (./anexoC.tex [67]
 Anexo D.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -1529,13 +1529,13 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-(./codigo/array1d.c [66
+(./codigo/array1d.c [68
 
-] [67] [68] [69])) (./anexoD.tex [70]
+] [69] [70] [71])) (./anexoD.tex [72]
 Anexo E.
-(./codigo/slm_blaze.py [71
+(./codigo/slm_blaze.py [73
 
-])) [72] (./main.aux
+])) [74] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
  (./intro.aux) (./teorico.aux)
@@ -1551,6 +1551,6 @@ Here is how much of TeX's memory you used:
  61154 multiletter control sequences out of 15000+600000
  556175 words of font info for 179 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 94i,21n,103p,1465b,2124s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,21n,103p,1587b,2124s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (79 pages).
+Output written on main.pdf (81 pages).

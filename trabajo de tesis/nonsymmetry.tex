@@ -11,7 +11,7 @@ El acoplamiento evanescente entre guías de onda se produce por la superposició
 	\includegraphics[width=0.4\linewidth]{media/nonsympaper}
 	\caption{Esquema de acoplamiento no simétrico.}
 \end{figure}
-Este comportamiento \textit{no simétrico} puede cuantificarse mediante la teoría de modos acoplados generalizada y no ortogonal, desarrollada en la sección~\ref{cap:CMTteo}, donde se incluye el efecto de solapamiento modal a través de la matriz \( \hat{P} \).
+Este comportamiento \textit{no simétrico} puede cuantificarse mediante la teoría de modos acoplados generalizada y no ortogonal, desarrollada en la sección~\ref{cap:CMTteo}, donde se incluye el efecto de solapamiento modal a través de la matriz \( \hat{P} \), que codifica la noramlización de potencias.
 
 Considerando un dímero compuesto por dos guías no idénticas, las ecuaciones dinámicas para las amplitudes modales se escriben (véase la ecuación~(\ref{eqn:non-ortho-CMT-eqs})) como:
 \begin{equation}
@@ -58,7 +58,7 @@ La cantidad \( \bar{I}(z) \) resulta especialmente útil para detectar asimetrí
 
 \section{Validación numérica}
 
-Utilizando el método de Expansión en Modos Normales (EME, Sección~\ref{cap:eme}), se simuló la dinámica de dímeros asimétricos. En la Figura~\ref{fig:nonotrho-num} se muestra el promedio absoluto de desbalances de intensidad $\bar{I}(z)$ en función de la distancia para $n_2 - n_1 = 1.75 \times 10^{-5}$ (asimetría débil) y para $n_2 - n_1 = 5.00 \times 10^{-5}$ (asimetría fuerte).
+Utilizando el método de Expansión en Modos Normales (EME, Sección~\ref{cap:eme}), se simuló la dinámica de dímeros asimétricos inyectando la misma condición inicial gaussiana en todos los casos. En la Figura~\ref{fig:nonotrho-num} se muestra el promedio absoluto de desbalances de intensidad $\bar{I}(z)$ en función de la distancia para $n_2 - n_1 = 1.75 \times 10^{-5}$ (asimetría débil) y para $n_2 - n_1 = 5.00 \times 10^{-5}$ (asimetría fuerte).
 
 \begin{figure}[H]
 	\centering
@@ -80,5 +80,5 @@ donde \( \gamma_i \) representa el coeficiente de decaimiento evanescente del mo
 
 \section{Implicancias y aplicaciones}
 
-Este estudio demuestra que el acoplamiento no simétrico es un fenómeno físico intrínseco en sistemas fotónicos realistas, aún en ausencia de pérdida o ganancia. Sus implicancias incluyen: \textit{ruptura de reciprocidad}, sin requerir materiales magneto-ópticos ni modulación temporal; \textit{asimetría modal}, dado que la desigualdad entre \( C_{ij} \) y \( C_{ji} \) afecta la formación de estados simétricos/antisimétricos y la interferencia; \textit{dispositivos ópticos direccionales}, tales como divisores de haz asimétricos o aislantes ópticos; y su \textit{extensión a redes} con acoplamientos direccionados. En conjunto, estos resultados permiten reinterpretar la teoría de modos acoplados y abren nuevas oportunidades en el diseño de redes ópticas con funcionalidad direccional.
+Este estudio demuestra que el acoplamiento no simétrico es un fenómeno físico que, ausencia de pérdida o ganancia energética, es posible inducir de forma pasiva. Sus implicancias incluyen: \textit{ruptura de reciprocidad}, sin requerir materiales magneto-ópticos ni modulación temporal; \textit{asimetría modal}, dado que la desigualdad entre \( C_{ij} \) y \( C_{ji} \) afecta la formación de estados simétricos/antisimétricos y la interferencia; \textit{dispositivos ópticos direccionales}, tales como divisores de haz asimétricos o aislantes ópticos; y su \textit{extensión a redes} con acoplamientos direccionados. En conjunto, estos resultados permiten extender la teoría de modos acoplados y abren nuevas oportunidades en el diseño de redes ópticas con funcionalidad direccional.
 
