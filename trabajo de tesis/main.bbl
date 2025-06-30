@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -250,6 +250,15 @@ Joaquin Medina~Due{\~{n}}as, Gabriel O'Ryan~P{\'{e}}rez, Carla
 \newblock \doi{10.22331/q-2021-08-17-526}.
 \newblock URL \url{https://doi.org/10.22331/q-2021-08-17-526}.
 
+\bibitem[Bayer et~al.(1998)Bayer, Gutbrod, Reithmaier, Forchel, Reinecke,
+  Knipp, Dremin, and Kulakovskii]{molecules}
+M.~Bayer, T.~Gutbrod, J.~P. Reithmaier, A.~Forchel, T.~L. Reinecke, P.~A.
+  Knipp, A.~A. Dremin, and V.~D. Kulakovskii.
+\newblock Optical modes in photonic molecules.
+\newblock \emph{Phys. Rev. Lett.}, 81:\penalty0 2582--2585, Sep 1998.
+\newblock \doi{10.1103/PhysRevLett.81.2582}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.81.2582}.
+
 \bibitem[Román-Cort{\'e}s et~al.(2025)Román-Cort{\'e}s, Mazanov, Vicencio,
   and Gorlach]{Pmodecoupling}
 Diego Román-Cort{\'e}s, Maxim Mazanov, Rodrigo~A. Vicencio, and Maxim~A.
@@ -260,24 +269,6 @@ Diego Román-Cort{\'e}s, Maxim Mazanov, Rodrigo~A. Vicencio, and Maxim~A.
 \newblock \doi{10.1021/acs.nanolett.4c05951}.
 \newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c05951}.
 \newblock PMID: 40048281.
-
-\bibitem[Guzm\'an-Silva et~al.(2021)Guzm\'an-Silva, C\'aceres-Aravena, and
-  Vicencio]{interorbital}
-Diego Guzm\'an-Silva, Gabriel C\'aceres-Aravena, and Rodrigo~A. Vicencio.
-\newblock Experimental observation of interorbital coupling.
-\newblock \emph{Phys. Rev. Lett.}, 127:\penalty0 066601, Aug 2021.
-\newblock \doi{10.1103/PhysRevLett.127.066601}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.127.066601}.
-
-\bibitem[Mazanov et~al.(2024)Mazanov, Román-Cortés, Cáceres-Aravena, Cid,
-  Gorlach, and Vicencio]{SPSSH}
-Maxim Mazanov, Diego Román-Cortés, Gabriel Cáceres-Aravena, Christofer Cid,
-  Maxim~A. Gorlach, and Rodrigo~A. Vicencio.
-\newblock Photonic molecule approach to multiorbital topology.
-\newblock \emph{Nano Letters}, 24\penalty0 (15):\penalty0 4595--4601, 2024.
-\newblock \doi{10.1021/acs.nanolett.4c00728}.
-\newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c00728}.
-\newblock PMID: 38574276.
 
 \bibitem[Su et~al.(1979)Su, Schrieffer, and Heeger]{ssh}
 W.~P. Su, J.~R. Schrieffer, and A.~J. Heeger.
@@ -372,6 +363,14 @@ Yonatan Plotnik, Or~Peleg, Felix Dreisow, Matthias Heinrich, Stefan Nolte,
 \newblock \doi{10.1103/PhysRevLett.107.183901}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.107.183901}.
 
+\bibitem[Guzm\'an-Silva et~al.(2021)Guzm\'an-Silva, C\'aceres-Aravena, and
+  Vicencio]{interorbital}
+Diego Guzm\'an-Silva, Gabriel C\'aceres-Aravena, and Rodrigo~A. Vicencio.
+\newblock Experimental observation of interorbital coupling.
+\newblock \emph{Phys. Rev. Lett.}, 127:\penalty0 066601, Aug 2021.
+\newblock \doi{10.1103/PhysRevLett.127.066601}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.127.066601}.
+
 \bibitem[J{\"o}rg et~al.(2020)J{\"o}rg, Queralt{\'o}, Kremer, Pelegr{\'i},
   Schulz, Szameit, von Freymann, Mompart, and Ahufinger]{OAMCaging}
 Christina J{\"o}rg, Gerard Queralt{\'o}, Mark Kremer, Gerard Pelegr{\'i},
@@ -444,6 +443,15 @@ M.~Polini, Lewenstein Guinea, F., Manoharan H.~C. M., and Pellegrini V.
 \newblock \doi{10.1038/nnano.2013.161}.
 \newblock URL \url{https://doi.org/10.1038/nnano.2013.161}.
 
+\bibitem[Mukherjee et~al.(2018)Mukherjee, Di~Liberto, \"Ohberg, Thomson, and
+  Goldman]{abcagingseba}
+Sebabrata Mukherjee, Marco Di~Liberto, Patrik \"Ohberg, Robert~R. Thomson, and
+  Nathan Goldman.
+\newblock Experimental observation of aharonov-bohm cages in photonic lattices.
+\newblock \emph{Phys. Rev. Lett.}, 121:\penalty0 075502, Aug 2018.
+\newblock \doi{10.1103/PhysRevLett.121.075502}.
+\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.121.075502}.
+
 \bibitem[Vicencio et~al.(2025)Vicencio, Rom\'an-Cort\'es, Rubio-Sald\'{\i}as,
   Vildoso, and Foa~Torres]{nonsymm}
 Rodrigo~A. Vicencio, Diego Rom\'an-Cort\'es, Mart\'{\i}n Rubio-Sald\'{\i}as,
@@ -453,13 +461,14 @@ Rodrigo~A. Vicencio, Diego Rom\'an-Cort\'es, Mart\'{\i}n Rubio-Sald\'{\i}as,
 \newblock \doi{10.1103/PhysRevA.111.043510}.
 \newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevA.111.043510}.
 
-\bibitem[Bayer et~al.(1998)Bayer, Gutbrod, Reithmaier, Forchel, Reinecke,
-  Knipp, Dremin, and Kulakovskii]{molecules}
-M.~Bayer, T.~Gutbrod, J.~P. Reithmaier, A.~Forchel, T.~L. Reinecke, P.~A.
-  Knipp, A.~A. Dremin, and V.~D. Kulakovskii.
-\newblock Optical modes in photonic molecules.
-\newblock \emph{Phys. Rev. Lett.}, 81:\penalty0 2582--2585, Sep 1998.
-\newblock \doi{10.1103/PhysRevLett.81.2582}.
-\newblock URL \url{https://link.aps.org/doi/10.1103/PhysRevLett.81.2582}.
+\bibitem[Mazanov et~al.(2024)Mazanov, Román-Cortés, Cáceres-Aravena, Cid,
+  Gorlach, and Vicencio]{SPSSH}
+Maxim Mazanov, Diego Román-Cortés, Gabriel Cáceres-Aravena, Christofer Cid,
+  Maxim~A. Gorlach, and Rodrigo~A. Vicencio.
+\newblock Photonic molecule approach to multiorbital topology.
+\newblock \emph{Nano Letters}, 24\penalty0 (15):\penalty0 4595--4601, 2024.
+\newblock \doi{10.1021/acs.nanolett.4c00728}.
+\newblock URL \url{https://doi.org/10.1021/acs.nanolett.4c00728}.
+\newblock PMID: 38574276.
 
 \end{thebibliography}

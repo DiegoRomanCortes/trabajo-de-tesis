@@ -15,45 +15,45 @@ Warning--empty year in nobel
 Warning--empty year in fibra2
 Warning--empty year in fibra
 Warning--empty year in thorlabs_beam_profiler
-You've used 51 entries,
+You've used 52 entries,
             2481 wiz_defined-function locations,
-            993 strings with 17584 characters,
-and the built_in function-call counts, 22590 in all, are:
-= -- 1922
-> -- 1359
+            1000 strings with 17864 characters,
+and the built_in function-call counts, 23057 in all, are:
+= -- 1959
+> -- 1392
 < -- 12
-+ -- 513
-- -- 410
-* -- 2137
-:= -- 3784
-add.period$ -- 263
-call.type$ -- 51
-change.case$ -- 99
-chr.to.int$ -- 50
-cite$ -- 59
-duplicate$ -- 949
-empty$ -- 1850
-format.name$ -- 467
-if$ -- 4685
++ -- 525
+- -- 420
+* -- 2183
+:= -- 3865
+add.period$ -- 268
+call.type$ -- 52
+change.case$ -- 101
+chr.to.int$ -- 51
+cite$ -- 60
+duplicate$ -- 968
+empty$ -- 1886
+format.name$ -- 478
+if$ -- 4780
 int.to.chr$ -- 2
-int.to.str$ -- 52
-missing$ -- 51
-newline$ -- 373
-num.names$ -- 141
-pop$ -- 280
+int.to.str$ -- 53
+missing$ -- 52
+newline$ -- 380
+num.names$ -- 144
+pop$ -- 285
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 52
 quote$ -- 0
-skip$ -- 501
+skip$ -- 510
 stack$ -- 0
-substring$ -- 1008
-swap$ -- 138
+substring$ -- 1028
+swap$ -- 141
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 345
+type$ -- 352
 warning$ -- 4
-while$ -- 147
+while$ -- 150
 width$ -- 0
-write$ -- 885
+write$ -- 902
 (There were 4 warnings)
