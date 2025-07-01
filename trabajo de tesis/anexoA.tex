@@ -1,12 +1,10 @@
-\chapter{Ortogonalidad de los modos normales \label{sec:orto}}
+\section{Ortogonalidad de los modos normales \label{sec:orto}}
 
 La ortogonalidad de los modos normales $\textbf{E}_\nu^\perp$ puede demostrarse utilizando el convenio de Einstein en la ecuación (\ref{eqn:eigenfield}) para simplificar la notación:
 \begin{equation}
 	T_{ij} E^\nu_j = \beta_\nu^2 E^\nu_i, \label{eqn:eigentensorial}
 \end{equation}
 donde el operador $T_{ij}$ actúa como $T_{ij}E_j \equiv \delta_{ij}\left(\nabla_\perp^2 + k_0^2n^2\right)E_j + \partial_i \left(E_j \partial_j\ln(n^2)\right).$
-
-\section{Hermiticidad del Operador $T_{ij}$}
 
 Para demostrar la ortogonalidad de los modos $E_i$, se puede demostrar equivalentemente que $T_{ij}$ es hermítico:
 \begin{align}
@@ -17,8 +15,6 @@ Esta propiedad se sigue de la identidad:
 	&\left(T_{ji} E_i^\mu\right)^* E_j^\nu - \left(E_i^\mu\right)^* \left(T_{ij} E_j^\nu\right) =  \nabla_\perp \cdot \left[E_i^\nu \nabla_\perp \left(E_i^\mu\right)^* - \left(E_i^\mu\right)^* \nabla_\perp E_i^\nu\right]  + \left[E^\nu_j \partial_j \left(E_i^\mu\right)^* - \left(E_j^\mu\right)^* \partial_j E_i^\nu\right] \partial_i \ln(n^2).
 \end{align*}
 Al integrar sobre el plano transversal el término de divergencia se anula para modos guiados (que decaen en el infinito), pero el segundo término desaparece sólo si $\nabla n^2 = \textbf{0}$. Es decir, el operador $T_{ij}$ sólo es Hermítico en la condición de guiaje débil.
-
-\section{Ortogonalidad del Sistema Completo}
 
 El sistema completo es hermítico, como se demuestra partiendo de la ecuación (\ref{eqn:rotordoble}):
 \begin{align*}

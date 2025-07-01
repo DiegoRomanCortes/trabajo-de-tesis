@@ -14,7 +14,7 @@
 
 % puede haber varios profesores guía seperados por coma;
 % pero si es una memoria, solo puede haber un profesor guía
-\guia{Rodrigo Andrés Vicencio Poblete} 
+\guia{Rodrigo Vicencio Poblete} 
 
 % puede haber varios profesores co-guía seperados por coma;
 % pero si es una memoria, el profesor co-guía será el primer
@@ -58,6 +58,7 @@
 \usepackage{etoolbox}
 \usepackage{alphalph}
 \usepackage{chngcntr}
+\usepackage{appendix}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -202,7 +203,20 @@ A todos ustedes, mi eterno agradecimiento por ser parte de esta historia.
 \bibliographystyle{unsrtnat}
 \bibliography{citations}
 
-\renewcommand\appendixname{Anexo}
+
+% Fix appendix numbering format
+\renewcommand{\thesection}{Anexo \Alph{section}} % Makes sections show as "Anexo A"
+\renewcommand{\appendixname}{Anexo}
+
+\makeatletter
+\renewcommand{\l@section}{%
+	\@dottedtocline{1}{1em}{10em}} % {level}{indent}{numwidth}
+\makeatother
+
+\cleardoublepage
+\chapter*{Anexos}
+\markboth{Anexos}{Anexos}
+\addcontentsline{toc}{chapter}{Anexos}
 \begin{appendices}
 \input{anexoPapers.tex}
 \input{anexoA.tex}

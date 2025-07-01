@@ -44,10 +44,9 @@
 \contentsline {section}{\numberline {7.4}Implementación experimental}{49}{section.7.4}%
 \contentsline {chapter}{\numberline {8}Conclusiones}{52}{chapter.8}%
 \contentsline {chapter}{\numberline {}Bibliograf\'ia}{59}{chapter*.36}%
-\contentsline {chapter}{Anexo \numberline {A}Artículos publicados y enviados en orden cronológico}{60}{Appendix.alph1.Alph1}%
-\contentsline {chapter}{Anexo \numberline {B}Ortogonalidad de los modos normales }{65}{Appendix.alph1.Alph2}%
-\contentsline {section}{\numberline {B.1}Hermiticidad del Operador $T_{ij}$}{65}{section.alph1.Alph2.1}%
-\contentsline {section}{\numberline {B.2}Ortogonalidad del Sistema Completo}{65}{section.alph1.Alph2.2}%
-\contentsline {chapter}{Anexo \numberline {C}Código en Python para cálculo de modos normales }{67}{Appendix.alph1.Alph3}%
-\contentsline {chapter}{Anexo \numberline {D}Código en C de BPM }{70}{Appendix.alph1.Alph4}%
-\contentsline {chapter}{Anexo \numberline {E}Código en Python generador de hologramas }{75}{Appendix.alph1.Alph5}%
+\contentsline {chapter}{Anexos}{61}{chapter*.37}%
+\contentsline {section}{\numberline {Anexo A}Artículos publicados y enviados en orden cronológico}{61}{section.alph1.Alph0.1}%
+\contentsline {section}{\numberline {Anexo B}Ortogonalidad de los modos normales }{66}{section.alph1.Alph0.2}%
+\contentsline {section}{\numberline {Anexo C}Código en Python para cálculo de modos normales }{67}{section.alph1.Alph0.3}%
+\contentsline {section}{\numberline {Anexo D}Código en C de BPM }{69}{section.alph1.Alph0.4}%
+\contentsline {section}{\numberline {Anexo E}Código en Python generador de hologramas }{73}{section.alph1.Alph0.5}%
