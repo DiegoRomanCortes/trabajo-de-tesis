@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  1 JUL 2025 21:55
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  2 JUL 2025 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1559,7 +1559,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--116
 [][][][][][][][][][] [][]
  []
 
-[55] [56] [57] [58]) [59] (./anexoPapers.tex
+[55] [56] [57] [58]) (./anexoPapers.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 24.0pt
@@ -1567,32 +1567,31 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 File: media/strainlieb.pdf Graphic file (type pdf)
 <use media/strainlieb.pdf, page 1>
-[60
+)
+Overfull \hbox (18.0pt too wide) in paragraph at lines 214--227
+[]$[]$ 
+ []
+
+[59] [60
 
 
 ]
-Overfull \vbox (22.50826pt too high) has occurred while \output is active []
-
-
-[61]
 File: media/molpap.pdf Graphic file (type pdf)
 <use media/molpap.pdf, page 1>
- [62]
 File: media/dipolepap.pdf Graphic file (type pdf)
 <use media/dipolepap.pdf, page 1>
- [63]
 File: media/nonsympap.pdf Graphic file (type pdf)
 <use media/nonsympap.pdf, page 1>
- [64]
+ [61]
 File: media/2Dradpap.pdf Graphic file (type pdf)
 <use media/2Dradpap.pdf, page 1>
-) (./anexoA.tex
+ [62] (./anexoA.tex [63]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 24.0pt
 (hyperref)                removed on input line 1.
 
-[65]
+[64]
 Overfull \hbox (3.64058pt too wide) detected at line 16
 []
  []
@@ -1605,11 +1604,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [66]
+) [65]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
 
-(./codigo/scalar-eme.py [67] [68])) (./anexoC.tex
+(./codigo/scalar-eme.py [66] [67])) [68] (./anexoC.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 24.0pt
@@ -1621,25 +1620,28 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-(./codigo/array1d.c [69] [70] [71] [72])) (./anexoD.tex
+(./codigo/array1d.c [69] [70] [71] [72])) [73] (./anexoD.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 24.0pt
 (hyperref)                removed on input line 1.
 
-(./codigo/slm_blaze.py [73] [74])) [75] (./main.aux
+(./codigo/slm_blaze.py [74])) [75] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (./intro.aux)
-(./teorico.aux) (./numericos.aux) (./metodos.aux) (./magico.aux)
-(./nonsymmetry.aux) (./moleculas.aux) (./conclu.aux))
+ (./intro.aux) (./teorico.aux)
+(./numericos.aux) (./metodos.aux) (./magico.aux) (./nonsymmetry.aux)
+(./moleculas.aux) (./conclu.aux))
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CAEFE677A57F0B65A78D97175BF9CACA;11522.
+(rerunfilecheck)             Checksum: 6313CDF8FBF47002CD86762D513074F3;11481.
  ) 
 Here is how much of TeX's memory you used:
  42095 strings out of 476775
  965901 string characters out of 5808212
- 2220991 words of memory out of 5000000
+ 2211991 words of memory out of 5000000
  61428 multiletter control sequences out of 15000+600000
  551357 words of font info for 165 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
