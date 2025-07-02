@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  1 JUL 2025 18:55
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022/Debian) (preloaded format=xelatex 2025.1.12)  1 JUL 2025 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1075,64 +1075,108 @@ Package: alphalph 2019/12/09 v2.6 Convert numbers to letters (HO)
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip79
+\cftbeforetoctitleskip=\skip80
+\cftaftertoctitleskip=\skip81
+\cftbeforepartskip=\skip82
+\cftpartnumwidth=\skip83
+\cftpartindent=\skip84
+\cftbeforechapskip=\skip85
+\cftchapindent=\skip86
+\cftchapnumwidth=\skip87
+\cftbeforesecskip=\skip88
+\cftsecindent=\skip89
+\cftsecnumwidth=\skip90
+\cftbeforesubsecskip=\skip91
+\cftsubsecindent=\skip92
+\cftsubsecnumwidth=\skip93
+\cftbeforesubsubsecskip=\skip94
+\cftsubsubsecindent=\skip95
+\cftsubsubsecnumwidth=\skip96
+\cftbeforeparaskip=\skip97
+\cftparaindent=\skip98
+\cftparanumwidth=\skip99
+\cftbeforesubparaskip=\skip100
+\cftsubparaindent=\skip101
+\cftsubparanumwidth=\skip102
+\cftbeforeloftitleskip=\skip103
+\cftafterloftitleskip=\skip104
+\cftbeforefigskip=\skip105
+\cftfigindent=\skip106
+\cftfignumwidth=\skip107
+\c@lofdepth=\count361
+\c@lotdepth=\count362
+\cftbeforelottitleskip=\skip108
+\cftafterlottitleskip=\skip109
+\cftbeforetabskip=\skip110
+\cfttabindent=\skip111
+\cfttabnumwidth=\skip112
+
+
+Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
+ out. on input line 1156.
+
 ) (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
-
-(./intro.aux) (./teorico.aux) (./numericos.aux) (./metodos.aux) (./magico.aux)
-(./nonsymmetry.aux) (./moleculas.aux) (./conclu.aux))
+ (./intro.aux) (./teorico.aux) (./numericos.aux) (./metodos.aux)
+(./magico.aux) (./nonsymmetry.aux) (./moleculas.aux) (./conclu.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 89.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 92.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-89.
+92.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 92.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-89.
+92.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
-9.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9
+2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 92.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-89.
+92.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 89.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 8
-9.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 92.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 9
+2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1174,20 +1218,20 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
-Package hyperref Info: Link coloring OFF on input line 89.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
+Package hyperref Info: Link coloring OFF on input line 92.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-\c@lstlisting=\count361
+\c@lstlisting=\count363
 
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 89.
+ on input line 92.
 
 Package newfloat Info: Trying Plan B...
 Package newfloat Info: `float' package detected.
@@ -1197,30 +1241,30 @@ Couldn't patch \ttl@straight@ii
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
 <use imagenes/escudoU2014.pdf>
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 9
-2.
+5.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 9
-2.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 9
-2.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 9
-2.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 9
-2.
+5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1232,41 +1276,39 @@ File: utxsyc.fd 2000/12/15 v3.1
 ] [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
-[3
-
-
-] (./main.toc
+(./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [4
+ [3
 
-]
-Overfull \hbox (19.71997pt too wide) detected at line 48
-\TU/lmr/m/n/12 Anexo A. 
+
+] [4]
+Overfull \hbox (16.45596pt too wide) detected at line 48
+\TU/lmr/m/n/12 Anexo A 
  []
 
 
-Overfull \hbox (19.22797pt too wide) detected at line 49
-\TU/lmr/m/n/12 Anexo B. 
+Overfull \hbox (15.96396pt too wide) detected at line 49
+\TU/lmr/m/n/12 Anexo B 
  []
 
 
-Overfull \hbox (19.39597pt too wide) detected at line 50
-\TU/lmr/m/n/12 Anexo C. 
+Overfull \hbox (16.13196pt too wide) detected at line 50
+\TU/lmr/m/n/12 Anexo C 
  []
 
 
-Overfull \hbox (19.88797pt too wide) detected at line 51
-\TU/lmr/m/n/12 Anexo D. 
+Overfull \hbox (16.62396pt too wide) detected at line 51
+\TU/lmr/m/n/12 Anexo D 
  []
 
 
-Overfull \hbox (18.90396pt too wide) detected at line 52
-\TU/lmr/m/n/12 Anexo E. 
+Overfull \hbox (15.63997pt too wide) detected at line 52
+\TU/lmr/m/n/12 Anexo E 
  []
 
 )
@@ -1276,13 +1318,11 @@ Overfull \hbox (18.90396pt too wide) detected at line 52
  [5] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [6
-
-])
+)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [7]
+ [6] [7]
 \openout2 = `intro.aux'.
 
  (./intro.tex
@@ -1520,9 +1560,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--116
  []
 
 [55] [56] [57] [58]) [59] (./anexoPapers.tex
-Overfull \hbox (2.7886pt too wide) in paragraph at lines 1--1
-|[]\TU/lmr/bx/n/17.28 Artículos publicados y enviados en orden cro-
- []
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 24.0pt
+(hyperref)                removed on input line 1.
 
 File: media/strainlieb.pdf Graphic file (type pdf)
 <use media/strainlieb.pdf, page 1>
@@ -1545,40 +1586,63 @@ File: media/nonsympap.pdf Graphic file (type pdf)
  [64]
 File: media/2Dradpap.pdf Graphic file (type pdf)
 <use media/2Dradpap.pdf, page 1>
-) (./anexoA.tex [65]
+) (./anexoA.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 24.0pt
+(hyperref)                removed on input line 1.
+
+[65]
 Overfull \hbox (3.64058pt too wide) detected at line 16
 []
  []
 
-) (./anexoB.tex (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+) (./anexoB.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 24.0pt
+(hyperref)                removed on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) [66]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3.
- (./codigo/scalar-eme.py [67] [68])) (./anexoC.tex
+
+(./codigo/scalar-eme.py [67] [68])) (./anexoC.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 24.0pt
+(hyperref)                removed on input line 1.
+
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-(./codigo/array1d.c [69] [70] [71] [72])) (./anexoD.tex (./codigo/slm_blaze.py
-[73] [74])) [75] (./main.aux
+(./codigo/array1d.c [69] [70] [71] [72])) (./anexoD.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \kern 24.0pt
+(hyperref)                removed on input line 1.
+
+(./codigo/slm_blaze.py [73] [74])) [75] (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
- (./intro.aux) (./teorico.aux) (./numericos.aux)
-(./metodos.aux) (./magico.aux) (./nonsymmetry.aux) (./moleculas.aux)
-(./conclu.aux))
+ (./intro.aux)
+(./teorico.aux) (./numericos.aux) (./metodos.aux) (./magico.aux)
+(./nonsymmetry.aux) (./moleculas.aux) (./conclu.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 16C0EA905F5EE794FE2B759BECCA4DBB;11572.
+(rerunfilecheck)             Checksum: CAEFE677A57F0B65A78D97175BF9CACA;11522.
  ) 
 Here is how much of TeX's memory you used:
- 41814 strings out of 476775
- 961432 string characters out of 5808212
+ 42095 strings out of 476775
+ 965901 string characters out of 5808212
  2220991 words of memory out of 5000000
- 61151 multiletter control sequences out of 15000+600000
+ 61428 multiletter control sequences out of 15000+600000
  551357 words of font info for 165 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 94i,21n,103p,1678b,2124s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,21n,103p,1678b,1995s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (83 pages).

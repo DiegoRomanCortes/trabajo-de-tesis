@@ -42,7 +42,7 @@
 \usepackage[numbers, sort&compress]{natbib}
 %\usepackage[hyphens]{url}
 \usepackage{indentfirst}
-\usepackage{hyperref}
+
 \usepackage{xcolor}
 \usepackage{ragged2e}
 \usepackage{cancel}
@@ -59,6 +59,9 @@
 \usepackage{alphalph}
 \usepackage{chngcntr}
 \usepackage{appendix}
+\usepackage{tocloft} % For TOC spacing control
+\usepackage{hyperref}
+\usepackage{etoolbox}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -156,6 +159,7 @@ A todos ustedes, mi eterno agradecimiento por ser parte de esta historia.
 \end{thanks}
 
 \tableofcontents
+\newpage
 %\listoftables % opcional
 \listoffigures % opcional
 
@@ -204,24 +208,25 @@ A todos ustedes, mi eterno agradecimiento por ser parte de esta historia.
 \bibliography{citations}
 
 
-% Fix appendix numbering format
-\renewcommand{\thesection}{Anexo \Alph{section}} % Makes sections show as "Anexo A"
+
+% Set appendix section numbers as "Anexo A"
 \renewcommand{\appendixname}{Anexo}
+\renewcommand{\thesection}{\appendixname~\Alph{section}}
 
-\makeatletter
-\renewcommand{\l@section}{%
-	\@dottedtocline{1}{1em}{10em}} % {level}{indent}{numwidth}
-\makeatother
 
+
+% Appendices section
 \cleardoublepage
 \chapter*{Anexos}
 \markboth{Anexos}{Anexos}
 \addcontentsline{toc}{chapter}{Anexos}
-\begin{appendices}
-\input{anexoPapers.tex}
-\input{anexoA.tex}
-\input{anexoB.tex}
-\input{anexoC.tex}
-\input{anexoD.tex}
-\end{appendices}
+
+%\appendix
+	\setcounter{section}{0} % Reset counter
+	\input{anexoPapers.tex}
+	\input{anexoA.tex}
+	\input{anexoB.tex}
+	\input{anexoC.tex}
+	\input{anexoD.tex}
+
 \end{document}
