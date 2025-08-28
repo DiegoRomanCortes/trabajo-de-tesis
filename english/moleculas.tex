@@ -1,0 +1,112 @@
+\chapter{Moléculas Fotónicas \label{cap:molecules}}
+La técnica de escritura de guías de onda mediante pulsos láser ultracortos, descrita en el Capítulo~\ref{cap:fs}, permite la fabricación tridimensional de estructuras fotónicas con precisión micrométrica. No obstante, esta técnica presenta limitaciones inherentes a la forma elíptica del foco del láser, lo que impone restricciones sobre los modos transversales que pueden ser eficientemente excitados y, en particular, sobre los acoplamientos intermodales posibles entre modos de distinta simetría, como los $S$ y $P$ \citep{interorbital}.
+
+Para sortear estas restricciones y ampliar los grados de libertad en el diseño de redes fotónicas, se recurre aquí a un enfoque inspirado en la física molecular: al posicionar dos guías de onda lo suficientemente cerca, sus modos pueden acoplarse de forma coherente, generando nuevos modos colectivos extendidos. Este proceso es análogo a la formación de moléculas en física cuántica, donde dos orbitales atómicos se combinan linealmente para formar orbitales moleculares enlazantes y antienlazantes (ver Figura \ref{fig:molec-anal}).
+
+En este trabajo, llamaremos \textit{molécula fotónica} a un sistema de dos guías de onda acopladas, cuyas funciones propias se combinan generando modos híbridos simétricos y antisimétricos, en analogía con los orbitales moleculares. Esta analogía se basa en la forma espacial de los modos y en su superposición controlada, pero no implica la existencia de fuerzas de enlace, electrones compartidos ni potenciales interatómicos. La relación con las moléculas cuánticas es, por tanto, formal y geométrica, y se restringe al paralelismo estructural entre los modos ópticos y los orbitales \citep{molecules}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{media/moleculas.png}
+	\caption[Analogía y diferencias entre moléculas cuánticas (izquierda) y fotónicas (derecha).]{Analogía y diferencias entre moléculas cuánticas (izquierda) y fotónicas (derecha). Tanto los orbitales atómicos como los modos de guías individuales pueden hibridizarse, generando nuevos estados colectivos. En el caso fotónico, la hibridación ocurre entre modos ópticos guiados. En este caso, no hay análogo fotónico de los orbitales moleculares $\sigma_p$. \label{fig:molec-anal}}
+\end{figure}
+
+A partir de esta idea, en este capítulo se analiza experimentalmente una red fotónica construida a partir de dichas moléculas como bloques básicos. En particular, se estudia una red periódica tipo SSH \citep{SPSSH}, una extensión multiorbital del modelo de Su-Schrieffer-Heeger, que permite explorar el impacto del acoplamiento interorbital $S\hspace*{-0.3ex}P$ en la topología de bandas. El sistema presenta dos transiciones topológicas independientes, asociadas a la modulación de la dimerización geométrica y al desintonizado entre modos de diferente simetría. Estas transiciones se caracterizan mediante la observación de modos de borde, el cálculo de la polarización de bulto y el análisis espectral, permitiendo acceder a una rica fenomenología fotónica basada en la ingeniería modal.
+
+\section{Autoestados del acoplador fotónico para distancias de separación pequeñas}
+
+Como se mencionó en la Sección~\ref{cap:CMT}, la teoría de modos acoplados (CMT) describe adecuadamente los sistemas fotónicos en estudio cuando la distancia entre guías de ondas supera los $13\,\mu$m. Para separaciones menores, el sistema debe tratarse como una única macroguía. La expansión en modos normales (EME), presentada en la Sección~\ref{cap:eme}, proporciona una herramienta numérica válida para ambos regímenes. Mediante simulaciones de pares de guías de onda a diferentes distancias, se caracterizó el comportamiento de sus autoestados. La Figura~\ref{fig:molecule-coup} muestra que el autoestado antisimétrico ($+-$) solo existe para distancias mayores a $13\,\mu$m, ya que por debajo de este umbral se convierte en un modo de radiación ($k_z^{+-} < k_0 n_0$). En cambio, el autoestado simétrico ($++$) persiste y puede describirse como una única entidad, lo que en esta tesis se denominará \textit{modo S} de la molécula fotónica.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{media/eigenvalues_vs_angle.png}
+	\caption[Propagación y acoplamientos en moléculas fotónicas]{
+		\textbf{Izquierda:} Constantes de propagación y acoplamientos en función de la distancia para modos fundamentales, calculados mediante EME. 
+		\textbf{Derecha:} Constantes de propagación de modos $S$ y $P$ en función de la longitud de onda.
+		\label{fig:molecule-coup}}
+\end{figure}
+Si bien las constantes de propagación de los modos $S$ y $P$ en una misma molécula presentan valores diferentes, estas pueden igualarse entre moléculas adyacentes mediante el ajuste del contraste de índice de refracción en las guías de onda \citep{interorbital, SPSSH}. Por ejemplo, la Figura~\ref{fig:molecule-coup} muestra que a $730$\,nm se igualan las constantes de propagación para $\Delta n_S = 5.200 \times 10^{-4}$ y $\Delta n_P = 10.423 \times 10^{-4}$.
+
+\section{Moléculas Fotónicas en Red SP-SSH}
+
+Para la implementación experimental (Sección~\ref{cap:fs}) de una red que presente acoplamiento SP \citep{interorbital, toporusos, SPSSH}, se utilizaron los modos $P$ horizontales de la sección anterior, obtenidos mediante moléculas fotónicas. Un sintonizado preciso de las constantes de propagación de los modos $S$ ($k_z^S$) y $P$ ($k_z^P$) permitió considerar un grado de libertad análogo al del espín del electrón (\textit{pseudoespín}). El Hamiltoniano $H$ de esta red \citep{SPSSH}, ilustrado en la Figura~\ref{fig:sp-ssh-model}, es el siguiente:
+\begin{align*}
+	H &= \sum_n \left[\frac{\delta\beta}{2} \left( p^*_{n, 1} p_{n, 1} - s^*_{n, 1} s_{n, 1} + p^*_{n, 2} p_{n, 2} - s^*_{n, 2} s_{n, 2} \right) + \varkappa_{ss, 2}s^*_{n, 2} s_{n, 1} - \varkappa_{pp, 2}p^*_{n, 2} p_{n, 1} \right. \\
+	&+ \varkappa_{ss, 1} \left( s_{n-1, 2}^*s_{n, 1} + s_{n+1, 2}^*s_{n, 2} \right) - \varkappa_{pp, 1} \left( p_{n-1, 2}^*p_{n, 1} + p_{n+1, 2}^*p_{n, 2} \right) + \varkappa_{sp, 2} \left( s_{n, 2}^* p_{n, 1} - p_{n, 2}^* s_{n, 1} \right) \\
+	&+ \left. \varkappa_{sp, 1} \left( s_{n-1, 2}^* p_{n, 1} - p_{n-1, 2}^* s_{n, 1} + s_{n+1, 1}^*p_{n, 2} - p_{n+1, 1}^* s_{n, 2} \right) \right] + \text{c.c.}
+\end{align*}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{media/ssh_sp_model}
+	\caption{Esquema de la red SP-SSH y los acoplamientos considerados. \label{fig:sp-ssh-model}}
+\end{figure} \vspace{-2ex}
+Si se elige la base $\mathbf{v}^n = \left( s_1^n, p_1^n, s_2^n, p_2^n \right)^T$, el Hamiltoniano de Bloch se puede escribir en bloques como:
+\begin{equation*}
+	\hat{H}(k) = \begin{pmatrix}
+		\hat{\beta} & e^{-ika} \hat{\varkappa}_{1-} + \hat{\varkappa}_{2+} \\
+		e^{ika} \hat{\varkappa}_{1+} + \hat{\varkappa}_{2-} & \hat{\beta}
+	\end{pmatrix} \ ,
+\end{equation*}
+donde $\hat{\beta} = \frac{k_z^S - k_z^P}{2} \hat{\sigma}_z$ y $\hat{\varkappa}_{i\pm} = \begin{pmatrix}
+	\varkappa_{ss, i} & \pm\varkappa_{sp, i} \\
+	\mp\varkappa_{sp, i} & - \varkappa_{pp, i}
+\end{pmatrix} \ .$
+
+\section{Topología en la Red SP-SSH}
+El modelo SP-SSH permite explorar nuevas fases topológicas más allá del modelo SSH convencional, ya que incorpora dos orbitales (modos $S$ y $P$) cuyas combinaciones lineales pueden interpretarse como un pseudoespín. Se hace necesario estudiar la topología del sistema puesto que el espectro del Hamiltoniano no basta para explicar completamente el comportamiento de este sistema, particularmente por la aparición de estados de borde a energía cero. Al aplicar la transformación unitaria 
+\begin{equation*}
+	\hat{U} = \frac{1}{\sqrt{2}}\begin{pmatrix}
+		1 & 1 & 0 & 0 \\
+		0 & 0 & 1 & -1 \\
+		1 & -1 & 0 & 0 \\
+		0 & 0 & 1 & 1
+	\end{pmatrix} \ ,
+\end{equation*} 
+se hace más evidente cómo interpretar el sistema. En particular, para $\Delta\beta = 0$ y $\varkappa_{ss,1}=\varkappa_{pp,1}$ se tiene 
+\begin{equation*}
+	\hat{H} = \begin{pmatrix}
+		\hat{H}_+ & 0 \\
+		0 & \hat{H}_-
+	\end{pmatrix} \ ,
+\end{equation*} 
+con
+\begin{equation*}
+	\hat{H}_\pm = \begin{pmatrix}
+		0 & e^{-ika}(\varkappa_{ss,1}\mp \varkappa_{sp,1}) + (\varkappa_{ss,2}\pm \varkappa_{sp,2}) \\
+		e^{ika}(\varkappa_{ss,1}\mp \varkappa_{sp,1}) + (\varkappa_{ss,2}\pm \varkappa_{sp,2}) & 0
+	\end{pmatrix} \ .
+\end{equation*}
+Es decir, se tienen dos subsistemas tipo SSH, con acoplamiento intercelda (intracelda) $\varkappa_{ss,1}\mp \varkappa_{sp,1}$ ($\varkappa_{ss,2}\pm \varkappa_{sp,2}$). En el caso $\varkappa_{ss,1}\neq\varkappa_{pp,1}$ aún es posible capturar la topología mediante el determinante de $\hat{h}=e^{-ika}\hat{\varkappa}_{1-} + \hat{\varkappa}_{2+}$ (ver Figura~\ref{fig:sp-wilson}) ya que en el plano complejo se puede contar el número de vueltas (\textit{winding number}) en torno al origen al barrer todos los cuasimomentos en la primera zona de Brillouin. Estos bucles son una generalización de lo mostrado en la Figura~\ref{fig:ssh-topo} relativo al ángulo que forma la proyección en el plano $xy$ del vector $\mathbf{d}(k)$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{media/sp-ssh-012.png}
+	\caption[Topología de la Red SP-SSH para $\Delta\beta = 0$.]{Topología de la Red SP-SSH para $\Delta\beta = 0$. Determinante de la matriz-bloque $\hat{h}$ para los cuasimomentos $-\frac{\pi}{a} \le k  < \frac{\pi}{a}$. Se aprecian exactamente tres fases topológicas distintas. \label{fig:sp-wilson}}
+\end{figure} \vspace{-8ex}
+Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$), basta con variar $\Delta \beta$ y observar cuando hay cierre de brecha en las bandas, como se observa en la Figura~\ref{fig:sp-ssh-phase-diagram}.  La red SP-SSH presenta dos mecanismos topológicos: uno debido a la hibridización SP y otro debido a la dimerización.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{media/sp-ssh-phase-diagram.png}
+	\caption{Diagrama de fases topológicas. \label{fig:sp-ssh-phase-diagram}}
+\end{figure} \vspace{-2ex}
+\section{Implementación experimental}
+Para implementar experimentalmente el modelo SP-SSH, se fabricaron 25 redes fotónicas mediante la técnica de escritura con láser de femtosegundos descrita en el Capítulo~\ref{cap:fs}. Los parámetros geométricos se ajustaron con separaciones entre moléculas: $dx_1$ variable, $dx_2 = 25$ $\mu$m, $dy = 20$ $\mu$m y entre guías: $dx_0 = 7$ $\mu$m. Se optimizaron los contrastes de índice de refracción para lograr degeneración de modos: $k_z^S \sim k_z^P$ en $\lambda = 730$ nm \cite{interorbital}. Las mediciones se realizaron mediante barrido de longitud de onda (Capítulo~\ref{cap:wavelength}) con $\lambda \in$ $\{700, 780\}$ nm y paso de 5 nm, con el objetivo de tener control del parámetro $\Delta \beta$, dependiente directamente de la longitud de onda utilizada. La excitación se aplicó a la guía $S$ en un extremo de la red, midiendo la potencia relativa en el mismo extremo ($I_{\text{edge}}/I_{\text{total}}$). Aunque inicialmente no se distinguen claramente las fases topológicas con polarización de bulto\footnote{invariante topológico que permite distinguir fases topológicas distintas.} $P_\Sigma=1/2$ o $P_\Sigma=1$, el análisis numérico revela que durante la segunda transición topológica la razón $I_{\text{edge}}/I_{\text{total}}$ debería formar una meseta. La Figura~\ref{fig:sp-ssh-num} confirma este comportamiento, mientras que la Figura~\ref{fig:sp-ssh-exp} muestra resultados experimentales representativos: Uno para una $\lambda =$ 680 nm, donde sólo se aprecia topología por dimerización y otro para $\lambda =$ 725 nm, donde ocurren dos transiciones topológicas al cambiar la dimerización.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{media/sp-ssh-exp-num.png}
+	\caption[Análisis numérico-experimental del modelo SP-SSH]{
+		\textbf{Izquierda:} Resultados experimentales mostrando la meseta característica. 
+		\textbf{Derecha:} Comparación cuantitativa entre datos experimentales (línea continua) y simulaciones (línea discontinua).
+		\label{fig:sp-ssh-num}}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{media/sp-ssh-exp.png}
+	\caption[Caracterización experimental de redes SP-SSH]{
+		\textbf{Izquierda:} Red SP-SSH homogénea ($dx_1 = dx_2$) para diferentes longitudes de onda. 
+		\textbf{Derecha:} Arriba: Excitación en 680 nm para distintas dimerizaciones. 
+		Abajo: Misma excitación en 725 nm.
+		\label{fig:sp-ssh-exp}}
+\end{figure}

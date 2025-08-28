@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: intro.aux
+A level-1 auxiliary file: teorico.aux
+A level-1 auxiliary file: numericos.aux
+A level-1 auxiliary file: metodos.aux
+A level-1 auxiliary file: magico.aux
+A level-1 auxiliary file: nonsymmetry.aux
+A level-1 auxiliary file: moleculas.aux
+A level-1 auxiliary file: conclu.aux
+The style file: unsrtnat.bst
+Database file #1: citations.bib
+Warning--empty year in nobel
+Warning--empty year in fibra2
+Warning--empty year in fibra
+Warning--empty year in thorlabs_beam_profiler
+You've used 52 entries,
+            2481 wiz_defined-function locations,
+            1000 strings with 17864 characters,
+and the built_in function-call counts, 23057 in all, are:
+= -- 1959
+> -- 1392
+< -- 12
++ -- 525
+- -- 420
+* -- 2183
+:= -- 3865
+add.period$ -- 268
+call.type$ -- 52
+change.case$ -- 101
+chr.to.int$ -- 51
+cite$ -- 60
+duplicate$ -- 968
+empty$ -- 1886
+format.name$ -- 478
+if$ -- 4780
+int.to.chr$ -- 2
+int.to.str$ -- 53
+missing$ -- 52
+newline$ -- 380
+num.names$ -- 144
+pop$ -- 285
+preamble$ -- 1
+purify$ -- 52
+quote$ -- 0
+skip$ -- 510
+stack$ -- 0
+substring$ -- 1028
+swap$ -- 141
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 352
+warning$ -- 4
+while$ -- 150
+width$ -- 0
+write$ -- 902
+(There were 4 warnings)

@@ -1,0 +1,41 @@
+\chapter{Introduction}
+
+Over the past decade, several Nobel Prizes in physics have been closely linked to optics \cite{nobel}: for the generation of ultrashort light pulses—femtoseconds \cite{femto1} and then attoseconds \cite{atto1, atto2, atto3}—, for pioneering experiments with entangled photons \cite{photons1, photons2, photons3}, for the development of optical tweezers \cite{opticaltweezers}, and for the invention of high-efficiency LEDs \cite{led1, led2, led3}. These fundamental advances have driven applications in industry, biomedicine, telecommunications, and even defense. A prominent everyday application is the optical fiber, which acts as a waveguide for light and is now the primary medium for global data transmission \cite{fibra2, fibra}.
+
+Many of these developments have been enhanced by the \textit{femtosecond laser writing} technique, which allows for the fabrication of three-dimensional photonic lattices of waveguides with micrometric precision. This technology has enabled the experimental realization of lattices with complex geometries and artificial degrees of freedom, and has been used to study phenomena such as Bloch oscillations \cite{BlochOsci}, Anderson localization \cite{Anderson}, flat band dynamics \cite{lieb1, lieb2, artificialFB, FBdynamics}, topological phases \cite{obstopo, obsfloquet, topo1dphoto, toporusos}, formation of nonlinear solitons \cite{discretesolitons}, and even the propagation of quantum light \cite{qed, squeezed, topoquantum}.
+
+Within this framework, the present work focuses on the study of \textit{multi-orbital} photonic lattices, in which the internal structure of the transverse modes of light can be used as a new control resource. Particularly, the fundamental waveguide modes (denoted here as $S$) and their first antisymmetric transverse excitations (denoted as $P$) are studied.
+
+The use of this notation follows a structural analogy with atomic orbitals: the $S$ mode has axial symmetry and lacks transverse nodes, while the $P$ mode presents a lobular structure with a node on its transverse axis. This nomenclature is adopted as a visual and conceptual resource but does not imply the existence of central potentials or angular momentum quantization as in the atomic case. Its purpose is to establish an intuitive language that allows communicating the spatial structure and symmetry of the optical modes and facilitates their analysis in complex configurations.
+
+This analogy extends to the use of terms like \textit{photonic molecules}, which describe a system of two strongly coupled optical waveguides, whose eigenfunctions combine to generate symmetric and antisymmetric hybrid modes. This idea takes inspiration from quantum chemistry, where atomic orbitals combine linearly to form bonding ($\sigma$) and antibonding ($\sigma^*$) molecular orbitals. In this thesis, we will call a \textit{photonic molecule} a pair of coupled waveguides whose modal hybridization produces collective states analogous to these orbitals.
+
+It is important to emphasize that this is a formal and geometric analogy. It does not imply the existence of shared electrons, bonding forces, quantum levels bound to electronic configurations, or quantum correlations typical of the molecular world. Effects such as binding energy, selection rules, or quantization of electronic states are not observed. The term is used as a visual and structural metaphor that facilitates the understanding of modal coupling and its role as a building block in more complex photonic lattices. This conceptual framework has been used in few works under the name \textit{photonic molecules} \citep{molecules}, and is adopted here for communicative purposes, but with a clear delineation of its physical scope.
+
+Along the same lines, the terminology of \textit{$\sigma$ and $\pi$ bonds} is used to refer to the types of modal coupling between waveguides: $\sigma$-type coupling occurs through frontal (axial) superposition of modes, while $\pi$-type arises from lateral coupling, with nodes on the central axis. This characterization is based on the geometry of the involved optical fields and will be discussed in detail in the corresponding chapters.
+
+One of the experimental phenomena that motivates this study is the \textit{invisibility angle} \cite{Pmodecoupling}, described in Chapter~\ref{cap:invisibility}. In certain geometric configurations, the $P$ modes completely decouple from each other, remaining optically \textit{invisible}. This effect reveals that the transverse symmetry of the modes can be actively exploited as a control tool, allowing for new forms of light localization and routing.
+
+On the other hand, the breaking of symmetry in the evanescent couplings between waveguides with different refractive indices is also analyzed, leading to non-reciprocal dynamics. Although it is traditionally assumed that the coupling $C_{i\to j}$ between two waveguides is equal to $C_{j\to i}$, this symmetry can be broken even in passive systems, generating asymmetric couplings that are modeled using non-Hermitian matrices with real spectra. This phenomenon is addressed in Chapter~\ref{cap:asymmetric}.
+
+Finally, the concept of $S\hspace{-0.3ex}P$ inter-orbital coupling is introduced, which allows hybridizing modes with different symmetry through the precise tuning of their propagation constants. This mechanism is experimentally implemented in Chapter~\ref{cap:molecules}, where SP-SSH type lattices are designed and characterized: a multi-orbital extension of the Su-Schrieffer-Heeger model \cite{ssh}, with two independent degrees of freedom that generate a double topological transition. The concept of topological transition is analyzed from the perspective of band theory, the existence of edge modes, and bulk polarization.
+
+This approach complements and reinforces the general thrust of this thesis: to study how the internal structure of modes—be it their transverse or orbital symmetry, as well as the difference between them—can be used as a physical resource to control light propagation in photonic lattices.
+
+\vspace{1em}
+
+This thesis is organized as follows:
+
+Chapter~\ref{cap:teo} introduces the theoretical formalism used throughout the thesis, including the principles of modal propagation, coupled-mode theory in discrete lattices, and the relevant topological concepts in the study of photonic bands.
+
+Chapter~\ref{cap:num} presents the numerical tools employed. The Eigenmode Expansion (EME) method, which allows modeling the stationary evolution of light, is described, along with other complementary methodologies such as the Beam Propagation Method (BPM) and Coupled-Mode Theory (CMT).
+
+Chapter~\ref{cap:exp} details the experimental technique of femtosecond pulsed laser writing, with emphasis on the key parameters for the design and fabrication of three-dimensional multi-orbital photonic lattices.
+
+Chapter~\ref{cap:invisibility} studies the phenomenon of $P$ mode invisibility, experimentally characterizing the critical geometry that leads to the optical decoupling of these modes. This property is tested in a graphene-type photonic lattice. To achieve quantitative agreement between theory and experiment, an extended model is introduced that incorporates both modal \textit{non-orthogonality} and \textit{long-range couplings} between non-adjacent waveguides.
+
+Chapter~\ref{cap:asymmetric} examines the phenomenon of asymmetric evanescent coupling between waveguides of different refractive indices. A correction to conventional coupled-mode theory is presented that allows modeling these effects using non-Hermitian coupling matrices but with real spectra, and the resulting intensity imbalance in asymmetric dimers is experimentally validated.
+
+Chapter~\ref{cap:molecules} analyzes the formation of hybrid modes through photonic molecules for their use as building blocks in the formation of multi-orbital lattices. On this basis, an SP-SSH type lattice, a multi-orbital extension of the Su-Schrieffer-Heeger model, is implemented and characterized, including the study of its topological phases through bulk polarization and edge spectra.
+
+Finally, Chapter~\ref{cap:conclu} presents the conclusions of the work and discusses possible extensions to other photonic platforms.

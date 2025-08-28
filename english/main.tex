@@ -1,0 +1,256 @@
+% se puede agregar la opción [english] para 
+%  memorias o tesis en inglés (borrando el archivo .aux)
+\documentclass[english, hyphens]{umemoria} 
+%\includeonly{teorico}
+\depto{Departament of Physics}
+\author{Diego Antonio Román Cortés}
+\title{Non conventional coupling and topological transitions in multiorbital photonic structures}
+
+% incluir ambos comandos para una doble titulación
+%  o quitar el comando que no aplica
+%\memoria{Ingenier[o/a?] Civil en ???}
+\tesis{Master, of Science, mention in Physics}
+%\tesis{Doctor en ???} % incluir solo este comando para doctorados
+
+% puede haber varios profesores guía seperados por coma;
+% pero si es una memoria, solo puede haber un profesor guía
+\guia{Rodrigo Vicencio Poblete} 
+
+% puede haber varios profesores co-guía seperados por coma;
+% pero si es una memoria, el profesor co-guía será el primer
+% integrante de la comisión
+%\coguia{Nombre Completo Co-Guía} % incluir en caso de co-guía de *tesis*
+
+%\cotutela{Nombre Institución} % incluir en caso de cotutela
+
+\comision{Carla Hermann Avigliano, Pedro Orellana Dinamarca}
+
+\auspicio{Millenium Institute for Research in Optics (MIRO) ICN17$\_$012 and ANID FONDECYT Grant No. 1231313 \\ Powered@NLHPC: This thesis was partially supported by the supercomputing infrastructure of the NLHPC (CCSS210001)} % incluir en caso de recibir financiamiento
+
+% tiene que ser el año en que se da el examen de título/grado (defensa)
+%\anho{2021} % incluir solo para reemplazar el año actual
+
+\usepackage{amsmath, bm}
+\usepackage{bm}
+\usepackage{lipsum}
+\usepackage{pgfplots}
+\usepackage{txfonts}
+\usepackage{graphicx}
+%\usepackage[spanish, es-nodecimaldot]{babel}
+\usepackage{float}
+\usepackage[figurename=Figura]{caption}
+\usepackage[numbers, sort&compress]{natbib}
+%\usepackage[hyphens]{url}
+\usepackage{indentfirst}
+
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage{cancel}
+\usepackage[rightcaption]{sidecap}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{fontspec} % Necesario para fuentes específicas
+\usepackage{titlesec}
+\usepackage{etoolbox}
+\usepackage{alphalph}
+\usepackage{chngcntr}
+\usepackage{appendix}
+\usepackage{tocloft} % For TOC spacing control
+\usepackage{hyperref}
+\usepackage{etoolbox}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\begin{resumen}\ignorespacesafterend
+	In this thesis, non-conventional coupling phenomena in multi-orbital photonic lattices, fabricated using the femtosecond laser writing technique, are studied. Mechanisms that transcend coupling between fundamental modes are investigated, incorporating orbital degrees of freedom, structural asymmetries, and topological effects. Light propagation is analyzed in configurations where transverse SS and PP modes interact in a controlled manner, revealing new forms of optical manipulation based on symmetry, geometry, and modal structure.
+	
+	First, the phenomenon of \textbf{dipolar invisibility} of $P$ dipole modes is investigated, demonstrating experimentally that, under certain geometric conditions, these modes can remain optically decoupled. This effect is observed in a graphene-type photonic lattice and is modeled theoretically through an extension of coupled-mode theory that incorporates both long-range couplings and non-orthogonality between modes.
+	
+	Subsequently, the phenomenon of \textbf{non-symmetric evanescent coupling} in dimers with different refractive index contrasts is studied. A generalized formulation of coupled-mode theory that accounts for this asymmetry in the dynamics, even in the absence of loss or gain, is presented. The breaking of reciprocity is experimentally validated through measurements of intensity imbalance dependent on the input channel.
+	
+	Finally, \( S\hspace{-0.3ex}P \) \textbf{interorbital coupling} is explored. This mechanism allows the hybridization of modes of distinct transverse symmetry through the precise tuning of their propagation constants. Using this technique, a lattice implementing the SP-SSH model—a multi-orbital extension of the Su-Schrieffer-Heeger model—is realized. This system exhibits two distinct transitions between topological phases, determined by geometric dimerization and orbital detuning.
+	
+	The experimental and numerical results presented in this thesis reveal new ways to control light propagation by utilizing the orbital degrees of freedom of guided modes, paving the way for the design of advanced photonic networks with topological and directional functionality.
+\end{resumen}
+
+% opcional: incluir para tesis en inglés;
+%  en este caso hay que tener el resumen y abstract
+%   en ambos idiomas
+%\begin{abstract}
+%\lipsum[1-4]
+%\end{abstract}
+
+\begin{dedicatoria}
+
+
+Mas si buscáis descubrimientos\\
+Tierras irrealizables más allá de los cielos\\
+Vegetante obsesión de musical congoja\\
+Volvamos al silencio\\
+Trampas de luz y cascadas lujosas\\
+Trampas de perla y de lámpara acuática\\
+Anda como los ciegos con sus ojos de piedra\\
+Presintiendo el abismo a todo paso\\
+Mas no temas de mí que mi lenguaje es otro\\
+No trato de hacer feliz ni desgraciado a nadie\\
+Ni descolgar banderas de los pechos\\
+Ni dar anillos de planetas\\
+Ni hacer satélites de mármol en torno a un talismán ajeno\\
+Quiero darte una música de espíritu\\
+Música mía de esta cítara plantada en mi cuerpo\\
+Música que hace pensar en el crecimiento de los árboles\\
+Y estalla en luminarias dentro del sueño\\
+\textnormal{\\Extracts from \textit{Altazor}, Vicente Huidobro}
+\end{dedicatoria}
+
+\begin{thanks}
+Behind every achievement, there is a constellation of people who made it possible. Though it is impossible to name them all, I hold in my memory a profound gratitude for their teachings, their time, and their trust.
+
+First, to my innermost circle:
+\begin{itemize}
+
+\item To my parents, for the lessons, values, and experiences I will always carry with me.
+
+\item To my brother, Martín, for countless nights of anime, games, and complicit laughter.
+
+\item To my fiancée, Catalina, for her unconditional support and affection in the darkest moments, and for being my refuge and motivation in the brightest.
+\end{itemize}
+I am grateful to Pablo and Cristóbal, my pillars for fourteen years now: for the silliness that outweighs the seriousness, for the comfortable silences, and the spontaneous get-togethers that seem to have no end.
+
+A special thanks to the insufferable \textit{Amazing} Fabián and \textit{Amazing} Carlos, for making workdays more bearable, for listening to me when I needed it most, for pushing me when I needed it most, and for motivating me to bring out the best in myself even when I didn't believe in it.
+
+A very particular place is held by the members—past, present, and future—of the Photonic Lattices Group:
+\begin{itemize}
+\item To Rodrigo, for taking in five years ago the then-undergraduate Physics freshman that I was, for trusting me, and for teaching me everything I know about Photonic Lattices, for introducing me to the academic world, and for giving me life lessons that I will carry as a compass into the future.
+
+\item To Paloma, Bastián, Ignacio, and Diego, for their infinite patience, their selfless help, and for making every day I spent with them in the lab a space of learning, collaboration, and camaraderie that I will always treasure.
+
+\item To Polette, Romina, Lucas, Daniel, and Sofía, for giving warm and vibrant colors to LABGO3, for being the best colleagues I could have asked for, and for the laughter, the good gossip, and the constant learning that made the office and the lab feel like a second home.
+\end{itemize}
+To all of you, my eternal gratitude for being a part of this story.
+\end{thanks}
+
+\tableofcontents
+\newpage
+%\listoftables % opcional
+\listoffigures % opcional
+
+\mainmatter
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter.}{1em}{}
+\titlespacing*{\chapter}{0pt}{0pt}{0pt}
+
+\titlespacing*{\section}
+{0pt} % Left indent
+{0pt} % Space before section (adjust this value)
+{0pt} % Space after section (matches paragraph spacing)
+
+% For subsection spacing (if needed)
+\titlespacing*{\subsection}
+{0pt}
+{0pt}
+{0pt}
+
+% Configuración de fuentes (elige UNA de estas opciones)
+%\setmainfont{Arial}
+%\setmainfont{Times New Roman}
+%\setmainfont{Verdana}
+%\setmainfont{Georgia}
+
+\setstretch{1.15} % Interlineado 1.15
+\setlength{\parskip}{1.0\baselineskip} % Doble espacio entre párrafos
+\justifying % Texto justificado
+
+\include{intro.tex}
+\include{teorico.tex}
+\include{numericos.tex}
+\include{metodos.tex}
+\include{magico.tex}
+\include{nonsymmetry.tex}
+\include{moleculas.tex}
+
+
+\include{conclu.tex}
+
+% ver https://www.overleaf.com/learn/latex/Glossaries
+% \input{glosario.tex} % opcional
+
+%\nocite{*}
+\bibliographystyle{unsrtnat}
+\bibliography{citations}
+
+% Set appendix section numbers as "Anexo A"
+\renewcommand{\appendixname}{Anexo}
+\renewcommand{\thesection}{\appendixname~\Alph{section}}
+% Appendices section
+\begin{minipage}{\textwidth}
+\chapter*{Anexos}
+\markboth{Anexos}{Anexos}
+
+% --- Fix blank page & TOC hyperlink ---
+\clearpage % Ensure bibliography ends properly
+\phantomsection % Fixes hyperref link for the appendix
+\addcontentsline{toc}{chapter}{Anexos}
+\appendix
+	\setcounter{section}{0} % Reset counter
+	\nopagebreak
+	\input{anexoPapers.tex}
+\end{minipage}
+\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[page=1, width=\linewidth]{media/molpap.pdf}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[page=1, width=\linewidth]{media/dipolepap.pdf}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[page=1, width=\linewidth]{media/nonsympap.pdf}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[page=1, width=\linewidth]{media/2Dradpap.pdf}
+\end{figure}
+	\input{anexoA.tex}
+	\input{anexoB.tex}
+	\newpage
+	\input{anexoC.tex}
+	\newpage
+	\input{anexoD.tex}
+
+\end{document}
