@@ -12,23 +12,22 @@
 \contentsline {subsection}{\numberline {2.5.1}Derivation from a Variational Principle}{15}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}TE Dimer in Slab-Type Waveguides}{18}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Bands and Topology: Photonic Su-Schrieffer-Heeger Network}{19}{subsection.2.5.3}%
-\contentsline {chapter}{\numberline {3}Métodos Numéricos }{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Expansión en Modos Normales }{23}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Método de Propagación de Haces}{24}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Implementación mediante transformada de Fourier (FFTBPM)}{25}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Comentarios sobre Teoría de Modos Acoplados }{26}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Métodos Experimentales }{29}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Escritura directa de guías de onda }{29}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Montaje de excitación láser supercontinuo }{30}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Montaje de modulación espacial de luz}{30}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Etapa premodulación}{30}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Etapa de modulación}{30}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Etapa de acoplamiento}{31}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Etapa de captura en cámara}{31}{subsection.4.3.4}%
-\contentsline {subsubsection}{Configuración interferométrica opcional}{31}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Circuito óptico}{32}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Generación de imágenes complejas }{32}{subsection.4.3.6}%
-\contentsline {section}{\numberline {4.4}Análisis de imágenes }{33}{section.4.4}%
+\contentsline {chapter}{\numberline {3}Numerical Methods }{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Eigenmode Expansion }{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Beam Propagation Method}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Implementation via Fourier Transform (FFTBPM)}{25}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Comments on Coupled-Mode Theory }{26}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Experimental Methods }{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Direct Writing of Waveguides }{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Supercontinuum Laser Excitation Setup }{30}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Premodulation Stage}{30}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Modulation Stage}{30}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Coupling Stage}{31}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Camera Capture Stage}{31}{subsection.4.2.4}%
+\contentsline {subsubsection}{Optional Interferometric Configuration}{31}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Optical Circuit}{32}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Generation of Complex Images }{32}{subsection.4.2.6}%
+\contentsline {section}{\numberline {4.3}Image Analysis }{33}{section.4.3}%
 \contentsline {chapter}{\numberline {5}Acoplamiento de Modos $p_y$ y Ángulo de Invisibilidad }{34}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Acopladores}{34}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Redes tipo panal de abeja}{36}{section.5.2}%
