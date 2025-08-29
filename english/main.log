@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.8.19)  28 AUG 2025 19:32
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2025/dev/Debian)  (format=lualatex 2025.8.19)  29 AUG 2025 12:37
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1057,22 +1057,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks54
 \@floatcapt=\box70
 )
-Package caption Info: Option `figurename' requires the `newfloat' package on in
-put line 42.
-
-(/usr/share/texlive/texmf-dist/tex/latex/newfloat/newfloat.sty
-Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
-Package newfloat Info: Unsupported document class, or \@chapter 
-(newfloat)             was already redefined by another package.
-Package newfloat Info: \@chapter = macro:->\def \Hy@next {\Hy@MakeCurrentHrefAu
-to {\Hy@chapapp *}\Hy@raisedlink {\hyper@anchorstart {\@currentHref }\hyper@anc
-horend }}\ifnum \c@secnumdepth >\m@ne \@ifundefined {if@mainmatter}\iftrue {\cs
-name if@mainmatter\endcsname }\let \Hy@next \relax \fi \fi \Hy@next \Hy@org@cha
-pter .
-Package newfloat Info: \Hy@org@chapter = macro:[#1]#2->\NR@gettitle {#1}\NR@cha
-pter [{#1}]{#2}.
-Package newfloat Info: \algocf@original@chapter = undefined.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip58
@@ -1370,9 +1354,6 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into
 your preamble.
  on input line 92.
 
-Package newfloat Info: Trying Plan B...
-Package newfloat Info: `float' package detected.
-Package newfloat Info: `sidecap' package detected.
 Couldn't patch \deferred@thm@head!
 <imagenes/escudoU2014.pdf, id=208, 320.19624pt x 689.57625pt>
 File: imagenes/escudoU2014.pdf Graphic file (type pdf)
@@ -1430,28 +1411,28 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
 ]
 
 [4]
-Overfull \hbox (16.45596pt too wide) detected at line 48
-\TU/lmr/m/n/12 Anexo A 
+Overfull \hbox (33.74797pt too wide) detected at line 48
+\TU/lmr/m/n/12 Ap-pendix A 
  []
 
 
-Overfull \hbox (15.96396pt too wide) detected at line 49
-\TU/lmr/m/n/12 Anexo B 
+Overfull \hbox (33.25597pt too wide) detected at line 49
+\TU/lmr/m/n/12 Ap-pendix B 
  []
 
 
-Overfull \hbox (16.13196pt too wide) detected at line 50
-\TU/lmr/m/n/12 Anexo C 
+Overfull \hbox (33.42397pt too wide) detected at line 50
+\TU/lmr/m/n/12 Ap-pendix C 
  []
 
 
-Overfull \hbox (16.62396pt too wide) detected at line 51
-\TU/lmr/m/n/12 Anexo D 
+Overfull \hbox (33.91597pt too wide) detected at line 51
+\TU/lmr/m/n/12 Ap-pendix D 
  []
 
 
-Overfull \hbox (15.63997pt too wide) detected at line 52
-\TU/lmr/m/n/12 Anexo E 
+Overfull \hbox (32.93198pt too wide) detected at line 52
+\TU/lmr/m/n/12 Ap-pendix E 
  []
 
 )
@@ -1476,8 +1457,6 @@ as (izquierda) y fotóni-cas (derecha).[] []
 \openout2 = intro.aux
  (./intro.tex
 Chapter 1.
-Package newfloat Info: Setting Plan B file extension to `lof'... on input line 
-1.
 
 
 [1
@@ -1502,31 +1481,32 @@ Chapter 2.
 ]
 
 [5]
-<media/slab.pdf, id=482, 1034.1837pt x 542.025pt>
+<media/slab.pdf, id=483, 1034.1837pt x 542.025pt>
 File: media/slab.pdf Graphic file (type pdf)
 <use media/slab.pdf>
-Package luatex.def Info: media/slab.pdf  used on input line 96.
+Package luatex.def Info: media/slab.pdf  used on input line 97.
 (luatex.def)             Requested size: 283.22162pt x 148.44116pt.
 
 
 [6<./media/slab.pdf>]
 
 [7]
-<media/slabgraphical.pdf, id=535, 246.45839pt x 192.50116pt>
+<media/slabgraphical.pdf, id=534, 246.45839pt x 192.50116pt>
 File: media/slabgraphical.pdf Graphic file (type pdf)
 <use media/slabgraphical.pdf>
-Package luatex.def Info: media/slabgraphical.pdf  used on input line 240.
+Package luatex.def Info: media/slabgraphical.pdf  used on input line 242.
 (luatex.def)             Requested size: 236.01561pt x 184.34666pt.
-<media/TETMfields.pdf, id=538, 230.77599pt x 179.71974pt>
+
+
+[8]
+<media/TETMfields.pdf, id=544, 230.77599pt x 179.71974pt>
 File: media/TETMfields.pdf Graphic file (type pdf)
 <use media/TETMfields.pdf>
-Package luatex.def Info: media/TETMfields.pdf  used on input line 246.
+Package luatex.def Info: media/TETMfields.pdf  used on input line 248.
 (luatex.def)             Requested size: 236.01561pt x 183.8053pt.
 
 
-[8<./media/slabgraphical.pdf>]
-
-[9<./media/TETMfields.pdf>]
+[9<./media/slabgraphical.pdf><./media/TETMfields.pdf>]
 
 [10]
 warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
@@ -1536,14 +1516,14 @@ warning  (pdf backend): ignoring duplicate destination with the name 'equation.2
 [11]
 
 [12]
-<media/OAM_analitic.png, id=636, 1047.16219pt x 682.80093pt>
-File: media/OAM_analitic.png Graphic file (type png)
-<use media/OAM_analitic.png>
-Package luatex.def Info: media/OAM_analitic.png  used on input line 486.
-(luatex.def)             Requested size: 472.03123pt x 307.7785pt.
-
 
 [13]
+<media/OAM_analitic.png, id=643, 1047.16219pt x 682.80093pt>
+File: media/OAM_analitic.png Graphic file (type png)
+<use media/OAM_analitic.png>
+Package luatex.def Info: media/OAM_analitic.png  used on input line 491.
+(luatex.def)             Requested size: 472.03123pt x 307.7785pt.
+
 
 [14<./media/OAM_analitic.png>]
 
@@ -1556,40 +1536,44 @@ Missing character: There is no ´ (U+00B4) in font txr!
 
 [17]
 
+LaTeX Warning: Reference `eqn:transverse' on page 18 undefined on input line 62
+6.
+
+
+
 [18]
-<media/ssh-model.png, id=709, 1181.16281pt x 230.36063pt>
+
+[19]
+<media/ssh-model.png, id=717, 1181.16281pt x 230.36063pt>
 File: media/ssh-model.png Graphic file (type png)
 <use media/ssh-model.png>
-Package luatex.def Info: media/ssh-model.png  used on input line 722.
+Package luatex.def Info: media/ssh-model.png  used on input line 727.
 (luatex.def)             Requested size: 472.03123pt x 92.05824pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-
-[19]
-
 [20<./media/ssh-model.png>]
-<media/ssh-winding.png, id=731, 354.66502pt x 186.4566pt>
+<media/ssh-winding.png, id=729, 354.66502pt x 186.4566pt>
 File: media/ssh-winding.png Graphic file (type png)
 <use media/ssh-winding.png>
-Package luatex.def Info: media/ssh-winding.png  used on input line 765.
+Package luatex.def Info: media/ssh-winding.png  used on input line 771.
 (luatex.def)             Requested size: 472.03123pt x 248.1634pt.
-<media/ssh-open.png, id=732, 238.491pt x 156.1032pt>
+<media/ssh-open.png, id=730, 238.491pt x 156.1032pt>
 File: media/ssh-open.png Graphic file (type png)
 <use media/ssh-open.png>
-Package luatex.def Info: media/ssh-open.png  used on input line 769.
+Package luatex.def Info: media/ssh-open.png  used on input line 775.
 (luatex.def)             Requested size: 330.42041pt x 216.2944pt.
 )
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21<./media/ssh-winding.png>]
 
-[22<./media/ssh-open.png>]
+
+[21]
+
+[22<./media/ssh-winding.png><./media/ssh-open.png>]
 \openout2 = numericos.aux
  (./numericos.tex
 Chapter 3.
@@ -1601,7 +1585,7 @@ Chapter 3.
 
 
 ]
-<media/numerical_slab.png, id=765, 423.984pt x 213.1965pt>
+<media/numerical_slab.png, id=764, 423.984pt x 213.1965pt>
 File: media/numerical_slab.png Graphic file (type png)
 <use media/numerical_slab.png>
 Package luatex.def Info: media/numerical_slab.png  used on input line 29.
@@ -1614,7 +1598,7 @@ Overfull \hbox (14.91888pt too wide) in paragraph at lines 38--38
 BPM)| 
  []
 
-<media/num_exp_comparison.png, id=791, 1052.93375pt x 489.83pt>
+<media/num_exp_comparison.png, id=790, 1052.93375pt x 489.83pt>
 File: media/num_exp_comparison.png Graphic file (type png)
 <use media/num_exp_comparison.png>
 Package luatex.def Info: media/num_exp_comparison.png  used on input line 64.
@@ -1624,12 +1608,12 @@ Package luatex.def Info: media/num_exp_comparison.png  used on input line 64.
 [25]
 
 [26<./media/num_exp_comparison.png>]
-<codigo/dimol/coupler.png, id=819, 238.491pt x 175.18248pt>
+<codigo/dimol/coupler.png, id=818, 238.491pt x 175.18248pt>
 File: codigo/dimol/coupler.png Graphic file (type png)
 <use codigo/dimol/coupler.png>
 Package luatex.def Info: codigo/dimol/coupler.png  used on input line 87.
 (luatex.def)             Requested size: 377.62642pt x 277.40808pt.
-<codigo/1darraycmt/1darraycmt.png, id=820, 614.17455pt x 382.5492pt>
+<codigo/1darraycmt/1darraycmt.png, id=819, 614.17455pt x 382.5492pt>
 File: codigo/1darraycmt/1darraycmt.png Graphic file (type png)
 <use codigo/1darraycmt/1darraycmt.png>
 Package luatex.def Info: codigo/1darraycmt/1darraycmt.png  used on input line 9
@@ -1651,7 +1635,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./metodos.tex
 Chapter 4.
-<media/fabrication1.png, id=836, 1927.2pt x 1084.05pt>
+<media/fabrication1.png, id=835, 1927.2pt x 1084.05pt>
 File: media/fabrication1.png Graphic file (type png)
 <use media/fabrication1.png>
 Package luatex.def Info: media/fabrication1.png  used on input line 12.
@@ -1664,12 +1648,12 @@ Package luatex.def Info: media/fabrication1.png  used on input line 12.
 
 
 <./media/fabrication1.png>]
-<media/SC_setup.png, id=846, 1927.2pt x 1084.05pt>
+<media/SC_setup.png, id=845, 1927.2pt x 1084.05pt>
 File: media/SC_setup.png Graphic file (type png)
 <use media/SC_setup.png>
 Package luatex.def Info: media/SC_setup.png  used on input line 30.
 (luatex.def)             Requested size: 472.03123pt x 174.63484pt.
-<media/SLMblaze4.png, id=851, 963.6pt x 542.025pt>
+<media/SLMblaze4.png, id=850, 963.6pt x 542.025pt>
 File: media/SLMblaze4.png Graphic file (type png)
 <use media/SLMblaze4.png>
 Package luatex.def Info: media/SLMblaze4.png  used on input line 48.
@@ -1677,7 +1661,7 @@ Package luatex.def Info: media/SLMblaze4.png  used on input line 48.
 
 
 [30<./media/SC_setup.png>]
-<media/SLM_setupv1.png, id=863, 1927.2pt x 1084.05pt>
+<media/SLM_setupv1.png, id=862, 1927.2pt x 1084.05pt>
 File: media/SLM_setupv1.png Graphic file (type png)
 <use media/SLM_setupv1.png>
 Package luatex.def Info: media/SLM_setupv1.png  used on input line 71.
@@ -1685,7 +1669,7 @@ Package luatex.def Info: media/SLM_setupv1.png  used on input line 71.
 
 
 [31<./media/SLMblaze4.png>]
-<media/OAM-free.png, id=873, 3194.334pt x 1916.6004pt>
+<media/OAM-free.png, id=872, 3194.334pt x 1916.6004pt>
 File: media/OAM-free.png Graphic file (type png)
 <use media/OAM-free.png>
 Package luatex.def Info: media/OAM-free.png  used on input line 85.
@@ -1718,18 +1702,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 ]
-<media/26um_15mm_angles_v2.png, id=897, 1565.09718pt x 776.9025pt>
+<media/26um_15mm_angles_v2.png, id=896, 1565.09718pt x 776.9025pt>
 File: media/26um_15mm_angles_v2.png Graphic file (type png)
 <use media/26um_15mm_angles_v2.png>
 Package luatex.def Info: media/26um_15mm_angles_v2.png  used on input line 18.
 (luatex.def)             Requested size: 330.42041pt x 164.01971pt.
-<codigo/eigenvalues_vs_angle.png, id=901, 277.87814pt x 198.92317pt>
+<codigo/eigenvalues_vs_angle.png, id=900, 277.87814pt x 198.92317pt>
 File: codigo/eigenvalues_vs_angle.png Graphic file (type png)
 <use codigo/eigenvalues_vs_angle.png>
 Package luatex.def Info: codigo/eigenvalues_vs_angle.png  used on input line 25
 .
 (luatex.def)             Requested size: 283.22162pt x 202.74716pt.
-<media/honeycomb_lattices_bw.png, id=906, 863.225pt x 201.75375pt>
+<media/honeycomb_lattices_bw.png, id=905, 863.225pt x 201.75375pt>
 File: media/honeycomb_lattices_bw.png Graphic file (type png)
 <use media/honeycomb_lattices_bw.png>
 Package luatex.def Info: media/honeycomb_lattices_bw.png  used on input line 32
@@ -1738,12 +1722,12 @@ Package luatex.def Info: media/honeycomb_lattices_bw.png  used on input line 32
 
 
 [35<./media/26um_15mm_angles_v2.png><./codigo/eigenvalues_vs_angle.png>]
-<media/honeycomb-lattice.png, id=916, 313.9228pt x 606.01407pt>
+<media/honeycomb-lattice.png, id=915, 313.9228pt x 606.01407pt>
 File: media/honeycomb-lattice.png Graphic file (type png)
 <use media/honeycomb-lattice.png>
 Package luatex.def Info: media/honeycomb-lattice.png  used on input line 42.
 (luatex.def)             Requested size: 118.0078pt x 227.8003pt.
-<codigo/NNNN_overlap_vs_angle.png, id=917, 325.64862pt x 313.79634pt>
+<codigo/NNNN_overlap_vs_angle.png, id=916, 325.64862pt x 313.79634pt>
 File: codigo/NNNN_overlap_vs_angle.png Graphic file (type png)
 <use codigo/NNNN_overlap_vs_angle.png>
 Package luatex.def Info: codigo/NNNN_overlap_vs_angle.png  used on input line 4
@@ -1752,13 +1736,13 @@ Package luatex.def Info: codigo/NNNN_overlap_vs_angle.png  used on input line 4
 
 
 [36<./media/honeycomb_lattices_bw.png>]
-<codigo/honeycomb_eigenvalues_vs_angle.png, id=930, 241.23726pt x 193.97269pt>
+<codigo/honeycomb_eigenvalues_vs_angle.png, id=929, 241.23726pt x 193.97269pt>
 File: codigo/honeycomb_eigenvalues_vs_angle.png Graphic file (type png)
 <use codigo/honeycomb_eigenvalues_vs_angle.png>
 Package luatex.def Info: codigo/honeycomb_eigenvalues_vs_angle.png  used on inp
 ut line 50.
 (luatex.def)             Requested size: 212.41261pt x 170.7971pt.
-<media/ipr-corner-exp.png, id=931, 662.475pt x 432.11438pt>
+<media/ipr-corner-exp.png, id=930, 662.475pt x 432.11438pt>
 File: media/ipr-corner-exp.png Graphic file (type png)
 <use media/ipr-corner-exp.png>
 Package luatex.def Info: media/ipr-corner-exp.png  used on input line 51.
@@ -1766,12 +1750,12 @@ Package luatex.def Info: media/ipr-corner-exp.png  used on input line 51.
 
 
 [37<./media/honeycomb-lattice.png><./codigo/NNNN_overlap_vs_angle.png>]
-<media/cuasi-ssh.png, id=940, 574.39594pt x 479.54156pt>
+<media/cuasi-ssh.png, id=939, 574.39594pt x 479.54156pt>
 File: media/cuasi-ssh.png Graphic file (type png)
 <use media/cuasi-ssh.png>
 Package luatex.def Info: media/cuasi-ssh.png  used on input line 57.
 (luatex.def)             Requested size: 188.8096pt x 157.62724pt.
-<media/ipr-bulk-exp.png, id=941, 717.43031pt x 606.01407pt>
+<media/ipr-bulk-exp.png, id=940, 717.43031pt x 606.01407pt>
 File: media/ipr-bulk-exp.png Graphic file (type png)
 <use media/ipr-bulk-exp.png>
 Package luatex.def Info: media/ipr-bulk-exp.png  used on input line 59.
@@ -1791,7 +1775,7 @@ e el \TU/lmr/m/it/12 án-gulo de in-vis-i-bil-i-dad \TU/lmr/m/n/12 —definido
 \openout2 = nonsymmetry.aux
  (./nonsymmetry.tex
 Chapter 6.
-<media/nonsympaper.png, id=957, 729.47531pt x 282.30469pt>
+<media/nonsympaper.png, id=956, 729.47531pt x 282.30469pt>
 File: media/nonsympaper.png Graphic file (type png)
 <use media/nonsympaper.png>
 Package luatex.def Info: media/nonsympaper.png  used on input line 11.
@@ -1810,7 +1794,7 @@ n/12 puede cuan-tifi-carse me-di-ante la teoría de mo-dos acopla-
 
 
 <./media/nonsympaper.png>]
-<media/imbalance-nonortho.png, id=969, 928.97063pt x 363.60844pt>
+<media/imbalance-nonortho.png, id=968, 928.97063pt x 363.60844pt>
 File: media/imbalance-nonortho.png Graphic file (type png)
 <use media/imbalance-nonortho.png>
 Package luatex.def Info: media/imbalance-nonortho.png  used on input line 65.
@@ -1818,7 +1802,7 @@ Package luatex.def Info: media/imbalance-nonortho.png  used on input line 65.
 
 
 [41]
-<media/nonsymm-exp.png, id=977, 951.555pt x 344.03531pt>
+<media/nonsymm-exp.png, id=976, 951.555pt x 344.03531pt>
 File: media/nonsymm-exp.png Graphic file (type png)
 <use media/nonsymm-exp.png>
 Package luatex.def Info: media/nonsymm-exp.png  used on input line 73.
@@ -1837,7 +1821,7 @@ Overfull \hbox (2.17781pt too wide) in paragraph at lines 6--7
 ónica \TU/lmr/m/n/12 a un sis-tema de dos guías de onda acopladas,
  []
 
-<media/moleculas.png, id=995, 462.528pt x 260.172pt>
+<media/moleculas.png, id=994, 462.528pt x 260.172pt>
 File: media/moleculas.png Graphic file (type png)
 <use media/moleculas.png>
 Package luatex.def Info: media/moleculas.png  used on input line 10.
@@ -1850,7 +1834,7 @@ Package luatex.def Info: media/moleculas.png  used on input line 10.
 
 
 <./media/moleculas.png>]
-<media/eigenvalues_vs_angle.png, id=1008, 493.96545pt x 179.4705pt>
+<media/eigenvalues_vs_angle.png, id=1007, 493.96545pt x 179.4705pt>
 File: media/eigenvalues_vs_angle.png Graphic file (type png)
 <use media/eigenvalues_vs_angle.png>
 Package luatex.def Info: media/eigenvalues_vs_angle.png  used on input line 21.
@@ -1859,7 +1843,7 @@ Package luatex.def Info: media/eigenvalues_vs_angle.png  used on input line 21.
 
 
 [45<./media/eigenvalues_vs_angle.png>]
-<media/ssh_sp_model.png, id=1025, 1015.54407pt x 460.72125pt>
+<media/ssh_sp_model.png, id=1024, 1015.54407pt x 460.72125pt>
 File: media/ssh_sp_model.png Graphic file (type png)
 <use media/ssh_sp_model.png>
 Package luatex.def Info: media/ssh_sp_model.png  used on input line 40.
@@ -1867,12 +1851,12 @@ Package luatex.def Info: media/ssh_sp_model.png  used on input line 40.
 
 
 [46<./media/ssh_sp_model.png>]
-<media/sp-ssh-012.png, id=1033, 1099.85907pt x 357.58594pt>
+<media/sp-ssh-012.png, id=1032, 1099.85907pt x 357.58594pt>
 File: media/sp-ssh-012.png Graphic file (type png)
 <use media/sp-ssh-012.png>
 Package luatex.def Info: media/sp-ssh-012.png  used on input line 83.
 (luatex.def)             Requested size: 472.03123pt x 153.46431pt.
-<media/sp-ssh-phase-diagram.png, id=1035, 686.565pt x 552.56438pt>
+<media/sp-ssh-phase-diagram.png, id=1034, 686.565pt x 552.56438pt>
 File: media/sp-ssh-phase-diagram.png Graphic file (type png)
 <use media/sp-ssh-phase-diagram.png>
 Package luatex.def Info: media/sp-ssh-phase-diagram.png  used on input line 89.
@@ -1881,7 +1865,7 @@ Package luatex.def Info: media/sp-ssh-phase-diagram.png  used on input line 89.
 
 
 [47<./media/sp-ssh-012.png>]
-<media/sp-ssh-exp-num.png, id=1048, 1193.96063pt x 421.575pt>
+<media/sp-ssh-exp-num.png, id=1047, 1193.96063pt x 421.575pt>
 File: media/sp-ssh-exp-num.png Graphic file (type png)
 <use media/sp-ssh-exp-num.png>
 Package luatex.def Info: media/sp-ssh-exp-num.png  used on input line 97.
@@ -1889,7 +1873,7 @@ Package luatex.def Info: media/sp-ssh-exp-num.png  used on input line 97.
 
 
 [48<./media/sp-ssh-phase-diagram.png>]
-<media/sp-ssh-exp.png, id=1055, 625.58719pt x 737.00343pt>
+<media/sp-ssh-exp.png, id=1054, 625.58719pt x 737.00343pt>
 File: media/sp-ssh-exp.png Graphic file (type png)
 <use media/sp-ssh-exp.png>
 Package luatex.def Info: media/sp-ssh-exp.png  used on input line 106.
@@ -1941,7 +1925,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 24.0pt
 (hyperref)                removed on input line 1.
 
-<media/strainlieb.pdf, id=1194, page=1, 597.50829pt x 785.29585pt>
+<media/strainlieb.pdf, id=1193, page=1, 597.50829pt x 785.29585pt>
 File: media/strainlieb.pdf Graphic file (type pdf)
 <use media/strainlieb.pdf, page 1>
 Package luatex.def Info: media/strainlieb.pdf , page1 used on input line 4.
@@ -1959,17 +1943,17 @@ Overfull \hbox (18.0pt too wide) in paragraph at lines 219--232
 
 
 <./media/strainlieb.pdf>]
-<media/molpap.pdf, id=1256, page=1, 609.68578pt x 803.90437pt>
+<media/molpap.pdf, id=1255, page=1, 609.68578pt x 803.90437pt>
 File: media/molpap.pdf Graphic file (type pdf)
 <use media/molpap.pdf, page 1>
 Package luatex.def Info: media/molpap.pdf , page1 used on input line 235.
 (luatex.def)             Requested size: 472.03123pt x 622.41838pt.
-<media/dipolepap.pdf, id=1257, page=1, 609.68578pt x 803.90437pt>
+<media/dipolepap.pdf, id=1256, page=1, 609.68578pt x 803.90437pt>
 File: media/dipolepap.pdf Graphic file (type pdf)
 <use media/dipolepap.pdf, page 1>
 Package luatex.def Info: media/dipolepap.pdf , page1 used on input line 239.
 (luatex.def)             Requested size: 472.03123pt x 622.41838pt.
-<media/nonsympap.pdf, id=1258, page=1, 609.81425pt x 813.0375pt>
+<media/nonsympap.pdf, id=1257, page=1, 609.81425pt x 813.0375pt>
 File: media/nonsympap.pdf Graphic file (type pdf)
 <use media/nonsympap.pdf, page 1>
 Package luatex.def Info: media/nonsympap.pdf , page1 used on input line 243.
@@ -1977,7 +1961,7 @@ Package luatex.def Info: media/nonsympap.pdf , page1 used on input line 243.
 
 
 [60<./media/molpap.pdf>]
-<media/2Dradpap.pdf, id=2357, page=1, 614.295pt x 794.97pt>
+<media/2Dradpap.pdf, id=2356, page=1, 614.295pt x 794.97pt>
 File: media/2Dradpap.pdf Graphic file (type pdf)
 <use media/2Dradpap.pdf, page 1>
 Package luatex.def Info: media/2Dradpap.pdf , page1 used on input line 247.
@@ -2055,20 +2039,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F534BAFBBD4C125DB68B2562AE3C9162;11507.
+(rerunfilecheck)             Checksum: E1103ECA8E3096CE4AB0909E4BBD09DF;11251.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43768 strings out of 475512
- 745732,1977958 words of node,token memory allocated
- 1975 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 7 glue, 4 kern, 9 sub_mlist, 1 glyph, 322 attribute
-, 113 glue_spec, 162 attribute_list, 2 write, 28 pdf_action nodes
-   avail lists: 1:12,2:12683,3:491,4:12068,5:11322,6:100,7:19047,8:137,9:34218,1
-0:58,11:1794
- 64692 multiletter control sequences out of 65536+600000
- 202 fonts using 13579551 bytes
+ 43618 strings out of 475512
+ 745734,1977958 words of node,token memory allocated
+ 1966 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 7 glue, 4 kern, 8 sub_mlist, 1 glyph, 320 attribute
+, 113 glue_spec, 161 attribute_list, 2 write, 28 pdf_action nodes
+   avail lists: 1:9,2:12684,3:493,4:12068,5:11322,6:100,7:19047,8:137,9:34218,10
+:58,11:1794
+ 64547 multiletter control sequences out of 65536+600000
+ 201 fonts using 13447863 bytes
  97i,21n,100p,1709b,1091s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.5'
@@ -2083,28 +2071,27 @@ warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 </usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman6-regular.otf></usr/share/texmf/fonts/opentype
 /public/lm/lmmono12-regular.otf>{/usr/share/texlive/texmf-dist/fonts/enc/dvips/b
-ase/8r.enc}</usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf><
-/usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texm
-f/fonts/opentype/public/lm/lmroman7-regular.otf></usr/share/texmf/fonts/opentype
-/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmrom
-an12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-bold.otf></
-usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
-s/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txexa.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (80 pages, 18727904 bytes).
+ase/8r.enc}</usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></us
+r/share/texmf/fonts/opentype/public/lm/lmroman7-regular.otf></usr/share/texmf/fo
+nts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf/fonts/opentype/pub
+lic/lm/lmroman12-italic.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12
+-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman12-regular.otf></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts
+/txexa.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (80 pages, 18726603 bytes).
 
-PDF statistics: 3068 PDF objects out of 3580 (max. 8388607)
- 1693 compressed objects within 17 object streams
+PDF statistics: 3061 PDF objects out of 3580 (max. 8388607)
+ 1689 compressed objects within 17 object streams
  661 named destinations out of 1000 (max. 131072)
  456 words of extra memory for PDF output out of 10000 (max. 100000000)
 
