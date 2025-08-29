@@ -1,19 +1,19 @@
-\chapter{Acoplamiento Evanescente No Simétrico}
+\chapter{Non-Symmetric Evanescent Coupling}
 \label{cap:asymmetric}
 
-Los modelos discretos en fotónica, como la teoría de modos acoplados (CMT), suelen asumir acoplamientos simétricos entre guías de onda, es decir, que la constante de acoplamiento entre dos sitios \( C_{i \to j} \) es igual a \( C_{j \to i} \). Esta suposición garantiza la hermiticidad del Hamiltoniano efectivo y suele estar justificada cuando las guías son idénticas y lo suficientemente separadas. Sin embargo, esta simetría puede romperse de forma inherente en sistemas reales, incluso en ausencia de pérdida o ganancia, cuando las guías presentan diferentes perfiles de índice de refracción, lo que experimentalmente se logra cambiando la potencia de escritura de las guías de ondas \cite{nonsymm}.
+Discrete models in photonics, such as coupled-mode theory (CMT), often assume symmetric couplings between waveguides, meaning that the coupling constant between two sites \( C_{i \to j} \) is equal to \( C_{j \to i} \). This assumption ensures the Hermiticity of the effective Hamiltonian and is typically justified when the waveguides are identical and sufficiently separated. However, this symmetry can be inherently broken in real systems, even in the absence of loss or gain, when the waveguides exhibit different refractive index profiles, which is experimentally achieved by varying the writing power of the waveguides \cite{nonsymm}.
 
-\section{Origen de la dinámica no simétrica}
+\section{Origin of Non-Symmetric Dynamics}
 
-El acoplamiento evanescente entre guías de ondas se produce por la superposición de las colas modales fuera del núcleo de confinamiento. Cuando dos guías tienen distintos contrastes de índice (\( \Delta n_1 \ne \Delta n_2 \)), los modos guiados presentan colas evanescentes con diferente amplitud y extensión, lo que induce un acoplamiento direccionalmente desigual: \( C_{1 \to 2} \ne C_{2 \to 1} \).
+Evanescent coupling between waveguides occurs due to the overlap of the modal tails outside the confinement core. When two waveguides have different index contrasts (\( \Delta n_1 \ne \Delta n_2 \)), the guided modes exhibit evanescent tails with varying amplitude and extent, which induces a directionally unequal coupling: \( C_{1 \to 2} \ne C_{2 \to 1} \).
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{media/nonsympaper}
-	\caption{Esquema de acoplamiento no simétrico.}
+	\caption{Schematic of non-symmetric coupling.}
 \end{figure}
-Este comportamiento \textit{no simétrico} puede cuantificarse mediante la teoría de modos acoplados generalizada y no ortogonal, desarrollada en la sección~\ref{cap:CMTteo}, donde se incluye el efecto de solapamiento modal a través de la matriz \( \hat{P} \), que codifica la noramlización de potencias.
+This \textit{non-symmetric} behavior can be quantified using the generalized non-orthogonal coupled-mode theory developed in Section~\ref{cap:CMTteo}, which includes the effect of modal overlap through the matrix \( \hat{P} \), encoding power normalization.
 
-Considerando un dímero compuesto por dos guías no idénticas, las ecuaciones dinámicas para las amplitudes modales se escriben (véase la ecuación~(\ref{eqn:non-ortho-CMT-eqs})) como:
+Considering a dimer composed of two non-identical waveguides, the dynamic equations for the modal amplitudes are written (see equation~(\ref{eqn:non-ortho-CMT-eqs})) as:
 \begin{equation}
 	-i
 	\frac{d}{dz}
@@ -37,8 +37,8 @@ Considerando un dímero compuesto por dos guías no idénticas, las ecuaciones d
 	\iff
 	-i\frac{d}{dz}\textbf{v} = \hat{H}' \textbf{v} \ ,
 \end{equation}
-donde \( \textbf{v} = \hat{P}^{1/2} \textbf{u} \) representa una base ortogonalizada, y \( \hat{H}' = \hat{P}^{-1/2} \hat{H} \hat{P}^{-1/2} \) es el Hamiltoniano efectivo en dicha base. Como \( \hat{H} \) y \( \hat{P} \) son simétricas, \( \hat{H}' \) también lo es, lo que garantiza autovalores reales. Al proponer soluciones estacionarias del tipo \( \textbf{v}(z) \sim e^{i\lambda z} \), se obtiene el problema generalizado de autovalores $\det(\hat{H} - \lambda \hat{P}) = 0$ .
-Es importante destacar que esta base ortogonalizada \( \textbf{v} \) no es accesible experimentalmente: en un montaje real, sólo es posible observar modos localizados en guías individuales, lo cual corresponde a la base física \( \textbf{u} \). Por lo tanto, el análisis experimental de la dinámica debe realizarse en esta base, donde la evolución está gobernada por la matriz de acoplamiento efectiva:
+where \( \textbf{v} = \hat{P}^{1/2} \textbf{u} \) represents an orthogonalized basis, and \( \hat{H}' = \hat{P}^{-1/2} \hat{H} \hat{P}^{-1/2} \) is the effective Hamiltonian in that basis. Since \( \hat{H} \) and \( \hat{P} \) are symmetric, \( \hat{H}' \) is also symmetric, which guarantees real eigenvalues. By proposing stationary solutions of the form \( \textbf{v}(z) \sim e^{i\lambda z} \), the generalized eigenvalue problem $\det(\hat{H} - \lambda \hat{P}) = 0$  is obtained.
+It is important to emphasize that this orthogonalized basis \( \textbf{v} \) is not experimentally accessible: in a real setup, only modes localized in individual waveguides can be observed, which corresponds to the physical basis \( \textbf{u} \). Therefore, the experimental analysis of the dynamics must be performed in this basis, where the evolution is governed by the effective coupling matrix:
 \begin{equation*}
 	\hat{C} = \hat{P}^{-1} \hat{H} = \frac{1}{P_{11}P_{22} - P_{12}^2}
 	\begin{pmatrix}
@@ -46,39 +46,38 @@ Es importante destacar que esta base ortogonalizada \( \textbf{v} \) no es acces
 		P_{11}H_{12} - P_{12}H_{11} & P_{11}H_{22} - P_{12}H_{12}
 	\end{pmatrix}.
 \end{equation*}
-Este sistema exhibe una dinámica no recíproca: la eficiencia de transferencia de energía depende del canal de entrada. Esta asimetría puede cuantificarse experimentalmente a través del \textit{desbalance de intensidad}, definido para cada excitación \( i = L, R \) como:
+This system exhibits non-reciprocal dynamics: the energy transfer efficiency depends on the input channel. This asymmetry can be quantified experimentally through the \textit{intensity imbalance}, defined for each excitation \( i = L, R \) as:
 \begin{equation*}
 	I^i(z) \equiv \frac{P^i_1(z) - P^i_2(z)}{P^i_1(z) + P^i_2(z)} \ ,
 \end{equation*}
-y su promedio absoluto como:
+and its absolute average as:
 \begin{equation*}
 	\bar{I}(z) \equiv \frac{|I^L(z) + I^R(z)|}{2} \ .
 \end{equation*}
-La cantidad \( \bar{I}(z) \) resulta especialmente útil para detectar asimetrías globales en la dinámica: cualquier desviación de cero implica una evolución no simétrica, revelando la presencia de acoplamientos evanescentes no recíprocos.
+The quantity \( \bar{I}(z) \) is particularly useful for detecting global asymmetries in the dynamics: any deviation from zero implies a non-symmetric evolution, revealing the presence of non-reciprocal evanescent couplings.
 
-\section{Validación numérica}
+\section{Numerical Validation}
 
-Utilizando el método de Expansión en Modos Normales (EME, Sección~\ref{cap:eme}), se simuló la dinámica de dímeros asimétricos inyectando la misma condición inicial gaussiana en todos los casos. En la Figura~\ref{fig:nonotrho-num} se muestra el promedio absoluto de desbalances de intensidad $\bar{I}(z)$ en función de la distancia para $n_2 - n_1 = 1.75 \times 10^{-5}$ (asimetría débil) y para $n_2 - n_1 = 5.00 \times 10^{-5}$ (asimetría fuerte).
+Using the Eigenmode Expansion (EME) method (Section~\ref{cap:eme}), the dynamics of asymmetric dimers were simulated by injecting the same Gaussian initial condition in all cases. Figure~\ref{fig:nonotrho-num} shows the absolute average of intensity imbalances $\bar{I}(z)$ as a function of distance for $n_2 - n_1 = 1.75 \times 10^{-5}$ (weak asymmetry) and for $n_2 - n_1 = 5.00 \times 10^{-5}$ (strong asymmetry).
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{media/imbalance-nonortho.png}
-	\caption[Promedio absoluto de desbalances de intensidad $\bar{I}(z)$ en función de la distancia de propagación $z$]{Promedio absoluto de desbalances de intensidad $\bar{I}(z)$ en función de la distancia de propagación $z$ y de la distancia de separación entre guías, comparando dos regímenes: (1) asimetría débil ($\Delta n = 1.75 \times 10^{-5}$) y (2) asimetría fuerte ($\Delta n = 5.00 \times 10^{-5}$). Se incluyen los valores $I^L$ (verde) e $I^R$ (azul) correspondientes a tres casos específicos de estudio.}
+	\caption[Absolute average of intensity imbalances $\bar{I}(z)$ as a function of propagation distance zz]{Absolute average of intensity imbalances $\bar{I}(z)$ as a function of propagation distance zz and the separation distance between waveguides, comparing two regimes: (1) weak asymmetry  ($\Delta n = 1.75 \times 10^{-5}$) and (2) strong asymmetry ($\Delta n = 5.00 \times 10^{-5}$). The values $I^L$ (green) and $I^R$ (blue) corresponding to three specific study cases are included.}
 	\label{fig:nonotrho-num}
 \end{figure}
-\section{Comprobación experimental}
-Para comprobar este efecto, se fabricaron dímeros mediante la técnica de escritura por láser femtosegundo descrito en la sección \ref{cap:fs}, variando el canal de entrada \( i \), la potencia de escritura \( P_{g}^i \), la distancia entre guías \( d \), y la longitud de propagación efectiva \( z \). En particular, se exploró el caso \( \Delta P = P_g^1 - P_g^2 = 5\,\mathrm{mW} \), con separación \( d = 18\,\mu\mathrm{m} \). La Figura~\ref{fig:nosymexp} muestra que la excitación de la guía superior favorece la transferencia energética hacia la guía inferior, mientras que la excitación inversa alcanza una distribución energética 1:1 para $z\sim 11$ mm.
+\section{Experimental Verification}
+To verify this effect, dimers were fabricated using the femtosecond laser writing technique described in Section \ref{cap:fs}, varying the input channel \( i \), the writing power \( P_{g}^i \), the distance between waveguides \( d \), and the effective propagation length \( z \). In particular, the case \( \Delta P = P_g^1 - P_g^2 = 5\,\mathrm{mW} \) was explored, with a separation  \( d = 18\,\mu\mathrm{m} \). Figure~\ref{fig:nosymexp} shows that excitation of the upper waveguide favors energy transfer to the lower waveguide, while the inverse excitation achieves a 1:1 energy distribution at $z\sim 11$ mm.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{media/nonsymm-exp.png}
-	\caption[Perfiles de salida para distintas longitudes de propagación.]{Perfiles de salida para distintas longitudes de propagación \( z_i \), excitando la guía superior (izquierda) e inferior (derecha), con \( d = 18\,\mu\mathrm{m} \). \label{fig:nosymexp}}
-\end{figure} \vspace{-4ex} Mediante guías tipo placa (\textit{slab}) y modos TE (ver Sección \ref{cap:slab}), se obtienen expresiones analíticas para los acoplamientos:
+	\caption[Output profiles for different propagation lengths.]{Output profiles for different propagation lengths  \( z_i \), exciting the upper waveguide (left) and lower waveguide (right), with \( d = 18\,\mu\mathrm{m} \). \label{fig:nosymexp}}
+\end{figure} \vspace{-4ex} Using slab-type waveguides and TE modes (see Section \ref{cap:slab}), analytical expressions for the couplings are obtained:
 \begin{equation*}
 	\frac{C_{21}}{C_{12}} \approx \left( \frac{\Delta n_2}{\Delta n_1} \right)^2 e^{(\gamma_2 - \gamma_1) d}\approx \frac{P_2^1(z)}{P_1^2(z)} \ ,
 \end{equation*}
-donde \( \gamma_i \) representa el coeficiente de decaimiento evanescente del modo \( i \). Esta expresión muestra que la asimetría aumenta con la separación entre guías, con la diferencia entre decaimientos de los modos $\gamma_2 - \gamma_1$ y con el cuadrado de la razón entre contrastes de índice $\Delta n_2/\Delta n_1$. 
+where \( \gamma_i \) represents the evanescent decay coefficient of mode \( i \). his expression shows that the asymmetry increases with the separation between waveguides, with the difference between the modal decay rates $\gamma_2 - \gamma_1$ and with the square of the ratio of index contrasts $\Delta n_2/\Delta n_1$. 
 
-\section{Implicancias y aplicaciones}
+\section{Implications and Applications}
 
-Este estudio demuestra que el acoplamiento no simétrico es un fenómeno físico que, ausencia de pérdida o ganancia energética, es posible inducir de forma pasiva. Sus implicancias incluyen: \textit{ruptura de reciprocidad}, sin requerir materiales magneto-ópticos ni modulación temporal; \textit{asimetría modal}, dado que la desigualdad entre \( C_{ij} \) y \( C_{ji} \) afecta la formación de estados simétricos/antisimétricos y la interferencia; \textit{dispositivos ópticos direccionales}, tales como divisores de haz asimétricos o aislantes ópticos; y su \textit{extensión a redes} con acoplamientos direccionados. En conjunto, estos resultados permiten extender la teoría de modos acoplados y abren nuevas oportunidades en el diseño de redes ópticas con funcionalidad direccional.
-
+This study demonstrates that non-symmetric coupling is a physical phenomenon that, in the absence of energy loss or gain, can be passively induced. Its implications include: \textit{breakdown of reciprocity}, without requiring magneto-optical materials or temporal modulation; \textit{modal asymmetry}, since the inequality between \( C_{ij} \) and \( C_{ji} \) affects the formation of symmetric/antisymmetric states and interference; \textit{directional optical devices}, such as asymmetric beam splitters or optical isolators; and its \textit{extension to lattices} with directed couplings. Together, these results allow for an extension of coupled-mode theory and open new opportunities in the design of optical lattices with directional functionality.

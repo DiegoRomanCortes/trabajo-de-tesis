@@ -1,34 +1,34 @@
-\chapter{Moléculas Fotónicas \label{cap:molecules}}
-La técnica de escritura de guías de onda mediante pulsos láser ultracortos, descrita en el Capítulo~\ref{cap:fs}, permite la fabricación tridimensional de estructuras fotónicas con precisión micrométrica. No obstante, esta técnica presenta limitaciones inherentes a la forma elíptica del foco del láser, lo que impone restricciones sobre los modos transversales que pueden ser eficientemente excitados y, en particular, sobre los acoplamientos intermodales posibles entre modos de distinta simetría, como los $S$ y $P$ \citep{interorbital}.
+\chapter{Photonic Molecules \label{cap:molecules}}
+The technique of writing waveguides using ultrashort laser pulses, described in Chapter~\ref{cap:fs}, allows for the three-dimensional fabrication of photonic structures with micrometric precision. However, this technique has inherent limitations due to the elliptical shape of the laser focus, which imposes restrictions on the transverse modes that can be efficiently excited and, in particular, on the possible intermodal couplings between modes of different symmetry, such as $S$ and $P$ \citep{interorbital}.
 
-Para sortear estas restricciones y ampliar los grados de libertad en el diseño de redes fotónicas, se recurre aquí a un enfoque inspirado en la física molecular: al posicionar dos guías de onda lo suficientemente cerca, sus modos pueden acoplarse de forma coherente, generando nuevos modos colectivos extendidos. Este proceso es análogo a la formación de moléculas en física cuántica, donde dos orbitales atómicos se combinan linealmente para formar orbitales moleculares enlazantes y antienlazantes (ver Figura \ref{fig:molec-anal}).
+To overcome these restrictions and expand the degrees of freedom in the design of photonic networks, an approach inspired by molecular physics is adopted here: by positioning two waveguides sufficiently close, their modes can couple coherently, generating new extended collective modes. This process is analogous to molecular formation in quantum physics, where two atomic orbitals combine linearly to form bonding and antibonding molecular orbitals (see Figure \ref{fig:molec-anal}).
 
-En este trabajo, llamaremos \textit{molécula fotónica} a un sistema de dos guías de onda acopladas, cuyas funciones propias se combinan generando modos híbridos simétricos y antisimétricos, en analogía con los orbitales moleculares. Esta analogía se basa en la forma espacial de los modos y en su superposición controlada, pero no implica la existencia de fuerzas de enlace, electrones compartidos ni potenciales interatómicos. La relación con las moléculas cuánticas es, por tanto, formal y geométrica, y se restringe al paralelismo estructural entre los modos ópticos y los orbitales \citep{molecules}.
+In this work, we will call a \textit{photonic molecule} a system of two coupled waveguides, whose eigenfunctions combine to generate symmetric and antisymmetric hybrid modes, in analogy with molecular orbitals. This analogy is based on the spatial shape of the modes and their controlled overlap, but does not imply the existence of bonding forces, shared electrons, or interatomic potentials. The relationship with quantum molecules is, therefore, formal and geometric, and is restricted to the structural parallelism between optical modes and orbitals \citep{molecules}.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{media/moleculas.png}
-	\caption[Analogía y diferencias entre moléculas cuánticas (izquierda) y fotónicas (derecha).]{Analogía y diferencias entre moléculas cuánticas (izquierda) y fotónicas (derecha). Tanto los orbitales atómicos como los modos de guías individuales pueden hibridizarse, generando nuevos estados colectivos. En el caso fotónico, la hibridación ocurre entre modos ópticos guiados. En este caso, no hay análogo fotónico de los orbitales moleculares $\sigma_p$. \label{fig:molec-anal}}
+	\caption[Analogy and differences between quantum molecules (left) and photonic molecules (right).]{Analogy and differences between quantum molecules (left) and photonic molecules (right). Both atomic orbitals and individual waveguide modes can hybridize, generating new collective states. In the photonic case, hybridization occurs between guided optical modes. Here, there is no photonic analogue of the $\sigma_p$ molecular orbitals. \label{fig:molec-anal}}
 \end{figure}
 
-A partir de esta idea, en este capítulo se analiza experimentalmente una red fotónica construida a partir de dichas moléculas como bloques básicos. En particular, se estudia una red periódica tipo SSH \citep{SPSSH}, una extensión multiorbital del modelo de Su-Schrieffer-Heeger, que permite explorar el impacto del acoplamiento interorbital $S\hspace*{-0.3ex}P$ en la topología de bandas. El sistema presenta dos transiciones topológicas independientes, asociadas a la modulación de la dimerización geométrica y al desintonizado entre modos de diferente simetría. Estas transiciones se caracterizan mediante la observación de modos de borde, el cálculo de la polarización de bulto y el análisis espectral, permitiendo acceder a una rica fenomenología fotónica basada en la ingeniería modal.
+Building on this idea, this chapter experimentally analyzes a photonic lattice constructed from such molecules as basic building blocks. In particular, a periodic SSH-type lattice \citep{SPSSH} is studied—a multi-orbital extension of the Su-Schrieffer-Heeger model—which allows exploring the impact of interorbital $S\hspace*{-0.3ex}P$ coupling on band topology. The system exhibits two independent topological transitions, associated with the modulation of geometric dimerization and the detuning between modes of different symmetry. These transitions are characterized through the observation of edge modes, the calculation of bulk polarization, and spectral analysis, enabling access to a rich photonic phenomenology based on modal engineering.
 
-\section{Autoestados del acoplador fotónico para distancias de separación pequeñas}
+\section{Eigenstates of the Photonic Coupler for Small Separation Distances}
 
-Como se mencionó en la Sección~\ref{cap:CMT}, la teoría de modos acoplados (CMT) describe adecuadamente los sistemas fotónicos en estudio cuando la distancia entre guías de ondas supera los $13\,\mu$m. Para separaciones menores, el sistema debe tratarse como una única macroguía. La expansión en modos normales (EME), presentada en la Sección~\ref{cap:eme}, proporciona una herramienta numérica válida para ambos regímenes. Mediante simulaciones de pares de guías de onda a diferentes distancias, se caracterizó el comportamiento de sus autoestados. La Figura~\ref{fig:molecule-coup} muestra que el autoestado antisimétrico ($+-$) solo existe para distancias mayores a $13\,\mu$m, ya que por debajo de este umbral se convierte en un modo de radiación ($k_z^{+-} < k_0 n_0$). En cambio, el autoestado simétrico ($++$) persiste y puede describirse como una única entidad, lo que en esta tesis se denominará \textit{modo S} de la molécula fotónica.
+As mentioned in Section~\ref{cap:CMT}, coupled-mode theory (CMT) adequately describes the photonic systems under study when the distance between waveguides exceeds $13\,\mu$m. or smaller separations, the system must be treated as a single macro-waveguide. The eigenmode expansion (EME), presented in Section~\ref{cap:eme}, provides a numerical tool valid for both regimes. Through simulations of waveguide pairs at different distances, the behavior of their eigenstates was characterized. Figure~\ref{fig:molecule-coup} shows that the antisymmetric eigenstate ($+-$) only exists for distances greater than $13\,\mu$m, as below this threshold it becomes a radiation mode ($k_z^{+-} < k_0 n_0$). In contrast, the symmetric eigenstate ($++$) ersists and can be described as a single entity, which in this thesis will be referred to as the \textit{S mode} of the photonic molecule.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{media/eigenvalues_vs_angle.png}
-	\caption[Propagación y acoplamientos en moléculas fotónicas]{
-		\textbf{Izquierda:} Constantes de propagación y acoplamientos en función de la distancia para modos fundamentales, calculados mediante EME. 
-		\textbf{Derecha:} Constantes de propagación de modos $S$ y $P$ en función de la longitud de onda.
+	\caption[Propagation and couplings in photonic molecules]{
+		\textbf{Left:} Propagation constants and couplings as a function of distance for fundamental modes, calculated using EME.
+		\textbf{Right:} Propagation constants of $S$ and $P$ modes as a function of wavelength.
 		\label{fig:molecule-coup}}
 \end{figure}
-Si bien las constantes de propagación de los modos $S$ y $P$ en una misma molécula presentan valores diferentes, estas pueden igualarse entre moléculas adyacentes mediante el ajuste del contraste de índice de refracción en las guías de onda \citep{interorbital, SPSSH}. Por ejemplo, la Figura~\ref{fig:molecule-coup} muestra que a $730$\,nm se igualan las constantes de propagación para $\Delta n_S = 5.200 \times 10^{-4}$ y $\Delta n_P = 10.423 \times 10^{-4}$.
+Although the propagation constants of the $S$ and $P$ modes in the same molecule exhibit different values, they can be equalized between adjacent molecules by adjusting the refractive index contrast in the waveguides \citep{interorbital, SPSSH}. For example, Figure~\ref{fig:molecule-coup} shows that at $730$\,nm the propagation constants are equalized for $\Delta n_S = 5.200 \times 10^{-4}$ and $\Delta n_P = 10.423 \times 10^{-4}$.
 
-\section{Moléculas Fotónicas en Red SP-SSH}
+\section{Photonic Molecules in the SP-SSH Lattice}
 
-Para la implementación experimental (Sección~\ref{cap:fs}) de una red que presente acoplamiento SP \citep{interorbital, toporusos, SPSSH}, se utilizaron los modos $P$ horizontales de la sección anterior, obtenidos mediante moléculas fotónicas. Un sintonizado preciso de las constantes de propagación de los modos $S$ ($k_z^S$) y $P$ ($k_z^P$) permitió considerar un grado de libertad análogo al del espín del electrón (\textit{pseudoespín}). El Hamiltoniano $H$ de esta red \citep{SPSSH}, ilustrado en la Figura~\ref{fig:sp-ssh-model}, es el siguiente:
+For the experimental implementation (Section~\ref{cap:fs}) of a lattice exhibiting SP coupling \citep{interorbital, toporusos, SPSSH}, the horizontal $P$ modes from the previous section, obtained through photonic molecules, were used. Precise tuning of the propagation constants of the $S$ ($k_z^S$) and $P$ ($k_z^P$) modes allowed considering a degree of freedom analogous to electron spin (\textit{pseudospin}). The Hamiltonian $H$ of this lattice \citep{SPSSH}, illustrated in Figure~\ref{fig:sp-ssh-model}, is as follows:
 \begin{align*}
 	H &= \sum_n \left[\frac{\delta\beta}{2} \left( p^*_{n, 1} p_{n, 1} - s^*_{n, 1} s_{n, 1} + p^*_{n, 2} p_{n, 2} - s^*_{n, 2} s_{n, 2} \right) + \varkappa_{ss, 2}s^*_{n, 2} s_{n, 1} - \varkappa_{pp, 2}p^*_{n, 2} p_{n, 1} \right. \\
 	&+ \varkappa_{ss, 1} \left( s_{n-1, 2}^*s_{n, 1} + s_{n+1, 2}^*s_{n, 2} \right) - \varkappa_{pp, 1} \left( p_{n-1, 2}^*p_{n, 1} + p_{n+1, 2}^*p_{n, 2} \right) + \varkappa_{sp, 2} \left( s_{n, 2}^* p_{n, 1} - p_{n, 2}^* s_{n, 1} \right) \\
@@ -38,9 +38,9 @@ Para la implementación experimental (Sección~\ref{cap:fs}) de una red que pres
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{media/ssh_sp_model}
-	\caption{Esquema de la red SP-SSH y los acoplamientos considerados. \label{fig:sp-ssh-model}}
+	\caption{Schematic of the SP-SSH lattice and the considered couplings. \label{fig:sp-ssh-model}}
 \end{figure} \vspace{-2ex}
-Si se elige la base $\mathbf{v}^n = \left( s_1^n, p_1^n, s_2^n, p_2^n \right)^T$, el Hamiltoniano de Bloch se puede escribir en bloques como:
+If the basis $\mathbf{v}^n = \left( s_1^n, p_1^n, s_2^n, p_2^n \right)^T$is chosen, the Bloch Hamiltonian can be written in block form as:
 \begin{equation*}
 	\hat{H}(k) = \begin{pmatrix}
 		\hat{\beta} & e^{-ika} \hat{\varkappa}_{1-} + \hat{\varkappa}_{2+} \\
@@ -52,8 +52,8 @@ donde $\hat{\beta} = \frac{k_z^S - k_z^P}{2} \hat{\sigma}_z$ y $\hat{\varkappa}_
 	\mp\varkappa_{sp, i} & - \varkappa_{pp, i}
 \end{pmatrix} \ .$
 
-\section{Topología en la Red SP-SSH}
-El modelo SP-SSH permite explorar nuevas fases topológicas más allá del modelo SSH convencional, ya que incorpora dos orbitales (modos $S$ y $P$) cuyas combinaciones lineales pueden interpretarse como un pseudoespín. Se hace necesario estudiar la topología del sistema puesto que el espectro del Hamiltoniano no basta para explicar completamente el comportamiento de este sistema, particularmente por la aparición de estados de borde a energía cero. Al aplicar la transformación unitaria 
+\section{Topology in the SP-SSH Lattice}
+The SP-SSH model allows exploring new topological phases beyond the conventional SSH model, as it incorporates two orbitals ($S$ and $P$ modes) whose linear combinations can be interpreted as a pseudospin. It becomes necessary to study the topology of the system since the spectrum of the Hamiltonian is insufficient to fully explain the behavior of this system, particularly due to the appearance of zero-energy edge states. By applying the unitary transformation
 \begin{equation*}
 	\hat{U} = \frac{1}{\sqrt{2}}\begin{pmatrix}
 		1 & 1 & 0 & 0 \\
@@ -62,51 +62,51 @@ El modelo SP-SSH permite explorar nuevas fases topológicas más allá del model
 		0 & 0 & 1 & 1
 	\end{pmatrix} \ ,
 \end{equation*} 
-se hace más evidente cómo interpretar el sistema. En particular, para $\Delta\beta = 0$ y $\varkappa_{ss,1}=\varkappa_{pp,1}$ se tiene 
+it becomes clearer how to interpret the system. In particular, for $\Delta\beta = 0$ and $\varkappa_{ss,1}=\varkappa_{pp,1}$ we have:
 \begin{equation*}
 	\hat{H} = \begin{pmatrix}
 		\hat{H}_+ & 0 \\
 		0 & \hat{H}_-
 	\end{pmatrix} \ ,
 \end{equation*} 
-con
+with
 \begin{equation*}
 	\hat{H}_\pm = \begin{pmatrix}
 		0 & e^{-ika}(\varkappa_{ss,1}\mp \varkappa_{sp,1}) + (\varkappa_{ss,2}\pm \varkappa_{sp,2}) \\
 		e^{ika}(\varkappa_{ss,1}\mp \varkappa_{sp,1}) + (\varkappa_{ss,2}\pm \varkappa_{sp,2}) & 0
 	\end{pmatrix} \ .
 \end{equation*}
-Es decir, se tienen dos subsistemas tipo SSH, con acoplamiento intercelda (intracelda) $\varkappa_{ss,1}\mp \varkappa_{sp,1}$ ($\varkappa_{ss,2}\pm \varkappa_{sp,2}$). En el caso $\varkappa_{ss,1}\neq\varkappa_{pp,1}$ aún es posible capturar la topología mediante el determinante de $\hat{h}=e^{-ika}\hat{\varkappa}_{1-} + \hat{\varkappa}_{2+}$ (ver Figura~\ref{fig:sp-wilson}) ya que en el plano complejo se puede contar el número de vueltas (\textit{winding number}) en torno al origen al barrer todos los cuasimomentos en la primera zona de Brillouin. Estos bucles son una generalización de lo mostrado en la Figura~\ref{fig:ssh-topo} relativo al ángulo que forma la proyección en el plano $xy$ del vector $\mathbf{d}(k)$.
+That is, there are two SSH-type subsystems, with intercell (intracell) coupling $\varkappa_{ss,1}\mp \varkappa_{sp,1}$ ($\varkappa_{ss,2}\pm \varkappa_{sp,2}$).  In the case where $\varkappa_{ss,1}\neq\varkappa_{pp,1}$ it is still possible to capture the topology through the determinant of $\hat{h}=e^{-ika}\hat{\varkappa}_{1-} + \hat{\varkappa}_{2+}$ (ver Figura~\ref{fig:sp-wilson}) (see Figure~\ref{fig:sp-wilson}), since in the complex plane the number of windings around the origin can be counted by sweeping all quasimomenta in the first Brillouin zone. These loops are a generalization of what was shown in Figure~\ref{fig:ssh-topo} regarding the angle formed by the projection in the $xy$ plane of the vector $\mathbf{d}(k)$.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{media/sp-ssh-012.png}
-	\caption[Topología de la Red SP-SSH para $\Delta\beta = 0$.]{Topología de la Red SP-SSH para $\Delta\beta = 0$. Determinante de la matriz-bloque $\hat{h}$ para los cuasimomentos $-\frac{\pi}{a} \le k  < \frac{\pi}{a}$. Se aprecian exactamente tres fases topológicas distintas. \label{fig:sp-wilson}}
+	\caption[Topology of the SP-SSH lattice for $\Delta\beta = 0$.]{Topology of the SP-SSH lattice for $\Delta\beta = 0$. Determinant of the block matrix $\hat{h}$ for quasimomenta $-\frac{\pi}{a} \le k  < \frac{\pi}{a}$. Exactly three distinct topological phases are observed. \label{fig:sp-wilson}}
 \end{figure} \vspace{-8ex}
-Para obtener todo el diagrama de fase (en particular, para $\Delta \beta \neq 0$), basta con variar $\Delta \beta$ y observar cuando hay cierre de brecha en las bandas, como se observa en la Figura~\ref{fig:sp-ssh-phase-diagram}.  La red SP-SSH presenta dos mecanismos topológicos: uno debido a la hibridización SP y otro debido a la dimerización.
+To obtain the full phase diagram (particularly for $\Delta \beta \neq 0$), it is sufficient to vary $\Delta \beta$ and observe when band gap closure occurs, as shown in Figure~\ref{fig:sp-ssh-phase-diagram}. The SP-SSH lattice exhibits two topological mechanisms: one due to SP hybridization and another due to dimerization.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{media/sp-ssh-phase-diagram.png}
-	\caption{Diagrama de fases topológicas. \label{fig:sp-ssh-phase-diagram}}
+	\caption{Topological phase diagram. \label{fig:sp-ssh-phase-diagram}}
 \end{figure} \vspace{-2ex}
-\section{Implementación experimental}
-Para implementar experimentalmente el modelo SP-SSH, se fabricaron 25 redes fotónicas mediante la técnica de escritura con láser de femtosegundos descrita en el Capítulo~\ref{cap:fs}. Los parámetros geométricos se ajustaron con separaciones entre moléculas: $dx_1$ variable, $dx_2 = 25$ $\mu$m, $dy = 20$ $\mu$m y entre guías: $dx_0 = 7$ $\mu$m. Se optimizaron los contrastes de índice de refracción para lograr degeneración de modos: $k_z^S \sim k_z^P$ en $\lambda = 730$ nm \cite{interorbital}. Las mediciones se realizaron mediante barrido de longitud de onda (Capítulo~\ref{cap:wavelength}) con $\lambda \in$ $\{700, 780\}$ nm y paso de 5 nm, con el objetivo de tener control del parámetro $\Delta \beta$, dependiente directamente de la longitud de onda utilizada. La excitación se aplicó a la guía $S$ en un extremo de la red, midiendo la potencia relativa en el mismo extremo ($I_{\text{edge}}/I_{\text{total}}$). Aunque inicialmente no se distinguen claramente las fases topológicas con polarización de bulto\footnote{invariante topológico que permite distinguir fases topológicas distintas.} $P_\Sigma=1/2$ o $P_\Sigma=1$, el análisis numérico revela que durante la segunda transición topológica la razón $I_{\text{edge}}/I_{\text{total}}$ debería formar una meseta. La Figura~\ref{fig:sp-ssh-num} confirma este comportamiento, mientras que la Figura~\ref{fig:sp-ssh-exp} muestra resultados experimentales representativos: Uno para una $\lambda =$ 680 nm, donde sólo se aprecia topología por dimerización y otro para $\lambda =$ 725 nm, donde ocurren dos transiciones topológicas al cambiar la dimerización.
+\section{Experimental Implementation}
+To experimentally implement the SP-SSH model, 25 photonic lattices were fabricated using the femtosecond laser writing technique described in Chapter~\ref{cap:fs}. The geometric parameters were adjusted with separations between molecules: variable $dx_1$, $dx_2 = 25$ $\mu$m, $dy = 20$ $\mu$m nd between waveguides: $dx_0 = 7$ $\mu$m. The refractive index contrasts were optimized to achieve mode degeneracy: $k_z^S \sim k_z^P$ at $\lambda = 730$ nm \cite{interorbital}. Measurements were performed via wavelength scanning (Chapter~\ref{cap:wavelength}) with $\lambda \in$ $\{700, 780\}$ nm and a step of 5 nm, aiming to control the parameter $\Delta \beta$, which depends directly on the wavelength used. Excitation was applied to the $S$ waveguide at one end of the lattice, measuring the relative power at the same end ($I_{\text{edge}}/I_{\text{total}}$). Although the topological phases with bulk polarization\footnote{topological invariant that allows distinguishing different topological phases.} $P_\Sigma=1/2$ or $P_\Sigma=1$, are not initially clearly distinguishable, numerical analysis reveals that during the second topological transition the ratio $I_{\text{edge}}/I_{\text{total}}$ should form a plateau. Figure~\ref{fig:sp-ssh-num} confirms this behavior, while Figure~\ref{fig:sp-ssh-exp} shows representative experimental results: one for $\lambda =$ 680 nm, where only dimerization-induced topology is observed, and another for $\lambda =$ 725 nm, where two topological transitions occur as dimerization changes.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{media/sp-ssh-exp-num.png}
-	\caption[Análisis numérico-experimental del modelo SP-SSH]{
-		\textbf{Izquierda:} Resultados experimentales mostrando la meseta característica. 
-		\textbf{Derecha:} Comparación cuantitativa entre datos experimentales (línea continua) y simulaciones (línea discontinua).
+	\caption[Numerical-experimental analysis of the SP-SSH model]{
+		\textbf{Left:} Experimental results showing the characteristic plateau.
+		\textbf{Right:} Quantitative comparison between experimental data (solid line) and simulations (dashed line).
 		\label{fig:sp-ssh-num}}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{media/sp-ssh-exp.png}
-	\caption[Caracterización experimental de redes SP-SSH]{
-		\textbf{Izquierda:} Red SP-SSH homogénea ($dx_1 = dx_2$) para diferentes longitudes de onda. 
-		\textbf{Derecha:} Arriba: Excitación en 680 nm para distintas dimerizaciones. 
-		Abajo: Misma excitación en 725 nm.
+	\caption[Experimental characterization of SP-SSH lattices]{
+		\textbf{Left:} Homogeneous SP-SSH lattice ($dx_1 = dx_2$) for different wavelengths.
+		\textbf{Right:} Top: Excitation at 680 nm for different dimerizations.
+		Bottom: Same excitation at 725 nm.
 		\label{fig:sp-ssh-exp}}
 \end{figure}
