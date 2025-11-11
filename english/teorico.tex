@@ -96,7 +96,7 @@ with $n_1 > n_0$. \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\linewidth]{media/slab.pdf}
 	\caption[Shape of a slab-type waveguide.]{Shape of a slab-type waveguide. The structure is invariant in the $\mathbf{\hat{y}}$ (vertical) and $\mathbf{\hat{z}}$ (into the page) directions.}
-\end{figure} Since $\nabla n^2 = \textbf{0}$ para $|x| \neq a$, the right-hand sides of equations (\ref{eqn:helmholz}) and (\ref{eqn:helmholzH}) are of the Helmholtz type. Defining $\Psi = \{E_z, H_z\} $:
+\end{figure} Since $\nabla n^2 = \textbf{0}$ for $|x| \neq a$, the right-hand sides of equations (\ref{eqn:helmholz}) and (\ref{eqn:helmholzH}) are of the Helmholtz type. Defining $\Psi = \{E_z, H_z\} $:
 \begin{align*}
 	(\nabla_\perp^2  + k_0^2n^2 - k_z^2) \Psi  &=  \frac{d^2\Psi}{dx^2} + (k_0^2n^2 - k_z^2) \Psi  = 0 \ .
 \end{align*}
@@ -562,10 +562,10 @@ where $k_z^j$ is the propagation constant of the $j$-th isolated mode\footnote{i
 
 Defining the following fundamental quantities:
 \begin{align}
-	P_{ij} &\equiv \frac{1}{4} \iint \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \ , dxdy, \label{eqn:pij-ori} \\
+	P_{ij} &\equiv \frac{1}{4} \iint \left( \textbf{e}_j \times \textbf{h}_i^* + \textbf{e}_i^* \times \textbf{h}_j \right) \cdot \hat{\textbf{z}} \  dxdy \ , \label{eqn:pij-ori} \\
 	&= \frac{1}{4 \omega \mu_0} \iint \Big[ 
-	(k_z^i + k_z^j) \left( \textbf{e}_i^* \cdot \textbf{e}_j - e_{z,i}^* e_{z,j} \right)  + i \left( \textbf{e}_i^* \cdot \nabla_\perp e_{z,j} + \textbf{e}_j \cdot \nabla_\perp e_{z,i}^* \right) \Big] dxdy \ , \label{eqn:pij-simpli} \\
-	H_{ij} &\equiv P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint (n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \, dxdy \ , \label{eqn:hij}
+	(k_z^i + k_z^j) \left( {\textbf{e}_i^\perp}^* \cdot \textbf{e}_j^\perp  \right)  + i \left( \textbf{e}_j^\perp \cdot \nabla_\perp e_{z,i}^* - {\textbf{e}_i^\perp}^* \cdot \nabla_\perp e_{z,j} \right) \Big] \ dxdy \ , \label{eqn:pij-simpli} \\
+	H_{ij} &\equiv P_{ij} k_z^j + \frac{\omega \varepsilon_0}{4} \iint (n^2-n_j^2) \textbf{e}_j \cdot \textbf{e}_i^* \ dxdy \ , \label{eqn:hij}
 \end{align}
 the expression (\ref{eqn:kzprevar}) for the propagation constant $k_z$ can be written compactly as a Rayleigh-Ritz quotient:
 \begin{equation}
@@ -623,7 +623,7 @@ The pair of transformations associated with the unitary group U(1), $a_j\to a'_j
 Thus, there are two conserved quantities in the dynamics, $H$ y $P$, which will be useful for verifying the validity of numerical solutions to equation (\ref{eqn:non-ortho-CMT-eqs}).
 
 \subsection{TE Dimer in Slab-Type Waveguides}
-Using the equations for the transverse components (\ref{eqn:transverse}) in the case of fundamental TE modes (\ref{eqn:TEanti}), we have:
+Using the equations for the transverse components (\ref{eqn:transversal}) in the case of fundamental TE modes (\ref{eqn:TEanti}), we have:
 \begin{align*}
 	\textbf{e}_{j\perp} &= \hat{\textbf{y}}\frac{i\omega\mu_0 H_{a1}}{k_0^2n_j^2 - (k_z^j)^2}\left\{ \begin{matrix}
 -\alpha \cos(\alpha (x-x_j)), &|x-x_j|\le a

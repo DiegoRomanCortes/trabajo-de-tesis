@@ -5,7 +5,7 @@ The theoretical starting point is provided by the vectorial Helmholtz equations 
 \begin{equation}
 \left[\nabla^2 + k_0^2 n^2(\textbf{r})\right]\Psi(\textbf{r}) = 0 \ , \label{eqn:helmholtznum}
 \end{equation}
-where equation (\ref{eqn:helmholznum}) serves not only as a theoretical framework but also as the foundation for the algorithms developed in the following chapters. Its versatility allows for the adaptation of different numerical schemes according to the symmetries of the problem, as will be detailed in the subsequent sections.
+where equation (\ref{eqn:helmholtznum}) serves not only as a theoretical framework but also as the foundation for the algorithms developed in the following chapters. Its versatility allows for the adaptation of different numerical schemes according to the symmetries of the problem, as will be detailed in the subsequent sections.
 \section{Eigenmode Expansion \label{cap:eme}}
 This numerical method, developed and implemented during the student's Master's research, is useful when the photonic systems under study are invariantThe solutions to equation (\ref{eqn:helmholtznum}) can be expanded in plane waves with transverse profiles: $\Psi(\textbf{r}) = \Psi(x,y) \exp({i\beta z})$. With this, each transverse mode νν must satisfy the following equation to be solved numerically:
 \begin{equation}
@@ -44,7 +44,7 @@ The formal solution to equation (\ref{eqn:bpmop}) is $\phi(\textbf{r}) = \exp\le
 
 Since $\hat{A}$ and $\hat{B}$ do not commute in general, the exponential operator can be expanded to order $O(\Delta z ^3)$ as $\exp\left[\left(\hat{A} + \hat{B}\right)\Delta z \right] \approx \exp\left(\frac{\hat{A}\Delta z}{2} \right)\exp\left(\hat{B}\Delta z \right)\exp\left(\frac{\hat{A}\Delta z}{2} \right) + O(\Delta z ^3)$.
 
-The algorithm implemented in Appendix \ref{sec:codeBPM} is as follows: \begin{enumerate}
+The algorithm implemented in Appendix \ref{sec:codigoBPM} is as follows: \begin{enumerate}
 	\item Start with a profile $\phi(x, y, z_0)$
 \item Act in Fourier space by transforming the profile and multiplying by the phase associated with $\hat{A}$: $\exp\left(\frac{ik^2\Delta z}{4k_0 n_0}\right)\mathcal{F}(\phi(z_0))$, where $k=\sqrt{k_x^2 + k_y^2}$ are the Fourier frequencies.
 \item Apply the inverse Fourier transform and multiply by the phase associated with $\hat{B}$: 
